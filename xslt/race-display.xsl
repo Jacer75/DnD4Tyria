@@ -10,11 +10,14 @@
     <xsl:variable name="racename" select="$data/elements/element[@type='Race']/@name"/>
     <html>
       <head>
-        <title><xsl:value-of select="$racename"/></title>
+        <title><xsl:value-of select="$racename"/> - DnD4Tyria</title>
         <style>
           body { font-family: sans-serif; max-width: 800px; margin: auto; line-height: 1.6; padding: 2rem; }
           h1 { color: #2a5; }
           h2 { margin-top: 2rem; }
+          .traits { margin-top: 1em; }
+          .trait { margin-bottom: 0.5em; }
+          .trait-label { font-weight: bold; display: inline-block; width: 220px; }
         </style>
       </head>
       <body>
@@ -27,7 +30,20 @@
   <!-- Template für das Hauptelement der Rasse -->
   <xsl:template match="element[@type='Race']">
     <h1><xsl:value-of select="@name"/></h1>
-    <xsl:apply-templates select="description/*"/>
+    <xsl:apply-templates select="description/*[not(self::p[contains(., 'Volksmerkmale.')]) and not(self::p[span[@class='feature']])]"/>
+    <div class="traits">
+      <xsl:apply-templates select="description/p[span[@class='feature']]"/>
+    </div>
+  </xsl:template>
+
+  <!-- Template für Rassen-Eigenschaftszeilen -->
+  <xsl:template match="p[span[@class='feature']]">
+    <div class="trait">
+      <span class="trait-label">
+        <xsl:value-of select="span[@class='feature']"/>
+      </span>
+      <xsl:apply-templates select="text()[1]"/>
+    </div>
   </xsl:template>
 
   <!-- Template für Rassenmerkmale -->
