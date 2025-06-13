@@ -15,7 +15,7 @@
         </style>
       </head>
       <body>
-        <xsl:variable name="data" select="document('/aurora/de/races/d4t-race-sylvari.xml')"/>
+        <!--<xsl:variable name="data" select="document('/aurora/de/races/d4t-race-sylvari.xml')"/>-->
         <xsl:apply-templates select="$data/elements/element[@type='Race']"/>
       </body>
     </html>
