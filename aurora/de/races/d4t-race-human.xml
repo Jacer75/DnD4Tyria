@@ -69,7 +69,7 @@
                 <span class="feature">Alter (Age).</span><span class="feature-description">Menschen erreichen im späten Jugendalter das Erwachsenenalter und leben selten länger als ein Jahrhundert.<br/></span>
                 <span class="feature">Gesinnung (Alignment).</span><span class="feature-description">Menschen sind vielfältig in ihren Überzeugungen – von aufopferungsvollen Helden bis zu skrupellosen Tyrannen.<br/></span>
                 <span class="feature">Attributswerterhöhung (Ability Score Increase).</span><span class="feature-description">Deine Attributswerte steigen jeweils um 1.<br/></span>
-                <span class="feature">Sprachen (Languages).</span><span class="feature-description">Du kannst Tyrianisch sprechen, lesen und schreiben. Da die Menschen ein Schmelztiegel verschiedener Nationen sind, beherrschst Du darüber hinaus eine weitere Sprache.</p></span>
+                <span class="feature">Sprachen (Languages).</span><span class="feature-description">Du kannst Tyrianisch sprechen, lesen und schreiben. Da die Menschen ein Schmelztiegel verschiedener Nationen sind, beherrschst Du darüber hinaus eine weitere Sprache.</span></p>
             <!--<div element="ID_RACE_VARIANT_HUMAN_VARIANT"/>-->
             <div element="ID_D4T_FEATURE_HUMAN_INDOMITABLE_WILL"/>
             <div element="ID_D4T_FEATURE_HUMAN_MELTING_POT"/>
