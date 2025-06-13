@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../xslt/race-display.xsl"?>
 <root>
-  <external href="/DnD4Tyria/aurora/de/races/d4t-race-sylvari.xml"/>
+  <external href="../../aurora/de/races/d4t-race-sylvari.xml"/>
 </root>
