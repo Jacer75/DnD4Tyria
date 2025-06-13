@@ -23,9 +23,9 @@
             <h4>SYLVARI-EIGENSCHAFTEN</h4>
             <p>Als Sylvari besitzt du folgende Volksmerkmale.</p>
             <p>
-                <span class="feature">Größe (Size).</span><span class="feature-description">Deine Größe ist Mittelgroß (Medium).</span><br/>
-                <span class="feature">Bewegung (Speed).</span><span class="feature-description">Deine Grundbewegungsrate beträgt 9m (30 Fuß).</span><br/>
-                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span><span class="feature-description">Dein Weisheitswert (Wisdom) steigt um 2, und dein Geschicklichkeitswert (Dexterity) steigt um 1.</span><br/>
+                <span class="feature">Größe (Size).</span><span class="feature-description">Deine Größe ist Mittelgroß (Medium).<br/></span>
+                <span class="feature">Bewegung (Speed).</span><span class="feature-description">Deine Grundbewegungsrate beträgt 9m (30 Fuß).<br/></span>
+                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span><span class="feature-description">Dein Weisheitswert (Wisdom) steigt um 2, und dein Geschicklichkeitswert (Dexterity) steigt um 1.<br/></span>
                 <span class="feature">Sprachen (Languages).</span><span class="feature-description">Du kannst Gemeinsprache (Common) sprechen, lesen und schreiben.</span>
       </p>
             <div element="ID_D4T_FEATURE_SYLVARI_DREAM_INSTINCT"/>
