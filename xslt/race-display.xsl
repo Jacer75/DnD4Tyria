@@ -39,7 +39,9 @@
   <!-- Template für Rassen-Eigenschaftszeilen -->
   <xsl:template match="p[span[@class='feature']]">
   <xsl:variable name="nodes" select="node()"/>
+  <xsl:variable name="count" select="count($nodes)"/>
   <xsl:for-each select="$nodes">
+    <xsl:variable name="pos" select="position()"/>
     <xsl:if test="self::span[@class='feature']">
       <div class="trait">
         <span class="trait-label">
@@ -49,7 +51,7 @@
     <xsl:if test="not(self::span) and not(self::br)">
       <xsl:apply-templates select="."/>
     </xsl:if>
-    <xsl:if test="self::br">
+    <xsl:if test="self::br or $pos = $count">
       </div>
     </xsl:if>
   </xsl:for-each>
