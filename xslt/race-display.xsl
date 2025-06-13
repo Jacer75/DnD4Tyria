@@ -38,12 +38,24 @@
 
   <!-- Template für Rassen-Eigenschaftszeilen -->
   <xsl:template match="p[span[@class='feature']]">
-    <div class="trait">
-      <span class="trait-label">
-        <xsl:value-of select="span[@class='feature']"/>
-      </span>
-      <xsl:apply-templates select="node()[not(self::span)]"/>
-    </div>
+    <xsl:for-each select="node()">
+      <xsl:if test="self::span[@class='feature']">
+        <div class="trait">
+          <span class="trait-label">
+            <xsl:value-of select="."/>
+          </span>
+      </xsl:if>
+      <xsl:if test="preceding-sibling::span[@class='feature'] and not(self::span)">
+        <xsl:choose>
+          <xsl:when test="self::br">
+            </div>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:apply-templates select="."/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:if>
+    </xsl:for-each>
   </xsl:template>
 
   <!-- Template für Rassenmerkmale -->
