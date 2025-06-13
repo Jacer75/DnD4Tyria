@@ -42,7 +42,7 @@
       <span class="trait-label">
         <xsl:value-of select="span[@class='feature']"/>
       </span>
-      <xsl:apply-templates select="text()[1]"/>
+      <xsl:apply-templates select="node()[not(self::span)]"/>
     </div>
   </xsl:template>
 
