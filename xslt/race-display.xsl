@@ -10,22 +10,6 @@
   <type name="Spell" label="Zauber"/>
   </xsl:variable>
 
-<xsl:variable name="currentType" select="$data/elements/element/@type"/>
-<xsl:variable name="breadcrumbLabel" select="$breadcrumbLabels/type[@name=$currentType]/@label"/>
-
-<div class="breadcrumbs">
-  <a href="/DnD4Tyria/de/index.html">🏠 Start</a> &gt;
-  <a>
-    <xsl:attribute name="href">
-      <xsl:text>/DnD4Tyria/de/</xsl:text>
-      <xsl:value-of select="translate($breadcrumbLabel, 'ÄÖÜäöüß ', 'AOUaous_')"/>
-      <xsl:text>/index.html</xsl:text>
-    </xsl:attribute>
-    <xsl:value-of select="$breadcrumbLabel"/>
-  </a> &gt;
-  <span><xsl:value-of select="$racename"/></span>
-</div>
-  
   <!-- Haupttemplate -->
   <xsl:template match="/">
     <xsl:variable name="data" select="document(/root/external/@href)"/>
@@ -41,6 +25,22 @@
       </body>
     </html>
   </xsl:template>
+
+  <xsl:variable name="currentType" select="$data/elements/element/@type"/>
+<xsl:variable name="breadcrumbLabel" select="$breadcrumbLabels/type[@name=$currentType]/@label"/>
+
+<div class="breadcrumbs">
+  <a href="/DnD4Tyria/de/index.html">Start</a> &gt;
+  <a>
+    <xsl:attribute name="href">
+      <xsl:text>/DnD4Tyria/de/</xsl:text>
+      <xsl:value-of select="translate($breadcrumbLabel, 'ÄÖÜäöüß ', 'AOUaous_')"/>
+      <xsl:text>/index.html</xsl:text>
+    </xsl:attribute>
+    <xsl:value-of select="$breadcrumbLabel"/>
+  </a> &gt;
+  <span><xsl:value-of select="$racename"/></span>
+</div>
 
   <!-- Template für das Hauptelement der Rasse -->
   <xsl:template match="element[@type='Race']">
