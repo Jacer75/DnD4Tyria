@@ -19,13 +19,13 @@
             <h4>ASURA-EIGENSCHAFTEN</h4>
             <p>Dein asurischer Charakter besitzt die folgenden Volksmerkmale.</p>
             <p>
-                <span class="feature">Größe (Size).</span>Asura sind kleinwüchsig und zählen als klein (Small).<br/>
-                <span class="feature">Bewegung (Speed).</span>Deine Grundbewegungsrate beträgt 7,5m (25 Fuß).<br/>
-                <span class="feature">Alter (Age).</span>Asura werden etwa 80 bis 100 Jahre alt, sind aber bereits mit 10 Jahren voll ausgebildete Denker.<br/>
-                <span class="feature">Gesinnung (Alignment).</span>Asura neigen zu neutraler oder gesetzestreuer Gesinnung und handeln pragmatisch, zielorientiert und oft überheblich.<br/>
-                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span>Dein Intelligenzwert (Intelligence) steigt um 2, und dein Geschicklichkeitswert (Dexterity) steigt um 1.<br/>
-                <span class="feature">Sprachen (Languages).</span>Du kannst Tyrianisch und Asurisch sprechen, lesen und schreiben.<br/>
-                <span class="feature">Dunkelsicht (Darkvision).</span>Dank deiner Herkunft aus unterirdischen Regionen kannst du im Dunkeln bis zu 18m (60 Fuß) weit sehen.
+                <span class="feature">Größe (Size).</span><span class="feature-description">Asura sind kleinwüchsig und zählen als klein (Small).<br/></span>
+                <span class="feature">Bewegung (Speed).</span><span class="feature-description">Deine Grundbewegungsrate beträgt 7,5m (25 Fuß).<br/></span>
+                <span class="feature">Alter (Age).</span><span class="feature-description">Asura werden etwa 80 bis 100 Jahre alt, sind aber bereits mit 10 Jahren voll ausgebildete Denker.<br/></span>
+                <span class="feature">Gesinnung (Alignment).</span><span class="feature-description">Asura neigen zu neutraler oder gesetzestreuer Gesinnung und handeln pragmatisch, zielorientiert und oft überheblich.<br/></span>
+                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span><span class="feature-description">Dein Intelligenzwert (Intelligence) steigt um 2, und dein Geschicklichkeitswert (Dexterity) steigt um 1.<br/></span>
+                <span class="feature">Sprachen (Languages).</span><span class="feature-description">Du kannst Tyrianisch und Asurisch sprechen, lesen und schreiben.<br/></span>
+                <span class="feature">Dunkelsicht (Darkvision).</span><span class="feature-description">Dank deiner Herkunft aus unterirdischen Regionen kannst du im Dunkeln bis zu 18m (60 Fuß) weit sehen.</span>
             </p>
             <div element="ID_D4T_FEATURE_ASURA_ARCANE_KNOWLEDGE"/>
             <div element="ID_D4T_FEATURE_ASURA_RESONANCE_SURGE"/>
