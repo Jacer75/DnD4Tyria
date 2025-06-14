@@ -112,3 +112,27 @@ footer {
   padding-top: 1em;
   text-align: center;
 }
+
+/* Aufklappbare Details */
+details {
+  margin: 1em 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5em 1em;
+  background-color: #fefefe;
+}
+
+summary {
+  font-weight: bold;
+  color: var(--accent-color);
+  cursor: pointer;
+  padding: 0.2em 0;
+}
+
+details[open] {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+details > div {
+  margin-top: 0.5em;
+}
