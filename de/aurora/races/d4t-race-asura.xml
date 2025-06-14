@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Asura</name>
+        <description>Kleine, hochintelligente Wesen mit einer Vorliebe für Magietechnologie und arkanen Fortschritt.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="0.1.0">
+            <file name="d4t-race-asura.xml" url=""/>
+        </update>
+    </info>
+    <element name="Asura" type="Race" source="DnD4Tyria" id="ID_D4T_RACE_ASURA">
+        <description>
+            <p class="flavor">Kleine Statur, großer Verstand – Meister der arkanen Wissenschaft.</p>
+            <h4>URSPRUNG UND KULTUR</h4>
+            <p>Die Asura stammen aus einem unterirdischen Reich, das sie aufgrund der Invasion der Zerstörer verlassen mussten. An der Oberfläche etablierten sie sich schnell als führende Denker, Erfinder und Magietechnologen. Ihre schwebende Hauptstadt Rata Sum dient als Labor, Universität und Regierungssitz zugleich.</p>
+            <p>Ihre Gesellschaft ist meritokratisch geprägt: Intelligenz, Erfindungsreichtum und wissenschaftlicher Erfolg bestimmen Ansehen und Einfluss. Forschungskreise (Kreise) bilden den sozialen Kern, wobei Konkurrenz eher Regel als Ausnahme ist.</p>
+            <h4>PHILOSOPHIE UND WELTBILD</h4>
+            <p>Asura glauben nicht an Götter. Ihre "spirituelle" Ausrichtung gilt der Ewigen Alchemie, einem metaphysischen Prinzip, das sie als Grundlage allen Seins begreifen. Für sie ist Magie ein Naturphänomen, das sich wissenschaftlich analysieren und technisch nutzen lässt.</p>
+            <h4>ASURA-EIGENSCHAFTEN</h4>
+            <p>Dein asurischer Charakter besitzt die folgenden Volksmerkmale.</p>
+            <p>
+                <span class="feature">Größe (Size).</span>Asura sind kleinwüchsig und zählen als klein (Small).<br/>
+                <span class="feature">Bewegung (Speed).</span>Deine Grundbewegungsrate beträgt 7,5m (25 Fuß).<br/>
+                <span class="feature">Alter (Age).</span>Asura werden etwa 80 bis 100 Jahre alt, sind aber bereits mit 10 Jahren voll ausgebildete Denker.<br/>
+                <span class="feature">Gesinnung (Alignment).</span>Asura neigen zu neutraler oder gesetzestreuer Gesinnung und handeln pragmatisch, zielorientiert und oft überheblich.<br/>
+                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span>Dein Intelligenzwert (Intelligence) steigt um 2, und dein Geschicklichkeitswert (Dexterity) steigt um 1.<br/>
+                <span class="feature">Sprachen (Languages).</span>Du kannst Tyrianisch und Asurisch sprechen, lesen und schreiben.<br/>
+                <span class="feature">Dunkelsicht (Darkvision).</span>Dank deiner Herkunft aus unterirdischen Regionen kannst du im Dunkeln bis zu 18m (60 Fuß) weit sehen.
+            </p>
+            <div element="ID_D4T_FEATURE_ASURA_ARCANE_KNOWLEDGE"/>
+            <div element="ID_D4T_FEATURE_ASURA_RESONANCE_SURGE"/>
+            <div element="ID_D4T_FEATURE_ASURA_TUNNEL_MOBILITY"/>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="names" type="male">Snaff, Yipp, Blipp, Flumm, Doxx, Snikk, Kott, Quott</set>
+            <set name="names" type="female">Zojja, Kinna, Kudu, Sera, Niva, Luma, Reta, Palla</set>
+            <set name="names-format">{{name}}</set>
+            <set name="height" modifier="2d4">3'6"</set>
+            <set name="weight" modifier="1d4">45 lb.</set>
+        </setters>
+        <rules>
+            <stat name="intelligence" value="2"/>
+            <stat name="dexterity" value="1"/>
+            <stat name="innate speed" value="25" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_SMALL"/>
+            <grant type="Language" id="ID_D4T_LANGUAGE_TYRIAN"/>
+            <grant type="Language" id="ID_D4T_LANGUAGE_ASURAN"/>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_ASURA_ARCANE_KNOWLEDGE"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_ASURA_TUNNEL_MOBILITY"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_ASURA_RESONANCE_SURGE"/>
+            <select type="Racial Trait" name="Gesinnung" supports="Race Alignments"/>
+        </rules>
+    </element>
+    <!-- Alignments -->
+    <element name="Rechtschaffen Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du glaubst an Ordnung, Gerechtigkeit und das Wohl der Gemeinschaft. Deine Ideale wurzeln in Disziplin, aber du setzt sie ein, um anderen zu helfen.</description>
+    </element>
+    <element name="Neutral Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du handelst zum Wohle anderer, unabhängig von Gesetzen oder Chaos. Deine Entscheidungen folgen deinem Mitgefühl, nicht einem Kodex.</description>
+    </element>
+    <element name="Chaotisch Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du glaubst an Freiheit, Individualität und das Gute. Autorität hinterfragst du – nicht aus Trotz, sondern weil du dem Herzen folgst.</description>
+    </element>
+    <element name="Rechtschaffen Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du schätzt Ordnung, Struktur und Regeln – ganz gleich, ob sie gut oder schlecht sind. Stabilität und Pflicht stehen für dich an erster Stelle.</description>
+    </element>
+    <element name="Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bewahrst das Gleichgewicht zwischen Extremen. Weder Gut noch Böse, weder Gesetz noch Chaos leiten dich – du entscheidest situativ.</description>
+    </element>
+    <element name="Chaotisch Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bist unabhängig und ungebunden. Vorschriften und Moral interessieren dich wenig – du folgst deiner Laune und deinem inneren Kompass.</description>
+    </element>
+    <element name="Rechtschaffen Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du nutzt Gesetze und Strukturen, um Macht zu gewinnen. Ordnung ist für dich ein Mittel zur Kontrolle – und du kennst keine Gnade.</description>
+    </element>
+    <element name="Neutral Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du verfolgst deine Ziele ohne Rücksicht auf Verluste. Ob andere leiden, ist dir egal – Hauptsache, du bekommst, was du willst.</description>
+    </element>
+    <element name="Chaotisch Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bist unberechenbar, zerstörerisch und ohne Mitleid. Regeln bedeuten dir nichts – du reißt nieder, was dich stört oder reizt.</description>
+    </element>
+    <!-- Rassenmerkmale -->
+    <element name="Auf den Spuren der Ewigen Alchemie" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_ASURA_ARCANE_KNOWLEDGE">
+        <description>
+            <p>Du hast Vorteil auf Intelligenzproben für Arkane Kunde sowie auf Würfe im Umgang mit magischen Werkzeugen oder magischen Apparaturen.</p>
+        </description>
+        <sheet>
+            <description>Vorteil auf Arkane Kunde und Umgang mit magischen Werkzeugen.</description>
+        </sheet>
+    </element>
+    <element name="Raumoptimierter Bewegungskoeffizient" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_ASURA_TUNNEL_MOBILITY">
+        <description>
+            <p>Deine physiologische Architektur erlaubt es dir, dich durch enge Räume zu bewegen, als wärst du eine Nummer kleiner. Wenn du dich durch Lücken oder Passagen bewegst, die normalerweise als schwieriges Gelände gelten würden (z.B. enge Spalten, halbe Türöffnungen, Tunnel), ignorierst du diese Einschränkung – solange du dich nicht aufrichten musst.</p>
+            <p>Außerdem hast du Vorteil auf Akrobatikwürfe, um dich durch enge Stellen zu winden oder Fesseln zu entkommen.</p>
+        </description>
+        <sheet>
+            <description>Ignoriert enge Passagen als schwieriges Gelände. Vorteil auf Akrobatik bei Engstellen oder Fesseln.</description>
+        </sheet>
+    </element>
+    <element name="Resonanzüberladung" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_ASURA_RESONANCE_SURGE">
+        <description>
+            <p>Einmal pro langer Rast kannst du als Bonusaktion deine arkanen Sinne fokussieren. Du erhältst Vorteil auf deinen nächsten Intelligenzwurf oder Zauberangriffswurf, der auf Intelligenz basiert.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Bonus">
+            <description>Vorteil auf einen INT-Wurf oder Zauberangriff.</description>
+        </sheet>
+    </element>
+</elements>

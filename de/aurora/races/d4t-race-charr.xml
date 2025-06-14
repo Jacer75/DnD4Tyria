@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Charr</name>
+        <description>Kriegerisches, katzenartiges Volk mit militärischer Gesellschaftsstruktur und technologischer Affinität.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="0.1.0">
+            <file name="d4t-race-charr.xml" url=""/>
+        </update>
+    </info>
+    <element name="Charr" type="Race" source="DnD4Tyria" id="ID_D4T_RACE_CHARR">
+        <description>
+            <p class="flavor">Die Charr sind ein katzenartiges, kriegerisches Volk mit straffer militärischer Organisation und einem tief verwurzelten Glauben an Technik, Disziplin und Stärke durch Einheit.</p>
+            <h4>VOLK DER LEGIONEN</h4>
+            <p>Die Charr erlangten ihre Freiheit durch Krieg – gegen die Menschen, gegen ihre eigenen Schamanen, und gegen jeden, der sie unterdrücken wollte. Ihre Gesellschaft ist in vier große Legionen gegliedert, jede mit eigener Funktion: die Blutlegion als Frontkämpfer, die Aschelegion als Späher und Saboteure, die Eisenlegion als Techniker und Erfinder, und die versprengte Flammenlegion mit ihren gefährlichen Magiern.</p>
+            <p>Geburt, Familie und Abstammung haben bei den Charr wenig Bedeutung – es zählt der Dienst an der Legion. Ihre Jungen (Sippen genannt) wachsen in Lagern auf, werden gedrillt und getestet, bis sie als vollwertige Legionäre aufgenommen werden.</p>
+            <h4>RAUBKATZEN IN RÜSTUNG</h4>
+            <p>Charr sind kräftig gebaut, mit Hörnern, Reißzähnen und Klauen. Sie bewegen sich oft geduckt auf zwei Beinen, wechseln bei hoher Geschwindigkeit aber auch in einen raubtierhaften Vierfüßlergang. Ihre Körperhaltung wirkt ständig kampfbereit – eine Haltung, die sich auch in ihrer Kultur widerspiegelt.</p>
+            <h4>NAMEN DER CHARR</h4>
+            <p>Charr tragen keine Nachnamen im familiären Sinne – stattdessen wählen oder erhalten sie Beinamen, die an Heldentaten, Funktionen oder physische Merkmale erinnern. Diese Beinamen ersetzen oft den Familiennamen und dienen der individuellen Unterscheidung in den Legionen.</p>
+            <p>
+                <b>Beispiele für männliche Namen:</b> Rytlock, Garok, Varik, Darrin<br/>
+                <b>Beispiele für weibliche Namen:</b> Pyre, Sicaea, Kahedin, Ember<br/>
+                <b>Beinamen:</b> Brimstein, Unheilsänger, Eisenmähne, Kriegheuler, Stahlreißer, Flammenpelz</p>
+            <h4>CHARR-EIGENSCHAFTEN</h4>
+            <p>Dein charrischer Charakter besitzt die folgenden Volksmerkmale.</p>
+            <p>
+                <span class="feature">Größe (Size).</span>Charr sind muskulös und gedrungen gebaut. Trotz ihrer geduckten Haltung zählst du als mittelgroß (Medium).<br/>
+                <span class="feature">Bewegung (Speed).</span>Deine Grundbewegungsrate beträgt 9m (30 Fuß).<br/>
+                <span class="feature">Alter (Age).</span>Charr werden etwa 60–70 Jahre alt. Ihre körperliche Reife erreichen sie bereits im frühen Jugendalter.<br/>
+                <span class="feature">Gesinnung (Alignment).</span>Charr neigen zu pragmatischen, gesetzlich geprägten Ordnungsstrukturen, doch individuelle Ausnahmen sind häufig – besonders bei Veteranen oder Abweichlern.<br/>
+                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span>Dein Geschicklichkeitswert (Dexterity) steigt um 2, und dein Intelligenzwert (Intelligence) steigt um 1.<br/>
+                <span class="feature">Sprachen (Languages).</span>Du kannst Tyrianisch und Charrisch sprechen, lesen und schreiben.
+            </p>
+            <div element="ID_D4T_FEATURE_CHARR_SENSES"/>
+            <div element="ID_D4T_FEATURE_CHARR_CLAWS"/>
+            <div element="ID_D4T_FEATURE_CHARR_POUNCE"/>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="names" type="male">Rytlock, Garok, Varik, Darrin, Kull, Tharn, Brakus, Forn</set>
+            <set name="names" type="female">Pyre, Sicaea, Kahedin, Ember, Rhia, Kasha, Torga</set>
+            <set name="names" type="surname">Brimstein, Unheilsänger, Eisenmähne, Kriegheuler, Stahlreißer, Flammenpelz</set>
+            <set name="names-format">{{name}} {{surname}}</set>
+            <set name="height" modifier="2d10">5'10"</set>
+            <set name="weight" modifier="2d4">180 lb.</set>
+        </setters>
+        <rules>
+            <stat name="dexterity" value="2"/>
+            <stat name="intelligence" value="1"/>
+            <stat name="innate speed" value="30" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <grant type="Language" id="ID_D4T_LANGUAGE_TYRIAN"/>
+            <grant type="Language" id="ID_D4T_LANGUAGE_CHARR"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_CHARR_SENSES"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_CHARR_CLAWS"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_CHARR_POUNCE"/>
+            <select type="Racial Trait" name="Gesinnung" supports="Race Alignments"/>
+        </rules>
+    </element>
+    <!-- Alignments -->
+    <element name="Rechtschaffen Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du glaubst an Ordnung, Gerechtigkeit und das Wohl der Gemeinschaft. Deine Ideale wurzeln in Disziplin, aber du setzt sie ein, um anderen zu helfen.</description>
+    </element>
+    <element name="Neutral Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du handelst zum Wohle anderer, unabhängig von Gesetzen oder Chaos. Deine Entscheidungen folgen deinem Mitgefühl, nicht einem Kodex.</description>
+    </element>
+    <element name="Chaotisch Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du glaubst an Freiheit, Individualität und das Gute. Autorität hinterfragst du – nicht aus Trotz, sondern weil du dem Herzen folgst.</description>
+    </element>
+    <element name="Rechtschaffen Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du schätzt Ordnung, Struktur und Regeln – ganz gleich, ob sie gut oder schlecht sind. Stabilität und Pflicht stehen für dich an erster Stelle.</description>
+    </element>
+    <element name="Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bewahrst das Gleichgewicht zwischen Extremen. Weder Gut noch Böse, weder Gesetz noch Chaos leiten dich – du entscheidest situativ.</description>
+    </element>
+    <element name="Chaotisch Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bist unabhängig und ungebunden. Vorschriften und Moral interessieren dich wenig – du folgst deiner Laune und deinem inneren Kompass.</description>
+    </element>
+    <element name="Rechtschaffen Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du nutzt Gesetze und Strukturen, um Macht zu gewinnen. Ordnung ist für dich ein Mittel zur Kontrolle – und du kennst keine Gnade.</description>
+    </element>
+    <element name="Neutral Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du verfolgst deine Ziele ohne Rücksicht auf Verluste. Ob andere leiden, ist dir egal – Hauptsache, du bekommst, was du willst.</description>
+    </element>
+    <element name="Chaotisch Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bist unberechenbar, zerstörerisch und ohne Mitleid. Regeln bedeuten dir nichts – du reißt nieder, was dich stört oder reizt.</description>
+    </element>
+    <!-- Rassenmerkmale -->
+    <element name="Erweiterte Sinne" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_CHARR_SENSES">
+        <description>
+            <p>Dank ihrer doppelten Ohrenstruktur nehmen Charr besonders hohe und besonders tiefe Geräusche wahr – ein evolutionärer Vorteil aus der Zeit ihrer Wildheit. Du hast Vorteil auf alle Weisheitswürfe (Wahrnehmung), die auf Hören basieren.</p>
+        </description>
+        <sheet>
+            <description>Vorteil auf Weisheitswürfe (Wahrnehmung), die auf Hören basieren.</description>
+        </sheet>
+    </element>
+    <element name="Charr-Klauen" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_CHARR_CLAWS">
+        <description>
+            <p>Deine scharfen Klauen sind natürliche Waffen, mit denen du unbewaffnete Angriffe ausführen kannst. Diese Angriffe verursachen 1W4 Hiebschaden. Du zählst als bewaffnet, wenn du deine Klauen einsetzt.</p>
+        </description>
+        <sheet>
+            <description>Unbewaffneter Angriff mit 1W4 Hiebschaden. Du zählst als bewaffnet, wenn du deine Klauen nutzt.</description>
+        </sheet>
+    </element>
+    <element name="Raubtierhafte Bewegung" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_CHARR_POUNCE">
+        <description>
+            <p>Einmal pro langer Rast kannst du dich in einem Zug besonders schnell und effizient bewegen. Deine Bewegungsrate erhöht sich bis zum Ende deines Zuges um 6m (20 Fuß), und du kannst dich in diesem Zug durch schwieriges Gelände bewegen, ohne zusätzliche Bewegungskosten zu zahlen.</p>
+            <p>Du musst diese Fähigkeit vor der Bewegung einsetzen. Sie symbolisiert deinen fließenden, raubkatzenartigen Bewegungsstil.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Free">
+            <description>Einmal pro langer Rast: +6m Bewegung, ignoriert schwieriges Gelände für diesen Zug.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Norn</name>
+        <description>Großgewachsene Jäger, Krieger und Sagenerzähler aus den eisigen Bergen Tyrias.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="0.1.0">
+            <file name="d4t-race-norn.xml" url=""/>
+        </update>
+    </info>
+    <element name="Norn" type="Race" source="DnD4Tyria" id="ID_D4T_RACE_NORN">
+        <description>
+            <p class="flavor">Die Norn sind riesenhafte, stolze Krieger und Jäger aus dem Norden Tyrias. Sie leben für Ruhm, erzählen ihre Taten am Feuer – und suchen ständig nach der nächsten Herausforderung.</p>
+            <h4>HERKUNFT UND GESELLSCHAFT</h4>
+            <p>Die Norn stammen aus den nördlichen Zittergipfeln, wo sie jahrhundertelang als Jäger und Krieger lebten. Doch als der Alt-Drache Jormag erwachte, konnten sie dem Eis nicht standhalten. Viele fielen in der Schlacht, ehe die Geister der Wildnis – Bärin, Schneeleopardin, Wolf und Rabe – das überlebende Volk nach Süden führten. In den verlassenen Hallen der Zwerge gründeten sie Hoelbrak, eine offene Stadt aus Hallen, Feuern und Geschichten.</p>
+            <p>Die Kultur der Norn kennt keine Herrscher. Wer führen will, muss es sich verdienen – durch Stärke, Mut und Taten, die es wert sind, erzählt zu werden. Sie streben danach, als Helden zu sterben, nicht vergessen zu werden. Ihre größte Angst ist nicht der Tod – sondern Bedeutungslosigkeit. Jeder Norn schreibt seine eigene Saga, und jede Saga beginnt mit einem Ziel: eine Herausforderung, so groß, dass sie ein Lied verdient.</p>
+            <p>Sie trinken gern, kämpfen schnell, lachen laut – und versöhnen sich ebenso rasch. Alkohol ist ein selbstverständlicher Teil ihrer Feste, ebenso wie das Kräftemessen in Schlägereien oder Wettkämpfen. Die Wildnis ist ihr Prüfstein, ihre Lehrer sind die Geister der Tiere. Ihre Religion ist kein Gehorsam, sondern eine tiefe Verbindung: Wer dem Geist eines Tieres folgt, nimmt sich dessen Tugenden zu Herzen – sei es Mut, List, Weisheit oder Stärke.</p>
+            <h4>NORN-EIGENSCHAFTEN</h4>
+            <p>Als Norn besitzt du folgende Volksmerkmale.</p>
+            <p>
+                <span class="feature">Größe (Size).</span>Du bist ein mittelgroßer Humanoid, aber deutlich größer als die meisten anderen Völker. Viele Norn erreichen eine Körpergröße von über 2,40m.<br/>
+                <span class="feature">Bewegung (Speed).</span>Deine Grundbewegungsrate beträgt 9m (30Fuß).<br/>
+                <span class="feature">Alter (Age).</span>Norn werden selten älter als 100 Jahre, gelten aber mit etwa 16 als erwachsen.<br/>
+                <span class="feature">Gesinnung (Alignment).</span>Norn schätzen Freiheit, Mut und Tatendrang. Sie neigen zu neutralen oder chaotischen Gesinnungen.<br/>
+                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span>Dein Stärkewert (Strength) steigt um 2, und dein Konstitutionswert (Constitution) steigt um 1.<br/>
+                <span class="feature">Sprachen (Languages).</span>Du kannst Tyrianisch und Nornisch sprechen, lesen und schreiben.
+            </p>
+            <div element="ID_D4T_FEATURE_NORN_HARDENED"/>
+            <div element="ID_D4T_FEATURE_NORN_COLDRESISTANCE"/>
+            <div element="ID_D4T_FEATURE_NORN_CHALLENGER"/>
+            <div element="ID_D4T_FEATURE_NORN_SPIRIT_SELECTION"/>
+        </description>
+        <sheet display="false"/>
+        <setters>
+            <set name="names" type="male">Bjorn, Eirik, Haakon, Tor</set>
+            <set name="names" type="female">Astrid, Freja, Sigrun, Ylva</set>
+            <set name="names" type="surname">Eisfaust, Wolfsherz, Bärenklaue, Nebelrufer</set>
+            <set name="names-format">{{name}} {{surname}}</set>
+            <set name="height" modifier="2d10">6'6"</set>
+            <set name="weight" modifier="2d6">250 lb.</set>
+        </setters>
+        <rules>
+            <stat name="strength" value="2"/>
+            <stat name="constitution" value="1"/>
+            <stat name="innate speed" value="30" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <grant type="Language" id="ID_D4T_LANGUAGE_TYRIAN"/>
+            <grant type="Language" id="ID_D4T_LANGUAGE_NORN"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_NORN_COLDRESISTANCE"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_NORN_HARDENED"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_NORN_CHALLENGER"/>
+            <select type="Racial Trait" name="Gesinnung" supports="Race Alignments"/>
+            <select type="Racial Trait" name="Tiergeist" supports="Tiergeister"/>
+        </rules>
+    </element>
+    <!-- Alignments -->
+    <element name="Rechtschaffen Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du glaubst an Ordnung, Gerechtigkeit und das Wohl der Gemeinschaft. Deine Ideale wurzeln in Disziplin, aber du setzt sie ein, um anderen zu helfen.</description>
+    </element>
+    <element name="Neutral Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du handelst zum Wohle anderer, unabhängig von Gesetzen oder Chaos. Deine Entscheidungen folgen deinem Mitgefühl, nicht einem Kodex.</description>
+    </element>
+    <element name="Chaotisch Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du glaubst an Freiheit, Individualität und das Gute. Autorität hinterfragst du – nicht aus Trotz, sondern weil du dem Herzen folgst.</description>
+    </element>
+    <element name="Rechtschaffen Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du schätzt Ordnung, Struktur und Regeln – ganz gleich, ob sie gut oder schlecht sind. Stabilität und Pflicht stehen für dich an erster Stelle.</description>
+    </element>
+    <element name="Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bewahrst das Gleichgewicht zwischen Extremen. Weder Gut noch Böse, weder Gesetz noch Chaos leiten dich – du entscheidest situativ.</description>
+    </element>
+    <element name="Chaotisch Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bist unabhängig und ungebunden. Vorschriften und Moral interessieren dich wenig – du folgst deiner Laune und deinem inneren Kompass.</description>
+    </element>
+    <element name="Rechtschaffen Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du nutzt Gesetze und Strukturen, um Macht zu gewinnen. Ordnung ist für dich ein Mittel zur Kontrolle – und du kennst keine Gnade.</description>
+    </element>
+    <element name="Neutral Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du verfolgst deine Ziele ohne Rücksicht auf Verluste. Ob andere leiden, ist dir egal – Hauptsache, du bekommst, was du willst.</description>
+    </element>
+    <element name="Chaotisch Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bist unberechenbar, zerstörerisch und ohne Mitleid. Regeln bedeuten dir nichts – du reißt nieder, was dich stört oder reizt.</description>
+    </element>
+    <!-- Tiergeister -->
+    <element name="Verbindung mit einem Tiergeist" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_NORN_SPIRIT_SELECTION">
+        <description>
+            <p>Schon bei deiner Geburt war ein Tiergeist an deiner Seite. Die Geister der Wildnis – Bärin, Schneeleopardin, Wolf und Rabe – wachen über die Norn und verkörpern unterschiedliche Tugenden wie Stärke, List, Kameradschaft und Weisheit. Jeder Norn fühlt sich instinktiv einem dieser Geister näher als den anderen.</p>
+            <p>Bei der Charaktererschaffung wählst du einen dieser Geister. Du kannst später nicht zu einem anderen wechseln, außer mit ausdrücklicher Zustimmung der Spielleitung. Die Wahl deines Tiergeistes bestimmt das Merkmal <i>Gestalt des Geistes</i>, das du im Kampf oder in gefährlichen Situationen einsetzen kannst.</p>
+        </description>
+        <sheet display="false"/>
+        <!--<rules>
+        <select type="Racial Trait" name="Tiergeist" supports="Tiergeister"/>
+      </rules>-->
+    </element>
+    <element name="Bär" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_NORN_WILDFORM_BEAR">
+        <supports>Tiergeister</supports>
+        <description>
+            <p>Einmal pro langer Rast kannst du als Bonusaktion deine Verbindung zur Bärin aktivieren. Für 1 Minute hast du Vorteil auf Stärkewürfe und auf Angriffswürfe, die Stärke verwenden.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Bonus">
+            <description>1 Minute: Vorteil auf Stärkewürfe und Angriffe mit Stärke.</description>
+        </sheet>
+    </element>
+    <element name="Schneeleopard" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_NORN_WILDFORM_LEOPARD">
+        <supports>Tiergeister</supports>
+        <description>
+            <p>Einmal pro langer Rast kannst du als Bonusaktion deine Verbindung zur Schneeleopardin aktivieren. Für 1 Minute hast du Vorteil auf Heimlichkeitswürfe und kannst dich aus Bedrängnis lösen, ohne Gelegenheitsangriffe auszulösen.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Bonus">
+            <description>1 Minute: Vorteil auf Heimlichkeit, kein OA bei Rückzug.</description>
+        </sheet>
+    </element>
+    <element name="Wolf" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_NORN_WILDFORM_WOLF">
+        <supports>Tiergeister</supports>
+        <description>
+            <p>Einmal pro langer Rast kannst du als Bonusaktion deine Verbindung zum Wolf aktivieren. Für 1 Minute hast du Vorteil auf Angriffswürfe gegen Kreaturen, gegen die ein Verbündeter in Reichweite kämpft.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Bonus">
+            <description>1 Minute: Vorteil auf Angriffe gegen Ziele in Nahkampf mit Verbündetem.</description>
+        </sheet>
+    </element>
+    <element name="Rabe" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_NORN_WILDFORM_RAVEN">
+        <supports>Tiergeister</supports>
+        <description>
+            <p>Einmal pro langer Rast kannst du als Bonusaktion deine Verbindung zum Raben aktivieren. Für 1 Minute hast du Vorteil auf Weisheitswürfe (Wahrnehmung und Einsicht).</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Bonus">
+            <description>1 Minute: Vorteil auf Wahrnehmung und Einsicht.</description>
+        </sheet>
+    </element>
+    <!-- Rassenmerkmale -->
+    <element name="Kälteresistenz" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_NORN_COLDRESISTANCE">
+        <description>
+            <p>Du bist resistent gegen Kälteschaden und bewegst dich problemlos durch Schnee und vereistes Gelände. Du ignorierst schwieriges Gelände, das durch Eis oder Schnee verursacht wird.</p>
+        </description>
+        <sheet>
+            <description>Resistent gegen Kälteschaden. Ignoriert schwieriges Gelände durch Schnee und Eis.</description>
+        </sheet>
+    </element>
+    <element name="Sturmerprobt" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_NORN_HARDENED">
+        <description>
+            <p>Du hast dich an raue Umwelteinflüsse gewöhnt. Du hast Vorteil auf Konstitutionswürfe gegen Erschöpfung durch Kälte, Wind, Höhe oder andere Umweltbedingungen.</p>
+        </description>
+        <sheet>
+            <description>Vorteil auf Konstitutionswürfe gegen Erschöpfung durch raue Umweltbedingungen.</description>
+        </sheet>
+    </element>
+    <element name="Geborener Herausforderer" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_NORN_CHALLENGER">
+        <description>
+            <p>Du bist mit einem ausgeprägten Sinn für Herausforderung aufgewachsen. Du hast Vorteil auf alle Würfe für die Fertigkeit Einschüchtern.</p>
+        </description>
+        <sheet>
+            <description>Vorteil auf Einschüchtern.</description>
+        </sheet>
+    </element>
+</elements>
