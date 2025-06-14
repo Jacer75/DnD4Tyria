@@ -4,12 +4,6 @@
 
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
-  <xsl:variable name="breadcrumbLabels">
-  <type name="Race" label="Rassen" path="races"/>
-  <type name="Class" label="Klassen" path="classes"/>
-  <type name="Spell" label="Zauber" path="spells"/>
-  </xsl:variable>
-
   <!-- Haupttemplate -->
   <xsl:template match="/">
     <xsl:variable name="data" select="document(/root/external/@href)"/>
