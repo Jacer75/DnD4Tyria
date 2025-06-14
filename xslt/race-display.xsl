@@ -20,6 +20,22 @@
         <link rel="stylesheet" type="text/css" href="../../css/style.css" />
       </head>
       <body>
+  <xsl:variable name="currentType" select="$data/elements/element/@type"/>
+<xsl:variable name="breadcrumbLabel" select="$breadcrumbLabels/type[@name=$currentType]/@label"/>
+
+<div class="breadcrumbs">
+  <a href="/DnD4Tyria/de/index.html">Start</a> &gt;
+  <a>
+    <xsl:attribute name="href">
+      <xsl:text>/DnD4Tyria/de/</xsl:text>
+      <xsl:value-of select="translate($breadcrumbLabel, 'ÄÖÜäöüß ', 'AOUaous_')"/>
+      <xsl:text>/index.html</xsl:text>
+    </xsl:attribute>
+    <xsl:value-of select="$breadcrumbLabel"/>
+  </a> &gt;
+  <span><xsl:value-of select="$racename"/></span>
+</div>
+
         <xsl:apply-templates select="$data/elements/element[@type='Race']"/>
         <xsl:apply-templates select="$data/elements/element[@type='Racial Trait'][not(supports='Race Alignments')]"/>
       </body>
