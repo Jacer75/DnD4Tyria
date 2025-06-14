@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Sylvari</name>
+        <description>Pflanzenhafte Reisende in der Welt von Tyria, neugierig, hellwach und verbunden mit dem Traum.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="0.3.0">
+            <file name="d4t-race-sylvari.xml" url=""/>
+        </update>
+    </info>
+    <element name="Sylvari" type="Race" source="DnD4Tyria" id="ID_D4T_RACE_SYLVARI">
+        <description>
+            <p class="flavor">Sylvari sind pflanzenhafte Humanoide, die aus dem Blassen Baum hervorgehen. Sie sind junge, wissbegierige Wesen, die die Welt mit frischen Augen betrachten. Der "Traum der Träume" verbindet sie miteinander und gibt ihnen ein Gefühl kollektiver Intuition.</p>
+            <h4>HERKUNFT UND GESCHICHTE</h4>
+            <p>Die Sylvari sind ein junges Volk in Tyria – das erste von ihnen erwachte im Jahr 1302 n.E. aus dem Blassen Baum, einem rätselhaften Geschöpf, das aus einem Samen des Zentaurenphilosophen Ventari und des ehemaligen Drachendieners Ronan hervorging. Der Blasse Baum wurde auf Ventaris Lehren hin geformt, und nach Jahrzehnten des Wachstums begannen die ersten Sylvari, vollständig entwickelt aus Kokons zu erwachen.</p>
+            <p>Sie haben keine Kindheit im herkömmlichen Sinn. Stattdessen werden sie als Erwachsene geboren, ausgestattet mit Eindrücken und Erinnerungsfragmenten aus dem „Traum der Träume“ – einem kollektiven Bewusstsein, das allen Sylvari vor ihrer Geburt zugänglich ist. Dieses Band verleiht ihnen ein gewisses Maß an Intuition, Moral und innerer Stimme – doch nicht alle folgen diesem inneren Kompass.</p>
+            <h4>ERSCHAFFENE STATT GEBORENE</h4>
+            <p>Im Gegensatz zu anderen Völkern haben die Sylvari keine Ahnenreiche, keine jahrhundertealten Traditionen oder Dynastien. Ihre Gesellschaft entwickelt sich erst noch. Viele von ihnen schließen sich den Orden Tyrias an oder reisen durch die Welt, um ihren Platz zu finden. Manche werden von Abweichlern – dem sogenannten Albtraumhof – verführt. Der Albtraumhof versucht, das kollektive Bewusstsein zu verzerren und nährt Hass, Misstrauen und Gewalt. Er bekämpft die Ventari-Lehren und strebt nach Chaos und Umsturz.</p>
+            <h4>SYLVARI-NAMEN</h4>
+            <p>Sylvari wählen oft elegante, naturinspirierte Namen. Da sie nicht durch Familien geprägt sind, gibt es keine Nachnamen.</p>
+            <p>
+                <b>Beispiele: </b>Kaith, Aife, Lioran, Malomedies, Niamh, Trahearne, Faolain, Wynne</p>
+            <h4>SYLVARI-EIGENSCHAFTEN</h4>
+            <p>Als Sylvari besitzt du folgende Volksmerkmale.</p>
+            <p>
+                <span class="feature">Größe (Size).</span><span class="feature-description">Deine Größe ist Mittelgroß (Medium).<br/></span>
+                <span class="feature">Bewegung (Speed).</span><span class="feature-description">Deine Grundbewegungsrate beträgt 9m (30 Fuß).<br/></span>
+                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span><span class="feature-description">Dein Weisheitswert (Wisdom) steigt um 2, und dein Geschicklichkeitswert (Dexterity) steigt um 1.<br/></span>
+                <span class="feature">Sprachen (Languages).</span><span class="feature-description">Du kannst Gemeinsprache (Common) sprechen, lesen und schreiben.</span>
+      </p>
+            <div element="ID_D4T_FEATURE_SYLVARI_DREAM_INSTINCT"/>
+            <div element="ID_D4T_FEATURE_SYLVARI_PHOTOSYNTHESIS"/>
+            <div element="ID_D4T_FEATURE_SYLVARI_BIOLUMINESCENCE"/>
+        </description>
+        <setters>
+            <set name="names" type="male">Trahearne, Lioran, Malomedies, Caithe, Aife, Kaith</set>
+            <set name="names" type="female">Niamh, Wynne, Faolain, Kaith, Aife</set>
+            <set name="height" modifier="2d6">5'4"</set>
+            <set name="weight" modifier="1d6">110 lb.</set>
+        </setters>
+        <rules>
+            <stat name="wisdom" value="2"/>
+            <stat name="dexterity" value="1"/>
+            <stat name="innate speed" value="30" bonus="base"/>
+            <grant type="Size" id="ID_SIZE_MEDIUM"/>
+            <grant type="Language" id="ID_D4T_LANGUAGE_TYRIAN"/>
+            <grant type="Language" id="ID_D4T_LANGUAGE_ASURAN"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_SYLVARI_DREAM_INSTINCT"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_SYLVARI_PHOTOSYNTHESIS"/>
+            <grant type="Racial Trait" id="ID_D4T_FEATURE_SYLVARI_BIOLUMINESCENCE"/>
+            <select type="Racial Trait" name="Gesinnung" supports="Race Alignments"/>
+        </rules>
+    </element>
+    <!-- Alignments -->
+    <element name="Rechtschaffen Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du glaubst an Ordnung, Gerechtigkeit und das Wohl der Gemeinschaft. Deine Ideale wurzeln in Disziplin, aber du setzt sie ein, um anderen zu helfen.</description>
+    </element>
+    <element name="Neutral Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du handelst zum Wohle anderer, unabhängig von Gesetzen oder Chaos. Deine Entscheidungen folgen deinem Mitgefühl, nicht einem Kodex.</description>
+    </element>
+    <element name="Chaotisch Gut" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_GOOD">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_GOOD"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du glaubst an Freiheit, Individualität und das Gute. Autorität hinterfragst du – nicht aus Trotz, sondern weil du dem Herzen folgst.</description>
+    </element>
+    <element name="Rechtschaffen Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du schätzt Ordnung, Struktur und Regeln – ganz gleich, ob sie gut oder schlecht sind. Stabilität und Pflicht stehen für dich an erster Stelle.</description>
+    </element>
+    <element name="Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bewahrst das Gleichgewicht zwischen Extremen. Weder Gut noch Böse, weder Gesetz noch Chaos leiten dich – du entscheidest situativ.</description>
+    </element>
+    <element name="Chaotisch Neutral" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_NEUTRAL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_NEUTRAL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bist unabhängig und ungebunden. Vorschriften und Moral interessieren dich wenig – du folgst deiner Laune und deinem inneren Kompass.</description>
+    </element>
+    <element name="Rechtschaffen Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_LAWFUL_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_LAWFUL_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du nutzt Gesetze und Strukturen, um Macht zu gewinnen. Ordnung ist für dich ein Mittel zur Kontrolle – und du kennst keine Gnade.</description>
+    </element>
+    <element name="Neutral Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_TRUE_NEUTRAL_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_NEUTRAL_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du verfolgst deine Ziele ohne Rücksicht auf Verluste. Ob andere leiden, ist dir egal – Hauptsache, du bekommst, was du willst.</description>
+    </element>
+    <element name="Chaotisch Böse" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_ALIGNMENT_CHAOTIC_EVIL">
+        <supports>Race Alignments</supports>
+        <rules>
+            <grant type="Alignment" id="ID_ALIGNMENT_CHAOTIC_EVIL"/>
+        </rules>
+        <sheet display="false"/>
+        <description>Du bist unberechenbar, zerstörerisch und ohne Mitleid. Regeln bedeuten dir nichts – du reißt nieder, was dich stört oder reizt.</description>
+    </element>
+    <!-- Rassenmerkmale -->
+    <element name="Trauminstinkt" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_SYLVARI_DREAM_INSTINCT">
+        <description>
+            <p>Einmal pro langer Rast kannst du als Reaktion auf einen misslungenen Wurf für <i>Weisheit</i>, <i>Intelligenz</i> oder eine Fertigkeit mit diesen Attributen, den Wurf wiederholen. Du musst das neue Ergebnis behalten.</p>
+            <p>Dieses instinktive Aufblitzen von Wissen stammt aus dem Traum der Träume – es fühlt sich an wie eine Erinnerung, die du nie selbst erlebt hast.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Reaction">
+            <description>Einmal pro langer Rast kannst du als Reaktion einen fehlgeschlagenen Weisheits-, Intelligenz- oder entsprechenden Fertigkeitswurf wiederholen. Du musst das neue Ergebnis behalten.</description>
+        </sheet>
+    </element>
+    <element name="Photosynthese" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_SYLVARI_PHOTOSYNTHESIS">
+        <description>
+            <p>Wenn du während einer kurzen Rast mindestens 30 Minuten direktem Sonnenlicht ausgesetzt bist, erhältst du zusätzlich zu den normalen Vorteilen der Rast 1W6 temporäre Trefferpunkte.</p>
+        </description>
+        <sheet>
+            <description>Erhalte 1W6 temporäre Trefferpunkte, wenn du 30+ Minuten in direktem Sonnenlicht rastest.</description>
+        </sheet>
+    </element>
+    <element name="Biolumineszenz" type="Racial Trait" source="DnD4Tyria" id="ID_D4T_FEATURE_SYLVARI_BIOLUMINESCENCE">
+        <description>
+            <p>Einmal pro langer Rast kannst du als Bonusaktion beginnen, ein sanftes, natürliches Licht abzustrahlen. Dieses Leuchten hält 1 Minute lang an, erzeugt helles Licht in einem Radius von 6m und dämmriges Licht in einem Radius von weiteren 6m.</p>
+            <p>Während dieser Zeit haben Kreaturen, die sich in deinem Lichtbereich befinden, Nachteil auf Heimlichkeitswürfe gegen dich. Dein Leuchten kann vorzeitig als freie Aktion beendet werden.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Bonus">
+            <description>1 Minute lang leuchtest du (6m hell, 12m dämmrig). Gegner im Licht haben Nachteil auf Heimlichkeit gegen dich.</description>
+        </sheet>
+    </element>
+</elements>
