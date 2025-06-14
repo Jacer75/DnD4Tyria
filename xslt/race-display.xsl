@@ -11,7 +11,7 @@
     <html>
       <head>
         <title><xsl:value-of select="$racename"/> - DnD4Tyria</title>
-        <link rel="stylesheet" type="text/css" href="../css/style.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/style.css" />
       </head>
       <body>
         <xsl:apply-templates select="$data/elements/element[@type='Race']"/>
