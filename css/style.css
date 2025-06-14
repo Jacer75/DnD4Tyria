@@ -136,3 +136,19 @@ details[open] {
 details > div {
   margin-top: 0.5em;
 }
+
+.breadcrumbs {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+.breadcrumbs a {
+  color: #2a5;
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+.breadcrumbs span {
+  font-weight: bold;
+}
