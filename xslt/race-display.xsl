@@ -43,10 +43,10 @@
 <!-- Template für Rassen-Eigenschaftszeilen als Tabelle -->
 <xsl:template match="p[span[@class='feature']]">
   <table class="traits">
-    <tr>
+    <!--<tr>
       <th>Merkmal</th>
       <th>Beschreibung</th>
-    </tr>
+    </tr>-->
     <xsl:for-each select="span[@class='feature']">
       <tr>
         <td>
