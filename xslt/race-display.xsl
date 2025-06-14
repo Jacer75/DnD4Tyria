@@ -11,14 +11,7 @@
     <html>
       <head>
         <title><xsl:value-of select="$racename"/> - DnD4Tyria</title>
-        <style>
-          body { font-family: sans-serif; max-width: 800px; margin: auto; line-height: 1.6; padding: 2rem; }
-          h1 { color: #2a5; }
-          h2 { margin-top: 2rem; }
-          .traits { margin-top: 1em; }
-          .trait { margin-bottom: 0.5em; }
-          .trait-label { font-weight: bold; display: inline-block; width: 220px; }
-        </style>
+        <link rel="stylesheet" type="text/css" href="../css/style.css" />
       </head>
       <body>
         <xsl:apply-templates select="$data/elements/element[@type='Race']"/>
