@@ -23,8 +23,6 @@
         <link rel="stylesheet" type="text/css" href="../../css/style.css" />
       </head>
       <body>
-  <xsl:variable name="currentType" select="$data/elements/element/@type"/>
-<xsl:variable name="breadcrumbLabel" select="$breadcrumbLabels/type[@name=$currentType]/@label"/>
 
 <div class="breadcrumbs">
   <a href="/DnD4Tyria/de/index.html">Start</a> &gt;
