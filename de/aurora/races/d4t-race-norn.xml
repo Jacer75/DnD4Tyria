@@ -18,12 +18,12 @@
             <h4>NORN-EIGENSCHAFTEN</h4>
             <p>Als Norn besitzt du folgende Volksmerkmale.</p>
             <p>
-                <span class="feature">Größe (Size).</span>Du bist ein mittelgroßer Humanoid, aber deutlich größer als die meisten anderen Völker. Viele Norn erreichen eine Körpergröße von über 2,40m.<br/>
-                <span class="feature">Bewegung (Speed).</span>Deine Grundbewegungsrate beträgt 9m (30Fuß).<br/>
-                <span class="feature">Alter (Age).</span>Norn werden selten älter als 100 Jahre, gelten aber mit etwa 16 als erwachsen.<br/>
-                <span class="feature">Gesinnung (Alignment).</span>Norn schätzen Freiheit, Mut und Tatendrang. Sie neigen zu neutralen oder chaotischen Gesinnungen.<br/>
-                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span>Dein Stärkewert (Strength) steigt um 2, und dein Konstitutionswert (Constitution) steigt um 1.<br/>
-                <span class="feature">Sprachen (Languages).</span>Du kannst Tyrianisch und Nornisch sprechen, lesen und schreiben.
+                <span class="feature">Größe (Size).</span><span class="feature-description">Du bist ein mittelgroßer Humanoid, aber deutlich größer als die meisten anderen Völker. Viele Norn erreichen eine Körpergröße von über 2,40m.<br/></span>
+                <span class="feature">Bewegung (Speed).</span><span class="feature-description">Deine Grundbewegungsrate beträgt 9m (30Fuß).<br/></span>
+                <span class="feature">Alter (Age).</span><span class="feature-description">Norn werden selten älter als 100 Jahre, gelten aber mit etwa 16 als erwachsen.<br/></span>
+                <span class="feature">Gesinnung (Alignment).</span><span class="feature-description">Norn schätzen Freiheit, Mut und Tatendrang. Sie neigen zu neutralen oder chaotischen Gesinnungen.<br/></span>
+                <span class="feature">Attributswerterhöhung (Ability Score Increase).</span><span class="feature-description">Dein Stärkewert (Strength) steigt um 2, und dein Konstitutionswert (Constitution) steigt um 1.<br/></span>
+                <span class="feature">Sprachen (Languages).</span><span class="feature-description">Du kannst Tyrianisch und Nornisch sprechen, lesen und schreiben.</span>
             </p>
             <div element="ID_D4T_FEATURE_NORN_HARDENED"/>
             <div element="ID_D4T_FEATURE_NORN_COLDRESISTANCE"/>
