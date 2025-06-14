@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Krieger (Fighter)</name>
+        <author url="">Aurora4Tyria</author>
+        <update version="0.4.1">
+            <file name="d4t-class-fighter.xml" url=""/>
+        </update>
+    </info>
+    <element name="Krieger" type="Class" source="DnD4Tyria" id="ID_D4T_CLASS_FIGHTER">
+        <description>
+            <p>Eine junge Soldatin aus Kryta trägt glänzende Plattenrüstung und hebt entschlossen ihren Schild, während sie auf ein Rudel Grawle zustürmt, das eine Karawane überfallen hat. Neben ihr feuert ein wuchtiger Norn mit wilder Entschlossenheit Pfeile aus einem schweren Langbogen. Auf der anderen Seite brüllt ein Veteran der Löwengarde Kommandos, um den Angriff taktisch zu koordinieren.</p>
+            <p class="indent">Ein Charr-Krieger im Schuppenpanzer wirft sich mit erhobenem Schild zwischen einen Oger und eine verletzte Händlerin, die hinter ihm kauert. In fließenden Bewegungen tanzt eine Sylvari-Klingentänzerin um das Ungetüm, ihre beiden Klingen wirbeln durch die Luft, während sie die Verteidigungslücken des Gegners sucht.</p>
+            <p class="indent">In einer staubigen Arena in den wilden Landen der Brisban-Wildnis tritt ein Gladiator unter dem Johlen der Menge an – ein Meister des Dreizacks, geübt darin, Gegner zu Fall zu bringen und in Szene zu setzen. Doch seine Gegnerin, eine kleine Asura, entfesselt im selben Moment einen Blitz aus ihrer magischen Klinge.</p>
+            <p class="indent">All diese Krieger mögen verschiedenen Völkern und Kulturen entstammen – doch was sie eint, ist ihre Meisterschaft in Waffen und Rüstung. Vom Bannerträger auf dem Schlachtfeld bis zum Banditenhauptmann in den Hinterlanden, vom königlichen Champion bis zum wandernden Söldner – Krieger sind in ganz Tyria gefürchtet. Sie kennen den Tod – als Werkzeug wie als ständigen Begleiter.</p>
+            <h4>VIELSEITIGE KAMPFSPEZIALISTEN</h4>
+            <p>Krieger erlernen die Grundlagen aller Kampfkunst. Jeder Krieger kann eine Axt schwingen, mit einem Rapier fechten, ein Langschwert oder Großschwert führen, mit dem Bogen umgehen und sogar ein Netz einsetzen, um Feinde zu fangen. Ebenso sind sie vertraut mit jedem Schild und jeder Form von Rüstung. Doch über diese Grundlagen hinaus spezialisiert sich jeder Krieger auf einen bestimmten Stil. Manche perfektionieren den Fernkampf, andere den Kampf mit zwei Waffen oder kombinieren ihre Kampfkraft mit arkaner Magie. Diese Mischung aus breitem Können und tiefer Spezialisierung macht Krieger zu gefürchteten Gegnern – in Schlachten ebenso wie in uralten Gewölben.</p>
+            <h4>GEBOREN FÜR GEFAHR</h4>
+            <p>Nicht jedes Mitglied der Stadtwache, der Miliz eines Dorfes oder der Armee der Königin ist ein Krieger. Die meisten Soldaten sind schlecht ausgebildet und verfügen nur über grundlegende Kampferfahrung. Erst Veteranen, Offiziere, Leibwächter, Ehrengardisten oder ausgebildete Ritter verdienen den Namen „Krieger“.</p>
+            <p class="indent">Manche Krieger fühlen sich dazu berufen, ihre Fähigkeiten auf Abenteuer auszurichten. Alte Ruinen erkunden, Monster jagen, uralte Bedrohungen bannen – das alles ist für einen Krieger nichts Ungewöhnliches. Die Risiken mögen höher sein als in der Stadtwache, doch die Belohnungen sind es ebenso. Nur wenige Soldaten in Götterfels finden zwischen den Pflastersteinen eine Flammenzungenklinge.</p>
+            <h4>KRIEGER ERSTELLEN</h4>
+            <p>Wenn du deinen Krieger erstellst, überlege dir zwei eng miteinander verknüpfte Aspekte seiner Vergangenheit: Wo hast du den Umgang mit Waffen und Rüstung gelernt – und was unterscheidet dich von gewöhnlichen Soldaten? Warst du besonders rücksichtslos? Hattest du einen Mentor, der dich gefördert hat, weil er in dir mehr sah als nur einen Fußsoldaten? Oder trieb dich ein tiefes Bedürfnis zur Waffe – der Schutz deiner Heimat, der Wunsch nach Rache, oder das Streben nach Anerkennung?</p>
+            <p class="indent">Vielleicht wurdest du formell ausgebildet – im Fahrar der Blutlegion, oder bei den Seraphen, wo du Taktiken, Strategie und Geschichte studiert hast. Oder du hast dir alles selbst beigebracht – ungeschliffen, aber kampferprobt. Vielleicht war das Schwert deine Flucht aus einem Leben in Armut oder auf dem Feld, oder du folgst einer stolzen Familientradition. Woher stammen deine Waffen und Rüstung? Vielleicht stammen sie aus Armeebeständen, sind ein Erbstück oder wurden durch jahrelanges Sparen erworben. Heute sind sie dein größter Schatz – und das Einzige, was zwischen dir und dem Tod steht.</p>
+            <h5>SCHNELLBAU</h5>
+            <p>Du kannst schnell einen Krieger erstellen, wenn du diesen Vorschlägen folgst: Erhöhe Stärke oder Geschicklichkeit als höchsten Attributswert, je nachdem ob du Nahkampfwaffen oder Fernkampf bevorzugst. Danach sollte Konstitution dein zweithöchster Wert sein. Wähle als Hintergrund den „Soldaten“.</p>
+            <h3>KLASSENMERKMALE</h3>
+            <p>Als Krieger erhältst du die folgenden Klassenmerkmale.</p>
+            <h5>TREFFERPUNKTE</h5>
+            <ul class="unstyled">
+                <li>
+                    <strong>Trefferwürfel:</strong> 1W10 pro Stufe als Krieger</li>
+                <li>
+                    <strong>Trefferpunkte auf der 1. Stufe:</strong> 10 + dein Konstitutionsmodifikator</li>
+                <li>
+                    <strong>Trefferpunkte auf höheren Stufen:</strong> 1W10 (oder 6) + dein Konstitutionsmodifikator pro Kriegerstufe nach der 1.</li>
+            </ul>
+            <h5>FERTIGKEITEN</h5>
+            <ul class="unstyled mb">
+                <li>
+                    <strong>Rüstung:</strong> Alle Rüstungen, Schilde</li>
+                <li>
+                    <strong>Waffen:</strong> Einfache Waffen, Kriegswaffen</li>
+                <li>
+                    <strong>Werkzeuge:</strong> Keine</li>
+            </ul>
+            <ul class="unstyled">
+                <li>
+                    <strong>Rettungswürfe:</strong> Stärke, Konstitution</li>
+                <li>
+                    <strong>Fertigkeiten:</strong> Wähle zwei Fertigkeiten aus: Akrobatik, Mit Tieren umgehen, Athletik, Geschichte, Motiv erkennen, Einschüchtern, Wahrnehmung, Überlebenskunst</li>
+            </ul>
+            <h5>AUSRÜSTUNG</h5>
+            <p>Du startest mit der folgenden Ausrüstung, zusätzlich zur Ausrüstung deines Hintergrunds:</p>
+            <ul>
+                <li>
+                    <i>(a)</i> Kettenhemd oder <i>(b)</i> Lederrüstung, Langbogen und 20 Pfeile</li>
+                <li>
+                    <i>(a)</i> eine Kriegswaffe und ein Schild oder <i>(b)</i> zwei Kriegswaffen</li>
+                <li>
+                    <i>(a)</i> eine leichte Armbrust und 20 Bolzen oder <i>(b)</i> zwei Handäxte</li>
+                <li>
+                    <i>(a)</i> ein Abenteurerpack oder <i>(b)</i> ein Entdeckerpack</li>
+            </ul>
+            <h5 class="caption">DER KRIEGER</h5>
+            <table class="class-features">
+                <thead>
+                    <tr>
+                        <td class="col-5">Stufe</td>
+                        <td class="left">Merkmale</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> 1</td>
+                    <td class="left">Kampfstil, Zweite Luft</td>
+                </tr>
+                <tr>
+                    <td> 2</td>
+                    <td class="left">Tatendrang (1×)</td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td class="left">Kampfarchtyp</td>
+                </tr>
+                <tr>
+                    <td> 4</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td> 5</td>
+                    <td class="left">Zusätzlicher Angriff</td>
+                </tr>
+                <tr>
+                    <td> 6</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td> 7</td>
+                    <td class="left">Merkmal des Kampfarchtyps</td>
+                </tr>
+                <tr>
+                    <td> 8</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td class="left">Unbeugsamkeit (1×)</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="left">Merkmal des Kampfarchtyps</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="left">Zusätzlicher Angriff (2)</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td class="left">Unbeugsamkeit (2×)</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td class="left">Merkmal des Kampfarchtyps</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td class="left">Tatendrang (2×), Unbeugsamkeit (3×)</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td class="left">Merkmal des Kampfarchtyps</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td class="left">Zusätzlicher Angriff (3)</td>
+                </tr>
+            </table>
+            <div element="ID_D4T_FIGHTER_CLASS_FEATURE_PROFICIENCIES"/>
+            <div element="ID_D4T_FIGHTER_CLASS_FEATURE_FIGHTINGSTYLE"/>
+            <div element="ID_D4T_FIGHTER_CLASS_FEATURE_SECONDWIND"/>
+            <div element="ID_D4T_FIGHTER_CLASS_FEATURE_ACTIONSURGE"/>
+            <div element="ID_D4T_FIGHTER_CLASS_FEATURE_MARTIALARCHETYPE"/>
+            <div element="ID_D4T_FIGHTER_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT"/>
+            <div element="ID_D4T_FIGHTER_CLASS_FEATURE_EXTRAATTACK"/>
+            <div element="ID_D4T_FIGHTER_CLASS_FEATURE_INDOMITABLE"/>
+        </description>
+        <sheet display="false">
+            <description>Ein Meister des bewaffneten Kampfes, geübt im Umgang mit verschiedensten Waffen und Rüstungen.</description>
+        </sheet>
+        <setters>
+            <set name="short">Ein Meister des bewaffneten Kampfes, geübt im Umgang mit verschiedensten Waffen und Rüstungen.</set>
+            <set name="hd">d10</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER"/>
+            <!--<select type="Proficiency" name="Skill Proficiency (Fighter)" supports="Skill,Fighter" number="2" requirements="!ID_WOTC_PHB_MULTICLASS_FIGHTER" />-->
+            <grant type="Class Feature" id="ID_D4T_FIGHTER_CLASS_FEATURE_PROFICIENCIES" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_FIGHTER_CLASS_FEATURE_FIGHTINGSTYLE" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_FIGHTER_CLASS_FEATURE_SECONDWIND" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_FIGHTER_CLASS_FEATURE_ACTIONSURGE" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_FIGHTER_CLASS_FEATURE_MARTIALARCHETYPE" level="3"/>
+            <grant type="Class Feature" id="ID_D4T_FIGHTER_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT" level="4"/>
+            <grant type="Class Feature" id="ID_D4T_FIGHTER_CLASS_FEATURE_EXTRAATTACK" level="5"/>
+            <grant type="Class Feature" id="ID_D4T_FIGHTER_CLASS_FEATURE_INDOMITABLE" level="9"/>
+        </rules>
+        <multiclass id="ID_WOTC_PHB_MULTICLASS_FIGHTER">
+            <prerequisite>Stärke 13 oder Geschicklichkeit 13</prerequisite>
+            <requirements>([str:13]||[dex:13])</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Leichte Rüstung, mittelschwere Rüstung, Schilde, einfache Waffen, Kriegswaffen</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+            </rules>
+        </multiclass>
+    </element>
+    <element name="Fertigkeiten (Krieger)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_PROFICIENCIES">
+        <description>
+            <p>Wähle zwei Fertigkeiten aus der folgenden Liste, in denen du geübt bist: Akrobatik, Mit Tieren umgehen, Athletik, Geschichte, Motiv erkennen, Einschüchtern, Wahrnehmung und Überlebenskunst.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Fertigkeiten" supports="Fighter-Proficiency" number="2" level="1"/>
+        </rules>
+    </element>
+    <!-- Fighting Styles -->
+    <element name="Kampfstil (Fighting Style)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_FIGHTINGSTYLE">
+        <description>
+            <p>Du eignest dir einen bestimmten Kampfstil als deine Spezialität an. Wähle eine der folgenden Optionen. Du kannst keinen Kampfstil mehr als einmal wählen, selbst wenn du ihn später erneut wählen dürftest.</p>
+            <h5 class="caption">BOGENSCHÜTZE</h5>
+            <p>Du erhältst einen Bonus von +2 auf Angriffswürfe mit Fernkampfwaffen.</p>
+            <h5 class="caption">VERTEIDIGUNG</h5>
+            <p>Solange du eine Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse (RK).</p>
+            <h5 class="caption">DUELLANT</h5>
+            <p>Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe in der anderen, erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe.</p>
+            <h5 class="caption">KAMPF MIT ZWEIHÄNDIGER WAFFE</h5>
+            <p>Wenn du bei einem Schadenswurf mit einer Nahkampfwaffe, die du mit beiden Händen führst, eine 1 oder 2 würfelst, kannst du den Würfel einmal neu werfen. Du musst das neue Ergebnis verwenden, auch wenn es wieder eine 1 oder 2 ist. Die Waffe muss das Merkmal „Zweihändig“ oder „Vielseitig“ besitzen.</p>
+            <h5 class="caption">SCHUTZ</h5>
+            <p>Wenn eine Kreatur, die du sehen kannst, ein Ziel angreift, das sich innerhalb von 1,5m (5 Fuß) von dir befindet und nicht du selbst bist, kannst du deine Reaktion nutzen, um dem Angriffswurf Nachteil zu verleihen. Du musst dafür ein Schild führen.</p>
+            <h5 class="caption">ZWEI-WAFFEN-KAMPF</h5>
+            <p>Wenn du mit zwei Waffen kämpfst, darfst du deinen Attributsmodifikator zum Schaden des zweiten Angriffs hinzufügen.</p>
+        </description>
+        <rules>
+            <select type="Class Feature" name="Kampfstil" supports="Fighter-Style" level="1"/>
+        </rules>
+    </element>
+    <element name="Bogenschütze" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_FIGHTINGSTYLE_ARCHERY">
+        <supports>Fighter-Style</supports>
+        <description>
+            <p>Du erhältst einen Bonus von +2 auf Angriffswürfe mit Fernkampfwaffen.</p>
+        </description>
+        <sheet>
+            <description>Du erhältst einen Bonus von +2 auf Angriffswürfe mit Fernkampfwaffen.</description>
+        </sheet>
+        <rules>
+            <stat name="ranged:attack" value="2"/>
+        </rules>
+    </element>
+    <element name="Verteidigung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_FIGHTINGSTYLE_DEFENSE">
+        <supports>Fighter-Style</supports>
+        <description>
+            <p>Solange du eine Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse (RK).</p>
+        </description>
+        <sheet>
+            <description>Solange du eine Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse (RK).</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Verteidigung (Kampfstil)"/>
+        </rules>
+    </element>
+    <element name="Duellant" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_FIGHTINGSTYLE_DUELING">
+        <supports>Fighter-Style</supports>
+        <description>
+            <p>Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe in der anderen, erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe.</p>
+        </description>
+        <sheet>
+            <description>Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe in der anderen, erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe.</description>
+        </sheet>
+        <rules>
+            <!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
+        </rules>
+    </element>
+    <element name="Kampf mit Zweihänder" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+        <supports>Fighter-Style</supports>
+        <description>
+            <p>Wenn du bei einem Schadenswurf mit einer Nahkampfwaffe, die du mit beiden Händen führst, eine 1 oder 2 würfelst, kannst du den Würfel einmal neu werfen. Du musst das neue Ergebnis verwenden, auch wenn es wieder eine 1 oder 2 ist. Die Waffe muss das Merkmal „Zweihändig“ oder „Vielseitig“ besitzen.</p>
+        </description>
+        <sheet>
+            <description>Wenn du bei einem Schadenswurf mit einer Nahkampfwaffe, die du mit beiden Händen führst, eine 1 oder 2 würfelst, kannst du den Würfel einmal neu werfen. Du musst das neue Ergebnis verwenden, auch wenn es wieder eine 1 oder 2 ist. Die Waffe muss das Merkmal „Zweihändig“ oder „Vielseitig“ besitzen.</description>
+        </sheet>
+    </element>
+    <element name="Schutz" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_FIGHTINGSTYLE_PROTECTION">
+        <supports>Fighter-Style</supports>
+        <description>
+            <p>Wenn eine Kreatur, die du sehen kannst, ein Ziel angreift, das sich innerhalb von 1,5m (5 Fuß) von dir befindet und nicht du selbst bist, kannst du deine Reaktion nutzen, um dem Angriffswurf Nachteil zu verleihen. Du musst dafür ein Schild führen.</p>
+        </description>
+        <sheet action="Reaktion">
+            <description>Wenn eine Kreatur, die du sehen kannst, ein Ziel angreift, das sich innerhalb von 1,5m (5 Fuß) von dir befindet und nicht du selbst bist, kannst du deine Reaktion nutzen, um dem Angriffswurf Nachteil zu verleihen. Du musst dafür ein Schild führen.</description>
+        </sheet>
+    </element>
+    <element name="Zwei-Waffen-Kampf" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_FIGHTINGSTYLE_TWOWEAPON_FIGHTING">
+        <supports>Fighter-Style</supports>
+        <description>
+            <p>Wenn du mit zwei Waffen kämpfst, darfst du deinen Attributsmodifikator zum Schaden des zweiten Angriffs hinzufügen.</p>
+        </description>
+        <sheet>
+            <description>Wenn du mit zwei Waffen kämpfst, darfst du deinen Attributsmodifikator zum Schaden des zweiten Angriffs hinzufügen.</description>
+        </sheet>
+    </element>
+    <!-- Second Wind -->
+    <element name="Durchschnaufen (Second Wind)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_SECONDWIND">
+        <description>
+            <p>Du verfügst über ein begrenztes Reservoir an Ausdauer, auf das du zurückgreifen kannst, um dich vor Schaden zu schützen. In deinem Zug kannst du eine Bonusaktion verwenden, um Trefferpunkte in Höhe von 1W10 + deiner Kriegerstufe zurückzuerlangen.</p>
+            <p class="indent">Nachdem du dieses Merkmal eingesetzt hast, musst du eine kurze oder lange Rast beenden, bevor du es erneut verwenden kannst.</p>
+        </description>
+        <sheet action="Bonusaktion" usage="1/Kurze Rast">
+            <description>Du erhältst 1W10 + {{level:krieger}} Trefferpunkte zurück.</description>
+        </sheet>
+    </element>
+    <element name="Tatendrang (Action Surge)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_ACTIONSURGE">
+        <description>
+            <p>Ab der 2. Stufe kannst du dich für einen Moment über deine normalen Grenzen hinaus anstrengen. In deinem Zug kannst du eine zusätzliche Aktion ausführen – zusätzlich zu deiner regulären Aktion und einer möglichen Bonusaktion.</p>
+            <p class="indent">Nachdem du dieses Merkmal eingesetzt hast, musst du eine kurze oder lange Rast beenden, bevor du es erneut verwenden kannst. Ab der 17. Stufe kannst du es zweimal einsetzen, jedoch nur einmal pro Zug.</p>
+        </description>
+        <sheet usage="1/Kurze Rast">
+            <description>In deinem Zug kannst du eine zusätzliche Aktion ausführen, zusätzlich zu deiner regulären Aktion.</description>
+            <description usage="2/Kurze Rast" level="17">In deinem Zug kannst du eine zusätzliche Aktion ausführen, zusätzlich zu deiner regulären Aktion.</description>
+        </sheet>
+    </element>
+    <element name="Kampfarchtyp (Martial Archetype)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_MARTIALARCHETYPE">
+        <description>
+            <p>Ab der 3. Stufe wählst du einen Kampfarchtyp, dem du in Stil und Technik nacheiferst. Der Archtyp „Champion“ ist am Ende der Klassenbeschreibung aufgeführt; weitere Kampfarchtypen findest du im Player’s Handbook.</p>
+            <p class="indent">Dein gewählter Archtyp gewährt dir Merkmale auf der 3., 7., 10., 15. und 18. Stufe.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Kampfarchtyp" supports="Martial Archetype" level="3"/>
+        </rules>
+    </element>
+    <element name="Verbesserungsauswahl (Ability Score Improvement)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT">
+        <compendium display="false"/>
+        <description>
+            <p>Wenn du die 4. Stufe erreichst, und erneut auf der 6., 8., 12., 14., 16. und 19. Stufe, kannst du einen Attributswert deiner Wahl um 2 erhöhen oder zwei Attributswerte deiner Wahl um je 1 erhöhen. Wie üblich kannst du durch dieses Merkmal keinen Attributswert über 20 steigern.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Verbesserungsauswahl (Krieger 4)" supports="Improvement Option,Fighter,4" level="4"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Krieger 6)" supports="Improvement Option,Fighter,6" level="6"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Krieger 8)" supports="Improvement Option,Fighter,8" level="8"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Krieger 12)" supports="Improvement Option,Fighter,12" level="12"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Krieger 14)" supports="Improvement Option,Fighter,14" level="14"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Krieger 16)" supports="Improvement Option,Fighter,16" level="16"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Krieger 19)" supports="Improvement Option,Fighter,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Zusätzlicher Angriff (Extra Attack)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_EXTRAATTACK">
+        <description>
+            <p>Ab der 5. Stufe kannst du zweimal angreifen, anstatt einmal, wenn du in deinem Zug die Angriffsaktion durchführst.</p>
+            <p class="indent">Die Anzahl deiner Angriffe steigt auf drei, wenn du die 11. Stufe in dieser Klasse erreichst, und auf vier bei Stufe 20.</p>
+        </description>
+        <sheet>
+            <description level="5">Du kannst zweimal angreifen, wenn du in deinem Zug die Angriffsaktion durchführst.</description>
+            <description level="11">Du kannst dreimal angreifen, wenn du in deinem Zug die Angriffsaktion durchführst.</description>
+            <description level="20">Du kannst viermal angreifen, wenn du in deinem Zug die Angriffsaktion durchführst.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+            <stat name="extra attack:count" value="3" level="11" bonus="extra attack"/>
+            <stat name="extra attack:count" value="4" level="20" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Unbändige Stärke (Indomitable)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_CLASS_FEATURE_INDOMITABLE">
+        <description>
+            <p>Ab der 9. Stufe kannst du einen misslungenen Rettungswurf wiederholen. Du musst das neue Ergebnis verwenden, auch wenn es schlechter ist, und kannst dieses Merkmal erst nach einer langen Rast erneut einsetzen.</p>
+            <p class="indent">Ab der 13. Stufe kannst du dieses Merkmal zweimal zwischen langen Ruhephasen einsetzen, und ab der 17. Stufe dreimal.</p>
+        </description>
+        <sheet usage="{{indomitable:usage}}/Lange Rast">
+            <description>Du kannst einen misslungenen Rettungswurf wiederholen. Du musst das neue Ergebnis verwenden.</description>
+        </sheet>
+        <rules>
+            <stat name="indomitable:usage" value="1" level="9"/>
+            <stat name="indomitable:usage" value="2" level="13"/>
+            <stat name="indomitable:usage" value="3" level="17"/>
+        </rules>
+    </element>
+    <!-- Improvement Options -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_FIGHTER_4">
+        <supports>Improvement Option,Fighter,4</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Krieger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_FIGHTER_6">
+        <supports>Improvement Option,Fighter,6</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Krieger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_FIGHTER_8">
+        <supports>Improvement Option,Fighter,8</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+            <p>
+                <strong>Hinweis:</strong> Trage die Erhöhung manuell unter "Ability Scores" ein. Aurora unterstützt diese Auswahl nicht automatisch.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Krieger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_FIGHTER_12">
+        <supports>Improvement Option,Fighter,12</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Krieger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_FIGHTER_14">
+        <supports>Improvement Option,Fighter,14</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+            <p>
+                <strong>Hinweis:</strong> Trage die Erhöhung manuell unter "Ability Scores" ein. Aurora unterstützt diese Auswahl nicht automatisch.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Krieger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_FIGHTER_16">
+        <supports>Improvement Option,Fighter,16</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+            <p>
+                <strong>Hinweis:</strong> Trage die Erhöhung manuell unter "Ability Scores" ein. Aurora unterstützt diese Auswahl nicht automatisch.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Krieger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_FIGHTER_19">
+        <supports>Improvement Option,Fighter,19</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+            <p>
+                <strong>Hinweis:</strong> Trage die Erhöhung manuell unter "Ability Scores" ein. Aurora unterstützt diese Auswahl nicht automatisch.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Krieger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT">
+        <supports>Improvement Option,Fighter,4</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_FIGHTER_6">
+        <supports>Improvement Option,Fighter,6</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_FIGHTER_8">
+        <supports>Improvement Option,Fighter,8</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_FIGHTER_12">
+        <supports>Improvement Option,Fighter,12</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_FIGHTER_14">
+        <supports>Improvement Option,Fighter,14</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_FIGHTER_16">
+        <supports>Improvement Option,Fighter,16</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_FIGHTER_19">
+        <supports>Improvement Option,Fighter,19</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <!-- Proficiencies -->
+    <element name="Akrobatik (Acrobatics)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_PROFICIENCY_ACROBATICS">
+        <supports>Fighter-Proficiency</supports>
+        <description>
+            <p>Akrobatik deckt deinen Versuch ab, in einer heiklen Situation auf den Beinen zu bleiben, beispielsweise beim Laufen über eine Eisfläche, beim Balancieren auf einem Drahtseil oder beim Stehen auf einem schwankenden Schiffsdeck. Der Spielleiter kann auch einen Wurf auf Geschicklichkeit (Akrobatik) verlangen, um zu prüfen, ob du akrobatische Kunststücke wie Hechtsprünge, Rollen oder Saltos ausführen kannst.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS"/>
+        </rules>
+    </element>
+    <element name="Mit Tieren umgehen (Animal Handling)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_PROFICIENCY_HANDLING">
+        <supports>Fighter-Proficiency</supports>
+        <description>
+            <p>Führe einen Wurf auf Weisheit (Mit Tieren umgehen) durch, um ein Tier zu beruhigen, ein Reittier vor Panik zu bewahren oder seine Absichten zu deuten. Du kannst damit auch riskante Manöver mit Tieren absichern.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
+        </rules>
+    </element>
+    <element name="Athletik (Athletics)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_PROFICIENCY_ATHLETICS">
+        <supports>Fighter-Proficiency</supports>
+        <description>
+            <p>Athletik deckt schwierige Situationen ab, in denen du beim Klettern, Springen oder Schwimmen stehst.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS"/>
+        </rules>
+    </element>
+    <element name="Geschichte (History)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_PROFICIENCY_HISTORY">
+        <supports>Fighter-Proficiency</supports>
+        <description>
+            <p>Geschichte misst dein Wissen über historische Ereignisse, legendäre Personen, alte Königreiche, vergangene Konflikte und vergessene Zivilisationen.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
+        </rules>
+    </element>
+    <element name="Motiv erkennen (Insight)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_PROFICIENCY_INSIGHT">
+        <supports>Fighter-Proficiency</supports>
+        <description>
+            <p>Ein Wurf auf Weisheit (Motiv erkennen) erlaubt es dir, die wahren Absichten einer Kreatur zu erkennen – etwa, ob sie lügt oder was sie als Nächstes tun wird.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
+        </rules>
+    </element>
+    <element name="Einschüchtern (Intimidation)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_PROFICIENCY_INTIMIDATION">
+        <supports>Fighter-Proficiency</supports>
+        <description>
+            <p>Wenn du jemanden mit Drohungen, Gewalt oder gezielter Einschüchterung beeinflussen willst, kann ein Wurf auf Charisma (Einschüchtern) nötig sein.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+        </rules>
+    </element>
+    <element name="Wahrnehmung (Perception)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_PROFICIENCY_PERCEPTION">
+        <supports>Fighter-Proficiency</supports>
+        <description>
+            <p>Ein Wurf auf Weisheit (Wahrnehmung) erlaubt dir, etwas zu bemerken, zu hören oder anderweitig wahrzunehmen – etwa versteckte Gefahren, leise Geräusche oder Bewegungen im Dunkeln.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+        </rules>
+    </element>
+    <element name="Überlebenskunst (Survival)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_FIGHTER_PROFICIENCY_SURVIVAL">
+        <supports>Fighter-Proficiency</supports>
+        <description>
+            <p>Führe einen Wurf auf Weisheit (Überlebenskunst) durch, um Spuren zu verfolgen, das Wetter vorherzusagen, dich in Wildnis zurechtzufinden oder Hinweise auf nahe Tiere oder Gefahren zu erkennen.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
+        </rules>
+    </element>
+    <!-- Champion Archetype -->
+    <element name="Champion" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_CHAMPION">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>Der archetypische Champion konzentriert sich auf den Ausbau roher körperlicher Kraft und tödlicher Präzision. Wer diesem Archetyp folgt, kombiniert diszipliniertes Training mit körperlicher Überlegenheit, um verheerende Schläge auszuteilen.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_IMPROVEDCRITICAL"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_REMARKABLEATHLETE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_ADDITIONALFIGHTINGSTYLE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_SUPERIORCRITICAL"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_SURVIVOR"/>
+        </description>
+        <sheet display="false">
+            <description>Ein Krieger, der auf körperliche Überlegenheit und tödliche Präzision setzt.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_IMPROVEDCRITICAL" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_REMARKABLEATHLETE" level="7"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_ADDITIONALFIGHTINGSTYLE" level="10"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_SUPERIORCRITICAL" level="15"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_SURVIVOR" level="18"/>
+        </rules>
+    </element>
+    <element name="Verbesserter Kritischer Treffer (Improved Critical)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_IMPROVEDCRITICAL">
+        <description>
+            <p>Ab der 3. Stufe erzielst du einen kritischen Treffer mit Waffenangriffen bereits bei einem Wurf von 19 oder 20.</p>
+        </description>
+        <sheet>
+            <description>Du erzielst einen kritischen Treffer mit Waffenangriffen bei einem Wurf von 19 oder 20.</description>
+        </sheet>
+    </element>
+    <element name="Bemerkenswerter Athlet (Remarkable Athlete)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_REMARKABLEATHLETE">
+        <description>
+            <p>Ab der 7. Stufe kannst du zu Attributswürfen auf Stärke, Geschicklichkeit oder Konstitution die Hälfte deines Übungsbonus (aufgerundet) addieren, wenn du diesen Wurf normalerweise nicht mit Übung ausführen würdest.</p>
+            <p class="indent">Zudem erhöhst du bei einem Anlaufweiten-Sprung deine Sprungweite um eine Anzahl an Fuß, die deinem Stärkemodifikator entspricht.</p>
+        </description>
+        <sheet>
+            <description>Bei einem Anlauf-Sprung erhöhst du deine Sprungweite um {{strength:modifier}} Fuß.</description>
+        </sheet>
+        <rules>
+            <stat name="acrobatics:misc" value="proficiency:half:up" requirements="!ID_PROFICIENCY_SKILL_ACROBATICS"/>
+            <stat name="athletics:misc" value="proficiency:half:up" requirements="!ID_PROFICIENCY_SKILL_ATHLETICS"/>
+            <stat name="sleight of hand:misc" value="proficiency:half:up" requirements="!ID_PROFICIENCY_SKILL_SLEIGHTOFHAND"/>
+            <stat name="stealth:misc" value="proficiency:half:up" requirements="!ID_PROFICIENCY_SKILL_STEALTH"/>
+        </rules>
+    </element>
+    <element name="Zusätzlicher Kampfstil (Additional Fighting Style)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ADDITIONALFIGHTINGSTYLE">
+        <description>
+            <p>Ab der 10. Stufe kannst du eine weitere Option aus der Liste der Kampfstile wählen.</p>
+        </description>
+        <sheet>
+            <description>Du wählst einen zweiten Kampfstil als Spezialisierung.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Zusätzlicher Kampfstil" supports="Fighting Style,Fighter" level="10"/>
+        </rules>
+    </element>
+    <element name="Überlegener Kritischer Treffer (Superior Critical)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_SUPERIORCRITICAL">
+        <description>
+            <p>Ab der 15. Stufe erzielst du einen kritischen Treffer mit Waffenangriffen bereits bei einem Wurf von 18–20.</p>
+        </description>
+        <sheet>
+            <description>Du erzielst einen kritischen Treffer mit Waffenangriffen bei einem Wurf von 18–20.</description>
+        </sheet>
+    </element>
+    <element name="Der Überlebende (Survivor)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_SURVIVOR">
+        <description>
+            <p>Ab der 18. Stufe erreichst du den Höhepunkt deiner Widerstandsfähigkeit. Zu Beginn jedes deiner Züge erhältst du Trefferpunkte in Höhe von 5 + deinem Konstitutionsmodifikator zurück, solange du nicht mehr als die Hälfte deiner maximalen Trefferpunkte hast. Du erhältst diesen Bonus nicht, wenn du 0 Trefferpunkte hast.</p>
+        </description>
+        <sheet>
+            <description>Zu Beginn jedes deiner Züge erhältst du {{survivor:hp}} Trefferpunkte zurück, wenn du bei höchstens der Hälfte deiner Trefferpunkte bist. Du erhältst diesen Bonus nicht bei 0 TP.</description>
+        </sheet>
+        <rules>
+            <stat name="survivor:hp" value="5"/>
+            <stat name="survivor:hp" value="constitution:modifier"/>
+        </rules>
+    </element>
+    <!-- Battle Master Archetype -->
+    <element name="Kampfmeister (Battle Master)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FIGHTER_BATTLE_MASTER">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>Kämpfer, die dem Archetyp des Kampfmeisters folgen, nutzen uralte Kampftechniken, die über Generationen hinweg überliefert wurden. Für einen Kampfmeister ist der Kampf eine akademische Disziplin – oft ergänzt durch Wissen aus angrenzenden Bereichen wie Waffenschmiedekunst oder Kalligraphie. Nicht jeder Krieger verinnerlicht die Geschichte, Theorie und Kunstfertigkeit dieses Archetyps – doch wer es tut, wird zu einem vielseitigen Kämpfer mit großem Können und klarem Verstand.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS"/>
+        </description>
+        <sheet display="false">
+            <description>Kämpfer mit taktischer Ausbildung und kunstvollem Kampfstil, geprägt von Disziplin und Können.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY" level="7"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY" level="10"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS" level="15"/>
+        </rules>
+    </element>
+    <element name="Kampfüberlegenheit (Combat Superiority)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY">
+        <description>
+            <p>Wenn du dich ab der 3. Stufe für diesen Archetyp entscheidest, lernst du spezielle Kampfmanöver, die durch sogenannte Überlegenheitswürfel (Superiority Dice) angetrieben werden.</p>
+            <p class="indent">
+                <strong>
+                    <em>Manöver.</em>
+                </strong> Du lernst drei Manöver deiner Wahl, die unter „Manöver“ beschrieben sind. Viele Manöver verbessern auf unterschiedliche Weise deine Angriffe. Du kannst pro Angriff nur ein Manöver einsetzen. Auf der 7., 10. und 15. Stufe lernst du jeweils zwei weitere Manöver deiner Wahl. Jedes Mal, wenn du neue Manöver lernst, kannst du auch eines der bereits bekannten Manöver gegen ein anderes austauschen.</p>
+            <p class="indent">
+                <strong>
+                    <em>Überlegenheitswürfel.</em>
+                </strong> Du verfügst über vier Überlegenheitswürfel, die W8 sind. Ein Würfel wird verbraucht, wenn du ihn einsetzt. Du erhältst alle verbrauchten Würfel zurück, wenn du eine kurze oder lange Rast beendest. Auf der 7. und 15. Stufe erhältst du jeweils einen weiteren Überlegenheitswürfel.</p>
+            <p class="indent">
+                <strong>
+                    <em>Rettungswürfe.</em>
+                </strong> Manche Manöver erfordern einen Rettungswurf deines Ziels, um die Wirkung zu vermeiden. Der SG (Schwierigkeitsgrad) für diese Würfe berechnet sich wie folgt:</p>
+            <center>
+                <p>
+                    <strong>SG für Manöver</strong> = 8 + dein Übungsbonus + dein Stärkemodifikator oder Geschicklichkeitsmodifikator (deine Wahl)</p>
+            </center>
+        </description>
+        <sheet>
+            <description>Du lernst Kampfmanöver, die Überlegenheitswürfel verbrauchen. Du hast {{superiority dice:amount}} W{{superiority dice:size}}. SG {{superiority dice:dc}}</description>
+        </sheet>
+        <rules>
+            <stat name="superiority dice:amount" value="4"/>
+            <stat name="superiority dice:amount" value="1" level="7"/>
+            <stat name="superiority dice:amount" value="1" level="15"/>
+            <stat name="superiority dice:size" value="8" bonus="size"/>
+            <stat name="superiority dice:dc" value="8"/>
+            <stat name="superiority dice:dc" value="proficiency"/>
+            <!-- Auswahl: Stärke oder Geschicklichkeit -->
+            <stat name="superiority dice:dc:ability" value="strength:modifier" bonus="ability"/>
+            <stat name="superiority dice:dc:ability" value="dexterity:modifier" bonus="ability"/>
+            <stat name="superiority dice:dc" value="superiority dice:dc:ability"/>
+            <!-- Manöverauswahl -->
+            <select type="Archetype Feature" name="Kampfüberlegenheit (Stufe 3)" supports="Maneuver,Battle Master" number="3"/>
+            <select type="Archetype Feature" name="Kampfüberlegenheit (Stufe 7)" supports="Maneuver,Battle Master" number="2" level="7"/>
+            <select type="Archetype Feature" name="Kampfüberlegenheit (Stufe 10)" supports="Maneuver,Battle Master" number="2" level="10"/>
+            <select type="Archetype Feature" name="Kampfüberlegenheit (Stufe 15)" supports="Maneuver,Battle Master" number="2" level="15"/>
+        </rules>
+    </element>
+    <element name="Schüler des Krieges (Student of War)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_STUDENT_OF_WAR">
+        <description>
+            <p>Ab der 3. Stufe erhältst du Übung mit einem Handwerkszeug deiner Wahl.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype Feature" name="Handwerkszeug (Schüler des Krieges)" supports="Battle Master Tools" number="1"/>
+        </rules>
+    </element>
+    <!-- Artisans Tools -->
+    <element name="Alchemistenwerkzeug (Alchemist’s Supplies)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_ALCHEMISTS_SUPPLIES">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Alchemistenwerkzeug ermöglicht es dir, nützliche Substanzen wie Säure oder Alchemistisches Feuer herzustellen.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Brauerwerkzeug (Brewer’s Supplies)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_BREWERS_SUPPLIES">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Brauerwerkzeug dient der Herstellung von Bier – ein Prozess, der gleichzeitig Wasser reinigt.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Kalligrafiewerkzeug (Calligrapher’s Supplies)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_CALLIGRAPHERS_SUPPLIES">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Kalligrafiewerkzeug wird genutzt, um kunstvolle Schrift zu erzeugen, die schwer zu fälschen ist.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Zimmermannswerkzeug (Carpenter’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_CARPENTERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Zimmermannswerkzeug ermöglicht es dir, hölzerne Strukturen zu errichten.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Kartografenwerkzeug (Cartographer’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_CARTOGRAPHERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Kartografenwerkzeug dient der Anfertigung präziser Karten.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Schusterwerkzeug (Cobbler’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_COBBLERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Schusterwerkzeug hilft dir bei der Herstellung und Reparatur von Schuhen.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Kochwerkzeug (Cook’s Utensils)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_COOKS_UTENSILS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Kochwerkzeug sorgt für bessere Mahlzeiten auf Reisen.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS"/>
+        </rules>
+    </element>
+    <element name="Glasbläserwerkzeug (Glassblower’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_GLASSBLOWERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Glasbläserwerkzeug dient der Herstellung und Analyse gläserner Gegenstände.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Juwelierwerkzeug (Jeweler’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_JEWELERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Juwelierwerkzeug hilft dir, Edelsteine zu bearbeiten und zu bewerten.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Lederverarbeitungswerkzeug (Leatherworker’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_LEATHERWORKERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Lederverarbeitungswerkzeug erlaubt die Bearbeitung von Häuten und Lederwaren.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Steinmetzwerkzeug (Mason’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_MASONS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Steinmetzwerkzeug ermöglicht dir den Bau und die Untersuchung steinerner Strukturen.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Malutensilien (Painter’s Supplies)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_PAINTERS_SUPPLIES">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Malutensilien befähigen dich zum Zeichnen und Malen sowie zur Analyse von Kunstwerken.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Töpferwerkzeug (Potter’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_POTTERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Töpferwerkzeug erlaubt die Herstellung keramischer Objekte wie Gefäße.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Schmiedewerkzeug (Smith’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_SMITHS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Schmiedewerkzeug wird verwendet, um Metall zu formen, zu reparieren oder zu härten.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Bastlerwerkzeug (Tinker’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_TINKERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Bastlerwerkzeug dient der einfachen Reparatur vieler Alltagsgegenstände.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Weberwerkzeug (Weaver’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_WEAVERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Weberwerkzeug erlaubt dir, Stoffe herzustellen und Kleidung zu fertigen.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Holzschnitzwerkzeug (Woodcarver’s Tools)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_BATTLEMASTER_WOODCARVERS_TOOLS">
+        <supports>Battle Master Tools</supports>
+        <description>
+            <p>Holzschnitzwerkzeug ermöglicht die Herstellung kleiner Objekte und Pfeile aus Holz.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Kenne deinen Feind (Know Your Enemy)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_KNOW_YOUR_ENEMY">
+        <description>
+            <p>Ab der 7. Stufe kannst du außerhalb des Kampfes mindestens 1 Minute damit verbringen, eine Kreatur zu beobachten oder mit ihr zu interagieren. Danach kannst du bestimmte Informationen über ihre Fähigkeiten im Vergleich zu deinen eigenen in Erfahrung bringen. Der Spielleiter sagt dir, ob die Kreatur dir in Bezug auf zwei der folgenden Merkmale deiner Wahl unterlegen, ebenbürtig oder überlegen ist:</p>
+            <ul>
+                <li>Stärkewert</li>
+                <li>Geschicklichkeitswert</li>
+                <li>Konstitutionswert</li>
+                <li>Rüstungsklasse</li>
+                <li>Aktuelle Trefferpunkte</li>
+                <li>Gesamtzahl an Klassenstufen (sofern vorhanden)</li>
+                <li>Stufen in der Klasse Krieger (sofern vorhanden)</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wenn du außerhalb des Kampfes 1 Minute eine Kreatur beobachtest oder mit ihr interagierst, erfährst du, wie ihre Fähigkeiten im Vergleich zu deinen abschneiden (z.B. RK, Attributswerte).</description>
+        </sheet>
+    </element>
+    <element name="Verbesserte Kampfüberlegenheit (Improved Combat Superiority)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_IMPROVED_COMBAT_SUPERIORITY">
+        <description>
+            <p>Ab der 10. Stufe werden deine Überlegenheitswürfel zu W10. Ab der 18. Stufe werden sie zu W12.</p>
+        </description>
+        <sheet display="false">
+            <description>Deine Überlegenheitswürfel werden zu W10.</description>
+            <description level="18">Deine Überlegenheitswürfel werden zu W12.</description>
+        </sheet>
+        <rules>
+            <stat name="superiority dice:size" value="10" level="10" bonus="size"/>
+            <stat name="superiority dice:size" value="12" level="18" bonus="size"/>
+        </rules>
+    </element>
+    <element name="Unermüdlich (Relentless)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_BATTLE_MASTER_RELENTLESS">
+        <description>
+            <p>Ab der 15. Stufe erhältst du 1 Überlegenheitswürfel zurück, wenn du Initiative würfelst und keine Überlegenheitswürfel mehr übrig hast.</p>
+        </description>
+        <sheet>
+            <description>Wenn du Initiative würfelst und keine Überlegenheitswürfel mehr hast, erhältst du 1 Überlegenheitswürfel zurück.</description>
+        </sheet>
+    </element>
+    <!-- Combat Maneuvers -->
+    <element name="Schlag des Befehlshabers (Commander’s Strike)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_COMMANDERS_STRIKE">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du auf einen deiner Angriffe verzichten und stattdessen eine Bonusaktion einsetzen, um einem Verbündeten einen gezielten Schlag zu befehlen. Wähle dazu eine befreundete Kreatur, die dich sehen oder hören kann, und verbrauche einen Überlegenheitswürfel. Diese Kreatur kann sofort ihre Reaktion nutzen, um einen Waffenangriff auszuführen, wobei sie den Überlegenheitswürfel zum Schadenswurf addiert.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Verzichte auf einen eigenen Angriff, um mit einer Bonusaktion einem Verbündeten zu befehlen, einen Waffenangriff mit Reaktion auszuführen. Der Angriff fügt zusätzlich den Überlegenheitswürfel an Schaden zu.</description>
+        </sheet>
+    </element>
+    <element name="Entwaffnender Angriff (Disarming Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_DISARMING_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um zu versuchen, sie zu entwaffnen. Du fügst dem Schaden des Angriffs den Überlegenheitswürfel hinzu, und das Ziel muss einen Stärkewurf gegen den SG deines Manövers ablegen. Bei einem Misserfolg lässt es einen von dir gewählten gehaltenen Gegenstand fallen. Der Gegenstand landet zu seinen Füßen.</p>
+        </description>
+        <sheet>
+            <description>Setze bei einem Treffer mit einem Waffenangriff einen Überlegenheitswürfel ein, um das Ziel zu entwaffnen (Stärkewurf). Bei einem Fehlschlag lässt es einen Gegenstand fallen. Der Überlegenheitswürfel wird zum Schaden addiert.</description>
+        </sheet>
+    </element>
+    <element name="Ablenkender Schlag (Distracting Strike)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_DISTRACTING_STRIKE">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie abzulenken und deinen Verbündeten eine Gelegenheit zu verschaffen. Du fügst dem Schadenswurf den Überlegenheitswürfel hinzu. Der nächste Angriffswurf gegen das Ziel durch eine andere Kreatur als dich hat Vorteil, wenn er vor Beginn deines nächsten Zuges erfolgt.</p>
+        </description>
+        <sheet>
+            <description>Füge bei einem Treffer mit einem Waffenangriff den Überlegenheitswürfel zum Schaden hinzu. Der nächste Angriff durch einen Verbündeten gegen das Ziel hat Vorteil (bis zu deinem nächsten Zug).</description>
+        </sheet>
+    </element>
+    <element name="Tänzelnde Beinarbeit (Evasive Footwork)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_EVASIVE_FOOTWORK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du dich bewegst, kannst du einen Überlegenheitswürfel einsetzen. Wirf den Würfel und addiere das Ergebnis bis zum Ende deiner Bewegung zu deiner Rüstungsklasse (RK).</p>
+        </description>
+        <sheet>
+            <description>Wenn du dich bewegst, kannst du einen Überlegenheitswürfel einsetzen und das Ergebnis bis zum Ende deiner Bewegung zu deiner RK addieren.</description>
+        </sheet>
+    </element>
+    <element name="Finte (Feinting Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_FEINTING_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Du kannst in deinem Zug eine Bonusaktion und einen Überlegenheitswürfel einsetzen, um eine Finte auszuführen. Wähle eine Kreatur im Umkreis von 1,5m (5 Fuß) als Ziel. Du hast bis zum Ende deines Zuges Vorteil auf deinen nächsten Angriffswurf gegen diese Kreatur. Wenn der Angriff trifft, wird der Überlegenheitswürfel zum Schadenswurf addiert.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Nutze eine Bonusaktion und einen Überlegenheitswürfel, um Vorteil auf deinen nächsten Angriff gegen eine benachbarte Kreatur zu erhalten. Bei einem Treffer fügst du den Überlegenheitswürfel dem Schaden hinzu.</description>
+        </sheet>
+    </element>
+    <element name="Provozierender Angriff (Goading Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_GOADING_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie zu provozieren. Du fügst dem Schaden den Überlegenheitswürfel hinzu. Das Ziel muss einen Weisheitsrettungswurf gegen den SG deines Manövers bestehen. Bei einem Fehlschlag hat es bis zum Ende deines nächsten Zuges Nachteil auf alle Angriffswürfe gegen andere Ziele als dich.</p>
+        </description>
+        <sheet>
+            <description>Bei einem Treffer mit einem Waffenangriff: Setze einen Überlegenheitswürfel ein, um das Ziel zu provozieren (Weisheitswurf). Bei einem Fehlschlag hat es Nachteil auf Angriffe gegen andere als dich (bis Ende deines nächsten Zuges).</description>
+        </sheet>
+    </element>
+    <element name="Angriff mit Ausfallschritt (Lunging Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_LUNGING_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du in deinem Zug einen Nahkampfangriff mit einer Waffe ausführst, kannst du einen Überlegenheitswürfel einsetzen, um die Reichweite dieses Angriffs um 1,5m (5 Fuß) zu erhöhen. Triffst du mit dem Angriff, fügst du dem Schaden zusätzlich den Überlegenheitswürfel hinzu.</p>
+        </description>
+        <sheet>
+            <description>Erhöhe beim Nahkampfangriff deine Reichweite um 1,5m (5 Fuß). Bei einem Treffer fügst du den Überlegenheitswürfel zum Schaden hinzu.</description>
+        </sheet>
+    </element>
+    <element name="Manövrierender Angriff (Maneuvering Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_MANEUVERING_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um einem Verbündeten eine bessere Position zu ermöglichen. Du fügst dem Schaden den Überlegenheitswürfel hinzu und wählst eine befreundete Kreatur, die dich sehen oder hören kann. Diese Kreatur kann ihre Reaktion nutzen, um sich bis zur Hälfte ihrer Geschwindigkeit zu bewegen, ohne Gelegenheitsangriffe vom Ziel deines Angriffs zu provozieren.</p>
+        </description>
+        <sheet>
+            <description>Füge bei einem Treffer den Überlegenheitswürfel zum Schaden hinzu. Ein Verbündeter kann sich als Reaktion bis zur Hälfte seiner Bewegung bewegen, ohne Gelegenheitsangriffe vom Ziel auszulösen.</description>
+        </sheet>
+    </element>
+    <element name="Bedrohlicher Angriff (Menacing Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_MENACING_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie einzuschüchtern. Du fügst dem Schadenswurf den Überlegenheitswürfel hinzu. Das Ziel muss einen Weisheitsrettungswurf gegen den SG deines Manövers bestehen. Bei einem Fehlschlag wird es bis zum Ende deines nächsten Zuges von dir verängstigt.</p>
+        </description>
+        <sheet>
+            <description>Füge beim Treffer den Überlegenheitswürfel zum Schaden hinzu. Das Ziel muss einen Weisheitswurf machen oder wird bis zum Ende deines nächsten Zuges verängstigt.</description>
+        </sheet>
+    </element>
+    <element name="Parieren (Parry)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_PARRY">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn dich eine Kreatur mit einem Nahkampfangriff trifft, kannst du als Reaktion einen Überlegenheitswürfel einsetzen, um den erlittenen Schaden zu verringern. Der Schaden wird um das Ergebnis des Überlegenheitswürfels plus deinen Geschicklichkeitsmodifikator reduziert.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Reaktion: Reduziere erlittenen Nahkampfschaden um Überlegenheitswürfel + {{dexterity:modifier}}.</description>
+        </sheet>
+    </element>
+    <element name="Präzisionsangriff (Precision Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_PRECISION_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du einen Angriffswurf mit einer Waffe gegen eine Kreatur ausführst, kannst du einen Überlegenheitswürfel einsetzen, um ihn zum Wurf zu addieren. Du kannst dieses Manöver einsetzen, bevor oder nachdem du den Wurf machst – aber bevor der Angriff ausgewertet wird.</p>
+        </description>
+        <sheet>
+            <description>Setze einen Überlegenheitswürfel ein, um ihn zum Angriffswurf zu addieren. Du kannst dies vor oder nach dem Wurf tun, aber bevor der Angriff ausgewertet wird.</description>
+        </sheet>
+    </element>
+    <element name="Stoßangriff (Pushing Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_PUSHING_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie zurückzudrängen. Du fügst dem Schaden den Überlegenheitswürfel hinzu. Ist das Ziel groß oder kleiner, muss es einen Stärkewurf gegen den SG deines Manövers bestehen. Bei einem Fehlschlag wird es bis zu 4,5m (15 Fuß) von dir weggestoßen.</p>
+        </description>
+        <sheet>
+            <description>Setze bei einem Treffer einen Überlegenheitswürfel ein. Das Ziel (groß oder kleiner) muss einen Stärkewurf bestehen oder wird bis zu 4,5m (15 Fuß) weggestoßen.</description>
+        </sheet>
+    </element>
+    <element name="Sammeln (Rally)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_RALLY">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>In deinem Zug kannst du eine Bonusaktion und einen Überlegenheitswürfel einsetzen, um einem Verbündeten Mut zuzusprechen. Wähle eine befreundete Kreatur, die dich sehen oder hören kann. Diese Kreatur erhält temporäre Trefferpunkte in Höhe des geworfenen Überlegenheitswürfels + deinem Charismamodifikator.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Bonusaktion: Wähle einen Verbündeten, der dich sehen oder hören kann. Er erhält temporäre TP in Höhe des Überlegenheitswürfels + {{charisma:modifier}}.</description>
+        </sheet>
+    </element>
+    <element name="Riposte (Riposte)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_RIPOSTE">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn dich eine Kreatur mit einem Nahkampfangriff verfehlt, kannst du als Reaktion einen Überlegenheitswürfel einsetzen, um sofort einen Nahkampfangriff mit einer Waffe gegen diese Kreatur auszuführen. Triffst du, fügst du dem Schaden den Überlegenheitswürfel hinzu.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Reaktion: Wenn dich eine Kreatur mit einem Nahkampfangriff verfehlt, kannst du sie sofort mit einem Nahkampfangriff kontern. Bei einem Treffer fügst du den Überlegenheitswürfel zum Schaden hinzu.</description>
+        </sheet>
+    </element>
+    <element name="Doppelschlag (Sweeping Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_SWEEPING_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du eine Kreatur mit einem Nahkampfangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um mit demselben Angriff eine zweite Kreatur zu treffen. Wähle eine andere Kreatur, die sich innerhalb von 1,5m (5 Fuß) zum ursprünglichen Ziel und in deiner Reichweite befindet. Wenn dein ursprünglicher Angriffswurf auch die zweite Kreatur treffen würde, erleidet diese Schaden in Höhe des geworfenen Überlegenheitswürfels. Der Schaden hat denselben Typ wie der ursprüngliche Angriff.</p>
+        </description>
+        <sheet>
+            <description>Triffst du mit einem Nahkampfangriff, kannst du mit einem Überlegenheitswürfel eine zweite Kreatur in Reichweite treffen (gleicher Angriffswurf). Sie erleidet Schaden in Höhe des Würfelergebnisses (gleicher Schadenstyp).</description>
+        </sheet>
+    </element>
+    <element name="Fällender Angriff (Trip Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_TRIP_ATTACK">
+        <supports>Maneuver, Battle Master</supports>
+        <description>
+            <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie zu Fall zu bringen. Du fügst dem Schaden den Überlegenheitswürfel hinzu. Ist das Ziel groß oder kleiner, muss es einen Stärkewurf gegen den SG deines Manövers bestehen. Bei einem Fehlschlag wird es zu Boden geworfen (liegt am Boden).</p>
+        </description>
+        <sheet>
+            <description>Setze bei einem Treffer einen Überlegenheitswürfel ein. Ziel (groß oder kleiner) muss Stärkewurf bestehen oder wird zu Boden geworfen (liegt am Boden).</description>
+        </sheet>
+    </element>
+    <!-- Eldritch Knight Archetype -->
+    <element name="Mystischer Ritter (Eldritch Knight)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FIGHTER_ELDRITCH_KNIGHT">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>Der mystische Ritter vereint die Kampfkunst aller Krieger mit sorgfältig erlernten magischen Fähigkeiten. Er nutzt arkanes Wissen ähnlich wie ein Zaubergelehrter, konzentriert sich dabei jedoch meist auf zwei Schulen: Schutzmagie (Abjuration) und Hervorrufung (Evocation). Erstere stärkt seine Verteidigung im Kampf, letztere ermöglicht ihm, mehrere Feinde gleichzeitig zu vernichten. Anders als Zaubergelehrte führen mystische Ritter kein Zauberbuch – sie lernen nur wenige Zauber, aber meistern sie im Kampf aus dem Gedächtnis.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC"/>
+        </description>
+        <sheet display="false">
+            <description>Der mystische Ritter verbindet Kampfkraft mit arkaner Macht.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC" level="7"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE" level="10"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE" level="15"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC" level="18"/>
+        </rules>
+    </element>
+    <element name="Zauberwirken (Spellcasting)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_SPELLCASTING">
+        <description>
+            <p>Ab der 3. Stufe ergänzt du dein Kampfgeschick durch arkane Macht. Die allgemeinen Regeln für Zauber findest du im Kapitel „Magie“, und die Liste der Zaubergelehrtenzauber (Wizard) dient dir als Grundlage.</p>
+            <p class="indent">
+                <strong>
+                    <em>Zaubertricks.</em>
+                </strong> Du lernst zwei Zaubertricks deiner Wahl aus der Liste des Zaubergelehrten. Auf der 10. Stufe lernst du einen weiteren.</p>
+            <p class="indent">
+                <strong>
+                    <em>Zauberplätze.</em>
+                </strong> Die Tabelle „Zauberwirken des Mystischen Ritters“ zeigt, wie viele Zauberplätze du zum Wirken deiner Zauber zur Verfügung hast. Du musst einen Zauberplatz der passenden oder höheren Stufe aufwenden. Du erhältst alle verbrauchten Zauberplätze nach einer langen Rast zurück.</p>
+            <p class="indent">
+                <strong>
+                    <em>Bekannte Zauber.</em>
+                </strong> Du kennst drei Zauber der 1. Stufe, von denen zwei aus den Schulen der Schutz- oder Hervorrufungsmagie stammen müssen. Weitere Zauber erhältst du gemäß der Tabelle. Diese müssen ebenfalls Schutz- oder Hervorrufungszauber sein – außer die auf den Stufen 8, 14 und 20, die aus beliebigen Schulen stammen dürfen.</p>
+            <p class="indent">Immer wenn du eine Stufe aufsteigst, kannst du einen bekannten Zauber durch einen neuen ersetzen, sofern er den Einschränkungen entspricht.</p>
+            <p class="indent">
+                <strong>
+                    <em>Zauberattribut.</em>
+                </strong> Dein Zauberattribut ist Intelligenz. Du nutzt es für Angriffs- und Schwierigkeitswürfe mit deinen Zaubern:</p>
+            <center>
+                <p>
+                    <strong>Rettungswurf-Schwierigkeit</strong> = 8 + dein Übungsbonus + dein Intelligenz-Modifikator</p>
+                <p>
+                    <strong>Zauberangriffsbonus</strong> = dein Übungsbonus + dein Intelligenz-Modifikator</p>
+            </center>
+            <h5 class="caption">ZAUBERWIRKEN DES MYSTISCHEN RITTERS</h5>
+            <table class="class-features">
+                <thead>
+                    <tr>
+                        <td class="col-10">Stufe Krieger</td>
+                        <td class="col-10">Zaubertricks</td>
+                        <td class="col-10">Zaubersprüche</td>
+                        <td>1.</td>
+                        <td>2.</td>
+                        <td>3.</td>
+                        <td>4.</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> 3.</td>
+                    <td>2</td>
+                    <td> 3</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 4.</td>
+                    <td>2</td>
+                    <td> 4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 5th</td>
+                    <td>2</td>
+                    <td> 4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 6th</td>
+                    <td>2</td>
+                    <td> 4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 7th</td>
+                    <td>2</td>
+                    <td> 5</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 8th</td>
+                    <td>2</td>
+                    <td> 6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 9th</td>
+                    <td>2</td>
+                    <td> 6</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>10th</td>
+                    <td>3</td>
+                    <td> 7</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>11th</td>
+                    <td>3</td>
+                    <td> 8</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>12th</td>
+                    <td>3</td>
+                    <td> 8</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>3</td>
+                    <td> 9</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>14th</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>15th</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>16th</td>
+                    <td>3</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>3</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>18th</td>
+                    <td>3</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>19th</td>
+                    <td>3</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>20th</td>
+                    <td>3</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>Du ergänzt dein Kampfgeschick mit arkaner Macht.</description>
+        </sheet>
+        <spellcasting name="Mystischer Ritter" ability="Intelligence" prepare="false" allowReplace="true">
+            <list>Wizard,(Abjuration||Evocation)</list>
+        </spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <stat name="mystischer ritter:spellcasting:slots:1" value="2" level="3"/>
+            <stat name="mystischer ritter:spellcasting:slots:1" value="1" level="4"/>
+            <stat name="mystischer ritter:spellcasting:slots:1" value="1" level="7"/>
+            <stat name="mystischer ritter:spellcasting:slots:2" value="2" level="7"/>
+            <stat name="mystischer ritter:spellcasting:slots:2" value="1" level="10"/>
+            <stat name="mystischer ritter:spellcasting:slots:3" value="2" level="13"/>
+            <stat name="mystischer ritter:spellcasting:slots:3" value="1" level="16"/>
+            <stat name="mystischer ritter:spellcasting:slots:4" value="1" level="19"/>
+            <select type="Spell" name="Zaubertrick (Mystischer Ritter)" supports="Wizard, 0" level="3" number="2" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zaubertrick (Mystischer Ritter)" supports="Wizard, 0" level="10" number="1" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="($(spellcasting:list)||Wizard), 1" level="3" number="1" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="8" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="14" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" spellcasting="Mystischer Ritter"/>
+            <select type="Spell" name="Zauberspruch (Mystischer Ritter)" supports="(Wizard||$(spellcasting:list)), $(spellcasting:slots)" level="20" spellcasting="Mystischer Ritter"/>
+        </rules>
+    </element>
+    <element name="Waffenbindung (Weapon Bond)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WEAPON_BOND">
+        <description>
+            <p>Ab Stufe 3 kannst du ein einstündiges Ritual durchführen, um eine magische Bindung zwischen dir und einer Waffe herzustellen. Dieses Ritual kann auch während einer kurzen Rast vollzogen werden. Die Waffe muss sich währenddessen in deiner Reichweite befinden, und du berührst sie am Ende, um die Bindung zu vollenden.</p>
+            <p class="indent">Solange du nicht kampfunfähig bist, kannst du nicht entwaffnet werden, solange du eine gebundene Waffe führst. Befindet sich die Waffe auf derselben Existenzebene wie du, kannst du sie als Bonusaktion in deine Hand rufen – sie teleportiert sich sofort zu dir.</p>
+            <p class="indent">Du kannst bis zu zwei Waffen gleichzeitig binden, aber nur eine davon mit einer Bonusaktion rufen. Versuchst du, eine dritte Waffe zu binden, musst du zuvor die Bindung zu einer der anderen Waffen lösen.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Als Bonusaktion kannst du eine gebundene Waffe in deine Hand rufen, sofern sie sich auf derselben Existenzebene befindet.</description>
+        </sheet>
+    </element>
+    <element name="Kriegsmagie (War Magic)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_WAR_MAGIC">
+        <description>
+            <p>Ab Stufe 7 kannst du, wenn du in deinem Zug mit deiner Aktion einen Zaubertrick wirkst, als Bonusaktion einen Waffenangriff ausführen.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Wenn du mit deiner Aktion einen Zaubertrick wirkst, kannst du als Bonusaktion einen Waffenangriff ausführen.</description>
+        </sheet>
+    </element>
+    <element name="Mystischer Schlag (Eldritch Strike)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ELDRITCH_STRIKE">
+        <description>
+            <p>Ab Stufe 10 lernst du, wie du mit deinen Waffenangriffen den Widerstand einer Kreatur gegen deine Magie schwächst. Wenn du eine Kreatur mit einem Waffenangriff triffst, hat sie Nachteil beim nächsten Rettungswurf gegen einen Zauber, den du vor dem Ende deines nächsten Zuges wirkst.</p>
+        </description>
+        <sheet>
+            <description>Wenn du eine Kreatur mit einem Waffenangriff triffst, hat sie Nachteil beim nächsten Rettungswurf gegen einen Zauber, den du vor dem Ende deines nächsten Zuges wirkst.</description>
+        </sheet>
+    </element>
+    <element name="Arkaner Sturmangriff (Arcane Charge)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_ARCANE_CHARGE">
+        <description>
+            <p>Ab Stufe 15 kannst du dich bis zu 9m (30 feet) weit teleportieren, wenn du deinen Tatendrang einsetzt. Du musst ein freies Feld sehen können, auf das du dich teleportierst. Du kannst diese Teleportation entweder vor oder nach der zusätzlichen Aktion durchführen.</p>
+        </description>
+        <sheet>
+            <description>Wenn du deinen Tatendrang einsetzt, kannst du dich bis zu 9m (30 feet) weit auf ein freies Feld teleportieren, das du sehen kannst. Du kannst dich vor oder nach der zusätzlichen Aktion teleportieren.</description>
+        </sheet>
+    </element>
+    <element name="Verbesserte Kriegsmagie (Improved War Magic)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELDRITCH_KNIGHT_IMPROVED_WAR_MAGIC">
+        <description>
+            <p>Ab Stufe 18 kannst du, wenn du deine Aktion nutzt, um einen Zauber zu wirken, einen Waffenangriff als Bonusaktion durchführen.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Wenn du deine Aktion nutzt, um einen Zauber zu wirken, kannst du einen Waffenangriff als Bonusaktion durchführen.</description>
+        </sheet>
+    </element>
+</elements>
