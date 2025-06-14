@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<labels>
+  <type name="Race" label="Rassen" path="races"/>
+  <type name="Class" label="Klassen" path="classes"/>
+  <type name="Spell" label="Zauber" path="spells"/>
+</labels>
