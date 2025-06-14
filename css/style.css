@@ -1,0 +1,114 @@
+/* Globales Stylesheet für DnD4Tyria – Basislayout */
+
+/* Farben */
+:root {
+  --accent-color: #4d0422;
+  --light-bg: #f9f9f9;
+  --text-color: #222;
+  --link-color: #4d0422;
+  --link-hover: #6a1735;
+  --heading-bg: #4d0422;
+  --heading-text: white;
+}
+
+/* Grundlayout */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: white;
+  margin: 2em;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+/* Überschriften */
+h1 {
+  background-color: var(--heading-bg);
+  color: var(--heading-text);
+  padding: 0.4em 1em;
+  margin: 1.5em 0 1em 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+h2 {
+  border-left: 6px solid var(--accent-color);
+  padding-left: 0.8em;
+  background-color: var(--light-bg);
+  color: var(--accent-color);
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+h3 {
+  color: var(--accent-color);
+  margin-top: 1.5em;
+  font-size: 1.2em;
+}
+
+/* Absätze und Listen */
+p {
+  margin: 1em 0;
+}
+
+ul,
+ol {
+  margin: 1em 0 1em 2em;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* Tabellen */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  background-color: var(--light-bg);
+}
+
+th,
+td {
+  padding: 0.5em 1em;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+/* Code-Blöcke */
+code {
+  font-family: Consolas, monospace;
+  background-color: #eee;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+/* Footer oder Metainfo */
+footer {
+  margin-top: 4em;
+  font-size: 0.9em;
+  color: #666;
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+  text-align: center;
+}
