@@ -24,7 +24,7 @@
   <a>
     <xsl:attribute name="href">
       <xsl:text>/DnD4Tyria/de/</xsl:text>
-      <xsl:value-of select="translate($breadcrumbLabel, 'ÄÖÜäöüß ', 'AOUaous_')"/>
+      <xsl:value-of select="translate($breadcrumbPath, 'ÄÖÜäöüß ', 'AOUaous_')"/>
       <xsl:text>/index.html</xsl:text>
     </xsl:attribute>
     <xsl:value-of select="$breadcrumbLabel"/>
