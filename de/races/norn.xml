@@ -2,4 +2,5 @@
 <?xml-stylesheet type="text/xsl" href="../../xslt/race-display.xsl"?>
 <root>
   <external href="../aurora/races/d4t-race-norn.xml"/>
+  <external href_labels="../labels.xml"/>  
 </root>
