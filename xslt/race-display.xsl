@@ -30,7 +30,7 @@
   </xsl:template>
 
   <!-- Template für Rassen-Eigenschaftszeilen -->
-  <xsl:template match="p[span[@class='feature']]">
+  <!--<xsl:template match="p[span[@class='feature']]">
   <xsl:for-each select="span[@class='feature']">
     <div class="trait">
       <span class="trait-label">
@@ -39,7 +39,27 @@
       <xsl:apply-templates select="following-sibling::span[@class='feature-description'][1]"/>
     </div>
   </xsl:for-each>
+</xsl:template>-->
+<!-- Template für Rassen-Eigenschaftszeilen als Tabelle -->
+<xsl:template match="p[span[@class='feature']]">
+  <table class="traits">
+    <tr>
+      <th>Merkmal</th>
+      <th>Beschreibung</th>
+    </tr>
+    <xsl:for-each select="span[@class='feature']">
+      <tr>
+        <td>
+          <xsl:value-of select="."/>
+        </td>
+        <td>
+          <xsl:apply-templates select="following-sibling::span[@class='feature-description'][1]"/>
+        </td>
+      </tr>
+    </xsl:for-each>
+  </table>
 </xsl:template>
+  
 
   <!-- Template für Rassenmerkmale -->
   <xsl:template match="element[@type='Racial Trait']">
