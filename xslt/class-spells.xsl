@@ -4,6 +4,18 @@
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
     <!-- Externe Datenquelle (Spells) laden -->
     <xsl:variable name="data" select="document(/root/external/@href)"/>
+    <xsl:variable name="levels">
+        <level>0</level>
+        <level>1</level>
+        <level>2</level>
+        <level>3</level>
+        <level>4</level>
+        <level>5</level>
+        <level>6</level>
+        <level>7</level>
+        <level>8</level>
+        <level>9</level>
+    </xsl:variable>
     <!-- Haupttemplate -->
     <xsl:param name="className" select="/root/@class"/>
     <xsl:param name="classLabel" select="/root/@label"/>
@@ -17,18 +29,6 @@
             <body>
                 <h1>Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </h1>
-                <xsl:variable name="levels">
-                    <level>0</level>
-                    <level>1</level>
-                    <level>2</level>
-                    <level>3</level>
-                    <level>4</level>
-                    <level>5</level>
-                    <level>6</level>
-                    <level>7</level>
-                    <level>8</level>
-                    <level>9</level>
-                </xsl:variable>
                 <xsl:for-each select="$levels/level">
                     <!--<xsl:variable name="lvl" select="."/>
                     <xsl:variable name="spells" select="$data/elements/element[@type='Spell'][contains(supports, $className) and setters/set[@name='level'] = $lvl]"/>
