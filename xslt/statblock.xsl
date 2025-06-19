@@ -95,7 +95,7 @@
                       <xsl:for-each select="spellcasting/cantrips/spell">
                         <li>
   <xsl:variable name="ref" select="@id"/>
-  <xsl:variable name="entry" select="$spellData//spell[@id=$ref]"/>
+  <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>
   <details>
     <summary><xsl:value-of select="."/></summary>
     <xsl:if test="$entry">
@@ -114,7 +114,8 @@
                         <xsl:for-each select="spell">
                           <li>
   <xsl:variable name="ref" select="@id"/>
-  <xsl:variable name="entry" select="$spellData//spell[@id=$ref]"/>
+  <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>
+
   <details>
     <summary><xsl:value-of select="."/></summary>
     <xsl:if test="$entry">
