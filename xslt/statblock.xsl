@@ -3,7 +3,7 @@
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
   <!-- externe Zauberdaten -->
-  <xsl:key name="spell-by-id" match="element[@type='Spell']" use="@id"/>
+  <!--<xsl:key name="spell-by-id" match="element[@type='Spell']" use="@id"/>-->
   <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
@@ -11,12 +11,13 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title>5
+        <title>6
           <xsl:value-of select="encounter/info/name"/>
         </title>
         <link rel="stylesheet" href="../../css/statblock.css" />
       </head>
       <body>
+        <p>Geladene Zauber insgesamt: <xsl:value-of select="count($spellData/element[@type='Spell'])"/></p>
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
           <xsl:for-each select="encounter/statblock">
             <div class="statblock">
@@ -96,14 +97,14 @@
                     <ul>
                       <xsl:for-each select="spellcasting/cantrips/spell">
                         <li>
-  <xsl:variable name="ref" select="@id"/>
+  <!--<xsl:variable name="ref" select="@id"/>
   <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>
   <details>
     <summary><xsl:value-of select="."/></summary>
     <xsl:if test="$entry">
       <p><xsl:value-of select="$entry/description"/></p>
     </xsl:if>
-  </details>
+  </details>-->
 </li>
                       </xsl:for-each>
                     </ul>
@@ -115,7 +116,7 @@
                       <ul>
                         <xsl:for-each select="spell">
                           <li>
-  <xsl:variable name="ref" select="@id"/>
+  <!--<xsl:variable name="ref" select="@id"/>
   <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>
 
   <details>
@@ -123,7 +124,7 @@
     <xsl:if test="$entry">
       <p><xsl:value-of select="$entry/description"/></p>
     </xsl:if>
-  </details>
+  </details>-->
 </li>
                         </xsl:for-each>
                       </ul>
