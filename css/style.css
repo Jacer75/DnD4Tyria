@@ -166,7 +166,7 @@ table.spell-details tr:nth-child(even) {
 }
 
 table.spell-details td {
-  color: #222;
+  color: white;
 }
 
 .breadcrumbs {
