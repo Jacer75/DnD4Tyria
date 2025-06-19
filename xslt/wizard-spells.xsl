@@ -89,7 +89,6 @@
                       <xsl:value-of select="set[@name='materialComponent']"/>
                       <xsl:text>)</xsl:text>
                     </xsl:if>
-                  </p>
                   <p><strong>Konzentration:</strong>
                     <xsl:choose>
                       <xsl:when test="set[@name='isConcentration']='true'">Ja</xsl:when>
