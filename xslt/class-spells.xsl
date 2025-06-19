@@ -30,23 +30,23 @@
                     <level>9</level>
                 </xsl:variable>
                 <xsl:for-each select="$levels/level">
-                    <xsl:variable name="lvl" select="."/>
+                    <!--<xsl:variable name="lvl" select="."/>
                     <xsl:variable name="spells" select="$data/elements/element[@type='Spell'][contains(supports, $className) and setters/set[@name='level'] = $lvl]"/>
-                    <xsl:if test="count($spells) > 0">
-                        <h2>
-                            <xsl:choose>
+                    <xsl:if test="count($spells) > 0">-->
+                        <h2>Test
+                            <!--<xsl:choose>
                                 <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
                                 <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/>
                                 </xsl:otherwise>
-                            </xsl:choose>
+                            </xsl:choose>-->
                         </h2>
-                        <xsl:for-each select="$spells">
+                        <!--<xsl:for-each select="$spells">
                             <xsl:sort select="@name"/>
                             <xsl:call-template name="spell-block">
                                 <xsl:with-param name="spell" select="."/>
                             </xsl:call-template>
                         </xsl:for-each>
-                    </xsl:if>
+                    </xsl:if>-->
                 </xsl:for-each>
             </body>
         </html>
