@@ -36,10 +36,21 @@
   background-color: #fff;
 }
 
-.statblock-abilities,
-.statblock-meta,
 .statblock-skills,
 .statblock-saves {
+  margin-top: 0.5em;
+  text-align: left;
+}
+
+.statblock-skill,
+.statblock-save {
+  border: none;
+  padding: 0;
+  background: none;
+}
+
+.statblock-abilities,
+.statblock-meta {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.5em;
@@ -47,9 +58,7 @@
 }
 
 .statblock-ability,
-.statblock-meta-item,
-.statblock-skill,
-.statblock-save {
+.statblock-meta-item {
   padding: 0.25em 0.5em;
   border: 1px solid #ddd;
   background-color: #f9f9f9;
