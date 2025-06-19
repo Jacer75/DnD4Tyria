@@ -23,7 +23,7 @@
     <xsl:template match="/root">
         <html>
             <head>
-                <title>11 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
+                <title>12 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </title>
                 <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
             </head>
@@ -32,8 +32,8 @@
                 </h1>
                 <xsl:for-each select="$levels/level">
                     <xsl:variable name="lvl" select="."/>
-                    <!--<xsl:variable name="spells" select="$data/elements/element[@type='Spell'][contains(supports, $className) and setters/set[@name='level'] = $lvl]"/>
-                    <xsl:if test="count($spells) > 0">-->
+                    <xsl:variable name="spells" select="$data/elements/element[@type='Spell'][contains(supports, $className) and setters/set[@name='level'] = $lvl]"/>
+                    <xsl:if test="count($spells) > 0">
                         <h2>Test
                             <xsl:choose>
                                 <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
@@ -41,13 +41,13 @@
                                 </xsl:otherwise>
                             </xsl:choose>
                         </h2>
-                        <!--<xsl:for-each select="$spells">
+                        <xsl:for-each select="$spells">
                             <xsl:sort select="@name"/>
                             <xsl:call-template name="spell-block">
                                 <xsl:with-param name="spell" select="."/>
                             </xsl:call-template>
                         </xsl:for-each>
-                    </xsl:if>-->
+                    </xsl:if>
                 </xsl:for-each>
             </body>
         </html>
