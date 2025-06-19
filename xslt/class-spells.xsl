@@ -12,14 +12,14 @@
     <xsl:template match="/root">
         <html>
             <head>
-                <title>15 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
+                <title>16 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </title>
                 <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
             </head>
             <body>
                 <h1>Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </h1>
-                <p>Labels geladen: <xsl:value-of select="$labels/global/spell-levels/level[1]"/></p>
+                <p>Labels geladen: <xsl:value-of select="$labels/spell-levels/level[1]"/></p>
                 <xsl:for-each select="$levels/level">
                     <xsl:variable name="lvl" select="."/>
                     <xsl:variable name="spells" select="$data/elements/element[@type='Spell'][contains(supports, $className) and setters/set[@name='level'] = $lvl]"/>
