@@ -73,4 +73,58 @@
       </reaction>
     </reactions>
   </statblock>
+  <statblock name="Bandit" id="bandit-standard">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoide (jede Rasse)</type>
+    <alignment>nicht rechtschaffen</alignment>
+    <ac>12 (Lederrüstung)</ac>
+    <hp>11 (2W8 + 2)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 10</senses>
+    <languages>eine Sprache nach Wahl (meist Tyrianisch)</languages>
+    <challenge>1/8</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="11" bonus="+0"/>
+    <ability name="Dex" score="12" bonus="+1"/>
+    <ability name="Con" score="12" bonus="+1"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="10" bonus="+0"/>
+    <ability name="Cha" score="10" bonus="+0"/>
+  </abilities>
+
+  <skills/>
+  <saves/>
+
+  <actions>
+    <action name="Krummsäbel">
+      <description>Nahkampfangriff mit Waffe: +3 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 4 (1W6 + 1) Hiebschaden.</description>
+    </action>
+    <action name="Leichte Armbrust">
+      <description>Fernkampfangriff mit Waffe: +3 zum Treffen, Reichweite 24 m/96 m, ein Ziel. Treffer: 5 (1W8 + 1) Stichschaden.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Krummsäbel">
+      <type>Nahkampf</type>
+      <bonus>+3</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W6 + 1) Hiebschaden</damage>
+    </attack>
+    <attack name="Leichte Armbrust">
+      <type>Fernkampf</type>
+      <bonus>+3</bonus>
+      <range>24 m/96 m</range>
+      <target>ein Ziel</target>
+      <damage>5 (1W8 + 1) Stichschaden</damage>
+    </attack>
+  </attacks>
+
+  <reactions/>
+</statblock>
+
 </encounter>
