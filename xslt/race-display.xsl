@@ -10,8 +10,8 @@
     <xsl:variable name="racename" select="$data/elements/element[@type='Race']/@name"/>
     <!--<xsl:variable name="currentType" select="$data/elements/element/@type"/>-->
     <xsl:variable name="labels" select="document(/root/external/@href_labels)"/>
-    <xsl:variable name="breadcrumbLabel" select="$labels/labels/type[@name='Race']/@label"/>
-    <xsl:variable name="breadcrumbPath" select="$labels/labels/type[@name='Race']/@path"/>
+    <xsl:variable name="breadcrumbLabel" select="$labels/global/labels/type[@name='Race']/@label"/>
+    <xsl:variable name="breadcrumbPath" select="$labels/global/labels/type[@name='Race']/@path"/>
     <html>
       <head>
         <title><xsl:value-of select="$racename"/> - DnD4Tyria</title>
