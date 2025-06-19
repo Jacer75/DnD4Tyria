@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../../xslt/class-spells.xsl"?>
 <root class="Cleric" label="Kleriker">
-    <levels>
-        <level>0</level>
-        <level>1</level>
-        <level>2</level>
-        <level>3</level>
-        <level>4</level>
-        <level>5</level>
-        <level>6</level>
-        <level>7</level>
-        <level>8</level>
-        <level>9</level>
-    </levels>
   <external href="../aurora/d4t-spells.xml"/>
+  <external href_labels="../labels.xml"/>
 </root>
