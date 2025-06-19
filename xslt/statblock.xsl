@@ -38,6 +38,8 @@
                 <div class="statblock-meta-item"><strong>TP</strong>: <xsl:value-of select="meta/hp"/></div>
                 <div class="statblock-meta-item"><strong>Bewegung</strong>: <xsl:value-of select="meta/speed"/></div>
                 <div class="statblock-meta-item"><strong>Sinne</strong>: <xsl:value-of select="meta/senses"/></div>
+                <div class="statblock-meta-item"><strong>Zauber-SG</strong>: <xsl:value-of select="spellcasting/saveDC"/></div>
+                <div class="statblock-meta-item"><strong>Angriffsbonus</strong>: <xsl:value-of select="spellcasting/attackBonus"/></div>
               </div>
 
               <div class="statblock-abilities statblock-section">
@@ -87,7 +89,7 @@
               <details class="statblock-section">
                 <summary>Zauber</summary>
                 <div class="statblock-spellcasting">
-                  <p><strong>Zauberattribut</strong>: <xsl:value-of select="spellcasting/stat"/>, <strong>Zauber-SG</strong>: <xsl:value-of select="spellcasting/saveDC"/>, <strong>Angriffsbonus</strong>: <xsl:value-of select="spellcasting/attackBonus"/></p>
+                  <p><strong>Zauberattribut</strong>: <xsl:value-of select="spellcasting/stat"/></p>
 
                   <details class="spell-level">
                     <summary>Zaubertricks</summary>
