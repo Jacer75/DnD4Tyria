@@ -19,7 +19,6 @@
             <body>
                 <h1>Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </h1>
-                <p>Labels geladen: <xsl:value-of select="$labels/global/spell-levels/level[1]"/></p>
                 <xsl:for-each select="$levels/level">
                     <xsl:variable name="lvl" select="."/>
                     <xsl:variable name="level" select="."/>
