@@ -46,8 +46,6 @@
       <action name="Mehrfachangriff">
         <description>Rovan führt drei Nahkampfangriffe aus: zwei mit seinem Krummsäbel und einen mit seinem Dolch. Alternativ führt er zwei Fernkampfangriffe mit seinen Dolchen aus.</description>
       </action>
-      
-      
     </actions>
 
     <attacks>
@@ -73,6 +71,73 @@
       </reaction>
     </reactions>
   </statblock>
+
+  <statblock name="Kayla Hunt" id="kayla-hunt">
+  <meta>
+    <size>Mittel</size>
+    <type>Mensch</type>
+    <alignment>chaotisch neutral</alignment>
+    <ac>13 (Mage Armor)</ac>
+    <hp>12 (2W6 + 2)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 10</senses>
+    <languages>Tyrianisch, Asurisch</languages>
+    <challenge>1/4</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="8" bonus="-1"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="12" bonus="+1"/>
+    <ability name="Int" score="11" bonus="+0"/>
+    <ability name="Wis" score="10" bonus="+0"/>
+    <ability name="Cha" score="16" bonus="+3"/>
+  </abilities>
+
+  <saves>
+    <save ability="Con" bonus="+3"/>
+    <save ability="Cha" bonus="+5"/>
+  </saves>
+
+  <skills>
+    <skill name="Täuschen" bonus="+5"/>
+    <skill name="Überzeugen" bonus="+5"/>
+  </skills>
+
+  <actions>
+    <action name="Feuerpfeil (Cantrip)">
+      <description>Fernkampfangriff mit Zauber: +5 zum Treffen, Reichweite 36 m, ein Ziel. Treffer: 1W10 Feuerschaden.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Feuerpfeil">
+      <type>Zauber, Fernkampf</type>
+      <bonus>+5</bonus>
+      <range>36 m</range>
+      <target>ein Ziel</target>
+      <damage>1W10 Feuerschaden</damage>
+    </attack>
+  </attacks>
+
+  <spellcasting>
+    <stat>Cha</stat>
+    <saveDC>13</saveDC>
+    <attackBonus>+5</attackBonus>
+    <cantrips>
+      <spell id="ID_D4T_SPELL_FIRE_BOLT">Feuerpfeil</spell>
+      <spell id="ID_D4T_SPELL_LIGHT">Licht</spell>
+      <spell id="ID_D4T_SPELL_FRIENDS">Freundschaft</spell>
+    </cantrips>
+    <level1 slots="2">
+      <spell id="ID_D4T_SPELL_MAGE_ARMOR">Magierhand</spell>
+      <spell id="ID_D4T_SPELL_SHIELD">Schild</spell>
+    </level1>
+  </spellcasting>
+
+  <reactions/>
+</statblock>
+
   <statblock name="Bandit" id="bandit-standard">
   <meta>
     <size>Mittel</size>
