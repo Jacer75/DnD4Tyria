@@ -11,7 +11,7 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title>2
+        <title>3
           <xsl:value-of select="encounter/info/name"/>
         </title>
         <link rel="stylesheet" href="../../css/statblock.css" />
@@ -96,14 +96,14 @@
                     <ul>
                       <xsl:for-each select="spellcasting/cantrips/spell">
                         <li>
-  <xsl:variable name="ref" select="@id"/>
+  <!--<xsl:variable name="ref" select="@id"/>
   <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>
   <details>
     <summary><xsl:value-of select="."/></summary>
     <xsl:if test="$entry">
       <p><xsl:value-of select="$entry/description"/></p>
     </xsl:if>
-  </details>
+  </details>-->
 </li>
                       </xsl:for-each>
                     </ul>
