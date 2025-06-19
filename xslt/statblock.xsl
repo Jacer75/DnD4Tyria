@@ -9,7 +9,7 @@
         <title>
           <xsl:value-of select="encounter/info/name"/>
         </title>
-        <link rel="stylesheet" href="statblock.css" />
+        <link rel="stylesheet" href="../css/statblock.css" />
       </head>
       <body>
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
