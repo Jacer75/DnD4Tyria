@@ -6,8 +6,8 @@
   background-color: #fdfaf5;
   font-family: "Segoe UI", "Helvetica Neue", sans-serif;
   width: 100%;
-  max-width: 30em; /* oder z.B. 30rem */
-  flex: 1 1 30em;
+  max-width: 32em; /* oder z.B. 30rem */
+  flex: 1 1 32em;
   box-sizing: border-box;
 }
 
