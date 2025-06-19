@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<encounter>
+  <info>
+    <name>Banditenüberfall</name>
+    <file>MK02-00-01.xml</file>
+    <abenteuer>MK02-00 Die Rache</abenteuer>
+    <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
+  </info>
+
+  <statblock name="Rovan Tredd" id="rovan-tredd">
+    <meta>
+      <size>Mittel</size>
+      <type>Mensch</type>
+      <alignment>neutral böse</alignment>
+      <ac>15</ac>
+      <hp>65</hp>
+      <speed>9 m</speed>
+      <senses name="passiv">10</senses>
+      <languages>Tyrianisch</languages>
+      <challenge>2</challenge>
+    </meta>
+
+    <abilities>
+      <ability name="Str" score="15" bonus="+2"/>
+      <ability name="Dex" score="16" bonus="+3"/>
+      <ability name="Con" score="14" bonus="+2"/>
+      <ability name="Int" score="14" bonus="+2"/>
+      <ability name="Wis" score="11" bonus="+0"/>
+      <ability name="Cha" score="14" bonus="+2"/>
+    </abilities>
+
+    <saves>
+      <save ability="Str" bonus="+4"/>
+      <save ability="Dex" bonus="+5"/>
+      <save ability="Wis" bonus="+2"/>
+    </saves>
+
+    <skills>
+      <skill name="Athletik" bonus="+4"/>
+      <skill name="Täuschen" bonus="+4"/>
+    </skills>
+
+    <actions>
+      <action name="Mehrfachangriff">
+        <description>Rovan führt drei Nahkampfangriffe aus: zwei mit seinem Krummsäbel und einen mit seinem Dolch. Alternativ führt er zwei Fernkampfangriffe mit seinen Dolchen aus.</description>
+      </action>
+      
+      
+    </actions>
+
+    <attacks>
+      <attack name="Krummsäbel">
+        <type>Nahkampf</type>
+        <bonus>+5</bonus>
+        <range>1,50 m</range>
+        <target>ein Ziel</target>
+        <damage>6 (1W6 + 3) Hiebschaden</damage>
+      </attack>
+      <attack name="Dolch">
+        <type>Nah- oder Fernkampf</type>
+        <bonus>+5</bonus>
+        <range>1,50 m oder 6 m/18 m</range>
+        <target>ein Ziel</target>
+        <damage>5 (1W4 + 3) Stichschaden</damage>
+      </attack>
+    </attacks>
+
+    <reactions>
+      <reaction name="Parieren">
+        <description>Rovan addiert 2 zu seiner RK gegen einen Nahkampfangriff, der ihn treffen würde. Dazu muss er den Angreifer sehen und eine Nahkampfwaffe führen.</description>
+      </reaction>
+    </reactions>
+  </statblock>
+</encounter>
