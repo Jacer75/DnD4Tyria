@@ -17,5 +17,5 @@
     <level label="Zauberstufe 7">7</level>
     <level label="Zauberstufe 8">8</level>
     <level label="Zauberstufe 9">9</level>
-</levels>
+</spell-levels>
 </global>
