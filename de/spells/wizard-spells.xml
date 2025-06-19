@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<elements>
+  <element name="Froststrahl (Ray of Frost)" type="Spell" id="ID_D4T_SPELL_RAY_OF_FROST">
+    <supports>Wizard</supports>
+    <set name="level">0</set>
+    <set name="school">Evocation</set>
+    <set name="range">18 Meter (60 feet)</set>
+    <set name="time">1 Aktion</set>
+    <set name="duration">Sofort</set>
+    <set name="hasVerbalComponent">true</set>
+    <set name="hasSomaticComponent">true</set>
+    <set name="isConcentration">false</set>
+    <description>
+      <p>Ein eisiger Strahl schießt aus deiner Hand. Trifft er, verursacht er 1W8 Kälteschaden und reduziert die Bewegung des Ziels um 3 Meter bis zum Beginn deines nächsten Zuges.</p>
+    </description>
+  </element>
+
+  <element name="Tote beleben (Animate Dead)" type="Spell" id="ID_D4T_SPELL_ANIMATE_DEAD">
+    <supports>Cleric, Wizard</supports>
+    <set name="level">3</set>
+    <set name="school">Necromancy</set>
+    <set name="range">3 Meter (10 feet)</set>
+    <set name="time">1 Minute</set>
+    <set name="duration">Augenblicklich</set>
+    <set name="hasVerbalComponent">true</set>
+    <set name="hasSomaticComponent">true</set>
+    <set name="hasMaterialComponent">true</set>
+    <set name="materialComponent">ein Tropfen Blut, ein Stück Fleisch und eine Prise Knochestaub</set>
+    <set name="isConcentration">false</set>
+    <description>
+      <p>Mit diesem Zauber erschaffst du einen untoten Diener ...</p>
+    </description>
+  </element>
+</elements>
