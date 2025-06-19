@@ -22,7 +22,7 @@
     <xsl:template match="/root">
         <html>
             <head>
-                <title>4 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
+                <title>5 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </title>
                 <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
             </head>
