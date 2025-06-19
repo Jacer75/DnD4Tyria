@@ -4,6 +4,20 @@
 
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
+  <!-- Hilfsvariable: Zauberstufen 0–9 -->
+  <xsl:variable name="spell-levels">
+    <level>0</level>
+    <level>1</level>
+    <level>2</level>
+    <level>3</level>
+    <level>4</level>
+    <level>5</level>
+    <level>6</level>
+    <level>7</level>
+    <level>8</level>
+    <level>9</level>
+  </xsl:variable>
+
   <!-- Haupttemplate -->
   <xsl:template match="/elements">
     <html>
@@ -14,13 +28,7 @@
       <body>
         <h1>Zauber des Zaubergelehrten</h1>
 
-        <!-- Gruppierung nach Stufe -->
-        <xsl:for-each select="element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')]">
-          <xsl:sort select="set[@name='level']" data-type="number" order="ascending"/>
-        </xsl:for-each>
-
-        <!-- Um Levelüberschriften zu erzeugen, benötigen wir eine zweifache Schleife -->
-        <xsl:for-each select="0,1,2,3,4,5,6,7,8,9">
+        <xsl:for-each select="$spell-levels/level">
           <xsl:variable name="lvl" select="."/>
           <xsl:if test="/elements/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][set[@name='level'] = $lvl]">
             <h2>
