@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
+  <xsl:include href="spell-fragment.xsl"/>
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
   <!-- Externe Datenquelle (Spells) laden -->
@@ -19,7 +19,10 @@
 
         <xsl:for-each select="$data/elements/element[@type='Spell']">
           <xsl:sort select="@name"/>
-          <details>
+          <xsl:call-template name="spell-block">
+            <xsl:with-param name="spell" select="."/>
+          </xsl:call-template>
+          <!--<details>
             <summary><xsl:value-of select="@name"/></summary>
             <table class="spell-details">
               <tr><th>Grad</th><td><xsl:value-of select="setters/set[@name='level']"/></td></tr>
@@ -50,7 +53,7 @@
             <div class="description" style="margin-top: 0.5em; font-size: 0.95em;">
               <xsl:copy-of select="description/*"/>
             </div>
-          </details>
+          </details>-->
         </xsl:for-each>
 
       </body>
