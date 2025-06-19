@@ -17,7 +17,7 @@
       <body>
         <h1>Alle Zauber</h1>
 
-        <xsl:for-each select="$data/element[@type='Spell']">
+        <xsl:for-each select="$data/elements/element[@type='Spell']">
           <xsl:sort select="@name"/>
           <details>
             <summary><xsl:value-of select="@name"/></summary>
