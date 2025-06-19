@@ -25,7 +25,7 @@
   <xsl:template match="/root">
     <html>
       <head>
-        <title>4 Zauber des Zaubergelehrten</title>
+        <title>5 Zauber des Zaubergelehrten</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css" />
       </head>
       <body>
@@ -33,25 +33,56 @@
 
         <xsl:for-each select="$spell-levels/level">
           <xsl:variable name="lvl" select="."/>
-          <xsl:if test="$data/element[@type='Spell'][setters/set[@name='level'] = $lvl]">
-            <h2>
-              <xsl:choose>
-                <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
-                <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/></xsl:otherwise>
-              </xsl:choose>
-            </h2>
-            <xsl:for-each select="$data/element[@type='Spell'][setters/set[@name='level'] = $lvl]">
-              <xsl:sort select="@name"/>
-              <details>
-                <summary><xsl:value-of select="@name"/></summary>
-                <div>
-                  <p><strong>Grad:</strong> <xsl:value-of select="set[@name='level']"/></p>
-                  <p><strong>Schule:</strong> <xsl:value-of select="set[@name='school']"/></p>
-                  <p><strong>Reichweite:</strong> <xsl:value-of select="set[@name='range']"/></p>
-                  <p><strong>Dauer:</strong> <xsl:value-of select="set[@name='duration']"/></p>
-                  <p><strong>Wirkzeit:</strong> <xsl:value-of select="set[@name='time']"/></p>
-                  <p><strong>Komponenten:</strong>
-                    <xsl:if test="set[@name='hasVerbalComponent']='true'">V</xsl:if>
+          <xsl:choose>
+  <xsl:when test="$data/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][setters/set[@name='level'] = $lvl]">
+    <h2>
+      <xsl:choose>
+        <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
+        <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/></xsl:otherwise>
+      </xsl:choose>
+    </h2>
+    <xsl:for-each select="$data/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][setters/set[@name='level'] = $lvl]">
+      <xsl:sort select="@name"/>
+      <details>
+        <summary><xsl:value-of select="@name"/></summary>
+        <div>
+          <p><strong>Grad:</strong> <xsl:value-of select="set[@name='level']"/></p>
+          <p><strong>Schule:</strong> <xsl:value-of select="set[@name='school']"/></p>
+          <p><strong>Reichweite:</strong> <xsl:value-of select="set[@name='range']"/></p>
+          <p><strong>Dauer:</strong> <xsl:value-of select="set[@name='duration']"/></p>
+          <p><strong>Wirkzeit:</strong> <xsl:value-of select="set[@name='time']"/></p>
+          <p><strong>Komponenten:</strong>
+            <xsl:if test="set[@name='hasVerbalComponent']='true'">V</xsl:if>
+            <xsl:if test="set[@name='hasSomaticComponent']='true'">, G</xsl:if>
+            <xsl:if test="set[@name='hasMaterialComponent']='true'">
+              <xsl:text>, M (</xsl:text>
+              <xsl:value-of select="set[@name='materialComponent']"/>
+              <xsl:text>)</xsl:text>
+            </xsl:if>
+          </p>
+          <p><strong>Konzentration:</strong>
+            <xsl:choose>
+              <xsl:when test="set[@name='isConcentration']='true'">Ja</xsl:when>
+              <xsl:otherwise>Nein</xsl:otherwise>
+            </xsl:choose>
+          </p>
+          <div class="description">
+            <xsl:copy-of select="description/*"/>
+          </div>
+        </div>
+      </details>
+    </xsl:for-each>
+  </xsl:when>
+  <xsl:otherwise>
+    <h2>
+      <xsl:choose>
+        <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
+        <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/></xsl:otherwise>
+      </xsl:choose>
+    </h2>
+    <p><em>Keine passenden Zauber gefunden.</em></p>
+  </xsl:otherwise>
+</xsl:choose>
                     <xsl:if test="set[@name='hasSomaticComponent']='true'">, G</xsl:if>
                     <xsl:if test="set[@name='hasMaterialComponent']='true'">
                       <xsl:text>, M (</xsl:text>
