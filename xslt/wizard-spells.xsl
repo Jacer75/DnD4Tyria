@@ -25,7 +25,7 @@
   <xsl:template match="/root">
     <html>
       <head>
-        <title>3 Zauber des Zaubergelehrten</title>
+        <title>4 Zauber des Zaubergelehrten</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css" />
       </head>
       <body>
