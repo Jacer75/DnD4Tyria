@@ -5,7 +5,7 @@
     <!-- Externe Datenquelle (Spells) laden -->
     <xsl:variable name="data" select="document(/root/external/@href)"/>
     <xsl:variable name="labels" select="document(/root/external/@href_labels)"/>
-    <xsl:variable name="levels" select="$labels/globals/spell-levels"/>
+    <xsl:variable name="levels" select="$labels/global/spell-levels"/>
     <!-- Haupttemplate -->
     <xsl:param name="className" select="/root/@class"/>
     <xsl:param name="classLabel" select="/root/@label"/>
