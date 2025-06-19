@@ -14,7 +14,7 @@
   <xsl:template match="/root">
     <html>
       <head>
-        <title>Alle Zauber</title>
+        <title>Zauber der Klasse: <xsl:value-of select="$classLabel"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css" />
       </head>
       <body>
@@ -22,7 +22,11 @@
 
         <xsl:for-each select="$data/elements/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), concat(' ', $className, ' '))]">
           <xsl:sort select="@name"/>
-          <details>
+          <xsl:call-template name="spell-block">
+            <xsl:with-param name="spell" select="."/>
+          </xsl:call-template>
+          
+          <!---<details>
             <summary><xsl:value-of select="@name"/></summary>
             <table class="spell-details">
               <tr><th>Grad</th><td><xsl:value-of select="setters/set[@name='level']"/></td></tr>
@@ -53,7 +57,7 @@
             <div class="description" style="margin-top: 0.5em; font-size: 0.95em;">
               <xsl:copy-of select="description/*"/>
             </div>
-          </details>
+          </details>-->
         </xsl:for-each>
 
       </body>
