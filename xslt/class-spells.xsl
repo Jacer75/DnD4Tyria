@@ -12,7 +12,7 @@
     <xsl:template match="/root">
         <html>
             <head>
-                <title>14 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
+                <title>15 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </title>
                 <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
             </head>
