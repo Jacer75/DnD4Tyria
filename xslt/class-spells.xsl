@@ -7,28 +7,28 @@
     <!-- Haupttemplate -->
     <xsl:param name="className" select="/root/@class"/>
     <xsl:param name="classLabel" select="/root/@label"/>
-    <xsl:variable name="levels">
-        <level>0</level>
-        <level>1</level>
-        <level>2</level>
-        <level>3</level>
-        <level>4</level>
-        <level>5</level>
-        <level>6</level>
-        <level>7</level>
-        <level>8</level>
-        <level>9</level>
-    </xsl:variable>
     <xsl:template match="/root">
         <html>
             <head>
-                <title>2 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
+                <title>3 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </title>
                 <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
             </head>
             <body>
                 <h1>Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </h1>
+                <xsl:variable name="levels">
+                    <level>0</level>
+                    <level>1</level>
+                    <level>2</level>
+                    <level>3</level>
+                    <level>4</level>
+                    <level>5</level>
+                    <level>6</level>
+                    <level>7</level>
+                    <level>8</level>
+                    <level>9</level>
+                </xsl:variable>
                 <xsl:for-each select="$levels/level">
                     <xsl:variable name="lvl" select="."/>
                     <xsl:variable name="spells" select="$data/elements/element[@type='Spell'][contains(supports, $className) and setters/set[@name='level'] = $lvl]"/>
