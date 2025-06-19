@@ -11,7 +11,7 @@
   <xsl:template match="/root">
     <html>
       <head>
-        <title>Alle Zauber</title>
+        <title>2 Alle Zauber</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css" />
       </head>
       <body>
@@ -22,23 +22,23 @@
           <details>
             <summary><xsl:value-of select="@name"/></summary>
             <div>
-              <p><strong>Grad:</strong> <xsl:value-of select="set[@name='level']"/></p>
-              <p><strong>Schule:</strong> <xsl:value-of select="set[@name='school']"/></p>
-              <p><strong>Reichweite:</strong> <xsl:value-of select="set[@name='range']"/></p>
-              <p><strong>Dauer:</strong> <xsl:value-of select="set[@name='duration']"/></p>
-              <p><strong>Wirkzeit:</strong> <xsl:value-of select="set[@name='time']"/></p>
+              <p><strong>Grad:</strong> <xsl:value-of select="setters/set[@name='level']"/></p>
+              <p><strong>Schule:</strong> <xsl:value-of select="setters/set[@name='school']"/></p>
+              <p><strong>Reichweite:</strong> <xsl:value-of select="setters/set[@name='range']"/></p>
+              <p><strong>Dauer:</strong> <xsl:value-of select="setters/set[@name='duration']"/></p>
+              <p><strong>Wirkzeit:</strong> <xsl:value-of select="setters/set[@name='time']"/></p>
               <p><strong>Komponenten:</strong>
-                <xsl:if test="set[@name='hasVerbalComponent']='true'">V</xsl:if>
-                <xsl:if test="set[@name='hasSomaticComponent']='true'">, G</xsl:if>
-                <xsl:if test="set[@name='hasMaterialComponent']='true'">
+                <xsl:if test="setters/set[@name='hasVerbalComponent']='true'">V</xsl:if>
+                <xsl:if test="setters/set[@name='hasSomaticComponent']='true'">, G</xsl:if>
+                <xsl:if test="setters/set[@name='hasMaterialComponent']='true'">
                   <xsl:text>, M (</xsl:text>
-                  <xsl:value-of select="set[@name='materialComponent']"/>
+                  <xsl:value-of select="setters/set[@name='materialComponent']"/>
                   <xsl:text>)</xsl:text>
                 </xsl:if>
               </p>
               <p><strong>Konzentration:</strong>
                 <xsl:choose>
-                  <xsl:when test="set[@name='isConcentration']='true'">Ja</xsl:when>
+                  <xsl:when test="setters/set[@name='isConcentration']='true'">Ja</xsl:when>
                   <xsl:otherwise>Nein</xsl:otherwise>
                 </xsl:choose>
               </p>
