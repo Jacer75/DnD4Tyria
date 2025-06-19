@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<global>
 <labels>
   <type name="Race" label="Völker" path="races"/>
   <type name="Class" label="Klassen" path="classes"/>
@@ -17,3 +18,4 @@
     <level label="Zauberstufe 8">8</level>
     <level label="Zauberstufe 9">9</level>
 </levels>
+</global>
