@@ -20,7 +20,7 @@
       <body>
         <h1>Zauber der Klasse: <xsl:value-of select="$classLabel"/></h1>
 
-        <xsl:for-each select="$data/elements/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), concat(' ', $className, ' '))]">
+        <xsl:for-each select="$data/elements/element[@type='Spell'][contains(supports, $className)]">
           <xsl:sort select="@name"/>
           <xsl:call-template name="spell-block">
             <xsl:with-param name="spell" select="."/>
