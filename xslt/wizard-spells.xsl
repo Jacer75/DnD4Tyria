@@ -23,7 +23,7 @@
     <html>
       <head>
         <title>Zauber des Zaubergelehrten</title>
-        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/style.css" />
       </head>
       <body>
         <h1>Zauber des Zaubergelehrten</h1>
