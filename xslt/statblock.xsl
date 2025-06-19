@@ -2,6 +2,11 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
+  <!-- externe Zauberdaten -->
+  <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
+  <xsl:key name="spell-by-id" match="spell" use="@id"/>
+  <xsl:output method="html" indent="yes" encoding="UTF-8"/>
+
   <xsl:template match="/">
     <html lang="de">
       <head>
@@ -9,7 +14,7 @@
         <title>
           <xsl:value-of select="encounter/info/name"/>
         </title>
-        <link rel="stylesheet" href="../../css/statblock.css" />
+        <link rel="stylesheet" href="statblock.css" />
       </head>
       <body>
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
@@ -77,6 +82,51 @@
                     <xsl:text> </xsl:text><xsl:value-of select="damage"/>
                   </p>
                 </xsl:for-each>
+              </details>
+
+              <details class="statblock-section">
+                <summary>Zauber</summary>
+                <div class="statblock-spellcasting">
+                  <p><strong>Zauberattribut</strong>: <xsl:value-of select="spellcasting/stat"/>, <strong>Zauber-SG</strong>: <xsl:value-of select="spellcasting/saveDC"/>, <strong>Angriffsbonus</strong>: <xsl:value-of select="spellcasting/attackBonus"/></p>
+
+                  <details class="spell-level">
+                    <summary>Zaubertricks</summary>
+                    <ul>
+                      <xsl:for-each select="spellcasting/cantrips/spell">
+                        <li>
+  <xsl:variable name="ref" select="@id"/>
+  <xsl:variable name="entry" select="$spellData//spell[@id=$ref]"/>
+  <details>
+    <summary><xsl:value-of select="."/></summary>
+    <xsl:if test="$entry">
+      <p><xsl:value-of select="$entry/description"/></p>
+    </xsl:if>
+  </details>
+</li>
+                      </xsl:for-each>
+                    </ul>
+                  </details>
+
+                  <xsl:for-each select="spellcasting/level1">
+                    <details class="spell-level">
+                      <summary>Zaubergrad 1 (Plätze: <xsl:value-of select="@slots"/>)</summary>
+                      <ul>
+                        <xsl:for-each select="spell">
+                          <li>
+  <xsl:variable name="ref" select="@id"/>
+  <xsl:variable name="entry" select="$spellData//spell[@id=$ref]"/>
+  <details>
+    <summary><xsl:value-of select="."/></summary>
+    <xsl:if test="$entry">
+      <p><xsl:value-of select="$entry/description"/></p>
+    </xsl:if>
+  </details>
+</li>
+                        </xsl:for-each>
+                      </ul>
+                    </details>
+                  </xsl:for-each>
+                </div>
               </details>
 
               <details class="statblock-section">
