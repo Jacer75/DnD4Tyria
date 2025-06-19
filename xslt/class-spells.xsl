@@ -34,7 +34,7 @@
                     <xsl:variable name="lvl" select="."/>
                     <xsl:variable name="spells" select="$data/elements/element[@type='Spell'][contains(supports, $className) and setters/set[@name='level'] = $lvl]"/>
                     <xsl:if test="count($spells) > 0">
-                        <h2>Test
+                        <h2>
                             <xsl:choose>
                                 <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
                                 <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/>
