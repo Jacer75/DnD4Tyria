@@ -4,3 +4,16 @@
   <type name="Class" label="Klassen" path="classes"/>
   <type name="Spell" label="Zauber" path="spells"/>
 </labels>
+
+<spell-levels>
+    <level label="Zaubertricks">0</level>
+    <level label="Zauberstufe 1">1</level>
+    <level label="Zauberstufe 2">2</level>
+    <level label="Zauberstufe 3">3</level>
+    <level label="Zauberstufe 4">4</level>
+    <level label="Zauberstufe 5">5</level>
+    <level label="Zauberstufe 6">6</level>
+    <level label="Zauberstufe 7">7</level>
+    <level label="Zauberstufe 8">8</level>
+    <level label="Zauberstufe 9">9</level>
+</levels>
