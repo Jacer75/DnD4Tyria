@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/class-spells.xsl"?>
+<root class="Cleric" label="Kleriker">
+  <external href="../aurora/d4t-spells.xml"/>
+</root>
