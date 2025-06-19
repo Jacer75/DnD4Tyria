@@ -2,5 +2,5 @@
 <?xml-stylesheet type="text/xsl" href="../../xslt/class-spells.xsl"?>
 <root class="Cleric" label="Kleriker">
   <external href="../aurora/d4t-spells.xml"/>
-  <external href_labels="../labels.xml"/>
+  <labels href_labels="../labels.xml"/>
 </root>
