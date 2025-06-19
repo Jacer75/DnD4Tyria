@@ -3,7 +3,7 @@
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
   <!-- externe Zauberdaten -->
-  <xsl:key name="spell-by-id" match="spell" use="@id"/>
+  <!--<xsl:key name="spell-by-id" match="spell" use="@id"/>-->
   <xsl:variable name="spellData" select="document('../aurora/d4t-spells.xml')"/>
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
@@ -96,14 +96,14 @@
                     <ul>
                       <xsl:for-each select="spellcasting/cantrips/spell">
                         <li>
-  <xsl:variable name="ref" select="@id"/>
+  <!--<xsl:variable name="ref" select="@id"/>
   <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>
   <details>
     <summary><xsl:value-of select="."/></summary>
     <xsl:if test="$entry">
       <p><xsl:value-of select="$entry/description"/></p>
     </xsl:if>
-  </details>
+  </details>-->
 </li>
                       </xsl:for-each>
                     </ul>
@@ -115,7 +115,7 @@
                       <ul>
                         <xsl:for-each select="spell">
                           <li>
-  <xsl:variable name="ref" select="@id"/>
+  <!--<xsl:variable name="ref" select="@id"/>
   <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>
 
   <details>
@@ -123,7 +123,7 @@
     <xsl:if test="$entry">
       <p><xsl:value-of select="$entry/description"/></p>
     </xsl:if>
-  </details>
+  </details>-->
 </li>
                         </xsl:for-each>
                       </ul>
