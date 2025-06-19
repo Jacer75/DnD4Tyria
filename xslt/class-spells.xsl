@@ -16,18 +16,6 @@
         <level>8</level>
         <level>9</level>
     </xsl:variable>-->
-    <levels>
-        <level>0</level>
-        <level>1</level>
-        <level>2</level>
-        <level>3</level>
-        <level>4</level>
-        <level>5</level>
-        <level>6</level>
-        <level>7</level>
-        <level>8</level>
-        <level>9</level>
-    </levels>
     <xsl:variable name="levels" select="/root/levels"/>
     <!-- Haupttemplate -->
     <xsl:param name="className" select="/root/@class"/>
