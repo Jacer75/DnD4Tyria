@@ -22,6 +22,7 @@
                 <p>Labels geladen: <xsl:value-of select="$labels/global/spell-levels/level[1]"/></p>
                 <xsl:for-each select="$levels/level">
                     <xsl:variable name="lvl" select="."/>
+                    <xsl:variable name="level" select="."/>
                     <xsl:variable name="spells" select="$data/elements/element[@type='Spell'][contains(supports, $className) and setters/set[@name='level'] = $lvl]"/>
                     <xsl:if test="count($spells) > 0">
                         <h2><xsl:value-of select="$level/@label"/></h2>
