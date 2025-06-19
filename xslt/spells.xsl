@@ -50,7 +50,6 @@
             <div class="description">
               <xsl:copy-of select="description/*"/>
             </div>
-            </div>
           </details>
         </xsl:for-each>
 
