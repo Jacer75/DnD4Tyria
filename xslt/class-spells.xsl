@@ -22,14 +22,14 @@
     <xsl:template match="/root">
         <html>
             <head>
-                <title>5 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
+                <title>6 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </title>
                 <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
             </head>
             <body>
                 <h1>Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </h1>
-                <xsl:for-each select="$levels/level">
+                <!--<xsl:for-each select="$levels/level">-->
                     <!--<xsl:variable name="lvl" select="."/>
                     <xsl:variable name="spells" select="$data/elements/element[@type='Spell'][contains(supports, $className) and setters/set[@name='level'] = $lvl]"/>
                     <xsl:if test="count($spells) > 0">-->
@@ -47,7 +47,7 @@
                             </xsl:call-template>
                         </xsl:for-each>
                     </xsl:if>-->
-                </xsl:for-each>
+                <!--</xsl:for-each>-->
             </body>
         </html>
     </xsl:template>
