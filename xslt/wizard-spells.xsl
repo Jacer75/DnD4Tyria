@@ -4,6 +4,9 @@
 
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
+  <!-- Externe Datenquelle (Spells) laden -->
+  <xsl:variable name="data" select="document(/root/external/@href)"/>
+
   <!-- Hilfsvariable: Zauberstufen 0–9 -->
   <xsl:variable name="spell-levels">
     <level>0</level>
@@ -19,7 +22,7 @@
   </xsl:variable>
 
   <!-- Haupttemplate -->
-  <xsl:template match="/elements">
+  <xsl:template match="/root">
     <html>
       <head>
         <title>Zauber des Zaubergelehrten</title>
@@ -30,14 +33,14 @@
 
         <xsl:for-each select="$spell-levels/level">
           <xsl:variable name="lvl" select="."/>
-          <xsl:if test="/elements/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][set[@name='level'] = $lvl]">
+          <xsl:if test="$data/elements/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][set[@name='level'] = $lvl]">
             <h2>
               <xsl:choose>
                 <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
                 <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/></xsl:otherwise>
               </xsl:choose>
             </h2>
-            <xsl:for-each select="/elements/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][set[@name='level'] = $lvl]">
+            <xsl:for-each select="$data/elements/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][set[@name='level'] = $lvl]">
               <xsl:sort select="@name"/>
               <details>
                 <summary><xsl:value-of select="@name"/></summary>
