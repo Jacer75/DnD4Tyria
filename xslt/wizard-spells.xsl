@@ -25,7 +25,7 @@
   <xsl:template match="/root">
     <html>
       <head>
-        <title>2 Zauber des Zaubergelehrten</title>
+        <title>3 Zauber des Zaubergelehrten</title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css" />
       </head>
       <body>
@@ -33,14 +33,14 @@
 
         <xsl:for-each select="$spell-levels/level">
           <xsl:variable name="lvl" select="."/>
-          <xsl:if test="$data/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][set[@name='level'] = $lvl]">
+          <xsl:if test="$data/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][setters/set[@name='level'] = $lvl]">
             <h2>
               <xsl:choose>
                 <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
                 <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/></xsl:otherwise>
               </xsl:choose>
             </h2>
-            <xsl:for-each select="$data/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][set[@name='level'] = $lvl]">
+            <xsl:for-each select="$data/element[@type='Spell'][contains(concat(' ', normalize-space(supports), ' '), ' Wizard ')][setters/set[@name='level'] = $lvl]">
               <xsl:sort select="@name"/>
               <details>
                 <summary><xsl:value-of select="@name"/></summary>
