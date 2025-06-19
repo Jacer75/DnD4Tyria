@@ -3,7 +3,7 @@
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
   <!-- externe Zauberdaten -->
-  <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
+  <xsl:variable name="spellData" select="document('../aurora/d4t-spells.xml')"/>
   <xsl:key name="spell-by-id" match="spell" use="@id"/>
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
