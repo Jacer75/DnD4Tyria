@@ -154,7 +154,7 @@ table.spell-details td {
 table.spell-details th {
   width: 7em;
   font-weight: normal;
-  color: #555;
+  color: heading-text;
 }
 
 table.spell-details tr:nth-child(odd) {
@@ -166,7 +166,7 @@ table.spell-details tr:nth-child(even) {
 }
 
 table.spell-details td {
-  color: white;
+  color: text-color;
 }
 
 .breadcrumbs {
