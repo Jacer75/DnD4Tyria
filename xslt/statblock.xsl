@@ -3,8 +3,8 @@
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
   <!-- externe Zauberdaten -->
-  <xsl:variable name="spellData" select="document('../aurora/d4t-spells.xml')"/>
   <xsl:key name="spell-by-id" match="spell" use="@id"/>
+  <xsl:variable name="spellData" select="document('../aurora/d4t-spells.xml')"/>
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
   <xsl:template match="/">
@@ -39,7 +39,7 @@
                 <div class="statblock-meta-item"><strong>Bewegung</strong>: <xsl:value-of select="meta/speed"/></div>
                 <div class="statblock-meta-item"><strong>Sinne</strong>: <xsl:value-of select="meta/senses"/></div>
                 <div class="statblock-meta-item"><strong>Zauber-SG</strong>: <xsl:value-of select="spellcasting/saveDC"/></div>
-                <div class="statblock-meta-item"><strong>Angriffsbonus</strong>: <xsl:value-of select="spellcasting/attackBonus"/></div>
+                <div class="statblock-meta-item"><strong>Zauberbonus</strong>: <xsl:value-of select="spellcasting/attackBonus"/></div>
               </div>
 
               <div class="statblock-abilities statblock-section">
