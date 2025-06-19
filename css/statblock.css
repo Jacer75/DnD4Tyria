@@ -1,7 +1,6 @@
 /* Grundlayout für Statblocks */
 .statblock {
   border: 2px solid #4d0422;
-  border-radius: 1em;
   margin: 1em 0;
   padding: 1em;
   background-color: #fdfaf5;
@@ -12,7 +11,6 @@
   background-color: #4d0422;
   color: white;
   padding: 0.5em 1em;
-  border-radius: 0.5em 0.5em 0 0;
   font-size: 1.4em;
   font-weight: bold;
 }
@@ -30,7 +28,6 @@
 
 .statblock-section details {
   border: 1px solid #ccc;
-  border-radius: 0.5em;
   padding: 0.5em;
   background-color: #fff;
 }
@@ -51,7 +48,6 @@
 .statblock-save {
   padding: 0.25em 0.5em;
   border: 1px solid #ddd;
-  border-radius: 0.3em;
   background-color: #f9f9f9;
   text-align: center;
 }
