@@ -4,7 +4,7 @@
     <xsl:output method="html" encoding="UTF-8" indent="yes"/>
     <!-- Externe Datenquelle (Spells) laden -->
     <xsl:variable name="data" select="document(/root/external/@href)"/>
-    <xsl:variable name="levels">
+    <!--<xsl:variable name="levels">
         <level>0</level>
         <level>1</level>
         <level>2</level>
@@ -15,14 +15,27 @@
         <level>7</level>
         <level>8</level>
         <level>9</level>
-    </xsl:variable>
+    </xsl:variable>-->
+    <levels>
+        <level>0</level>
+        <level>1</level>
+        <level>2</level>
+        <level>3</level>
+        <level>4</level>
+        <level>5</level>
+        <level>6</level>
+        <level>7</level>
+        <level>8</level>
+        <level>9</level>
+    </levels>
+    <xsl:variable name="levels" select="/root/levels"/>
     <!-- Haupttemplate -->
     <xsl:param name="className" select="/root/@class"/>
     <xsl:param name="classLabel" select="/root/@label"/>
     <xsl:template match="/root">
         <html>
             <head>
-                <title>9 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
+                <title>10 Zauber der Klasse: <xsl:value-of select="$classLabel"/>
                 </title>
                 <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
             </head>
