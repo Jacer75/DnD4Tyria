@@ -29,10 +29,10 @@
               <tr><th>Wirkzeit</th><td><xsl:value-of select="setters/set[@name='time']"/></td></tr>
               <tr><th>Komponenten</th>
                 <td>
-                  <xsl:if test="setters/set[@name='hasVerbalComponent']='true'">V</xsl:if>
-                  <xsl:if test="setters/set[@name='hasSomaticComponent']='true'">, G</xsl:if>
+                  <xsl:if test="setters/set[@name='hasVerbalComponent']='true'">Verbal<br></xsl:if>
+                  <xsl:if test="setters/set[@name='hasSomaticComponent']='true'">Geste<br></xsl:if>
                   <xsl:if test="setters/set[@name='hasMaterialComponent']='true'">
-                    <xsl:text>, M (</xsl:text>
+                    <xsl:text>Material: (</xsl:text>
                     <xsl:value-of select="setters/set[@name='materialComponent']"/>
                     <xsl:text>)</xsl:text>
                   </xsl:if>
