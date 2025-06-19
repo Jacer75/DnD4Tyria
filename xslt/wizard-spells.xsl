@@ -22,7 +22,7 @@
   </xsl:variable>
 
   <!-- Haupttemplate -->
-  <xsl:template match="/root">
+  <xsl:template match="/">
     <html>
       <head>
         <title>Zauber des Zaubergelehrten</title>
