@@ -11,7 +11,7 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title>4
+        <title>5
           <xsl:value-of select="encounter/info/name"/>
         </title>
         <link rel="stylesheet" href="../../css/statblock.css" />
