@@ -47,7 +47,7 @@
                 </td>
               </tr>
             </table>
-            <div class="description">
+            <div class="description" style="margin-top: 0.5em; font-size: 0.95em;">
               <xsl:copy-of select="description/*"/>
             </div>
           </details>
