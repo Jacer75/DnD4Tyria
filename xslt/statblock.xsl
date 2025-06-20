@@ -55,7 +55,7 @@
 
               <div class="statblock-saves statblock-section" style="text-align: left;">
                 <div class="statblock-save">
-                  <strong>Sinne</strong>: <xsl:value-of select="meta/senses"/></div>
+                  <strong>Sinne</strong>: <xsl:value-of select="meta/senses"/>
                 </div>
               </div>
 
@@ -138,6 +138,7 @@
                   </xsl:for-each>
                 </details>
               </xsl:if>
+            </div>
           </xsl:for-each>
         </div>
       </body>
