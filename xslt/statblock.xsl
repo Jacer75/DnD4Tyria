@@ -36,9 +36,12 @@
                 <div class="statblock-meta-item"><strong>RK</strong>: <xsl:value-of select="meta/ac"/></div>
                 <div class="statblock-meta-item"><strong>TP</strong>: <xsl:value-of select="meta/hp"/></div>
                 <div class="statblock-meta-item"><strong>Bewegung</strong>: <xsl:value-of select="meta/speed"/></div>
-                <div class="statblock-meta-item"><strong>Sinne</strong>: <xsl:value-of select="meta/senses"/></div>
-                <div class="statblock-meta-item"><strong>Zauber-SG</strong>: <xsl:value-of select="spellcasting/saveDC"/></div>
-                <div class="statblock-meta-item"><strong>Zauberbonus</strong>: <xsl:value-of select="spellcasting/attackBonus"/></div>
+                <!--<div class="statblock-meta-item"><strong>Sinne</strong>: <xsl:value-of select="meta/senses"/></div>-->
+                <xsl:if test="spellcasting">
+                  <div class="statblock-meta-item"><strong>Zauberattr</strong>: <xsl:value-of select="spellcasting/stat"/></div>
+                  <div class="statblock-meta-item"><strong>Zauber-SG</strong>: <xsl:value-of select="spellcasting/saveDC"/></div>
+                  <div class="statblock-meta-item"><strong>Zauberbonus</strong>: <xsl:value-of select="spellcasting/attackBonus"/></div>
+                </xsl:if>
               </div>
 
               <div class="statblock-abilities statblock-section">
@@ -85,6 +88,7 @@
                 </xsl:for-each>
               </details>
 
+              <xsl:if test="spellcasting">
               <details class="statblock-section">
                 <summary>Zauber</summary>
                 <xsl:for-each select="spellcasting/spelllist/spell[not(@level = preceding-sibling::spell/@level)]">
@@ -109,6 +113,7 @@
                   </details>
                 </xsl:for-each>
               </details>
+              </xsl:if>
 
               <details class="statblock-section">
                 <summary>Aktionen</summary>
