@@ -11,7 +11,7 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title>10
+        <title>11
           <xsl:value-of select="encounter/info/name"/>
         </title>
         <link rel="stylesheet" href="../../css/statblock.css" />
@@ -89,7 +89,33 @@
 
               <details class="statblock-section">
                 <summary>Zauber</summary>
-                <div class="statblock-spellcasting">
+<xsl:for-each select="spellcasting/spelllist/spell[not(@level = preceding-sibling::spell/@level)]">
+  <xsl:variable name="lvl" select="@level"/>
+  <xsl:variable name="slots" select="../../slots/slot[@level=$lvl]/@count"/>
+  <details class="spell-level">
+    <summary>
+      <xsl:choose>
+        <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
+        <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/>
+          <xsl:if test="$slots"> (Plätze: <xsl:value-of select="$slots"/>)</xsl:if>
+        </xsl:otherwise>
+      </xsl:choose>
+    </summary>
+    <ul>
+      <xsl:for-each select="../../spelllist/spell[@level=$lvl]">
+        <xsl:variable name="ref" select="@id"/>
+        <xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
+        <li>
+          <xsl:call-template name="spell-block">
+            <xsl:with-param name="spell" select="$entry"/>
+          </xsl:call-template>
+        </li>
+      </xsl:for-each>
+    </ul>
+  </details>
+</xsl:for-each>
+                
+                <!--<div class="statblock-spellcasting">
                   <p><strong>Zauberattribut</strong>: <xsl:value-of select="spellcasting/stat"/></p>
 
                   <details class="spell-level">
@@ -103,7 +129,7 @@
                             <xsl:call-template name="spell-block">
                               <xsl:with-param name="spell" select="$spellEntry"/>
                             </xsl:call-template>
-                          </xsl:if>
+                          </xsl:if>-->
                           <!--<xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
                           <details>
                             <summary><xsl:value-of select="."/></summary>
@@ -111,10 +137,10 @@
                               <p><xsl:value-of select="$entry/description"/></p>
                             </xsl:if>
                           </details>-->
-                        </li>
+                        <!--</li>-->
   <!--<xsl:variable name="ref" select="@id"/>
   <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>-->
-                      </xsl:for-each>
+                      <!--</xsl:for-each>
                     </ul>
                   </details>
 
@@ -123,16 +149,16 @@
                       <summary>Zaubergrad 1 (Plätze: <xsl:value-of select="@slots"/>)</summary>
                       <ul>
                         <xsl:for-each select="spell">
-                          <li>
+                          <li>-->
   <!--<xsl:variable name="ref" select="@id"/>
   <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>-->
-                          <xsl:variable name="ref" select="@id"/>
+                          <!--<xsl:variable name="ref" select="@id"/>
                           <xsl:variable name="spellEntry" select="$spellData/elements/element[@id=$ref]"/>
                           <xsl:if test="$spellEntry">
                             <xsl:call-template name="spell-block">
                               <xsl:with-param name="spell" select="$spellEntry"/>
                             </xsl:call-template>
-                          </xsl:if>
+                          </xsl:if>-->
                           <!--<xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
                           <details>
                             <summary><xsl:value-of select="."/></summary>
@@ -140,12 +166,12 @@
                               <p><xsl:value-of select="$entry/description"/></p>
                             </xsl:if>
                           </details>-->
-                        </li>
+                        <!--</li>
                         </xsl:for-each>
                       </ul>
                     </details>
                   </xsl:for-each>
-                </div>
+                </div>-->
               </details>
 
               <details class="statblock-section">
