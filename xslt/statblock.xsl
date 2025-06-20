@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
-
+  <xsl:import href="spell-display.xsl"/>
   <!-- externe Zauberdaten -->
   <!--<xsl:key name="spell-by-id" match="element[@type='Spell']" use="@id"/>-->
   <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
@@ -98,13 +98,19 @@
                       <xsl:for-each select="spellcasting/cantrips/spell">
                         <li>
                           <xsl:variable name="ref" select="@id"/>
-                          <xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
+                          <xsl:variable name="spellEntry" select="$spellData/elements/element[@id=$ref]"/>
+                          <xsl:if test="$spellEntry">
+                            <xsl:call-template name="spell-block">
+                              <xsl:with-param name="spell" select="$spellEntry"/>
+                            </xsl:call-template>
+                          </xsl:if>
+                          <!--<xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
                           <details>
                             <summary><xsl:value-of select="."/></summary>
                             <xsl:if test="$entry">
                               <p><xsl:value-of select="$entry/description"/></p>
                             </xsl:if>
-                          </details>
+                          </details>-->
                         </li>
   <!--<xsl:variable name="ref" select="@id"/>
   <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>-->
@@ -121,13 +127,19 @@
   <!--<xsl:variable name="ref" select="@id"/>
   <xsl:variable name="entry" select="key('spell-by-id', $ref, $spellData)"/>-->
                           <xsl:variable name="ref" select="@id"/>
-                          <xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
+                          <xsl:variable name="spellEntry" select="$spellData/elements/element[@id=$ref]"/>
+                          <xsl:if test="$spellEntry">
+                            <xsl:call-template name="spell-block">
+                              <xsl:with-param name="spell" select="$spellEntry"/>
+                            </xsl:call-template>
+                          </xsl:if>
+                          <!--<xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
                           <details>
                             <summary><xsl:value-of select="."/></summary>
                             <xsl:if test="$entry">
                               <p><xsl:value-of select="$entry/description"/></p>
                             </xsl:if>
-                          </details>
+                          </details>-->
                         </li>
                         </xsl:for-each>
                       </ul>
