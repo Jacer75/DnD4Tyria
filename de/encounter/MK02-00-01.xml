@@ -127,7 +127,7 @@
     <spelllist>
       <spell id="ID_D4T_SPELL_FIRE_BOLT" level="0">Feuerpfeil</spell>
       <spell id="ID_D4T_SPELL_LIGHT" level="0">Licht</spell>
-      <spell id="ID_D4T_SPELL_FRIENDS">Freundschaft</spell>
+      <spell id="ID_D4T_SPELL_FRIENDS" level="0">Freundschaft</spell>
       <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung</spell>
       <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild</spell>
     </spelllist>
