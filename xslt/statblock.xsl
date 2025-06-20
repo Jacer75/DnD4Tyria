@@ -138,8 +138,6 @@
                   </xsl:for-each>
                 </details>
               </xsl:if>
-
-            </div>
           </xsl:for-each>
         </div>
       </body>
