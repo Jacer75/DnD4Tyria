@@ -11,13 +11,13 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title>7
+        <title>8
           <xsl:value-of select="encounter/info/name"/>
         </title>
         <link rel="stylesheet" href="../../css/statblock.css" />
       </head>
       <body>
-        <p>Geladene Zauber insgesamt: <xsl:value-of select="count($spellData/element[@type='Spell'])"/></p>
+        <p>Geladene Zauber insgesamt: <xsl:value-of select="count($spellData/elements/element[@type='Spell'])"/></p>
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
           <xsl:for-each select="encounter/statblock">
             <div class="statblock">
