@@ -11,7 +11,7 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title>11
+        <title>12
           <xsl:value-of select="encounter/info/name"/>
         </title>
         <link rel="stylesheet" href="../../css/statblock.css" />
@@ -89,31 +89,31 @@
 
               <details class="statblock-section">
                 <summary>Zauber</summary>
-<xsl:for-each select="spellcasting/spelllist/spell[not(@level = preceding-sibling::spell/@level)]">
-  <xsl:variable name="lvl" select="@level"/>
-  <xsl:variable name="slots" select="../../slots/slot[@level=$lvl]/@count"/>
-  <details class="spell-level">
-    <summary>
-      <xsl:choose>
-        <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
-        <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/>
-          <xsl:if test="$slots"> (Plätze: <xsl:value-of select="$slots"/>)</xsl:if>
-        </xsl:otherwise>
-      </xsl:choose>
-    </summary>
-    <ul>
-      <xsl:for-each select="../../spelllist/spell[@level=$lvl]">
-        <xsl:variable name="ref" select="@id"/>
-        <xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
-        <li>
-          <xsl:call-template name="spell-block">
-            <xsl:with-param name="spell" select="$entry"/>
-          </xsl:call-template>
-        </li>
-      </xsl:for-each>
-    </ul>
-  </details>
-</xsl:for-each>
+                <xsl:for-each select="spellcasting/spelllist/spell[not(@level = preceding-sibling::spell/@level)]">
+                  <xsl:variable name="lvl" select="@level"/>
+                  <xsl:variable name="slots" select="../../slots/slot[@level=$lvl]/@count"/>
+                  <details class="spell-level">
+                    <summary>
+                      <xsl:choose>
+                        <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
+                        <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/>
+                          <xsl:if test="$slots"> (Plätze: <xsl:value-of select="$slots"/>)</xsl:if>
+                        </xsl:otherwise>
+                      </xsl:choose>
+                    </summary>
+                    <!--<ul>-->
+                      <xsl:for-each select="../../spelllist/spell[@level=$lvl]">
+                        <xsl:variable name="ref" select="@id"/>
+                        <xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
+                        <!--<li>-->
+                          <xsl:call-template name="spell-block">
+                            <xsl:with-param name="spell" select="$entry"/>
+                          </xsl:call-template>
+                        <!--</li>-->
+                      </xsl:for-each>
+                    <!--</ul>-->
+                  </details>
+                </xsl:for-each>
                 
                 <!--<div class="statblock-spellcasting">
                   <p><strong>Zauberattribut</strong>: <xsl:value-of select="spellcasting/stat"/></p>
