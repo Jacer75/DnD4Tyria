@@ -89,45 +89,49 @@
               </details>
 
               <xsl:if test="spellcasting">
-              <details class="statblock-section">
-                <summary>Zauber</summary>
-                <xsl:for-each select="spellcasting/spelllist/spell[not(@level = preceding-sibling::spell/@level)]">
-                  <xsl:variable name="lvl" select="@level"/>
-                  <xsl:variable name="slots" select="../../slots/slot[@level=$lvl]/@count"/>
-                  <details class="spell-level">
-                    <summary>
-                      <xsl:choose>
-                        <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
-                        <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/>
-                          <xsl:if test="$slots"> (Plätze: <xsl:value-of select="$slots"/>)</xsl:if>
-                        </xsl:otherwise>
-                      </xsl:choose>
-                    </summary>
-                      <xsl:for-each select="../../spelllist/spell[@level=$lvl]">
-                        <xsl:variable name="ref" select="@id"/>
-                        <xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
-                          <xsl:call-template name="spell-block">
-                            <xsl:with-param name="spell" select="$entry"/>
-                          </xsl:call-template>
-                      </xsl:for-each>
-                  </details>
-                </xsl:for-each>
-              </details>
+                <details class="statblock-section">
+                  <summary>Zauber</summary>
+                  <xsl:for-each select="spellcasting/spelllist/spell[not(@level = preceding-sibling::spell/@level)]">
+                    <xsl:variable name="lvl" select="@level"/>
+                    <xsl:variable name="slots" select="../../slots/slot[@level=$lvl]/@count"/>
+                    <details class="spell-level">
+                      <summary>
+                        <xsl:choose>
+                          <xsl:when test="$lvl = 0">Zaubertricks</xsl:when>
+                          <xsl:otherwise>Zaubergrad <xsl:value-of select="$lvl"/>
+                            <xsl:if test="$slots"> (Plätze: <xsl:value-of select="$slots"/>)</xsl:if>
+                          </xsl:otherwise>
+                        </xsl:choose>
+                      </summary>
+                        <xsl:for-each select="../../spelllist/spell[@level=$lvl]">
+                          <xsl:variable name="ref" select="@id"/>
+                          <xsl:variable name="entry" select="$spellData/elements/element[@id=$ref]"/>
+                            <xsl:call-template name="spell-block">
+                              <xsl:with-param name="spell" select="$entry"/>
+                            </xsl:call-template>
+                        </xsl:for-each>
+                    </details>
+                  </xsl:for-each>
+                </details>
               </xsl:if>
 
-              <details class="statblock-section">
-                <summary>Aktionen</summary>
-                <xsl:for-each select="actions/action">
-                  <p><strong><xsl:value-of select="@name"/>.</strong> <xsl:value-of select="description"/></p>
-                </xsl:for-each>
-              </details>
+              <xsl:if test="actions">
+                <details class="statblock-section">
+                  <summary>Aktionen</summary>
+                  <xsl:for-each select="actions/action">
+                    <p><strong><xsl:value-of select="@name"/>.</strong> <xsl:value-of select="description"/></p>
+                  </xsl:for-each>
+                </details>
+              </xsl:if>
 
-              <details class="statblock-section">
-                <summary>Reaktionen</summary>
-                <xsl:for-each select="reactions/reaction">
-                  <p><strong><xsl:value-of select="@name"/>.</strong> <xsl:value-of select="description"/></p>
-                </xsl:for-each>
-              </details>
+              <xsl:if test="reactions">
+                <details class="statblock-section">
+                  <summary>Reaktionen</summary>
+                  <xsl:for-each select="reactions/reaction">
+                    <p><strong><xsl:value-of select="@name"/>.</strong> <xsl:value-of select="description"/></p>
+                  </xsl:for-each>
+                </details>
+              </xsl:if>
 
             </div>
           </xsl:for-each>
