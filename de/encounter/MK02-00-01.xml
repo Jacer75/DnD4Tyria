@@ -131,6 +131,58 @@
     </slots>
   </spellcasting>
 </statblock>
+<statblock name="David Bell" id="david-bell">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid (jede Rasse)</type>
+    <alignment>nicht rechtschaffen gut</alignment>
+    <ac>11 (Lederrüstung)</ac>
+    <hp>32 (5W8 + 10)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 10</senses>
+    <languages>eine Sprache nach Wahl (meist Tyrianisch)</languages>
+    <challenge>1/2</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="15" bonus="+2"/>
+    <ability name="Dex" score="11" bonus="+0"/>
+    <ability name="Con" score="14" bonus="+2"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="10" bonus="+0"/>
+    <ability name="Cha" score="11" bonus="+0"/>
+  </abilities>
+
+  <skills>
+    <skill name="Einschüchtern" bonus="+2"/>
+  </skills>
+
+  <actions>
+    <action name="Rudelangriff">
+      <description>David hat Vorteil auf Angriffswürfe gegen eine Kreatur, wenn sich mindestens ein Verbündeter von ihm im Umkreis von 1,50 m um das Ziel befindet und dieser nicht kampfunfähig ist.</description>
+    </action>
+    <action name="Mehrfachangriff">
+      <description>David führt zwei Nahkampfangriffe aus.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Keule">
+      <type>Nahkampf</type>
+      <bonus>+4</bonus>
+      <range>1,50 m</range>
+      <target>eine Kreatur</target>
+      <damage>5 (1W6 + 2) Wuchtschaden</damage>
+    </attack>
+    <attack name="Schwere Armbrust">
+      <type>Fernkampf</type>
+      <bonus>+2</bonus>
+      <range>30 m/120 m</range>
+      <target>ein Ziel</target>
+      <damage>5 (1W10) Stichschaden</damage>
+    </attack>
+  </attacks>
+</statblock>
 
   <statblock name="Bandit" id="bandit-standard">
   <meta>
