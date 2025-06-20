@@ -104,12 +104,6 @@
     <skill name="Überzeugen" bonus="+5"/>
   </skills>
 
-  <actions>
-    <action name="Feuerpfeil (Cantrip)">
-      <description>Fernkampfangriff mit Zauber: +5 zum Treffen, Reichweite 36 m, ein Ziel. Treffer: 1W10 Feuerschaden.</description>
-    </action>
-  </actions>
-
   <attacks>
     <attack name="Feuerpfeil">
       <type>Zauber, Fernkampf</type>
@@ -135,18 +129,7 @@
       <slot level="1" count="2"/>
       <slot level="2" count="0"/>
     </slots>
-    <!--<cantrips>
-      <spell id="ID_D4T_SPELL_FIRE_BOLT">Feuerpfeil</spell>
-      <spell id="ID_D4T_SPELL_LIGHT">Licht</spell>
-      <spell id="ID_D4T_SPELL_FRIENDS">Freundschaft</spell>
-    </cantrips>
-    <level1 slots="2">
-      <spell id="ID_D4T_SPELL_MAGE_ARMOR">Magierhand</spell>
-      <spell id="ID_D4T_SPELL_SHIELD">Schild</spell>
-    </level1>-->
   </spellcasting>
-
-  <reactions/>
 </statblock>
 
   <statblock name="Bandit" id="bandit-standard">
@@ -174,15 +157,6 @@
   <skills/>
   <saves/>
 
-  <actions>
-    <action name="Krummsäbel">
-      <description>Nahkampfangriff mit Waffe: +3 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 4 (1W6 + 1) Hiebschaden.</description>
-    </action>
-    <action name="Leichte Armbrust">
-      <description>Fernkampfangriff mit Waffe: +3 zum Treffen, Reichweite 24 m/96 m, ein Ziel. Treffer: 5 (1W8 + 1) Stichschaden.</description>
-    </action>
-  </actions>
-
   <attacks>
     <attack name="Krummsäbel">
       <type>Nahkampf</type>
@@ -200,7 +174,6 @@
     </attack>
   </attacks>
 
-  <reactions/>
 </statblock>
 
 </encounter>
