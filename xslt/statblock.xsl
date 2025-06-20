@@ -55,6 +55,12 @@
 
               <div class="statblock-saves statblock-section" style="text-align: left;">
                 <div class="statblock-save">
+                  <strong>Sinne</strong>: <xsl:value-of select="meta/senses"/></div>
+                </div>
+              </div>
+
+              <div class="statblock-saves statblock-section" style="text-align: left;">
+                <div class="statblock-save">
                   <strong>Rettungswürfe</strong>: 
                   <xsl:for-each select="saves/save">
                     <xsl:if test="position() > 1">, </xsl:if>
