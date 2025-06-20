@@ -17,7 +17,7 @@
       <ac>15</ac>
       <hp>65</hp>
       <speed>9 m</speed>
-      <senses name="passiv">10</senses>
+      <senses>passive Wahrnehmung 10</senses>
       <languages>Tyrianisch</languages>
       <challenge>2</challenge>
     </meta>
