@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-  <xsl:output method="html" indent="yes" encoding="UTF-8"/>
   <xsl:import href="spell-display.xsl"/>
+  <xsl:output method="html" indent="yes" encoding="UTF-8"/>
   <!-- externe Zauberdaten -->
   <!--<xsl:key name="spell-by-id" match="element[@type='Spell']" use="@id"/>-->
   <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
@@ -11,13 +11,13 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title>9
+        <title>10
           <xsl:value-of select="encounter/info/name"/>
         </title>
         <link rel="stylesheet" href="../../css/statblock.css" />
       </head>
       <body>
-        <p>Geladene Zauber insgesamt: <xsl:value-of select="count($spellData/elements/element[@type='Spell'])"/></p>
+        <!--<p>Geladene Zauber insgesamt: <xsl:value-of select="count($spellData/elements/element[@type='Spell'])"/></p>-->
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
           <xsl:for-each select="encounter/statblock">
             <div class="statblock">
