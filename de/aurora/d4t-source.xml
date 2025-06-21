@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <update version="0.1.0">
+      <file name="d4t-source.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/d4t-source.xml" />
+    </update>
+  </info>
+
+  <element name="DnD4Tyria – Spielerhandbuch" type="Source" source="DnD4Tyria" id="ID_D4T_SOURCE_PLAYERS_HANDBOOK">
+    <description>
+      <![CDATA[
+        <p><strong>Alles, was du brauchst, um in die Welt von Tyria einzutauchen.</strong></p>
+        <p>Dieses Handbuch enthält alle Regeln zur Erstellung und Entwicklung von Charakteren für DnD4Tyria. Es bietet angepasste Völker, Klassen, Hintergründe, Ausrüstung, Zauber und eine Einführung in die Geschichte Tyrias. Es ist die Grundlage für Abenteuer in der Welt von Guild Wars – umgesetzt mit den Regeln von Dungeons & Dragons 5e.</p>
+        <p>Begib dich auf eine Reise durch Löwenstein, Götterfels, den Caledon-Wald und die verdorbenen Lande von Orr. Triff auf Helden, dunkle Mächte und uralte Drachen.</p>
+        <p>Tyria braucht dich. Bist du bereit?</p>
+      ]]>
+    </description>
+    <setters>
+      <set name="abbreviation">D4T</set>
+      <set name="url">https://jacer75.github.io/DnD4Tyria/de</set>
+      <set name="image">https://wiki.guildwars2.com/images/d/df/Destiny%27s_Edge_02_concept_art.jpg</set> <!-- Oder dein eigenes Logo -->
+      <set name="author" abbreviation="A4T" url="">Aurora4Tyria</set>
+      <set name="official">false</set>
+      <set name="core">false</set>
+      <set name="release">20250621</set>
+    </setters>
+  </element>
+</elements>
