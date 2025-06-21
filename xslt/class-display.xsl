@@ -11,7 +11,7 @@
 
     <html>
       <head>
-        <title>5 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>6 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -26,7 +26,7 @@
 
         <!-- Zusätzliche Class Features anzeigen, aber keine Skill/Proficiency-Elemente -->
         <xsl:for-each select="$data/elements/element">
-          <xsl:if test="@type='Class Feature' and not(contains(@id, 'PROFICIENCY')) and not(contains(@id, 'IMPROVEMENT_OPTION'))">
+          <xsl:if test="@type='Class Feature' and not(supports)">
             <h2><xsl:value-of select="@name"/></h2>
             <div class="feature-description">
               <xsl:copy-of select="description/node()"/>
