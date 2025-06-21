@@ -13,7 +13,7 @@
 
     <html>
       <head>
-        <title>26 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>27 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -98,7 +98,6 @@
               </xsl:call-template>
               </xsl:if>
             </xsl:for-each>
-          </xsl:if>
         </xsl:for-each>
         
       </body>
