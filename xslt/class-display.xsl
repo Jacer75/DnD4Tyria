@@ -11,19 +11,22 @@
 
     <html>
       <head>
-        <title>3 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>4 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
         <h1><xsl:value-of select="$data/elements/element/@name"/></h1>
 
         <div class="description">
-          <xsl:copy-of select="$data/elements/element[1]/description/node()"/>
+          <!-- Nur die direkten Inhalte der Klassenbeschreibung anzeigen -->
+          <xsl:for-each select="$data/elements/element[1]/description/node()">
+            <xsl:copy-of select="."/>
+          </xsl:for-each>
         </div>
 
-        <!-- Zusätzliche Class Features anzeigen -->
+        <!-- Zusätzliche Class Features anzeigen, aber keine Skill/Proficiency-Elemente -->
         <xsl:for-each select="$data/elements/element">
-          <xsl:if test="@type='Class Feature'">
+          <xsl:if test="@type='Class Feature' and not(contains(@id, 'PROFICIENCY'))">
             <h2><xsl:value-of select="@name"/></h2>
             <div class="feature-description">
               <xsl:copy-of select="description/node()"/>
