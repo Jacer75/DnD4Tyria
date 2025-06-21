@@ -11,6 +11,9 @@
     <xsl:variable name="labels" select="document(/root/external/@href_labels)"/>
     <xsl:variable name="spellList" select="document(/root/external/@href_spells)"/>
 
+    <xsl:variable name="spellcasting" select="$data//spellcasting"/>
+    <xsl:variable name="baseList" select="substring-before($spellcasting/list, ',')"/>
+
     <html>
       <head>
         <title>30 <xsl:value-of select="$data/elements/element/@name"/></title>
@@ -72,8 +75,6 @@
           </xsl:for-each>
         </xsl:for-each>
 
-        <xsl:variable name="spellcasting" select="$data//spellcasting"/>
-        <xsl:variable name="baseList" select="substring-before($spellcasting/list, ',')"/>
 
         <h1><xsl:value-of select="$labels/global/label[@id='class.spells']"/></h1>
         <p>
