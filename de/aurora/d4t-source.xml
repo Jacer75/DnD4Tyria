@@ -6,7 +6,7 @@
     </update>
   </info>
 
-  <element name="DnD4Tyria – Spielerhandbuch" type="Source" source="DnD4Tyria" id="ID_D4T_SOURCE_PLAYERS_HANDBOOK">
+  <element name="DnD4Tyria" type="Source" source="DnD4Tyria" id="ID_D4T_SOURCE_PLAYERS_HANDBOOK">
     <description>
       <![CDATA[
         <p><strong>Alles, was du brauchst, um in die Welt von Tyria einzutauchen.</strong></p>
