@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:include href="spell-display.xsl"/>
 
   <xsl:output method="html" encoding="UTF-8" indent="yes"/>
 
@@ -11,7 +12,7 @@
 
     <html>
       <head>
-        <title>17 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>18 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -36,7 +37,7 @@
         </xsl:for-each>
 
         <!-- Archetypen anzeigen mit einklappbaren Archetype Features -->
-        <h1><xsl:value-of select="$labels/global/label[@id='archetypes']"/></h1>
+        <h1><xsl:value-of select="$labels/global/label[@id='class.archetypes']"/></h1>
         <xsl:for-each select="$data/elements/element[@type='Archetype']">
           <h2><xsl:value-of select="@name"/></h2>
           <div class="archetype-description">
@@ -70,6 +71,22 @@
           </xsl:for-each>
         </xsl:for-each>
 
+        <h1><xsl:value-of select="$labels/labels/label[@id='class.spells']"/></h1>
+        
+        <xsl:for-each select="$labels/global/spell-levels/level">
+          <xsl:variable name="lvl" select="."/>
+          <xsl:variable name="spells" select="$data/elements/element[@type='Spell' and contains(supports, $data/elements/element/@name) and setters/set[@name='level'] = $lvl]"/>
+          <xsl:if test="count($spells) &gt; 0">
+            <h2><xsl:value-of select="@label"/></h2>
+            <xsl:for-each select="$spells">
+              <xsl:sort select="@name"/>
+              <xsl:call-template name="spell-block">
+                <xsl:with-param name="spell" select="."/>
+              </xsl:call-template>
+            </xsl:for-each>
+          </xsl:if>
+        </xsl:for-each>
+        
       </body>
     </html>
   </xsl:template>
