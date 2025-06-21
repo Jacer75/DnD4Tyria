@@ -74,7 +74,8 @@
 
 
         <xsl:variable name="spellcasting" select="$data//spellcasting"/>
-        <xsl:variable name="baseList" select="substring-before($spellcasting/list, ',')"/>
+        <!--<xsl:variable name="baseList" select="substring-before($spellcasting/list, ',')"/>-->
+        <xsl:variable name="baseList" select="substring-before(concat($spellcasting/list, ','), ',')"/>
         <xsl:if test="$spellcasting">
         <h1><xsl:value-of select="$labels/global/label[@id='class.spells']"/></h1>
         <p>
