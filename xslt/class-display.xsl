@@ -9,10 +9,11 @@
   <xsl:template match="/">
     <xsl:variable name="data" select="document(/root/external/@href)"/>
     <xsl:variable name="labels" select="document(/root/external/@href_labels)"/>
+    <xsl:variable name="spellList" select="document(/root/external/@href_spells)"/>
 
     <html>
       <head>
-        <title>23 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>24 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -86,7 +87,7 @@
           <!--<xsl:variable name="spells" select="$data/elements/element[@type='Spell' and contains(supports, $baseList) and setters/set[@name='level'] = $lvl and (
             not($spellcasting/schools) or 
             $spellcasting/schools/school = setters/set[@name='school'])]"/>-->
-          <xsl:variable name="spells" select="$data/elements/element[@type='Spell' and contains(supports, $baseList) and setters/set[@name='level'] = $lvl]"/>
+          <xsl:variable name="spells" select="$spellList/elements/element[@type='Spell' and contains(supports, $baseList) and setters/set[@name='level'] = $lvl]"/>
           <xsl:if test="count($spells) > 0">
             <h2><xsl:value-of select="@label"/></h2>
             <xsl:for-each select="$spells">
