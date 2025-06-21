@@ -11,7 +11,7 @@
 
     <html>
       <head>
-        <title>16 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>17 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -24,6 +24,7 @@
           </xsl:for-each>
         </div>
 
+        <h1><xsl:value-of select="$labels/global/label[@id='class.features']"/></h1>
         <!-- Zusätzliche Class Features anzeigen, aber keine Skill/Proficiency-Elemente -->
         <xsl:for-each select="$data/elements/element">
           <xsl:if test="@type='Class Feature' and not(supports)">
@@ -34,7 +35,8 @@
           </xsl:if>
         </xsl:for-each>
 
-              <!-- Archetypen anzeigen mit einklappbaren Archetype Features -->
+        <!-- Archetypen anzeigen mit einklappbaren Archetype Features -->
+        <h1><xsl:value-of select="$labels/global/label[@id='archetypes']"/></h1>
         <xsl:for-each select="$data/elements/element[@type='Archetype']">
           <h2><xsl:value-of select="@name"/></h2>
           <div class="archetype-description">
