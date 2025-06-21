@@ -90,7 +90,8 @@
             <xsl:for-each select="$spells">
               <!--<xsl:if test="not($spellcasting/schools) or $spellcasting/schools/school = setters/set[@name='school']">-->
               <!--<xsl:if test="not($spellcasting/schools) or count(setters/set[@name='school' and . = $spellcasting/schools/school]) > 0">-->
-              <xsl:if test="not($spellcasting/schools)">
+              <!--<xsl:if test="not($spellcasting/schools)">-->
+              <xsl:if test="1 = 1">
                 <xsl:sort select="@name"/>
                 <xsl:call-template name="spell-block">
                   <xsl:with-param name="spell" select="."/>
