@@ -91,13 +91,14 @@
           <xsl:if test="count($spells) > 0">
             <h2><xsl:value-of select="@label"/></h2>
             <xsl:for-each select="$spells">
-            <xsl:if test="not($spellcasting/schools) or $spellcasting/schools/school = setters/set[@name='school']">
-              <xsl:sort select="@name"/>
-              <xsl:call-template name="spell-block">
-                <xsl:with-param name="spell" select="."/>
-              </xsl:call-template>
+              <xsl:if test="not($spellcasting/schools) or $spellcasting/schools/school = setters/set[@name='school']">
+                <xsl:sort select="@name"/>
+                <xsl:call-template name="spell-block">
+                  <xsl:with-param name="spell" select="."/>
+                </xsl:call-template>
               </xsl:if>
             </xsl:for-each>
+          </xsl:if>
         </xsl:for-each>
         
       </body>
