@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Werkzeuge</name>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0">
+            <file name="d4t-items-tools.xml" url="" />
+        </update>
+    </info>
+    <element name="Alchemistenwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_ALCHEMISTS_SUPPLIES">
+        <description>
+            <p>Mit dem Alchemistenwerkzeug kannst du nützliche Substanzen wie Säure oder Alchemistenfeuer herstellen.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält zwei Glasphiolen, einen Metallrahmen zum Erhitzen über offener Flamme, einen Glasstab zum Umrühren, einen kleinen Mörser mit Stößel sowie eine Beuteltasche mit gängigen alchemistischen Zutaten wie Salz, Eisenpulver und gereinigtem Wasser.</p>
+            <p class="indent"><strong><em>Arkane Kunde.</em></strong> Mit dieser Werkzeugfertigkeit erhältst du zusätzliche Informationen bei Proben auf Arkane Kunde, die Tränke oder ähnliche Materialien betreffen.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Wenn du ein Gebiet auf Spuren untersuchst, kannst du chemische Rückstände oder Substanzen besser identifizieren.</p>
+            <p class="indent"><strong><em>Alchemistische Herstellung.</em></strong> Mit diesem Werkzeug kannst du alchemistische Gegenstände herstellen. Du kannst Geld ausgeben, um Rohmaterialien zu sammeln (1 Pfund pro 50gm). Der SL kann bei geeigneten Fertigkeitsproben Vorteil gewähren. Im Rahmen einer langen Rast kannst du mit diesem Werkzeug eine Dosis Säure, Alchemistenfeuer, Gegengift, Öl, Parfüm oder Seife herstellen. Ziehe den halben Wert des hergestellten Gegenstands vom Gesamtwert deiner Rohmaterialien ab.</p>
+            <h5>ALCHEMISTENWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Dicke Rauchwolke erzeugen</td><td>10</td></tr>
+                <tr><td>Gift identifizieren</td><td>10</td></tr>
+                <tr><td>Substanz bestimmen</td><td>15</td></tr>
+                <tr><td>Feuer entfachen</td><td>15</td></tr>
+                <tr><td>Säure neutralisieren</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">50</set>
+            <set name="weight" lb="8">8 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES</set>
+        </setters>
+    </element>
+    <element name="Kochwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_COOKS_UTENSILS">
+        <description>
+            <p>Abenteurerleben ist hart. Mit einem Koch in der Gruppe schmecken die Mahlzeiten deutlich besser als das übliche Gemisch aus Zwieback und Trockenfrüchten.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Kochwerkzeug enthält einen Metalltopf, Messer, Gabeln, einen Kochlöffel und eine Kelle.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> Deine Kenntnisse in der Kochkunst ermöglichen es dir, Essgewohnheiten und soziale Strukturen einer Kultur besser einzuschätzen.</p>
+            <p class="indent"><strong><em>Heilkunde.</em></strong> Du kannst bittere oder saure Medikamente so zubereiten, dass sie angenehmer schmecken.</p>
+            <p class="indent"><strong><em>Überlebenskunst.</em></strong> Beim Sammeln von Nahrung kannst du aus Zutaten, die andere verschmähen würden, dennoch nahrhafte Mahlzeiten zubereiten.</p>
+            <p class="indent"><strong><em>Mahlzeiten zubereiten.</em></strong> Im Rahmen einer kurzen Rast kannst du eine schmackhafte Mahlzeit zubereiten, die deinen Gefährten hilft, sich zu erholen. Du und bis zu fünf Kreaturen deiner Wahl erhalten 1 zusätzlichen Trefferpunkt pro ausgegebenem Trefferwürfel, sofern du Zugang zu deinem Kochwerkzeug und ausreichend Nahrung hast.</p>
+            <h5>KOCHWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Eine gewöhnliche Mahlzeit zubereiten</td><td>10</td></tr>
+                <tr><td>Eine bekannte Mahlzeit nachkochen</td><td>10</td></tr>
+                <tr><td>Gift oder Verunreinigungen im Essen erkennen</td><td>15</td></tr>
+                <tr><td>Ein Gourmetgericht zaubern</td><td>15</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">1</set>
+            <set name="weight" lb="8">8 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS</set>
+        </setters>
+    </element>
+    <element name="Brauerbedarf" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_BREWERS_SUPPLIES">
+        <description>
+            <p>Braukunst ist die Herstellung von Bier – nicht nur als alkoholisches Getränk, sondern auch als Methode, Wasser zu reinigen. Zwar dauert die Gärung mehrere Wochen, der tatsächliche Arbeitsaufwand aber nur wenige Stunden.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Der Brauerbedarf enthält einen großen Glasballon, eine Portion Hopfen, einen Siphon sowie mehrere Meter Schlauch.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> Mit dieser Werkzeugfertigkeit erhältst du zusätzliche Informationen bei Proben auf Geschichte, wenn Alkohol in der jeweiligen Kultur oder im Ereignis eine Rolle spielt.</p>
+            <p class="indent"><strong><em>Heilkunde.</em></strong> Du erhältst zusätzlichen Einblick bei der Behandlung von Alkoholvergiftungen oder bei der schmerzlindernden Anwendung alkoholischer Mittel.</p>
+            <p class="indent"><strong><em>Überzeugen.</em></strong> Ein kräftiger Schluck kann selbst das härteste Herz erweichen. Deine Kenntnisse erlauben dir, das richtige Maß an Alkohol einzusetzen, um jemanden zu entspannen oder aufzutauen.</p>
+            <p class="indent"><strong><em>Trinkwassergewinnung.</em></strong> Mit deinem Brauwissen kannst du verunreinigtes Wasser trinkbar machen. Im Rahmen einer langen Rast kannst du bis zu 6 Gallonen reinigen, bei einer kurzen Rast bis zu 1 Gallone.</p>
+            <h5>BRAUERBEDARF</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Gift oder Verunreinigungen in einem Getränk erkennen</td><td>10</td></tr>
+                <tr><td>Alkoholische Substanz bestimmen</td><td>15</td></tr>
+                <tr><td>Alkoholeffekte ignorieren</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">20</set>
+            <set name="weight" lb="9">9 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES</set>
+        </setters>
+    </element>
+    <element name="Kalligrafiewerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_CALLIGRAPHERS_SUPPLIES">
+        <description>
+            <p>Kalligrafie ist die Kunst, Schreiben als ästhetischen Ausdruck zu behandeln. Kalligrafen erschaffen Texte von hoher Schönheit, deren Stil schwer zu fälschen ist. Durch ihr Studium lernen sie auch, Handschriften zu analysieren und deren Echtheit zu beurteilen, da ihre Ausbildung viele Stunden des genauen Kopierens umfasst.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Kalligrafiewerkzeug enthält Tinte, ein Dutzend Pergamentblätter und drei Schreibfedern.</p>
+            <p class="indent"><strong><em>Arkane Kunde.</em></strong> Auch wenn diese Fertigkeit nicht hilft, magische Schriften zu entschlüsseln, kann sie Hinweise auf deren Verfasser geben – etwa an Handschrift oder Stil.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> Diese Werkzeugfertigkeit unterstützt dich bei der Analyse alter Texte, Inschriften, Runen oder Wandbilder – etwa durch zusätzliche Informationen bei erfolgreichen Proben.</p>
+            <p class="indent"><strong><em>Schatzkarte entziffern.</em></strong> Du kannst Karten fachkundig untersuchen. Mit einer Intelligenzprobe kannst du das Alter, verborgene Hinweise oder andere Details feststellen.</p>
+            <h5>KALLIGRAFIEWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Verfasser einer nichtmagischen Schrift bestimmen</td><td>10</td></tr>
+                <tr><td>Gemütszustand des Schreibenden einschätzen</td><td>15</td></tr>
+                <tr><td>Gefälschten Text erkennen</td><td>15</td></tr>
+                <tr><td>Unterschrift fälschen</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">10</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES</set>
+        </setters>
+    </element>
+    <element name="Zimmermannswerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_CARPENTERS_TOOLS">
+        <description>
+            <p>Ein geschickter Zimmermann kann Holzkonstruktionen aller Art errichten – von einfachen Baracken über Möbel bis hin zu ganzen Häusern.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Werkzeug umfasst eine Säge, einen Hammer, Nägel, eine Axt, ein Winkelmaß, einen Zollstock, eine Dechsel, einen Hobel und einen Meißel.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> Mit dieser Fertigkeit kannst du Herkunft und Zweck hölzerner Gebäude oder großer Holzobjekte besser einschätzen.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Wenn du Holzstrukturen untersuchst, erkennst du versteckte Hohlräume oder bauliche Tricks leichter.</p>
+            <p class="indent"><strong><em>Wahrnehmung.</em></strong> Du entdeckst Unregelmäßigkeiten in Wänden oder Böden aus Holz, etwa Geheimtüren oder Falltüren.</p>
+            <p class="indent"><strong><em>Heimlichkeit.</em></strong> Du weißt, welche Bretter knarren – und kannst dich gezielt an ihnen vorbeibewegen.</p>
+            <p class="indent"><strong><em>Verstärken.</em></strong> Mit 1 Minute Arbeit und Rohmaterialien kannst du eine Tür oder ein Fenster verstärken. Der SG zum gewaltsamen Öffnen steigt um 5.</p>
+            <p class="indent"><strong><em>Notunterkunft.</em></strong> Im Rahmen einer langen Rast kannst du aus vorhandenem Holz einen Unterschlupf errichten, der vor Regen und Sonne schützt. Die Konstruktion hält 1W3 Tage.</p>
+            <h5>ZIMMERMANNSWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Einfache Holzkonstruktion errichten</td><td>10</td></tr>
+                <tr><td>Komplexe Holzkonstruktion entwerfen</td><td>15</td></tr>
+                <tr><td>Schwachstelle in einer Holzwand finden</td><td>15</td></tr>
+                <tr><td>Tür aufstemmen</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">8</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Kartografenwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_CARTOGRAPHERS_TOOLS">
+        <description>
+            <p>Mit dem Kartografenwerkzeug kannst du präzise Karten erstellen – für deine eigene Reise und für diejenigen, die dir folgen. Solche Karten reichen von großräumigen Gebirgszügen bis zu detaillierten Grundrissen von Dungeons.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Werkzeug enthält eine Schreibfeder, Tinte, Pergament, einen Zirkel, einen Messschieber und ein Lineal.</p>
+            <p class="indent"><strong><em>Arkane Kunde, Geschichte, Religion.</em></strong> Mit deiner Kenntnis von Karten und Orten kannst du bei diesen Fertigkeiten zusätzliche Informationen gewinnen – etwa versteckte Botschaften erkennen, das Alter einer Karte bestimmen oder herausfinden, ob sich Landschaften seither verändert haben.</p>
+            <p class="indent"><strong><em>Naturkunde.</em></strong> Deine geographischen Kenntnisse helfen dir, Fragen zur Umgebung und zum Terrain leichter zu beantworten.</p>
+            <p class="indent"><strong><em>Überlebenskunst.</em></strong> Dein Verständnis von Geographie macht es einfacher, Wege zur Zivilisation zu finden, Siedlungen zu vermuten und dich nicht zu verirren. Du hast so viele Karten studiert, dass dir typische Muster wie Handelsrouten oder Siedlungsverläufe vertraut sind.</p>
+            <p class="indent"><strong><em>Karte anfertigen.</em></strong> Während des Reisens kannst du neben anderen Tätigkeiten fortlaufend eine Karte der Umgebung zeichnen.</p>
+            <h5>KARTOGRAFENWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Alter und Ursprung einer Karte bestimmen</td><td>10</td></tr>
+                <tr><td>Richtung und Entfernung zu einem Wahrzeichen abschätzen</td><td>15</td></tr>
+                <tr><td>Eine gefälschte Karte erkennen</td><td>15</td></tr>
+                <tr><td>Einen fehlenden Kartenteil ergänzen</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">15</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Schusterwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_COBBLERS_TOOLS">
+        <description>
+            <p>Mag das Handwerk eines Schusters bescheiden wirken – ein gutes Paar Stiefel bringt dich durch unwegsames Gelände und tödliche Dungeons.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Schusterwerkzeug umfasst einen Hammer, eine Ahle, ein Messer, einen Schuhhalter, einen Lederzuschnitt, Ersatzleder und Faden.</p>
+            <p class="indent"><strong><em>Arkane Kunde, Geschichte.</em></strong> Deine Kenntnisse über Schuhe helfen dir dabei, die magischen Eigenschaften verzauberter Stiefel zu erkennen oder deren Herkunft nachzuvollziehen.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Schuhe bergen überraschende Hinweise. Du kannst anhand von Abnutzung und Schmutz erkennen, wo jemand kürzlich war. Deine Erfahrung hilft dir auch, die Ursache von Beschädigungen zu erkennen.</p>
+            <p class="indent"><strong><em>Schuhe instand halten.</em></strong> Während einer langen Rast kannst du das Schuhwerk deiner Gefährten reparieren. Für die nächsten 24 Stunden können bis zu sechs Kreaturen deiner Wahl bis zu 10 Stunden pro Tag reisen, ohne Rettungswürfe gegen Erschöpfung ablegen zu müssen.</p>
+            <p class="indent"><strong><em>Verstecktes Fach einarbeiten.</em></strong> Mit 8 Stunden Arbeit kannst du in einem Schuh ein verborgenes Fach anbringen. Es kann einen Gegenstand von bis zu 7cm Länge und 2,5cm Breite und Tiefe fassen. Du legst mit einer Intelligenzprobe über deine Werkzeugfertigkeit den SG für Nachforschungen fest, um das Fach zu entdecken.</p>
+            <h5>SCHUSTERWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Alter und Herkunft eines Schuhs bestimmen</td><td>10</td></tr>
+                <tr><td>Verstecktes Fach im Absatz entdecken</td><td>15</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">5</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Verkleidungsset" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_DISGUISE_KIT">
+        <description>
+            <p>Das perfekte Werkzeug für alle, die sich in Täuschung üben wollen: Ein Verkleidungsset ermöglicht es dir, eine falsche Identität anzunehmen.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält Kosmetika, Haarfärbemittel, kleine Requisiten und einige Kleidungsstücke.</p>
+            <p class="indent"><strong><em>Täuschen.</em></strong> Eine gute Verkleidung kann es erleichtern, glaubhafte Lügen zu erzählen.</p>
+            <p class="indent"><strong><em>Einschüchtern.</em></strong> Mit der richtigen Verkleidung kannst du furchterregender wirken – etwa indem du dich als Seuchenopfer ausgibst oder als brutaler Schläger auftrittst.</p>
+            <p class="indent"><strong><em>Auftreten.</em></strong> Eine durchdachte Verkleidung kann eine Darbietung aufwerten, sofern sie passend gestaltet ist und die gewünschte Reaktion auslöst.</p>
+            <p class="indent"><strong><em>Überzeugen.</em></strong> Menschen neigen dazu, Autoritätspersonen zu vertrauen. Wenn du dich als solche verkleidest, können deine Überredungsversuche erfolgreicher sein.</p>
+            <p class="indent"><strong><em>Verkleidung erstellen.</em></strong> Im Rahmen einer langen Rast kannst du eine Verkleidung vorbereiten. Das Anlegen dauert anschließend nur 1 Minute. Du kannst nur eine vorbereitete Verkleidung gleichzeitig bei dir tragen, ohne unnötige Aufmerksamkeit zu erregen – es sei denn, du verfügst über einen Beutel der Fassung oder ein ähnliches Versteck. Jede Verkleidung wiegt etwa 0,5kg.</p>
+            <p class="indent">Außerhalb der Rast dauert die Herstellung einer einfachen Verkleidung etwa 10 Minuten, bei umfangreicheren Änderungen bis zu 30 Minuten.</p>
+            <h5>VERKLEIDUNGSSET</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Verletzungen oder auffällige Merkmale kaschieren</td><td>10</td></tr>
+                <tr><td>Verkleidung bei einer anderen Person erkennen</td><td>15</td></tr>
+                <tr><td>Das Aussehen eines Humanoiden nachahmen</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">25</set>
+            <set name="weight" lb="3">3 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT</set>
+        </setters>
+    </element>
+    <element name="Fälscherwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_FORGERY_KIT">
+        <description>
+            <p>Ein Fälscherwerkzeug ist dazu gedacht, Dokumente zu kopieren – etwa Siegel, Unterschriften oder ganze Schriftstücke – und so überzeugende Fälschungen herzustellen.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält verschiedene Tintenarten, diverse Pergamente und Papiere, mehrere Schreibfedern, Siegel und Siegellack, Blattgold und -silber sowie kleine Werkzeuge, um geschmolzenes Wachs zu modellieren.</p>
+            <p class="indent"><strong><em>Arkane Kunde.</em></strong> In Verbindung mit dieser Fertigkeit kannst du erkennen, ob ein magischer Gegenstand echt ist oder eine Fälschung.</p>
+            <p class="indent"><strong><em>Täuschen.</em></strong> Eine gut gemachte Fälschung – etwa ein Adelstitel oder ein Reisebefehl – kann deine Lügen glaubhafter wirken lassen.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> In Kombination mit historischem Wissen kannst du überzeugende gefälschte Urkunden erstellen oder die Echtheit alter Dokumente beurteilen.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Beim Untersuchen von Objekten hilft dir dieses Werkzeug zu erkennen, wie etwas hergestellt wurde – und ob es echt ist.</p>
+            <p class="indent"><strong><em>Andere Werkzeuge.</em></strong> Kenntnisse anderer Werkzeuge machen deine Fälschungen noch überzeugender – etwa eine gefälschte Karte mit Hilfe von Kartografenwerkzeug.</p>
+            <p class="indent"><strong><em>Schnelle Fälschung.</em></strong> Während einer kurzen Rast kannst du ein gefälschtes Dokument von bis zu einer Seite Länge anfertigen. Während einer langen Rast kannst du ein Dokument von bis zu vier Seiten erstellen. Deine Intelligenzprobe mit dem Fälscherwerkzeug legt den SG für Nachforschungen fest, um die Fälschung zu erkennen.</p>
+            <h5>FÄLSCHERWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Handschrift imitieren</td><td>15</td></tr>
+                <tr><td>Wachssiegel nachbilden</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">15</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT</set>
+        </setters>
+    </element>
+    <element name="Glasbläserwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_GLASSBLOWERS_TOOLS">
+        <description>
+            <p>Wer im Umgang mit Glasbläserwerkzeug geübt ist, kann nicht nur Glas formen, sondern verfügt auch über spezielles Wissen zur Herstellung gläserner Objekte.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält ein Blasrohr, eine kleine Glasplatte (Marver), Formen und Pinzetten. Um Glas zu bearbeiten, benötigst du eine starke Hitzequelle.</p>
+            <p class="indent"><strong><em>Arkane Kunde, Geschichte.</em></strong> Dein Wissen über Glasherstellung hilft dir beim Untersuchen gläserner Objekte – etwa von Trankflaschen oder gläsernen Fundstücken. So kannst du z.B. Rückstände in einer Flasche analysieren, die durch magische Inhalte verfärbt oder verformt wurde.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Wenn du ein Gebiet untersuchst, helfen dir deine Kenntnisse besonders bei Spuren, die zerbrochenes Glas oder gläserne Objekte betreffen.</p>
+            <p class="indent"><strong><em>Schwachstelle erkennen.</em></strong> Wenn du ein Glasobjekt 1 Minute lang untersuchst, kannst du seine Schwachstellen bestimmen. Schaden, der an einer solchen Stelle verursacht wird, wird verdoppelt.</p>
+            <h5>GLASBLÄSERWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Herkunft des Glases bestimmen</td><td>10</td></tr>
+                <tr><td>Ermitteln, was ein Glasobjekt einst enthielt</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">30</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Kräuterkundeset" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_HERBALISM_KIT">
+        <description>
+            <p>Mit dem Kräuterkundeset kannst du Pflanzen bestimmen und deren nützliche Bestandteile sicher sammeln und verarbeiten.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält Beutel zur Aufbewahrung von Kräutern, Scheren und Lederhandschuhe zum Sammeln, einen Mörser mit Stößel sowie mehrere Glasgefäße.</p>
+            <p class="indent"><strong><em>Arkane Kunde.</em></strong> Dein Wissen über die Eigenschaften und Anwendungen von Pflanzen kann dir bei magischen Studien helfen, insbesondere wenn sie mit Pflanzen oder Tränken zu tun haben.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Beim Untersuchen überwucherter Bereiche hilft dir diese Fertigkeit, Hinweise und Details zu erkennen, die anderen entgehen würden.</p>
+            <p class="indent"><strong><em>Heilkunde.</em></strong> Deine Kenntnis von Heilpflanzen verbessert deine Fähigkeit, Krankheiten und Wunden zu behandeln – etwa durch das Ergänzen herkömmlicher Methoden mit pflanzlichen Mitteln.</p>
+            <p class="indent"><strong><em>Naturkunde und Überlebenskunst.</em></strong> In der Wildnis fällt es dir leichter, essbare Pflanzen zu erkennen oder Nahrung zu finden, die andere übersehen würden.</p>
+            <p class="indent"><strong><em>Pflanzen bestimmen.</em></strong> Die meisten Pflanzen kannst du anhand von Aussehen und Geruch rasch identifizieren.</p>
+            <h5>KRÄUTERKUNDESET</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Pflanzen finden</td><td>15</td></tr>
+                <tr><td>Gift identifizieren</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">5</set>
+            <set name="weight" lb="3">3 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT</set>
+        </setters>
+    </element>
+    <element name="Juwelierwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_JEWELERS_TOOLS">
+        <description>
+            <p>Die Ausbildung im Umgang mit Juwelierwerkzeug vermittelt dir grundlegende Techniken zur Veredelung von Edelsteinen – und ein geschultes Auge für ihren wahren Wert.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set umfasst eine kleine Säge und einen Hammer, Feilen, Zangen und Pinzetten.</p>
+            <p class="indent"><strong><em>Arkane Kunde.</em></strong> Deine Kenntnisse über die mystischen Eigenschaften von Edelsteinen helfen dir bei Proben, die sich auf magische oder verzierte Objekte beziehen.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Wenn du mit Edelsteinen verzierte Gegenstände untersuchst, hilft dir deine Erfahrung dabei, versteckte Hinweise oder Details zu erkennen.</p>
+            <p class="indent"><strong><em>Edelsteine bestimmen.</em></strong> Du kannst Edelsteine auf einen Blick identifizieren und ihren Wert einschätzen.</p>
+            <h5>JUWELIERWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Das Aussehen eines Edelsteins verändern</td><td>15</td></tr>
+                <tr><td>Die Herkunft eines Edelsteins bestimmen</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">25</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Lederverarbeitungswerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_LEATHERWORKERS_TOOLS">
+        <description>
+            <p>Dein Wissen in der Lederverarbeitung umfasst nicht nur handwerkliche Techniken, sondern auch Kenntnisse über Tierhäute und deren Eigenschaften – sowie über Lederwaren wie Rüstungen, Stiefel oder Umhänge.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält ein Messer, einen kleinen Holzhammer, ein Kantenwerkzeug, einen Lochstanzer, Faden und Lederreste.</p>
+            <p class="indent"><strong><em>Arkane Kunde.</em></strong> Deine Erfahrung mit Leder verschafft dir zusätzlichen Einblick beim Untersuchen magischer Gegenstände aus Leder – etwa Stiefel, Gürtel oder Umhänge.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Beim Untersuchen von Lederwaren oder Hinweisen auf solche erkennst du Details, die anderen entgehen – z.B. Verarbeitungsspuren oder Materialherkunft.</p>
+            <p class="indent"><strong><em>Häute bestimmen.</em></strong> Du kannst bei der Untersuchung einer Tierhaut oder eines Lederobjekts die Herkunft und spezielle Behandlungstechniken erkennen – etwa Unterschiede zwischen zwergischer und halblingscher Verarbeitung.</p>
+            <h5>LEERVERARBEITUNGSWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Das Aussehen eines Lederobjekts verändern</td><td>10</td></tr>
+                <tr><td>Die Herkunft eines Lederobjekts bestimmen</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">5</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Steinmetzwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_MASONS_TOOLS">
+        <description>
+            <p>Mit dem Steinmetzwerkzeug kannst du steinerne Strukturen errichten – etwa Wände oder Gebäude aus Ziegeln und Bruchstein.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält eine Kelle, einen Hammer, einen Meißel, Bürsten und ein Winkelmaß.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> Dein Fachwissen hilft dir, Bauzeit, Zweck und möglicherweise den Erbauer eines steinernen Gebäudes zu bestimmen.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Beim Untersuchen von Bereichen innerhalb steinerner Bauwerke erhältst du zusätzliche Einsichten – etwa zu Bauweise oder baulichen Schwächen.</p>
+            <p class="indent"><strong><em>Wahrnehmung.</em></strong> Du erkennst Unregelmäßigkeiten in Steinwänden oder -böden leichter, etwa versteckte Türen oder Hohlräume.</p>
+            <p class="indent"><strong><em>Abbruch.</em></strong> Deine Kenntnisse ermöglichen es dir, Schwachstellen in Mauern zu erkennen. Wenn du solche Stellen angreifst, verursachst du mit Waffen doppelten Schaden.</p>
+            <h5>STEINMETZWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Ein kleines Loch in eine Steinwand meißeln</td><td>10</td></tr>
+                <tr><td>Eine Schwachstelle in einer Steinwand finden</td><td>15</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">10</set>
+            <set name="weight" lb="8">8 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Navigatorwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_NAVIGATORS_TOOLS">
+        <description>
+            <p>Mit dem Navigatorwerkzeug kannst du anhand von Sternenbeobachtungen einen verlässlichen Kurs bestimmen. Es hilft dir, Karten und Seekarten zu lesen, und verbessert deinen Orientierungssinn – auf See wie an Land.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält einen Sextanten, einen Kompass, einen Messschieber, ein Lineal, Pergament, Tinte und eine Schreibfeder.</p>
+            <p class="indent"><strong><em>Überlebenskunst.</em></strong> Deine Kenntnisse verhindern, dass du dich verirrst, und helfen dir, Straßen oder Siedlungen anhand der Umgebung abzuschätzen.</p>
+            <p class="indent"><strong><em>Peilung.</em></strong> Durch präzise Messungen kannst du deine aktuelle Position auf einer Seekarte bestimmen und die Tageszeit ermitteln.</p>
+            <h5>NAVIGATORWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Einen Kurs festlegen</td><td>10</td></tr>
+                <tr><td>Eigene Position auf einer Seekarte bestimmen</td><td>15</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">25</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Malutensilien" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_PAINTERS_SUPPLIES">
+        <description>
+            <p>Mit Malutensilien kannst du zeichnen und malen – von einfachen Skizzen bis zu aufwändigen Gemälden. Außerdem entwickelst du ein Gespür für Kunstgeschichte, das dir beim Untersuchen von Kunstwerken zugutekommen kann.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält eine Staffelei, Leinwand, Farben, Pinsel, Zeichenkohle und eine Palette.</p>
+            <p class="indent"><strong><em>Arkane Kunde, Geschichte, Religion.</em></strong> Deine Erfahrung hilft dir dabei, überlieferte Bedeutungen, magische Eigenschaften oder die Herkunft eines Kunstwerks zu entschlüsseln – etwa bei einem seltsamen Wandbild in einem alten Dungeon.</p>
+            <p class="indent"><strong><em>Nachforschungen, Wahrnehmung.</em></strong> Wenn du ein Gemälde oder ein ähnliches visuelles Werk untersuchst, liefert dir dein Wissen über die Techniken zusätzliche Einsichten.</p>
+            <p class="indent"><strong><em>Malen und Zeichnen.</em></strong> Im Rahmen einer kurzen oder langen Rast kannst du ein einfaches Kunstwerk erschaffen – etwa eine Szene festhalten, ein Porträt anfertigen oder eine grobe Kopie eines Kunstwerks zeichnen, das du gesehen hast.</p>
+            <h5>MALUTENSILIEN</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Ein realistisches Porträt malen</td><td>10</td></tr>
+                <tr><td>Ein Gemälde mit versteckter Botschaft erschaffen</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">10</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES</set>
+        </setters>
+    </element>
+    <element name="Giftmischerset" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_POISONERS_KIT">
+        <description>
+            <p>Ein Giftmischerset ist das bevorzugte Werkzeug von Dieben, Assassinen und anderen, die sich auf verdeckte Methoden verstehen. Es erlaubt dir, Gifte sicher anzuwenden und aus verschiedenen Substanzen herzustellen – und verleiht dir das Wissen, sie zu behandeln.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält Glasphiolen, einen Mörser mit Stößel, Chemikalien und einen Glasstab zum Umrühren.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> Dein Wissen über Gifte hilft dir, wenn du dich an berüchtigte Vergiftungsfälle erinnerst oder historische Informationen dazu suchst.</p>
+            <p class="indent"><strong><em>Nachforschungen, Wahrnehmung.</em></strong> Deine Kenntnisse ermöglichen es dir, vergiftete Objekte sicher zu untersuchen oder Hinweise in Situationen zu erkennen, bei denen Gifte eine Rolle spielen.</p>
+            <p class="indent"><strong><em>Heilkunde.</em></strong> Wenn du eine vergiftete Kreatur behandelst, hilft dir dein Wissen, die bestmögliche Versorgung zu leisten.</p>
+            <p class="indent"><strong><em>Naturkunde, Überlebenskunst.</em></strong> Durch den Umgang mit Giften hast du gelernt, welche Pflanzen und Tiere giftig sind – und wo sie vorkommen.</p>
+            <p class="indent"><strong><em>Gift handhaben.</em></strong> Deine Fertigkeit erlaubt es dir, Gifte zu handhaben und aufzutragen, ohne dich dabei selbst zu gefährden.</p>
+            <h5>GIFTMISCHERSET</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Ein vergiftetes Objekt erkennen</td><td>10</td></tr>
+                <tr><td>Die Wirkung eines Gifts bestimmen</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">50</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT</set>
+        </setters>
+    </element>
+    <element name="Töpferwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_POTTERS_TOOLS">
+        <description>
+            <p>Mit dem Töpferwerkzeug stellst du Keramikobjekte her – in erster Linie Gefäße, aber auch andere nützliche oder dekorative Formen aus Ton.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set umfasst Töpfernadeln, Rillenwerkzeuge, Schaber, ein Messer und einen Messschieber.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> Deine Erfahrung hilft dir, keramische Objekte zeitlich und kulturell einzuordnen – etwa anhand von Stil, Verarbeitung oder Material.</p>
+            <p class="indent"><strong><em>Nachforschungen, Wahrnehmung.</em></strong> Beim Untersuchen von Keramik erkennst du kleine Unregelmäßigkeiten, die anderen entgehen würden – z.B. Hinweise auf Reparaturen, Manipulation oder verborgene Funktionen.</p>
+            <p class="indent"><strong><em>Rekonstruktion.</em></strong> Durch das Betrachten von Scherben kannst du Form und Zweck des ursprünglichen Objekts ableiten.</p>
+            <h5>TÖPFERWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Ermitteln, was ein Gefäß einst enthielt</td><td>10</td></tr>
+                <tr><td>Ein brauchbares Gefäß töpfern</td><td>15</td></tr>
+                <tr><td>Eine Schwachstelle in einem Keramikobjekt finden</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">10</set>
+            <set name="weight" lb="3">3 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Schmiedewerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_SMITHS_TOOLS">
+        <description>
+            <p>Mit dem Schmiedewerkzeug bearbeitest du Metall – du erhitzt es, um seine Form zu verändern, beschädigte Gegenstände zu reparieren oder Rohbarren zu brauchbaren Objekten zu verarbeiten.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält Hämmer, Zangen, Holzkohle, Lappen und einen Wetzstein.</p>
+            <p class="indent"><strong><em>Arkane Kunde und Geschichte.</em></strong> Deine Erfahrung verschafft dir zusätzliche Einsicht beim Untersuchen metallener Objekte – etwa Waffen, Rüstungen oder Artefakte.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Wenn eine Untersuchung metallene Gegenstände betrifft, entgeht dir kein Detail – sei es Herstellungsweise, Abnutzung oder verborgene Makel.</p>
+            <p class="indent"><strong><em>Reparatur.</em></strong> Mit Zugang zu deinen Werkzeugen und einer offenen Flamme, die heiß genug ist, um Metall formbar zu machen, kannst du einem beschädigten Metallobjekt pro Stunde Arbeit 10 Trefferpunkte wiederherstellen.</p>
+            <h5>SCHMIEDEWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Eine stumpfe Klinge schärfen</td><td>10</td></tr>
+                <tr><td>Eine Rüstung reparieren</td><td>15</td></tr>
+                <tr><td>Ein nichtmagisches Metallobjekt zerschlagen</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">20</set>
+            <set name="weight" lb="8">8 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Diebeswerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_THIEVES_TOOLS">
+        <description>
+            <p>Diebeswerkzeuge gehören zu den am häufigsten genutzten Utensilien von Abenteurern. Sie wurden entwickelt, um Schlösser zu knacken und Fallen zu entschärfen. Mit entsprechender Übung erhältst du außerdem grundlegende Kenntnisse über die Funktionsweise solcher Vorrichtungen.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält eine kleine Feile, ein Set aus Dietrichen, einen kleinen Spiegel an einem Metallgriff, eine schmale Schere und eine Zange.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> Deine Kenntnisse über Fallen verschaffen dir Einsicht in Orte, die für ihre Tücken und Sicherheitsvorkehrungen bekannt sind.</p>
+            <p class="indent"><strong><em>Nachforschungen und Wahrnehmung.</em></strong> Du erkennst Fallen besser, weil du mit ihren typischen Anzeichen vertraut bist – etwa lose Bodenplatten, versteckte Mechanismen oder minimale Druckpunkte.</p>
+            <p class="indent"><strong><em>Falle stellen.</em></strong> Wie du Fallen entschärfen kannst, kannst du sie auch bauen. Im Rahmen einer kurzen Rast kannst du mit vorhandenen Materialien eine improvisierte Falle errichten. Das Ergebnis deiner Probe legt den SG für Entdeckung oder Entschärfung fest. Die Falle verursacht Schaden entsprechend den verwendeten Materialien (z.B. Gift oder Waffen) oder Schaden in Höhe der Hälfte deines Probenwerts – je nach Entscheidung des SL.</p>
+            <h5>DIEBESWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-20">SG</td></tr>
+                </thead>
+                <tr><td>Schloss knacken</td><td>Variabel</td></tr>
+                <tr><td>Falle entschärfen</td><td>Variabel</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">25</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Bastlerwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_TINKERS_TOOLS">
+        <description>
+            <p>Ein Bastlerwerkzeug erlaubt dir, viele einfache Alltagsgegenstände zu reparieren. Zwar kannst du damit kaum etwas Neues herstellen, aber du kannst Kleidung flicken, Klingen schärfen oder ein Kettenhemd notdürftig ausbessern.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält verschiedene Handwerkzeuge, Faden, Nadeln, einen Wetzstein, Stoff- und Lederreste sowie einen kleinen Topf mit Leim.</p>
+            <p class="indent"><strong><em>Geschichte.</em></strong> Du kannst Alter und Herkunft eines Objekts bestimmen – selbst wenn dir nur Bruchstücke vorliegen.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Beim Untersuchen beschädigter Objekte erhältst du Hinweise darauf, wie und wann sie beschädigt wurden.</p>
+            <p class="indent"><strong><em>Reparatur.</em></strong> Du kannst einem beschädigten Objekt pro Stunde Arbeit 10 Trefferpunkte zurückgeben – vorausgesetzt, du hast Zugriff auf die nötigen Materialien. Für Metallobjekte brauchst du eine offene Flamme, die heiß genug ist, um das Material formbar zu machen.</p>
+            <h5>BASTLERWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Ein deaktiviertes Gerät vorübergehend reparieren</td><td>10</td></tr>
+                <tr><td>Ein Objekt in halber Zeit reparieren</td><td>15</td></tr>
+                <tr><td>Ein provisorisches Objekt aus Restmaterialien basteln</td><td>20</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">50</set>
+            <set name="weight" lb="10">10 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Weberwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_WEAVERS_TOOLS">
+        <description>
+            <p>Mit dem Weberwerkzeug kannst du Stoff herstellen und zu Kleidungsstücken oder anderen textilen Erzeugnissen verarbeiten.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält Faden, Nadeln und Stoffreste. Du weißt, wie man einen Webstuhl bedient, aber ein solcher ist zu groß, um ihn zu transportieren.</p>
+            <p class="indent"><strong><em>Arkane Kunde, Geschichte.</em></strong> Deine Erfahrung hilft dir beim Untersuchen von Textilien – etwa Umhängen, Roben oder kunstvollen Stoffobjekten.</p>
+            <p class="indent"><strong><em>Nachforschungen.</em></strong> Wenn du gewobene Gegenstände wie Wandteppiche, Polsterungen oder Kleidung untersuchst, kannst du Hinweise erkennen, die anderen entgehen würden.</p>
+            <p class="indent"><strong><em>Reparatur.</em></strong> Im Rahmen einer kurzen Rast kannst du ein beschädigtes Stoffobjekt ausbessern.</p>
+            <p class="indent"><strong><em>Kleidung herstellen.</em></strong> Wenn du Zugang zu ausreichend Stoff und Faden hast, kannst du im Rahmen einer langen Rast ein vollständiges Outfit für eine Kreatur anfertigen.</p>
+            <h5>WEBERWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Stoff umnutzen</td><td>10</td></tr>
+                <tr><td>Ein Loch in einem Stoff flicken</td><td>10</td></tr>
+                <tr><td>Ein Kleidungsstück maßschneidern</td><td>15</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">1</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS</set>
+        </setters>
+    </element>
+    <element name="Holzschnitzwerkzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_WOODCARVERS_TOOLS">
+        <description>
+            <p>Mit dem Holzschnitzwerkzeug kannst du filigrane Gegenstände aus Holz herstellen – zum Beispiel Figuren, Totems oder Pfeile.</p>
+            <p class="indent"><strong><em>Bestandteile.</em></strong> Das Set enthält ein Schnitzmesser, ein Stemmeisen und eine kleine Säge.</p>
+            <p class="indent"><strong><em>Arkane Kunde, Geschichte.</em></strong> Deine Erfahrung verleiht dir zusätzliche Einsicht beim Untersuchen hölzerner Gegenstände – etwa geschnitzter Figuren, Verzierungen oder Pfeile.</p>
+            <p class="indent"><strong><em>Naturkunde.</em></strong> Deine Vertrautheit mit Holzarten verschafft dir beim Untersuchen von Bäumen und Pflanzen zusätzliche Erkenntnisse.</p>
+            <p class="indent"><strong><em>Reparatur.</em></strong> Während einer kurzen Rast kannst du ein beschädigtes hölzernes Objekt ausbessern.</p>
+            <p class="indent"><strong><em>Pfeile herstellen.</em></strong> Während einer kurzen Rast kannst du bis zu fünf Pfeile anfertigen. Während einer langen Rast bis zu zwanzig – vorausgesetzt, du verfügst über genügend Holz.</p>
+            <h5>HOLZSCHNITZWERKZEUG</h5>
+            <table>
+                <thead>
+                    <tr><td>Aktivität</td><td class="col-10">SG</td></tr>
+                </thead>
+                <tr><td>Eine kleine Holzfigur schnitzen</td><td>10</td></tr>
+                <tr><td>Ein kunstvolles Muster in Holz eingravieren</td><td>15</td></tr>
+            </table>
+        </description>
+        <setters>
+            <set name="category">Werkzeuge</set>
+            <set name="cost" currency="gm">1</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="type">Tool</set>
+            <set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS</set>
+        </setters>
+    </element>
+<element name="Löwengold und Schädel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_DICE_SET">
+  <description>
+    <p>Ein Würfelspiel, das in den Tavernen Tyrias weit verbreitet ist. Es kombiniert Glück mit Bluff – und ist besonders bei Seeleuten, Söldnern und zwielichtigen Gestalten beliebt.</p>
+  </description>
+  <setters>
+    <set name="keywords">spiel, würfel, glücksspiel</set>
+    <set name="category">Spiele</set>
+    <set name="cost" currency="sp">1</set>
+    <set name="weight" lb="0">—</set>
+    <set name="type">Gaming Set</set>
+    <set name="proficiency">ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET</set>
+  </setters>
+</element>
+
+<element name="Polymock" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_DRAGONCHESS_SET">
+  <description>
+    <p>Ein magisches Strategiespiel aus Rata Sum, bei dem arkane Miniaturfiguren gegeneinander antreten. Taktisches Geschick und magisches Verständnis sind gleichermaßen gefragt.</p>
+  </description>
+  <setters>
+    <set name="keywords">spiel, polymock, strategie</set>
+    <set name="category">Spiele</set>
+    <set name="cost" currency="gp">1</set>
+    <set name="weight" lb="0.5">½ lb.</set>
+    <set name="type">Gaming Set</set>
+    <set name="proficiency">ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET</set>
+  </setters>
+</element>
+
+<element name="Sandsturm" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_PLAYING_CARD_SET">
+  <description>
+    <p>Ein elonisches Sammelkartenspiel mit legendären Helden, Kreaturen und Zaubern. Karten mit hoher Seltenheit sind wertvoll – und manchmal gefährlich.</p>
+  </description>
+  <setters>
+    <set name="keywords">spiel, sandsturm, kartenspiel</set>
+    <set name="category">Spiele</set>
+    <set name="cost" currency="sp">5</set>
+    <set name="weight" lb="0">—</set>
+    <set name="type">Gaming Set</set>
+    <set name="proficiency">ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET</set>
+  </setters>
+</element>
+	<!--<element name="Three-Dragon Ante Set" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_THREE_DRAGON_ANTE_SET">
+		<description>
+			<p>If you are proficient with the Three-Dragon Ante Set, you can add your proficiency bonus to ability checks you make to play a game.</p>
+		</description>
+		<setters>
+			<set name="keywords">game, gaming set, cards</set>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Gaming Set</set>
+			<set name="proficiency">ID_PROFICIENCY_GAMING_SET_PROFICIENCY_THREE_DRAGON_ANTE_SET</set>
+		</setters>
+	</element>-->
+
+	<!--<element name="Polymock-Set" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_THREE_DRAGON_ANTE_SET">
+		<description>
+			<p>If you are proficient with the Three-Dragon Ante Set, you can add your proficiency bonus to ability checks you make to play a game.</p>
+		</description>
+		<setters>
+			<set name="keywords">game, gaming set, cards</set>
+			<set name="category">Tools</set>
+			<set name="cost" currency="gp">1</set>
+			<set name="weight" lb="0">—</set>
+			<set name="type">Gaming Set</set>
+			<set name="proficiency">ID_PROFICIENCY_GAMING_SET_PROFICIENCY_POLYMOCK</set>
+		</setters>
+	</element>-->
+
+	<!-- not an actual item, some supporting description -->
+	<!-- <element name="Gaming Set" type="Support" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_GAMING_SET">
+		<description>
+			<p>Proficiency with a gaming set applies to one type of game, such as Three-Dragon Ante or games of chance that use dice.</p>
+			<p class="indent"><strong><em>Components.</em></strong> A gaming set has all the pieces needed to play a specific game or type of game, such as a complete deck of cards or a board and tokens.</p><p class="indent"><strong><em>History.</em></strong> Your mastery of a game includes knowledge of its history, as well as of important events it was connected to or prominent historical figures involved with it.</p><p class="indent"><strong><em>Insight.</em></strong> Playing games with someone is a good way to gain understanding of their personality, granting you a better ability to discern their lies from their truths and read their mood.</p><p class="indent"><strong><em>Sleight of Hand.</em></strong> Sleight of Hand is a useful skill for cheating at a game, as it allows you to swap pieces, palm cards, or alter a die roll. Alternatively, engrossing a target in a game by manipulating the components with dexterous movements is a great distraction for a pickpocketing attempt.</p><h5>GAMING SET</h5>
+			<table>
+				<thead>
+					<tr><td>Activity</td><td class="col-10">DC</td></tr>
+				</thead>
+				<tr><td>Catch a player cheating</td><td>15</td></tr>
+				<tr><td>Gain insight into an Opponent’s personality</td><td>15</td></tr>
+			</table>
+		</description>
+	</element>
+	<element name="Land and Water Vehicles" type="Support" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_LAND_AND_WATER_VEHICLES">
+		<description>
+			<p>Proficiency with land vehicles covers a wide range of options, from chariots and howdahs to wagons and carts. Proficiency with water vehicles covers anything that navigates waterways. Proficiency with vehicles grants the knowledge needed to handle vehicles of that type, along with knowledge of how to repair and maintain them.</p>
+			<p class="indent">In addition, a character proficient with water vehicles is knowledgeable about anything a professional sailor would be familiar with, such as information about the sea and islands, tying knots, and assessing weather and sea conditions.</p>
+			<p class="indent"><strong><em>Arcana.</em></strong> When you study a magic vehicle, this tool proficiency aids you in uncovering lore or determining how the vehicle operates.</p><p class="indent"><strong><em>Investigation, Perception.</em></strong> When you inspect a vehicle for clues or hidden inform ation, your proficiency aids you in noticing things that others might miss.</p><p class="indent"><strong><em>Vehicle Handling.</em></strong> When piloting a vehicle, you can apply your proficiency bonus to the vehicle's AC and saving throws.</p><h5>LAND AND WATER VEHICLES</h5>
+			<table>
+				<thead>
+					<tr><td>Activity</td><td class="col-10">DC</td></tr>
+				</thead>
+				<tr><td>Navigate rough terrain or waters</td><td>10</td></tr>
+				<tr><td>Assess a vehicle's condition</td><td>15</td></tr>
+				<tr><td>Take a tight corner at high speed</td><td>20</td></tr>
+			</table>
+		</description>
+	</element>
+	<element name="Musical Instruments" type="Support" source="DnD4Tyria" id="ID_D4T_ITEM_TOOL_MUSICAL_INSTRUMENTS">
+		<description>
+			<p>Proficiency with a musical instrument indicates you are familiar with the techniques used to play it. You also have knowledge of some songs commonly performed with that instrument.</p>
+			<p class="indent"><strong><em>History.</em></strong> Your expertise aids you in recalling lore related to your instrument.</p><p class="indent"><strong><em>Performance.</em></strong> Your ability to put on a good show is improved when you incorporate an instrument into your act.</p><p class="indent"><strong><em>Compose a Tune.</em></strong> As part of a long rest, you can compose a new tune and lyrics for your instrument. You might use this ability to impress a noble or spread scandalous rumors with a catchy tune.</p><h5>MUSICAL INSTRUMENTS</h5>
+			<table>
+				<thead>
+					<tr><td>Activity</td><td class="col-10">DC</td></tr>
+				</thead>
+				<tr><td>Identify a tune</td><td>10</td></tr>
+				<tr><td>Improvise a tune</td><td>20</td></tr>
+			</table>
+		</description>
+	</element>  -->
+
+</elements>

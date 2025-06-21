@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+      <name>Reittiere und Fahrzeuge</name>
+      <description/>
+        <author url="">Aurora4Tyria</author>
+      <update version="1.0">
+        <file name="d4t-items-mounts.xml" url="" />
+      </update>
+    </info>
+    <element name="Dolyak" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_DOLYAK">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 9 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 250 kg</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Lindwurm" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_LINDWURM">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 9 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 150 kg</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">150</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Asura-Konstrukt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ASURA_KONSTRUKT">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 15 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 100 kg</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Pack-Skritt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACKSKRITT">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 9 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 90 kg</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Dolyak" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_DOLYAK">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 9 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 250 kg<br/>Ein ausdauerndes, friedliches Lasttier. So langsam wie ein Mensch, aber ideal für schwere Ausrüstung und lange Reisen über unwegsames Gelände.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Kriegsklaue" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_KRIEGSKLAUE">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 15 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 180 kg<br/>Schnell und gefährlich. Die Kriegsklaue ist ein seltenes, kraftvolles Reittier mit Kampffähigkeiten, vergleichbar mit einem Streitross – jedoch in Kryta kaum verbreitet.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">200</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Moa" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MOA">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 12 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 120 kg<br/>Wendig und flink, aber mit begrenzter Tragkraft. Der Moa ist ein schnelles Reittier, beliebt bei Boten und Jägern – aber kein Lastenträger.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Lindwurm" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_LINDWURM">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 9 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 150 kg<br/>Ein reptilisches Reittier mit beeindruckender Erscheinung. Nicht schnell, aber trittsicher und stabil – und vor allem: man kann darauf reiten.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">150</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Asura-Konstrukt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ASURA_KONSTRUKT">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 9 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 200 kg<br/>Ein experimenteller Golem mit hoher Tragkraft. Zwar langsam, aber extrem zuverlässig. Keine Beschwerden, kein Futterbedarf – ideal für Asura und Pragmatiker.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Pack-Skritt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACKSKRITT">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 9 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 90 kg<br/>Ein flexibler Begleiter mit fragwürdiger Zuverlässigkeit. Trägt weniger als ein Dolyak, kommt aber Leitern hoch – und hat gelegentlich eine eigene Meinung dazu, was mitgenommen wird.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Raptor" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_RAPTOR">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 18 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 120 kg<br/>Ein schnelles, sprungkräftiges Reittier aus Elona. Der Raptor ist ideal für große Distanzen und weite Sprünge, aber weniger als Lasttier geeignet.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">250</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <element name="Schweberochen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCHWEBEROCHEN">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 12 m<br/>
+                <strong>
+                    <em>Tragkraft:</em>
+                </strong> 100 kg<br/>Ein magisch schwebendes Reittier, das sich über Wasser und Abgründe bewegen kann. Besonders nützlich in schwer zugänglichem Gelände, aber sensibel gegenüber starkem Wind.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">300</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">—</set>
+            <set name="type">Mount</set>
+        </setters>
+    </element>
+    <!-- Ausrüstungen für Reittiere -->
+    <element name="Tierharnisch" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BARDING">
+        <description>
+            <p>Ein Tierharnisch schützt Kopf, Hals, Brust und Körper des Reittiers. Jede Rüstung aus der Rüstungstabelle kann als Tierharnisch erworben werden. Sie kostet das Vierfache und wiegt das Doppelte im Vergleich zur Version für Humanoide.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">—</set>
+        </setters>
+    </element>
+    <element name="Zaumzeug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BIT_AND_BRIDLE">
+        <description>
+            <p>Grundausstattung zur Kontrolle eines Reittiers. Besteht aus Gebiss, Zügel und Halfter.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="1">1 lb.</set>
+        </setters>
+    </element>
+    <element name="Sattel, Exotisch" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SADDLE_EXOTIC">
+        <description>
+            <p>Dieser Sattel gibt Vorteil auf Würfe, um im Sattel zu bleiben. Für Reittiere mit besonderen Körperformen oder magischer Bewegung (z. B. fliegende oder schwebende Reittiere) ist er erforderlich.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">60</set>
+            <set name="weight" lb="40" excludeEncumbrance="true">40 lb.</set>
+        </setters>
+    </element>
+    <element name="Sattel, Militärisch" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SADDLE_MILITARY">
+        <description>
+            <p>Dieser Sattel gibt Vorteil auf Würfe, um im Sattel zu bleiben – besonders in Kampfsituationen.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="weight" lb="30" excludeEncumbrance="true">30 lb.</set>
+        </setters>
+    </element>
+    <element name="Sattel, Pack" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SADDLE_PACK">
+        <description>
+            <p>Geeignet für Reittiere, die zum Tragen von Ausrüstung oder Waren verwendet werden.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="15" excludeEncumbrance="true">15 lb.</set>
+        </setters>
+    </element>
+    <element name="Sattel, Reit" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SADDLE_RIDING">
+        <description>
+            <p>Ein Standardsattel für gewöhnliches Reiten, etwa auf Reisen.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="25" excludeEncumbrance="true">25 lb.</set>
+        </setters>
+    </element>
+    <element name="Satteltaschen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SADDLEBAGS">
+        <description>
+            <p>Zwei robuste Taschen aus Leder, die seitlich am Sattel befestigt werden können. Dienen zur Aufbewahrung von Vorräten oder Ausrüstung.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">4</set>
+            <set name="weight" lb="8" excludeEncumbrance="true">8 lb.</set>
+        </setters>
+    </element>
+    <element name="Futter (pro Tag)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FEED_PER_DAY">
+        <description>
+            <p>Ein Tagesvorrat an Futter für ein gewöhnliches Reittier (z. B. Dolyak oder Moa).</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="weight" lb="10">10 lb.</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Stallmiete (pro Tag)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_STABLING">
+        <description>
+            <p>Die Unterbringungskosten für ein Reittier in einer einfachen Stallung für einen Tag.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <!-- Fahrzeuge -->
+    <element name="Kutsche" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CARRIAGE">
+        <description>
+            <p>Eine geschlossene, vierrädrige Kutsche mit Platz für vier bis sechs Personen. Wird meist von zwei Tieren gezogen. Bequem, aber teuer.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">100</set>
+            <set name="weight" lb="600" excludeEncumbrance="true">600 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Karren" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CART">
+        <description>
+            <p>Ein einfacher, zweirädriger Wagen für den Transport von Waren. Wird meist von einem Reittier gezogen.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">15</set>
+            <set name="weight" lb="200" excludeEncumbrance="true">200 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Streitwagen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CHARIOT">
+        <description>
+            <p>Ein leichter, offener Wagen für zwei Personen, gebaut für Geschwindigkeit und Wendigkeit im Kampf.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">250</set>
+            <set name="weight" lb="100" excludeEncumbrance="true">100 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Schlitten" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SLED">
+        <description>
+            <p>Ein robuster Schlitten, ideal für verschneite oder vereiste Gegenden. Wird von Reittieren gezogen und ersetzt Räder durch Kufen.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="weight" lb="300" excludeEncumbrance="true">300 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Wagen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WAGON">
+        <description>
+            <p>Ein großer, vierrädriger Transportwagen, ideal für Handelszüge. Wird meist von zwei Tieren gezogen.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">35</set>
+            <set name="weight" lb="400" excludeEncumbrance="true">400 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Galeere" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_GALLEY">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 6,5 km/h<br/>Ein großes, ruderbetriebenes Schiff mit zusätzlicher Segelunterstützung. Dient dem Handel oder der Kriegsführung auf hoher See.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">30000</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Kielboot" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_KEELBOAT">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 1,5 km/h<br/>Ein kleines, manövrierfähiges Boot mit begrenztem Stauraum. Gut geeignet für Flüsse oder Küstenfahrten.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">3000</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Langschiff" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_LONGSHIP">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 4,8 km/h<br/>Ein schnelles, schlankes Schiff mit Riemenbesatz, bevorzugt von Norn, Charr oder Piraten.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">10000</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Ruderboot" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ROWBOAT">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 2,4 km/h<br/>Ein kleines Boot für kurze Überfahrten oder stille Gewässer. Platz für zwei bis vier Personen.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Segelschiff" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SAILING_SHIP">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 3,2 km/h<br/>Ein robustes Schiff für Handelsfahrten oder lange Seereisen. Weit verbreitet entlang der tyrianischen Küsten.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">10000</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Kriegsschiff" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WARSHIP">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 4 km/h<br/>Ein schwer bewaffnetes Kriegsschiff mit Platz für Mannschaft, Belagerungswaffen und Ausrüstung.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">25000</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Charr-Kriegsschiff" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CHARR_IRONCLAD">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 4 km/h<br/>Ein gepanzertes, dampfbetriebenes Kriegsschiff der Charr. Mit Stahlplatten und Belagerungsgeschützen ausgestattet, dominiert es in tyrianischen Gewässern – eine schwimmende Festung des Industriezeitalters.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">40000</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Pakt-Luftschiff" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACT_AIRSHIP">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 10 km/h<br/>Ein experimentelles Luftschiff, entwickelt vom Pakt mit asurischer Unterstützung. Nutzt Magie und Technologie zur Fortbewegung durch die Lüfte. Nur wenige Prototypen existieren – doch sie verändern die Kriegsführung grundlegend.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">100000</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+    <element name="Charr-Panzer" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CHARR_TANK">
+        <description>
+            <p>
+                <strong>
+                    <em>Geschwindigkeit:</em>
+                </strong> 6 km/h<br/>Ein stählernes Gefährt mit Kettenantrieb, gebaut für die Schlachtfelder der Charr. Gibt es in verschiedenen Größen – vom kleinen Spähpanzer bis zum massiven Belagerungsturm mit Flammenwerfern.</p>
+        </description>
+        <setters>
+            <set name="category">Reittiere und Fahrzeuge</set>
+            <set name="cost" currency="gp">50000</set>
+            <set name="weight" lb="0" excludeEncumbrance="true">0 lb.</set>
+            <set name="type">Vehicle</set>
+        </setters>
+    </element>
+</elements>

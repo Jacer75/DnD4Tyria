@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ausrüstungspakete</name>
+        <description>Startausrüstungspakete für Charaktere im DnD4Tyria-Projekt</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-items-packs.xml" url=""/>
+        </update>
+    </info>
+    <element name="Einbrecherpaket" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACK_BURGLAR">
+        <description>
+            <p>Enthält: Rucksack, Beutel mit 1.000 Kugeln, 3m Schnur, Glocke, 5 Kerzen, Brecheisen, Hammer, 10 Haken, Kapuzenlaterne, 2 Flaschen Öl, 5 Tagesrationen, Feuerstein und Stahl, Wasserschlauch. 15m Hanfseil ist außen festgebunden.</p>
+        </description>
+        <setters>
+            <set name="category">Ausrüstungspakete</set>
+            <set name="cost" currency="gp">16</set>
+            <set name="weight" lb="10">4,5 kg</set>
+        </setters>
+        <extract>
+            <item>ID_D4T_ITEM_BACKPACK</item>
+            <item>ID_D4T_ITEM_BALLBEARINGS</item>
+            <item>ID_D4T_ITEM_STRING_10FEET</item>
+            <item>ID_D4T_ITEM_BELL</item>
+            <item amount="5">ID_D4T_ITEM_CANDLE</item>
+            <item>ID_D4T_ITEM_CROWBAR</item>
+            <item>ID_D4T_ITEM_HAMMER</item>
+            <item amount="10">ID_D4T_ITEM_PITON</item>
+            <item>ID_D4T_ITEM_LANTERN_HOODED</item>
+            <item amount="2">ID_D4T_ITEM_OIL_FLASK</item>
+            <item amount="5">ID_D4T_ITEM_RATIONS_1DAY</item>
+            <item>ID_D4T_ITEM_TINDERBOX</item>
+            <item>ID_D4T_ITEM_WATERSKIN</item>
+            <item>ID_D4T_ITEM_ROPE_HEMPEN_50FEET</item>
+        </extract>
+    </element>
+    <element name="Diplomatenpaket" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACK_DIPLOMAT">
+        <description>
+            <p>Enthält: Truhe, 2 Karten- oder Schriftrollenhüllen, feine Kleidung, Tintenfläschchen, Federkiel, Öllampe, 2 Flaschen Öl, 5 Seiten Papier, Parfümfläschchen, Siegellack, Seife.</p>
+        </description>
+        <setters>
+            <set name="category">Ausrüstungspakete</set>
+            <set name="cost" currency="gp">39</set>
+            <set name="weight" lb="10">4,5 kg</set>
+        </setters>
+        <extract>
+            <item>ID_D4T_ITEM_CHEST</item>
+            <item amount="2">ID_D4T_ITEM_CASE_MAPORSCROLL</item>
+            <item>ID_D4T_ITEM_CLOTHES_FINE</item>
+            <item>ID_D4T_ITEM_INK_1OUNCEBOTTLE</item>
+            <item>ID_D4T_ITEM_INKPEN</item>
+            <item>ID_D4T_ITEM_LAMP</item>
+            <item amount="2">ID_D4T_ITEM_OIL_FLASK</item>
+            <item amount="5">ID_D4T_ITEM_PAPER_ONESHEET</item>
+            <item>ID_D4T_ITEM_PERFUME_VIAL</item>
+            <item>ID_D4T_ITEM_SEALINGWAX</item>
+            <item>ID_D4T_ITEM_SOAP</item>
+        </extract>
+    </element>
+    <element name="Höhlenforscherpaket" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACK_DUNGEONEER">
+        <description>
+            <p>Enthält: Rucksack, Brecheisen, Hammer, 10 Haken, 10 Fackeln, Feuerstein und Stahl, 10 Tagesrationen, Wasserschlauch. 15m Hanfseil ist außen festgebunden.</p>
+        </description>
+        <setters>
+            <set name="category">Ausrüstungspakete</set>
+            <set name="cost" currency="gp">12</set>
+            <set name="weight" lb="10">4,5 kg</set>
+        </setters>
+        <extract>
+            <item>ID_D4T_ITEM_BACKPACK</item>
+            <item>ID_D4T_ITEM_CROWBAR</item>
+            <item>ID_D4T_ITEM_HAMMER</item>
+            <item amount="10">ID_D4T_ITEM_PITON</item>
+            <item amount="10">ID_D4T_ITEM_TORCH</item>
+            <item>ID_D4T_ITEM_TINDERBOX</item>
+            <item amount="10">ID_D4T_ITEM_RATIONS_1DAY</item>
+            <item>ID_D4T_ITEM_WATERSKIN</item>
+            <item>ID_D4T_ITEM_ROPE_HEMPEN_50FEET</item>
+        </extract>
+    </element>
+    <element name="Entertainerpaket" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACK_ENTERTAINER">
+        <description>
+            <p>Enthält: Rucksack, Schlafsack, 2 Kostüme, 5 Kerzen, 5 Tagesrationen, Wasserschlauch, Verkleidungsset.</p>
+        </description>
+        <setters>
+            <set name="category">Ausrüstungspakete</set>
+            <set name="cost" currency="gp">40</set>
+            <set name="weight" lb="10">4,5 kg</set>
+        </setters>
+        <extract>
+            <item>ID_D4T_ITEM_BACKPACK</item>
+            <item>ID_D4T_ITEM_BEDROLL</item>
+            <item amount="2">ID_D4T_ITEM_CLOTHES_COSTUME</item>
+            <item amount="5">ID_D4T_ITEM_CANDLE</item>
+            <item amount="5">ID_D4T_ITEM_RATIONS_1DAY</item>
+            <item>ID_D4T_ITEM_WATERSKIN</item>
+            <item>ID_D4T_ITEM_TOOL_DISGUISE_KIT</item>
+        </extract>
+    </element>
+    <element name="Entdeckerpaket" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACK_EXPLORER">
+        <description>
+            <p>Enthält: Rucksack, Schlafsack, Essgeschirr, Feuerstein und Stahl, 10 Fackeln, 10 Tagesrationen, Wasserschlauch. 15m Hanfseil ist außen festgebunden.</p>
+        </description>
+        <setters>
+            <set name="category">Ausrüstungspakete</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="10">4,5 kg</set>
+        </setters>
+        <extract>
+            <item>ID_D4T_ITEM_BACKPACK</item>
+            <item>ID_D4T_ITEM_BEDROLL</item>
+            <item>ID_D4T_ITEM_MESSKIT</item>
+            <item>ID_D4T_ITEM_TINDERBOX</item>
+            <item amount="10">ID_D4T_ITEM_TORCH</item>
+            <item amount="10">ID_D4T_ITEM_RATIONS_1DAY</item>
+            <item>ID_D4T_ITEM_WATERSKIN</item>
+            <item>ID_D4T_ITEM_ROPE_HEMPEN_50FEET</item>
+        </extract>
+    </element>
+    <element name="Priesterpaket" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACK_PRIEST">
+        <description>
+            <p>Enthält: Rucksack, Decke, 10 Kerzen, Feuerstein und Stahl, Almosenkasten, 2 Räucherblöcke, Räuchergefäß, Priesterkleidung, 2 Tagesrationen, Wasserschlauch.</p>
+        </description>
+        <setters>
+            <set name="category">Ausrüstungspakete</set>
+            <set name="cost" currency="gp">19</set>
+            <set name="weight" lb="10">4,5 kg</set>
+        </setters>
+        <extract>
+            <item>ID_D4T_ITEM_BACKPACK</item>
+            <item>ID_D4T_ITEM_BLANKET</item>
+            <item amount="10">ID_D4T_ITEM_CANDLE</item>
+            <item>ID_D4T_ITEM_TINDERBOX</item>
+            <!-- Almosenkasten, Räucherwerk, Kleidung fehlen als Items -->
+            <item amount="2">ID_D4T_ITEM_RATIONS_1DAY</item>
+            <item>ID_D4T_ITEM_WATERSKIN</item>
+        </extract>
+    </element>
+    <element name="Gelehrtenpaket" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PACK_SCHOLAR">
+        <description>
+            <p>Enthält: Rucksack, Buch (Wissen), Tintenfläschchen, Federkiel, 10 Seiten Pergament, Sandbeutel, kleines Messer.</p>
+        </description>
+        <setters>
+            <set name="category">Ausrüstungspakete</set>
+            <set name="cost" currency="gp">40</set>
+            <set name="weight" lb="10">4,5 kg</set>
+        </setters>
+        <extract>
+            <item>ID_D4T_ITEM_BACKPACK</item>
+            <item>ID_D4T_ITEM_BOOK</item>
+            <item>ID_D4T_ITEM_INK_1OUNCEBOTTLE</item>
+            <item>ID_D4T_ITEM_INKPEN</item>
+            <item amount="10">ID_D4T_ITEM_PARCHMENT_ONESHEET</item>
+            <!-- Sandbeutel, Messer fehlen als Items -->
+        </extract>
+    </element>
+</elements>

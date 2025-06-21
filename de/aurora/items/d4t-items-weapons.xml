@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Waffen</name>
+        <description>Alle einfachen und kriegerischen Waffen aus dem Spielerhandbuch, angepasst für DnD4Tyria.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-items-weapons.xml" url=""/>
+        </update>
+    </info>
+    <!-- simple -->
+    <element name="Keule (Club)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_CLUB">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+        <description>
+            <p>Eine einfache Keule aus Holz, leicht und handlich. Oft von Abenteurern oder Wachleuten als Notwaffe geführt.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Wucht">1W4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+        </setters>
+    </element>
+    <element name="Dolch (Dagger)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_DAGGER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>Ein kleiner, scharfer Dolch, geeignet für den Nahkampf und zum Werfen.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="keywords">dagger</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Stich">1W4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+        </setters>
+    </element>
+    <element name="Große Keule (Greatclub)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_GREATCLUB">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+        <description>
+            <p>Ein schwerer Prügel aus massivem Holz, der mit beiden Händen geführt wird.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="sp">2</set>
+            <set name="weight" lb="10">10 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Wucht">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB</set>
+        </setters>
+    </element>
+    <element name="Handaxt (Handaxe)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_HANDAXE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+        <description>
+            <p>Eine kleine Axt, die einhändig geführt oder geworfen werden kann.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Hieb">1W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE</set>
+        </setters>
+    </element>
+    <element name="Wurfspeer (Javelin)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_JAVELIN">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>Ein leichter Speer, der sowohl im Nahkampf als auch zum Werfen geeignet ist.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">9/36 m</set>
+            <set name="damage" type="Stich">1W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN</set>
+        </setters>
+    </element>
+    <element name="Leichter Hammer (Light Hammer)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_LIGHT_HAMMER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_GROUP_HAMMERS</supports>
+        <description>
+            <p>Ein handlicher Hammer, der sowohl für präzise Hiebe als auch als Wurfwaffe eingesetzt werden kann.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Wucht">1W4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER</set>
+        </setters>
+    </element>
+    <element name="Streitkolben (Mace)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_MACE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_GROUP_MACES</supports>
+        <description>
+            <p>Ein robuster Knüppel mit verstärktem Kopf, ideal zum Zerschmettern von Knochen und Rüstungen.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Wucht">1W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE</set>
+        </setters>
+    </element>
+    <element name="Kampfstab (Quarterstaff)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_QUARTERSTAFF">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description>
+            <p>Ein langer, stabiler Stab aus Hartholz, oft von Mönchen, Druiden oder Wanderern geführt. Kann beidhändig geführt werden.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="sp">2</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Wucht">1W6</set>
+            <set name="versatile">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+        </setters>
+    </element>
+    <element name="Sichel (Sickle)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_SICKLE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT</supports>
+        <description>
+            <p>Ein gebogenes Schneidewerkzeug, das ursprünglich für die Ernte gedacht war, aber auch im Nahkampf gefährlich ist.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Hieb">1W4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE</set>
+        </setters>
+    </element>
+    <element name="Speer (Spear)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_SPEAR">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SPEARS</supports>
+        <description>
+            <p>Ein vielseitig einsetzbarer Speer, geeignet für den Nahkampf oder zum Werfen. Beidhändig geführt verursacht er mehr Schaden.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="3">3 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Stich">1W6</set>
+            <set name="versatile">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR</set>
+        </setters>
+    </element>
+    <element name="Leichte Armbrust (Crossbow, Light)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_RANGED_CROSSBOW_LIGHT">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+        <description>
+            <p>Eine einfache Armbrust, die Bolzen mit hoher Durchschlagskraft über mittlere Distanzen abfeuert. Langsamer Ladevorgang.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="range">24/96 m</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT</set>
+        </setters>
+    </element>
+    <element name="Wurfspieß (Dart)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_RANGED_DART">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>Ein kleiner, ausgewogener Spieß zum präzisen Werfen auf kurze Distanz.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="weight" lb="0.25">1/4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Stich">1W4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DART</set>
+        </setters>
+    </element>
+    <element name="Kurzbogen (Shortbow)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_RANGED_SHORTBOW">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_BOWS</supports>
+        <description>
+            <p>Ein kleiner Bogen, leicht zu führen und ideal für flinke Kämpfer mit schnellem Zugriff auf Pfeile.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="range">24/96 m</set>
+            <set name="damage" type="Stich">1W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW</set>
+        </setters>
+    </element>
+    <element name="Schleuder (Sling)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_RANGED_SLING">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION</supports>
+        <description>
+            <p>Eine einfache Schleuder, die Steine mit überraschender Wucht verschießen kann. Leicht, unauffällig und günstig.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="weight" lb="0">–</set>
+            <set name="slot">onehand</set>
+            <set name="range">9/36 m</set>
+            <set name="damage" type="Wucht">1W4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING</set>
+        </setters>
+    </element>
+    <!-- martial -->
+    <element name="Streitaxt (Battleaxe)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_BATTLEAXE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+        <description>
+            <p>Eine schwere Axt mit breitem Blatt, oft von Kriegern geführt, die Präzision und Kraft vereinen wollen. Kann auch zweihändig geführt werden.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Hieb">1W8</set>
+            <set name="versatile">1W10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE</set>
+        </setters>
+    </element>
+    <element name="Flegel (Flail)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_FLAIL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING</supports>
+        <description>
+            <p>Eine Waffe mit einer frei schwingenden Kugel am Ende einer Kette – schwer vorhersehbar, aber durchschlagskräftig.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Wucht">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL</set>
+        </setters>
+    </element>
+    <element name="Glefe (Glaive)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_GLAIVE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>Eine lange Stangenwaffe mit gebogener Klinge, ideal um Gegner auf Abstand zu halten.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Hieb">1W10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE</set>
+        </setters>
+    </element>
+    <element name="Große Axt (Greataxe)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_GREATAXE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_AXES</supports>
+        <description>
+            <p>Eine riesige Zweihandaxt, perfekt für gewaltige Hiebe, die selbst dickste Panzer zerschlagen können.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="weight" lb="7">7 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Hieb">1W12</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE</set>
+        </setters>
+    </element>
+    <element name="Großschwert (Greatsword)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_GREATSWORD">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>Ein gewaltiges Schwert, das mit beiden Händen geführt wird und verheerenden Schaden anrichtet.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Hieb">2W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
+        </setters>
+    </element>
+    <element name="Hellebarde (Halberd)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_HALBERD">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>Eine vielseitige Stangenwaffe mit Axtblatt und Haken, besonders effektiv gegen Reiter und große Gegner.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Hieb">1W10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD</set>
+        </setters>
+    </element>
+    <element name="Lanze (Lance)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_LANCE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE</supports>
+        <description>
+            <p>Eine schwere Stoßwaffe, vor allem vom Rücken eines Reittiers aus geführt. Bei Bodenkampf unhandlich.</p>
+            <div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_LANCE"/>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W12</set>
+            <set name="versatile">1W12</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE</set>
+        </setters>
+    </element>
+    <element name="Langschwert (Longsword)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_LONGSWORD">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>Ein vielseitiges Schwert, das einhändig oder beidhändig geführt werden kann. Symbol vieler Ritterorden.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">15</set>
+            <set name="weight" lb="3">3 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Hieb">1W8</set>
+            <set name="versatile">1W10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD</set>
+        </setters>
+    </element>
+    <element name="Streitkolben (Maul)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_MAUL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_MAULS</supports>
+        <description>
+            <p>Ein schwerer Zweihandhammer mit enormer Wucht – ideal, um Rüstungen zu zertrümmern.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="10">10 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Wucht">2W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL</set>
+        </setters>
+    </element>
+    <element name="Morgenstern (Morningstar)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_MORNINGSTAR">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+        <description>
+            <p>Ein schwerer Knüppel mit stachelbesetztem Kopf – vereint Durchschlagskraft mit brutalem Stil.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">15</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR</set>
+        </setters>
+    </element>
+    <element name="Spieß (Pike)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_PIKE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_REACH, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED</supports>
+        <description>
+            <p>Ein extrem langer Spieß, ideal um Gegner auf Distanz zu halten – besonders wirksam in Formation.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="18">18 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Stich">1W10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE</set>
+        </setters>
+    </element>
+    <element name="Rapier" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_RAPIER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>Ein schlankes, elegantes Stoßschwert, bevorzugt von Duellanten und Fechtern.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
+        </setters>
+    </element>
+    <element name="Krummsäbel (Scimitar)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_SCIMITAR">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>Eine geschwungene, leichte Klinge, ideal für schnelle, elegante Hiebe.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="3">3 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Hieb">1W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR</set>
+        </setters>
+    </element>
+    <element name="Kurzschwert (Shortsword)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_SHORTSWORD">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>Ein stabiles, kurzes Schwert – beliebt bei Schurken und Waldläufern für präzise Angriffe.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD</set>
+        </setters>
+    </element>
+    <element name="Dreizack (Trident)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_TRIDENT">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description>
+            <p>Eine Waffe mit drei Zinken, häufig bei Küstenbewohnern und Wächtern heiliger Wasserstätten zu finden. Kann geworfen oder beidhändig geführt werden.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Stich">1W6</set>
+            <set name="versatile">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT</set>
+        </setters>
+    </element>
+    <element name="Kriegspickel (War Pick)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_WAR_PICK">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING</supports>
+        <description>
+            <p>Ein stahlverstärkter Pickel, entworfen um Panzer zu durchdringen. Besonders effektiv gegen schwere Rüstung.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK</set>
+        </setters>
+    </element>
+    <element name="Kriegshammer (Warhammer)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_WARHAMMER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE, ID_INTERNAL_WEAPON_GROUP_HAMMERS</supports>
+        <description>
+            <p>Ein schwerer Hammer mit massivem Kopf. In einer Hand kräftig – mit zwei Händen verheerend.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">15</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Wucht">1W8</set>
+            <set name="versatile">1W10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER</set>
+        </setters>
+    </element>
+    <element name="Peitsche (Whip)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_WHIP">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_REACH</supports>
+        <description>
+            <p>Ein flexibles Lederband mit großer Reichweite, das geübten Kämpfern elegante Kontrolle im Gefecht erlaubt.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="3">3 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Hieb">1W4</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP</set>
+        </setters>
+    </element>
+    <element name="Blasrohr (Blowgun)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_RANGED_BLOWGUN">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LOADING</supports>
+        <description>
+            <p>Ein unscheinbares Blasrohr, mit dem kleine, oft vergiftete Pfeile lautlos abgeschossen werden.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">8/30 m</set>
+            <set name="damage" type="Stich">1</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN</set>
+        </setters>
+    </element>
+    <element name="Handarmbrust (Crossbow, Hand)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_RANGED_CROSSBOW_HAND">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+        <description>
+            <p>Eine kompakte Armbrust, die mit einer Hand geführt werden kann – besonders beliebt bei Attentätern.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">75</set>
+            <set name="weight" lb="3">3 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">9/36 m</set>
+            <set name="damage" type="Stich">1W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND</set>
+        </setters>
+    </element>
+    <element name="Schwere Armbrust (Crossbow, Heavy)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_RANGED_CROSSBOW_HEAVY">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_LOADING, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_CROSSBOWS</supports>
+        <description>
+            <p>Eine massive Armbrust, die Bolzen mit zerstörerischer Kraft verschießt – langsam, aber tödlich.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="18">18 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="range">30/120 m</set>
+            <set name="damage" type="Stich">1W10</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY</set>
+        </setters>
+    </element>
+    <element name="Langbogen (Longbow)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_RANGED_LONGBOW">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_AMMUNITION, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_BOWS</supports>
+        <description>
+            <p>Ein großer, kraftvoller Bogen mit hoher Reichweite – bevorzugt von Waldläufern und Kriegern.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="range">45/180 m</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW</set>
+        </setters>
+    </element>
+    <element name="Netz (Net)" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_RANGED_NET">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL, ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_NET, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>Ein grob geknüpftes Netz, das dazu dient, ein Ziel kampfunfähig zu machen.</p>
+            <div element="ID_INTERNAL_WEAPON_PROPERTY_SPECIAL_NET"/>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="3">3 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">1,5/4,5 m</set>
+            <set name="damage">–</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_NET</set>
+        </setters>
+    </element>
+</elements>

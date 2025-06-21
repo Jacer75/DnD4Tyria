@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Kleidung</name>
+        <description>Kleidung als Rüstungsersatz</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-items-gear-clothing.xml" url=""/>
+        </update>
+    </info>
+    <element name="Einfache Kleidung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CLOTH_BASIC">
+        <description>
+            <p>Einfache Alltagskleidung ohne jegliche Schutzwirkung – weit verbreitet unter Bauern und Handwerkern.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, Kleidung</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Kleidung</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="10"/>
+            <stat name="ac:armored:dexterity" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <element name="Feine Kleidung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CLOTH_FINE">
+        <description>
+            <p>Elegante Kleidung aus feinsten Stoffen, getragen von Adeligen, Diplomaten und anderen Personen mit Stand.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, Kleidung</set>
+            <set name="cost" currency="gp">15</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Kleidung</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="10"/>
+            <stat name="ac:armored:dexterity" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <element name="Magierrobe" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CLOTH_MAGE">
+        <description>
+            <p>Diese mit mystischen Symbolen verzierte Robe wird häufig von Zauberwirkern getragen. Sie bietet keinen physischen Schutz, erleichtert aber das Wirken von Magie.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, Kleidung</set>
+            <set name="cost" currency="gp">12</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Kleidung</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="10"/>
+            <stat name="ac:armored:dexterity" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <element name="Priestergewand" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CLOTH_PRIEST">
+        <description>
+            <p>Ein schlichtes, bodenlanges Gewand aus Wolle oder Leinen, das den Anhängern religiöser Orden vorbehalten ist.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, Kleidung</set>
+            <set name="cost" currency="sp">10</set>
+            <set name="weight" lb="5">5 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Kleidung</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="10"/>
+            <stat name="ac:armored:dexterity" value="dexterity:modifier"/>
+        </rules>
+    </element>
+</elements>

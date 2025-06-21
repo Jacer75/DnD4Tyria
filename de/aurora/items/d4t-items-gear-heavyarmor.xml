@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Schwere Rüstungen (Items)</name>
+        <description>Schwere Rüstungen aus dem Spielerhandbuch, umgesetzt als Aurora-Items für DnD4Tyria.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-items-gear-heavyarmor.xml" url=""/>
+        </update>
+    </info>
+    <element name="Ringpanzer (Ring Mail)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_HEAVY_RING_MAIL">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>Diese Rüstung ist eine Lederrüstung mit schweren Ringen, die zur Verstärkung eingenäht wurden. Sie schützt gegen Hiebe von Schwertern und Äxten, ist jedoch minderwertiger als ein Kettenhemd und wird meist von jenen getragen, die sich keine bessere Rüstung leisten können.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, schwer</set>
+            <set name="cost" currency="gp">30</set>
+            <set name="weight" lb="40">40 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Schwer</set>
+            <set name="armorClass">14</set>
+            <set name="stealth">Nachteil</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_RING_MAIL</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:armor" value="14"/>
+        </rules>
+    </element>
+    <element name="Kettenrüstung (Chain Mail)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_HEAVY_CHAIN_MAIL">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>Diese Rüstung aus ineinandergreifenden Metallringen wird mit einer gepolsterten Stoffschicht darunter getragen, um Scheuern zu verhindern und Stöße abzufedern. Die Ausrüstung enthält auch Panzerhandschuhe.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, schwer</set>
+            <set name="cost" currency="gp">75</set>
+            <set name="weight" lb="55">55 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Schwer</set>
+            <set name="armorClass">16</set>
+            <set name="strength">13</set>
+            <set name="stealth">Nachteil</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_MAIL</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:armor" value="16"/>
+            <stat name="speed" value="-10" bonus="armor" requirements="![str:13]"/>
+        </rules>
+    </element>
+    <element name="Schienenpanzer (Splint)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_HEAVY_SPLINT">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>Diese Rüstung besteht aus schmalen, vertikal angebrachten Metallstreifen, die auf Leder befestigt und über Stoffpolsterung getragen werden. Bewegliche Kettenglieder schützen die Gelenke.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, schwer</set>
+            <set name="cost" currency="gp">200</set>
+            <set name="weight" lb="60">60 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Schwer</set>
+            <set name="armorClass">17</set>
+            <set name="strength">15</set>
+            <set name="stealth">Nachteil</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SPLINT</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:armor" value="17"/>
+            <stat name="speed" value="-10" bonus="armor" requirements="![str:15]"/>
+        </rules>
+    </element>
+    <element name="Plattenrüstung (Plate)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_HEAVY_PLATE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>Diese Rüstung besteht aus geformten, ineinandergreifenden Metallplatten, die den gesamten Körper bedecken. Ein vollständiger Plattensatz enthält Panzerhandschuhe, schwere Lederstiefel, einen Helm mit Visier und dicke Polsterungen unter der Rüstung. Riemen und Schnallen verteilen das Gewicht gleichmäßig.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, schwer</set>
+            <set name="cost" currency="gp">1500</set>
+            <set name="weight" lb="65">65 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Schwer</set>
+            <set name="armorClass">18</set>
+            <set name="strength">15</set>
+            <set name="stealth">Nachteil</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_PLATE</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:armor" value="18"/>
+            <stat name="speed" value="-10" bonus="armor" requirements="![str:15]"/>
+        </rules>
+    </element>
+</elements>

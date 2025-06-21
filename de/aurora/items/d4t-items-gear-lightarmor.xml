@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Kleidung</name>
+        <description>Kleidung als Rüstungsersatz</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-gear-clothing.xml" url=""/>
+        </update>
+    </info>
+    <!-- Leichte Rüstungen als Items definiert -->
+    <element name="Gepolsterte Rüstung (Padded)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_LIGHT_PADDED">
+        <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+        <description>
+            <p>Gepolsterte Rüstung besteht aus gesteppten Lagen Stoff und Wattierung.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung. leicht</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="8">8 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Leicht</set>
+            <set name="armorClass">11 + Geschicklichkeitsmodifikator</set>
+            <set name="stealth">Nachteil</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:armor" value="11"/>
+            <stat name="ac:armored:dexterity" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <element name="Lederrüstung (Leather)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_LIGHT_LEATHER">
+        <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+        <description>
+            <p>Der Brustpanzer und die Schulterstücke dieser Rüstung bestehen aus Leder, das durch Kochen in Öl gehärtet wurde. Der Rest der Rüstung besteht aus weicheren, flexibleren Materialien.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung. leicht</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="10">10 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Leicht</set>
+            <set name="armorClass">11 + Geschicklichkeitsmodifikator</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="11"/>
+            <stat name="ac:armored:dexterity" value="dexterity:modifier"/>
+        </rules>
+    </element>
+    <element name="Genietete Lederrüstung (Studded Leather)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_LIGHT_STUDDED_LEATHER">
+        <supports>ID_INTERNAL_ARMOR_GROUP_LIGHT</supports>
+        <description>
+            <p>Diese Rüstung besteht aus robustem, aber flexiblem Leder und ist mit eng gesetzten Nieten oder Metallstiften verstärkt.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung. leicht</set>
+            <set name="cost" currency="gp">45</set>
+            <set name="weight" lb="13">13 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Leicht</set>
+            <set name="armorClass">12 + Geschicklichkeitsmodifikator</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="12"/>
+            <stat name="ac:armored:dexterity" value="dexterity:modifier"/>
+        </rules>
+    </element>
+</elements>

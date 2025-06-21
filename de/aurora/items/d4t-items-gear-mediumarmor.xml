@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Mittlere Rüstungen (Items)</name>
+        <description>Mittlere Rüstungen aus dem Spielerhandbuch, umgesetzt als Aurora-Items für DnD4Tyria.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-items-gear-mediumarmor.xml" url=""/>
+        </update>
+    </info>
+    <element name="Fellrüstung (Hide)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_MEDIUM_HIDE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>Diese grobe Rüstung besteht aus dicken Fellen und Pelzen. Sie wird häufig von Barbarenstämmen, finsteren Humanoiden und anderen getragen, die keinen Zugang zu besseren Materialien und Werkzeugen haben.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, mittel</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="12">12 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Mittel</set>
+            <set name="armorClass">12 + Geschicklichkeitsmodifikator (max. 2)</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="12"/>
+            <stat name="ac:armored:dexterity" value="min(dexterity:modifier,2)"/>
+        </rules>
+    </element>
+    <element name="Kettenhemd (Chain Shirt)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_MEDIUM_CHAIN_SHIRT">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>Dieses Hemd aus ineinandergreifenden Metallringen wird unter anderer Kleidung oder Leder getragen. Es bietet mäßigen Schutz für den Oberkörper und kann durch äußere Kleidung etwas gedämpft werden.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, mittel</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="20">20 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Mittel</set>
+            <set name="armorClass">13 + Geschicklichkeitsmodifikator (max. 2)</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_SHIRT</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="13"/>
+            <stat name="ac:armored:dexterity" value="min(dexterity:modifier,2)"/>
+        </rules>
+    </element>
+    <element name="Schuppenpanzer (Scale Mail)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_MEDIUM_SCALE_MAIL">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>Diese Rüstung besteht aus einem Mantel und Beinschutz (ggf. mit separatem Rock) aus Leder, das mit überlappenden Metallplatten bedeckt ist – ähnlich den Schuppen eines Fisches. Die Rüstung umfasst auch Panzerhandschuhe.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, mittel</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="45">45 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Mittel</set>
+            <set name="armorClass">14 + Geschicklichkeitsmodifikator (max. 2)</set>
+            <set name="stealth">Nachteil</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SCALE_MAIL</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:armor" value="14"/>
+            <stat name="ac:armored:dexterity" value="min(dexterity:modifier,2)"/>
+        </rules>
+    </element>
+    <element name="Brustharnisch (Breastplate)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_MEDIUM_BREASTPLATE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>Diese Rüstung besteht aus einem passgenauen Metallbruststück, das mit weichem Leder getragen wird. Sie lässt Arme und Beine weitgehend frei und bietet guten Schutz für die lebenswichtigen Organe.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, mittel</set>
+            <set name="cost" currency="gp">400</set>
+            <set name="weight" lb="20">20 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Mittel</set>
+            <set name="armorClass">14 + Geschicklichkeitsmodifikator (max. 2)</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_BREASTPLATE</set>
+        </setters>
+        <rules>
+            <stat name="ac:armored:armor" value="14"/>
+            <stat name="ac:armored:dexterity" value="min(dexterity:modifier,2)"/>
+        </rules>
+    </element>
+    <element name="Halbplatte (Half Plate)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_MEDIUM_HALF_PLATE">
+        <supports>ID_INTERNAL_ARMOR_GROUP_MEDIUM</supports>
+        <description>
+            <p>Die Halbplatte besteht aus geformten Metallplatten, die den Großteil des Körpers bedecken. Sie umfasst keine vollständige Beinschiene, sondern einfache Schienbeinschützer mit Lederriemen.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, mittel</set>
+            <set name="cost" currency="gp">750</set>
+            <set name="weight" lb="40">40 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Mittel</set>
+            <set name="armorClass">15 + Geschicklichkeitsmodifikator (max. 2)</set>
+            <set name="stealth">Nachteil</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:armor" value="15"/>
+            <stat name="ac:armored:dexterity" value="min(dexterity:modifier,2)"/>
+        </rules>
+    </element>
+</elements>

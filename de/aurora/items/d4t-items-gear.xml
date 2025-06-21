@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Ausrüstung</name>
+        <description>Alltags- und Abenteurerausrüstung für das DnD4Tyria-Projekt</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-items-gear.xml" url=""/>
+        </update>
+    </info>
+    <element name="Abakus" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ABACUS">
+        <description>
+            <p>Ein einfaches Rechenhilfsmittel zur Durchführung grundlegender Berechnungen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Säure (Phiolchen)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ACID_VIAL">
+        <description>
+            <p>Du kannst als Aktion den Inhalt dieser Phiole auf eine Kreatur in bis zu 1,5m Entfernung spritzen oder sie bis zu 6m weit werfen, wobei sie beim Aufprall zerbricht. In beiden Fällen führst du einen Fernkampfangriff mit einer improvisierten Waffe aus. Bei einem Treffer erleidet das Ziel 2W6 Säureschaden.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Feuer des Alchemisten (Flasche)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ALCHEMISTS_FIRE_FLASK">
+        <description>
+            <p>Diese klebrige, haftende Flüssigkeit entzündet sich beim Kontakt mit Luft. Du kannst sie als Aktion bis zu 6m weit werfen. Bei einem Treffer erleidet das Ziel zu Beginn jedes seiner Züge 1W4 Feuerschaden. Eine Kreatur kann diesen Effekt beenden, indem sie ihre Aktion nutzt und einen Geschicklichkeitswurf (SG 10) besteht, um die Flammen zu löschen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Pfeil" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARROW">
+        <description>
+            <p>Pfeile werden mit einem Bogen abgefeuert, um Fernkampfangriffe auszuführen.</p>
+        </description>
+        <setters>
+            <set name="category">Munition</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="weight" lb="0.05">0,02 kg</set>
+            <set name="type">Munition</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Blasrohrnadel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BLOWGUNNEEDLE">
+        <description>
+            <p>Blasrohrnadeln werden mit einem Blasrohr verwendet, um Fernkampfangriffe durchzuführen.</p>
+        </description>
+        <setters>
+            <set name="category">Munition</set>
+            <set name="cost" currency="cp" bulk="50">2</set>
+            <set name="weight" lb="0.02">0,009 kg</set>
+            <set name="type">Munition</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Armbrustbolzen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CROSSBOWBOLT">
+        <description>
+            <p>Bolzen werden mit einer Armbrust abgefeuert, um Fernkampfangriffe auszuführen.</p>
+        </description>
+        <setters>
+            <set name="category">Munition</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="weight" lb="0.05">0,02 kg</set>
+            <set name="type">Munition</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Schleuderkugel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SLINGBULLET">
+        <description>
+            <p>Schleuderkugeln werden mit einer Schleuder abgefeuert, um Fernkampfangriffe auszuführen.</p>
+        </description>
+        <setters>
+            <set name="category">Munition</set>
+            <set name="cost" currency="cp" bulk="5">1</set>
+            <set name="weight" lb="0.075">0,034 kg</set>
+            <set name="type">Munition</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Gegengift (Phiolchen)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ANTITOXIN_VIAL">
+        <description>
+            <p>Eine Kreatur, die diese Flüssigkeit trinkt, erhält für 1 Stunde Vorteil auf Rettungswürfe gegen Gifte. Untoten und Konstrukten bringt dies keinen Nutzen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Kristall" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CRYSTAL">
+        <description>
+            <p>Ein Kristall dient als arkaner Fokus für Zaubernde wie Zauberer, Hexenmeister oder Zauberwirker mit sorzianischem Ursprung. Er kanalisiert die Magie ihrer Zauber.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="container">Arkaner Fokus</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Kugel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ORB">
+        <description>
+            <p>Eine Kugel dient als arkaner Fokus für Zaubernde wie Zauberer, Hexenmeister oder Zauberwirker mit sorzianischem Ursprung. Sie kanalisiert die Magie ihrer Zauber.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">20</set>
+            <set name="weight" lb="3">1,36 kg</set>
+            <set name="container">Arkaner Fokus</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Stab" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ROD">
+        <description>
+            <p>Ein Stab dient als arkaner Fokus für Zaubernde wie Zauberer, Hexenmeister oder Zauberwirker mit sorzianischem Ursprung. Er kanalisiert die Magie ihrer Zauber.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="container">Arkaner Fokus</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Magierstab" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_STAFF">
+        <description>
+            <p>Ein besonders gefertigter Magierstab dient als arkaner Fokus für Zauberwirker. Auch Druiden nutzen häufig diese Form des Fokus.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="4">1,8 kg</set>
+            <set name="container">Arkaner Fokus</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Zauberstab" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WAND">
+        <description>
+            <p>Ein Zauberstab ist ein schmaler Fokus für arkane Zauber und wird oft von Hexenmeistern und Zauberern bevorzugt.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="container">Arkaner Fokus</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Rucksack" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BACKPACK">
+        <description>
+            <p>Ein Lederrucksack mit Gurten zum Tragen auf dem Rücken. Er kann etwa 28l Volumen oder bis zu 13,5kg tragen. Außen lassen sich weitere Gegenstände befestigen, z.B. ein Bettroll oder ein Seil.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="5">2,25 kg</set>
+        </setters>
+    </element>
+    <element name="Kugeln (Beutel mit 1.000)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BALLBEARINGS">
+        <description>
+            <p>Als Aktion kannst du diese winzigen Metallkugeln ausstreuen, um ein 3m × 3m großes Feld zu bedecken. Kreaturen, die dieses Feld durchqueren, müssen einen Geschicklichkeitsrettungswurf (SG 10) bestehen oder stürzen. Wer sich nur mit halber Geschwindigkeit bewegt, muss diesen Wurf nicht ablegen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Fass" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BARREL">
+        <description>
+            <p>Ein großes, hölzernes Fass zur Lagerung und zum Transport von Flüssigkeiten oder Waren.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="70">31,75 kg</set>
+        </setters>
+    </element>
+    <element name="Korb" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BASKET">
+        <description>
+            <p>Ein einfacher Flechtkorb zur Aufbewahrung kleinerer Gegenstände.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">4</set>
+            <set name="weight" lb="2">0,9 kg</set>
+        </setters>
+    </element>
+    <element name="Schlafsack" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BEDROLL">
+        <description>
+            <p>Ein zusammengerollter Schlafsack für den Einsatz im Freien.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="7">3,2 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Glocke" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BELL">
+        <description>
+            <p>Eine kleine Glocke aus Metall – nützlich als Alarmsignal oder für Rituale.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Decke" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BLANKET">
+        <description>
+            <p>Eine einfache Decke zum Wärmen in kalten Nächten oder zum Abdecken von Gegenständen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="3">1,4 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Flaschenzug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BLOCKANDTACKLE">
+        <description>
+            <p>Ein Satz aus Seil und Umlenkrollen mit einem Haken zur Befestigung an Objekten. Ein Flaschenzug ermöglicht es dir, das bis zu Vierfache deines normalen Gewichts zu heben.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="5">2,25 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Buch" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BOOK">
+        <description>
+            <p>Ein Buch kann Gedichte, historische Berichte, Fachinformationen, Konstruktionspläne oder andere Inhalte enthalten. Ein Zauberbuch ist ein spezieller Gegenstand und wird separat beschrieben.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="5">2,25 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Flasche aus Glas" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BOTTLE_GLASS">
+        <description>
+            <p>Eine einfache Glasflasche, geeignet zur Aufbewahrung von Flüssigkeiten.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Eimer" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_BUCKET">
+        <description>
+            <p>Ein einfacher Eimer aus Holz oder Metall, zum Transport von Flüssigkeiten oder Gegenständen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Krähenfüße (Beutel mit 20)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CALTROPS_BAGOF20">
+        <description>
+            <p>Als Aktion kannst du einen Beutel Krähenfüße verstreuen, der ein 1,5m × 1,5m großes Feld abdeckt. Kreaturen, die das Gebiet betreten, müssen einen Geschicklichkeitsrettungswurf (SG 15) bestehen oder erleiden 1 Stichschaden und ihre Bewegung wird um 3m reduziert. Wer sich mit halber Geschwindigkeit bewegt, muss keinen Rettungswurf ablegen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Kerze" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CANDLE">
+        <description>
+            <p>Eine Kerze brennt für 1 Stunde, spendet helles Licht in einem Radius von 1,5m und dämmriges Licht in weiteren 1,5m.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Bolzenköcher" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CASE_CROSSBOWBOLT">
+        <description>
+            <p>Ein hölzerner Köcher, der bis zu 20 Armbrustbolzen aufnehmen kann.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="1">0,45 kg</set>
+        </setters>
+    </element>
+    <element name="Karten- oder Schriftrollenhülle" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CASE_MAPORSCROLL">
+        <description>
+            <p>Ein zylindrisches Lederetui, das bis zu zehn Pergamente oder fünf zusammengerollte Karten aufnehmen kann.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="1">0,45 kg</set>
+        </setters>
+    </element>
+    <element name="Kette (3m)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CHAIN_10FEET">
+        <description>
+            <p>Eine Kette mit 10 Trefferpunkten, die mit einem Stärkewurf (SG 20) zerrissen werden kann.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="10">4,5 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Kreide (1 Stück)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CHALK_1PIECE">
+        <description>
+            <p>Ein Stück weiße Kreide zum Markieren von Oberflächen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Truhe" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CHEST">
+        <description>
+            <p>Eine robuste Holzkiste zur sicheren Aufbewahrung von Ausrüstung oder Wertsachen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="25">11,3 kg</set>
+        </setters>
+    </element>
+    <element name="Kletterausrüstung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CLIMBERSKIT">
+        <description>
+            <p>Enthält spezielle Haken, Stiefelspitzen, Handschuhe und ein Klettergeschirr. Du kannst dich als Aktion sichern: Von diesem Punkt aus kannst du dich nicht weiter als 7,5m entfernen und nicht tiefer stürzen, bis du die Verankerung löst.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="12">5,4 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Kleidung, gewöhnlich" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CLOTHES_COMMON">
+        <description>
+            <p>Einfache Kleidung, wie sie von Handwerkern oder Bauern getragen wird.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="3">1,4 kg</set>
+        </setters>
+    </element>
+    <element name="Kleidung, Kostüm" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CLOTHES_COSTUME">
+        <description>
+            <p>Auffällige oder thematische Kleidung für Auftritte, Verkleidungen oder gesellschaftliche Anlässe.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="4">1,8 kg</set>
+        </setters>
+    </element>
+    <element name="Kleidung, fein" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CLOTHES_FINE">
+        <description>
+            <p>Kleidung aus edlen Stoffen, wie sie von Adligen oder reichen Händlern getragen wird.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">15</set>
+            <set name="weight" lb="6">2,7 kg</set>
+        </setters>
+    </element>
+    <element name="Kleidung, Reisende" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CLOTHES_TRAVELERS">
+        <description>
+            <p>Robuste Kleidung für lange Reisen – wetterfest und funktional.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="4">1,8 kg</set>
+        </setters>
+    </element>
+    <element name="Komponententasche" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_COMPONENTPOUCH">
+        <description>
+            <p>Eine wasserdichte Ledertasche mit Fächern für alle typischen Zauberkomponenten außer solchen mit festem Goldwert.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="2">0,9 kg</set>
+        </setters>
+    </element>
+    <element name="Brecheisen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_CROWBAR">
+        <description>
+            <p>Ein Brecheisen gewährt Vorteil auf Stärkewürfe, bei denen Hebelwirkung hilfreich ist.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="5">2,25 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Mistelzweig" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SPRIGOFMISTLETOE">
+        <description>
+            <p>Ein Mistelzweig dient als Naturfokus für Druidenzauber.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="0">—</set>
+            <set name="container">Druidenfokus</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Totem" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TOTEM">
+        <description>
+            <p>Ein geschnitztes oder gebundenes Symbol aus Tierknochen, Federn oder Holz, das als Druidenfokus dient.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="0">—</set>
+            <set name="container">Druidenfokus</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Holzstab" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WOODENSTAFF">
+        <description>
+            <p>Ein naturbelassener Stab, direkt aus einem lebenden Baum entnommen – dient als Fokus für Druidenzauber.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="4">1,8 kg</set>
+            <set name="container">Druidenfokus</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Eibenstab" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_YEWWAND">
+        <description>
+            <p>Ein aus Eibenholz gefertigter Zauberstab, häufig von Druiden verwendet.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="container">Druidenfokus</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Angelausrüstung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FISHINGTACKLE">
+        <description>
+            <p>Enthält Rute, Sehne, Schwimmer, Haken, Köder und Netzteile – alles für einen gelungenen Fang.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="4">1,8 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Flasche oder Krug" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FLASKORTANKARD">
+        <description>
+            <p>Ein einfacher Behälter zum Transportieren oder Trinken von Flüssigkeiten – aus Ton, Holz oder Metall.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">2</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Enterhaken" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_GRAPPLINGHOOK">
+        <description>
+            <p>Ein Haken mit Zinken zum Werfen und Festhaken an Vorsprüngen oder Mauern. Wird meist mit einem Seil kombiniert.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="4">1,8 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Hammer" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_HAMMER">
+        <description>
+            <p>Ein robuster Hammer – nützlich beim Zeltaufbau, für Nägel oder zum Einschlagen von Pfählen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="3">1,4 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Vorschlaghammer" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_HAMMER_SLEDGE">
+        <description>
+            <p>Ein schwerer Zweihandhammer zum Zerschmettern von Hindernissen, Schlössern oder Felsen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="10">4,5 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Heilertasche" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_HEALERSKIT">
+        <description>
+            <p>Beinhaltet Verbände, Salben und Schienen. Enthält 10 Anwendungen. Als Aktion kannst du eine Anwendung nutzen, um eine Kreatur mit 0 Trefferpunkten zu stabilisieren – ohne Wurf.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="3">1,4 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Amulett" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_AMULET">
+        <description>
+            <p>Ein heiliges Symbol in Form eines Amuletts – dient Klerikern und Paladinen als Zauberfokus. Es muss getragen oder sichtbar präsentiert werden.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="container">Heiliges Symbol</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Emblem" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_EMBLEM">
+        <description>
+            <p>Ein eingraviertes oder eingelegtes heiliges Symbol, z. B. auf einem Schild – dient Klerikern und Paladinen als Zauberfokus.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="0">—</set>
+            <set name="container">Heiliges Symbol</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Reliquiar" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_RELIQUARY">
+        <description>
+            <p>Ein kleines Kästchen mit einer heiligen Reliquie darin – dient als Fokus für göttliche Zauber, wenn es sichtbar getragen oder gehalten wird.</p>
+        </description>
+        <setters>
+            <set name="category">Zauberfokus</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="container">Heiliges Symbol</set>
+            <set name="slot">onehand</set>
+        </setters>
+    </element>
+    <element name="Weihwasser (Flasche)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_HOLYWATER_FLASK">
+        <description>
+            <p>Als Aktion kannst du den Inhalt dieser Flasche auf eine Kreatur in 1,5m Entfernung spritzen oder sie bis zu 6m weit werfen. Bei einem Treffer erleidet ein Untoter oder Unhold 2W6 Strahlenschaden. Kann durch ein Ritual mit einem Zauberplatz der Stufe 1 und Silberpulver im Wert von 25 GM hergestellt werden.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Sanduhr" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_HOURGLASS">
+        <description>
+            <p>Ein präzises Instrument zur Zeitmessung, nützlich bei Ritualen oder als edles Geschenk.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Jagdfalle" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_HUNTINGTRAP">
+        <description>
+            <p>Eine Stahlfalle mit gezacktem Ring. Wird sie ausgelöst, muss die Kreatur einen Geschicklichkeitswurf (SG 13) machen oder erleidet 1W4 Stichschaden und wird festgehalten. Bewegung ist dann nur innerhalb einer 90cm langen Kette möglich. Ein Stärkewurf (SG 13) kann die Falle öffnen – bei Misserfolg erleidet das Ziel erneut 1 Schaden.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="25">11,3 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Tinte (1-Unzen-Fläschchen)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_INK_1OUNCEBOTTLE">
+        <description>
+            <p>Eine kleine Flasche mit schwarzer Tinte – reicht für zahlreiche Seiten mit Schrift oder Zeichnungen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Federkiel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_INKPEN">
+        <description>
+            <p>Ein einfacher Federkiel oder Metallgriffel – dient zum Schreiben mit Tinte.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">2</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Krug oder Kanne" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_JUGORPITCHER">
+        <description>
+            <p>Ein einfacher großer Behälter zum Aufbewahren oder Ausschenken von Getränken.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">2</set>
+            <set name="weight" lb="4">1,8 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Leiter (3m)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_LADDER_10_FOOT">
+        <description>
+            <p>Eine stabile Holzleiter mit 3m Länge – sperrig, aber nützlich beim Klettern oder Überwinden von Hindernissen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="weight" lb="25">11,3 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Öllampe" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_LAMP">
+        <description>
+            <p>Erhellt einen Radius von 4,5m mit hellem Licht und 9m mit dämmrigem Licht. Brennt 6 Stunden pro Ölflasche (0,5l).</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Laterne, Bullauge" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_LANTERN_BULLSEYE">
+        <description>
+            <p>Wirft einen Lichtkegel mit 18m hellem und weiteren 18m dämmrigem Licht. Brennt 6 Stunden pro Ölflasche (0,5l).</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Laterne, Kapuzen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_LANTERN_HOODED">
+        <description>
+            <p>Erleuchtet 9m mit hellem und weitere 9m mit dämmrigem Licht. Du kannst die Haube senken, wodurch nur noch 1,5m dämmriges Licht bleibt. Brennt 6 Stunden pro Ölflasche (0,5l).</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Schloss" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_LOCK">
+        <description>
+            <p>Wird mit Schlüssel geliefert. Ohne diesen kann ein Dieb mit Werkzeugen und Geschicklichkeitswurf (SG 15) das Schloss öffnen. Der SL kann bessere Schlösser zu höheren Preisen zulassen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Vergrößerungsglas" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGNIFYINGGLASS">
+        <description>
+            <p>Zum Inspizieren kleiner Objekte. Kann bei Sonnenlicht als Feuerstarter dienen. Gewährt Vorteil bei der Bewertung feiner oder kleiner Gegenstände.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">100</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Handschellen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MANACLES">
+        <description>
+            <p>Für Kreaturen der Größenkategorie Klein oder Mittel. Öffnen: Geschicklichkeitswurf (SG 20); Aufbrechen: Stärkewurf (SG 20). Mit Diebeswerkzeug (Geschicklichkeit SG 15) ebenfalls zu knacken. 15 TP. Wird mit einem Schlüssel geliefert.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="6">2,7 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Essgeschirr" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MESSKIT">
+        <description>
+            <p>Ein Blechetui mit Becher und Besteck. Die Hülle lässt sich als Pfanne oder Teller verwenden.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">2</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Spiegel, Stahl" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MIRROR_STEEL">
+        <description>
+            <p>Ein polierter Spiegel aus Stahl – ideal zur unauffälligen Beobachtung oder zum Schminken.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="0.5">0,23 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Öl (Flasche)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_OIL_FLASK">
+        <description>
+            <p>Enthält 0,5l Öl. Du kannst es auf Kreaturen (1,5m) oder Flächen (1,5m²) werfen oder gießen. Brennendes Öl verursacht 5 Feuerschaden für 2 Runden. Kreaturen erleiden den Schaden einmal pro Runde.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Papier (1 Seite)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PAPER_ONESHEET">
+        <description>
+            <p>Ein einzelnes Blatt Papier – geeignet für Briefe, Notizen oder Dokumente.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">2</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Pergament (1 Seite)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PARCHMENT_ONESHEET">
+        <description>
+            <p>Ein einzelnes Blatt Pergament – etwas robuster als Papier, ideal für Urkunden oder Magieschriften.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Parfüm (Fläschchen)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PERFUME_VIAL">
+        <description>
+            <p>Ein kleines Fläschchen mit intensivem Duft – beliebt bei Hof, in Tempeln oder als Geschenk.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Spitzhacke (Bergbau)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PICK_MINERS">
+        <description>
+            <p>Ein schweres Werkzeug mit breitem Metallkopf – dient zum Aufbrechen von Gestein und Erzadern.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="10">4,5 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Haken (Piton)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_PITON">
+        <description>
+            <p>Ein Metallhaken mit Öse, der mit einem Hammer in Stein getrieben wird. Dient als Sicherung beim Klettern.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="weight" lb="0.25">0,11 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Gift, einfach (Fläschchen)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_POISON_BASIC_VIAL">
+        <description>
+            <p>Kann auf eine Nahkampfwaffe oder bis zu 3 Geschosse aufgetragen werden. Hält 1 Minute. Bei Treffer: Konstitutionswurf (SG 10) oder 1W4 Giftschaden.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">100</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Stab (3m)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_POLE_10_FOOT">
+        <description>
+            <p>Ein langer Holzstab – oft genutzt, um Fallen zu testen oder Tiefen zu messen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="weight" lb="7">3,2 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Eisentopf" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_POT_IRON">
+        <description>
+            <p>Ein großer, robuster Kochtopf aus Gusseisen – eignet sich zum Kochen über offenem Feuer.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="10">4,5 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Heiltrank" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_POTIONOFHEALING">
+        <description>
+            <p>Wer diese rote Flüssigkeit trinkt, stellt 2W4 + 2 Trefferpunkte wieder her. Einnahme oder Verabreichung dauert eine Aktion.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="0.5">0,23 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Beutel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_POUCH">
+        <description>
+            <p>Ein kleiner Leder- oder Stoffbeutel – kann bis zu 20 Schleuderkugeln oder 50 Blasrohrnadeln aufnehmen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="1">0,45 kg</set>
+        </setters>
+    </element>
+    <element name="Köcher" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_QUIVER">
+        <description>
+            <p>Ein stabiler Köcher aus Leder oder Holz – fasst bis zu 20 Pfeile.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="1">0,45 kg</set>
+        </setters>
+    </element>
+    <element name="Rammbock, tragbar" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_RAM_PORTABLE">
+        <description>
+            <p>Dient zum Einreißen von Türen. Gewährt +4 auf Stärkewürfe zum Aufbrechen. Mit Hilfe eines anderen Charakters erhältst du Vorteil auf den Wurf.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">4</set>
+            <set name="weight" lb="35">15,9 kg</set>
+        </setters>
+    </element>
+    <element name="Tagesrationen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_RATIONS_1DAY">
+        <description>
+            <p>Getrocknete Nahrung wie Pökelfleisch, Zwieback, Nüsse und Trockenobst – ausreichend für eine Person und einen Tag.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="2">0,9 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Roben" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ROBES">
+        <description>
+            <p>Weite Kleidung aus leichtem Stoff – häufig getragen von Zauberern, Priestern oder Mönchen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="4">1,8 kg</set>
+        </setters>
+    </element>
+    <element name="Schnur (3m)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_STRING_10FEET">
+        <description>
+            <p>Dünne, aber reißfeste Schnur – ideal für Fallen, Fallenmechanismen oder zum Binden kleiner Objekte.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Hanfseil (15m)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ROPE_HEMPEN_50FEET">
+        <description>
+            <p>Reißfestes Seil aus Hanffasern. 2 Trefferpunkte, kann mit Stärkewurf (SG 17) zerrissen werden.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="10">4,5 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Seidenseil (15m)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ROPE_SILK_50FEET">
+        <description>
+            <p>Leichter und fester als Hanfseil. 2 Trefferpunkte, kann mit Stärkewurf (SG 17) zerrissen werden.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="5">2,25 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Sack" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SACK">
+        <description>
+            <p>Ein einfacher Jutesack zum Verstauen oder Transportieren von Ausrüstung oder Vorräten.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="0.5">0,23 kg</set>
+        </setters>
+    </element>
+    <element name="Waage, Händler" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCALE_MERCHANTS">
+        <description>
+            <p>Ein Satz kleiner Waagschalen mit Gewichten bis 1kg – dient zur Bestimmung des Gewichts (und somit oft des Werts) kleiner Objekte.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="3">1,4 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Siegellack" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SEALINGWAX">
+        <description>
+            <p>Ein Stift mit rotbraunem Wachs zum Versiegeln von Briefen und Dokumenten – meist in Kombination mit einem Siegelring verwendet.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Schaufel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SHOVEL">
+        <description>
+            <p>Ein Spaten mit Metallkopf – nützlich beim Ausheben von Gräben, Grabstätten oder Feuerstellen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="5">2,25 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Signalpfeife" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SIGNALWHISTLE">
+        <description>
+            <p>Eine kleine Pfeife, die ein lautes, helles Signal von sich gibt – hörbar über große Entfernungen, besonders bei Wachposten beliebt.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Siegelring" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SIGNETRING">
+        <description>
+            <p>Ein Ring mit eingraviertem Familien-, Gilden- oder Institutionssymbol – dient zum Versiegeln offizieller Schriftstücke.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Seife" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SOAP">
+        <description>
+            <p>Ein Stück feste Seife – duftet meist leicht und hilft beim Entfernen von Schmutz, Blut oder Giftpflanzenrückständen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">2</set>
+            <set name="weight" lb="0">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Zauberbuch" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SPELLBOOK">
+        <description>
+            <p>Ein ledergebundener Foliant mit 100 leeren Seiten aus Pergament – wird von Zaubergelehrten genutzt, um ihre Zauber aufzuschreiben.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="3">1,4 kg</set>
+        </setters>
+    </element>
+    <element name="Eisenspitzen (10 Stück)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SPIKES_IRON_10">
+        <description>
+            <p>Robuste Metallspitzen – dienen zum Fixieren von Türen, Sichern von Seilen oder als improvisierte Waffe.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="5">2,25 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Fernrohr" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SPYGLASS">
+        <description>
+            <p>Ein präzises Linsengerät zur Beobachtung entfernter Objekte – vergrößert das Bild etwa zweifach.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1000</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Zelt (für zwei Personen)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TENT_TWOPERSON">
+        <description>
+            <p>Ein tragbares Leinwandzelt mit Platz für zwei Personen – bietet Schutz vor Witterung und neugierigen Blicken.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">2</set>
+            <set name="weight" lb="20">9,1 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Feuerstein und Stahl" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TINDERBOX">
+        <description>
+            <p>Enthält Feuerstein, Stahl und getränktes Zundermaterial. Eine Fackel o.ä. anzuzünden dauert 1 Aktion, ein Lagerfeuer 1 Minute.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">5</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Fackel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_TORCH">
+        <description>
+            <p>Brennt 1 Stunde lang. Erleuchtet 6m hell und 6m dämmrig. Kann im Nahkampf 1 Feuerschaden verursachen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Phiolchen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_VIAL">
+        <description>
+            <p>Ein kleines Glasgefäß – geeignet zur Aufbewahrung von Flüssigkeiten wie Giften, Tränken oder Tinte.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="gp">1</set>
+            <set name="weight" lb="1">—</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Wasserschlauch" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WATERSKIN">
+        <description>
+            <p>Ein mit Wasser gefüllter Lederschlauch – enthält etwa 2 Liter Flüssigkeit. Wichtig für Reisen durch trockenes Gelände.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="sp">2</set>
+            <set name="weight" lb="5">2,25 kg (voll)</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Wetzstein" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WHETSTONE">
+        <description>
+            <p>Ein kompakter Schleifstein – dient zur Pflege von Klingen und anderen Metallwerkzeugen.</p>
+        </description>
+        <setters>
+            <set name="category">Abenteuerausrüstung</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+</elements>

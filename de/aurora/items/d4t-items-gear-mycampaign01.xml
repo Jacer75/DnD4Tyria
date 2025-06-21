@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Magische Gegenstände für meine Kampagne</name>
+        <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-items-gear-mycampaign01.xml" url=""/>
+        </update>
+    </info>
+    <element name="Kettenhemd mit Rune der Abwendung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_CHAIN_MAIL_DEFLECTION">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>Ein schweres Kettenhemd mit eingelegter Schutzrune. Kritische Treffer gegen dich werden zu normalen Treffern.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, schwer</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="55">55 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Schwer</set>
+            <set name="armorClass">16</set>
+            <set name="strength">13</set>
+            <set name="stealth">Nachteil</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_MAIL</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:armor" value="16"/>
+            <stat name="speed" value="-10" bonus="armor" requirements="![str:13]"/>
+            <!--<grant type="Grants" id="ID_INTERNAL_GRANTS_CRIT_TO_NORMAL"/>-->
+        </rules>
+    </element>
+    <element name="Dolch aus Mithril +1" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_DAGGER_MITHRIL_PLUS1">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>Ein Dolch aus glänzend poliertem Mithril. Gewährt einen Bonus von +1 auf Angriffs- und Schadenswürfe.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Waffen</set>
+            <set name="keywords">dagger</set>
+            <set name="type" addition="dagger">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">300</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Stich">1W4</set>
+            <set name="enhancement">1</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+        </setters>
+        <rules>
+            <stat name="weapon:attack" value="1"/>
+            <stat name="weapon:damage" value="1"/>
+        </rules>
+    </element>
+    <element name="Amulett der Jotun-Sternwächter" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_AMULET_JOTUN_STARWARDEN">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>Ein silbrig-blaues Amulett aus unbekanntem Metall, das mit sternenartigen Mustern überzogen ist. Die Linien im Muster wirken leicht bewegt, als ob sie mit dem Licht spielen.</p>
+            <p>
+                <strong>Identifiziert:</strong> Solange du dieses Amulett trägst, erhältst du einen Bonus von +1 auf deine Zauberangriffswürfe und auf den SG deiner Zauber. Es ersetzt keinen Fokus.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">neck</set>
+            <set name="weight">0</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+        <rules>
+            <stat name="spellcasting:attack" value="1"/>
+            <stat name="spellcasting:dc" value="1"/>
+        </rules>
+    </element>
+    <element name="Nimmervoller Beutel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_BAG_OF_HOLDING">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>Ein unscheinbarer Beutel mit erstaunlichem Innenleben: Sein Inneres ist deutlich größer als sein Äußeres vermuten lässt. Er kann bis zu 225kg (500 Pfund) tragen, ohne dass sein Gewicht sich ändert. Der Zugriff auf Inhalte erfordert eine Aktion.</p>
+            <p>Wird der Beutel überladen, beschädigt oder zerrissen, wird er zerstört und sein Inhalt in die Astralebene geschleudert. Wird er umgestülpt, entleert sich sein Inhalt sicher, muss aber neu ausgerichtet werden, um weiter genutzt zu werden.</p>
+            <p>Wird der Beutel in einen anderen extradimensionalen Raum gelegt (z.B. in ein tragbares Loch), zerstört dies beide Gegenstände und öffnet ein einmaliges Portal zur Astralebene, das alle Kreaturen im Umkreis von 3m hineinzieht.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="15">15 Pfund</set>
+            <set name="stash" lb="500" weightless="true">true</set>
+        </setters>
+    </element>
+    <element name="Schild mit Sigill des wachsamen Blicks" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_SHIELD_WACHSAMER_BLICK">
+        <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+        <description>
+            <p>Der Schild ist rund, robust und aus poliertem Stahl gefertigt. In seiner Mitte prangt ein flaches Emblem – ein weit geöffnetes Auge, eingefasst in einen feinen Kreis aus Kupferdraht. Das Auge scheint dem Betrachter zu folgen, je nachdem, wie man ihn hält.</p>
+        </description>
+        <setters>
+            <set name="category">Schild</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">onehand,secondary</set>
+            <set name="armorClass">+2</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2" bonus="shield"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE"/>
+        </rules>
+    </element>
+    <element name="Nachtbrille" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_NACHTBRILLE">
+        <description>
+            <p>Eine kleine Brille mit runden Gläsern, ohne Stärke, dunkel verglast. Diese dunkle Brille gibt dir Dunkelsicht auf eine Entfernung von bis zu 18 Metern. Hast du bereits Dunkelsicht, so erhöht diese Brille deine Sichtweite um 18 Meter.</p>
+        </description>
+        <setters>
+            <set name="keywords">dunkelsicht, brille</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Ungewöhnlich</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+        </rules>
+    </element>
+    <element name="Münze des Kontakts" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_MUENZE_KONTAKT">
+        <description>
+            <p>Eine Münze in der Größe eines Goldstücks mit dem Symbol der Akademie der Arkanen Künste. Sie besteht aus Mithril und hat damit einen Wert von ungefähr 10 Goldstücken. Die Münze wurde spezifisch für „Mackie“ Williams angefertigt. Sie vibriert leicht, aber merklich, und leuchtet schwach, wenn Magistra Cox die Anwesenheit von Mackie wünscht. Sie hat dann üblicherweise Bedarf für die Dienste des Mannes.</p>
+        </description>
+        <setters>
+            <set name="keywords">kontakt, mithril, signal, cox</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">none</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Ungewöhnlich</set>
+        </setters>
+    </element>
+</elements>

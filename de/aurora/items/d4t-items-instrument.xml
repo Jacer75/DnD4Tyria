@@ -1,0 +1,160 @@
+<elements>
+	<info>
+		<name>Musikinstrumente</name>
+		<description></description>
+		<author url="">Aurora4Tyria</author>
+		<update version="0.0.2">
+			<file name="d4t-items-instrument.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Dudelsack" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_DUDELSACK">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit dem Dudelsack geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" kg="2.7">6 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_BAGPIPES</set>
+		</setters>
+	</element>
+
+	<element name="Trommel" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_TROMMEL">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit der Trommel geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">6</set>
+			<set name="weight" kg="1.4">3 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM</set>
+		</setters>
+	</element>
+
+	<element name="Hackbrett" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_HACKBRETT">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit dem Hackbrett geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">25</set>
+			<set name="weight" kg="4.5">10 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_DULCIMER</set>
+		</setters>
+	</element>
+
+	<element name="Flöte" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_FLOETE">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit der Flöte geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" kg="0.5">1 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_FLUTE</set>
+		</setters>
+	</element>
+
+	<element name="Laute" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_LAUTE">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit der Laute geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">35</set>
+			<set name="weight" kg="0.9">2 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_LUTE</set>
+		</setters>
+	</element>
+
+	<element name="Leier" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_LEIER">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit der Leier geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" kg="0.9">2 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_LYRE</set>
+		</setters>
+	</element>
+
+	<element name="Horn" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_HORN">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit dem Horn geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">3</set>
+			<set name="weight" kg="0.9">2 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_HORN</set>
+		</setters>
+	</element>
+
+	<element name="Panflöte" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_PANFLOETE">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit der Panflöte geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">12</set>
+			<set name="weight" kg="0.9">2 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_PAN_FLUTE</set>
+		</setters>
+	</element>
+
+	<element name="Schalmei" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_SCHALMEI">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit der Schalmei geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">2</set>
+			<set name="weight" kg="0.5">1 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_SHAWM</set>
+		</setters>
+	</element>
+
+	<element name="Viole" type="Item" source="DnD4Tyria" id="ID_D4T_INSTRUMENT_VIOLE">
+		<supports>ID_INTERNAL_TOOL_MUSICAL_INSTRUMENT</supports>
+		<description>
+			<p>Wenn du mit der Viole geübt bist, kannst du deinen Übungsbonus auf alle Attributswürfe anwenden, die du zum Musizieren mit dem Instrument machst. Ein Barde kann ein Musikinstrument als Fokus für Zauber verwenden.</p>
+		</description>
+		<setters>
+			<set name="category">Musikinstrumente</set>
+			<set name="cost" currency="gp">30</set>
+			<set name="weight" kg="0.5">1 Pfund</set>
+			<set name="slot">onehand</set>
+			<set name="type">Tool</set>
+			<set name="proficiency">ID_PROFICIENCY_TOOL_PROFICIENCY_VIOL</set>
+		</setters>
+	</element>
+</elements>

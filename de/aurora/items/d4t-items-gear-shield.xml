@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Schild (Item)</name>
+        <description>Schild aus dem Spielerhandbuch, umgesetzt als Aurora-Item für DnD4Tyria.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-items-gear-shield.xml" url=""/>
+        </update>
+    </info>
+    <element name="Schild (Shield)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ARMOR_SHIELD">
+        <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+        <description>
+            <p>Ein Schild besteht aus Holz oder Metall und wird in einer Hand getragen. Das Führen eines Schildes erhöht deine Rüstungsklasse um 2. Du kannst nur von einem Schild gleichzeitig profitieren.</p>
+        </description>
+        <setters>
+            <set name="category">Schild</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">onehand,secondary</set>
+            <set name="armorClass">+2</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2" bonus="shield"/>
+        </rules>
+    </element>
+</elements>
