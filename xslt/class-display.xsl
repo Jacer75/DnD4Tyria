@@ -11,14 +11,14 @@
 
     <html>
       <head>
-        <title>2 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>3 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
         <h1><xsl:value-of select="$data/elements/element/@name"/></h1>
 
         <div class="description">
-          <xsl:copy-of select="$data/elements/element/@description"/>
+          <xsl:copy-of select="$data/elements/element[1]/description/node()"/>
         </div>
 
         <!-- Zusätzliche Class Features anzeigen -->
