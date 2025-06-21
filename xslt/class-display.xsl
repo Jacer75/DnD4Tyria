@@ -11,7 +11,7 @@
 
     <html>
       <head>
-        <title>10 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>11 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -42,16 +42,16 @@
           </div>
 
           <!-- Zugehörige Archetype Features -->
-          <xsl:for-each select="$data/elements/element[@type='Archetype Feature']">
-            <!--<xsl:if test="@source = current()/@source and contains(description, current()/@name)">-->
-            <xsl:if test="starts-with(@id, current()/@id)">
+          <xsl:for-each select="rules/grant[@type='Archetype Feature']">
+            <xsl:variable name="featureId" select="@id"/>
+            <xsl:for-each select="$data/elements/element[@type='Archetype Feature' and @id = $featureId]">
               <details>
                 <summary><xsl:value-of select="@name"/></summary>
                 <div class="feature-description">
                   <xsl:copy-of select="description/node()"/>
                 </div>
               </details>
-            </xsl:if>
+            </xsl:for-each>
           </xsl:for-each>
         </xsl:for-each>
 
