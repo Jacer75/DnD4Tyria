@@ -18,7 +18,7 @@
     <setters>
       <set name="abbreviation">D4T</set>
       <set name="url">https://jacer75.github.io/DnD4Tyria/de</set>
-      <set name="image">https://wiki.guildwars2.com/images/d/df/Destiny%27s_Edge_02_concept_art.jpg</set> <!-- Oder dein eigenes Logo -->
+      <!--<set name="image">https://wiki.guildwars2.com/images/d/df/Destiny%27s_Edge_02_concept_art.jpg</set>--> <!-- Oder dein eigenes Logo -->
       <set name="author" abbreviation="A4T" url="">Aurora4Tyria</set>
       <set name="official">false</set>
       <set name="core">false</set>
