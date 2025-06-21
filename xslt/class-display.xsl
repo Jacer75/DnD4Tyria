@@ -11,7 +11,7 @@
 
     <html>
       <head>
-        <title>11 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>12 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -50,8 +50,22 @@
                 <div class="feature-description">
                   <xsl:copy-of select="description/node()"/>
                 </div>
+
+                <!-- Erweiterte Auswahl: Alle Elemente mit passendem supports-Wert anzeigen -->
+                <xsl:for-each select="select">
+                  <xsl:variable name="supportKey" select="@supports"/>
+                  <xsl:for-each select="$data/elements/element[@type='Archetype Feature' and supports = $supportKey]">
+                    <details>
+                      <summary><xsl:value-of select="@name"/></summary>
+                      <div class="feature-description">
+                        <xsl:copy-of select="description/node()"/>
+                      </div>
+                    </details>
+                  </xsl:for-each>
+                </xsl:for-each>
               </details>
             </xsl:for-each>
+          </xsl:for-each>
           </xsl:for-each>
         </xsl:for-each>
 
