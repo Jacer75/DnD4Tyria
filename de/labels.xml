@@ -6,6 +6,8 @@
   <type name="Spell" label="Zauber" path="spells"/>
 </labels>
 
+<label id="class.features">Klassenmerkmale</label>
+  
 <spell-levels>
     <level label="Zaubertricks">0</level>
     <level label="Zauberstufe 1">1</level>
