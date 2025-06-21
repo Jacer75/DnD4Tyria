@@ -1,1 +1,6 @@
-content für fighter
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/class-display.xsl"?>
+<root>
+  <external href="../aurora/classes/d4t-class-fighter.xml"/>
+  <external href_labels="../labels.xml"/>
+</root>
