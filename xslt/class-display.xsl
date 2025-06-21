@@ -12,7 +12,7 @@
 
     <html>
       <head>
-        <title>20 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>21 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -75,6 +75,7 @@
         <xsl:variable name="baseList" select="substring-before($spellcasting/list, ',')"/>
 
         <h1><xsl:value-of select="$labels/global/label[@id='class.spells']"/></h1>
+        <p>BaseList: <xsl:value-of select="$baseList"/></p>
         
         <xsl:for-each select="$labels/global/spell-levels/level">
           <xsl:variable name="lvl" select="."/>
