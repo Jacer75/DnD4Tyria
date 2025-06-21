@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Handbuch für DnD4Tyria</name>
+		<description>Das Handbuch enthält die Informationen, die man für ein DnD-Spiel in der Welt von Guild Wars 2 benötigt.</description>
+		<author url="https://jacer75.github.io/DnD4Tyria/de/">Aurora4Tyria</author>
+		<update version="0.1">
+			<file name="DnD4Tyria.index" url="https://jacer75.github.io/DnD4Tyria/de/aurora/DnD4Tyria.index" />
+		</update>
+	</info>
+	<files>	
+		<file name="source.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/source.xml" />
+		
+		<!-- races -->
+    <file name="d4t-race-asura.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-asura.xml" />
+    <file name="d4t-race-charr.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-charr.xml" />
+    <file name="d4t-race-human.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-human.xml" />
+    <file name="d4t-race-norn.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-norn.xml" />
+    <file name="d4t-race-sylvari.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-sylvari.xml" />
+
+		<!-- classes -->
+		<file name="d4t-class-barbarian.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-barbarian.xml" />
+		<file name="d4t-class-bard.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-bard.xml" />
+		<file name="d4t-class-cleric.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-cleric.xml" />
+		<file name="d4t-class-druid.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-druid.xml" />
+		<file name="d4t-class-fighter.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-fighter.xml" />
+		<file name="d4t-class-monk.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-monk.xml" />
+		<file name="d4t-class-paladin.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-paladin.xml" />
+		<file name="d4t-class-ranger.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-ranger.xml" />
+		<file name="d4t-class-rogue.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-rogue.xml" />
+		<file name="d4t-class-sorcerer.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-sorcerer.xml" />
+		<file name="d4t-class-warlock.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-warlock.xml" />
+		<file name="d4t-class-wizard.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-wizard.xml" />
+
+		<!-- backgrounds -->		
+		<file name="d4t-background-acolyte.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-acolyte.xml" />
+		<file name="d4t-background-charlatan.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-charlatan.xml" />
+		<file name="d4t-background-criminal.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-criminal.xml" />
+		<file name="d4t-background-entertainer.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-entertainer.xml" />
+		<file name="d4t-background-folkhero.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-folkhero.xml" />
+		<file name="d4t-background-guildartisan.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-guildartisan.xml" />
+		<file name="d4t-background-hermit.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-hermit.xml" />
+		<file name="d4t-background-noble.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-noble.xml" />
+		<file name="d4t-background-outlander.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-outlander.xml" />
+		<file name="d4t-background-sage.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-sage.xml" />
+		<file name="d4t-background-sailer.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-sailer.xml" />
+		<file name="d4t-background-soldier.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-soldier.xml" />
+		<file name="d4t-background-urchin.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/backgrounds/d4t-background-urchin.xml" />
+
+		<!-- items -->
+		<!--<file name="items-armor.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/items-armor.xml" />-->
+		<file name="d4t-items-gear.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-gear.xml" />
+		<file name="d4t-items-gear-clothing.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-gear-clothing.xml" />
+		<file name="d4t-items-gear-heavyarmor.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-gear-heavyarmor.xml" />
+		<file name="d4t-items-gear-lightarmor.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-gear-lightarmor.xml" />
+		<file name="d4t-items-gear-mediumarmor.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-gear-mediumarmor.xml" />
+		<file name="d4t-items-gear-shield.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-gear-shield.xml" />
+		<file name="d4t-items-packs.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-packs.xml" />
+		<file name="d4t-items-instrument.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-instrument.xml" />
+		<file name="d4t-items-tools.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-tools.xml" />
+		<file name="d4t-items-mounts.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-mounts.xml" />
+		<file name="d4t-items-weapons.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-weapons.xml" />
+
+		<!-- misc -->
+		<file name="d4t-languages.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/d4t-languages.xml" />
+		<file name="d4t-feats.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/d4t-feats.xml" />
+		<file name="d4t-spells.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/d4t-spells.xml" />
+		<file name="d4t-skills.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/d4t-skills.xml" />
+		<file name="d4t-deities.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/d4t-deities.xml" />
+		<file name="d4t-companions.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/d4t-companions.xml" />
+	</files>
+</index>
