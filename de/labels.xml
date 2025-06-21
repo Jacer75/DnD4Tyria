@@ -7,7 +7,8 @@
 </labels>
 
 <label id="class.features">Klassenmerkmale</label>
-<label id="archetypes">Archetypen</label>
+<label id="class.archetypes">Archetypen</label>
+<label id="class.spells">Zauberliste</label>
   
 <spell-levels>
     <level label="Zaubertricks">0</level>
