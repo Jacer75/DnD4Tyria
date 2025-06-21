@@ -1317,6 +1317,10 @@
         </sheet>
         <spellcasting name="Mystischer Ritter" ability="Intelligence" prepare="false" allowReplace="true">
             <list>Wizard,(Abjuration||Evocation)</list>
+            <schools>
+              <school>Abjuration</school>
+              <school>Evocation</school>
+            </schools>
         </spellcasting>
         <rules>
             <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_THIRD" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
