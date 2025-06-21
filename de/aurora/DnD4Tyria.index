@@ -12,11 +12,11 @@
 		<file name="source.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/source.xml" />
 		
 		<!-- races -->
-    <file name="d4t-race-asura.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-asura.xml" />
-    <file name="d4t-race-charr.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-charr.xml" />
-    <file name="d4t-race-human.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-human.xml" />
-    <file name="d4t-race-norn.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-norn.xml" />
-    <file name="d4t-race-sylvari.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-sylvari.xml" />
+    		<file name="d4t-race-asura.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-asura.xml" />
+    		<file name="d4t-race-charr.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-charr.xml" />
+    		<file name="d4t-race-human.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-human.xml" />
+    		<file name="d4t-race-norn.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-norn.xml" />
+    		<file name="d4t-race-sylvari.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-sylvari.xml" />
 
 		<!-- classes -->
 		<file name="d4t-class-barbarian.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-barbarian.xml" />
