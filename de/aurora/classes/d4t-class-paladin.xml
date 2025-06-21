@@ -1,0 +1,1250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Wächter</name>
+        <description>Die Klasse Wächter für DnD4Tyria, basierend auf dem Paladin aus dem Player’s Handbook.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0">
+            <file name="d4t-class-paladin.xml" url=""/>
+        </update>
+    </info>
+    <element name="Wächter" type="Class" source="DnD4Tyria" id="ID_D4T_CLASS_GUARDIAN">
+        <description>
+            <p>Gehüllt in schwere Rüstung, die selbst im Dreck der Schlacht wie gebürstetes Silber glänzt, kniet eine menschliche Wächterin nieder, legt Schild und Schwert zur Seite und presst ihre Hände auf die Brust eines sterbenden Gefährten. Wärme strömt durch ihre Finger, göttliches Licht flackert auf – und das Leben kehrt zurück.</p>
+            <p class="indent">Ein Norn mit wallendem Bart kauert zwischen den Ruinen einer zerstörten Kapelle. Er zieht die Kapuze tiefer ins Gesicht, spricht ein uraltes Versprechen – und in der nächsten Sekunde fällt sein Hammer wie ein göttliches Urteil auf die Häretiker vor ihm herab.</p>
+            <p class="indent">Zwischen den zerbrochenen Säulen einer versunkenen Stadt erhebt sich eine Sylvari, von Moos bewachsen, doch von unbeugsamer Entschlossenheit erfüllt. Aus ihren Augen spricht das Licht – und mit jedem Stoß ihres Speers verblasst die Dunkelheit um sie herum.</p>
+            <p class="indent">Wächter entspringen allen Völkern, allen Kulturen. Was sie eint, ist ihr Eid – sei er einem Prinzip, einer Stadt oder einem Volk geschworen. Dieser Schwur verleiht ihnen Macht. Er ist ihre Rüstung gegen Furcht, ihre Waffe gegen das Böse und ihre Flamme in der Dunkelheit.</p>
+            <h4>DER WEG DES EIDES</h4>
+            <p>Ein Wächter verpflichtet sich, das Gute zu bewahren, Unschuldige zu beschützen und allem entgegenzutreten, was finstere Absicht verfolgt – ob Untote, Fanatiker oder dämonische Mächte. Sein Schwur kann im Tempel gesprochen worden sein, im Blut eines gefallen Verbündeten oder im stillen Zorn einer persönlichen Tragödie. Doch stets ist er verbindlich – magischer Kern und moralisches Rückgrat zugleich.</p>
+            <p class="indent">Viele Wächter glauben an Konzepte wie Gerechtigkeit, Ordnung oder Hoffnung – weniger an Götter, mehr an das Ideal. Ihre Kraft erwächst nicht aus Gebeten, sondern aus Überzeugung. Sie sind Kämpfer, Heiler, Führer – und vor allem: lebendige Leuchtfeuer der Standhaftigkeit.</p>
+            <h4>MEHR ALS EIN KRIEGER</h4>
+            <p>Wächter sind selten unter gewöhnlichen Soldaten. Die meisten folgen einem Ruf, der größer ist als Befehle oder Bezahlung. Manche schließen sich Orden an, andere beschützen ihr Dorf, wieder andere ziehen ruhelos durch die Lande, getrieben von einem Eid, der nie vergehen darf.</p>
+            <p class="indent">Ein Wächter ist kein Held per Titel. Er ist ein Schwur in Bewegung – unbestechlich, unbeirrbar und bereit, sich dem Bösen entgegenzustellen, selbst wenn niemand sonst mehr steht.</p>
+            <p class="indent">Wächter nehmen ihre Aufgabe ernst. Eine Reise in vergessene Ruinen oder staubige Katakomben ist für sie keine Schatzsuche – sondern eine heilige Mission. Denn wo das Dunkel lauert, genügt manchmal schon ein einziger Sieg, um die Waage des Schicksals zu wenden.</p>
+            <h4>WÄCHTER ERSTELLEN</h4>
+            <p>Das wichtigste Merkmal eines Wächters ist sein Eid – jenes Versprechen, das ihn mit der Welt und sich selbst verbindet. Zwar erlangst du die Eid-basierten Klassenmerkmale erst ab Stufe 3, doch solltest du dir schon früh überlegen, welchem Ideal du folgen willst. Bist du ein aufrichtiger Verteidiger des Lebens, der allen voran in die Dunkelheit schreitet? Ein standhafter Streiter des Lichts, der Schönheit und Hoffnung bewahrt? Oder ein verbitterter Vergelter, der sein Schwert dem Gedenken an eine verlorene Heimat geweiht hat?</p>
+            <p class="indent">Wie hast du deine Berufung erfahren? Hat dich ein anderer Wächter unter seine Fittiche genommen? Wurdest du durch Verlust, Schmerz oder Schuld zur Klinge des Schwurs geformt? Oder war der Ruf einfach immer in dir – ein leiser Takt, der dich durchs Leben getragen hat, bis du wusstest: Jetzt ist es Zeit.</p>
+            <p class="indent">Wächter stehen für Licht, Schutz und Gerechtigkeit – doch nicht alle sind frei von innerem Zwiespalt. Manche streben nach einem Ideal, das sie selbst noch nicht ganz verkörpern. Überlege dir, wie dein Eid mit deiner Gesinnung zusammenhängt – und was passiert, wenn beides in Konflikt gerät.</p>
+            <h5>SCHNELLER EINSTIEG</h5>
+            <p>Wenn du schnell loslegen willst: Stärke sollte dein höchster Attributswert sein, gefolgt von Charisma. Wähle als Hintergrund den Adligen.</p>
+            <h3>KLASSENMERKMALE</h3>
+            <p>Als Wächter verfügst du über folgende Klassenmerkmale:</p>
+            <h5>TREFFERPUNKTE</h5>
+            <ul class="unstyled">
+                <li>
+                    <strong>Trefferwürfel:</strong> 1W10 pro Wächter-Stufe</li>
+                <li>
+                    <strong>Trefferpunkte auf Stufe 1:</strong> 10 + Konstitutionsmodifikator</li>
+                <li>
+                    <strong>TP je weiterer Stufe:</strong> 1W10 (oder 6) + Konstitutionsmodifikator</li>
+            </ul>
+            <h5>KOMPETENZEN</h5>
+            <ul class="unstyled mb">
+                <li>
+                    <strong>Rüstung:</strong> Alle Rüstungen, Schilde</li>
+                <li>
+                    <strong>Waffen:</strong> Einfache Waffen, Kriegswaffen</li>
+                <li>
+                    <strong>Werkzeuge:</strong> Keine</li>
+            </ul>
+            <ul class="unstyled">
+                <li>
+                    <strong>Rettungswürfe:</strong> Weisheit, Charisma</li>
+                <li>
+                    <strong>Fertigkeiten:</strong> Wähle zwei aus: Athletik, Mit Tieren umgehen, Einschüchtern, Heilkunde, Überzeugen, Religion</li>
+            </ul>
+            <h5>AUSRÜSTUNG</h5>
+            <p>Du beginnst mit folgender Ausrüstung, zusätzlich zu der Ausrüstung deines Hintergrunds:</p>
+            <ul>
+                <li>
+                    <i>(a)</i> eine Kriegswaffe und ein Schild oder <i>(b)</i> zwei Kriegswaffen</li>
+                <li>
+                    <i>(a)</i> fünf Wurfspeere oder <i>(b)</i> eine einfache Nahkampfwaffe</li>
+                <li>
+                    <i>(a)</i> ein Priesterpack oder <i>(b)</i> ein Entdeckerpack</li>
+                <li>Kettenhemd und ein Symbol des Eides</li>
+            </ul>
+            <h5 class="caption">DER WÄCHTER</h5>
+            <table class="class-features">
+                <thead>
+                    <tr>
+                        <td class="col-5">Stufe</td>
+                        <td class="col-60 left">Merkmale</td>
+                        <td>1.</td>
+                        <td>2.</td>
+                        <td>3.</td>
+                        <td>4.</td>
+                        <td>5.</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> 1</td>
+                    <td class="left">Göttliches Gespür (Divine Sense), Handauflegen (Lay on Hands)</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 2</td>
+                    <td class="left">Kampfstil (Fighting Style), Zauberwirken (Spellcasting), Göttliches Niederstrecken (Divine Smite)</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td class="left">Göttliche Gesundheit (Divine Health), Heilige Schwüre (Sacred Oath)</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 4</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 5</td>
+                    <td class="left">Zusätzlicher Angriff (Extra Attack)</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 6</td>
+                    <td class="left">Aura des Schutzes (Aura of Protection)</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 7</td>
+                    <td class="left">Merkmal des Heiligen Schwurs</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 8</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td class="left">—</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="left">Aura der Tapferkeit (Aura of Courage)</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="left">Verbessertes Göttliches Niederstrecken (Improved Divine Smite)</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td class="left">—</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td class="left">Reinigende Berührung (Cleansing Touch)</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td class="left">Merkmal des Heiligen Schwurs</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td class="left">—</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td class="left">Verbesserte Auren</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td class="left">Merkmal des Heiligen Schwurs</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+            </table>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_PROFICIENCIES"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_DIVINE_SENSE"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_LAY_ON_HANDS"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_FIGHTING_STYLE"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_SPELLCASTING"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_DIVINE_SMITE"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_DIVINE_HEALTH"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_SACRED_OATH"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_ASI"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_EXTRA_ATTACK"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_IMPROVED_DIVINE_SMITE"/>
+            <div element="ID_D4T_CLASS_FEATURE_PALADIN_CLEANSING_TOUCH"/>
+        </description>
+        <sheet display="false">
+            <description>Ein standhafter Krieger, durch einen Eid an Schutz und Gerechtigkeit gebunden.</description>
+        </sheet>
+        <setters>
+            <set name="short">Ein standhafter Krieger, durch einen Eid an Schutz und Gerechtigkeit gebunden.</set>
+            <set name="hd">d10</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_D4T_MULTICLASS_PALADIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_D4T_MULTICLASS_PALADIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_D4T_MULTICLASS_PALADIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_D4T_MULTICLASS_PALADIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_D4T_MULTICLASS_PALADIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_D4T_MULTICLASS_PALADIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="!ID_D4T_MULTICLASS_PALADIN"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_D4T_MULTICLASS_PALADIN"/>
+            <!--<select type="Proficiency" name="Skill Proficiency (Paladin)" supports="Skill,Paladin" number="2" requirements="!ID_D4T_MULTICLASS_PALADIN" />-->
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_PROFICIENCIES" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_DIVINE_SENSE" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_LAY_ON_HANDS" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_FIGHTING_STYLE" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_SPELLCASTING" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_DIVINE_SMITE" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_DIVINE_HEALTH" level="3"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_SACRED_OATH" level="3"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_ASI" level="4"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_EXTRA_ATTACK" level="5"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION" level="6"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE" level="10"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_IMPROVED_DIVINE_SMITE" level="11"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_PALADIN_CLEANSING_TOUCH" level="14"/>
+        </rules>
+        <multiclass id="ID_D4T_MULTICLASS_PALADIN">
+            <prerequisite>Strength 13 and Charisma 13</prerequisite>
+            <requirements>([str:13],[cha:13])</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+            </rules>
+        </multiclass>
+    </element>
+    <!-- Proficiencies -->
+    <element name="Fertigkeiten (Wächter)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_PROFICIENCIES">
+        <description>
+            <p>Wähle zwei Fertigkeiten aus der folgenden Liste, in denen du geübt bist: Athletik, Mit Tieren umgehen, Einschüchtern, Heilkunde, Überzeugen und Religion.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Fertigkeiten" supports="Guardian-Proficiency" number="2" level="1"/>
+        </rules>
+    </element>
+    <element name="Athletik (Athletics)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_PALADIN_PROFICIENCY_ATHLETICS">
+        <supports>Guardian-Proficiency</supports>
+        <description>
+            <p>Mit Athletik überprüfst du deine Fähigkeit zum Klettern, Springen oder Schwimmen sowie andere körperliche Herausforderungen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS"/>
+        </rules>
+    </element>
+    <element name="Mit Tieren umgehen (Animal Handling)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_PALADIN_PROFICIENCY_ANIMAL_HANDLING">
+        <supports>Guardian-Proficiency</supports>
+        <description>
+            <p>Diese Fertigkeit hilft dir dabei, das Verhalten von Tieren zu verstehen, sie zu beruhigen oder zu kontrollieren.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING"/>
+        </rules>
+    </element>
+    <element name="Einschüchtern (Intimidation)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_PALADIN_PROFICIENCY_INTIMIDATION">
+        <supports>Guardian-Proficiency</supports>
+        <description>
+            <p>Einschüchtern setzt du ein, wenn du andere durch Drohungen, Auftreten oder Gewalt zu beeinflussen versuchst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+        </rules>
+    </element>
+    <element name="Heilkunde (Medicine)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_PALADIN_PROFICIENCY_MEDICINE">
+        <supports>Guardian-Proficiency</supports>
+        <description>
+            <p>Mit Heilkunde kannst du Wunden untersuchen, Krankheiten erkennen und stabilisierende Erste Hilfe leisten.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE"/>
+        </rules>
+    </element>
+    <element name="Überzeugen (Persuasion)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_PALADIN_PROFICIENCY_PERSUASION">
+        <supports>Guardian-Proficiency</supports>
+        <description>
+            <p>Diese Fertigkeit hilft dir, andere mit Argumenten, Charme oder Diplomatie zu überzeugen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
+        </rules>
+    </element>
+    <element name="Religion (Religion)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_PALADIN_PROFICIENCY_RELIGION">
+        <supports>Guardian-Proficiency</supports>
+        <description>
+            <p>Religion umfasst dein Wissen über Glaubensrichtungen, Rituale, Götter, Symbole und theologische Lehren.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION"/>
+        </rules>
+    </element>
+    <element name="Göttliches Gespür (Divine Sense)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_DIVINE_SENSE">
+        <description>
+            <p>Starkes Böses erfüllt deine Sinne wie ein beißender Gestank, mächtiges Gutes klingt wie himmlische Musik in deinen Ohren. Als Aktion kannst du deine Wahrnehmung öffnen, um solche Kräfte zu spüren. Bis zum Ende deines nächsten Zuges kennst du die Position aller Himmlischen, Teuflischen und Untoten im Umkreis von 18m (60 feet), sofern sie nicht vollständige Deckung haben. Du erfährst ihren Typ (Himmlisch, Teuflisch oder Untot), aber nicht ihre Identität. Im gleichen Radius nimmst du außerdem geweihte oder entweihte Orte oder Objekte wahr, wie sie vom Zauber <i>Weihe</i> (Hallow) beeinflusst werden.</p>
+            <p class="indent">Du kannst diese Fähigkeit eine Anzahl Male einsetzen, die 1 + deinem Charismamodifikator entspricht. Nach einer langen Rast erhältst du alle verbrauchten Anwendungen zurück.</p>
+        </description>
+        <sheet usage="{{divine sense:count}}/Lange Rast" action="Aktion">
+            <description>Du kannst deine Wahrnehmung öffnen, um starke Quellen des Guten oder Bösen zu erspüren. Bis zum Ende deines nächsten Zuges kennst du die Position aller Himmlischen, Teuflischen und Untoten im Umkreis von 18m, sofern sie nicht vollständige Deckung haben. Du erfährst ihren Typ, aber nicht ihre Identität. Im selben Radius spürst du auch geweihte oder entweihte Orte oder Objekte.</description>
+        </sheet>
+        <rules>
+            <stat name="divine sense:count" value="1"/>
+            <stat name="divine sense:count" value="charisma:modifier"/>
+        </rules>
+    </element>
+    <element name="Heilende Hand (Lay on Hands)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_LAY_ON_HANDS">
+        <description>
+            <p>Deine geweihte Berührung kann Wunden heilen. Du verfügst über einen Vorrat an Heilungskraft, der sich nach einer langen Rast wieder auffüllt. Damit kannst du insgesamt eine Anzahl Trefferpunkte in Höhe des Fünffachen deiner Wächter-Stufe wiederherstellen.</p>
+            <p class="indent">Als Aktion kannst du eine Kreatur berühren und ihr Trefferpunkte in beliebiger Höhe aus deinem Vorrat zurückgeben, bis das Maximum aufgebraucht ist.</p>
+            <p class="indent">Alternativ kannst du 5 Trefferpunkte aus dem Vorrat aufwenden, um die Kreatur von einer Krankheit zu heilen oder ein Gift zu neutralisieren, das sie betrifft. Du kannst mit einer Anwendung mehrere Krankheiten oder Gifte beseitigen, wenn du je 5 Trefferpunkte dafür bezahlst.</p>
+            <p class="indent">Diese Fähigkeit hat keine Wirkung auf Untote oder Konstrukte.</p>
+        </description>
+        <sheet action="Aktion" usage="{{lay on hands:hp pool}}/Lange Rast">
+            <description>Berühre eine Kreatur, um Trefferpunkte aus deinem Heilungsvorrat wiederherzustellen. Du kannst auch je 5 Punkte aufwenden, um Krankheiten zu heilen oder Gifte zu neutralisieren. Keine Wirkung bei Untoten oder Konstrukten.</description>
+        </sheet>
+        <rules>
+            <stat name="lay on hands:hp pool" value="level:wächter"/>
+            <stat name="lay on hands:hp pool" value="level:wächter"/>
+            <stat name="lay on hands:hp pool" value="level:wächter"/>
+            <stat name="lay on hands:hp pool" value="level:wächter"/>
+            <stat name="lay on hands:hp pool" value="level:wächter"/>
+        </rules>
+    </element>
+    <element name="Kampfstil (Fighting Style)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_FIGHTING_STYLE">
+        <description>
+            <p>Ab Stufe 2 wählst du einen Kampfstil als deine Spezialität. Wähle eine der folgenden Optionen. Du kannst denselben Kampfstil nicht mehrfach wählen, auch wenn du ihn später erneut auswählen dürftest.</p>
+            <h5 class="caption">VERTEIDIGUNG</h5>
+            <p>Solange du eine Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse.</p>
+            <h5 class="caption">DUELL</h5>
+            <p>Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe in der anderen Hand hältst, erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe.</p>
+            <h5 class="caption">KAMPF MIT ZWEIHANDWAFFEN</h5>
+            <p>Wenn du bei einem Angriff mit einer Nahkampfwaffe, die du mit zwei Händen führst, eine 1 oder 2 bei einem Schadenswürfel wirfst, kannst du den Würfel einmal neu werfen. Du musst das neue Ergebnis verwenden, selbst wenn es wieder eine 1 oder 2 ist. Die Waffe muss die Eigenschaft Zweihändig oder Vielseitig besitzen.</p>
+            <h5 class="caption">SCHÜTZEN</h5>
+            <p>Wenn eine Kreatur, die du sehen kannst, ein Ziel angreift, das sich innerhalb von 1,5m (5 feet) um dich befindet und nicht du selbst bist, kannst du deine Reaktion verwenden, um dem Angriffswurf Nachteil zu verleihen. Du musst dafür ein Schild führen.</p>
+        </description>
+        <rules>
+            <select type="Class Feature" name="Kampfstil" supports="Fighting Style,Guardian"/>
+        </rules>
+    </element>
+    <element name="Verteidigung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_FIGHTING_STYLE_DEFENSE">
+        <supports>Fighting Style,Guardian</supports>
+        <description>
+            <p>Solange du eine Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse (RK).</p>
+        </description>
+        <sheet>
+            <description>Solange du eine Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse (RK).</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Verteidigung (Kampfstil)"/>
+        </rules>
+    </element>
+    <element name="Duellant" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_FIGHTING_STYLE_DUELING">
+        <supports>Fighting Style,Guardian</supports>
+        <description>
+            <p>Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe in der anderen, erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe.</p>
+        </description>
+        <sheet>
+            <description>Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe in der anderen, erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe.</description>
+        </sheet>
+        <rules>
+            <!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
+        </rules>
+    </element>
+    <element name="Kampf mit Zweihänder" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_FIGHTING_STYLE_GREAT_WEAPON_FIGHTING">
+        <supports>Fighting Style,Guardian</supports>
+        <description>
+            <p>Wenn du bei einem Schadenswurf mit einer Nahkampfwaffe, die du mit beiden Händen führst, eine 1 oder 2 würfelst, kannst du den Würfel einmal neu werfen. Du musst das neue Ergebnis verwenden, auch wenn es wieder eine 1 oder 2 ist. Die Waffe muss das Merkmal „Zweihändig“ oder „Vielseitig“ besitzen.</p>
+        </description>
+        <sheet>
+            <description>Wenn du bei einem Schadenswurf mit einer Nahkampfwaffe, die du mit beiden Händen führst, eine 1 oder 2 würfelst, kannst du den Würfel einmal neu werfen. Du musst das neue Ergebnis verwenden, auch wenn es wieder eine 1 oder 2 ist. Die Waffe muss das Merkmal „Zweihändig“ oder „Vielseitig“ besitzen.</description>
+        </sheet>
+    </element>
+    <element name="Schutz" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_FIGHTING_STYLE_PROTECTION">
+        <supports>Fighting Style,Guardian</supports>
+        <description>
+            <p>Wenn eine Kreatur, die du sehen kannst, ein Ziel angreift, das sich innerhalb von 1,5m (5 Fuß) von dir befindet und nicht du selbst bist, kannst du deine Reaktion nutzen, um dem Angriffswurf Nachteil zu verleihen. Du musst dafür ein Schild führen.</p>
+        </description>
+        <sheet action="Reaktion">
+            <description>Wenn eine Kreatur, die du sehen kannst, ein Ziel angreift, das sich innerhalb von 1,5m (5 Fuß) von dir befindet und nicht du selbst bist, kannst du deine Reaktion nutzen, um dem Angriffswurf Nachteil zu verleihen. Du musst dafür ein Schild führen.</description>
+        </sheet>
+    </element>
+    
+    <element name="Zauberwirken (Spellcasting)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_SPELLCASTING">
+        <description>
+            <p>Ab Stufe 2 hast du gelernt, durch Meditation und innere Einkehr göttliche Magie zu kanalisieren – ähnlich wie ein Kleriker. Siehe Kapitel 10 für die allgemeinen Zauberregeln und Kapitel 11 für die Zauberliste des Wächters.</p>
+            <h5>ZAUBER VORBEREITEN UND WIRKEN</h5>
+            <p>Die Wächter-Tabelle zeigt, wie viele Zauberplätze du hast, um Zauber zu wirken. Um einen deiner Zauber des 1. Grades oder höher zu wirken, musst du einen Zauberplatz dieses oder eines höheren Grades aufwenden. Alle verbrauchten Zauberplätze erhältst du nach einer langen Rast zurück.</p>
+            <p class="indent">Du bereitest eine Liste von Wächterzaubern vor, aus denen du wirken kannst, indem du Zauber aus der Wächterzauberliste auswählst. Die Anzahl der vorbereiteten Zauber entspricht deinem Charismamodifikator + der Hälfte deiner Wächter-Stufe (abgerundet, mindestens 1). Die Zauber müssen dem Grad entsprechen, für den du Zauberplätze besitzt.</p>
+            <p class="indent">Beispiel: Auf Stufe 5 hast du vier Zauberplätze des 1. Grades und zwei des 2. Grades. Bei einem Charismawert von 14 darfst du vier Zauber der Grade 1 oder 2 vorbereiten. Wenn du <i>Wunden heilen</i> vorbereitest, kannst du ihn mit einem Zauberplatz des 1. oder 2. Grades wirken. Das Wirken entfernt ihn nicht aus deiner Liste der vorbereiteten Zauber.</p>
+            <p class="indent">Du kannst deine Liste vorbereiteter Zauber nach einer langen Rast ändern. Dazu musst du für jeden Zauber mindestens 1 Minute in stiller Einkehr oder beim Meditieren verbringen.</p>
+            <h5>ZAUBERWIRKEN-ATTRIBUT</h5>
+            <p>Charisma ist dein Attribut für Wächterzauber, da deine Kraft aus der Stärke deiner Überzeugung erwächst. Du verwendest deinen Charismamodifikator für alle Zauberangriffe und zur Festlegung des Rettungswurf-Schwierigkeitsgrads.</p>
+            <center>
+                <p>
+                    <strong>Rettungswurf-SG</strong> = 8 + dein Kompetenzbonus + dein Charismamodifikator</p>
+                <p>
+                    <strong>Zauberangriffsbonus</strong> = dein Kompetenzbonus + dein Charismamodifikator</p>
+            </center>
+            <h5>ZAUBERFOKUS</h5>
+            <p>Du kannst ein Symbol des Eides als Zauberfokus für deine Wächterzauber verwenden.</p>
+        </description>
+        <sheet display="false">
+            <description>Du hast gelernt, durch Meditation und Überzeugung göttliche Magie zu wirken.</description>
+        </sheet>
+        <spellcasting name="Wächter" ability="Charisma" prepare="true">
+            <list known="true">Paladin</list>
+        </spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <stat name="wächter:spellcasting:slots:1" value="2" level="2"/>
+            <stat name="wächter:spellcasting:slots:1" value="1" level="3"/>
+            <stat name="wächter:spellcasting:slots:1" value="1" level="5"/>
+            <stat name="wächter:spellcasting:slots:2" value="2" level="5"/>
+            <stat name="wächter:spellcasting:slots:2" value="1" level="7"/>
+            <stat name="wächter:spellcasting:slots:3" value="2" level="9"/>
+            <stat name="wächter:spellcasting:slots:3" value="1" level="11"/>
+            <stat name="wächter:spellcasting:slots:4" value="1" level="13"/>
+            <stat name="wächter:spellcasting:slots:4" value="1" level="15"/>
+            <stat name="wächter:spellcasting:slots:4" value="1" level="17"/>
+            <stat name="wächter:spellcasting:slots:5" value="1" level="17"/>
+            <stat name="wächter:spellcasting:slots:5" value="1" level="19"/>
+            <stat name="wächter:spellcasting:prepare" value="charisma:modifier"/>
+            <stat name="wächter:spellcasting:prepare" value="level:wächter:half"/>
+        </rules>
+    </element>
+    <element name="Göttlicher Zorn (Divine Smite)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_DIVINE_SMITE">
+        <description>
+            <p>Ab Stufe 2 kannst du, wenn du mit einem Nahkampfangriff triffst, einen Zauberplatz aufwenden, um zusätzlich zu deinem Waffenschaden Strahlenschaden zu verursachen. Der zusätzliche Schaden beträgt 2W8 für einen Zauberplatz des 1. Grades, plus 1W8 für jeden Grad über dem ersten – bis zu einem Maximum von 6W8. Gegen Untote oder Teuflische erhöht sich der Schaden um weitere 1W8.</p>
+        </description>
+        <sheet>
+            <description>Wenn du mit einem Nahkampfangriff triffst, kannst du einen Zauberplatz aufwenden, um zusätzlich 2W8 Strahlenschaden zu verursachen (plus 1W8 je Grad über 1). Gegen Untote oder Teuflische +1W8 extra.</description>
+        </sheet>
+    </element>
+    <element name="Göttliche Gesundheit (Divine Health)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_DIVINE_HEALTH">
+        <description>
+            <p>Ab Stufe 3 macht dich die durch deinen Eid fließende göttliche Magie immun gegen Krankheiten.</p>
+        </description>
+        <sheet>
+            <description>Du bist immun gegen Krankheiten.</description>
+        </sheet>
+    </element>
+    <element name="Heiliger Schwur (Sacred Oath)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_SACRED_OATH">
+        <description>
+            <p>Mit Erreichen der 3. Stufe legst du einen Schwur ab, der dich auf ewig an den Weg des Wächters bindet. Bis zu diesem Moment warst du ein Suchender – nun wirst du ein Eidträger. Du wählst einen Heiligen Schwur, der deine Ideale, deine Kräfte und deine Rolle im Kampf gegen das Böse bestimmt. Beispiele sind der Schwur der Hingabe, der Alten oder der Vergeltung – sie sind am Ende der Klassenbeschreibung aufgeführt.</p>
+            <p class="indent">Deine Wahl verleiht dir Merkmale auf der 3., 7., 15. und 20. Stufe. Diese beinhalten unter anderem Schwurzauber und die Fähigkeit, göttliche Macht zu fokussieren.</p>
+            <h5 class="caption">SCHWURZAUBER</h5>
+            <p>Jeder Heilige Schwur ist mit bestimmten Zaubern verknüpft. Du erhältst Zugang zu diesen Zaubern auf den jeweils angegebenen Stufen. Sie gelten stets als vorbereitet und zählen nicht gegen die Zahl deiner vorbereiteten Zauber.</p>
+            <p class="indent">Falls ein Schwurzauber nicht auf der Zauberliste des Wächters steht, zählt er dennoch für dich als Wächterzauber.</p>
+            <h5 class="caption">GÖTTLICHE MACHT FOKUSSIEREN</h5>
+            <p>Dein Schwur erlaubt es dir, göttliche Energie zu fokussieren, um magische Effekte zu bewirken. Jeder Schwur beschreibt eigene Anwendungen dieser Fähigkeit.</p>
+            <p class="indent">Wenn du göttliche Macht fokussierst, wählst du eine der im Schwur beschriebenen Optionen. Danach kannst du sie erst wieder einsetzen, nachdem du eine kurze oder lange Rast beendet hast.</p>
+            <p class="indent">Einige dieser Effekte erfordern Rettungswürfe. Der SG entspricht dem SG deiner Wächterzauber.</p>
+        </description>
+        <sheet display="false">
+            <description>Dein Schwur erlaubt es dir, göttliche Macht zu fokussieren und besondere Kräfte zu entfalten.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype" name="Heiliger Schwur" supports="Sacred Oath"/>
+            <stat name="channel divinity:count" value="1" level="1" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Verbesserungsauswahl" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_ASI">
+        <compendium display="false"/>
+        <description>
+            <p>Wenn du die 4. Stufe erreichst, und erneut auf der 8., 12., 16. und 19. Stufe, kannst du einen Attributswert deiner Wahl um 2 erhöhen oder zwei Attributswerte deiner Wahl um je 1 erhöhen. Du kannst keinen Attributswert über 20 steigern.</p>
+            <p>Alternativ dazu kannst Du einen Feat auswählen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wächter 4)" supports="Improvement Option,Guardian,4" level="4"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wächter 8)" supports="Improvement Option,Guardian,8" level="8"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wächter 12)" supports="Improvement Option,Guardian,12" level="12"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wächter 16)" supports="Improvement Option,Guardian,16" level="16"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wächter 19)" supports="Improvement Option,Guardian,19" level="19"/>
+        </rules>
+    </element>
+    <!-- ====== STUFE 4 ====== -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_PALADIN_4">
+        <supports>Improvement Option,Guardian,4</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wächter 4)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_PALADIN_4">
+        <supports>Improvement Option,Guardian,4</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Wächter 4)"/>
+        </rules>
+    </element>
+    <!-- ====== STUFE 8 ====== -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_PALADIN_8">
+        <supports>Improvement Option,Guardian,8</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wächter 8)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_PALADIN_8">
+        <supports>Improvement Option,Guardian,8</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Wächter 8)"/>
+        </rules>
+    </element>
+    <!-- ====== STUFE 12 ====== -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_PALADIN_12">
+        <supports>Improvement Option,Guardian,12</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wächter 12)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_PALADIN_12">
+        <supports>Improvement Option,Guardian,12</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Wächter 12)"/>
+        </rules>
+    </element>
+    <!-- ====== STUFE 16 ====== -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_PALADIN_16">
+        <supports>Improvement Option,Guardian,16</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wächter 16)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_PALADIN_16">
+        <supports>Improvement Option,Guardian,16</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Wächter 16)"/>
+        </rules>
+    </element>
+    <!-- ====== STUFE 19 ====== -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_PALADIN_19">
+        <supports>Improvement Option,Guardian,19</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wächter 19)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_PALADIN_19">
+        <supports>Improvement Option,Guardian,19</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Wächter 19)"/>
+        </rules>
+    </element>
+    <element name="Zusätzlicher Angriff (Extra Attack)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_EXTRA_ATTACK">
+        <description>
+            <p>Ab der 5. Stufe kannst du zweimal angreifen, anstatt nur einmal, wenn du die Angriffsaktion in deinem Zug ausführst.</p>
+        </description>
+        <sheet>
+            <description>Du kannst zweimal angreifen, anstatt nur einmal, wenn du die Angriffsaktion in deinem Zug ausführst.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Aura des Schutzes (Aura of Protection)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_AURA_OF_PROTECTION">
+        <description>
+            <p>Ab der 6. Stufe erhalten du und befreundete Kreaturen im Umkreis von 3m (10 feet) einen Bonus auf Rettungswürfe in Höhe deines Charismamodifikators (mindestens +1), solange du bei Bewusstsein bist.</p>
+            <p class="indent">Ab Stufe 18 steigt die Reichweite dieser Aura auf 9m (30 feet).</p>
+        </description>
+        <sheet>
+            <description>Du und befreundete Kreaturen im Umkreis von {{aura of protection:range}}m erhaltet einen Bonus von +{{aura of protection:save bonus}} auf Rettungswürfe. Du musst bei Bewusstsein sein.</description>
+        </sheet>
+        <rules>
+            <stat name="aura of protection:range" value="3" bonus="base"/>
+            <stat name="aura of protection:range" value="10" level="18" bonus="base"/>
+            <stat name="aura of protection:save bonus" value="1" bonus="base"/>
+            <stat name="aura of protection:save bonus" value="charisma:modifier" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Aura des Mutes (Aura of Courage)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_AURA_OF_COURAGE">
+        <description>
+            <p>Ab der 10. Stufe können du und befreundete Kreaturen im Umkreis von 3m (10 feet) nicht verängstigt werden, solange du bei Bewusstsein bist.</p>
+            <p class="indent">Ab Stufe 18 steigt die Reichweite dieser Aura auf 9m (30 feet).</p>
+        </description>
+        <sheet>
+            <description>Du und befreundete Kreaturen im Umkreis von {{aura of courage:range}}m können nicht verängstigt werden, solange du bei Bewusstsein bist.</description>
+        </sheet>
+        <rules>
+            <stat name="aura of courage:range" value="3" bonus="base"/>
+            <stat name="aura of courage:range" value="10" level="18" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Verstärkter Göttlicher Zorn (Improved Divine Smite)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_IMPROVED_DIVINE_SMITE">
+        <description>
+            <p>Ab der 11. Stufe bist du so von heiliger Macht durchdrungen, dass jeder deiner Nahkampfangriffe zusätzlich 1W8 Strahlenschaden verursacht.</p>
+        </description>
+        <sheet>
+            <description>Jeder deiner Nahkampfangriffe verursacht zusätzlich 1W8 Strahlenschaden.</description>
+        </sheet>
+    </element>
+    <element name="Reinigende Berührung (Cleansing Touch)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_PALADIN_CLEANSING_TOUCH">
+        <description>
+            <p>Ab der 14. Stufe kannst du als Aktion einen Zauber aufheben, der auf dir selbst oder einer willigen Kreatur liegt, die du berührst.</p>
+            <p class="indent">Du kannst diese Fähigkeit eine Anzahl Male einsetzen, die deinem Charismamodifikator entspricht (mindestens einmal). Nach einer langen Rast erhältst du alle verbrauchten Anwendungen zurück.</p>
+        </description>
+        <sheet action="Aktion" usage="{{cleansing touch:count}}/Lange Rast">
+            <description>Du kannst einen Zauber aufheben, der auf dir oder einer willigen Kreatur liegt, die du berührst.</description>
+        </sheet>
+        <rules>
+            <stat name="cleansing touch:count" value="1" bonus="base"/>
+            <stat name="cleansing touch:count" value="charisma:modifier" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Schwur der Hingabe (Oath of Devotion)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_PALADIN_OATH_OF_DEVOTION">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>Der Schwur der Hingabe verpflichtet einen Wächter zu den höchsten Idealen von Gerechtigkeit, Mitgefühl und Rechtschaffenheit. Wer diesen Schwur ablegt, strebt nicht nach Macht oder Ruhm – sondern danach, anderen als Vorbild zu dienen. Wächter dieses Schwurs sind Leuchtfeuer in dunkler Zeit, führen durch ihr Handeln und halten ihre Prinzipien, auch wenn der Preis hoch ist. Manche folgen alten Ehrenkodizes vergessener Orden, andere handeln aus persönlicher Überzeugung oder in Erinnerung an gefallene Gefährten.</p>
+            <h5 class="caption">GRUNDSÄTZE DER HINGABE</h5>
+            <p>Obwohl die genauen Worte und Schwurformeln variieren, eint alle Wächter der Hingabe ein gemeinsames ethisches Fundament:</p>
+            <p class="indent">
+                <strong>
+                    <em>Aufrichtigkeit.</em>
+                </strong> Lüge nicht. Dein Wort ist dein Schwur.</p>
+            <p class="indent">
+                <strong>
+                    <em>Mut.</em>
+                </strong> Handle ohne Furcht, aber mit Bedacht.</p>
+            <p class="indent">
+                <strong>
+                    <em>Mitgefühl.</em>
+                </strong> Schütze die Schwachen, hilf den Bedürftigen, und zügle deine Rache mit Weisheit.</p>
+            <p class="indent">
+                <strong>
+                    <em>Ehre.</em>
+                </strong> Handle fair und lasse dein Beispiel andere erheben.</p>
+            <p class="indent">
+                <strong>
+                    <em>Verantwortung.</em>
+                </strong> Stehe zu deinen Taten, beschütze, was dir anvertraut wurde, und diene dem Recht – nicht dem Befehl.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PALADIN_DEVOTION_OATH_SPELLS"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PALADIN_DEVOTION_CHANNEL_DIVINITY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PALADIN_AURA_OF_DEVOTION"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PALADIN_PURITY_OF_SPIRIT"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PALADIN_HOLY_NIMBUS"/>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_DEVOTION_OATH_SPELLS" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_DEVOTION_CHANNEL_DIVINITY" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_AURA_OF_DEVOTION" level="7"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_PURITY_OF_SPIRIT" level="15"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_HOLY_NIMBUS" level="20"/>
+        </rules>
+    </element>
+    <element name="Schwurzauber (Oath Spells)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_DEVOTION_OATH_SPELLS">
+        <description>
+            <p>Du erhältst Schwurzauber auf den unten aufgeführten Stufen. Diese gelten stets als vorbereitet und zählen nicht gegen die Anzahl deiner vorbereiteten Zauber.</p>
+            <h5>SCHWUR DER HINGABE – ZAUBER</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Wächterstufe</td>
+                        <td>Zauber</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>3rd</td>
+                    <td>
+                        <em>Schutz vor Gut und Böse (Protection from Evil and Good), Heiligtum (Sanctuary)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>
+                        <em>Schwache Genesung (Lesser Restoration), Zone der Wahrheit (Zone of Truth)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>
+                        <em>Leuchtfeuer der Hoffnung (Beacon of Hope), Magie bannen (Dispel magic)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>
+                        <em>Bewegungsfreiheit (Freedom of Movement), Hüter des Glaubens (Guardian of Faith)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>
+                        <em>Heiliges Gespräch (Commune), Flammenschlag (Flame Strike)</em>
+                    </td>
+                </tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_SANCTUARY" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_LESSER_RESTORATION" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_ZONE_OF_TRUTH" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_BEACON_OF_HOPE" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_DISPEL_MAGIC" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_FREEDOM_OF_MOVEMENT" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_GUARDIAN_OF_FAITH" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_COMMUNE" level="17" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_FLAME_STRIKE" level="17" spellcasting="Paladin" prepared="true"/>
+        </rules>
+    </element>
+    <element name="Göttliche Macht fokussieren (Channel Divinity)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_DEVOTION_CHANNEL_DIVINITY">
+        <description>
+            <p>Mit dem Ablegen dieses Schwurs auf Stufe 3 erhältst du die folgenden zwei Optionen, deine göttliche Macht zu fokussieren:</p>
+            <p class="indent">
+                <b>
+                    <i>Heilige Waffe (Sacred Weapon).</i>
+                </b> Als Aktion kannst du eine Waffe, die du führst, mit heiliger Energie erfüllen. Für 1 Minute addierst du deinen Charismamodifikator (mindestens +1) zu Angriffswürfen mit dieser Waffe. Außerdem leuchtet sie in einem Radius von 6m hell und in weiteren 6m schwach. Ist die Waffe nicht bereits magisch, zählt sie für die Dauer als magisch.</p>
+            <p class="indent">Du kannst diesen Effekt auf deinem Zug jederzeit beenden. Wenn du die Waffe nicht mehr führst oder bewusstlos wirst, endet der Effekt automatisch.</p>
+            <p class="indent">
+                <b>
+                    <i>Die Unheiligen vertreiben (Turn the Unholy).</i>
+                </b> Als Aktion präsentierst du dein Eid-Symbol und sprichst ein urteilendes Gebet gegen Teuflische und Untote. Alle betroffenen Kreaturen im Umkreis von 9m, die dich sehen oder hören können, müssen einen Weisheitsrettungswurf machen. Bei einem Misserfolg werden sie für 1 Minute oder bis sie Schaden erleiden, vertrieben.</p>
+            <p class="indent">Eine vertriebene Kreatur muss sich von dir entfernen, darf sich dir nicht freiwillig nähern, kann keine Reaktionen einsetzen und darf nur Rennen oder Ausweichen verwenden, solange sie nicht entkommen kann.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_SACRED_WEAPON"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_TURN_THE_UNHOLY"/>
+        </rules>
+    </element>
+    <!-- Göttliche Macht fokussieren: Heilige Waffe (Sacred Weapon)-->
+    <element name="Göttliche Macht fokussieren: Heilige Waffe (Sacred Weapon)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_SACRED_WEAPON">
+        <description>
+            <p>Als Aktion kannst du eine Waffe, die du führst, mit heiliger Energie erfüllen. Für 1 Minute addierst du deinen Charismamodifikator (mindestens +1) zu Angriffswürfen mit dieser Waffe. Außerdem leuchtet sie in einem Radius von 6m hell und in weiteren 6m schwach. Ist die Waffe nicht bereits magisch, zählt sie für die Dauer als magisch.</p>
+            <p class="indent">Du kannst diesen Effekt auf deinem Zug jederzeit beenden. Wenn du die Waffe nicht mehr führst oder bewusstlos wirst, endet der Effekt automatisch.</p>
+        </description>
+        <sheet alt="Heilige Waffe" action="Aktion" usage="Göttliche Macht fokussieren">
+            <description>Für 1 Minute erhält deine Waffe +{{charisma:modifier}} auf Angriffswürfe. Sie leuchtet in einem Radius von 6m hell und in weiteren 6m schwach. Zählt als magisch, sofern sie es nicht bereits ist. Effekt endet, wenn du sie nicht mehr führst oder bewusstlos wirst.</description>
+        </sheet>
+    </element>
+    <!-- Göttliche Macht fokussieren: Die Unheiligen vertreiben (Turn the Unholy) -->
+    <element name="Göttliche Macht fokussieren: Die Unheiligen vertreiben (Turn the Unholy)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_CHANNEL_DIVINITY_TURN_THE_UNHOLY">
+        <description>
+            <p>Als Aktion präsentierst du dein Eid-Symbol und sprichst ein urteilendes Gebet gegen Teuflische und Untote. Jede solche Kreatur im Umkreis von 9m, die dich sehen oder hören kann, muss einen Weisheitsrettungswurf ablegen. Bei einem Misserfolg wird sie für 1 Minute oder bis sie Schaden erleidet, vertrieben.</p>
+            <p class="indent">Eine vertriebene Kreatur muss sich von dir entfernen, darf sich dir nicht freiwillig nähern, kann keine Reaktionen einsetzen und darf nur Rennen oder Ausweichen verwenden, solange sie nicht entkommen kann.</p>
+        </description>
+        <sheet alt="Die Unheiligen vertreiben" action="Aktion" usage="Göttliche Macht fokussieren">
+            <description>Teuflische und Untote im Umkreis von 9m müssen einen Rettungswurf ablegen. Bei Misserfolg werden sie 1 Minute lang vertrieben. Sie dürfen sich nicht nähern, keine Reaktionen einsetzen und nur Rennen oder Ausweichen verwenden.</description>
+        </sheet>
+    </element>
+    <element name="Aura der Hingabe (Aura of Devotion)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_AURA_OF_DEVOTION">
+        <description>
+            <p>Ab Stufe 7 können du und befreundete Kreaturen im Umkreis von 3m (10 feet) nicht bezaubert werden, solange du bei Bewusstsein bist.</p>
+            <p class="indent">Ab Stufe 18 steigt die Reichweite dieser Aura auf 9m (30 feet).</p>
+        </description>
+        <sheet>
+            <description>Du und befreundete Kreaturen im Umkreis von {{aura of devotion:range}}m können nicht bezaubert werden, solange du bei Bewusstsein bist.</description>
+        </sheet>
+        <rules>
+            <stat name="aura of devotion:range" value="10"/>
+            <stat name="aura of devotion:range" value="30" level="18"/>
+        </rules>
+    </element>
+    <element name="Reinheit des Geistes (Purity of Spirit)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_PURITY_OF_SPIRIT">
+        <description>
+            <p>Ab Stufe 15 stehst du dauerhaft unter dem Effekt des Zaubers <em>Schutz vor Gut und Böse</em>.</p>
+        </description>
+        <sheet>
+            <description>Du stehst dauerhaft unter dem Effekt von <em>Schutz vor Gut und Böse</em>.</description>
+        </sheet>
+    </element>
+    <element name="Heiliger Nimbus (Holy Nimbus)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PALADIN_HOLY_NIMBUS">
+        <description>
+            <p>Ab Stufe 20 kannst du als Aktion eine Aura aus heiligem Licht entfesseln. Für 1 Minute leuchtest du in einem Umkreis von 9m (30 feet) hell und in weiteren 9m schwach.</p>
+            <p class="indent">Feindliche Kreaturen, die ihren Zug im hellen Licht beginnen, erleiden 10 Strahlenschaden.</p>
+            <p class="indent">Zudem hast du für die Dauer Vorteil auf Rettungswürfe gegen Zauber von Untoten oder Teuflischen.</p>
+            <p class="indent">Einmal eingesetzt, kannst du diese Fähigkeit erst nach einer langen Rast erneut verwenden.</p>
+        </description>
+        <sheet action="Aktion" usage="1/Lange Rast">
+            <description>Du entfesselst eine Aura aus Licht. Für 1 Minute leuchtest du in einem Radius von 9m hell, weitere 9m schwach. Gegner im hellen Licht erleiden 10 Strahlenschaden zu Beginn ihres Zuges. Du hast Vorteil auf Rettungswürfe gegen Zauber von Untoten oder Teuflischen.</description>
+        </sheet>
+    </element>
+    <element name="Schwur des Lebenslichts (Oath of the Ancients)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_PALADIN_OATH_OF_THE_ANCIENTS">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>Der Schwur des Lebenslichts bindet einen Wächter an die lebensspendenden Kräfte der Welt – nicht aus Pflicht, sondern aus Liebe zum Leben, zur Schönheit und zur Hoffnung. Diese Wächter kämpfen nicht, um Ehre zu erlangen, sondern um zu bewahren, was hell und heiter ist. Ihre Rüstung ziert oft florale oder natürliche Muster: Blätter, Blüten, Geweihorn – Zeichen ihres Bundes mit allem, was wächst und gedeiht.</p>
+            <h5 class="caption">GRUNDSÄTZE DES LICHTS</h5>
+            <p>Die Prinzipien des Schwurs sind einfach, aber tiefgründig. Sie sind in alten Liedern ebenso überliefert wie in den Herzen jener, die sich dem Leben verschrieben haben:</p>
+            <p class="indent">
+                <b>
+                    <i>Hoffnung entzünden.</i>
+                </b> Lass durch Gnade, Mitgefühl und Vergebung das Licht der Hoffnung in der Welt aufscheinen. Verdränge die Dunkelheit durch Güte.</p>
+            <p class="indent">
+                <b>
+                    <i>Schütze das Licht.</i>
+                </b> Wo Liebe, Lachen, Schönheit und Leben erblühen, stelle dich gegen das, was es zerstören will.</p>
+            <p class="indent">
+                <b>
+                    <i>Hüte dein eigenes Licht.</i>
+                </b> Erfreue dich an Kunst, Gesang, Freude und Freundschaft. Nur wer selbst leuchtet, kann Licht bewahren.</p>
+            <p class="indent">
+                <b>
+                    <i>Werde Licht.</i>
+                </b> Sei ein strahlendes Vorbild für alle, die im Schatten wandeln. Lass Mut und Lebensfreude aus dir sprechen.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOTA_OATH_SPELLS"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOTA_AURA_OF_WARDING"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOTA_UNDYING_SENTINEL"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOTA_ELDER_CHAMPION"/>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_OATH_SPELLS" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_AURA_OF_WARDING" level="7"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_UNDYING_SENTINEL" level="15"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_ELDER_CHAMPION" level="20"/>
+        </rules>
+    </element>
+    <element name="Schwurzauber (Oath Spells)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_OATH_SPELLS">
+        <description>
+            <p>Du erhältst Schwurzauber auf den unten aufgeführten Stufen. Diese gelten stets als vorbereitet und zählen nicht gegen die Anzahl deiner vorbereiteten Zauber.</p>
+            <h5 class="caption">SCHWUR DES LEBENSLICHTS – ZAUBER</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Wächterstufe</td>
+                        <td>Zauber</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>3rd</td>
+                    <td>
+                        <em>Fesselnder Schlag (Ensnaring strike), Mit Tieren sprechen (Speak with Animals)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>
+                        <em>Mondstrahl (Moonbeam), Nebelschritt (Misty Step)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>
+                        <em>Pflanzenwachstum (Plant Growth), Schutz vor Energie (Protection from Energy)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>
+                        <em>Eissturm (Ice storm), Steinhaut (Stoneskin)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>
+                        <em>Einswerden mit der Natur (Commune with Nature), Baumwandeln (Tree Stride)</em>
+                    </td>
+                </tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_ENSNARING_STRIKE" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_SPEAK_WITH_ANIMALS" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_MOONBEAM" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_MISTY_STEP" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_PLANT_GROWTH" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_PROTECTION_FROM_ENERGY" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_ICE_STORM" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_STONESKIN" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_COMMUNE_WITH_NATURE" level="17" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_TREE_STRIDE" level="17" spellcasting="Paladin" prepared="true"/>
+        </rules>
+    </element>
+    <element name="Göttliche Macht fokussieren (Channel Divinity)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY">
+        <description>
+            <p>Mit dem Ablegen dieses Schwurs auf Stufe 3 erhältst du die folgenden zwei Möglichkeiten, deine göttliche Macht zu fokussieren:</p>
+            <p class="indent">
+                <b>
+                    <i>Zorn der Natur (Nature’s Wrath).</i>
+                </b> Als Aktion kannst du geisterhafte Ranken aus dem Boden hervorschnellen lassen, die sich nach einer Kreatur im Umkreis von 3m (10 feet) ausstrecken, die du sehen kannst. Das Ziel muss einen Stärkewurf oder Geschicklichkeitswurf (nach Wahl) bestehen, sonst wird es festgehalten. Am Ende jedes seiner Züge kann es den Wurf wiederholen. Bei Erfolg endet der Effekt.</p>
+            <p class="indent">
+                <b>
+                    <i>Vertreibe die Ungläubigen (Turn the Faithless).</i>
+                </b> Als Aktion präsentierst du dein Eid-Symbol und sprichst uralte Worte, die Feenwesen und Teuflischen Schmerzen bereiten. Jede solche Kreatur im Umkreis von 9m (30 feet), die dich hören kann, muss einen Weisheitsrettungswurf ablegen. Bei Misserfolg wird sie für 1 Minute oder bis sie Schaden erleidet, vertrieben.</p>
+            <p class="indent">Eine vertriebene Kreatur muss sich von dir entfernen, darf sich dir nicht freiwillig nähern, kann keine Reaktionen einsetzen und darf nur Rennen oder Ausweichen verwenden, solange sie nicht entkommen kann.</p>
+            <p class="indent">Falls die wahre Gestalt der Kreatur durch Illusion, Gestaltwandel oder andere Magie verborgen ist, wird sie offenbart, solange sie vertrieben ist.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY_NATURES_WRATH"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY_TURN_THE_FAITHLESS"/>
+        </rules>
+    </element>
+    <!-- Göttliche Macht fokussieren: Zorn der Natur (Nature’s Wrath) -->
+    <element name="Göttliche Macht fokussieren: Zorn der Natur (Nature’s Wrath)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY_NATURES_WRATH">
+        <description>
+            <p>Du kannst deine göttliche Macht fokussieren, um urtümliche Naturkräfte zu rufen. Als Aktion lässt du geisterhafte Ranken aus dem Boden schießen, die sich nach einer Kreatur im Umkreis von 3m ausstrecken, die du sehen kannst. Sie muss einen Stärkewurf oder Geschicklichkeitswurf (nach Wahl) bestehen, sonst wird sie festgehalten. Am Ende jedes ihrer Züge darf sie den Wurf wiederholen. Bei Erfolg endet der Effekt.</p>
+        </description>
+        <sheet alt="Zorn der Natur" action="Aktion" usage="Göttliche Macht fokussieren">
+            <description>Du rufst geisterhafte Ranken hervor, die eine Kreatur im Umkreis von 3m festhalten. Sie muss einen Stärkewurf oder Geschicklichkeitswurf (nach Wahl) bestehen oder wird festgehalten. Am Ende jedes Zugs darf sie den Wurf wiederholen.</description>
+        </sheet>
+    </element>
+    <!-- Göttliche Macht fokussieren: Vertreibe die Ungläubigen (Turn the Faithless) -->
+    <element name="Göttliche Macht fokussieren: Vertreibe die Ungläubigen (Turn the Faithless)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_CHANNEL_DIVINITY_TURN_THE_FAITHLESS">
+        <description>
+            <p>Du kannst deine göttliche Macht fokussieren, um uralte Worte zu sprechen, die Feywesen und Teuflischen Schmerzen bereiten. Als Aktion präsentierst du dein Eid-Symbol, und jede solche Kreatur im Umkreis von 9m, die dich hören kann, muss einen Weisheitsrettungswurf machen. Bei Misserfolg wird sie für 1 Minute oder bis sie Schaden erleidet, vertrieben.</p>
+            <p class="indent">Eine vertriebene Kreatur muss sich so weit wie möglich von dir entfernen, darf sich dir nicht freiwillig nähern, kann keine Reaktionen einsetzen und darf nur Rennen oder Ausweichen verwenden, solange sie nicht entkommen kann.</p>
+            <p class="indent">Falls ihre wahre Gestalt durch Illusion, Gestaltwandel oder andere Magie verborgen ist, wird sie während des Effekts offenbart.</p>
+        </description>
+        <sheet alt="Vertreibe die Ungläubigen" action="Aktion" usage="Göttliche Macht fokussieren">
+            <description>Feywesen und Teuflische im Umkreis von 9m müssen einen Weisheitsrettungswurf machen. Bei Misserfolg werden sie 1 Minute lang vertrieben. Sie dürfen sich dir nicht nähern, keine Reaktionen einsetzen und nur Rennen oder Ausweichen verwenden. Verborgene Gestalten werden offenbart.</description>
+        </sheet>
+    </element>
+    <element name="Aura der Abwehr (Aura of Warding)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_AURA_OF_WARDING">
+        <description>
+            <p>Ab Stufe 7 liegt uralte Magie wie ein schützender Schleier auf dir. Du und befreundete Kreaturen im Umkreis von 3m (10 feet) habt Resistenz gegen Schaden durch Zauber.</p>
+            <p class="indent">Ab Stufe 18 steigt die Reichweite dieser Aura auf 9m (30 feet).</p>
+        </description>
+        <sheet>
+            <description>Du und befreundete Kreaturen im Umkreis von {{aura of warding:range}}m habt Resistenz gegen Schaden durch Zauber.</description>
+        </sheet>
+        <rules>
+            <stat name="aura of warding:range" value="3"/>
+            <stat name="aura of warding:range" value="10" level="18"/>
+        </rules>
+    </element>
+    <element name="Unvergänglicher Wächter (Undying Sentinel)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_UNDYING_SENTINEL">
+        <description>
+            <p>Ab Stufe 15 kannst du, wenn du auf 0 Trefferpunkte reduziert wirst und nicht sofort stirbst, stattdessen auf 1 Trefferpunkt fallen. Du kannst diese Fähigkeit nur einmal pro langer Rast einsetzen.</p>
+            <p class="indent">Zudem erleidest du keine Gebrechen durch hohes Alter und kannst nicht magisch gealtert werden.</p>
+        </description>
+        <sheet usage="1/Lange Rast">
+            <description>Wenn du auf 0 TP reduziert wirst (aber nicht sofort stirbst), kannst du stattdessen auf 1 TP fallen. Keine Gebrechen durch Alter, nicht magisch alterbar.</description>
+        </sheet>
+    </element>
+    <element name="Champion des Lebenslichts (Elder Champion)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOTA_ELDER_CHAMPION">
+        <description>
+            <p>Ab Stufe 20 kannst du als Aktion eine Transformation vollziehen und wirst zur lebendigen Verkörperung des Lichts und der Natur. Dein Aussehen verändert sich – deine Haut kann borkig oder grün werden, dein Haar wie Moos oder Blätter wirken, oder du wächst ein Geweih oder eine Mähne. Für 1 Minute erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Zu Beginn jedes deiner Züge erhältst du 10 Trefferpunkte zurück.</li>
+                <li>Wenn du einen Wächterzauber mit einer Wirkzeit von 1 Aktion wirkst, kannst du ihn stattdessen als Bonusaktion wirken.</li>
+                <li>Feindliche Kreaturen im Umkreis von 3m (10 feet) haben Nachteil auf Rettungswürfe gegen deine Wächterzauber und deine Fähigkeit, göttliche Macht zu fokussieren.</li>
+            </ul>
+            <p class="indent">Du kannst diese Fähigkeit einmal pro langer Rast einsetzen.</p>
+        </description>
+        <sheet usage="1/Lange Rast">
+            <description>1 Minute lang erhältst du:
+- 10 TP zu Beginn deines Zugs,
+- kannst Zauber mit 1 Aktion als Bonusaktion wirken,
+- Gegner im Umkreis von 3m haben Nachteil gegen deine Wächterzauber und Channel Divinity.</description>
+        </sheet>
+    </element>
+    <element name="Schwur der Vergeltung (Oath of Vengeance)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_PALADIN_OATH_OF_VENGEANCE">
+        <supports>Sacred Oath</supports>
+        <description>
+            <p>Der Schwur der Vergeltung ist ein feierliches Gelübde, Unrecht nicht ungesühnt zu lassen. Wächter dieses Schwurs sind keine Heiligen – sie sind Werkzeuge der Gerechtigkeit, die geschworen haben, Böses zu jagen, bis es ausgelöscht ist. Wenn Unschuldige geschlachtet werden, Tyrannen herrschen, Drachen wüten oder Schuldige dem Urteil entgehen, dann erhebt sich ein solcher Wächter, um das Gleichgewicht wiederherzustellen – mit Klinge, Wille und ohne Gnade.</p>
+            <h5 class="caption">GRUNDSÄTZE DER VERGELTUNG</h5>
+            <p>Die Grundsätze dieses Schwurs variieren leicht, doch im Kern geht es immer darum, Übeltäter konsequent zu bestrafen – koste es, was es wolle. Wächter der Vergeltung nehmen in Kauf, selbst gebrochen zu werden, wenn sie damit das Böse aufhalten können.</p>
+            <p class="indent">
+                <b>
+                    <i>Bekämpfe das größere Übel.</i>
+                </b> Wenn ich zwischen zwei Bedrohungen wählen muss, gilt mein Fokus dem größeren Übel.</p>
+            <p class="indent">
+                <b>
+                    <i>Keine Gnade für Schuldige.</i>
+                </b> Gewöhnliche Feinde verdienen Mitgefühl. Doch wer sich meiner Vergeltung verschrieben hat, dem verzeihe ich nicht.</p>
+            <p class="indent">
+                <b>
+                    <i>Mit allen Mitteln.</i>
+                </b> Skrupel dürfen mich nicht aufhalten. Die Gerechtigkeit duldet keine Kompromisse.</p>
+            <p class="indent">
+                <b>
+                    <i>Wiedergutmachung.</i>
+                </b> Wenn Böses geschieht, das ich hätte verhindern können, trage ich Verantwortung. Ich helfe denen, die unter meiner Unachtsamkeit litten.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOV_OATH_SPELLS"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOV_RELENTLESS_AVENGER"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOV_SOUL_OF_VENGEANCE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_OOV_AVENGING_ANGEL"/>
+        </description>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOV_OATH_SPELLS" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOV_RELENTLESS_AVENGER" level="7"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOV_SOUL_OF_VENGEANCE" level="15"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOV_AVENGING_ANGEL" level="20"/>
+        </rules>
+    </element>
+    <element name="Schwurzauber (Oath Spells)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOV_OATH_SPELLS">
+        <description>
+            <p>Du erhältst Schwurzauber auf den unten aufgeführten Stufen. Diese gelten stets als vorbereitet und zählen nicht gegen die Anzahl deiner vorbereiteten Zauber.</p>
+            <h5>SCHWUR DER VERGELTUNG – ZAUBER</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Wächterstufe</td>
+                        <td>Zauber</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>3rd</td>
+                    <td>
+                        <em>Verderben (Bane), Zeichen des Jägers (Hunter’s Mark)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>
+                        <em>Person festhalten (Hold Person), Nebelschritt (Misty Step)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9th</td>
+                    <td>
+                        <em>Hast (Haste), Schutz vor Energie (Protection from Energy)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13th</td>
+                    <td>
+                        <em>Verbannung (Banishment), Dimensionstür (Dimension Door)</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17th</td>
+                    <td>
+                        <em>Monster festhalten (Hold Monster), Ausspähung (Scrying)</em>
+                    </td>
+                </tr>
+            </table>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_BANE" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_HUNTERS_MARK" level="3" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_HOLD_PERSON" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_MISTY_STEP" level="5" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_HASTE" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_PROTECTION_FROM_ENERGY" level="9" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_BANISHMENT" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_DIMENSION_DOOR" level="13" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_HOLD_MONSTER" level="17" spellcasting="Paladin" prepared="true"/>
+            <grant type="Spell" id="ID_D4T_SPELL_SCRYING" level="17" spellcasting="Paladin" prepared="true"/>
+        </rules>
+    </element>
+    <element name="Göttliche Macht fokussieren (Channel Divinity)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY">
+        <description>
+            <p>Mit dem Ablegen dieses Schwurs auf Stufe 3 erhältst du die folgenden zwei Möglichkeiten, deine göttliche Macht zu fokussieren:</p>
+            <p class="indent">
+                <b>
+                    <i>Gegner verdammen (Abjure Enemy).</i>
+                </b> Als Aktion präsentierst du dein Eid-Symbol und sprichst ein verurteilendes Gebet. Wähle eine Kreatur im Umkreis von 18m (60 feet), die du sehen kannst. Sie muss einen Weisheitsrettungswurf machen, es sei denn, sie ist immun gegen Furcht. Untote und Teuflische haben Nachteil auf diesen Wurf.</p>
+            <p class="indent">Bei einem Misserfolg wird die Kreatur für 1 Minute oder bis sie Schaden erleidet verängstigt. Ihre Geschwindigkeit sinkt auf 0 und sie profitiert nicht von Boni auf Geschwindigkeit.</p>
+            <p class="indent">Bei einem erfolgreichen Wurf wird ihre Geschwindigkeit 1 Minute lang halbiert oder bis sie Schaden erleidet.</p>
+            <p class="indent">
+                <b>
+                    <i>Eid der Feindschaft (Vow of Enmity).</i>
+                </b> Als Bonusaktion kannst du einen Eid des Hasses gegen eine Kreatur im Umkreis von 3m (10 feet) aussprechen, die du sehen kannst. Du erhältst für 1 Minute Vorteil auf Angriffswürfe gegen diese Kreatur oder bis sie auf 0 Trefferpunkte fällt oder bewusstlos wird.</p>
+        </description>
+        <sheet display="false">
+            <description>You have the Abjure Enemy and Vow of Enmity Channel Divinity options.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY_ABJURE_ENEMY"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY_VOW_OF_ENMITY"/>
+        </rules>
+    </element>
+    <!-- Göttliche Macht fokussieren: Gegner verdammen (Abjure Enemy) -->
+    <element name="Göttliche Macht fokussieren: Gegner verdammen (Abjure Enemy)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY_ABJURE_ENEMY">
+        <description>
+            <p>Als Aktion präsentierst du dein Eid-Symbol und sprichst ein verurteilendes Gebet. Wähle eine Kreatur im Umkreis von 18m, die du sehen kannst. Sie muss einen Weisheitsrettungswurf machen, es sei denn, sie ist immun gegen Furcht. Untote und Teuflische haben Nachteil auf diesen Wurf.</p>
+            <p class="indent">Bei Misserfolg: verängstigt, Geschwindigkeit 0, keine Boni auf Bewegung. Dauer: 1 Minute oder bis sie Schaden erleidet.</p>
+            <p class="indent">Bei Erfolg: Geschwindigkeit halbiert für 1 Minute oder bis sie Schaden erleidet.</p>
+        </description>
+        <sheet alt="Abjure Enemy" action="Aktion" usage="Göttliche Macht fokussieren">
+            <description>Präsentiere dein Eid-Symbol und verurteile eine Kreatur im Umkreis von 18m. Sie muss einen Weisheitsrettungswurf machen (Untote und Teuflische haben Nachteil). Bei Misserfolg: verängstigt, Bewegung 0, keine Boni auf Geschwindigkeit. Bei Erfolg: Geschwindigkeit halbiert. Dauer: 1 Minute oder bis Schaden erlitten wird.</description>
+        </sheet>
+    </element>
+    <!-- Göttliche Macht fokussieren: Eid der Feindschaft (Vow of Enmity) -->
+    <element name="Göttliche Macht fokussieren: Eid der Feindschaft (Vow of Enmity)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOV_CHANNEL_DIVINITY_VOW_OF_ENMITY">
+        <description>
+            <p>Als Bonusaktion kannst du einen Eid der Feindschaft gegen eine Kreatur im Umkreis von 3m aussprechen, die du sehen kannst. Du erhältst Vorteil auf Angriffswürfe gegen sie für 1 Minute oder bis sie auf 0 Trefferpunkte fällt oder bewusstlos wird.</p>
+        </description>
+        <sheet alt="Eid der Feindschaft" action="Bonusaktion" usage="Göttliche Macht fokussieren">
+            <description>Sprich als Bonusaktion einen Eid der Feindschaft gegen eine Kreatur im Umkreis von 3m. Du erhältst Vorteil auf Angriffswürfe gegen sie für 1 Minute oder bis sie auf 0 TP fällt oder bewusstlos wird.</description>
+        </sheet>
+    </element>
+    <element name="Unermüdlicher Rächer (Relentless Avenger)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOV_RELENTLESS_AVENGER">
+        <description>
+            <p>Ab Stufe 7 erlaubt dir deine übernatürliche Fokussierung, fliehende Feinde unmittelbar zu verfolgen. Wenn du eine Kreatur mit einem Gelegenheitsangriff triffst, kannst du dich im Rahmen derselben Reaktion sofort bis zur Hälfte deiner Geschwindigkeit bewegen. Diese Bewegung provoziert keine Gelegenheitsangriffe.</p>
+        </description>
+        <sheet>
+            <description>Wenn du eine Kreatur mit einem Gelegenheitsangriff triffst, kannst du dich im Rahmen derselben Reaktion sofort bis zur Hälfte deiner Geschwindigkeit bewegen – ohne Gelegenheitsangriffe zu provozieren.</description>
+        </sheet>
+    </element>
+    <element name="Seele der Rache (Soul of Vengeance)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOV_SOUL_OF_VENGEANCE">
+        <description>
+            <p>Ab Stufe 15 verleiht dir die Autorität deines Eids der Feindschaft größere Macht über dein Ziel. Wenn eine Kreatur, die deinem Eid der Feindschaft unterliegt, einen Angriff durchführt, kannst du deine Reaktion nutzen, um einen Nahkampfangriff mit einer Waffe gegen sie auszuführen – sofern sie sich in Reichweite befindet.</p>
+        </description>
+        <sheet action="Reaktion">
+            <description>Wenn eine Kreatur unter deinem Eid der Feindschaft einen Angriff durchführt und sich in Reichweite befindet, kannst du im Rahmen deiner Reaktion einen Nahkampfangriff gegen sie ausführen.</description>
+        </sheet>
+    </element>
+    <element name="Racheengel (Avenging Angel)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_OOV_AVENGING_ANGEL">
+        <description>
+            <p>Ab Stufe 20 kannst du als Aktion die Gestalt eines rächenden Engels annehmen. Für 1 Stunde erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Flügel wachsen aus deinem Rücken und verleihen dir eine Fluggeschwindigkeit von 18m (60 feet).</li>
+                <li>Du verströmst eine Aura der Furcht in einem Radius von 9m (30 feet). Wenn eine feindliche Kreatur die Aura zum ersten Mal in einem Zug betritt oder ihren Zug darin beginnt, muss sie einen Weisheitsrettungswurf bestehen oder wird für 1 Minute verängstigt – oder bis sie Schaden erleidet. Angriffswürfe gegen diese Kreatur haben Vorteil.</li>
+            </ul>
+            <p class="indent">Nach einmaliger Nutzung kannst du diese Fähigkeit erst nach einer langen Rast erneut einsetzen.</p>
+        </description>
+        <sheet usage="1/Lange Rast">
+            <description>Für 1 Stunde: Du erhältst eine Fluggeschwindigkeit von 18m und verströmst eine Aura der Furcht (Radius 9m). Gegner müssen einen Weisheitswurf bestehen oder werden verängstigt. Angriffswürfe gegen verängstigte Ziele haben Vorteil.</description>
+        </sheet>
+    </element>
+</elements>

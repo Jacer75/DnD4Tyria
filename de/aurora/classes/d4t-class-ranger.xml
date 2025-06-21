@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Waldläufer</name>
+        <description>Die Klasse Waldläufer für das DnD4Tyria-Projekt. Anpassung der PHB-Klasse „Ranger“ an die Welt von Tyria (Guild Wars).</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-class-ranger.xml" url=""/>
+        </update>
+    </info>
+    <element name="Waldläufer" type="Class" source="DnD4Tyria" id="ID_D4T_CLASS_RANGER">
+        <description>
+            <p class="flavor">Ein Krieger, der mit scharfem Blick, sicherer Hand und der Macht der Natur gegen die Schrecken an den Grenzen der Zivilisation kämpft.</p>
+            <p>Ein Norn duckt sich unter den knorrigen Ästen der Wälder im Süden der Wanderer-Hügel. Lautlos legt er einen Pfeil auf die Sehne – sein Ziel: ein Rudel Skelk, das einer Karawane auflauert. Noch bevor das erste Wesen den Späher bemerkt, surrt der Pfeil durch die Luft.</p>
+            <p class="indent">Eine Sylvari klettert über die Steinterrassen der Maguuma-Ruinen, ihr Wolf an ihrer Seite. Sie setzt auf alte Fährtenkunde und ein Gespür für das, was nicht ins Bild passt – bis ihr Tiergefährte knurrt. Es ist Zeit zu handeln.</p>
+            <p class="indent">Weit draußen, jenseits der Wachtposten der Löwengarde, wo Karten enden und nur das Land selbst spricht, bewachen Waldläufer Pfade, von denen kaum jemand weiß, dass sie existieren.</p>
+            <h4>TÖDLICHE JÄGER</h4>
+            <p>Waldläufer sind Krieger der Wildnis, die sich auf die Jagd nach Kreaturen spezialisiert haben, welche die Grenzen der Zivilisation bedrohen – marodierende Banditen, entfesselte Bestien, monströse Abscheulichkeiten, gewaltige Riesen oder gar Drachen. Sie folgen der Spur ihrer Beute wie ein Raubtier, schleichen durch das Gelände und verschwinden in Dickicht und Schatten. Ihre Kampftechniken sind auf jene Feinde abgestimmt, die sie am meisten fürchten – oder am besten kennen.</p>
+            <p class="indent">Durch ihre Vertrautheit mit der Wildnis lernen Waldläufer, die Kraft der Natur in Form von Magie zu nutzen – ähnlich wie Druiden. Ihre Zauber wie auch ihre Kampfkunst setzen auf Geschwindigkeit, Tarnung und Präzision. Ihr Können wird mit tödlicher Zielstrebigkeit geschärft – immer im Dienst des Schutzes der Grenzlande.</p>
+            <h4>UNABHÄNGIGE ABENTEURER</h4>
+            <p>Ein Waldläufer mag als Jäger, Fährtenleser oder Führer seinen Lebensunterhalt verdienen – doch seine wahre Berufung ist der Schutz der Grenzgebiete vor Monstern und marodierenden Horden, die aus der Wildnis vordringen. Manche schließen sich geheimen Orden an oder arbeiten mit druidischen Zirkeln zusammen. Viele jedoch bleiben Einzelgänger – denn sie wissen: Wenn ein Lindwurm oder ein Schar Orrianer angreift, steht oft nur ein Waldläufer zwischen Gefahr und Unschuld.</p>
+            <p class="indent">Diese kompromisslose Unabhängigkeit macht sie zu geborenen Abenteurern. Das Leben fernab der Städte hat sie abgehärtet – sie kommen ohne Feuerstelle und Federbett zurecht. Wenn andere über Kälte, Nässe oder Hunger klagen, reagieren sie mit Spott, Nachsicht oder knapper Effizienz. Doch selbst der zäheste Waldläufer erkennt den Wert von Gefährten, die im Ernstfall standhalten – auch wenn sie kein Feuer entzünden können.</p>
+            <h4>EINEN WALDLÄUFER ERSCHAFFEN</h4>
+            <p>Wenn du einen Waldläufer-Charakter erschaffst, überlege dir, woher deine Fähigkeiten stammen. Wurdest du von einem einzelnen Mentor ausgebildet, mit dem du durch die Wildnis gezogen bist, bis du die Wege der Natur verinnerlicht hattest? Hast du deine Ausbildung abgebrochen – oder wurde dein Lehrmeister von derselben Art Kreatur getötet, die heute dein bevorzugter Feind ist? Vielleicht wurdest du auch in einem Zirkel von Waldläufern unterrichtet, die mit Druiden zusammenarbeiten und uralte Pfade ebenso lehren wie praktische Überlebenskunst. Oder du hast dir alles selbst beigebracht – als Einsiedler oder Flüchtling, der in den Schatten der Zittergipfel oder dem Dschungel von Maguuma ums Überleben kämpfen musste.</p>
+            <p class="indent">Was hat deinen Hass auf eine bestimmte Art von Feind geweckt? Wurde jemand, den du geliebt hast, von einem Untoten erschlagen oder ein Dorf von Zentauren niedergebrannt? Hast du zu viel Zerstörung gesehen, um tatenlos zu bleiben? Ist dein Leben als Abenteurer eine Fortsetzung deiner Arbeit zum Schutz der Grenzlande – oder ein völlig neuer Weg? Warum hast du dich einer Gruppe angeschlossen? Fällt es dir schwer, anderen die Wege der Wildnis zu lehren – oder genießt du die Gesellschaft, die dich von der Einsamkeit befreit?</p>
+            <h5>SCHNELLERSTELLUNG</h5>
+            <p>Du kannst einen Waldläufer schnell erstellen, wenn du diese Vorschläge befolgst: Setze Geschicklichkeit als höchsten Attributswert, gefolgt von Weisheit. (Einige Waldläufer, die mit zwei Waffen kämpfen wollen, setzen Stärke höher als Geschicklichkeit.) Wähle als Hintergrund den „Ausgestoßenen“ (Outlander).</p>
+            <h3>KLASSENMERKMALE</h3>
+            <p>Als Waldläufer erhältst du im Verlauf deiner Stufenanstiege die folgenden Klassenmerkmale.</p>
+            <h5>TREFFERPUNKTE</h5>
+            <ul class="unstyled">
+                <li><strong>Trefferwürfel:</strong> 1W10 pro Waldläufer-Stufe</li>
+                <li><strong>Trefferpunkte auf der 1. Stufe:</strong> 10 + dein Konstitutionsmodifikator</li>
+                <li><strong>Trefferpunkte ab höheren Stufen:</strong> 1W10 (oder 6) + dein Konstitutionsmodifikator pro Waldläufer-Stufe nach der 1.</li>
+            </ul>
+            <h5>KOMPETENZEN</h5>
+            <ul class="unstyled mb">
+                <li><strong>Rüstung:</strong> Leichte Rüstung, mittlere Rüstung, Schilde</li>
+                <li><strong>Waffen:</strong> Einfache Waffen, Kriegswaffen</li>
+                <li><strong>Werkzeuge:</strong> Keine</li>
+            </ul>
+            <ul class="unstyled">
+                <li><strong>Rettungswürfe:</strong> Stärke, Geschicklichkeit</li>
+                <li><strong>Fertigkeiten:</strong> Wähle drei Fertigkeiten aus Tierkunde, Athletik, Einsicht, Untersuchung, Natur, Wahrnehmung, Heimlichkeit und Überlebenskunst.</li>
+            </ul>
+            <h5>AUSRÜSTUNG</h5>
+            <p>Du startest mit der folgenden Ausrüstung zusätzlich zu der, die dir durch deinen Hintergrund gewährt wird:</p>
+            <ul>
+                <li><i>(a)</i> Schuppenpanzer oder <i>(b)</i> Lederpanzer</li>
+                <li><i>(a)</i> zwei Kurzschwerter oder <i>(b)</i> zwei einfache Nahkampfwaffen</li>
+                <li><i>(a)</i> ein Ausrüstungspaket für Kerkerkundschafter oder <i>(b)</i> ein Entdeckerpaket</li>
+                <li>Ein Langbogen und ein Köcher mit 20 Pfeilen</li>
+            </ul>
+            <h5 class="caption">PROGRESSION</h5>
+            <table class="class-features">
+                <thead><tr>
+                        <td class="col-5">Stufe</td>
+                        <td class="left">Merkmale</td>
+                        <td class="col-10">Bekannte Zauber</td>
+                        <td>1.</td>
+                        <td>2.</td>
+                        <td>3.</td>
+                        <td>4.</td>
+                        <td>5.</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> 1</td>
+                    <td class="left">Erzfeind (Favored Enemy), Bevorzugtes Gelände (Natural Explorer)</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 2</td>
+                    <td class="left">Kampfstil (Fighting Style), Zauberwirken (Spellcasting)</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td class="left">Waldläuferarchetypen (Ranger Archetype), Urtümliche Wahrnehmung (Primeval Awareness)</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 4</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 5</td>
+                    <td class="left">Zusätzlicher Angriff (Extra Attack)</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 6</td>
+                    <td class="left">Verbesserungen von Erzfeind und Urtümliche Wahrnehmung</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 7</td>
+                    <td class="left">Archetypmerkmal</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 8</td>
+                    <td class="left">Verbesserungsauswahl, Sicherer Schritt (Land’s Stride)</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td class="left">—</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="left">Verbesserung Urtümliche Wahrnehmung, Tarnung (Hide in Plain Sight)</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td class="left">Archetypmerkmal</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td class="left">—</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td class="left">Verbesserung Bevorzugter Feind, Verschwinden (Vanish)</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td class="left">Archetypmerkmal</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td class="left">—</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td class="left">Wilde Sinne (Feral Senses)</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td class="left">Feindestöter (Foe Slayer)</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                </tr>
+            </table>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCIES"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_FIGHTING_STYLE"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_SPELLCASTING"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_RANGER_ARCHETYPE"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_ASI"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_EXTRA_ATTACK"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_LANDS_STRIDE"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_HIDE_IN_PLAIN_SIGHT"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_VANISH"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_FERAL_SENSES"/>
+            <div element="ID_D4T_CLASSFEATURE_RANGER_FOE_SLAYER"/>
+        </description>
+        <sheet display="false">
+            <description>Ein Jäger und Fährtensucher, der Kampfgeschick mit der Macht der Natur vereint, um die Wildnis und jene zu schützen, die an ihren Grenzen leben.</description>
+        </sheet>
+        <setters>
+            <set name="short">Ein Jäger und Fährtensucher, der Kampfgeschick mit der Macht der Natur vereint, um die Wildnis und jene zu schützen, die an ihren Grenzen leben.</set>
+            <set name="hd">d10</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER"/>
+            <!--<select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger" number="3" requirements="!ID_WOTC_PHB_MULTICLASS_RANGER"/>-->
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCIES" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_FIGHTING_STYLE" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_SPELLCASTING" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_RANGER_ARCHETYPE" level="3"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS" level="3"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_ASI" level="4"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_EXTRA_ATTACK" level="5"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_LANDS_STRIDE" level="8"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_HIDE_IN_PLAIN_SIGHT" level="10"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_VANISH" level="14"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_FERAL_SENSES" level="18"/>
+            <grant type="Class Feature" id="ID_D4T_CLASSFEATURE_RANGER_FOE_SLAYER" level="20"/>
+        </rules>
+        <multiclass id="ID_WOTC_PHB_MULTICLASS_RANGER">
+            <prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+            <requirements>([dex:13],[wis:13])</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons, one skill from the class’s skill list</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+                <select type="Proficiency" name="Skill Proficiency (Ranger)" supports="Skill,Ranger" number="1"/>
+            </rules>
+        </multiclass>
+    </element>
+    <!-- Proficiency List -->
+    <element name="Fertigkeiten (Waldläufer)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCIES">
+        <description>
+            <p>Wähle drei Fertigkeiten aus der folgenden Liste, in denen du geübt bist: Mit Tieren umgehen, Athletik, Motiv erkennen, Nachforschungen, Naturkunde, Wahrnehmung, Heimlichkeit und Überlebenskunst.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Fertigkeiten" supports="Ranger-Proficiency" number="3" level="1"/>
+        </rules>
+    </element>
+
+    <element name="Erzfeind (Favored Enemy)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY">
+        <description>
+            <p>Ab Stufe 1 hast du umfangreiche Erfahrung darin, eine bestimmte Art von Feind zu studieren, zu verfolgen, zu jagen und sogar mit ihr zu sprechen.</p>
+            <p class="indent">Wähle eine Art von Erzfeind: Aberrationen, Bestien, Himmlische, Konstrukte, Drachen, Elementare, Feenwesen, Unholde, Riesen, Monstrositäten, Schleime, Pflanzen oder Untote. Alternativ kannst du zwei Völker der Humanoiden (z.B. Zentauren und Schaufler) als Erzfeinde wählen.</p>
+            <p class="indent">Du hast Vorteil auf Weisheitswürfe (Überlebenskunst), um deine Erzfeinde aufzuspüren, sowie auf Intelligenzwürfe, um Informationen über sie abzurufen.</p>
+            <p class="indent">Wenn du dieses Merkmal erhältst, lernst du außerdem eine Sprache deiner Wahl, die von einem deiner Erzfeinde gesprochen wird – falls sie überhaupt eine Sprache sprechen.</p>
+            <p class="indent">Auf den Stufen 6 und 14 wählst du jeweils einen weiteren Erzfeind sowie eine zugehörige Sprache. Deine Wahl sollte die Kreaturen widerspiegeln, denen du im Lauf deiner Abenteuer begegnet bist.</p>
+        </description>
+        <sheet>
+            <description>Du hast Vorteil auf Überlebenskunst (Weisheit), um deine Erzfeinde aufzuspüren, sowie auf Intelligenz, um Informationen über sie abzurufen.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Erzfeind" supports="Favored Enemy" level="1"/>
+            <select type="Class Feature" name="Erzfeind" supports="Favored Enemy" level="6"/>
+            <select type="Class Feature" name="Erzfeind" supports="Favored Enemy" level="14"/>
+            <select type="Class Feature" name="Erzfeind (Humanoide)" supports="Humanoid Favored Enemy" number="2" level="1" requirements="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_1"/>
+            <select type="Class Feature" name="Erzfeind (Humanoide)" supports="Humanoid Favored Enemy" number="2" level="6" requirements="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_2"/>
+            <select type="Class Feature" name="Erzfeind (Humanoide)" supports="Humanoid Favored Enemy" number="2" level="14" requirements="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_3"/>
+            <select type="Language" name="Sprache (Erzfeind)" level="1"/>
+            <select type="Language" name="Sprache (Erzfeind)" level="6"/>
+            <select type="Language" name="Sprache (Erzfeind)" level="14"/>
+        </rules>
+    </element>
+    <element name="Bevorzugtes Gelände (Natural Explorer)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER">
+        <description>
+            <p>Du kennst dich besonders gut in einer bestimmten Art von natürlicher Umgebung aus und bist geübt darin, dich in einem solchen Gebiet fortzubewegen und zu überleben. Wähle eine bevorzugte Geländeart: arktisch, Küste, Wüste, Wald, Grasland, Gebirge, Sumpf oder die Tiefe Erde. Wenn du eine Intelligenz- oder Weisheitsprobe ablegst, die mit deinem bevorzugten Gelände zu tun hat, wird dein Übungsbonus verdoppelt – vorausgesetzt, du bist in der entsprechenden Fertigkeit geübt.</p>
+            <p class="indent">Wenn du dich eine Stunde oder länger in deinem bevorzugten Gelände bewegst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Schwieriges Gelände verlangsamt die Reise deiner Gruppe nicht.</li>
+                <li>Deine Gruppe kann sich nicht verirren, außer durch magische Mittel.</li>
+                <li>Auch wenn du während der Reise mit anderen Tätigkeiten beschäftigt bist (z.B. Nahrungssuche, Navigation oder Verfolgung), bleibst du wachsam gegenüber Gefahren.</li>
+                <li>Wenn du allein unterwegs bist, kannst du dich in normalem Tempo verstohlen bewegen.</li>
+                <li>Wenn du Nahrung sammelst, findest du doppelt so viel wie gewöhnlich.</li>
+                <li>Wenn du andere Kreaturen verfolgst, erfährst du auch ihre genaue Anzahl, ihre Größenkategorie und wie lange es her ist, dass sie die Gegend durchquert haben.</li>
+            </ul>
+            <p class="indent">Auf den Stufen 6 und 10 wählst du jeweils eine weitere Geländeart aus.</p>
+        </description>
+        <sheet>
+            <description>Wenn du eine Intelligenz- oder Weisheitsprobe ablegst, die mit deinem bevorzugten Gelände zu tun hat, wird dein Übungsbonus verdoppelt – sofern du in der Fertigkeit geübt bist. Wenn du dich eine Stunde oder länger in deinem bevorzugten Gelände bewegst, erhältst du folgende Vorteile: schwieriges Gelände verlangsamt deine Gruppe nicht, ihr könnt euch nicht verirren (außer durch Magie), du bleibst auch bei anderen Tätigkeiten wachsam, du kannst dich allein verstohlen in normalem Tempo bewegen, du findest doppelt so viel Nahrung und erfährst beim Verfolgen Anzahl, Größe und Aufenthaltsdauer der Kreaturen.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Bevorzugtes Gelände" supports="Favored Terrain" level="1"/>
+            <select type="Class Feature" name="Bevorzugtes Gelände" supports="Favored Terrain" level="6"/>
+            <select type="Class Feature" name="Bevorzugtes Gelände" supports="Favored Terrain" level="10"/>
+        </rules>
+    </element>
+    <element name="Kampfstil (Fighting Style)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FIGHTING_STYLE">
+        <description>
+            <p>Ab der 2. Stufe wählst du einen bestimmten Kampfstil als deine Spezialisierung. Wähle eine der folgenden Optionen. Du kannst denselben Kampfstil nicht mehrfach wählen, auch wenn du später erneut eine Wahlmöglichkeit erhältst.</p>
+            <h5 class="caption">BOGENKUNST</h5>
+            <p>Du erhältst einen Bonus von +2 auf Angriffswürfe mit Fernkampfwaffen.</p>
+            <h5 class="caption">VERTEIDIGUNG</h5>
+            <p>Solange du eine Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse (RK).</p>
+            <h5 class="caption">DUELL</h5>
+            <p>Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe, erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe.</p>
+            <h5 class="caption">ZWEI-WAFFEN-KAMPF</h5>
+            <p>Wenn du mit zwei Waffen kämpfst, darfst du deinen Attributsmodifikator zum Schaden des zweiten Angriffs hinzufügen.</p>
+        </description>
+        <rules>
+            <select type="Class Feature" name="Kampfstil" supports="Ranger-Style" level="2"/>
+        </rules>
+    </element>
+    <!-- Fighting Styles -->
+    <element name="Bogenschütze" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FIGHTING_STYLE_ARCHERY">
+        <supports>Ranger-Style</supports>
+        <description>
+            <p>Du erhältst einen Bonus von +2 auf Angriffswürfe mit Fernkampfwaffen.</p>
+        </description>
+        <sheet>
+            <description>Du erhältst einen Bonus von +2 auf Angriffswürfe mit Fernkampfwaffen.</description>
+        </sheet>
+        <rules>
+            <stat name="ranged:attack" value="2"/>
+        </rules>
+    </element>
+    <element name="Verteidigung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FIGHTING_STYLE_DEFENSE">
+        <supports>Ranger-Style</supports>
+        <description>
+            <p>Solange du eine Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse (RK).</p>
+        </description>
+        <sheet>
+            <description>Solange du eine Rüstung trägst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse (RK).</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" bonus="fighting style" equipped="[armor:any]" alt="Verteidigung (Kampfstil)"/>
+        </rules>
+    </element>
+    <element name="Duellant" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FIGHTING_STYLE_DUELING">
+        <supports>Ranger-Style</supports>
+        <description>
+            <p>Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe in der anderen, erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe.</p>
+        </description>
+        <sheet>
+            <description>Wenn du eine Nahkampfwaffe in einer Hand führst und keine andere Waffe in der anderen, erhältst du einen Bonus von +2 auf Schadenswürfe mit dieser Waffe.</description>
+        </sheet>
+        <rules>
+            <!-- <stat name="melee:damage" value="2" equipped="[primary:any],([secondary:none]||[shield:any])" /> -->
+        </rules>
+    </element>
+    <element name="Zwei-Waffen-Kampf" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FIGHTING_STYLE_TWOWEAPON_FIGHTING">
+        <supports>Ranger-Style</supports>
+        <description>
+            <p>Wenn du mit zwei Waffen kämpfst, darfst du deinen Attributsmodifikator zum Schaden des zweiten Angriffs hinzufügen.</p>
+        </description>
+        <sheet>
+            <description>Wenn du mit zwei Waffen kämpfst, darfst du deinen Attributsmodifikator zum Schaden des zweiten Angriffs hinzufügen.</description>
+        </sheet>
+    </element>
+    
+    <element name="Zauberwirken (Spellcasting)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_SPELLCASTING">
+        <description>
+            <p>Ab der 2. Stufe hast du gelernt, die magische Essenz der Natur zu nutzen, um Zauber zu wirken – ähnlich wie ein Druide. Allgemeine Regeln zum Zauberwirken findest du in Kapitel 10, die Zauberliste des Waldläufers in Kapitel 11.</p>
+            <h5>ZAUBERSLOTS</h5>
+            <p>Die Waldläufer-Tabelle zeigt, wie viele Zauberslots du zum Wirken deiner Zauber des 1. Grades und höher zur Verfügung hast. Um einen dieser Zauber zu wirken, musst du einen Slot desselben Grades oder höher verbrauchen. Du erhältst alle verbrauchten Slots zurück, wenn du eine lange Rast beendest.</p>
+            <p class="indent">Beispiel: Wenn du den Zauber <i>Tierfreundschaft</i> kennst und über einen Zauberslot des 1. und des 2. Grades verfügst, kannst du den Zauber mit einem beliebigen dieser Slots wirken.</p>
+            <h5>BEKANNTE ZAUBER DES 1. GRADES UND HÖHER</h5>
+            <p>Du kennst zwei Zauber des 1. Grades deiner Wahl aus der Zauberliste des Waldläufers.</p>
+            <p class="indent">Die Spalte „Bekannte Zauber“ der Waldläufer-Tabelle zeigt, wann du weitere Zauber erlernst. Jeder dieser Zauber muss einem Grad entsprechen, für den du Slots besitzt. Erreichst du z.B. die 5. Stufe, kannst du einen neuen Zauber des 1. oder 2. Grades erlernen.</p>
+            <p class="indent">Außerdem kannst du, wenn du eine Stufe aufsteigst, einen dir bekannten Waldläuferzauber durch einen anderen aus der Zauberliste ersetzen – ebenfalls einem Grad entsprechend, für den du Slots besitzt.</p>
+            <h5>ZAUBERFÄHIGKEIT</h5>
+            <p>Weisheit ist deine Zauberfähigkeit für deine Waldläuferzauber, da deine Magie aus deiner Verbindung zur Natur stammt. Du verwendest deinen Weisheitsmodifikator immer dann, wenn ein Zauber sich auf deine Zauberfähigkeit bezieht. Auch der Zauber-SG und der Angriffsbonus für deine Zauber basieren auf deiner Weisheit:</p>
+            <center>
+                <p>
+                    <strong>Zauber-SG</strong> = 8 + dein Übungsbonus + dein Weisheitsmodifikator</p>
+                <p>
+                    <strong>Zauberangriffsbonus</strong> = dein Übungsbonus + dein Weisheitsmodifikator</p>
+            </center>
+        </description>
+        <sheet display="false">
+            <description>Du hast gelernt, die magische Essenz der Natur zu nutzen, um Zauber zu wirken – ähnlich wie ein Druide.</description>
+        </sheet>
+        <spellcasting name="Waldläufer" ability="Wisdom" allowReplace="true">
+            <list>Ranger</list>
+        </spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <!-- Zauberslots nach Stufe -->
+            <stat name="waldläufer:spellcasting:slots:1" value="2" level="2"/>
+            <stat name="waldläufer:spellcasting:slots:1" value="1" level="3"/>
+            <stat name="waldläufer:spellcasting:slots:1" value="1" level="5"/>
+            <stat name="waldläufer:spellcasting:slots:2" value="2" level="5"/>
+            <stat name="waldläufer:spellcasting:slots:2" value="1" level="7"/>
+            <stat name="waldläufer:spellcasting:slots:3" value="2" level="9"/>
+            <stat name="waldläufer:spellcasting:slots:3" value="1" level="11"/>
+            <stat name="waldläufer:spellcasting:slots:4" value="1" level="13"/>
+            <stat name="waldläufer:spellcasting:slots:4" value="1" level="15"/>
+            <stat name="waldläufer:spellcasting:slots:4" value="1" level="17"/>
+            <stat name="waldläufer:spellcasting:slots:5" value="1" level="17"/>
+            <stat name="waldläufer:spellcasting:slots:5" value="1" level="19"/>
+            <!-- Zauberwahl bei Stufenanstieg -->
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" number="2" spellcasting="Waldläufer"/>
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Waldläufer"/>
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Waldläufer"/>
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Waldläufer"/>
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Waldläufer"/>
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Waldläufer"/>
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Waldläufer"/>
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Waldläufer"/>
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Waldläufer"/>
+            <select type="Spell" name="Zauberwahl (Waldläufer)" supports="$(spellcasting:list),$(spellcasting:slots)" level="19" spellcasting="Waldläufer"/>
+        </rules>
+    </element>
+    <element name="Waldläuferarchetypen (Ranger Archetype)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_RANGER_ARCHETYPE">
+        <description>
+            <p>Ab der 3. Stufe wählst du einen Archetypen, dem du nacheiferst – etwa den Jäger oder den Tiermeister, die beide am Ende der Klassenbeschreibung näher erläutert sind. Deine Wahl verleiht dir Merkmale auf der 3., 7., 11. und 15. Stufe.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Waldläuferarchetyp" supports="Ranger Archetype"/>
+        </rules>
+    </element>
+    <element name="Urtümliche Wahrnehmung (Primeval Awareness)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS">
+        <description>
+            <p>Ab der 3. Stufe kannst du deine Aktion verwenden und einen Zauberplatz des Waldläufers aufwenden, um deine Wahrnehmung auf die Region um dich herum zu fokussieren. Für 1 Minute pro Stufe des verwendeten Zauberplatzes kannst du spüren, ob sich die folgenden Kreaturentypen in einem Umkreis von 1 Meile (ca. 1,6km) befinden – oder bis zu 6 Meilen (ca. 9,6km), wenn du dich in deinem bevorzugten Gelände aufhältst: Abscheulichkeiten, Himmlische, Drachen, Elementare, Feenwesen, Scheusale und Untote. Dieses Merkmal verrät weder den genauen Ort noch die Anzahl der Kreaturen.</p>
+        </description>
+        <sheet action="Aktion">
+            <description>Du kannst einen Zauberplatz des Waldläufers aufwenden, um deine Wahrnehmung auf die Region um dich herum zu fokussieren. Für 1 Minute pro Stufe des verwendeten Zauberplatzes spürst du, ob sich Abscheulichkeiten, Himmlische, Drachen, Elementare, Feenwesen, Scheusale oder Untote in einem Umkreis von 1 Meile (6 Meilen im bevorzugten Gelände) befinden. Du erfährst jedoch weder Ort noch Anzahl.</description>
+        </sheet>
+    </element>
+    <element name="Verbesserungsauswahl (Ability Score Improvement)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_ASI">
+        <compendium display="false"/>
+        <description>
+            <p>Wenn du die 4. Stufe erreichst, und erneut auf der 8., 12., 16. und 19. Stufe, kannst du einen Attributswert deiner Wahl um 2 erhöhen oder zwei Attributswerte deiner Wahl jeweils um 1 erhöhen. Wie üblich kannst du durch dieses Merkmal keinen Wert über 20 steigern.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Verbesserungsauswahl (Waldläufer 4)" supports="Improvement Option,Ranger,4" level="4"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Waldläufer 8)" supports="Improvement Option,Ranger,8" level="8"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Waldläufer 12)" supports="Improvement Option,Ranger,12" level="12"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Waldläufer 16)" supports="Improvement Option,Ranger,16" level="16"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Waldläufer 19)" supports="Improvement Option,Ranger,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Zusätzlicher Angriff (Extra Attack)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_EXTRA_ATTACK">
+        <description>
+            <p>Ab der 5. Stufe kannst du zweimal angreifen, anstatt nur einmal, wenn du in deinem Zug die Angriffsaktion durchführst.</p>
+        </description>
+        <sheet>
+            <description>Du kannst zweimal angreifen, anstatt nur einmal, wenn du in deinem Zug die Angriffsaktion durchführst.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Sicherer Schritt (Land’s Stride)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_LANDS_STRIDE">
+        <description>
+            <p>Ab der 8. Stufe kostet dich das Bewegen durch nichtmagisches schwieriges Gelände keine zusätzliche Bewegung. Du kannst dich außerdem durch nichtmagische Pflanzen bewegen, ohne von ihnen verlangsamt zu werden oder Schaden durch Dornen, Stacheln oder ähnliche Gefahren zu erleiden.</p>
+            <p class="indent">Zusätzlich hast du Vorteil bei Rettungswürfen gegen Pflanzen, die magisch erschaffen oder manipuliert wurden, um Bewegung zu behindern – etwa durch den Zauber <i>Ranken</i>.</p>
+        </description>
+        <sheet>
+            <description>Du ignorierst nichtmagisches schwieriges Gelände und kannst dich durch nichtmagische Pflanzen bewegen, ohne Schaden zu erleiden oder verlangsamt zu werden. Du hast Vorteil auf Rettungswürfe gegen magisch erschaffene oder manipulierte Pflanzen, die deine Bewegung behindern.</description>
+        </sheet>
+    </element>
+    <element name="Tarnung (Hide in Plain Sight)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_HIDE_IN_PLAIN_SIGHT">
+        <description>
+            <p>Ab der 10. Stufe kannst du 1 Minute aufwenden, um dich zu tarnen. Du benötigst dafür Zugang zu frischem Schlamm, Erde, Pflanzen, Ruß oder anderen natürlich vorkommenden Materialien.</p>
+            <p class="indent">Sobald du dich auf diese Weise getarnt hast, kannst du versuchen, dich an einer festen Oberfläche zu verbergen – etwa einem Baum oder einer Wand –, die mindestens so hoch und breit ist wie du selbst. Solange du dich nicht bewegst oder eine Aktion oder Reaktion ausführst, erhältst du einen Bonus von +10 auf Geschicklichkeitswürfe (Heimlichkeit). Wenn du dich bewegst oder handelst, musst du dich erneut tarnen, um diesen Vorteil wiederzuerlangen.</p>
+        </description>
+        <sheet>
+            <description>Du kannst 1 Minute aufwenden, um dich mithilfe natürlicher Materialien zu tarnen. Danach erhältst du +10 auf Heimlichkeitswürfe, solange du dich nicht bewegst oder handelst und an einer festen Oberfläche bleibst.</description>
+        </sheet>
+    </element>
+    <element name="Verschwinden (Vanish)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_VANISH">
+        <description>
+            <p>Ab der 14. Stufe kannst du die Aktion *Verstecken* als Bonusaktion in deinem Zug einsetzen. Außerdem kannst du durch nichtmagische Mittel nicht mehr aufgespürt werden, es sei denn, du entscheidest dich, eine Fährte zu hinterlassen.</p>
+        </description>
+        <sheet>
+            <description>Du kannst die Aktion *Verstecken* als Bonusaktion nutzen. Du kannst durch nichtmagische Mittel nicht aufgespürt werden, es sei denn, du hinterlässt absichtlich eine Fährte.</description>
+        </sheet>
+    </element>
+    <element name="Wilde Sinne (Feral Senses)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FERAL_SENSES">
+        <description>
+            <p>Ab der 18. Stufe verleihen dir übernatürliche Sinne einen Vorteil im Kampf gegen nicht sichtbare Kreaturen. Wenn du eine Kreatur angreifst, die du nicht sehen kannst, hast du keinen Nachteil auf Angriffswürfe gegen sie.</p>
+            <p class="indent">Außerdem bist du dir der Position unsichtbarer Kreaturen im Umkreis von 9m (30 feet) bewusst, solange diese sich nicht vor dir verbergen und du weder blind noch taub bist.</p>
+        </description>
+        <sheet>
+            <description>Du hast keinen Nachteil auf Angriffe gegen Kreaturen, die du nicht sehen kannst. 
+        Du kannst die Position unsichtbarer Kreaturen im Umkreis von 9m (30 feet) wahrnehmen, solange sie nicht verborgen sind und du weder blind noch taub bist.</description>
+        </sheet>
+    </element>
+    <element name="Feindestöter (Foe Slayer)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FOE_SLAYER">
+        <description>
+            <p>Ab der 20. Stufe wirst du zum unerreichten Jäger deiner Feinde. Einmal pro Runde kannst du deinen Weisheitsmodifikator entweder zum Angriffswurf oder zum Schadenswurf eines Angriffs gegen einen deiner Erzfeinde hinzufügen. Du kannst entscheiden, ob du diese Fähigkeit vor oder nach dem Wurf einsetzt – jedoch bevor die Auswirkungen des Wurfs festgelegt werden.</p>
+        </description>
+        <sheet>
+            <description>Einmal pro Runde kannst du {{wisdom:modifier}} zu einem Angriffswurf oder Schadenswurf gegen einen deiner Erzfeinde hinzufügen. Du entscheidest dies vor oder nach dem Wurf, aber vor Anwendung der Effekte.</description>
+        </sheet>
+    </element>
+    <!-- Skill List -->
+    <element name="Tierbeherrschung (Animal Handling)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCY_ANIMAL_HANDLING">
+        <supports>Ranger-Proficiency</supports>
+        <description>
+            <p>Führe einen Wurf auf Weisheit (Mit Tieren umgehen) durch, um ein Tier zu beruhigen, ein Reittier vor Panik zu bewahren oder seine Absichten zu deuten. Du kannst damit auch riskante Manöver mit Tieren absichern.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+        </rules>
+    </element>
+    <element name="Athletik (Athletics)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCY_ATHLETICS">
+        <supports>Ranger-Proficiency</supports>
+        <description><p>Athletik deckt schwierige Situationen ab, in denen du beim Klettern, Springen oder Schwimmen stehst.</p>
+            <p class="indent">Beispiele hierfür sind die folgenden Aktivitäten:</p>
+            <ul class="unstyled">
+                <li>Du versuchst, eine steile oder rutschige Klippe zu erklimmen, beim Erklimmen einer Wand Gefahren auszuweichen oder dich an einer Oberfläche festzuhalten, während etwas versucht, dich herunterzustoßen.</li>
+                <li>Du versuchst, ungewöhnlich weit zu springen oder mitten im Sprung einen Sprung zu machen.</li>
+                <li>Du kämpfst beim Schwimmen oder schwimmst in reißenden Strömungen, schwallartigen Wellen oder Gebieten mit dichtem Seegras. Oder eine andere Kreatur versucht, dich unter Wasser zu stoßen oder zu ziehen oder dich anderweitig beim Schwimmen zu behindern.</li>
+            </ul></description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+        </rules>
+    </element>
+
+    <element name="Motiv erkennen (Insight)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCY_INSIGHT">
+        <supports>Ranger-Proficiency</supports>
+        <description>
+            <p>Ein Wurf auf Weisheit (Motiv erkennen) erlaubt es dir, die wahren Absichten einer Kreatur zu erkennen – etwa, ob sie lügt oder was sie als Nächstes tun wird.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+        </rules>
+    </element>
+
+    <element name="Nachforschungen (Investigation)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCY_INVESTIGATION">
+        <supports>Ranger-Proficiency</supports>
+        <description>
+            <p>Wenn du nach Hinweisen suchst und daraus Schlüsse ziehst, führst du einen Wurf auf Intelligenz (Nachforschungen) durch. Du könntest z. B. den Standort eines versteckten Objekts bestimmen, die Ursache einer Wunde erkennen oder die schwächste Stelle eines Tunnels ausmachen.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" />
+        </rules>
+    </element>
+
+    <element name="Naturkunde (Nature)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCY_NATURE">
+        <supports>Ranger-Proficiency</supports>
+        <description>
+            <p>Naturkunde misst dein Wissen über Gelände, Pflanzen, Tiere, Wetter und natürliche Zyklen.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+        </rules>
+    </element>
+
+    <element name="Wahrnehmung (Perception)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCY_PERCEPTION">
+        <supports>Ranger-Proficiency</supports>
+        <description>
+            <p>Ein Wurf auf Weisheit (Wahrnehmung) erlaubt dir, etwas zu bemerken, zu hören oder anderweitig wahrzunehmen – etwa versteckte Gefahren, leise Geräusche oder Bewegungen im Dunkeln.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+        </rules>
+    </element>
+
+    <element name="Heimlichkeit (Stealth)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCY_STEALTH">
+        <supports>Ranger-Proficiency</supports>
+        <description>
+            <p>Führe einen Wurf auf Geschicklichkeit (Heimlichkeit) durch, wenn du versuchst, dich vor Feinden zu verbergen, an Wachen vorbeizuschleichen, unbemerkt zu verschwinden oder dich an jemanden heranzuschleichen, ohne gesehen oder gehört zu werden.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+        </rules>
+    </element>
+
+    <element name="Überlebenskunst (Survival)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_PROFICIENCY_SURVIVAL">
+        <supports>Ranger-Proficiency</supports>
+        <description>
+            <p>Führe einen Wurf auf Weisheit (Überlebenskunst) durch, um Spuren zu verfolgen, das Wetter vorherzusagen, dich in Wildnis zurechtzufinden oder Hinweise auf nahe Tiere oder Gefahren zu erkennen.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+        </rules>
+    </element>
+    <!-- Favored Enemy List -->
+    <element name="Aberrationen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_ABERRATIONS">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Aberrationen sind Kreaturen, die völlig außerhalb der natürlichen Ordnung existieren. Viele besitzen angeborene magische Fähigkeiten, die aus einem fremdartigen Geist stammen, nicht aus bekannten magischen Schulen oder Quellen.</p>
+            <p class="indent">In Tyria gelten Wesen als Aberrationen, die durch magische Entartung, Leereinfluss oder arkane Katastrophen entstanden sind – etwa Leere-Kreaturen, Blutstein-Entartete oder Windreiter.</p>
+        </description>
+    </element>
+    <element name="Bestien" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_BEASTS">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Bestien sind nicht-humanoide Kreaturen, die ein natürlicher Teil des tyrianischen Ökosystems sind. Manche besitzen magische Fähigkeiten, doch die meisten sind instinktgetrieben, ohne Sprache oder Gesellschaft.</p>
+            <p class="indent">Zu den Bestien zählen Devourer, Moas, Skale, Raptoren und andere Tierformen – auch in riesiger oder mutierter Ausprägung.</p>
+        </description>
+    </element>
+    <element name="Himmlische" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_CELESTIALS">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Himmlische sind Wesen von spiritueller oder göttlicher Natur. In Tyria treten sie selten auf – manchmal als Manifestationen der Sechs Götter, als Traumbewahrer der Sylvari oder als uralte Lichtwesen.</p>
+            <p class="indent">Ihre Ziele sind oft schwer verständlich, und nicht alle sind gut im klassischen Sinn. Typische Vertreter wären Lyssas Spiegelwesen, Kormirs Avatar oder strahlende Traumwächter.</p>
+        </description>
+    </element>
+    <element name="Konstrukte" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_CONSTRUCTS">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Konstrukte wurden erschaffen, nicht geboren. Einige folgen einfachen Befehlen, andere besitzen eigene Intelligenz.</p>
+            <p class="indent">In Tyria zählen dazu Golems der Asura, seelengebundene Mechaniken, alchemistische Automaten und alte Relikte vergangener Zivilisationen. Sie bestehen oft aus Metall, Stein oder Energie.</p>
+        </description>
+    </element>
+    <element name="Drachendiener" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_DRAGONS">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Drachen sind gewaltige, uralte Wesen mit mächtiger Magie. In Tyria sind die wahren Drachen die Altdrachen wie Zhaitan oder Kralkatorrik – Wesen, deren bloße Präsenz ganze Landstriche verändert.</p>
+            <p class="indent">In diese Kategorie fallen auch ihre mächtigen Diener, wie Brutmütter, Drachengeborene oder verdorbene Drachenkreaturen.</p>
+        </description>
+    </element>
+    <element name="Elementare" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_ELEMENTALS">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Elementare sind Wesen, die aus reiner Elementarmagie bestehen. Einige erscheinen als lebendige Massen von Feuer, Eis, Wasser oder Erde, andere besitzen humanoide oder tierische Gestalt.</p>
+            <p class="indent">In Tyria findet man sie an Ley-Knoten, in uralten Ritualstätten oder als Begleiter elementar fokussierter Zauberwirker.</p>
+        </description>
+    </element>
+    <element name="Feenwesen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_FEY">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Feenwesen sind magische Kreaturen, tief mit Natur, Traum und Zyklus verbunden. In Tyria zählen dazu die Druidengeister des Maguuma-Dschungels, die Tiergeister der Norn, traumhafte Gestalten des Blassen Baums oder uralte Waldhüter.</p>
+            <p class="indent">Sie folgen eigenen Regeln – nicht böse, nicht gut, sondern naturhaft fremd.</p>
+        </description>
+    </element>
+    <element name="Unholde" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_FIENDS">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Unholde sind bösartige Wesen aus den tieferen Schichten der Nebel oder aus fremden, chaotischen Reichen. Die Kryptis, Dämonen wie Aatxe oder Oni, und verderbte Geister alter Götzen zählen zu dieser Kategorie.</p>
+            <p class="indent">Einige wurden herbeigerufen, andere schlüpfen durch Risse in der Realität – alle bringen Verderben.</p>
+        </description>
+    </element>
+    <element name="Riesen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_GIANTS">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Riesen überragen gewöhnliche Humanoide und besitzen oft rohe Gewalt. In Tyria zählen dazu Ettins, Trolle, Oger oder Jotun.</p>
+            <p class="indent">Sie sind meist wild, territorial und traditionsgebunden – manche bewahren altes Wissen, andere leben von Raub und Gewalt.</p>
+        </description>
+    </element>
+    <element name="Humanoide" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_1">
+      <supports>Favored Enemy,Monster Type</supports>
+      <description>
+        <p>Humanoide sind zweibeinige Wesen mit Sprache, Kultur und Gesellschaft. In Tyria zählen dazu alle Völker – Menschen, Charr, Norn, Sylvari, Asura – sowie ihre Varianten, z.B. Banditen, Piraten, Separatisten oder Kultisten.</p>
+        <p class="indent">Sie können sowohl zivilisiert als auch wild oder fanatisch auftreten.</p>
+      </description>
+    </element>
+    <element name="Humanoide" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_2">
+        <compendium display="false" />
+        <requirements>ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_1</requirements>
+      <supports>Favored Enemy,Monster Type</supports>
+      <description>
+        <p>Humanoide sind zweibeinige Wesen mit Sprache, Kultur und Gesellschaft. In Tyria zählen dazu alle Völker – Menschen, Charr, Norn, Sylvari, Asura – sowie ihre Varianten, z.B. Banditen, Piraten, Separatisten oder Kultisten.</p>
+        <p class="indent">Sie können sowohl zivilisiert als auch wild oder fanatisch auftreten.</p>
+      </description>
+    </element>
+    <element name="Humanoide" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_3">
+        <compendium display="false" />
+        <requirements>ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_2</requirements>
+      <supports>Favored Enemy,Monster Type</supports>
+      <description>
+        <p>Humanoide sind zweibeinige Wesen mit Sprache, Kultur und Gesellschaft. In Tyria zählen dazu alle Völker – Menschen, Charr, Norn, Sylvari, Asura – sowie ihre Varianten, z.B. Banditen, Piraten, Separatisten oder Kultisten.</p>
+        <p class="indent">Sie können sowohl zivilisiert als auch wild oder fanatisch auftreten.</p>
+      </description>
+    </element>
+    <element name="Monstrositäten" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_MONSTROSITIES">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Monstrositäten sind wahre Ungeheuer – weder natürlich noch klar definierbar. Sie entstammen oft Experimenten, uralten Flüchen oder vergessenen Rassen.</p>
+            <p class="indent">In Tyria zählen dazu Harpyien, Skale, Krait-Abscheulichkeiten, alte Blutkreaturen oder Chimärenwesen aus Nebel oder Altdrachenmagie.</p>
+        </description>
+    </element>
+    <element name="Schleime" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_OOZES">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Schleime sind gallertartige Wesen ohne feste Form. Sie leben meist unterirdisch oder an verlassenen Orten, zersetzen organisches Material und reagieren auf Bewegung oder Magie.</p>
+            <p class="indent">In Tyria findet man sie v.a. in alchemistisch verdorbenen Gebieten oder als Nebenprodukte nekromantischer Prozesse.</p>
+        </description>
+    </element>
+    <element name="Pflanzen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_PLANTS">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Pflanzenwesen sind mehr als einfache Flora – sie bewegen sich, greifen an und denken teils sogar. Dazu zählen erwachte Bäume, fleischfressende Ranken, Pilznetzwerke oder Baumhirten.</p>
+            <p class="indent">In Tyria sind sie besonders in verwunschenen Wäldern oder alten Druidenheiligtümern anzutreffen.</p>
+        </description>
+    </element>
+    <element name="Untote" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_UNDEAD">
+        <supports>Favored Enemy,Monster Type</supports>
+        <description>
+            <p>Untote sind Kreaturen, die durch nekromantische Magie oder Fluch wiederbelebt wurden. Sie reichen von verwesenden Leichnamen wie Zombies und Skeletten bis zu geistartigen Erscheinungen wie Geistern, Schatten und Liches.</p>
+            <p class="indent">In Tyria sind sie oft Diener Zhaitans oder das Ergebnis dunkler Rituale.</p>
+        </description>
+    </element>
+    <element name="Menschen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOID_HUMANS">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Die Menschen sind eines der jüngsten Völker Tyrias, doch sie haben weite Teile der Welt besiedelt und prägen vor allem Kryta, Elona und Cantha. Ihre Gesellschaften sind durch Religion, Rittertum, politische Machtspiele und die Verehrung der Götter geprägt. Sie können inspirierende Anführer oder skrupellose Tyrannen hervorbringen – manchmal beides zugleich.</p>
+        </description>
+    </element>
+    <element name="Charr" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOID_CHARR">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Die Charr sind ein kriegerisches, technisch begabtes Volk mit militärischer Hierarchie. In Legionen organisiert, streben sie nach Eroberung, Effizienz und Stärke. Ihre einstige Feindschaft mit den Menschen hat sich in manchen Regionen gelegt, doch Misstrauen bleibt. Viele Charr glauben nur an Feuer, Stahl und den eigenen Willen.</p>
+        </description>
+    </element>
+    <element name="Norn" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOID_NORN">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Die Norn stammen aus den nördlichen Zittergipfeln. Sie sind großgewachsene Jäger, die ihr Leben der persönlichen Legende widmen. Ehre, Tapferkeit und Unabhängigkeit sind für sie zentrale Werte. Jeder Norn strebt danach, durch Taten unvergessen zu werden – sei es durch ein ruhmreiches Leben oder einen glorreichen Tod.</p>
+        </description>
+    </element>
+    <element name="Asura" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOID_ASURA">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Die Asura sind klein von Wuchs, aber groß im Geist. Dieses Volk lebt in Forschungskreisen und ist bekannt für seinen Erfindungsreichtum, seine Arkanotechnologie und seine oft überhebliche Art. Asura betrachten die Welt als System, das es zu entschlüsseln gilt – und bevorzugen Lösungen, die möglichst viel explodieren.</p>
+        </description>
+    </element>
+    <element name="Sylvari" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOID_SYLVARI">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Die Sylvari sind ein junges Volk, das dem Traum des Blassen Baums entsprungen ist. Sie besitzen eine natürliche Verbindung zur Welt, sind idealistisch, neugierig und fremd zugleich. Nicht aus Fleisch geboren, sondern aus Magie und Natur, ringen viele von ihnen mit der Frage, was sie wirklich sind – und was sie sein wollen.</p>
+        </description>
+    </element>
+    <element name="Zentauren" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOID_CENTAUR">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Zentauren sind ein nomadisches Reitervolk, das tief mit der Natur verbunden ist. Sie leben in Clans, folgen alten Stammesriten und stehen oft im Konflikt mit Siedlern und Städten. Ihre Kultur betont Freiheit, Tradition und den Schutz der Ahnenpfade. Einige Zentauren suchen Frieden, andere kämpfen unermüdlich gegen das Vorrücken der Zivilisation.</p>
+        </description>
+    </element>
+    <element name="Grawle" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOID_GRAWL">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Grawle sind primitive, aber keineswegs dumme Stammeswesen. Sie verehren Naturgeister, deuten Zeichen am Himmel oder im Rauch und folgen oft rätselhaften Propheten. Ihre Haltung gegenüber Fremden kann von verspielter Neugier bis zu blutiger Aggression reichen – je nach dem Willen des Schamanen.</p>
+        </description>
+    </element>
+    <element name="Skritt" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOID_SKRITT">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Skritt sind rattenartige Humanoide mit kollektiver Intelligenz. Allein sind sie zerstreut und vergesslich – in Gruppen jedoch schlagfertig, schlau und überraschend organisiert. Sie sammeln alles, was funkelt oder summt, und leben in tiefen, komplexen Tunnelsystemen mit eigenem Regelwerk.</p>
+        </description>
+    </element>
+    <element name="Quaggans" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOID_QUAGGAN">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Quaggans sind friedliebende Wasserwesen mit rundlichem Körperbau und sanftem Wesen. Doch wehe, man reizt sie – in Wut geraten, werden sie zu mächtigen Kämpfern. Diese doppelte Natur macht sie zu ungewöhnlichen, aber gefährlichen Gegnern in Seen, Küsten und Flussläufen.</p>
+        </description>
+    </element>
+    <element name="Tengu" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOID_TENGU">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Tengu sind geflügelte Krieger mit scharfer Klinge, schärferem Verstand und einem ausgeprägten Ehrenkodex. Ihre Kultur ist traditionsbewusst, verschlossen und von jahrhundertelanger Isolation geprägt. Einige Tengu suchen neue Wege in Tyria – als Botschafter, Duellanten oder Suchende.</p>
+        </description>
+    </element>
+    <element name="Kodan" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOID_KODAN">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Kodan sind bärenartige Mystiker aus dem hohen Norden. Sie folgen der Lehre des Gleichgewichts und leben auf treibenden Tempelschiffen. Ihre Handlungen entspringen Meditation, Einsicht und Visionen – doch wenn sie kämpfen, dann mit der Wucht eines Sturms.</p>
+        </description>
+    </element>
+    <element name="Oger" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOID_OGRE">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Oger sind große, kräftige Humanoide, die in abgelegenen Gebieten leben. Ihre Stammeskultur ist geprägt von Stärke, Jagdgeschick und Dominanz über wilde Bestien. Viele Oger betrachten andere Völker als Eindringlinge oder Trophäen.</p>
+        </description>
+    </element>
+    <element name="Jotun" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOID_JOTUN">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Die Jotun waren einst eine stolze, hochmagische Zivilisation. Heute sind sie zersplittert, abergläubisch und roh, doch ihre uralten Runensteine erzählen von vergessenen Zeiten. Einige Jotun klammern sich an das Wissen ihrer Ahnen, andere leben als brutale Plünderer in den Bergen.</p>
+        </description>
+    </element>
+    <element name="Hylek" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_FAVORED_ENEMY_HUMANOID_HYLEK">
+        <supports>Humanoid Favored Enemy</supports>
+        <description>
+            <p>Hylek sind froschartige Sumpfbewohner mit komplexer Alchemie, schamanischen Traditionen und unabhängigen Stammeskulturen. Einige Stämme sind offen und freundlich, andere fremdenfeindlich und kriegerisch. Ihr Gift ist ebenso gefürchtet wie ihre Sprungkraft.</p>
+        </description>
+    </element>
+    <element name="Arktis (Arctic)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FT_ARCTIC">
+        <supports>Favored Terrain</supports>
+        <description>
+            <p>Du bist mit der Arktis als Umgebung besonders vertraut und verstehst es, dich in gefrorenen Ödlanden zu orientieren und zu überleben. Wenn du einen Intelligenz- oder Weisheitswurf in Bezug auf dein bevorzugtes Gelände machst und in der verwendeten Fertigkeit geübt bist, wird dein Übungsbonus verdoppelt.</p>
+            <p class="indent">Wenn du dich eine Stunde oder länger in diesem Gelände bewegst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Schwer passierbares Gelände verlangsamt die Reisegruppe nicht.</li>
+                <li>Die Gruppe kann nicht verloren gehen – außer durch Magie.</li>
+                <li>Du bleibst auch bei anderen Tätigkeiten wie Nahrungssuche oder Navigation wachsam gegenüber Gefahren.</li>
+                <li>Wenn du allein reist, kannst du dich mit normaler Geschwindigkeit unauffällig bewegen.</li>
+                <li>Bei Nahrungssuche findest du doppelt so viel Nahrung wie gewöhnlich.</li>
+                <li>Beim Verfolgen von Kreaturen erfährst du deren genaue Anzahl, Größe und wie lange ihr Durchzug her ist.</li>
+            </ul>
+        </description>
+    </element>
+    <element name="Küste (Coast)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER_COAST">
+        <supports>Favored Terrain</supports>
+        <description>
+            <p>Du bist besonders vertraut mit Küstenregionen – Felsküsten, Stränden, Marschland – und kannst dich dort ausgezeichnet bewegen und überleben. Wenn du einen Intelligenz- oder Weisheitswurf unternimmst, der sich auf dein bevorzugtes Gelände bezieht und eine Fertigkeit nutzt, in der du geübt bist, verdoppelst du deinen Übungsbonus.</p>
+            <p class="indent">Wenn du dich eine Stunde oder länger in diesem Gelände bewegst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Schwer passierbares Gelände verlangsamt die Reisegruppe nicht.</li>
+                <li>Die Gruppe kann nicht verloren gehen – außer durch Magie.</li>
+                <li>Du bleibst auch bei anderen Tätigkeiten wie Nahrungssuche oder Navigation wachsam gegenüber Gefahren.</li>
+                <li>Wenn du allein reist, kannst du dich mit normaler Geschwindigkeit unauffällig bewegen.</li>
+                <li>Bei Nahrungssuche findest du doppelt so viel Nahrung wie gewöhnlich.</li>
+                <li>Beim Verfolgen von Kreaturen erfährst du deren genaue Anzahl, Größe und wie lange ihr Durchzug her ist.</li>
+            </ul>
+        </description>
+    </element>
+    <element name="Wüste (Desert)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER_DESERT">
+        <supports>Favored Terrain</supports>
+        <description>
+            <p>Du bist besonders vertraut mit heißen, trockenen Gegenden – Sandwüsten, Felsplateaus, Salztäler – und kannst dort überleben. Die allgemeinen Regeln gelten auch hier wie bei der Arktis.</p>
+            <p class="indent">Wenn du dich eine Stunde oder länger in diesem Gelände bewegst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Schwer passierbares Gelände verlangsamt die Reisegruppe nicht.</li>
+                <li>Die Gruppe kann nicht verloren gehen – außer durch Magie.</li>
+                <li>Du bleibst auch bei anderen Tätigkeiten wie Nahrungssuche oder Navigation wachsam gegenüber Gefahren.</li>
+                <li>Wenn du allein reist, kannst du dich mit normaler Geschwindigkeit unauffällig bewegen.</li>
+                <li>Bei Nahrungssuche findest du doppelt so viel Nahrung wie gewöhnlich.</li>
+                <li>Beim Verfolgen von Kreaturen erfährst du deren genaue Anzahl, Größe und wie lange ihr Durchzug her ist.</li>
+            </ul>
+        </description>
+    </element>
+    <element name="Wald (Forest)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER_FOREST">
+        <supports>Favored Terrain</supports>
+        <description>
+            <p>Du bist vertraut mit bewaldeten Gebieten – dichten Wäldern, Dschungeln, Dickichten – und verstehst ihre Zeichen und Gefahren. Die allgemeinen Vorteile gelten wie gehabt.</p>
+            <p class="indent">Wenn du dich eine Stunde oder länger in diesem Gelände bewegst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Schwer passierbares Gelände verlangsamt die Reisegruppe nicht.</li>
+                <li>Die Gruppe kann nicht verloren gehen – außer durch Magie.</li>
+                <li>Du bleibst auch bei anderen Tätigkeiten wie Nahrungssuche oder Navigation wachsam gegenüber Gefahren.</li>
+                <li>Wenn du allein reist, kannst du dich mit normaler Geschwindigkeit unauffällig bewegen.</li>
+                <li>Bei Nahrungssuche findest du doppelt so viel Nahrung wie gewöhnlich.</li>
+                <li>Beim Verfolgen von Kreaturen erfährst du deren genaue Anzahl, Größe und wie lange ihr Durchzug her ist.</li>
+            </ul>
+        </description>
+    </element>
+    <element name="Grasland (Grassland)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER_GRASSLAND">
+        <supports>Favored Terrain</supports>
+        <description>
+            <p>Du bist vertraut mit offenen Ebenen – Steppen, Savannen, Prärien – und kannst dich dort ausgezeichnet orientieren und versorgen. Die allgemeinen Vorteile gelten.</p>
+            <p class="indent">Wenn du dich eine Stunde oder länger in diesem Gelände bewegst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Schwer passierbares Gelände verlangsamt die Reisegruppe nicht.</li>
+                <li>Die Gruppe kann nicht verloren gehen – außer durch Magie.</li>
+                <li>Du bleibst auch bei anderen Tätigkeiten wie Nahrungssuche oder Navigation wachsam gegenüber Gefahren.</li>
+                <li>Wenn du allein reist, kannst du dich mit normaler Geschwindigkeit unauffällig bewegen.</li>
+                <li>Bei Nahrungssuche findest du doppelt so viel Nahrung wie gewöhnlich.</li>
+                <li>Beim Verfolgen von Kreaturen erfährst du deren genaue Anzahl, Größe und wie lange ihr Durchzug her ist.</li>
+            </ul>
+        </description>
+    </element>
+    <element name="Gebirge (Mountain)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER_MOUNTAIN">
+        <supports>Favored Terrain</supports>
+        <description>
+            <p>Du kennst dich mit rauem, bergigem Gelände – Höhenzügen, Klippen, Gebirgspfaden – bestens aus. Du erhältst die gewohnten Vorteile wie unter Arktis beschrieben.</p>
+            <p class="indent">Wenn du dich eine Stunde oder länger in diesem Gelände bewegst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Schwer passierbares Gelände verlangsamt die Reisegruppe nicht.</li>
+                <li>Die Gruppe kann nicht verloren gehen – außer durch Magie.</li>
+                <li>Du bleibst auch bei anderen Tätigkeiten wie Nahrungssuche oder Navigation wachsam gegenüber Gefahren.</li>
+                <li>Wenn du allein reist, kannst du dich mit normaler Geschwindigkeit unauffällig bewegen.</li>
+                <li>Bei Nahrungssuche findest du doppelt so viel Nahrung wie gewöhnlich.</li>
+                <li>Beim Verfolgen von Kreaturen erfährst du deren genaue Anzahl, Größe und wie lange ihr Durchzug her ist.</li>
+            </ul>
+        </description>
+    </element>
+    <element name="Sumpf (Swamp)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER_SWAMP">
+        <supports>Favored Terrain</supports>
+        <description>
+            <p>Du bist vertraut mit moorigem Gelände – Sümpfen, Marschen, modrigen Wäldern – und weißt, wie du dort am besten vorgehst. Die üblichen Vorteile gelten auch hier.</p>
+            <p class="indent">Wenn du dich eine Stunde oder länger in diesem Gelände bewegst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Schwer passierbares Gelände verlangsamt die Reisegruppe nicht.</li>
+                <li>Die Gruppe kann nicht verloren gehen – außer durch Magie.</li>
+                <li>Du bleibst auch bei anderen Tätigkeiten wie Nahrungssuche oder Navigation wachsam gegenüber Gefahren.</li>
+                <li>Wenn du allein reist, kannst du dich mit normaler Geschwindigkeit unauffällig bewegen.</li>
+                <li>Bei Nahrungssuche findest du doppelt so viel Nahrung wie gewöhnlich.</li>
+                <li>Beim Verfolgen von Kreaturen erfährst du deren genaue Anzahl, Größe und wie lange ihr Durchzug her ist.</li>
+            </ul>
+        </description>
+    </element>
+    <element name="Tiefen (Underdark)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_NATURAL_EXPLORER_UNDERDARK">
+        <supports>Favored Terrain</supports>
+        <description>
+            <p>Du bist vertraut mit unterirdischen, finsteren Arealen – Höhlensystemen, vergessenen Tunneln, Ruinen unter der Erde. Du bewegst dich sicher, erkennst Gefahren und findest Nahrung – gemäß den Regeln wie bei anderen bevorzugten Geländetypen.</p>
+            <p class="indent">Wenn du dich eine Stunde oder länger in diesem Gelände bewegst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Schwer passierbares Gelände verlangsamt die Reisegruppe nicht.</li>
+                <li>Die Gruppe kann nicht verloren gehen – außer durch Magie.</li>
+                <li>Du bleibst auch bei anderen Tätigkeiten wie Nahrungssuche oder Navigation wachsam gegenüber Gefahren.</li>
+                <li>Wenn du allein reist, kannst du dich mit normaler Geschwindigkeit unauffällig bewegen.</li>
+                <li>Bei Nahrungssuche findest du doppelt so viel Nahrung wie gewöhnlich.</li>
+                <li>Beim Verfolgen von Kreaturen erfährst du deren genaue Anzahl, Größe und wie lange ihr Durchzug her ist.</li>
+            </ul>
+        </description>
+    </element>
+    <element name="Jäger (Hunter)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_RANGER_HUNTER">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p>Wenn du den Archetypen des Jägers wählst, akzeptierst du deine Rolle als Bollwerk zwischen der Zivilisation und den Schrecken der Wildnis. Du erlernst spezialisierte Kampftechniken, um den Gefahren zu begegnen, die du zu bekämpfen suchst – seien es marodierende Bestien, Orkbanden oder uralte Drachen.</p>
+            <div element="ID_D4T_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY"/>
+            <div element="ID_D4T_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS"/>
+            <div element="ID_D4T_ARCHETYPEFEATURE_RANGER_MULTIATTACK"/>
+            <div element="ID_D4T_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE"/>
+        </description>
+        <sheet display="false">
+            <description>Du beschreitest den Pfad des Jägers und stellst dich den Gefahren der Wildnis mit Zielstrebigkeit und List.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS" level="7"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPEFEATURE_RANGER_MULTIATTACK" level="11"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE" level="15"/>
+        </rules>
+    </element>
+    <!-- Hunter's Prey -->
+    <element name="Des Jägers Beute (Hunter’s Prey)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY">
+        <description>
+            <p>Ab Stufe 3 wählst du eine der folgenden Optionen:</p>
+            <p class="indent"><strong><em>Kolossschlächter (Colossus Slayer).</em></strong> Wenn du eine Kreatur mit einem Waffenangriff triffst, die nicht bei vollen Trefferpunkten ist, fügt dein Angriff einmal pro Runde 1W8 zusätzlichen Schaden zu.</p>
+            <p class="indent"><strong><em>Riesentöter (Giant Killer).</em></strong> Wenn eine Kreatur der Größe "groß" oder größer dich im Nahkampf angreift (trifft oder verfehlt), kannst du als Reaktion einen Angriff gegen sie ausführen, sofern du sie sehen kannst.</p>
+            <p class="indent"><strong><em>Hordenbrecher (Horde Breaker).</em></strong> Einmal pro Runde kannst du bei einem Waffenangriff einen weiteren Angriff gegen eine andere Kreatur innerhalb von 1,5 m (5 Fuß) des ursprünglichen Ziels und innerhalb deiner Reichweite durchführen.</p>
+        </description>
+        <rules>
+            <select type="Archetype Feature" name="Des Jägers Beute" supports="Hunters Prey"/>
+        </rules>
+    </element>
+    <!-- Defensive Tactics -->
+    <element name="Defensive Taktiken (Defensive Tactics)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS">
+        <description>
+            <p>Ab Stufe 7 wählst du eine der folgenden Optionen:</p>
+            <p class="indent"><strong><em>Der Horde entkommen (Escape the Horde).</em></strong> Gelegenheitsangriffe gegen dich erfolgen mit Nachteil.</p>
+            <p class="indent"><strong><em>Verteidigung gegen Mehrfachangriffe (Multiattack Defense).</em></strong> Wenn eine Kreatur dich trifft, erhältst du bis zum Ende ihres Zuges +4 auf deine Rüstungsklasse gegen weitere Angriffe dieser Kreatur.</p>
+            <p class="indent"><strong><em>Eiserner Wille (Steel Will).</em></strong> Du hast Vorteil bei Rettungswürfen gegen den Zustand "Verängstigt".</p>
+        </description>
+        <rules>
+            <select type="Archetype Feature" name="Defensive Taktiken" supports="Defensive Tactics"/>
+        </rules>
+    </element>
+    <!-- Multiattack -->
+    <element name="Mehrfachangriff (Multiattack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_MULTIATTACK">
+        <description>
+            <p>Ab Stufe 11 wählst du eine der folgenden Optionen:</p>
+            <p class="indent"><strong><em>Geschosshagel (Volley).</em></strong> Du kannst deine Aktion verwenden, um einen Fernkampfangriff auf jede Kreatur innerhalb von 3 m (10 Fuß) um einen Punkt deiner Wahl auszuführen, der innerhalb der Reichweite deiner Waffe liegt. Für jedes Ziel ist eine eigene Angriffswurf nötig.</p>
+            <p class="indent"><strong><em>Wirbelwindangriff (Whirlwind Attack).</em></strong> Du kannst deine Aktion verwenden, um alle Kreaturen im Umkreis von 1,5 m (5 Fuß) mit einem Nahkampfangriff zu treffen. Für jedes Ziel ist ein eigener Angriffswurf nötig.</p>
+        </description>
+        <rules>
+            <select type="Archetype Feature" name="Mehrfachangriff" supports="Multiattack"/>
+        </rules>
+    </element>
+    <!-- Superior Hunter's Defense -->
+    <element name="Außerordentliche Verteidigung des Jägers (Superior Hunter’s Defense)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE">
+        <description>
+            <p>Ab Stufe 15 wählst du eine der folgenden Optionen:</p>
+            <p class="indent"><strong><em>Entrinnen (Evasion).</em></strong> Bei Effekten, die einen Geschicklichkeits-Rettungswurf erlauben, um halben Schaden zu erleiden, nimmst du bei Erfolg keinen und bei Misserfolg nur halben Schaden.</p>
+            <p class="indent"><strong><em>Gegen den Strom (Stand Against the Tide).</em></strong> Wenn eine Kreatur dich im Nahkampf verfehlt, kannst du als Reaktion diese Kreatur zwingen, denselben Angriff gegen ein anderes Ziel in ihrer Reichweite zu wiederholen.</p>
+            <p class="indent"><strong><em>Unglaubliches Ausweichen (Uncanny Dodge).</em></strong> Wenn dich ein Angreifer trifft, den du sehen kannst, kannst du als Reaktion den erlittenen Schaden halbieren.</p>
+        </description>
+        <rules>
+            <select type="Archetype Feature" name="Außerordentliche Verteidigung des Jägers" supports="Superior Hunters Defense"/>
+        </rules>
+    </element>
+    <element name="Kolossschlächter (Colossus Slayer)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_COLOSSUS_SLAYER">
+        <supports>Hunters Prey</supports>
+        <description>
+            <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, die nicht bei vollen Trefferpunkten ist, fügst du ihr 1W8 zusätzlichen Schaden zu. Du kannst diesen zusätzlichen Schaden nur einmal pro Runde verursachen.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description>Füge 1W8 zusätzlichen Schaden zu, wenn das Ziel nicht bei vollen Trefferpunkten ist (nur einmal pro Runde).</description>
+        </sheet>
+    </element>
+    <element name="Riesentöter (Giant Killer)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_GIANT_KILLER">
+        <supports>Hunters Prey</supports>
+        <description>
+            <p>Wenn eine Große oder größere Kreatur innerhalb von 1,5 m dich angreift (trifft oder verfehlt), kannst du deine Reaktion nutzen, um diese Kreatur sofort danach anzugreifen, sofern du sie sehen kannst.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Reagiere mit einem Angriff, wenn eine große oder größere Kreatur dich in 1,5m angreift (trifft oder verfehlt).</description>
+        </sheet>
+    </element>
+    <element name="Hordenbrecher (Horde Breaker)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_HUNTERS_PREY_HORDE_BREAKER">
+        <supports>Hunters Prey</supports>
+        <description>
+            <p>Einmal pro Runde, wenn du mit einem Waffenangriff angreifst, kannst du einen weiteren Angriff mit derselben Waffe gegen eine andere Kreatur innerhalb von 1,5m vom ursprünglichen Ziel und in Reichweite deiner Waffe ausführen.</p>
+        </description>
+        <sheet>
+            <description>Einmal pro Runde: zusätzlicher Angriff gegen eine andere Kreatur in 1,5m Entfernung vom ursprünglichen Ziel.</description>
+        </sheet>
+    </element>
+    <element name="Der Horde entkommen (Escape the Horde)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_ESCAPE_THE_HORDE">
+        <supports>Defensive Tactics</supports>
+        <description>
+            <p>Gelegenheitsangriffe gegen dich werden mit Nachteil ausgeführt.</p>
+        </description>
+        <sheet>
+            <description>Gelegenheitsangriffe gegen dich haben Nachteil.</description>
+        </sheet>
+    </element>
+    <element name="Verteidigung gegen Mehrfachangriffe (Multiattack Defense)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_MULTIATTACK_DEFENSE">
+        <supports>Defensive Tactics</supports>
+        <description>
+            <p>Wenn dich eine Kreatur trifft, erhältst du bis zum Ende ihres Zuges +4 auf deine Rüstungsklasse gegen alle weiteren Angriffe dieser Kreatur.</p>
+        </description>
+        <sheet>
+            <description>+4 AC gegen weitere Angriffe einer Kreatur, die dich getroffen hat (für den Rest ihres Zuges).</description>
+        </sheet>
+    </element>
+    <element name="Eiserner Wille (Steel Will)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_DEFENSIVE_TACTICS_STEEL_WILL">
+        <supports>Defensive Tactics</supports>
+        <description>
+            <p>Du hast Vorteil bei Rettungswürfen gegen Furcht.</p>
+        </description>
+        <sheet>
+            <description>Vorteil bei Rettungswürfen gegen Furcht.</description>
+        </sheet>
+    </element>
+    <element name="Geschosshagel (Volley)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_MULTIATTACK_VOLLEY">
+        <supports>Multiattack</supports>
+        <description>
+            <p>Du kannst deine Aktion nutzen, um gegen jede Kreatur in einem Umkreis von 3m (10Fuß) um einen Punkt deiner Wahl innerhalb der Reichweite deiner Fernkampfwaffe einen Angriff auszuführen. Du benötigst für jedes Ziel Munition und führst für jedes Ziel einen eigenen Angriffswurf durch.</p>
+        </description>
+        <sheet action="Aktion">
+            <description>Greife alle Kreaturen in 3m Umkreis um einen Punkt an, den du innerhalb deiner Waffenreichweite sehen kannst.</description>
+        </sheet>
+    </element>
+    <element name="Wirbelwindangriff (Whirlwind Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_MULTIATTACK_WHIRLWIND_ATTACK">
+        <supports>Multiattack</supports>
+        <description>
+            <p>Du kannst deine Aktion nutzen, um einen Nahkampfangriff gegen jede Kreatur in 1,5m Reichweite auszuführen. Für jedes Ziel führst du einen separaten Angriffswurf durch.</p>
+        </description>
+        <sheet action="Aktion">
+            <description>Greife jede Kreatur in 1,5m Reichweite mit einem separaten Angriffswurf an.</description>
+        </sheet>
+    </element>
+    <element name="Entrinnen (Evasion)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_EVASION">
+        <supports>Superior Hunters Defense</supports>
+        <description>
+            <p>Wenn du einem Effekt ausgesetzt bist, der dir bei einem gelungenen Geschicklichkeitsrettungswurf halben Schaden zufügt, erleidest du stattdessen keinen Schaden bei Erfolg und nur halben Schaden bei Misserfolg.</p>
+        </description>
+        <sheet>
+            <description>Kein Schaden bei gelungenem Geschicklichkeitswurf gegen Flächenangriffe, halber Schaden bei Misserfolg.</description>
+        </sheet>
+    </element>
+    <element name="Gegen den Strom (Stand Against the Tide)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_STAND_AGAINST_THE_TIDE">
+        <supports>Superior Hunters Defense</supports>
+        <description>
+            <p>Wenn dich eine feindliche Kreatur mit einem Nahkampfangriff verfehlt, kannst du deine Reaktion nutzen, um sie denselben Angriff gegen eine andere Kreatur deiner Wahl (außer sich selbst) wiederholen zu lassen.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Nutze deine Reaktion, um einen verfehlenden Gegner seinen Angriff gegen ein anderes Ziel wiederholen zu lassen.</description>
+        </sheet>
+    </element>
+    <element name="Unglaubliches Ausweichen (Uncanny Dodge)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_SUPERIOR_HUNTERS_DEFENSE_UNCANNY_DODGE">
+        <supports>Superior Hunters Defense</supports>
+        <description>
+            <p>Wenn dich ein Angreifer trifft, den du sehen kannst, kannst du deine Reaktion nutzen, um den erlittenen Schaden zu halbieren.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Halbiere den Schaden eines Angriffs, wenn du den Angreifer sehen kannst (Reaktion).</description>
+        </sheet>
+    </element>
+    
+    <!-- Beast Master-->
+    <element name="Tiermeister (Beast Master)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_RANGER_BEAST_MASTER">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p>Der Tiermeister-Archetyp verkörpert die enge Freundschaft zwischen zivilisierten Völkern und den Bestien der Wildnis. Du und dein Tiergefährte kämpfen Seite an Seite gegen die Schrecken, die Zivilisation und Natur gleichermaßen bedrohen.</p>
+            <div element="ID_D4T_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION"/>
+            <div element="ID_D4T_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING"/>
+            <div element="ID_D4T_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY"/>
+            <div element="ID_D4T_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS"/>
+        </description>
+        <sheet display="false">
+            <description>Der Tiermeister-Archetyp verkörpert die enge Freundschaft zwischen zivilisierten Völkern und den Bestien der Wildnis.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING" level="7"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY" level="11"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS" level="15"/>
+        </rules>
+    </element>
+    <!-- Beast Master Lvl3 -->
+    <element name="Tiergefährte (Ranger’s Companion)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION">
+        <description>
+            <p>Ab Stufe 3 erhältst du einen Tiergefährten, der dich auf deinen Abenteuern begleitet. Wähle eine Bestie der Größen Tiny, Small oder Medium mit einem Herausforderungsgrad von 1/4 oder niedriger. Dein Übungsbonus wird zu Rüstungsklasse, Angriffswürfen, Schadenswürfen, sowie zu Rettungswürfen und Fertigkeiten des Tieres addiert, sofern es darin geübt ist. Die maximalen Trefferpunkte des Gefährten betragen entweder die im Werteblock angegebenen oder das Vierfache deiner Waldläuferstufe – je nachdem, welcher Wert höher ist.</p>
+            <p class="indent">Das Tier handelt auf deiner Initiative. Du kannst ihm als Bonusaktion sagen, wohin es sich bewegen soll (keine Aktion erforderlich). Um es anzugreifen, zu sprinten, sich zurückzuziehen oder zu helfen, musst du deine Aktion verwenden. Ab Stufe 5 (Extra Attacke) kannst du gleichzeitig selbst einmal angreifen. Falls du kein Kommando gibst, führt das Tier automatisch die Ausweichen-Aktion aus.</p>
+            <p class="indent">Wenn du kampfunfähig bist oder fehlst, agiert das Tier selbstständig, wobei es dich und sich selbst schützt. Reaktionen (z.B. Gelegenheitsangriffe) kann es immer selbstständig nutzen.</p>
+            <p class="indent">Wenn du dich allein mit deinem Tier durch bevorzugtes Gelände bewegst, kannst du dich mit normalem Tempo schleichen.</p>
+            <p class="indent">Wenn dein Gefährte stirbt, kannst du einen neuen Gefährten gewinnen, indem du 8 Stunden mit einer nicht feindlichen Bestie verbringst und eine magische bindung eingehst.</p>
+        </description>
+        <sheet>
+            <description>Das Tier handelt auf deiner Initiative. Du kannst ihm sagen, wohin es sich bewegen soll. Um es zum Angreifen, Sprinten, Rückzug oder Helfen zu bringen, musst du deine Aktion verwenden. Ab Stufe 5 kannst du gleichzeitig einmal selbst angreifen. Wenn du nichts sagst, weicht es aus. Wenn es stirbt, kannst du nach 8 Stunden bindung ein neues Tier auswählen.</description>
+        </sheet>
+        <rules>
+            <select type="Companion" name="Tiergefährte" supports="Beast,(Tiny||Small||Medium),(1/4||1/8||0)"/>
+            <stat name="companion:ac" value="proficiency"/>
+            <stat name="companion:attack" value="proficiency"/>
+            <stat name="companion:damage" value="proficiency"/>
+            <stat name="additional:hp:max" value="level:waldläufer"/>
+            <stat name="additional:hp:max" value="level:waldläufer"/>
+            <stat name="additional:hp:max" value="level:waldläufer"/>
+            <stat name="additional:hp:max" value="level:waldläufer"/>
+            <stat name="companion:hp:max" value="additional:hp:max" bonus="base"/>
+        </rules>
+    </element>
+    <!-- Beast Master Lvl7 -->
+    <element name="Außergewöhnliches Training (Exceptional Training)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_EXCEPTIONAL_TRAINING">
+        <description>
+            <p>Ab Stufe 7 kannst du als Bonusaktion deinem Tier befehlen, zu sprinten, sich zurückzuziehen oder zu helfen, wenn es in diesem Zug nicht angreift.</p>
+            <p class="indent">Zudem zählen seine Angriffe nun als magisch im Hinblick auf Resistenz und Immunität gegen nichtmagische Angriffe und Schaden.</p>
+        </description>
+        <sheet action="Bonusaktion">
+            <description>Wenn dein Gefährte in diesem Zug nicht angreift, kannst du ihm als Bonusaktion befehlen, zu sprinten, sich zurückzuziehen oder zu helfen. Seine Angriffe gelten nun als magisch.</description>
+        </sheet>
+    </element>
+    <!-- Beast Master Lvl11 -->
+    <element name="Tierische Wut (Bestial Fury)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_BESTIAL_FURY">
+        <description>
+            <p>Ab Stufe 11 kann dein Tiergefährte, wenn du ihm den Angriffsbefehl gibst, zwei Angriffe ausführen oder seine Mehrfachangriff-Fähigkeit einsetzen, falls es eine besitzt.</p>
+        </description>
+        <sheet>
+            <description>Wenn du deinem Gefährten den Angriffsbefehl gibst, kann es zwei Angriffe machen oder seine Fähigkeit Mehrfachangriff nutzen, falls vorhanden.</description>
+        </sheet>
+    </element>
+    <!-- Beast Master Lvl15 -->
+    <element name="Zauber teilen (Share Spells)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPEFEATURE_RANGER_SHARE_SPELLS">
+        <description>
+            <p>Ab Stufe 15 kannst du, wenn du einen Zauber auf dich selbst wirkst, auch deinen Tiergefährten davon profitieren lassen, sofern er sich innerhalb von 9m (30Fuß) befindet.</p>
+        </description>
+        <sheet>
+            <description>Du kannst deinen Gefährten in 9m Reichweite mit einem Zauber auf dich selbst mit einbeziehen.</description>
+        </sheet>
+    </element>
+</elements>
