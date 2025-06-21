@@ -11,14 +11,26 @@
 
     <html>
       <head>
-        <title><xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>1<xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
         <h1><xsl:value-of select="$data/elements/element/@name"/></h1>
+
         <div class="description">
           <xsl:copy-of select="$data/elements/element/description/node()"/>
         </div>
+
+        <!-- Zusätzliche Class Features anzeigen -->
+        <xsl:for-each select="$data/elements/element">
+          <xsl:if test="@type='Class Feature'">
+            <h2><xsl:value-of select="@name"/></h2>
+            <div class="feature-description">
+              <xsl:copy-of select="description/node()"/>
+            </div>
+          </xsl:if>
+        </xsl:for-each>
+
       </body>
     </html>
   </xsl:template>
