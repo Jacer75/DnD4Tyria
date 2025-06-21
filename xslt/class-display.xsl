@@ -11,7 +11,7 @@
 
     <html>
       <head>
-        <title>6 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>7 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -32,6 +32,26 @@
               <xsl:copy-of select="description/node()"/>
             </div>
           </xsl:if>
+        </xsl:for-each>
+
+              <!-- Archetypen anzeigen mit einklappbaren Archetype Features -->
+        <xsl:for-each select="$data/elements/element[@type='Archetype']">
+          <h2><xsl:value-of select="@name"/></h2>
+          <div class="archetype-description">
+            <xsl:copy-of select="description/node()"/>
+          </div>
+
+          <!-- Zugehörige Archetype Features -->
+          <xsl:for-each select="$data/elements/element[@type='Archetype Feature']">
+            <xsl:if test="@source = current()/@source and contains(description, current()/@name)">
+              <details>
+                <summary><xsl:value-of select="@name"/></summary>
+                <div class="feature-description">
+                  <xsl:copy-of select="description/node()"/>
+                </div>
+              </details>
+            </xsl:if>
+          </xsl:for-each>
         </xsl:for-each>
 
       </body>
