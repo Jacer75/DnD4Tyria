@@ -12,7 +12,7 @@
 
     <html>
       <head>
-        <title>18 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>19 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -71,11 +71,16 @@
           </xsl:for-each>
         </xsl:for-each>
 
+        <xsl:variable name="spellcasting" select="$data//spellcasting"/>
+        <xsl:variable name="baseList" select="substring-before($spellcasting/list, ',')"/>
+
         <h1><xsl:value-of select="$labels/global/label[@id='class.spells']"/></h1>
         
         <xsl:for-each select="$labels/global/spell-levels/level">
           <xsl:variable name="lvl" select="."/>
-          <xsl:variable name="spells" select="$data/elements/element[@type='Spell' and contains(supports, $data/elements/element/@name) and setters/set[@name='level'] = $lvl]"/>
+          <xsl:variable name="spells" select="$data/elements/element[@type='Spell' and contains(supports, $baseList) and setters/set[@name='level'] = $lvl and (
+            not($spellcasting/schools) or 
+            $spellcasting/schools/school = setters/set[@name='school'])]"/>
           <xsl:if test="count($spells) &gt; 0">
             <h2><xsl:value-of select="@label"/></h2>
             <xsl:for-each select="$spells">
