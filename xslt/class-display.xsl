@@ -13,7 +13,7 @@
 
     <html>
       <head>
-        <title>31 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title><xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
