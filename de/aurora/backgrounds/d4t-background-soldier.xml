@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Soldat (Soldier)</name>
+		<description>Hintergrund: Soldat (Soldier)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.5">
+			<file name="d4t-background-soldier.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Soldat (Soldier)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_SOLDIER">
+		<description>
+			<p>Krieg bestimmt dein Leben, so weit du zurückdenken kannst. Schon in jungen Jahren hast du gelernt, mit Waffen und Rüstung umzugehen, zu überleben – und auf dem Schlachtfeld zu bestehen. Vielleicht warst du Teil einer Armee, einer Miliz oder einer Söldnertruppe.</p>
+			<p class="indent">Sprich mit deinem Spielleiter darüber, welchem militärischen Verband du angehört hast, welchen Rang du erreicht hast und welche Erfahrungen du gesammelt hast. War es eine stehende Armee? Die Stadtwache? Oder der Trupp eines reichen Händlers?</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Athletik, Einschüchtern</li>
+				<li><strong>Werkzeugkompetenzen:</strong> Ein Glücksspiel deiner Wahl, Fahrzeuge (Land)</li>
+				<li><strong>Ausrüstung:</strong> Rangabzeichen, Trophäe eines gefallenen Feindes (z. B. Dolch, zerbrochene Klinge oder Bannerstück), ein Kartenset oder Würfel, gewöhnliche Kleidung, Geldbeutel mit 10 GM</li>
+			</ul>
+			<h5>SPEZIALISIERUNG</h5>
+			<p>Während deiner Dienstzeit hattest du eine bestimmte Rolle. Würfle einen W8 oder wähle eine Option:</p>
+			<table>
+				<thead>
+					<tr><td class="col-10">W8</td><td>Rolle</td></tr>
+				</thead>
+				<tr><td>1</td><td>Offizier</td></tr>
+				<tr><td>2</td><td>Späher</td></tr>
+				<tr><td>3</td><td>Infanterist</td></tr>
+				<tr><td>4</td><td>Kavallerist</td></tr>
+				<tr><td>5</td><td>Sanitäter</td></tr>
+				<tr><td>6</td><td>Versorgungsmeister</td></tr>
+				<tr><td>7</td><td>Bannerträger</td></tr>
+				<tr><td>8</td><td>Unterstützung (z. B. Koch, Schmied)</td></tr>
+			</table>
+			<div element="ID_D4T_BACKGROUND_FEATURE_MILITARY_RANK" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Der Schrecken des Krieges und der Drill der Armee prägen jeden Soldaten – formen Ideale, schaffen Bande, hinterlassen aber oft auch Narben, Angst oder Wut.</p>
+		</description>
+		<setters>
+			<set name="short">Athletik, Einschüchtern, Glücksspiel, Fahrzeuge (Land)</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<!--<select type="Proficiency" name="Glücksspiel (Soldat)" supports="Gaming Set" />-->
+            <select type="Background Feature" name="Glücksspiel (Soldat)" supports="Tyrian Gaming Sets"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_MILITARY_RANK" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variantes Merkmal" supports="Optional Background Feature" optional="true" />
+			<select name="Spezialisierung" type="List" optional="true">
+				<item id="1">Offizier</item>
+				<item id="2">Späher</item>
+				<item id="3">Infanterist</item>
+				<item id="4">Kavallerist</item>
+				<item id="5">Sanitäter</item>
+				<item id="6">Versorgungsmeister</item>
+				<item id="7">Bannerträger</item>
+				<item id="8">Unterstützung (z. B. Koch, Schmied)</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich bin stets höflich und respektvoll.</item>
+				<item id="2">Kriegsbilder verfolgen mich – ich kann sie nicht vergessen.</item>
+				<item id="3">Ich habe zu viele Freunde verloren – neue Kontakte fallen mir schwer.</item>
+				<item id="4">Ich habe zu jeder Kampfsituation eine passende Geschichte.</item>
+				<item id="5">Ich starre selbst einem Höllenhund furchtlos ins Gesicht.</item>
+				<item id="6">Ich genieße meine Stärke – und das Zerstören.</item>
+				<item id="7">Ich habe einen derben Humor.</item>
+				<item id="8">Ich gehe Probleme direkt an – einfache Lösungen sind oft die besten.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Höheres Wohl. Unser Los ist es, andere zu verteidigen. (Gut)</item>
+				<item id="2">Pflichtbewusstsein. Ich tue, was nötig ist, und folge rechtmäßiger Autorität. (Rechtschaffen)</item>
+				<item id="3">Unabhängigkeit. Wer blind gehorcht, lebt in Tyrannei. (Chaotisch)</item>
+				<item id="4">Macht. Der Stärkere gewinnt – im Krieg wie im Leben. (Böse)</item>
+				<item id="5">Leben und leben lassen. Für Ideale zu sterben ist sinnlos. (Neutral)</item>
+				<item id="6">Nation. Meine Heimat ist alles, was zählt. (Beliebig)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Ich würde für meine Kameraden noch immer mein Leben geben.</item>
+				<item id="2">Jemand rettete mir einst das Leben – ich lasse nie wieder jemanden zurück.</item>
+				<item id="3">Meine Ehre ist mein Leben.</item>
+				<item id="4">Ich vergesse nie unsere vernichtende Niederlage – noch die, die sie uns zufügten.</item>
+				<item id="5">Wer an meiner Seite kämpft, ist es wert, für ihn zu sterben.</item>
+				<item id="6">Ich kämpfe für die, die sich nicht selbst verteidigen können.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Der Feind aus der Schlacht jagt mir noch heute Angst ein.</item>
+				<item id="2">Ich verachte jeden, der kein echter Kämpfer ist.</item>
+				<item id="3">Ich beging einen folgenschweren Fehler – und will ihn um jeden Preis vertuschen.</item>
+				<item id="4">Mein Hass auf den Feind ist blind und unvernünftig.</item>
+				<item id="5">Ich befolge Gesetze – selbst wenn sie Leid verursachen.</item>
+				<item id="6">Lieber esse ich meine Rüstung, als einen Fehler zuzugeben.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Militärischer Rang (Military Rank)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_MILITARY_RANK">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Du trägst den militärischen Rang deiner Laufbahn. Soldaten deiner ehemaligen Truppe erkennen dich daran und zeigen dir den entsprechenden Respekt. Du kannst dich auf deinen Rang berufen, um einfachen Zugang zu Ausrüstung, Reittieren oder Militärlagern zu erhalten, sofern dein Rang anerkannt wird.</p>
+		</description>
+		<sheet alt="Militärischer Rang (Military Rank)" />
+	</element>
+    <!--<element name="Würfelset (Dice Set)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_SOLDIER_DICE_SET">
+        <supports>Tyrian Gaming Sets</supports>
+        <description>
+            <p>Du kennst dich mit tyrianischen Würfelspielen aus – z.B. „Löwengold und Schädel“, aber auch anderen Tavernenklassikern, die auf Glück, Bluff und Dreistigkeit setzen.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET"/>
+        </rules>
+    </element>
+    <element name="Sandsturm-Karten (Playing Card Set)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_SOLDIER_SANDSTORM">
+        <supports>Tyrian Gaming Sets</supports>
+        <description>
+            <p>Du bist vertraut mit tyrianischen Kartenspielen – wie der elonischen Sammelkartenreihe „Sandsturm“, aber auch mit einfacheren oder zwielichtigeren Varianten, die gern um Münzen gespielt werden.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET"/>
+        </rules>
+    </element>
+    <element name="Drachen-Schach (Dragonchess Set)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_SOLDIER_DRAGONCHESS">
+        <supports>Tyrian Gaming Sets</supports>
+        <description>
+            <p>Du kennst strategische Brettspiele wie Polymock oder Golemschach – Spiele, die kluges Planen, Voraussicht und ein wenig Täuschung erfordern.</p>
+        </description>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET"/>
+        </rules>
+    </element>-->
+    
+</elements>

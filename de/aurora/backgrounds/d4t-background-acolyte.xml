@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Akolyth (Acolyte)</name>
+		<description>Hintergrund: Akolyth (Acolyte)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.5">
+			<file name="d4t-background-akolyth.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Akolyth (Acolyte)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_ACOLYTE">
+		<description>
+			<p>Du hast dein Leben im Dienst eines Tempels zu einer bestimmten Gottheit oder einem Pantheon von Göttern verbracht. Du fungierst als Mittler zwischen der heiligen Sphäre und der sterblichen Welt, führst heilige Riten durch und bringst Opfergaben dar, um Gläubige in die Gegenwart des Göttlichen zu geleiten. Du bist nicht zwingend ein Kleriker – heilige Riten auszuführen ist nicht dasselbe wie göttliche Macht zu kanalisieren.</p>
+			<p class="indent">Wähle eine Gottheit, ein Pantheon oder eine andere quasigöttliche Entität, und arbeite mit deinem Spielleiter aus, wie dein religiöser Dienst aussah. Warst du ein einfacher Tempeldiener, der von Kindheit an ausgebildet wurde, um die Priester bei den Ritualen zu unterstützen? Oder warst du ein Hohepriester, der plötzlich einen Ruf erhielt, seiner Gottheit auf andere Weise zu dienen? Vielleicht warst du Anführer eines kleinen Kultes außerhalb der offiziellen Tempelstruktur – oder Teil einer finsteren Sekte, die einem höllischen Meister diente, dem du nun abgeschworen hast.</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Motiv erkennen, Religion</li>
+				<li><strong>Sprachen:</strong> Zwei deiner Wahl</li>
+				<li><strong>Ausrüstung:</strong> Ein heiliges Symbol (ein Geschenk zur Aufnahme in den Dienst), ein Gebetsbuch oder ein Gebetsrad, 5 Räucherstäbchen, zeremonielle Gewänder, ein Satz gewöhnlicher Kleidung und ein Geldbeutel mit 15 GM</li>
+			</ul>
+			<div element="ID_D4T_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Akolythen werden von ihren Erfahrungen in Tempeln oder religiösen Gemeinschaften geprägt. Ihr Studium der Geschichte und Lehren ihres Glaubens sowie ihre Beziehung zu Heiligtümern oder Hierarchien beeinflussen ihre Ideale, Bonden und Schwächen. Ihre Flaw könnten in versteckter Heuchelei oder Ketzerei bestehen – oder in einem Ideal, das sie bis zum Äußersten treiben.</p>
+		</description>
+		<setters>
+			<set name="short">Motiv erkennen, Religion, 2 Sprachen</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<select type="Language" name="Sprache (Akolyth)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variantes Merkmal" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Personality Trait" number="2">
+				<item id="1">Ich verehre einen bestimmten Helden meines Glaubens und beziehe mich ständig auf dessen Taten und Vorbild.</item>
+				<item id="2">Ich finde selbst zwischen erbitterten Feinden Gemeinsamkeiten, empfinde Mitgefühl und strebe stets Frieden an.</item>
+				<item id="3">Ich sehe in jedem Ereignis ein Zeichen. Die Götter sprechen zu uns – wir müssen nur zuhören.</item>
+				<item id="4">Nichts kann meinen Optimismus erschüttern.</item>
+				<item id="5">Ich zitiere (oder verfälsche) heilige Texte in fast jeder Situation.</item>
+				<item id="6">Ich bin tolerant (oder intolerant) gegenüber anderen Glaubensrichtungen und respektiere (oder verachte) deren Götterverehrung.</item>
+				<item id="7">Ich habe einst feines Essen, edle Getränke und die gehobene Gesellschaft unter den Tempeloberen genossen. Raue Lebensumstände sind mir zuwider.</item>
+				<item id="8">Ich habe so lange im Tempel gelebt, dass ich kaum praktische Erfahrung im Umgang mit Außenstehenden habe.</item>
+			</select>
+			<select type="List" name="Ideal">
+				<item id="1">Tradition. Die alten Riten und Opfergaben müssen bewahrt und eingehalten werden. (Rechtschaffen)</item>
+				<item id="2">Wohltätigkeit. Ich helfe stets denen in Not – koste es, was es wolle. (Gut)</item>
+				<item id="3">Wandel. Wir müssen helfen, die Veränderungen zu vollziehen, die die Götter in der Welt bewirken. (Chaotisch)</item>
+				<item id="4">Macht. Ich hoffe, eines Tages an die Spitze der religiösen Hierarchie zu gelangen. (Rechtschaffen)</item>
+				<item id="5">Glaube. Ich vertraue darauf, dass meine Gottheit meine Handlungen lenkt. Wenn ich hart arbeite, wird alles gut. (Rechtschaffen)</item>
+				<item id="6">Streben. Ich will mich würdig erweisen, indem ich mein Handeln mit den Lehren meiner Gottheit messe. (Beliebig)</item>
+			</select>
+			<select type="List" name="Bond">
+				<item id="1">Ich würde mein Leben geben, um ein altes Relikt meines Glaubens zurückzuerlangen.</item>
+				<item id="2">Eines Tages werde ich mich an der korrupten Tempelhierarchie rächen, die mich als Ketzer brandmarkte.</item>
+				<item id="3">Ich verdanke dem Priester, der mich nach dem Tod meiner Eltern aufnahm, mein Leben.</item>
+				<item id="4">Alles, was ich tue, geschieht für das einfache Volk.</item>
+				<item id="5">Ich würde alles tun, um den Tempel zu schützen, dem ich einst diente.</item>
+				<item id="6">Ich will einen heiligen Text bewahren, den meine Feinde für ketzerisch halten und vernichten wollen.</item>
+			</select>
+			<select type="List" name="Flaw">
+				<item id="1">Ich urteile hart über andere – und noch härter über mich selbst.</item>
+				<item id="2">Ich vertraue den Autoritäten innerhalb meines Tempels zu sehr.</item>
+				<item id="3">Meine Frömmigkeit bringt mich manchmal dazu, jedem zu vertrauen, der meinen Glauben teilt.</item>
+				<item id="4">Ich bin in meinem Denken unflexibel.</item>
+				<item id="5">Ich bin misstrauisch gegenüber Fremden und rechne stets mit dem Schlimmsten.</item>
+				<item id="6">Sobald ich ein Ziel gefasst habe, verfolge ich es obsessiv und vernachlässige alles andere.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Schutz der Gläubigen" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_SHELTER_OF_THE_FAITHFUL">
+		<supports>Background Feature</supports>
+		<description>
+			<p>(Shelter of the Faithful) Als Akolyth genießt du den Respekt der Anhänger deines Glaubens und kannst die religiösen Zeremonien deiner Gottheit durchführen. Du und deine Gefährten erhalten kostenlose Heilung und Pflege in Tempeln, Schreinen oder anderen Einrichtungen deines Glaubens – allerdings musst du alle für Zauber erforderlichen Materialien selbst bereitstellen. Glaubensbrüder gewähren dir (aber nur dir) außerdem einen Lebensstil auf bescheidenem Niveau.</p>
+			<p class="indent">Du hast womöglich auch eine VerBond zu einem bestimmten Tempel deines Glaubens und besitzt dort eine Unterkunft. Vielleicht ist es der Tempel, dem du früher gedient hast – oder ein neues geistliches Zuhause. In der Nähe deines Tempels kannst du die ansässigen Priester um Hilfe bitten, sofern diese Hilfe nicht gefährlich ist und du in gutem Ansehen stehst.</p>
+		</description>
+		<sheet alt="Schutz der Gläubigen" />
+	</element>
+</elements>

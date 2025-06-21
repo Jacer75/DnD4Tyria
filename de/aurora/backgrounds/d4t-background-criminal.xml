@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Verbrecher (Criminal)</name>
+        <description>Hintergrund: Verbrecher (Criminal)</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="0.0.7">
+            <file name="d4t-background-criminal.xml" url=""/>
+        </update>
+    </info>
+    <element name="Verbrecher (Criminal)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_CRIMINAL">
+        <description>
+            <p>Du bist ein erfahrener Gesetzesbrecher mit einer Vergangenheit voller Diebstahl, Täuschung und Gewalt. Du hast viel Zeit unter anderen Kriminellen verbracht und pflegst noch immer Kontakte zur Unterwelt. Du bist der düsteren Seite der Zivilisation näher als die meisten – und hast überlebt, indem du Regeln und Gesetze stets umgangen hast.</p>
+            <ul class="unstyled">
+                <li>
+                    <strong>Fertigkeiten:</strong> Täuschung, Heimlichkeit</li>
+                <li>
+                    <strong>Werkzeugkompetenzen:</strong> Ein Spielset deiner Wahl, Diebeswerkzeug</li>
+                <li>
+                    <strong>Ausrüstung:</strong> Ein Brecheisen, ein Satz dunkler Alltagskleidung mit Kapuze und ein Geldbeutel mit 15 GM</li>
+            </ul>
+            <h5>KRIMINELLE SPEZIALITÄT</h5>
+            <p>Es gibt viele Arten von Verbrechern, und innerhalb einer Diebesgilde oder Bande hat jedes Mitglied seine Spezialität. Selbst Einzelgänger bevorzugen meist bestimmte Verbrechen. Wähle deine Rolle – oder würfle mit 1W8:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <td class="col-20">W8</td>
+                        <td>Spezialität</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>Erpresser</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Einbrecher</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Schläger</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Hehler</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Wegelagerer</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Kopfgeldjäger</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Taschendieb</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Schmuggler</td>
+                </tr>
+            </table>
+            <div element="ID_D4T_BACKGROUND_FEATURE_CRIMINAL_CONTACT"/>
+            <h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+            <p>Verbrecher mögen auf den ersten Blick wie Schurken wirken – und viele sind es. Doch manche besitzen charmante oder sogar ehrenhafte Seiten. Unter Dieben mag es so etwas wie Ehre geben, doch Respekt gegenüber dem Gesetz ist selten.</p>
+            <div element="ID_D4T_BACKGROUND_VARIANT_CRIMINAL_SPY"/>
+        </description>
+        <setters>
+            <set name="short">Täuschung, Heimlichkeit, Spielset, Diebeswerkzeug</set>
+        </setters>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH"/>
+            <select type="Background Feature" name="Spielset (Verbrecher)" supports="Tyrian Gaming Sets"/>
+            <!--<select type="Proficiency" name="Spielset (Verbrecher)" supports="Gaming Set" />-->
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
+            <!--<grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_POLYMOCK" />-->
+            <grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_CRIMINAL_CONTACT" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+            <select type="Background Variant" name="Variante Verbrecher" supports="Variant Criminal" optional="true"/>
+            <select type="Background Feature" name="Variantes Merkmal" supports="Optional Background Feature" optional="true"/>
+            <select type="List" name="Kriminelle Spezialität" optional="true">
+                <item id="1">Erpresser</item>
+                <item id="2">Einbrecher</item>
+                <item id="3">Schläger</item>
+                <item id="4">Hehler</item>
+                <item id="5">Wegelagerer</item>
+                <item id="6">Kopfgeldjäger</item>
+                <item id="7">Taschendieb</item>
+                <item id="8">Schmuggler</item>
+            </select>
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">Ich habe immer einen Plan für den Fall, dass etwas schiefläuft.</item>
+                <item id="2">Ich bleibe immer ruhig – egal, was passiert. Ich verliere nie die Fassung.</item>
+                <item id="3">An neuen Orten merke ich mir zuerst, wo es Wertvolles gibt – oder geben könnte.</item>
+                <item id="4">Ich mache lieber einen neuen Freund als einen neuen Feind.</item>
+                <item id="5">Ich vertraue nur sehr langsam. Die nettesten Gesichter verbergen oft das meiste.</item>
+                <item id="6">Risiken ignoriere ich grundsätzlich. Sag mir bloß nicht die Chancen.</item>
+                <item id="7">Der beste Weg, mich zu motivieren, ist mir zu sagen, dass ich etwas nicht schaffen werde.</item>
+                <item id="8">Ich explodiere bei der kleinsten Beleidigung.</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">Ehre. Ich bestehle keine anderen aus dem Gewerbe. (Rechtschaffen)</item>
+                <item id="2">Freiheit. Ketten sind dazu da, gesprengt zu werden – wie jene, die sie schmieden. (Chaotisch)</item>
+                <item id="3">Wohltätigkeit. Ich bestehle Reiche, um Bedürftigen zu helfen. (Gut)</item>
+                <item id="4">Gier. Ich tue alles, um reich zu werden. (Böse)</item>
+                <item id="5">Menschen. Ich bin loyal zu meinen Freunden – Ideale sind mir egal. (Neutral)</item>
+                <item id="6">Erlösung. In jedem steckt ein Funke Gutes. (Gut)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">Ich versuche, eine alte Schuld gegenüber einem großzügigen Gönner zu begleichen.</item>
+                <item id="2">Meine Beute unterstützt meine Familie.</item>
+                <item id="3">Man hat mir etwas Wichtiges gestohlen – ich hole es mir zurück.</item>
+                <item id="4">Ich werde der größte Dieb aller Zeiten.</item>
+                <item id="5">Ich bin schuldig an einem schrecklichen Verbrechen – ich hoffe auf Erlösung.</item>
+                <item id="6">Ein geliebter Mensch starb durch meinen Fehler. Das darf nie wieder passieren.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">Wenn ich etwas Wertvolles sehe, will ich nur noch wissen, wie ich es stehlen kann.</item>
+                <item id="2">Geld geht mir vor Freundschaft – meistens.</item>
+                <item id="3">Ich vergesse jeden Plan – und wenn nicht, ignoriere ich ihn.</item>
+                <item id="4">Ich habe eine Geste, die mich beim Lügen verrät.</item>
+                <item id="5">Wenn’s brenzlig wird, renne ich weg.</item>
+                <item id="6">Jemand sitzt für meine Tat im Gefängnis – und das stört mich nicht.</item>
+            </select>
+        </rules>
+    </element>
+    <element name="Merkmal: Kontakt zur Unterwelt (Criminal Contact)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_CRIMINAL_CONTACT">
+        <supports>Background Feature</supports>
+        <description>
+            <p>Du hast einen verlässlichen Kontakt zur kriminellen Unterwelt, der dir hilft, Nachrichten zu verbreiten und Informationen zu beschaffen – auch über weite Entfernungen. Du kennst die örtlichen Boten, bestechlichen Karawanenführer und zwielichtigen Seeleute, die dir dabei helfen.</p>
+        </description>
+        <sheet alt="Kontakt zur Unterwelt (Criminal Contact)">
+            <description>Du hast einen verlässlichen Kontakt zur kriminellen Unterwelt, der dir hilft, Nachrichten zu verbreiten und Informationen zu beschaffen – auch über weite Entfernungen. Du kennst die örtlichen Boten, bestechlichen Karawanenführer und zwielichtigen Seeleute, die dir dabei helfen.</description>
+        </sheet>
+    </element>
+    <element name="Variante Verbrecher: Spion (Spy)" type="Background Variant" source="DnD4Tyria" id="ID_D4T_BACKGROUND_VARIANT_CRIMINAL_SPY">
+        <supports>Variant Criminal</supports>
+        <description>
+            <p>Auch wenn du dieselben Fähigkeiten besitzt wie ein Einbrecher oder Schmuggler, hast du sie in einem anderen Kontext gelernt: als Spion. Vielleicht warst du ein Agent der Krone – oder hast deine Informationen dem meistbietenden verkauft.</p>
+        </description>
+        <sheet alt="Spion (Spy)"/>
+    </element>
+</elements>

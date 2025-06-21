@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Sonderling (Outlander)</name>
+		<description>Hintergrund: Sonderling (Outlander)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.6">
+			<file name="d4t-background-outlander.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Sonderling (Outlander)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_OUTLANDER">
+		<description>
+			<p>Du hast fernab von Städten und Zivilisation gelebt – als Jäger, Späher, Nomade oder Ausgestoßener. Du kennst dich in der Wildnis aus, weißt, wie man dort überlebt, und hast eine besondere Verbindung zur Natur.</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Athletik, Überlebenskunst</li>
+				<li><strong>Werkzeugkompetenz:</strong> Ein Musikinstrument deiner Wahl</li>
+				<li><strong>Sprachen:</strong> Eine deiner Wahl</li>
+				<li><strong>Ausrüstung:</strong> Ein Wanderstab, ein Jagdmesser, ein Trophäenstück eines erlegten Tiers, ein Satz Reisekleidung und ein Beutel mit 10 GM</li>
+			</ul>
+			<h5>HERKUNFT</h5>
+			<p>Was ist dein Hintergrund als Sonderling? Wähle mit W10 oder entscheide dich für eine Option:</p>
+			<table>
+				<thead>
+					<tr><td>W10</td><td>Herkunft</td></tr>
+				</thead>
+				<tr><td>1</td><td>Waldläufer: Du durchstreifst Wälder und Täler auf der Jagd.</td></tr>
+				<tr><td>2</td><td>Trapper: Du lebst vom Fellen, Fleisch und Handel.</td></tr>
+				<tr><td>3</td><td>Nomade: Du ziehst mit deinem Volk durch offene Weiten.</td></tr>
+				<tr><td>4</td><td>Ausgestoßener: Die Zivilisation hat dich verbannt.</td></tr>
+				<tr><td>5</td><td>Jäger uralter Kreaturen: Du jagst Ungeheuer, um das Gleichgewicht zu wahren.</td></tr>
+				<tr><td>6</td><td>Pfadfinder eines Grenzland-Clans oder -Stamms.</td></tr>
+				<tr><td>7</td><td>Wildnisgelehrter: Du studierst Flora und Fauna.</td></tr>
+				<tr><td>8</td><td>Überlebenskünstler: Du trotzt den härtesten Regionen der Welt.</td></tr>
+				<tr><td>9</td><td>Bewahrer eines heiligen Ortes in der Wildnis.</td></tr>
+				<tr><td>10</td><td>Fährtenleser und Führer für andere.</td></tr>
+			</table>
+			<div element="ID_D4T_BACKGROUND_FEATURE_WANDERER" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Sonderlinge sind unabhängig, stolz und geprägt von der Wildnis. Ihre Lebensweise wirkt auf Städter oft roh – doch sie verfügen über Überlebenswillen, den andere beneiden.</p>
+		</description>
+		<setters>
+			<set name="short">Athletik, Überlebenskunst, Instrument, Sprache</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <select type="Background Feature" name="Musikinstrument (Sonderling)" supports="Tyrian Musical Instruments" />
+			<!--<select type="Proficiency" name="Musikinstrument (Sonderling)" supports="Musical Instrument" />-->
+			<select type="Language" name="Language (Outlander)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_WANDERER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Herkunft" type="List" optional="true">
+				<item id="1">Waldläufer: Du durchstreifst Wälder und Täler auf der Jagd.</item>
+				<item id="2">Trapper: Du lebst vom Fellen, Fleisch und Handel.</item>
+				<item id="3">Nomade: Du ziehst mit deinem Volk durch offene Weiten.</item>
+				<item id="4">Ausgestoßener: Die Zivilisation hat dich verbannt.</item>
+				<item id="5">Jäger uralter Kreaturen: Du jagst Ungeheuer, um das Gleichgewicht zu wahren.</item>
+				<item id="6">Pfadfinder eines Grenzland-Clans oder -Stamms.</item>
+				<item id="7">Wildnisgelehrter: Du studierst Flora und Fauna.</item>
+				<item id="8">Überlebenskünstler: Du trotzt den härtesten Regionen der Welt.</item>
+				<item id="9">Bewahrer eines heiligen Ortes in der Wildnis.</item>
+				<item id="10">Fährtenleser und Führer für andere.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich bin wild entschlossen, überall zu überleben.</item>
+				<item id="2">Ich fühle mich in der Wildnis wohler als unter Menschen.</item>
+				<item id="3">Ich beobachte lieber, bevor ich spreche oder handle.</item>
+				<item id="4">Ich habe Geschichten von fremden Ländern oder Bestien gesammelt.</item>
+				<item id="5">Ich bin direkt und sage, was ich denke – ohne Umschweife.</item>
+				<item id="6">Ich verachte Schwäche, egal ob körperlich oder geistig.</item>
+				<item id="7">Ich habe ein Lied oder Sprichwort für jede Situation.</item>
+				<item id="8">Ich misstraue Fremden grundsätzlich.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Verantwortung. Ich schütze jene, die es nicht selbst können. (Gut)</item>
+				<item id="2">Selbstbestimmung. Niemand sagt mir, wie ich zu leben habe. (Chaotisch)</item>
+				<item id="3">Ehre. Ich halte mein Wort, komme was wolle. (Rechtschaffen)</item>
+				<item id="4">Natur. Die Ordnung der Wildnis ist der wahren Ordnung näher. (Neutral)</item>
+				<item id="5">Überleben. Alles ist erlaubt, um zu überleben. (Böse)</item>
+				<item id="6">Entdeckung. Ich will die Geheimnisse der Welt ergründen. (Beliebig)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Meine Familie wurde getötet – ich lebe für Rache.</item>
+				<item id="2">Ich schulde meinem Mentor alles.</item>
+				<item id="3">Ich bewache einen Ort, den nur wenige kennen.</item>
+				<item id="4">Ich verlor etwas Wichtiges und suche es unermüdlich.</item>
+				<item id="5">Ich schütze meine alte Heimat oder meinen Stamm.</item>
+				<item id="6">Ein mystischer Traum treibt mich an.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Ich verabscheue Städte und meide sie, wo ich kann.</item>
+				<item id="2">Ich unterschätze die Tücken der Zivilisation.</item>
+				<item id="3">Ich bin grob, unhöflich und stolz darauf.</item>
+				<item id="4">Ich setze Gewalt oft voreilig ein.</item>
+				<item id="5">Ich fürchte, dass ich mich in der Gesellschaft verliere.</item>
+				<item id="6">Ich traue niemandem außer mir selbst.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Wanderer (Wanderer)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_WANDERER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Du hast ein außergewöhnliches Gedächtnis für Karten und Geographie und kannst dich in der Wildnis nahezu immer orientieren. Du kannst mühelos Nahrung und Wasser für dich und bis zu fünf andere pro Tag finden, sofern die Umgebung dies zulässt.</p>
+		</description>
+		<sheet alt="Wanderer (Wanderer)" />
+	</element>
+</elements>

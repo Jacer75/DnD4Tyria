@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Einsiedler (Hermit)</name>
+		<description>Hintergrund: Einsiedler (Hermit)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.6">
+			<file name="d4t-background-hermit.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Einsiedler (Hermit)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_HERMIT">
+		<description>
+			<p>Du hast eine prägende Zeit deines Lebens in Abgeschiedenheit verbracht – sei es in einem abgeschirmten Kloster oder völlig allein. In dieser Stille hast du Erkenntnisse gewonnen, nach denen du gesucht hast – oder solche, die dich gefunden haben.</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Heilkunde, Religion</li>
+				<li><strong>Werkzeugkompetenz:</strong> Kräuterkunde-Set</li>
+				<li><strong>Sprachen:</strong> Eine deiner Wahl</li>
+				<li><strong>Ausrüstung:</strong> Eine Schriftrollenhülse voller Notizen oder Gebete, eine Winterdecke, gewöhnliche Kleidung, ein Kräuterkunde-Set und 5 GM</li>
+			</ul>
+			<h5>LEBEN IN DER EINSAMKEIT</h5>
+			<p>Warum hast du dich isoliert, und was veranlasste dich, dein Schweigen zu brechen? Wähle mit W8 oder entscheide dich für einen Grund:</p>
+			<table>
+				<thead>
+					<tr><td>W8</td><td>Grund für die Einsamkeit</td></tr>
+				</thead>
+				<tr><td>1</td><td>Ich suchte spirituelle Erleuchtung.</td></tr>
+				<tr><td>2</td><td>Ich lebte in einer klösterlichen Gemeinschaft.</td></tr>
+				<tr><td>3</td><td>Ich wurde zu Unrecht verbannt.</td></tr>
+				<tr><td>4</td><td>Ein lebensveränderndes Ereignis ließ mich den Rückzug suchen.</td></tr>
+				<tr><td>5</td><td>Ich arbeitete in Ruhe an Kunst, Musik oder Literatur.</td></tr>
+				<tr><td>6</td><td>Ich wollte fernab der Zivilisation mit der Natur eins werden.</td></tr>
+				<tr><td>7</td><td>Ich bewachte eine uralte Ruine oder ein Relikt.</td></tr>
+				<tr><td>8</td><td>Ich war Pilger auf der Suche nach etwas Heiligem.</td></tr>
+			</table>
+			<div element="ID_D4T_BACKGROUND_FEATURE_DISCOVERY" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Einsiedler sind geprägt durch ihr Leben in Zurückgezogenheit. Manche finden Frieden in der Stille – andere verlieren sich darin. Viele werden durch die Einsamkeit eigenbrötlerisch oder sogar ein wenig verrückt.</p>
+			<h5>ANDERE EINSIEDLER</h5>
+			<p>Dieser Hintergrund geht von einem besinnlichen Leben aus, das Raum für Studium lässt. Wenn du lieber einen wilden Waldläufer spielen willst, schau dir den Hintergrund Ausgestoßener an. Oder du warst ein Betrüger, der nur vorgab, ein heiliger Mann zu sein.</p>
+		</description>
+		<setters>
+			<set name="short">Heilkunde, Religion, Kräuterkunde-Set, Sprache</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT" />
+			<select type="Language" name="Language (Hermit)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_DISCOVERY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Life of Seclusion" type="List" optional="true">
+				<item id="1">Ich suchte spirituelle Erleuchtung.</item>
+				<item id="2">Ich lebte gemeinschaftlich nach religiösen Geboten.</item>
+				<item id="3">Ich wurde zu Unrecht verbannt.</item>
+				<item id="4">Ein traumatisches Ereignis ließ mich fliehen.</item>
+				<item id="5">Ich brauchte Ruhe für meine Kunst oder Gedankenwelt.</item>
+				<item id="6">Ich lebte im Einklang mit der Natur.</item>
+				<item id="7">Ich bewachte ein uraltes Relikt oder eine Ruine.</item>
+				<item id="8">Ich war Pilger auf einer heiligen Suche.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich spreche selten und bevorzuge Gesten.</item>
+				<item id="2">Ich bleibe stets ruhig, selbst in Katastrophen.</item>
+				<item id="3">Ich zitiere gern die Weisheiten meines Meisters.</item>
+				<item id="4">Ich empfinde tiefes Mitgefühl für alles Leid.</item>
+				<item id="5">Ich missachte Etikette völlig.</item>
+				<item id="6">Ich deute alles als Teil eines kosmischen Plans.</item>
+				<item id="7">Ich verliere mich oft in Gedanken.</item>
+				<item id="8">Ich entwickle eine große philosophische Theorie.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Allgemeinwohl. Meine Gaben dienen allen. (Gut)</item>
+				<item id="2">Logik. Emotionen stören klares Denken. (Rechtschaffen)</item>
+				<item id="3">Freier Geist. Neugier ist der Schlüssel zum Fortschritt. (Chaotisch)</item>
+				<item id="4">Macht. Einsamkeit führt zu mystischer Macht. (Böse)</item>
+				<item id="5">Leben und leben lassen. Einmischung bringt nur Leid. (Neutral)</item>
+				<item id="6">Selbsterkenntnis. Wer sich selbst kennt, kennt alles. (Beliebig)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Nichts ist mir wichtiger als meine Bruderschaft oder Einsiedlergemeinschaft.</item>
+				<item id="2">Ich verstecke mich vor jenen, die mich verfolgen – irgendwann stelle ich mich ihnen.</item>
+				<item id="3">Ich suche noch immer nach der Erleuchtung, die mir versagt blieb.</item>
+				<item id="4">Ich zog mich zurück, weil ich jemanden liebte, den ich nicht haben konnte.</item>
+				<item id="5">Meine Entdeckung könnte die Welt ins Verderben stürzen.</item>
+				<item id="6">Nur ich habe die Wahrheit über ein uraltes Übel erkannt.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Nun da ich zurück bin, genieße ich das Leben zu sehr.</item>
+				<item id="2">Ich hege dunkle, blutige Gedanken, die ich nicht abschütteln kann.</item>
+				<item id="3">Ich bin stur und dogmatisch.</item>
+				<item id="4">Ich will stets Diskussionen gewinnen – koste es Freundschaften.</item>
+				<item id="5">Ich riskiere alles für vergessene Erkenntnisse.</item>
+				<item id="6">Ich liebe es, Geheimnisse für mich zu behalten.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Entdeckung (Discovery)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_DISCOVERY">
+		<supports>Background Feature</supports>
+		<description>
+			<p>In der Stille deines Einsiedlerlebens bist du auf eine einzigartige und machtvolle Entdeckung gestoßen – sei es eine Wahrheit über Götter, Magie, ein uraltes Relikt oder ein vergessenes Wissen, das die Geschichte verändern könnte. Vielleicht ist es auch der Grund, weshalb du deine Einsamkeit aufgegeben hast.</p>
+		</description>
+		<sheet alt="Entdeckung (Discovery)" />
+	</element>
+</elements>

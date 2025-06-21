@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Straßenkind (Urchin)</name>
+		<description>Hintergrund: Straßenkind (Urchin)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.5">
+			<file name="d4t-background-urchin.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Straßenkind (Urchin)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_URCHIN">
+		<description>
+			<p>Du bist auf den Straßen aufgewachsen – allein, verwaist und arm. Niemand hat sich um dich gekümmert, also hast du gelernt, für dich selbst zu sorgen. Du hast um Nahrung gekämpft, immer ein Auge auf andere Hungernde gehabt und auf Dächern oder in Gassen geschlafen. Du hast Krankheiten ohne Hilfe überstanden und gelernt, dich durch List, Kraft oder Schnelligkeit durchzuschlagen.</p>
+			<p class="indent">Du beginnst dein Abenteurerleben mit genug Geld, um mindestens zehn Tage in bescheidenem Komfort zu leben. Doch woher hast du dieses Geld? Was hat dir ermöglicht, deinem alten Leben zu entkommen?</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Fingerfertigkeit, Heimlichkeit</li>
+				<li><strong>Werkzeugkompetenzen:</strong> Schminkzeug, Diebeswerkzeug</li>
+				<li><strong>Ausrüstung:</strong> Ein kleines Messer, eine Karte deiner Heimatstadt, eine zahme Maus, ein Andenken an deine Eltern, gewöhnliche Kleidung und ein Geldbeutel mit 10 GM</li>
+			</ul>
+			<div element="ID_D4T_BACKGROUND_FEATURE_CITY_SECRETS" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Straßenkinder sind von Armut geprägt – im Guten wie im Schlechten. Manche sind loyal gegenüber den Menschen, mit denen sie das Leben auf der Straße teilten. Andere wollen nichts sehnlicher, als sich ein besseres Leben aufzubauen – oder Rache an jenen zu nehmen, die sie verachtet haben.</p>
+		</description>
+		<setters>
+			<set name="short">Fingerfertigkeit, Heimlichkeit, Schminkzeug, Diebeswerkzeug</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_CITY_SECRETS" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variantes Merkmal" supports="Optional Background Feature" optional="true" />
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich verstecke Essensreste und Kleinigkeiten in meinen Taschen.</item>
+				<item id="2">Ich stelle viele Fragen.</item>
+				<item id="3">Ich zwänge mich gern in enge Spalten, wo sonst niemand hinkommt.</item>
+				<item id="4">Ich schlafe nur mit dem Rücken zur Wand und allem Besitz im Arm.</item>
+				<item id="5">Ich esse wie ein Schwein und habe keine Manieren.</item>
+				<item id="6">Ich traue niemandem, der nett zu mir ist – der will bestimmt was.</item>
+				<item id="7">Ich hasse es, mich zu waschen.</item>
+				<item id="8">Ich sage geradeheraus, was andere nur andeuten.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Respekt. Jeder – arm oder reich – verdient Achtung. (Gut)</item>
+				<item id="2">Gemeinschaft. Wir müssen aufeinander achten – sonst tut es keiner. (Rechtschaffen)</item>
+				<item id="3">Wandel. Die Kleinen werden groß – so ist die Welt. (Chaotisch)</item>
+				<item id="4">Vergeltung. Die Reichen sollen das Elend der Straße kennenlernen. (Böse)</item>
+				<item id="5">Menschen. Ich helfe denen, die mir helfen – das sichert unser Überleben. (Neutral)</item>
+				<item id="6">Streben. Ich werde beweisen, dass ich mehr wert bin.</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Meine Stadt ist mein Zuhause – ich werde sie verteidigen.</item>
+				<item id="2">Ich unterstütze ein Waisenhaus, damit andere nicht leiden müssen wie ich.</item>
+				<item id="3">Ich verdanke mein Überleben einem anderen Straßenkind.</item>
+				<item id="4">Ich schulde mein Leben dem, der Mitleid mit mir hatte.</item>
+				<item id="5">Ich entkam der Armut, indem ich eine einflussreiche Person bestahl – und werde gesucht.</item>
+				<item id="6">Niemand soll je so leiden müssen wie ich.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Wenn ich unterlegen bin, renne ich lieber weg.</item>
+				<item id="2">Gold scheint mir ein Vermögen – ich tue fast alles dafür.</item>
+				<item id="3">Ich werde nie jemandem ganz vertrauen – außer mir selbst.</item>
+				<item id="4">Ich töte lieber im Schlaf, als fair zu kämpfen.</item>
+				<item id="5">Wenn ich es dringender brauche, ist es kein Diebstahl.</item>
+				<item id="6">Wer sich nicht selbst hilft, ist selbst schuld.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Geheimnisse der Stadt (City Secrets)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_CITY_SECRETS">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Du kennst das geheime Muster und den Fluss des Stadtlebens. Wenn du dich nicht im Kampf befindest, kannst du (samt Gruppe) doppelt so schnell zwischen zwei Punkten in einer Stadt reisen.</p>
+		</description>
+		<sheet alt="Geheimnisse der Stadt (City Secrets)" />
+	</element>
+</elements>

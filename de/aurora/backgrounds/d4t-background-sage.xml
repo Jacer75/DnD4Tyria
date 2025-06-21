@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Weiser (Sage)</name>
+		<description>Hintergrund: Weiser (Sage)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.5">
+			<file name="d4t-background-sage.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Weiser (Sage)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_SAGE">
+		<description>
+			<p>Du hast Jahre damit verbracht, das Wissen der Welt zu studieren. Du hast Schriften durchforstet, Schriftrollen analysiert und von den klügsten Köpfen gelernt. Deine Mühen haben dich zu einem Meister deines Fachs gemacht.</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Arkane Kunde, Geschichte</li>
+				<li><strong>Sprachen:</strong> Zwei deiner Wahl</li>
+				<li><strong>Ausrüstung:</strong> Eine Flasche schwarze Tinte, eine Feder, ein kleines Messer, ein Brief eines verstorbenen Kollegen mit einer ungelösten Frage, gewöhnliche Kleidung und ein Geldbeutel mit 10 GM</li>
+			</ul>
+			<h5>SPEZIALGEBIET</h5>
+			<p>Bestimme dein Studiengebiet mit einem W8 oder wähle aus der Liste:</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">W8</td><td>Studiengebiet</td></tr>
+				</thead>
+				<tr><td>1</td><td>Alchemist</td></tr>
+				<tr><td>2</td><td>Astronom</td></tr>
+				<tr><td>3</td><td>Verstoßener Akademiker</td></tr>
+				<tr><td>4</td><td>Bibliothekar</td></tr>
+				<tr><td>5</td><td>Professor</td></tr>
+				<tr><td>6</td><td>Forscher</td></tr>
+				<tr><td>7</td><td>Lehrling eines Zauberers</td></tr>
+				<tr><td>8</td><td>Schreiber</td></tr>
+			</table>
+			<div element="ID_D4T_BACKGROUND_FEATURE_RESEARCHER" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Weise sind geprägt durch ein Leben voller Studium. Sie schätzen Wissen – manchmal um seiner selbst willen, manchmal als Mittel zum Zweck.</p>
+		</description>
+		<setters>
+			<set name="short">Arkane Kunde, Geschichte, 2 Sprachen</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<select type="Language" name="Language (Sage)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_RESEARCHER" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Specialty" type="List" optional="true">
+				<item id="1">Alchemist</item>
+				<item id="2">Astronom</item>
+				<item id="3">Verstoßener Akademiker</item>
+				<item id="4">Bibliothekar</item>
+				<item id="5">Professor</item>
+				<item id="6">Forscher</item>
+				<item id="7">Lehrling eines Zauberers</item>
+				<item id="8">Schreiber</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich benutze gern viele Silben, um gebildet zu wirken.</item>
+				<item id="2">Ich habe angeblich jedes Buch der Welt gelesen – oder tue zumindest so.</item>
+				<item id="3">Ich erkläre alles bereitwillig für jene, die weniger klug sind als ich.</item>
+				<item id="4">Ich liebe ein gutes Rätsel über alles.</item>
+				<item id="5">Ich höre mir stets alle Seiten an, bevor ich urteile.</item>
+				<item id="6">Ich ... spreche ... langsam ... mit ... Idioten ... also ... mit ... allen ... anderen.</item>
+				<item id="7">Ich bin furchtbar unbeholfen in Gesellschaft.</item>
+				<item id="8">Ich bin überzeugt, dass alle meine Geheimnisse stehlen wollen.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Wissen. Der Weg zu Macht und Selbstverbesserung führt über Wissen. (Neutral)</item>
+				<item id="2">Schönheit. Was schön ist, weist auf tiefere Wahrheit. (Gut)</item>
+				<item id="3">Logik. Gefühle dürfen klares Denken nicht trüben. (Rechtschaffen)</item>
+				<item id="4">Keine Grenzen. Nichts darf das Potenzial des Seins einschränken. (Chaotisch)</item>
+				<item id="5">Macht. Wissen führt zu Kontrolle und Herrschaft. (Böse)</item>
+				<item id="6">Selbstverbesserung. Studium dient der Vervollkommnung. (Beliebig)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Ich muss meine Schüler beschützen.</item>
+				<item id="2">Ich bewahre ein altes Werk mit gefährlichem Wissen – es darf nie in falsche Hände geraten.</item>
+				<item id="3">Ich setze mich für Bibliotheken, Universitäten oder Klöster ein.</item>
+				<item id="4">Mein Lebenswerk sind Bände zu einem bestimmten Thema.</item>
+				<item id="5">Ich suche seit Ewigkeiten nach einer Antwort.</item>
+				<item id="6">Ich habe meine Seele für Wissen verkauft – nun will ich sie durch Taten zurückgewinnen.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Ich bin leicht ablenkbar, wenn es neues Wissen gibt.</item>
+				<item id="2">Während andere vor Dämonen fliehen, studiere ich ihre Anatomie.</item>
+				<item id="3">Ein Mysterium zu lösen ist den Untergang einer Zivilisation wert.</item>
+				<item id="4">Ich ziehe komplizierte Lösungen einfachen stets vor.</item>
+				<item id="5">Ich spreche, ohne nachzudenken – oft verletze ich so andere.</item>
+				<item id="6">Ich kann kein Geheimnis bewahren – meines oder das anderer.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Forscher (Researcher)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_RESEARCHER">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Wenn du versuchst, ein bestimmtes Wissen abzurufen, weißt du oft zumindest, wo du es finden kannst – etwa in Bibliotheken, bei Gelehrten oder in alten Schriften. Manche Antworten sind jedoch so verborgen, dass eine Reise oder gar eine ganze Kampagne nötig ist, um sie zu entdecken.</p>
+		</description>
+		<sheet alt="Forscher (Researcher)" />
+	</element>
+</elements>

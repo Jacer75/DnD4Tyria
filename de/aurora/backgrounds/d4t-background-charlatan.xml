@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Scharlatan (Charlatan)</name>
+		<description>Hintergrund: Scharlatan (Charlatan)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.5">
+			<file name="d4t-background-charlatan.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Scharlatan (Charlatan)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_CHARLATAN">
+		<description>
+			<p>Du hattest schon immer ein Händchen für Menschen. Du erkennst, was sie bewegt, kannst ihre tiefsten Wünsche in wenigen Minuten herausfinden und liest sie wie ein offenes Buch. Und dieses Talent setzt du ohne Skrupel zu deinem Vorteil ein.</p>
+			<p class="indent">Du weißt, was Leute hören wollen – und gibst es ihnen. Oder versprichst es zumindest. Vernunft sollte sie von zu guten Angeboten abhalten, aber die scheint in deiner Nähe stets knapp zu sein. Die rosa Flüssigkeit heilt garantiert jedes Hautleiden, die Salbe aus Talg mit Silbersplittern macht angeblich jung, und die Brücke in der Stadt steht gerade zufällig zum Verkauf. Alles klingt absurd – bis du es überzeugend verkaufst.</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Täuschung, Fingerfertigkeit</li>
+				<li><strong>Werkzeugkompetenzen:</strong> Schminkzeug, Fälscherset</li>
+				<li><strong>Ausrüstung:</strong> Ein Satz feiner Kleidung, ein Schminkzeug, Requisiten deines bevorzugten Betrugs (z. B. zehn Phiolen mit gefärbter Flüssigkeit, gezinkte Würfel, markierte Karten oder ein Siegelring eines erfundenen Herzogs) und ein Geldbeutel mit 15 GM</li>
+			</ul>
+			<h5>LIEBLINGSBETRUG</h5>
+			<p>Jeder Scharlatan hat eine bevorzugte Masche. Wähle eine oder würfle mit 1W6.</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">W6</td><td>Masche</td></tr>
+				</thead>
+				<tr><td>1</td><td>Ich betrüge bei Glücksspielen.</td></tr>
+				<tr><td>2</td><td>Ich feile Münzen ab oder fälsche Dokumente.</td></tr>
+				<tr><td>3</td><td>Ich schleiche mich in das Leben anderer, nutze ihre Schwächen aus und sichere mir ihren Besitz.</td></tr>
+				<tr><td>4</td><td>Ich wechsle Identitäten wie Kleidung.</td></tr>
+				<tr><td>5</td><td>Ich führe Straßentricks mit Fingerfertigkeit auf.</td></tr>
+				<tr><td>6</td><td>Ich überzeuge Leute davon, dass wertloser Kram ein Vermögen wert ist.</td></tr>
+			</table>
+			<div element="ID_D4T_BACKGROUND_FEATURE_FALSE_IDENTITY" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Scharlatane sind schillernde Persönlichkeiten, die ihr wahres Ich hinter Masken verstecken. Sie spiegeln wider, was andere sehen und glauben wollen. Doch hinter der Fassade lauern oft Schuldgefühle, alte Feinde oder tiefes Misstrauen.</p>
+		</description>
+		<setters>
+			<set name="short">Täuschung, Fingerfertigkeit, Schminkzeug, Fälscherset</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_FALSE_IDENTITY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variantes Merkmal" supports="Optional Background Feature" optional="true" />
+			<select name="Lieblingsbetrug" type="List" optional="true">
+				<item id="1">Ich betrüge bei Glücksspielen.</item>
+				<item id="2">Ich feile Münzen ab oder fälsche Dokumente.</item>
+				<item id="3">Ich schleiche mich in das Leben anderer, nutze ihre Schwächen aus und sichere mir ihren Besitz.</item>
+				<item id="4">Ich wechsle Identitäten wie Kleidung.</item>
+				<item id="5">Ich führe Straßentricks mit Fingerfertigkeit auf.</item>
+				<item id="6">Ich überzeuge Leute davon, dass wertloser Kram ein Vermögen wert ist.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich verliebe mich schnell und häufig – ich jage stets jemandem hinterher.</item>
+				<item id="2">Ich habe für jeden Anlass einen Witz – besonders wenn Humor unangebracht ist.</item>
+				<item id="3">Schmeichelei ist meine bevorzugte Methode, um zu bekommen, was ich will.</item>
+				<item id="4">Ich bin ein geborener Zocker, Risiken reizen mich immer.</item>
+				<item id="5">Ich lüge über alles – selbst wenn es keinen Grund dafür gibt.</item>
+				<item id="6">Sarkasmus und Beleidigungen sind meine liebsten Waffen.</item>
+				<item id="7">Ich trage mehrere heilige Symbole bei mir und rufe stets jene Gottheit an, die gerade nützlich erscheint.</item>
+				<item id="8">Ich stecke alles ein, was irgendwie wertvoll aussehen könnte.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Unabhängigkeit. Ich bin ein Freigeist – niemand sagt mir, was ich tun soll. (Chaotisch)</item>
+				<item id="2">Fairness. Ich ziehe nie jene übers Ohr, die es sich nicht leisten können. (Rechtschaffen)</item>
+				<item id="3">Wohltätigkeit. Ich gebe das erschwindelte Geld jenen, die es wirklich brauchen. (Gut)</item>
+				<item id="4">Kreativität. Ich wiederhole niemals denselben Trick. (Chaotisch)</item>
+				<item id="5">Freundschaft. Besitz vergeht – Freundschaft bleibt. (Gut)</item>
+				<item id="6">Streben. Ich will etwas aus mir machen. (Beliebig)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Ich habe die falsche Person betrogen und muss sicherstellen, dass sie mich nie wiederfindet.</item>
+				<item id="2">Ich verdanke alles meinem Mentor – ein schlimmer Mensch, der vermutlich im Gefängnis verrottet.</item>
+				<item id="3">Irgendwo da draußen habe ich ein Kind, das mich nicht kennt. Ich will die Welt für es besser machen.</item>
+				<item id="4">Ich stamme aus einer Adelsfamilie – eines Tages hole ich mir Land und Titel zurück.</item>
+				<item id="5">Ein mächtiger Mensch hat jemanden getötet, den ich liebte. Bald werde ich Rache nehmen.</item>
+				<item id="6">Ich ruinierte jemanden, der es nicht verdient hatte – ich will Buße tun, weiß aber nicht, ob ich mir je verzeihen kann.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Ich kann einem hübschen Gesicht nie widerstehen.</item>
+				<item id="2">Ich bin ständig verschuldet – meine Beute geht schneller drauf, als ich sie beschaffen kann.</item>
+				<item id="3">Ich glaube fest daran, dass mich niemand je so austricksen könnte, wie ich andere austrickse.</item>
+				<item id="4">Ich bin zu gierig – Geld bringt mich immer zu riskanten Entscheidungen.</item>
+				<item id="5">Ich kann es nicht lassen, mächtigere Leute übers Ohr zu hauen.</item>
+				<item id="6">Ich will es nicht zugeben, aber ich bin ein Feigling – wenn’s brenzlig wird, lauf ich weg.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Falsche Identität (False Identity)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FALSE_IDENTITY">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Du hast eine zweite Identität erschaffen – mit gefälschten Papieren, eingefädelten Bekanntschaften und Verkleidungen, die es dir ermöglichen, diese Rolle einzunehmen. Außerdem kannst du Dokumente wie offizielle Schreiben oder persönliche Briefe fälschen, sofern du ein Beispiel des Originals gesehen hast.</p>
+		</description>
+		<sheet alt="Falsche Identität (False Identity)">
+			<description>Du hast eine zweite Identität erschaffen – mit gefälschten Papieren, eingefädelten Bekanntschaften und Verkleidungen, die es dir ermöglichen, diese Rolle einzunehmen. Außerdem kannst du Dokumente wie offizielle Schreiben oder persönliche Briefe fälschen, sofern du ein Beispiel des Originals gesehen hast.</description>
+		</sheet>
+	</element>
+</elements>

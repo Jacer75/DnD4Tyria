@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Volksheld (Folk Hero)</name>
+		<description>Hintergrund: Volksheld (Folk Hero)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.6">
+			<file name="d4t-background-folkhero.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Volksheld (Folk Hero)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FOLK_HERO">
+		<description>
+			<p>Du stammst aus einfachen Verhältnissen – aber bist zu Größerem bestimmt. In deinem Heimatdorf sehen dich viele bereits als Helden, und dein Schicksal ruft dich dazu auf, Tyrannen und Monster zu bekämpfen, die das einfache Volk bedrohen.</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Mit Tieren umgehen (Animal Handling), Überlebenskunst (Survival)</li>
+				<li><strong>Werkzeugkompetenzen:</strong> Ein Handwerk deiner Wahl, Fahrzeuge (Land)</li>
+				<li><strong>Ausrüstung:</strong> Werkzeuge deiner Wahl, eine Schaufel, ein Eisentopf, gewöhnliche Kleidung und ein Geldbeutel mit 10 GM</li>
+			</ul>
+			<h5>PRÄGENDES EREIGNIS</h5>
+			<p>Du hattest einst einen einfachen Beruf, vielleicht als Bauer, Holzfäller, Hirte, Bergarbeiter, Totengräber oder Knecht. Doch ein Ereignis änderte alles – und machte dich zum Helden. Wähle oder würfle ein prägendes Ereignis (1W10):</p>
+			<table>
+				<thead>
+					<tr><td class="col-20">W10</td><td>Prägendes Ereignis</td></tr>
+				</thead>
+				<tr><td>1</td><td>Ich stellte mich den Schergen eines Tyrannen entgegen.</td></tr>
+				<tr><td>2</td><td>Ich rettete Menschen während einer Naturkatastrophe.</td></tr>
+				<tr><td>3</td><td>Ich kämpfte allein gegen ein furchtbares Monster.</td></tr>
+				<tr><td>4</td><td>Ich bestahl einen korrupten Händler, um den Armen zu helfen.</td></tr>
+				<tr><td>5</td><td>Ich führte eine Miliz gegen eine einfallende Armee an.</td></tr>
+				<tr><td>6</td><td>Ich brach in das Schloss eines Tyrannen ein und stahl Waffen für das Volk.</td></tr>
+				<tr><td>7</td><td>Ich lehrte Bauern, ihre Werkzeuge als Waffen gegen Soldaten zu verwenden.</td></tr>
+				<tr><td>8</td><td>Ein Adliger zog ein ungerechtes Gesetz zurück, nachdem ich zum Protest aufrief.</td></tr>
+				<tr><td>9</td><td>Ein himmlisches oder feenhaftes Wesen segnete mich oder offenbarte meine Herkunft.</td></tr>
+				<tr><td>10</td><td>Ich wurde in eine Armee gepresst und stieg zum gefeierten Helden auf.</td></tr>
+			</table>
+			<div element="ID_D4T_BACKGROUND_FEATURE_RUSTIC_HOSPITALITY" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Ein Volksheld bleibt dem einfachen Volk verbunden – im Guten wie im Schlechten. Die meisten sehen ihre Herkunft als Stärke, nicht als Schwäche, und fühlen sich ihrem Heimatort tief verbunden.</p>
+		</description>
+		<setters>
+			<set name="short">Tierhandlung, Überleben, Handwerk, Fahrzeuge (Land)</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_RUSTIC_HOSPITALITY" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Feature" name="Variantes Merkmal" supports="Optional Background Feature" optional="true" />
+			<select type="Background Feature" name="Handwerk (Volksheld)" supports="Folk Hero Tools"  />
+			<!--<select type="Proficiency" name="Handwerk (Volksheld)" supports="Folk Hero Tools" />-->
+			<select name="Prägendes Ereignis" type="List">
+				<item id="1">Ich stellte mich den Schergen eines Tyrannen entgegen.</item>
+				<item id="2">Ich rettete Menschen während einer Naturkatastrophe.</item>
+				<item id="3">Ich kämpfte allein gegen ein furchtbares Monster.</item>
+				<item id="4">Ich bestahl einen korrupten Händler, um den Armen zu helfen.</item>
+				<item id="5">Ich führte eine Miliz gegen eine einfallende Armee an.</item>
+				<item id="6">Ich brach in das Schloss eines Tyrannen ein und stahl Waffen für das Volk.</item>
+				<item id="7">Ich lehrte Bauern, ihre Werkzeuge als Waffen gegen Soldaten zu verwenden.</item>
+				<item id="8">Ein Adliger zog ein ungerechtes Gesetz zurück, nachdem ich zum Protest aufrief.</item>
+				<item id="9">Ein himmlisches oder feenhaftes Wesen segnete mich oder offenbarte meine Herkunft.</item>
+				<item id="10">Ich wurde in eine Armee gepresst und stieg zum gefeierten Helden auf.</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich beurteile Menschen nach ihren Taten, nicht ihren Worten.</item>
+				<item id="2">Wenn jemand in Not ist, helfe ich – ohne zu zögern.</item>
+				<item id="3">Was ich mir vornehme, ziehe ich durch – komme, was wolle.</item>
+				<item id="4">Ich habe ein ausgeprägtes Gerechtigkeitsempfinden und suche stets faire Lösungen.</item>
+				<item id="5">Ich bin überzeugt von mir – und versuche, anderen Selbstvertrauen zu geben.</item>
+				<item id="6">Denken ist was für andere – ich bevorzuge Taten.</item>
+				<item id="7">Ich benutze gern lange Worte, um klüger zu wirken.</item>
+				<item id="8">Ich langweile mich schnell – wann beginnt endlich mein Schicksal?</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Respekt. Jeder Mensch verdient Würde und Achtung. (Gut)</item>
+				<item id="2">Gerechtigkeit. Vor dem Gesetz sollte jeder gleich sein. (Rechtschaffen)</item>
+				<item id="3">Freiheit. Tyrannen dürfen das Volk nicht unterdrücken. (Chaotisch)</item>
+				<item id="4">Macht. Wenn ich stark bin, bekomme ich, was ich verdiene. (Böse)</item>
+				<item id="5">Aufrichtigkeit. Ich bin, wer ich bin – kein Grund zum Verstellen. (Neutral)</item>
+				<item id="6">Schicksal. Nichts kann mich von meinem höheren Ziel abbringen. (Beliebig)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Ich habe eine Familie, aber ich weiß nicht, wo sie ist – eines Tages finde ich sie wieder.</item>
+				<item id="2">Ich liebe das Land – ich habe es einst bestellt und werde es immer beschützen.</item>
+				<item id="3">Ein Adliger hat mich einst brutal verprügelt – ich werde jeden Tyrannen bestrafen.</item>
+				<item id="4">Meine Werkzeuge erinnern mich an mein altes Leben – ich vergesse nie, woher ich komme.</item>
+				<item id="5">Ich beschütze jene, die sich nicht selbst schützen können.</item>
+				<item id="6">Ich wünschte, meine Jugendliebe wäre mit mir gekommen.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Der Tyrann meines Landes will mich um jeden Preis tot sehen.</item>
+				<item id="2">Ich bin von meiner Berufung so überzeugt, dass ich meine Schwächen übersehe.</item>
+				<item id="3">Die Leute aus meiner Heimat kennen mein beschämendes Geheimnis – ich kann nie zurückkehren.</item>
+				<item id="4">Ich habe eine Schwäche für Laster der Stadt – besonders harten Alkohol.</item>
+				<item id="5">Insgeheim glaube ich, dass ich ein besserer Herrscher wäre als jeder Adlige.</item>
+				<item id="6">Ich habe Schwierigkeiten, anderen zu vertrauen.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Gastfreundschaft des Volkes (Rustic Hospitality)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_RUSTIC_HOSPITALITY">
+		<supports>Background Feature</supports>
+		<description>
+			<p>(Rustic Hospitality) Du entstammst dem einfachen Volk – und findest unter ihnen stets Schutz und Zuflucht. Solange du ihnen keine Gefahr bedeutest, helfen sie dir beim Untertauchen, Ruhen oder Regenerieren. Sie verstecken dich sogar vor dem Gesetz, wenn es sein muss – doch sie riskieren nicht ihr Leben für dich.</p>
+		</description>
+		<sheet alt="Gastfreundschaft des Volkes" />
+	</element>
+
+    <element name="Alchemistenwerkzeug (Alchemist’s Supplies)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_ALCHEMISTS_SUPPLIES">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Alchemistenwerkzeug ermöglicht es dir, nützliche Substanzen wie Säure oder Alchemistisches Feuer herzustellen.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+      </rules>
+    </element>
+
+    <element name="Brauerwerkzeug (Brewer’s Supplies)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_BREWERS_SUPPLIES">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Brauerwerkzeug dient der Herstellung von Bier – ein Prozess, der gleichzeitig Wasser reinigt.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+      </rules>
+    </element>
+
+    <element name="Kalligrafiewerkzeug (Calligrapher’s Supplies)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_CALLIGRAPHERS_SUPPLIES">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Kalligrafiewerkzeug wird genutzt, um kunstvolle Schrift zu erzeugen, die schwer zu fälschen ist.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+      </rules>
+    </element>
+
+    <element name="Zimmermannswerkzeug (Carpenter’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_CARPENTERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Zimmermannswerkzeug ermöglicht es dir, hölzerne Strukturen zu errichten.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Kartografenwerkzeug (Cartographer’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_CARTOGRAPHERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Kartografenwerkzeug dient der Anfertigung präziser Karten.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Schusterwerkzeug (Cobbler’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_COBBLERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Schusterwerkzeug hilft dir bei der Herstellung und Reparatur von Schuhen.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Kochwerkzeug (Cook’s Utensils)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_COOKS_UTENSILS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Kochwerkzeug sorgt für bessere Mahlzeiten auf Reisen.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+      </rules>
+    </element>
+
+    <element name="Glasbläserwerkzeug (Glassblower’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_GLASSBLOWERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Glasbläserwerkzeug dient der Herstellung und Analyse gläserner Gegenstände.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Juwelierwerkzeug (Jeweler’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_JEWELERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Juwelierwerkzeug hilft dir, Edelsteine zu bearbeiten und zu bewerten.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Lederverarbeitungswerkzeug (Leatherworker’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_LEATHERWORKERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Lederverarbeitungswerkzeug erlaubt die Bearbeitung von Häuten und Lederwaren.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Steinmetzwerkzeug (Mason’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_MASONS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Steinmetzwerkzeug ermöglicht dir den Bau und die Untersuchung steinerner Strukturen.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Malutensilien (Painter’s Supplies)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_PAINTERS_SUPPLIES">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Malutensilien befähigen dich zum Zeichnen und Malen sowie zur Analyse von Kunstwerken.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" />
+      </rules>
+    </element>
+
+    <element name="Töpferwerkzeug (Potter’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_POTTERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Töpferwerkzeug erlaubt die Herstellung keramischer Objekte wie Gefäße.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Schmiedewerkzeug (Smith’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_SMITHS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Schmiedewerkzeug wird verwendet, um Metall zu formen, zu reparieren oder zu härten.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Bastlerwerkzeug (Tinker’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_TINKERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Bastlerwerkzeug dient der einfachen Reparatur vieler Alltagsgegenstände.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Weberwerkzeug (Weaver’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_WEAVERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Weberwerkzeug erlaubt dir, Stoffe herzustellen und Kleidung zu fertigen.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+      </rules>
+    </element>
+
+    <element name="Holzschnitzwerkzeug (Woodcarver’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_FOLK_HERO_WOODCARVERS_TOOLS">
+      <supports>Folk Hero Tools</supports>
+      <description>
+        <p>Holzschnitzwerkzeug ermöglicht die Herstellung kleiner Objekte und Pfeile aus Holz.</p>
+      </description>
+      <rules>
+        <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+      </rules>
+    </element>
+
+            <!--<select name="Handwerk (Volksheld)" type="Proficiency">
+                <item id="tinker">Werkzeug des Bastlers</item>
+                <item id="smith">Schmiedewerkzeug</item>
+                <item id="brewer">Brauerwerkzeug</item>
+                <item id="mason">Werkzeug des Maurers</item>
+                <item id="carpenter">Werkzeug des Zimmermanns</item>
+                <item id="cook">Kochwerkzeug</item>
+                <item id="cobbler">Werkzeug des Schusters</item>
+                <item id="weaver">Werkzeug des Webers</item>
+                <item id="painter">Malutensilien</item>
+                <item id="potter">Töpferwerkzeug</item>
+                <item id="glassblower">Werkzeug des Glasbläsers</item>
+                <item id="calligrapher">Utensilien des Kalligraphen</item>
+            </select>-->
+
+</elements>

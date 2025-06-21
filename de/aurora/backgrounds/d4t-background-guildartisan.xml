@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Zunfthandwerker (Guild Artisan)</name>
+		<description>Hintergrund: Zunfthandwerker (Guild Artisan)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.6">
+			<file name="d4t-background-guildartisan.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Zunfthandwerker (Guild Artisan)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_GUILD_ARTISAN">
+		<description>
+			<p>Du bist Mitglied einer angesehenen Zunft und beherrschst ein Handwerk meisterlich. In deiner Stadt bist du geschätzt – ob als Schmied, Bäckerin oder Kalligraf. Vielleicht führst du den Familienbetrieb fort oder hast dich durch Talent hervorgetan.</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Motiv erkennen, Überzeugen</li>
+				<li><strong>Werkzeugkompetenz:</strong> Ein Handwerk deiner Wahl</li>
+				<li><strong>Sprachen:</strong> Eine deiner Wahl</li>
+				<li><strong>Ausrüstung:</strong> Ein Handwerkszeug deiner Wahl, ein Empfehlungsschreiben deiner Zunft, ein Satz Reisekleidung und ein Beutel mit 15 GM</li>
+			</ul>
+			<div element="ID_D4T_BACKGROUND_FEATURE_GUILD_MEMBERSHIP" />
+		</description>
+		<setters>
+			<set name="short">Motiv erkennen, Überzeugen, Handwerk, Sprache</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<select type="Background Feature" name="Handwerk (Zunft)" supports="Guild Artisan Tools" requirements="!ID_D4T_BACKGROUND_VARIANT_GUILD_MERCHANT" />
+			<select type="Language" name="Language (Zunft)" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_GUILD_MEMBERSHIP" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variante Zunft" supports="Variant Guild Artisan" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select name="Gildenzweig" type="List" optional="true">
+				<item id="1">Alchemisten und Apotheker</item>
+				<item id="2">Waffenschmiede und Schlosser</item>
+				<item id="3">Brauer, Brenner und Winzer</item>
+				<item id="4">Kalligrafen und Schreiber</item>
+				<item id="5">Zimmerleute und Dachdecker</item>
+				<item id="6">Kartografen und Landvermesser</item>
+				<item id="7">Schuster</item>
+				<item id="8">Köche und Bäcker</item>
+				<item id="9">Glasbläser</item>
+				<item id="10">Juweliere und Edelsteinschleifer</item>
+				<item id="11">Lederarbeiter und Gerber</item>
+				<item id="12">Maurer und Steinmetze</item>
+				<item id="13">Maler und Schildermacher</item>
+				<item id="14">Töpfer und Fliesenleger</item>
+				<item id="15">Schiffsbauer und Segelmacher</item>
+				<item id="16">Schmiede</item>
+				<item id="17">Zinngießer und Bastler</item>
+				<item id="18">Wagenbauer</item>
+				<item id="19">Weber und Färber</item>
+				<item id="20">Holzschnitzer und Küfer</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich bin Perfektionist – alles muss makellos sein.</item>
+				<item id="2">Ich sehe auf jene herab, die keine Kunst zu schätzen wissen.</item>
+				<item id="3">Ich will alles verstehen – auch die Menschen.</item>
+				<item id="4">Ich habe für jede Situation ein Sprichwort parat.</item>
+				<item id="5">Ich bin unhöflich zu Faulenzern und Betrügern.</item>
+				<item id="6">Ich rede gern über mein Handwerk – ausgiebig.</item>
+				<item id="7">Ich handle hart – jeder Preis ist verhandelbar.</item>
+				<item id="8">Ich bin bekannt für meine Arbeit – das soll jeder wissen.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Gemeinschaft. Wir müssen einander unterstützen. (Rechtschaffen)</item>
+				<item id="2">Großzügigkeit. Meine Gaben sollen anderen helfen. (Gut)</item>
+				<item id="3">Freiheit. Jeder soll seinem Handwerk nachgehen dürfen. (Chaotisch)</item>
+				<item id="4">Gier. Ich will nur Geld machen. (Böse)</item>
+				<item id="5">Menschen. Mir sind Personen wichtiger als Prinzipien. (Neutral)</item>
+				<item id="6">Strebsamkeit. Ich will der Beste meines Fachs werden. (Beliebig)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Meine Werkstatt ist mein Zuhause.</item>
+				<item id="2">Ein Meisterwerk war nicht würdig – ich suche einen würdigen Empfänger.</item>
+				<item id="3">Meine Zunft hat mich geformt – ich schulde ihr alles.</item>
+				<item id="4">Ich strebe Reichtum an, um die Liebe eines Menschen zu gewinnen.</item>
+				<item id="5">Eines Tages werde ich der größte Handwerker der Zunft sein.</item>
+				<item id="6">Ich werde jene bestrafen, die meine Werkstatt zerstörten.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Ich tue alles für ein seltenes Meisterstück.</item>
+				<item id="2">Ich vermute ständig, dass man mich betrügen will.</item>
+				<item id="3">Niemand darf erfahren, dass ich einst Zunftgeld gestohlen habe.</item>
+				<item id="4">Ich bin nie zufrieden – ich will immer mehr.</item>
+				<item id="5">Ich würde töten, um adlig zu werden.</item>
+				<item id="6">Ich bin eifersüchtig auf jeden, der besser ist als ich.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Zunftmitgliedschaft (Guild Membership)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_MEMBERSHIP">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Als angesehenes Zunftmitglied erhältst du Unterstützung durch Kollegen – Unterkunft, Hilfe oder sogar politische Kontakte. Doch deine Zunft erwartet auch, dass du Beiträge leistest und sie nicht in Verruf bringst.</p>
+		</description>
+		<sheet alt="Zunftmitgliedschaft (Guild Membership)" />
+	</element>
+
+	<!-- Die Gildenhändler-Variante bleibt wie sie ist -->
+	<element name="Variante Zunfthandwerker: Gildenhändler (Guild Merchant)" type="Background Variant" source="DnD4Tyria" id="ID_D4T_BACKGROUND_VARIANT_GUILD_MERCHANT">
+		<supports>Variant Guild Artisan</supports>
+		<description>
+			<p>Statt ein Handwerker zu sein, bist du Händler – vielleicht Karawanenführer oder Ladenbesitzer. Du verkaufst Waren oder Rohstoffe, reist durch die Lande oder betreibst ein Geschäft.</p>
+		</description>
+		<sheet alt="Gildenhändler (Guild Merchant)" />
+		<rules>
+			<select type="Background Feature" name="Option Gildenhändler" supports="Guild Merchant Option" />
+		</rules>
+	</element>
+
+	<element name="Gildenhändler-Option: Navigator" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_MERCHANT_OPTION_NAVIGATOR">
+		<supports>Guild Merchant Option</supports>
+		<description>
+			<p>Statt eines Handwerks kannst du dich mit Navigation auskennen.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Gildenhändler-Option: Sprache" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_MERCHANT_OPTION_LANGUAGE">
+		<supports>Guild Merchant Option</supports>
+		<description>
+			<p>Statt eines Handwerks sprichst du eine zusätzliche Sprache.</p>
+		</description>
+		<rules>
+			<select type="Language" name="Zusätzliche Sprache (Gildenhändler)" supports="Standard||Exotic" />
+		</rules>
+	</element>
+    
+	<!-- Tool Features für Guild Artisan -->
+	<element name="Alchemistenwerkzeug (Alchemist’s Supplies)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_ALCHEMISTS_SUPPLIES">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Alchemistenwerkzeug ermöglicht es dir, nützliche Substanzen wie Säure oder Alchemistisches Feuer herzustellen.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Brauerwerkzeug (Brewer’s Supplies)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_BREWERS_SUPPLIES">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Brauerwerkzeug dient der Herstellung von Bier – ein Prozess, der gleichzeitig Wasser reinigt.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Kalligrafiewerkzeug (Calligrapher’s Supplies)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_CALLIGRAPHERS_SUPPLIES">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Kalligrafiewerkzeug wird genutzt, um kunstvolle Schrift zu erzeugen, die schwer zu fälschen ist.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Zimmermannswerkzeug (Carpenter’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_CARPENTERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Zimmermannswerkzeug ermöglicht es dir, hölzerne Strukturen zu errichten.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Kartografenwerkzeug (Cartographer’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_CARTOGRAPHERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Kartografenwerkzeug dient der Anfertigung präziser Karten.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Schusterwerkzeug (Cobbler’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_COBBLERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Schusterwerkzeug hilft dir bei der Herstellung und Reparatur von Schuhen.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Kochwerkzeug (Cook’s Utensils)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_COOKS_UTENSILS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Kochwerkzeug sorgt für bessere Mahlzeiten auf Reisen.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+		</rules>
+	</element>
+
+	<element name="Glasbläserwerkzeug (Glassblower’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_GLASSBLOWERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Glasbläserwerkzeug dient der Herstellung und Analyse gläserner Gegenstände.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Juwelierwerkzeug (Jeweler’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_JEWELERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Juwelierwerkzeug hilft dir, Edelsteine zu bearbeiten und zu bewerten.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Lederverarbeitungswerkzeug (Leatherworker’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_LEATHERWORKERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Lederverarbeitungswerkzeug erlaubt die Bearbeitung von Häuten und Lederwaren.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Steinmetzwerkzeug (Mason’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_MASONS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Steinmetzwerkzeug ermöglicht dir den Bau und die Untersuchung steinerner Strukturen.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Malutensilien (Painter’s Supplies)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_PAINTERS_SUPPLIES">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Malutensilien befähigen dich zum Zeichnen und Malen sowie zur Analyse von Kunstwerken.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES" />
+		</rules>
+	</element>
+
+	<element name="Töpferwerkzeug (Potter’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_POTTERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Töpferwerkzeug erlaubt die Herstellung keramischer Objekte wie Gefäße.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Schmiedewerkzeug (Smith’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_SMITHS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Schmiedewerkzeug wird verwendet, um Metall zu formen, zu reparieren oder zu härten.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Bastlerwerkzeug (Tinker’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_TINKERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Bastlerwerkzeug dient der einfachen Reparatur vieler Alltagsgegenstände.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Weberwerkzeug (Weaver’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_WEAVERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Weberwerkzeug erlaubt dir, Stoffe herzustellen und Kleidung zu fertigen.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS" />
+		</rules>
+	</element>
+
+	<element name="Holzschnitzwerkzeug (Woodcarver’s Tools)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_GUILD_ARTISAN_WOODCARVERS_TOOLS">
+		<supports>Guild Artisan Tools</supports>
+		<description>
+			<p>Holzschnitzwerkzeug ermöglicht die Herstellung kleiner Objekte und Pfeile aus Holz.</p>
+		</description>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS" />
+		</rules>
+	</element>
+    
+</elements>

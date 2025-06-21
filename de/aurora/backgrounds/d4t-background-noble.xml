@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Adeliger (Noble)</name>
+		<description>Hintergrund: Adeliger (Noble)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.6">
+			<file name="d4t-background-noble.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Adeliger (Noble)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_NOBLE">
+		<description>
+			<p>Du verstehst dich auf Reichtum, Einfluss und Privilegien. Du trägst einen Adelstitel, und deine Familie besitzt Ländereien, erhebt Steuern und übt politischen Einfluss aus. Vielleicht bist du ein verwöhnter Aristokrat, ein emporkommender Neureicher oder ein ehrlicher Verwalter, der seine Verantwortung ernst nimmt.</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Geschichte, Überzeugen</li>
+				<li><strong>Werkzeugkompetenz:</strong> Ein Spiel deiner Wahl</li>
+				<li><strong>Sprachen:</strong> Eine deiner Wahl</li>
+				<li><strong>Ausrüstung:</strong> Ein Satz edler Kleidung, ein Siegelring, eine Abstammungsurkunde und ein Beutel mit 25 GM</li>
+			</ul>
+			<div element="ID_D4T_BACKGROUND_FEATURE_POSITIONOFPRIVILEGE" />
+		</description>
+		<setters>
+			<set name="short">Geschichte, Überzeugen, Spiel, Sprache</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<!--<select type="Proficiency" name="Gaming Set (Noble)" supports="Gaming Set" />-->
+			<select type="Language" name="Sprache (Adeliger)" supports="Standard||Exotic" />
+            <select type="Background Feature" name="Spielset (Adeliger)" supports="Tyrian Gaming Sets" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_POSITIONOFPRIVILEGE" requirements="!ID_D4T_BACKGROUND_FEATURE_KNIGHT_RETAINERS,!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variant Noble" supports="Variant Noble" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Background Feature, Noble || Optional Background Feature" optional="true" requirements="!ID_D4T_BACKGROUND_VARIANT_NOBLE_KNIGHT" />
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich bin charmant und schmeichle jedem, der mir begegnet.</item>
+				<item id="2">Die einfachen Leute lieben mich für meine Großzügigkeit.</item>
+				<item id="3">Ich trage mich mit natürlicher Würde und erwarte Respekt.</item>
+				<item id="4">Ich lege großen Wert auf Erscheinung und Etikette.</item>
+				<item id="5">Ich meide Schmutz und niederes Gesindel.</item>
+				<item id="6">Trotz meiner Herkunft sehe ich alle als gleichwertig an.</item>
+				<item id="7">Wer mein Vertrauen verliert, erhält es nie zurück.</item>
+				<item id="8">Ich übe Rache mit eiserner Konsequenz.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Respekt. Würde ist allen Menschen geschuldet. (Gut)</item>
+				<item id="2">Verantwortung. Jeder trägt Pflichten – nach oben wie unten. (Rechtschaffen)</item>
+				<item id="3">Unabhängigkeit. Ich beweise, dass ich für mich selbst sorgen kann. (Chaotisch)</item>
+				<item id="4">Macht. Wer stark ist, gibt die Regeln vor. (Böse)</item>
+				<item id="5">Familie. Blut ist dicker als Wasser. (Beliebig)</item>
+				<item id="6">Adel verpflichtet. Ich schütze jene unter meiner Obhut. (Gut)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Ich will die Anerkennung meiner Familie erringen.</item>
+				<item id="2">Ein politisches Bündnis muss um jeden Preis bestehen bleiben.</item>
+				<item id="3">Meine Familie steht für mich an erster Stelle.</item>
+				<item id="4">Ich liebe jemanden aus einer verfeindeten Familie.</item>
+				<item id="5">Meine Loyalität gilt meinem Souverän.</item>
+				<item id="6">Ich will als Held des Volkes gelten.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Ich halte mich für etwas Besseres.</item>
+				<item id="2">Ich verberge ein dunkles Geheimnis, das meine Familie ruinieren könnte.</item>
+				<item id="3">Ich interpretiere vieles als Beleidigung und reagiere über.</item>
+				<item id="4">Ich bin der Ausschweifung zu sehr zugetan.</item>
+				<item id="5">Ich glaube, die Welt dreht sich nur um mich.</item>
+				<item id="6">Ich bringe meine Familie oft in Verlegenheit.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Standesprivileg (Position of Privilege)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_POSITIONOFPRIVILEGE">
+		<supports>Background Feature, Noble</supports>
+		<description>
+			<p>Dank deiner Herkunft öffnen sich dir Türen. In höheren Kreisen bist du willkommen, das einfache Volk begegnet dir mit Respekt und Nachsicht. Du kannst bei Bedarf ein Publikum bei einem lokalen Adeligen erhalten.</p>
+		</description>
+		<sheet alt="Standesprivileg (Position of Privilege)" />
+	</element>
+
+	<element name="Variante Adeliger: Ritter (Knight)" type="Background Variant" source="DnD4Tyria" id="ID_D4T_BACKGROUND_VARIANT_NOBLE_KNIGHT">
+		<supports>Variant Noble</supports>
+		<description>
+			<p>Ein Rittertitel ist meist der niedrigste Adelstitel, doch er kann zum Aufstieg führen. Wenn du ein Ritter sein willst, wähle das Merkmal Gefolgsleute statt Standesprivileg. Ein Gefolgsmann ist ein Knappe aus dem Adel, der dir dient und von dir ausgebildet wird.</p>
+		</description>
+		<sheet alt="Ritter (Knight)" />
+		<rules>
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_KNIGHT_RETAINERS" />
+		</rules>
+	</element>
+
+	<element name="Merkmal: Gefolgsleute (Retainers)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_KNIGHT_RETAINERS">
+		<supports>Background Feature, Noble</supports>
+		<description>
+			<p>Du verfügst über drei loyale Gefolgsleute deiner Familie. Sie sind gewöhnliche Leute, die einfache Aufgaben erfüllen – sie kämpfen nicht, meiden Gefahr und ziehen sich bei Misshandlung zurück.</p>
+		</description>
+		<sheet alt="Gefolgsleute (Retainers)" />
+	</element>
+    
+<!--<element name="Würfelset (Dice Set)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_NOBLE_DICE_SET">
+  <supports>Tyrian Gaming Sets</supports>
+  <description>
+    <p>Du kennst dich mit tyrianischen Würfelspielen aus – z.B. „Löwengold und Schädel“, aber auch anderen Tavernenklassikern, die auf Glück, Bluff und Dreistigkeit setzen.</p>
+  </description>
+  <rules>
+    <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DICE_SET" />
+  </rules>
+</element>
+
+<element name="Sandsturm-Karten (Playing Card Set)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_NOBLE_SANDSTORM">
+  <supports>Tyrian Gaming Sets</supports>
+  <description>
+    <p>Du bist vertraut mit tyrianischen Kartenspielen – wie der elonischen Sammelkartenreihe „Sandsturm“, aber auch mit einfacheren oder zwielichtigeren Varianten, die gern um Münzen gespielt werden.</p>
+  </description>
+  <rules>
+    <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_PLAYING_CARD_SET" />
+  </rules>
+</element>
+
+<element name="Drachen-Schach (Dragonchess Set)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_NOBLE_DRAGONCHESS">
+  <supports>Tyrian Gaming Sets</supports>
+  <description>
+    <p>Du kennst strategische Brettspiele wie Polymock oder Golemschach – Spiele, die kluges Planen, Voraussicht und ein wenig Täuschung erfordern.</p>
+  </description>
+  <rules>
+    <grant type="Proficiency" id="ID_PROFICIENCY_GAMING_SET_PROFICIENCY_DRAGONCHESS_SET" />
+  </rules>
+</element>-->
+</elements>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Unterhalter (Entertainer)</name>
+		<description>Hintergrund: Unterhalter (Entertainer)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.5">
+			<file name="d4t-background-entertainer.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Unterhalter (Entertainer)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_ENTERTAINER">
+		<description>
+			<p>Du lebst für den Auftritt. Du weißt, wie man ein Publikum fesselt, begeistert und inspiriert. Deine Poesie rührt zu Tränen oder bringt zum Lachen, deine Musik erhebt die Herzen oder weckt Mitgefühl, dein Tanz fasziniert, dein Humor trifft ins Schwarze. Was auch immer deine Mittel sind – deine Kunst ist dein Leben.</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Akrobatik, Auftreten</li>
+				<li><strong>Werkzeugkompetenzen:</strong> Schminkzeug, ein Musikinstrument deiner Wahl</li>
+				<li><strong>Ausrüstung:</strong> Ein Musikinstrument deiner Wahl, ein Andenken eines Verehrers (Liebesbrief, Haarlocke oder Schmuckstück), ein Kostüm und ein Geldbeutel mit 15 GM</li>
+			</ul>
+			<h5>UNTERHALTER-REPERTOIRE</h5>
+			<p>Ein guter Unterhalter ist vielseitig und bringt stets neue Nummern auf die Bühne. Wähle ein bis drei Darbietungen – oder würfle mit 1W10:</p>
+			<table>
+				<thead>
+					<tr><td class="col-10">W10</td><td>Darstellung</td></tr>
+				</thead>
+				<tr><td>1</td><td>Schauspieler</td></tr>
+				<tr><td>2</td><td>Tänzer</td></tr>
+				<tr><td>3</td><td>Feuerschlucker</td></tr>
+				<tr><td>4</td><td>Hofnarr</td></tr>
+				<tr><td>5</td><td>Jongleur</td></tr>
+				<tr><td>6</td><td>Instrumentalist</td></tr>
+				<tr><td>7</td><td>Dichter</td></tr>
+				<tr><td>8</td><td>Sänger</td></tr>
+				<tr><td>9</td><td>Geschichtenerzähler</td></tr>
+				<tr><td>10</td><td>Akrobat</td></tr>
+			</table>
+			<div element="ID_D4T_BACKGROUND_FEATURE_BY_POPULAR_DEMAND" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Erfolgreiche Unterhalter wissen, wie man die Aufmerksamkeit anderer fesselt. Sie sind oft extrovertiert, romantisch veranlagt und tragen große Ideale über die Macht der Kunst und die Schönheit in sich.</p>
+			<h4>VARIANTE UNTERHALTER: GLADIATOR</h4>
+			<p>Ein Gladiator ist ebenso Künstler wie jeder Barde oder Zirkusartist – ausgebildet darin, den Kampf zum Spektakel zu machen. Kampfkunst ist dein Repertoire, aber vielleicht auch Akrobatik oder Schauspiel. Mit deinem Merkmal „Auf Wunsch des Publikums“ kannst du in Arenen oder illegalen Kampfgruben auftreten. Du kannst das Musikinstrument in deinem Ausrüstungspaket durch eine ungewöhnliche, aber billige Waffe ersetzen, etwa ein Netz oder einen Dreizack.</p>
+		</description>
+		<setters>
+			<set name="short">Akrobatik, Auftreten, Schminkzeug, Musikinstrument</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT" />
+			<select type="Proficiency" name="Musikinstrument (Unterhalter)" supports="Musical Instrument" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_BY_POPULAR_DEMAND" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variante Unterhalter" supports="Variant Entertainer" optional="true" />
+			<select type="Background Feature" name="Variantes Merkmal" supports="Optional Background Feature" optional="true" />
+			<select name="Unterhalter-Repertoire" type="List" optional="true">
+				<item id="1">Schauspieler</item>
+				<item id="2">Tänzer</item>
+				<item id="3">Feuerschlucker</item>
+				<item id="4">Hofnarr</item>
+				<item id="5">Jongleur</item>
+				<item id="6">Instrumentalist</item>
+				<item id="7">Dichter</item>
+				<item id="8">Sänger</item>
+				<item id="9">Geschichtenerzähler</item>
+				<item id="10">Akrobat</item>
+			</select>
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Ich kenne zu jeder Situation eine passende Geschichte.</item>
+				<item id="2">Ich sammele bei jeder Gelegenheit Gerüchte – und verbreite sie auch gern weiter.</item>
+				<item id="3">Ich bin ein hoffnungsloser Romantiker – immer auf der Suche nach dem besonderen Menschen.</item>
+				<item id="4">Niemand bleibt lange wütend auf mich – ich kann jede Spannung auflösen.</item>
+				<item id="5">Ich liebe gute Beleidigungen – auch, wenn sie mich treffen.</item>
+				<item id="6">Ich werde bitter, wenn ich nicht im Mittelpunkt stehe.</item>
+				<item id="7">Ich strebe nach Perfektion – mit weniger gebe ich mich nicht zufrieden.</item>
+				<item id="8">Meine Stimmung wechselt schneller als ein Lied den Ton.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Schönheit. Durch meine Kunst wird die Welt ein besserer Ort. (Gut)</item>
+				<item id="2">Tradition. Alte Lieder und Geschichten dürfen nie in Vergessenheit geraten. (Rechtschaffen)</item>
+				<item id="3">Kreativität. Die Welt braucht neue Ideen und mutige Taten. (Chaotisch)</item>
+				<item id="4">Gier. Ich will Ruhm und Geld – mehr nicht. (Böse)</item>
+				<item id="5">Menschen. Das Lächeln des Publikums ist alles, was zählt. (Neutral)</item>
+				<item id="6">Ehrlichkeit. Kunst sollte die Seele widerspiegeln – sie zeigt, wer wir wirklich sind. (Beliebig)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Mein Instrument ist mein größter Schatz – es erinnert mich an jemanden, den ich liebe.</item>
+				<item id="2">Jemand hat mir mein wertvolles Instrument gestohlen – eines Tages hole ich es mir zurück.</item>
+				<item id="3">Ich will berühmt werden – koste es, was es wolle.</item>
+				<item id="4">Ich verehre einen Helden alter Geschichten – ich messe meine Taten an dessen Legende.</item>
+				<item id="5">Ich würde alles tun, um meinem verhassten Rivalen überlegen zu sein.</item>
+				<item id="6">Ich würde alles für meine frühere Truppe tun.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Ich tue alles für Ruhm und Bekanntheit.</item>
+				<item id="2">Ich bin ein Schwärmer – ein hübsches Gesicht macht mich schwach.</item>
+				<item id="3">Ein Skandal hindert mich daran, je in meine Heimat zurückzukehren – Ärger folgt mir überall hin.</item>
+				<item id="4">Ich verspottete einst einen Adligen, der nun meinen Tod will – und ich mache den Fehler wohl nochmal.</item>
+				<item id="5">Ich kann meine Gefühle kaum verbergen – meine spitze Zunge bringt mich oft in Schwierigkeiten.</item>
+				<item id="6">Trotz aller Mühen bin ich kein verlässlicher Freund.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Auf Wunsch des Publikums (By Popular Demand)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_BY_POPULAR_DEMAND">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Du findest immer einen Ort für deinen Auftritt – meist ein Gasthaus, vielleicht aber auch ein Zirkus, Theater oder gar der Hof eines Adligen. Dort erhältst du kostenlose Unterkunft und Verpflegung (bescheiden oder komfortabel, je nach Ort), solange du jeden Abend auftrittst. Außerdem wirst du so zu einer bekannten Figur – Fremde erkennen dich und begegnen dir meist freundlich.</p>
+		</description>
+		<sheet alt="Auf Wunsch des Publikums (By Popular Demand)">
+			<description>Du findest immer einen Ort für deinen Auftritt – meist ein Gasthaus, vielleicht aber auch ein Zirkus, Theater oder gar der Hof eines Adligen. Dort erhältst du kostenlose Unterkunft und Verpflegung (bescheiden oder komfortabel, je nach Ort), solange du jeden Abend auftrittst. Außerdem wirst du so zu einer bekannten Figur – Fremde erkennen dich und begegnen dir meist freundlich.</description>
+		</sheet>
+	</element>
+
+	<element name="Variante Unterhalter: Gladiator (Gladiator)" type="Background Variant" source="DnD4Tyria" id="ID_D4T_BACKGROUND_VARIANT_GLADIATOR">
+		<supports>Variant Entertainer</supports>
+		<description>
+			<p>Ein Gladiator ist ebenso Künstler wie jeder Barde oder Zirkusartist – ausgebildet darin, den Kampf zum Spektakel zu machen. Kampfkunst ist dein Repertoire, aber vielleicht auch Akrobatik oder Schauspiel. Mit deinem Merkmal „Auf Wunsch des Publikums“ kannst du in Arenen oder illegalen Kampfgruben auftreten. Du kannst das Musikinstrument in deinem Ausrüstungspaket durch eine ungewöhnliche, aber billige Waffe ersetzen, etwa ein Netz oder einen Dreizack.</p>
+		</description>
+		<sheet alt="Gladiator (Gladiator)" />
+	</element>
+</elements>

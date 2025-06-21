@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Seemann (Sailor)</name>
+		<description>Hintergrund: Seemann (Sailor)</description>
+        <author url="">Aurora4Tyria</author>
+		<update version="0.0.6">
+			<file name="d4t-background-sailor.xml" url="" />
+		</update>
+	</info>
+
+	<element name="Seemann (Sailor)" type="Background" source="DnD4Tyria" id="ID_D4T_BACKGROUND_SAILOR">
+		<description>
+			<p>Du warst viele Jahre zur See unterwegs und hast Stürmen, Meeresungeheuern und Piraten getrotzt. Dein Herz schlägt für den fernen Horizont – doch nun beginnt ein neues Kapitel.</p>
+			<p class="indent">Besprich mit deiner Spielleitung, auf welchem Schiff du einst gesegelt bist. War es ein Handelsschiff, eine Marineeinheit, ein Entdeckerschiff oder ein Piratenschiff? Lebt dein alter Kapitän noch? Hattest du einen Posten als Bootsmann, Steuermann, Smutje oder gar als Kapitän?</p>
+			<ul class="unstyled">
+				<li><strong>Fertigkeiten:</strong> Athletik, Wahrnehmung</li>
+				<li><strong>Werkzeugkompetenzen:</strong> Navigationswerkzeug, Fahrzeuge (Wasser)</li>
+				<li><strong>Ausrüstung:</strong> Eine Schlagpinne (Keule), 15 m Seide, ein Glücksbringer (z. B. Hasenpfote oder durchbohrter Stein), gewöhnliche Kleidung, Geldbeutel mit 10 GM</li>
+			</ul>
+			<div element="ID_D4T_BACKGROUND_FEATURE_SAILOR_SHIPS_PASSAGE" />
+			<h5>VORGESCHLAGENE EIGENSCHAFTEN</h5>
+			<p>Seeleute können rau sein – aber wer auf einem Schiff überleben will, muss verlässlich sein. Das Leben auf See prägt Sichtweisen und Loyalitäten tief.</p>
+			<div element="ID_D4T_BACKGROUND_VARIANT_SAILOR_PIRATE" />
+			<div element="ID_D4T_BACKGROUND_FEATURE_PIRATE_BAD_REPUTATION" />
+		</description>
+		<setters>
+			<set name="short">Athletik, Wahrnehmung, Navigationswerkzeug, Fahrzeuge (Wasser)</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_WATER" />
+			<grant type="Background Feature" id="ID_D4T_BACKGROUND_FEATURE_SAILOR_SHIPS_PASSAGE" requirements="!ID_D4T_BACKGROUND_FEATURE_PIRATE_BAD_REPUTATION,!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<select type="Background Variant" name="Variant Sailor" supports="Background Variant, Sailor" optional="true" />
+			<select type="Background Feature" name="Variant Feature" supports="Background Feature, Sailor || Optional Background Feature" optional="true" />
+			<select name="Personality Trait" type="List" number="2">
+				<item id="1">Meine Freunde wissen, dass sie sich auf mich verlassen können.</item>
+				<item id="2">Ich arbeite hart – und feiere dann umso härter.</item>
+				<item id="3">Ich liebe es, neue Häfen zu entdecken und neue Freundschaften bei Bier zu schließen.</item>
+				<item id="4">Ich übertreibe gern für eine gute Geschichte.</item>
+				<item id="5">Eine Tavernenschlägerei ist meine Art, eine Stadt kennenzulernen.</item>
+				<item id="6">Ich lasse keine Wette aus.</item>
+				<item id="7">Meine Sprache ist so rau wie ein Otyugh-Nest.</item>
+				<item id="8">Ich mag gut erledigte Arbeit – besonders, wenn jemand anders sie macht.</item>
+			</select>
+			<select name="Ideal" type="List">
+				<item id="1">Respekt. Eine Crew funktioniert nur mit gegenseitigem Respekt. (Gut)</item>
+				<item id="2">Gerechtigkeit. Wer arbeitet, bekommt auch seinen Anteil. (Rechtschaffen)</item>
+				<item id="3">Freiheit. Die See steht für Freiheit – wohin du willst, was du willst. (Chaotisch)</item>
+				<item id="4">Überlegenheit. Ich bin der Jäger – andere Schiffe sind meine Beute. (Böse)</item>
+				<item id="5">Menschen. Ich halte zu meiner Crew, nicht zu Idealen. (Neutral)</item>
+				<item id="6">Streben. Eines Tages besitze ich mein eigenes Schiff. (Beliebig)</item>
+			</select>
+			<select name="Bond" type="List">
+				<item id="1">Meine Loyalität gilt zuerst dem Kapitän.</item>
+				<item id="2">Das Schiff zählt – Kapitäne und Crews wechseln.</item>
+				<item id="3">Ich vergesse nie mein erstes Schiff.</item>
+				<item id="4">In einer Hafenstadt habe ich eine Liebschaft, die mich fast von der See fortgerissen hätte.</item>
+				<item id="5">Man hat mich um meinen Anteil betrogen – ich will, was mir zusteht.</item>
+				<item id="6">Piraten haben meine Crew ermordet – ich werde sie rächen.</item>
+			</select>
+			<select name="Flaw" type="List">
+				<item id="1">Ich gehorche – auch wenn ich anderer Meinung bin.</item>
+				<item id="2">Ich rede mich um jede Arbeit herum.</item>
+				<item id="3">Wer meinen Mut infrage stellt, kriegt es mit mir zu tun – koste es, was es wolle.</item>
+				<item id="4">Wenn ich anfange zu trinken, kann ich schwer aufhören.</item>
+				<item id="5">Ich kann nicht widerstehen, Münzen oder Krimskrams einzustecken.</item>
+				<item id="6">Mein Stolz wird wohl mein Ende sein.</item>
+			</select>
+		</rules>
+	</element>
+
+	<element name="Merkmal: Schiffsreise (Ship’s Passage)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_SAILOR_SHIPS_PASSAGE">
+		<supports>Background Feature</supports>
+		<description>
+			<p>Wenn du willst, kannst du für dich und deine Gruppe eine kostenlose Passage auf einem Schiff sichern – vielleicht deinem alten Schiff oder einem, zu dessen Crew du noch Kontakt hast. Der genaue Kurs und die Reisezeit hängen vom Wohlwollen des Spielleiters ab. Im Gegenzug wird erwartet, dass ihr euch an Bord nützlich macht.</p>
+		</description>
+		<sheet alt="Schiffsreise (Ship’s Passage)" />
+	</element>
+
+	<element name="Variante Seemann: Pirat" type="Background Variant" source="DnD4Tyria" id="ID_D4T_BACKGROUND_VARIANT_SAILOR_PIRATE">
+		<supports>Background Variant, Sailor</supports>
+		<description>
+			<p>Du hast unter einem berüchtigten Piraten gedient – und gelernt, wie man in einer Welt aus Haifischzähnen und Blut überlebt. Vielleicht hast du selbst geplündert, gemordet – und wurdest in vielen Häfen zum gefürchteten Namen.</p>
+			<p class="indent">Wenn du willst, kannst du das Merkmal <em>Schlechter Ruf</em> anstelle von <em>Schiffsreise</em> wählen.</p>
+		</description>
+		<sheet alt="Pirat" />
+	</element>
+
+	<element name="Variante Merkmal: Schlechter Ruf (Bad Reputation)" type="Background Feature" source="DnD4Tyria" id="ID_D4T_BACKGROUND_FEATURE_PIRATE_BAD_REPUTATION">
+		<supports>Background Feature, Sailor</supports>
+		<description>
+			<p>Dein Ruf eilt dir voraus. In zivilisierten Gegenden fürchten dich die Leute – du kommst oft mit kleineren Verbrechen davon, weil dich niemand anzeigen will.</p>
+		</description>
+		<sheet alt="Schlechter Ruf (Bad Reputation)" />
+	</element>
+</elements>
