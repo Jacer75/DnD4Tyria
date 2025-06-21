@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Berserker</name>
+        <description>Die Klasse „Berserker“ aus dem DnD4Tyria-Projekt – ein wilder Nahkämpfer, der durch Raserei übernatürliche Kraft und Zähigkeit gewinnt.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0">
+            <file name="d4t-class-barbarian.xml" url=""/>
+        </update>
+    </info>
+    <element name="Berserker" type="Class" source="DnD4Tyria" id="ID_D4T_CLASS_BERSERKER">
+        <description>
+            <p>Ein hochgewachsener Norn stapft durch einen Schneesturm in den Zittergipfeln, in Felle gehüllt und mit einem gewaltigen Kriegshammer bewaffnet. Er brüllt vor Freude, als er sich einem Eisschrecken stellt, der seine Jagdgründe bedroht.</p>
+            <p class="indent">Eine menschliche Kämpferin aus dem Norden Krytas schlägt einem Banditenführer das Schwert aus der Hand und packt ihn am Hals – so wie sie es mit all jenen tat, die ihre Sippe verraten haben.</p>
+            <p class="indent">Ein charrischer Blutlegionär stürzt sich heulend auf eine Gruppe Flammen-Legion-Deserteure, seine Klingen zuckend in der Luft, seine Augen wild vor Zorn und Ehre.</p>
+            <p class="indent">So unterschiedlich diese Krieger auch sind – sie alle verbindet ein unbändiger Zorn: roh, ungezähmt und jenseits jeder Vernunft. Für sie ist Rage mehr als nur ein Gefühl – sie ist Naturgewalt, eine Antwort auf Schmerz, Verlust oder Unterdrückung. Eine Welle roher Kraft, entfesselt im richtigen Moment.</p>
+            <p class="indent">Für manche ist diese Raserei eine Verbindung zu tierischen Instinkten, bei anderen ist es die brennende Wut über das Unrecht der Welt. In jedem Fall ist sie der Ursprung übermenschlicher Kraft, Widerstandsfähigkeit und blitzschneller Reaktionen.</p>
+            <h4>URINSTINKT</h4>
+            <p>Während sich die Städte Tyrias mit ihren Mauern, Gesetzen und Magiern als zivilisiert betrachten, sehen viele Berserker darin nur Schwäche. Sie vertrauen auf ihre Sinne, ihren Körper, ihre Instinkte – auf das, was Jahrhunderte überdauerte. Sie leben in den dichten Wäldern der Brisban-Wildnis, den Hochebenen der Zittergipfel oder in den Grenzlanden jenseits menschlicher Kartografie.</p>
+            <p class="indent">In der Hitze des Gefechts werden sie zu etwas Anderem: einem Sturm, einem Raubtier, einer Naturgewalt. Ihre Raserei verleiht ihnen übermenschliche Stärke, Ausdauer und Zähigkeit – doch sie verzehrt auch, und wer ihr zu oft nachgibt, riskiert, sich selbst zu verlieren.</p>
+            <h4>GEFÄHRLICHE PFADEN</h4>
+            <p>Nur wenige unter jenen, die als „Wilde“ oder „Grenzgänger“ bezeichnet werden, besitzen tatsächlich das Zeug zum Berserker. Wer diesen Pfad geht, ist selten – doch er oder sie wird zum Rückgrat des Stammes, zum Wächter, zur lebenden Waffe in Zeiten der Not. Die Wildnis Tyrias ist erbarmungslos – von jotunischen Raubzügen bis zu untoten Schwärmen. Die Berserker stellen sich diesen Gefahren, damit andere es nicht müssen.</p>
+            <p class="indent">Ihr Mut, ihre Wut und ihre Entschlossenheit machen sie zu natürlichen Abenteurern. Oft stammen sie aus wandernden Sippen oder aus Gebieten, die keine Heimat bieten – sodass das Leben auf Reisen keine große Umstellung bedeutet. Manche vermissen die familiären Bande ihrer Herkunft – andere finden sie neu in den Gefährten, mit denen sie Seite an Seite kämpfen.</p>
+            <h4>DEN BERSERKER ERSCHAFFEN</h4>
+            <p>Überlege dir, woher dein Berserker stammt und welchen Platz er in der Welt einnimmt. Sprich mit deiner Spielleitung über einen passenden kulturellen Hintergrund. Stammt deine Figur aus einem abgelegenen Land, das sie zur Fremden im Gebiet der Kampagne macht? Oder spielt die Geschichte in einer rauen Grenzregion, in der Berserker keine Seltenheit sind?</p>
+            <p class="indent">Was hat dich zum Leben als Abenteurer gebracht? Wurdest du vom Versprechen auf Reichtum in die bewohnten Lande gelockt? Hast du dich mit Soldaten verbündet, um einer gemeinsamen Bedrohung entgegenzutreten? Haben Monster oder eine einfallende Streitmacht dich aus der Heimat vertrieben und wurdest zum heimatlosen Flüchtling? Vielleicht warst du ein Kriegsgefangener, der in Ketten nach Kryta gebracht wurde – und jetzt seine Freiheit zurückgewonnen hat. Oder du wurdest von deinem Stamm verstoßen: wegen eines Vergehens, eines Tabubruchs oder nach einem gescheiterten Umsturz.</p>
+            <h5 class="caption">SCHNELLBAU</h5>
+            <p>Wenn du schnell einen Berserker erschaffen willst: Stärke ist dein wichtigstes Attribut, gefolgt von Konstitution. Wähle als Hintergrund den Ausgestoßenen.</p>
+            <h3>KLASSENMERKMALE</h3>
+            <p>Als Berserker erhältst du die folgenden Klassenmerkmale.</p>
+            <h5 class="caption">TREFFERPUNKTE</h5>
+            <ul class="unstyled">
+                <li>
+                    <strong>Trefferwürfel:</strong> 1W12 pro Berserker-Stufe</li>
+                <li>
+                    <strong>Trefferpunkte auf der 1. Stufe:</strong> 12 + Konstitutionsmodifikator</li>
+                <li>
+                    <strong>Trefferpunkte auf höheren Stufen:</strong> 1W12 (oder 7) + Konstitutionsmodifikator pro Berserker-Stufe nach der 1.</li>
+            </ul>
+            <h5 class="caption">AUSFERTIGKEITEN</h5>
+            <ul class="unstyled mb">
+                <li>
+                    <strong>Rüstung:</strong> Leichte Rüstung, mittlere Rüstung, Schilde</li>
+                <li>
+                    <strong>Waffen:</strong> Einfache Waffen, Kriegswaffen</li>
+                <li>
+                    <strong>Werkzeuge:</strong> Keine</li>
+            </ul>
+            <ul class="unstyled">
+                <li>
+                    <strong>Rettungswürfe:</strong> Stärke, Konstitution</li>
+                <li>
+                    <strong>Fertigkeiten:</strong> Wähle zwei aus: Mit Tieren umgehen, Athletik, Einschüchtern, Naturkunde, Wahrnehmung, Überlebenskunst</li>
+            </ul>
+            <h5 class="caption">AUSRÜSTUNG</h5>
+            <p>Du startest mit der folgenden Ausrüstung, zusätzlich zu der Ausrüstung deines Hintergrunds:</p>
+            <ul>
+                <li>
+                    <i>(a)</i> eine große Axt oder <i>(b)</i> eine beliebige Kriegswaffe im Nahkampf</li>
+                <li>
+                    <i>(a)</i> zwei Handäxte oder <i>(b)</i> eine beliebige einfache Waffe</li>
+                <li>Ein Entdeckerpack und vier Wurfspeere</li>
+            </ul>
+            <h5 class="caption">PROGRESSION</h5>
+            <table class="class-features">
+                <thead>
+                    <tr>
+                        <td class="col-10">Level</td>
+                        <td>Kampfräusche</td>
+                        <td>Kampfrausch-Schaden</td>
+                        <td class="col-60 left">Merkmale</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1.</td>
+                    <td>2</td>
+                    <td>+2</td>
+                    <td class="left">Kampfrausch (Rage), Ungerüstete Verteidigung (Unarmored Defense)</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>2</td>
+                    <td>+2</td>
+                    <td class="left">Rücksichtsloser Angriff (Reckless Attack), Gefahrengespür (Danger Sense)</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>3</td>
+                    <td>+2</td>
+                    <td class="left">Urtümlicher Pfad (Primal Path)</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>3</td>
+                    <td>+2</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>3</td>
+                    <td>+2</td>
+                    <td class="left">Zusätzlicher Angriff (Extra Attack), Schnelle Bewegung (Fast Movement)</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>4</td>
+                    <td>+2</td>
+                    <td class="left">Pfadmerkmal (Path feature)</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>4</td>
+                    <td>+2</td>
+                    <td class="left">Wilder Instinkt (Feral Instinct)</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>4</td>
+                    <td>+2</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>4</td>
+                    <td>+3</td>
+                    <td class="left">Brutaler Kritischer Treffer (1 Würfel) (Brutal Critical)</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>4</td>
+                    <td>+3</td>
+                    <td class="left">Pfadmerkmal (Path feature)</td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td>4</td>
+                    <td>+3</td>
+                    <td class="left">Unerbittlicher Kampfrausch (Relentless Rage)</td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td>5</td>
+                    <td>+3</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>13.</td>
+                    <td>5</td>
+                    <td>+3</td>
+                    <td class="left">Brutaler Kritischer Treffer (2 Würfel) (Brutal Critical)</td>
+                </tr>
+                <tr>
+                    <td>14.</td>
+                    <td>5</td>
+                    <td>+3</td>
+                    <td class="left">Pfadmerkmal (Path feature)</td>
+                </tr>
+                <tr>
+                    <td>15.</td>
+                    <td>5</td>
+                    <td>+3</td>
+                    <td class="left">Anhaltender Kampfrausch (Persistent Rage)</td>
+                </tr>
+                <tr>
+                    <td>16.</td>
+                    <td>5</td>
+                    <td>+4</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>17.</td>
+                    <td>6</td>
+                    <td>+4</td>
+                    <td class="left">Brutaler Kritischer Treffer (3 Würfel) (Brutal Critical)</td>
+                </tr>
+                <tr>
+                    <td>18.</td>
+                    <td>6</td>
+                    <td>+4</td>
+                    <td class="left">Unbändige Stärke (Indomitable Might)</td>
+                </tr>
+                <tr>
+                    <td>19.</td>
+                    <td>6</td>
+                    <td>+4</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>20.</td>
+                    <td>unbegrenzt</td>
+                    <td>+4</td>
+                    <td class="left">Meister der Wildnis (Primal Champion)</td>
+                </tr>
+            </table>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_RAGE"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_UNARMORED_DEFENSE"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_RECKLESS_ATTACK"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_DANGER_SENSE"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_PRIMAL_PATH"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_ABILITYSCOREIMPROVEMENT"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_EXTRA_ATTACK"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_FAST_MOVEMENT"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_FERAL_INSTINCT"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_BRUTAL_CRITICAL"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_RELENTLESS_RAGE"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_PERSISTENT_RAGE"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_INDOMITABLE_MIGHT"/>
+            <div element="ID_D4T_CLASS_FEATURE_BERSERKER_PRIMAL_CHAMPION"/>
+        </description>
+        <sheet display="false">
+            <description>Ein wilder Nahkämpfer, der im Kampf in einen Zustand der Raserei verfällt.</description>
+        </sheet>
+        <setters>
+            <set name="short">Ein wilder Nahkämpfer, der im Kampf in Raserei verfällt.</set>
+            <set name="hd">d12</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_D4T_MULTICLASS_BERSERKER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_D4T_MULTICLASS_BERSERKER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_D4T_MULTICLASS_BERSERKER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_D4T_MULTICLASS_BERSERKER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_D4T_MULTICLASS_BERSERKER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_D4T_MULTICLASS_BERSERKER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_D4T_MULTICLASS_BERSERKER"/>
+            <!--<select type="Proficiency" name="Skill Proficiency (Berserker)" number="2" supports="Skill,Berserker" requirements="!ID_D4T_MULTICLASS_BERSERKER"/>-->
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_PROFICIENCIES" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_RAGE" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_UNARMORED_DEFENSE" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_RECKLESS_ATTACK" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_DANGER_SENSE" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_PRIMAL_PATH" level="3"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_ABILITYSCOREIMPROVEMENT" level="4"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_EXTRA_ATTACK" level="5"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_FAST_MOVEMENT" level="5"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_FERAL_INSTINCT" level="7"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_BRUTAL_CRITICAL" level="9"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_RELENTLESS_RAGE" level="11"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_PERSISTENT_RAGE" level="15"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_INDOMITABLE_MIGHT" level="18"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_BERSERKER_PRIMAL_CHAMPION" level="20"/>
+        </rules>
+        <multiclass id="ID_D4T_MULTICLASS_BERSERKER">
+            <prerequisite>Stärke 13</prerequisite>
+            <requirements>[str:13]</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Schilde, einfache Waffen, Kriegswaffen</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS"/>
+            </rules>
+        </multiclass>
+    </element>
+    <!-- Proficiencies -->
+    <element name="Fertigkeiten (Berserker)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_PROFICIENCIES">
+        <description>
+            <p>Wähle zwei Fertigkeiten aus der folgenden Liste, in denen du geübt bist: Mit Tieren umgehen, Athletik, Einschüchtern, Naturkunde, Wahrnehmung und Überlebenskunst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Fertigkeiten" supports="Berserker-Proficiency" number="2" level="1"/>
+        </rules>
+    </element>
+    <element name="Mit Tieren umgehen (Animal Handling)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_BERSERKER_PROFICIENCY_ANIMAL_HANDLING">
+        <supports>Berserker-Proficiency</supports>
+        <description>
+            <p>Führe einen Wurf auf Weisheit (Mit Tieren umgehen) durch, um ein Tier zu beruhigen, ein Reittier vor Panik zu bewahren oder seine Absichten zu deuten.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
+        </rules>
+    </element>
+    <element name="Athletik (Athletics)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_BERSERKER_PROFICIENCY_ATHLETICS">
+        <supports>Berserker-Proficiency</supports>
+        <description>
+            <p>Athletik deckt schwierige Situationen beim Klettern, Springen oder Schwimmen ab.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS"/>
+        </rules>
+    </element>
+    <element name="Einschüchtern (Intimidation)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_BERSERKER_PROFICIENCY_INTIMIDATION">
+        <supports>Berserker-Proficiency</supports>
+        <description>
+            <p>Ein Wurf auf Charisma (Einschüchtern) kann nötig sein, wenn du jemanden mit Drohungen, Gewalt oder gezielter Einschüchterung beeinflussen willst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+        </rules>
+    </element>
+    <element name="Naturkunde (Nature)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_BERSERKER_PROFICIENCY_NATURE">
+        <supports>Berserker-Proficiency</supports>
+        <description>
+            <p>Naturkunde misst dein Wissen über Gelände, Pflanzen, Tiere, Wetter und natürliche Zyklen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE"/>
+        </rules>
+    </element>
+    <element name="Wahrnehmung (Perception)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_BERSERKER_PROFICIENCY_PERCEPTION">
+        <supports>Berserker-Proficiency</supports>
+        <description>
+            <p>Ein Wurf auf Weisheit (Wahrnehmung) erlaubt dir, etwas zu bemerken, zu hören oder anderweitig wahrzunehmen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+        </rules>
+    </element>
+    <element name="Überlebenskunst (Survival)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_BERSERKER_PROFICIENCY_SURVIVAL">
+        <supports>Berserker-Proficiency</supports>
+        <description>
+            <p>Mit einem Wurf auf Weisheit (Überlebenskunst) kannst du Spuren verfolgen, dich in der Wildnis orientieren oder Gefahren erkennen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
+        </rules>
+    </element>
+    <element name="Kampfrausch (Rage)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_RAGE">
+        <description>
+            <p>Im Kampf verfällst du in einen urtümlichen Rausch. In deinem Zug kannst du als Bonusaktion in den Kampfrausch verfallen. Solange du im Rausch bist und keine schwere Rüstung trägst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Du hast Vorteil auf Stärkeproben und Rettungswürfe auf Stärke.</li>
+                <li>Wenn du mit Stärke einen Nahkampfangriff mit einer Waffe ausführst, erhältst du einen Bonus auf den Schadenswurf. Dieser Bonus steigt mit deiner Stufe als Berserker (siehe Tabelle).</li>
+                <li>Du hast Resistenz gegen Hieb-, Stich- und Wuchtschaden.</li>
+            </ul>
+            <p>Wenn du zauberfähig bist, kannst du während deines Kampfrausches keine Zauber wirken oder aufrechterhalten.</p>
+            <p class="indent">Dein Kampfrausch hält 1 Minute an. Er endet frühzeitig, wenn du bewusstlos wirst oder wenn du in deinem Zug weder eine feindliche Kreatur angegriffen noch Schaden erlitten hast. Du kannst den Rausch auch selbst mit einer Bonusaktion beenden.</p>
+            <p class="indent">Nach der Anzahl an Kampfräuschen, die dir gemäß deiner Stufe zur Verfügung stehen, musst du eine lange Rast einlegen, um dich erneut in Raserei versetzen zu können.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description usage="{{barbarian rage:count}}/Lange Rast">Vorteil auf Stärkeproben und -würfe.
+		+{{barbarian rage:damage}} Schaden bei Nahkampfangriffen mit Stärke.
+		Resistenz gegen Hieb-, Stich- und Wuchtschaden.</description>
+            <description usage="Unbegrenzt" level="20">Vorteil auf Stärkeproben und -würfe.
+		+{{barbarian rage:damage}} Schaden bei Nahkampfangriffen mit Stärke.
+		Resistenz gegen Hieb-, Stich- und Wuchtschaden.</description>
+        </sheet>
+        <rules>
+            <stat name="barbarian rage:count" value="2" level="1"/>
+            <stat name="barbarian rage:count" value="1" level="3"/>
+            <stat name="barbarian rage:count" value="1" level="6"/>
+            <stat name="barbarian rage:count" value="1" level="12"/>
+            <stat name="barbarian rage:count" value="1" level="17"/>
+            <stat name="barbarian rage:count" value="93" level="20"/>
+            <stat name="barbarian rage:damage" value="2" level="1"/>
+            <stat name="barbarian rage:damage" value="1" level="9"/>
+            <stat name="barbarian rage:damage" value="1" level="16"/>
+        </rules>
+    </element>
+    <element name="Ungerüstete Verteidigung (Unarmored Defense)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_UNARMORED_DEFENSE">
+        <description>
+            <p>Solange du keine Rüstung trägst, entspricht deine Rüstungsklasse 10 + deinem Geschicklichkeitsmodifikator + deinem Konstitutionsmodifikator. Du kannst einen Schild benutzen und erhältst diesen Vorteil trotzdem.</p>
+        </description>
+        <sheet>
+            <description>Solange du keine Rüstung trägst, beträgt deine RK {{ac:unarmored defense barbarian}}. Du kannst einen Schild verwenden und profitierst weiterhin von diesem Vorteil.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:unarmored defense barbarian:base" value="10"/>
+            <stat name="ac:unarmored defense barbarian:dexterity" value="dexterity:modifier"/>
+            <stat name="ac:unarmored defense barbarian:constitution" value="constitution:modifier"/>
+            <stat name="ac:unarmored defense barbarian" value="ac:unarmored defense barbarian:base"/>
+            <stat name="ac:unarmored defense barbarian" value="ac:unarmored defense barbarian:dexterity"/>
+            <stat name="ac:unarmored defense barbarian" value="ac:unarmored defense barbarian:constitution"/>
+            <stat name="ac:calculation" value="ac:unarmored defense barbarian" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Berserker)"/>
+        </rules>
+    </element>
+    <element name="Rücksichtsloser Angriff (Reckless Attack)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_RECKLESS_ATTACK">
+        <description>
+            <p>Ab der 2. Stufe kannst du alle Vorsicht fallen lassen und mit wilder Verzweiflung angreifen. Wenn du in deinem Zug deinen ersten Angriff ausführst, kannst du dich entscheiden, rücksichtslos anzugreifen. Dadurch erhältst du Vorteil auf Angriffswürfe im Nahkampf mit Stärke in diesem Zug, aber Angriffe gegen dich haben bis zu deinem nächsten Zug ebenfalls Vorteil.</p>
+        </description>
+        <sheet>
+            <description>Wenn du in deinem Zug deinen ersten Angriff machst, kannst du rücksichtslos angreifen: Vorteil auf Nahkampfangriffe mit Stärke, aber Angriffe gegen dich haben ebenfalls Vorteil bis zu deinem nächsten Zug.</description>
+        </sheet>
+    </element>
+    <element name="Gefahrensinn (Danger Sense)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_DANGER_SENSE">
+        <description>
+            <p>Ab der 2. Stufe entwickelst du ein unheimliches Gespür dafür, wenn sich etwas in deiner Umgebung nicht richtig anfühlt – was dir hilft, Gefahren instinktiv auszuweichen.</p>
+            <p class="indent">Du hast Vorteil auf Rettungswürfe in Geschicklichkeit gegen Effekte, die du sehen kannst – etwa Fallen oder Zauber. Du musst dazu sehen, hören und handlungsfähig sein, also darfst du nicht blind, taub oder handlungsunfähig sein.</p>
+        </description>
+        <sheet>
+            <description>Vorteil auf Geschicklichkeitswürfe gegen sichtbare Effekte wie Fallen oder Zauber, solange du weder blind, taub noch handlungsunfähig bist.</description>
+        </sheet>
+        <rules>
+            <!-- Vorteil auf Geschicklichkeits-Rettungswürfe gegen sichtbare Effekte, sofern nicht blind, taub oder handlungsunfähig. -->
+        </rules>
+    </element>
+    <element name="Urtümlicher Pfad (Primal Path)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_PRIMAL_PATH">
+        <description>
+            <p>Ab der 3. Stufe wählst du einen urtümlichen Pfad, der die Art deiner Raserei prägt. Wähle den Pfad des Berserkers oder den Pfad des Totemtänzers, beide sind am Ende der Klassenbeschreibung beschrieben. Deine Wahl gewährt dir Merkmale auf der 3., 6., 10. und 14. Stufe.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Urtümlicher Pfad" supports="Primal Path" level="3"/>
+        </rules>
+    </element>
+    <element name="Verbesserungsauswahl" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_ABILITYSCOREIMPROVEMENT">
+        <compendium display="false"/>
+        <description>
+            <p>Wenn du die 4. Stufe erreichst, und erneut auf der 8., 12., 16. und 19. Stufe, kannst du einen Attributswert deiner Wahl um 2 erhöhen oder zwei Attributswerte deiner Wahl um je 1 erhöhen. Wie üblich kannst du mit diesem Merkmal keinen Wert über 20 steigern.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Verbesserungsauswahl (Berserker 4)" supports="Improvement Option,Berserker,4" level="4"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Berserker 8)" supports="Improvement Option,Berserker,8" level="8"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Berserker 12)" supports="Improvement Option,Berserker,12" level="12"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Berserker 16)" supports="Improvement Option,Berserker,16" level="16"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Berserker 19)" supports="Improvement Option,Berserker,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Zusätzlicher Angriff (Extra Attack)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_EXTRA_ATTACK">
+        <description>
+            <p>Ab der 5. Stufe kannst du zweimal statt einmal angreifen, wenn du in deinem Zug die Angriffsaktion durchführst.</p>
+        </description>
+        <sheet>
+            <description>Du kannst zweimal statt einmal angreifen, wenn du in deinem Zug die Angriffsaktion durchführst.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Schnelle Bewegung (Fast Movement)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_FAST_MOVEMENT">
+        <description>
+            <p>Ab der 5. Stufe erhöht sich deine Geschwindigkeit um 3m (10 Fuß), solange du keine schwere Rüstung trägst.</p>
+        </description>
+        <sheet>
+            <description>Deine Geschwindigkeit erhöht sich um 3m, solange du keine schwere Rüstung trägst.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:1]"/>
+            <stat name="innate speed:climb:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:climb:1]"/>
+            <stat name="innate speed:fly:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:fly:1]"/>
+            <stat name="innate speed:swim:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:swim:1]"/>
+            <stat name="innate speed:burrow:misc" value="10" equipped="![armor:heavy]" requirements="[innate speed:burrow:1]"/>
+        </rules>
+    </element>
+    <element name="Wilder Instinkt (Feral Instinct)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_FERAL_INSTINCT">
+        <description>
+            <p>Ab der 7. Stufe sind deine Instinkte so geschärft, dass du Vorteil auf Initiativewürfe erhältst.</p>
+            <p class="indent">Wenn du zu Beginn des Kampfes überrascht wirst und nicht handlungsunfähig bist, kannst du dich in deinem ersten Zug normal verhalten – allerdings nur, wenn du vor einer anderen Aktion in den Kampfrausch verfällst.</p>
+        </description>
+        <sheet>
+            <description>Vorteil auf Initiativewürfe. Wenn du überrascht wirst, kannst du im ersten Zug normal handeln, sofern du zuerst in den Kampfrausch verfällst.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE"/>
+        </rules>
+    </element>
+    <element name="Brutaler Kritischer Treffer (1 Würfel) (Brutal Critical)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_BRUTAL_CRITICAL">
+        <description>
+            <p>Ab der 9. Stufe kannst du beim Bestimmen des zusätzlichen Schadens eines kritischen Treffers mit einer Nahkampfwaffe einen zusätzlichen Waffenschadenswürfel werfen.</p>
+            <p class="indent">Ab der 13. Stufe sind es zwei zusätzliche Würfel, ab der 17. Stufe drei.</p>
+        </description>
+        <sheet>
+            <description>+1 Waffenschadenswürfel bei kritischem Treffer mit Nahkampfwaffe.</description>
+            <description level="13">+2 Waffenschadenswürfel bei kritischem Treffer mit Nahkampfwaffe.</description>
+            <description level="17">+3 Waffenschadenswürfel bei kritischem Treffer mit Nahkampfwaffe.</description>
+        </sheet>
+    </element>
+    <element name="Unerbittlicher Kampfrausch (Relentless Rage)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_RELENTLESS_RAGE">
+        <description>
+            <p>Ab der 11. Stufe kann dich dein Kampfrausch selbst bei schwersten Verletzungen am Leben halten. Wenn du auf 0 Trefferpunkte fällst, während du im Kampfrausch bist, und dabei nicht sofort stirbst, kannst du einen Konstitutionsrettungswurf gegen SG 10 machen. Bei Erfolg fällst du stattdessen nur auf 1 Trefferpunkt.</p>
+            <p class="indent">Jedes weitere Mal, dass du dieses Merkmal nach dem ersten einsetzt, steigt der SG um 5. Nach einer kurzen oder langen Rast sinkt der SG wieder auf 10.</p>
+        </description>
+        <sheet>
+            <description>Wenn du auf 0 Trefferpunkte fällst, während du im Kampfrausch bist, kannst du einen Konstitutionswurf gegen SG 10 machen. Bei Erfolg bleibst du mit 1 Trefferpunkt stehen. Der SG steigt bei jeder weiteren Anwendung um 5, sinkt aber nach einer Rast auf 10 zurück.</description>
+        </sheet>
+    </element>
+    <element name="Anhaltender Kampfrausch (Persistent Rage)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_PERSISTENT_RAGE">
+        <description>
+            <p>Ab der 15. Stufe ist dein Kampfrausch so unerschütterlich, dass er nur noch endet, wenn du bewusstlos wirst oder ihn freiwillig beendest.</p>
+        </description>
+        <sheet>
+            <description>Dein Kampfrausch endet nur noch, wenn du bewusstlos wirst oder ihn freiwillig beendest.</description>
+        </sheet>
+    </element>
+    <element name="Unbändige Stärke (Indomitable Might)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_INDOMITABLE_MIGHT">
+        <description>
+            <p>Ab der 18. Stufe kannst du bei einer Stärkeprobe statt des gewürfelten Ergebnisses deinen Gesamt-Stärkewert verwenden, wenn dieser höher ist.</p>
+        </description>
+        <sheet>
+            <description>Wenn das Ergebnis einer Stärkeprobe kleiner ist als dein Stärkewert, kannst du stattdessen den Stärkewert verwenden.</description>
+        </sheet>
+    </element>
+    <element name="Meister der Wildnis (Primal Champion)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_BERSERKER_PRIMAL_CHAMPION">
+        <description>
+            <p>Ab der 20. Stufe verkörperst du die rohe Kraft der Wildnis. Deine Stärke und Konstitution steigen um jeweils 4 Punkte, und ihr jeweiliger Maximalwert erhöht sich auf 24.</p>
+        </description>
+        <sheet display="false">
+            <description>Deine Stärke und Konstitution steigen um jeweils 4 Punkte. Ihr jeweiliger Maximalwert beträgt nun 24.</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="4"/>
+            <stat name="constitution" value="4"/>
+            <stat name="strength:max" value="4"/>
+            <stat name="constitution:max" value="4"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_BERSERKER_4">
+        <supports>Improvement Option,Berserker,4</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Berserker 4)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_BERSERKER_4">
+        <supports>Improvement Option,Berserker,4</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Berserker 4)"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_BERSERKER_8">
+        <supports>Improvement Option,Berserker,8</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Berserker 8)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_BERSERKER_8">
+        <supports>Improvement Option,Berserker,8</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Berserker 8)"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_BERSERKER_12">
+        <supports>Improvement Option,Berserker,12</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Berserker 12)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_BERSERKER_12">
+        <supports>Improvement Option,Berserker,12</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Berserker 12)"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_BERSERKER_16">
+        <supports>Improvement Option,Berserker,16</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Berserker 16)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_BERSERKER_16">
+        <supports>Improvement Option,Berserker,16</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Berserker 16)"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_BERSERKER_19">
+        <supports>Improvement Option,Berserker,19</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Berserker 19)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_BERSERKER_19">
+        <supports>Improvement Option,Berserker,19</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Berserker 19)"/>
+        </rules>
+    </element>
+    <!-- Pfad der Raserei -->
+    <element name="Pfad der Raserei (Path of the Berserker)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_PATH_OF_THE_RAGE">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Für manche Berserker ist Raserei kein Werkzeug, sondern Selbstzweck – ein Zustand reiner Gewalt. Der Pfad der Raserei ist ein Weg entfesselten Zorns, getränkt mit Blut. Wer ihm folgt, stürzt sich mit Freude ins Chaos der Schlacht, ohne Rücksicht auf die eigene Gesundheit oder das eigene Leben.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_FRENZY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MINDLESS_RAGE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_INTIMIDATING_PRESENCE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_RETALIATION"/>
+        </description>
+        <sheet display="false">
+            <description>The Path of the Berserker is a path of untrammeled fury, slick with blood.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_FRENZY" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MINDLESS_RAGE" level="6"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_INTIMIDATING_PRESENCE" level="10"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_RETALIATION" level="14"/>
+        </rules>
+    </element>
+    <!-- Raserei -->
+    <element name="Raserei (Frenzy)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_FRENZY">
+        <description>
+            <p>Ab der 3. Stufe kannst du dich bei Eintritt in den Kampfrausch zusätzlich in Raserei versetzen. Während dein Kampfrausch anhält, kannst du ab dem nächsten Zug in jedem deiner Züge einen zusätzlichen Nahkampfangriff mit einer Waffe als Bonusaktion ausführen. Wenn der Kampfrausch endet, erhältst du eine Stufe Erschöpfung.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Solange du im Kampfrausch bist, kannst du in jedem Zug eine Bonusaktion verwenden, um einen zusätzlichen Nahkampfangriff auszuführen. Wenn der Kampfrausch endet, erhältst du eine Stufe Erschöpfung.</description>
+        </sheet>
+    </element>
+    <!-- Geistloser Kampfrausch -->
+    <element name="Geistloser Kampfrausch (Mindless Rage)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_MINDLESS_RAGE">
+        <description>
+            <p>Ab der 6. Stufe kannst du während des Kampfrauschs weder verzaubert noch verängstigt werden. Falls du bereits einem solchen Effekt unterliegst, wird er während deines Kampfrauschs unterdrückt.</p>
+        </description>
+        <sheet>
+            <description>Du kannst während des Kampfrauschs weder verzaubert noch verängstigt werden. Bestehende Effekte werden für die Dauer unterdrückt.</description>
+        </sheet>
+    </element>
+    <!-- (keine offizielle Übersetzung) -->
+    <element name="Einschüchternde Präsenz (Intimidating Presence)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_INTIMIDATING_PRESENCE">
+        <description>
+            <p>Ab der 10. Stufe kannst du deine Aktion nutzen, um eine Kreatur mit deinem bedrohlichen Auftreten einzuschüchtern. Wähle eine Kreatur, die du innerhalb von 9m (30 Fuß) sehen kannst. Kann sie dich sehen oder hören, muss sie einen Weisheitsrettungswurf (SG = 8 + dein Übungsbonus + dein Charismamodifikator) bestehen oder bis zum Ende deines nächsten Zugs verängstigt sein. In den Folgerunden kannst du die Wirkung durch eine weitere Aktion jeweils um eine Runde verlängern.</p>
+            <p class="indent">Die Wirkung endet, wenn die Kreatur dich nicht mehr sieht oder mehr als 18m (60 Fuß) entfernt ist. Bei einem erfolgreichen Rettungswurf ist sie 24 Stunden lang immun gegen diese Fähigkeit.</p>
+        </description>
+        <sheet action="Aktion">
+            <description>Wähle eine Kreatur in 9m Umkreis, die dich sehen oder hören kann. Sie muss einen Weisheitswurf gegen SG {{intimidating presence:dc}} bestehen oder ist bis zum Ende deines nächsten Zuges verängstigt. Du kannst die Wirkung durch weitere Aktionen verlängern. Bei Erfolg ist sie 24 Stunden immun.</description>
+        </sheet>
+        <rules>
+            <stat name="intimidating presence:dc" value="8"/>
+            <stat name="intimidating presence:dc" value="proficiency"/>
+            <stat name="intimidating presence:dc" value="charisma:modifier"/>
+        </rules>
+    </element>
+    <!-- Vergeltung -->
+    <element name="Vergeltung (Retaliation)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_RAGE_RETALIATION">
+        <description>
+            <p>Ab der 14. Stufe kannst du, wenn dir eine Kreatur im Umkreis von 1,5m (5 Fuß) Schaden zufügt, deine Reaktion nutzen, um mit einer Nahkampfwaffe einen Angriff gegen sie auszuführen.</p>
+        </description>
+        <sheet action="Reaktion">
+            <description>Wenn dir eine Kreatur in 1,5m Entfernung Schaden zufügt, kannst du als Reaktion einen Nahkampfangriff gegen sie ausführen.</description>
+        </sheet>
+    </element>
+    <!-- Pfad des Totemkriegers -->
+    <element name="Pfad des Totemkriegers" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_PATH_OF_THE_TOTEM_WARRIOR">
+        <supports>Primal Path</supports>
+        <description>
+            <p>Der Pfad des Totemkriegers ist eine spirituelle Reise, auf der der Berserker ein Tiergeistwesen als Führer, Beschützer und Quelle der Inspiration annimmt. Im Kampf erfüllt dich dieser Totemgeist mit übernatürlicher Kraft und nährt deinen Kampfrausch mit magischer Energie. Die meisten Stämme, aus denen Berserker stammen, sehen ihr Totemtier als Schutzgeist ihres Klans. Es ist daher ungewöhnlich, mehrere Totemtiere zu verehren – auch wenn es Ausnahmen gibt.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_SPIRIT_SEEKER"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEM_SPIRIT"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_ASPECT_OF_THE_BEAST"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_SPIRIT_WALKER"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEMIC_ATTUNEMENT"/>
+        </description>
+        <sheet display="false">
+            <description>Der Pfad des Totemkriegers ist eine spirituelle Reise, bei der ein Tiergeist als Führer, Beschützer und Inspiration dient.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_SPIRIT_SEEKER" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEM_SPIRIT" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_ASPECT_OF_THE_BEAST" level="6"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_SPIRIT_WALKER" level="10"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEMIC_ATTUNEMENT" level="14"/>
+        </rules>
+    </element>
+    <!-- Geistsucher -->
+    <element name="Geistsucher (Spirit Seeker)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_SPIRIT_SEEKER">
+        <description>
+            <p>Du beschreitest einen Pfad, der dich mit der natürlichen Welt in Einklang bringt und dir eine besondere Verbindung zu Tieren verleiht. Ab der 3. Stufe kannst du die Zauber <i>Tiersinne</i> und <i>Mit Tieren sprechen</i> als Rituale wirken.</p>
+        </description>
+        <sheet>
+            <description>Du kannst <i>Tiersinne</i> und <i>Mit Tieren sprechen</i> als Rituale wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_BEAST_SENSE"/>
+            <grant type="Spell" id="ID_D4T_SPELL_SPEAK_WITH_ANIMALS"/>
+        </rules>
+    </element>
+    <!-- Totemgeist -->
+    <element name="Totemgeist (Totem Spirit)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEM_SPIRIT">
+        <description>
+            <p>Wenn du dich auf der 3. Stufe diesem Pfad zuwendest, wählst du einen Totemgeist und erhältst dessen Merkmal. Du musst ein physisches Totemobjekt herstellen oder beschaffen – etwa ein Amulett oder ähnlichen Schmuck – das mit Fell, Federn, Klauen, Zähnen oder Knochen des Totemtiers versehen ist. Optional kannst du auch körperliche Merkmale des Totemgeists annehmen – z.B. eine dichte Körperbehaarung beim Bären oder leuchtend gelbe Augen beim Adler.</p>
+            <p class="indent">Dein Totemtier kann auch eine Variante der hier aufgeführten Tiere sein, die besser zu deiner Heimat passt – z.B. ein Falke oder Geier statt eines Adlers.</p>
+        </description>
+        <sheet display="false">
+            <description>Wähle auf Stufe 3 einen Totemgeist, der dir ein besonderes Merkmal verleiht. Du stellst ein passendes Totemobjekt her und kannst körperliche Merkmale deines Tiergeists annehmen.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Totemgeist" supports="Totem Spirit"/>
+        </rules>
+    </element>
+    <!-- Tieraspekt -->
+    <element name="Tieraspekt (Aspect of the Beast)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_ASPECT_OF_THE_BEAST">
+        <description>
+            <p>Ab der 6. Stufe erhältst du einen magischen Vorteil, der auf dem Totemtier deiner Wahl basiert. Du kannst dasselbe Tier wählen wie auf der 3. Stufe oder ein anderes.</p>
+        </description>
+        <sheet display="false">
+            <description>Wähle auf Stufe 6 einen neuen magischen Vorteil basierend auf deinem Totemtier – du kannst dasselbe Tier wie zuvor oder ein neues wählen.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Tieraspekt" supports="Aspect of the Beast"/>
+        </rules>
+    </element>
+    <!-- Geistwandler -->
+    <element name="Geistwandler (Spirit Walker)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_SPIRIT_WALKER">
+        <description>
+            <p>Ab der 10. Stufe kannst du den Zauber <i>Mit der Natur kommunizieren</i> wirken – allerdings nur als Ritual. Dabei erscheint dir ein geistiges Abbild eines der Tiere, die du als Totemgeist oder Tieraspekt gewählt hast, um dir die gewünschten Informationen zu übermitteln.</p>
+        </description>
+        <sheet>
+            <description>Du kannst <i>Mit der Natur kommunizieren</i> als Ritual wirken. Dabei erscheint dir ein geistiger Vertreter deines Totemtieres und übermittelt dir die gewünschten Informationen.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_COMMUNE_WITH_NATURE"/>
+        </rules>
+    </element>
+    <!-- Einklang mit dem Totem -->
+    <element name="Einklang mit dem Totem (Totemic Attunement)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEMIC_ATTUNEMENT">
+        <description>
+            <p>Ab der 14. Stufe erhältst du einen weiteren magischen Vorteil, der auf einem Totemtier deiner Wahl basiert. Du kannst dasselbe Tier wie zuvor oder ein anderes wählen.</p>
+        </description>
+        <sheet display="false">
+            <description>Wähle auf Stufe 14 einen neuen magischen Vorteil basierend auf deinem Totemtier – du kannst dasselbe Tier wie zuvor oder ein neues wählen.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Einklang mit dem Totem" supports="Totemic Attunement"/>
+        </rules>
+    </element>
+    <!-- Totem Spirit Choices-->
+    <!-- Totemgeist -->
+    <element name="Totemgeist – Bär (Totem Spirit – Bear)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEM_SPIRIT_BEAR">
+        <supports>Totem Spirit</supports>
+        <description>
+            <p>Solange du im Kampfrausch bist, hast du Resistenz gegen sämtlichen Schaden außer psychischem. Der Geist des Bären macht dich zäh genug, um selbst stärksten Angriffen zu trotzen.</p>
+        </description>
+        <sheet>
+            <description>Im Kampfrausch hast du Resistenz gegen allen Schaden außer psychischem.</description>
+        </sheet>
+    </element>
+    <element name="Totemgeist – Adler (Totem Spirit – Eagle)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEM_SPIRIT_EAGLE">
+        <supports>Totem Spirit</supports>
+        <description>
+            <p>Solange du im Kampfrausch bist und keine Rüstung trägst, haben andere Kreaturen Nachteil auf Gelegenheitsangriffe gegen dich, und du kannst die Aktion Sprinten als Bonusaktion einsetzen. Der Geist des Adlers macht dich zu einem Raubtier, das sich geschickt durch das Schlachtfeld bewegt.</p>
+        </description>
+        <sheet>
+            <description>Im Kampfrausch und ohne Rüstung: Gegner haben Nachteil auf Gelegenheitsangriffe gegen dich, und du kannst Sprinten als Bonusaktion nutzen.</description>
+        </sheet>
+    </element>
+    <element name="Totemgeist – Wolf (Totem Spirit – Wolf)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEM_SPIRIT_WOLF">
+        <supports>Totem Spirit</supports>
+        <description>
+            <p>Solange du im Kampfrausch bist, haben deine Verbündeten Vorteil auf Nahkampfangriffe gegen jede Kreatur im Umkreis von 1,5m (5 Fuß), die dir feindlich gesinnt ist. Der Geist des Wolfs macht dich zum Anführer der Jäger.</p>
+        </description>
+        <sheet>
+            <description>Im Kampfrausch haben deine Verbündeten Vorteil auf Nahkampfangriffe gegen Feinde im Umkreis von 1,5m um dich.</description>
+        </sheet>
+    </element>
+    <!-- Aspect of the Beast Choices-->
+    <!-- Tieraspekt -->
+    <element name="Tieraspekt – Bär (Aspect of the Beast – Bear)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_ASPECT_OF_THE_BEAST_BEAR">
+        <supports>Aspect of the Beast</supports>
+        <description>
+            <p>Du erhältst die Kraft des Bären. Deine Tragkraft (einschließlich maximaler Last und maximalem Heben) verdoppelt sich, und du hast Vorteil auf Stärkeproben zum Schieben, Ziehen, Heben oder Zerbrechen von Objekten.</p>
+        </description>
+        <sheet>
+            <description>Deine Tragkraft ist verdoppelt. Vorteil auf Stärkeproben zum Schieben, Ziehen, Heben oder Zerbrechen von Objekten.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_WEIGHT_CAPACITY_DOUBLED"/>
+        </rules>
+    </element>
+    <element name="Tieraspekt – Adler (Aspect of the Beast – Eagle)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_ASPECT_OF_THE_BEAST_EAGLE">
+        <supports>Aspect of the Beast</supports>
+        <description>
+            <p>Du erhältst den Blick des Adlers. Du kannst auf eine Entfernung von bis zu 1,6km (1 Meile) sehen und erkennst selbst feine Details, als wären sie nur 30m (100 Fuß) entfernt. Schwaches Licht verursacht keinen Nachteil auf deine Weisheitswürfe (Wahrnehmung).</p>
+        </description>
+        <sheet>
+            <description>Du kannst bis zu 1,6km weit sehen und erkennst feine Details wie aus 30m Entfernung. Schwaches Licht verursacht keinen Nachteil auf Wahrnehmung.</description>
+        </sheet>
+    </element>
+    <element name="Tieraspekt – Wolf (Aspect of the Beast – Wolf)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_ASPECT_OF_THE_BEAST_WOLF">
+        <supports>Aspect of the Beast</supports>
+        <description>
+            <p>Du erhältst die Jagdfähigkeiten des Wolfs. Du kannst Kreaturen auch bei hohem Reisetempo verfolgen und dich bei normalem Tempo lautlos bewegen.</p>
+        </description>
+        <sheet>
+            <description>Du kannst Spuren auch bei hohem Reisetempo verfolgen und dich bei normalem Tempo lautlos bewegen.</description>
+        </sheet>
+    </element>
+    <!-- Totemic Attunement Choices-->
+    <!-- Einklang mit dem Totem -->
+    <element name="Einklang mit dem Totem – Bär (Totemic Attunement – Bear)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEMIC_ATTUNEMENT_BEAR">
+        <supports>Totemic Attunement</supports>
+        <description>
+            <p>Solange du im Kampfrausch bist, haben feindliche Kreaturen im Umkreis von 1,5m (5 Fuß) Nachteil auf Angriffswürfe gegen Ziele außer dir oder anderen Charakteren mit diesem Merkmal. Kreaturen sind immun gegen diesen Effekt, wenn sie dich weder sehen noch hören können oder nicht verängstigt werden können.</p>
+        </description>
+        <sheet>
+            <description>Im Kampfrausch: Feinde in 1,5m Umkreis haben Nachteil auf Angriffe gegen andere Ziele. Immun, wenn sie dich nicht sehen/hören können oder immun gegen Angst sind.</description>
+        </sheet>
+    </element>
+    <element name="Einklang mit dem Totem – Adler (Totemic Attunement – Eagle)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEMIC_ATTUNEMENT_EAGLE">
+        <supports>Totemic Attunement</supports>
+        <description>
+            <p>Solange du im Kampfrausch bist, hast du eine Fluggeschwindigkeit in Höhe deiner aktuellen Gehgeschwindigkeit. Dieser Vorteil gilt nur für kurze Sprünge – du fällst, wenn du deinen Zug in der Luft beendest und nicht anderweitig getragen wirst.</p>
+        </description>
+        <sheet>
+            <description>Im Kampfrausch: Du hast eine Fluggeschwindigkeit in Höhe deiner Gehgeschwindigkeit. Du fällst, wenn du deinen Zug in der Luft beendest und nichts dich trägt.</description>
+        </sheet>
+    </element>
+    <element name="Einklang mit dem Totem – Wolf (Totemic Attunement – Wolf)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_PATH_OF_THE_TOTEM_WARRIOR_TOTEMIC_ATTUNEMENT_WOLF">
+        <supports>Totemic Attunement</supports>
+        <description>
+            <p>Solange du im Kampfrausch bist, kannst du als Bonusaktion eine große oder kleinere Kreatur zu Boden werfen, wenn du sie mit einem Nahkampfangriff triffst.</p>
+        </description>
+        <sheet action="Bonusaktion">
+            <description>Im Kampfrausch kannst du als Bonusaktion eine große oder kleinere Kreatur zu Boden werfen, wenn du sie mit einem Nahkampfangriff triffst.</description>
+        </sheet>
+    </element>
+</elements>

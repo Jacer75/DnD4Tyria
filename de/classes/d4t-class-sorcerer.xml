@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Auserwählter</name>
+        <description>Die Klasse „Auserwählter“ (Sorcerer) aus dem Player’s Handbook, angepasst für DnD4Tyria.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0">
+            <file name="d4t-class-sorcerer.xml" url=""/>
+        </update>
+    </info>
+    <element name="Auserwählter" type="Class" source="DnD4Tyria" id="ID_D4T_CLASS_SORCERER">
+        <description>
+            <p>Goldene Augen blitzen auf, als eine Frau ihre Hand hebt und das Drachenfeuer entfesselt, das in ihren Adern lodert. Während ein Inferno um ihre Feinde wütet, breiten sich ledrige Flügel von ihrem Rücken aus, und sie erhebt sich in die Lüfte.</p>
+            <p class="indent">Vom Wind ihrer eigenen Magie umtost, hebt ein junger Norn die Arme, ein gewaltiger Blitz entlädt sich aus seinem Innersten. Für einen Moment hebt ihn die Kraft vom Boden, ehe sie sich mit tosender Gewalt entlädt.</p>
+            <p class="indent">Hinter einem Steinbrocken kauernd, richtet eine Asura ihren Finger auf ein angreifendes Scheusal. Eine Flammenlanze schießt hervor, trifft das Wesen – und verwandelt im selben Moment ihre Haut in ein leuchtendes Blau. Mit einem Grinsen zieht sie sich zurück, den Effekt kaum bemerkend.</p>
+            <p class="indent">Auserwählte tragen die Magie in sich wie ein Schicksal: ein uraltes Erbe, eine göttliche Berührung, ein Echo fremder Sphären. Man kann die Magie eines Auserwählten nicht studieren – sie erwacht, formt sich von innen heraus und verlangt, entfesselt zu werden. Niemand wählt diesen Weg. Die Magie wählt dich.</p>
+            <h4>URKRAFT</h4>
+            <p>Die Magie ist Teil des Auserwählten – sie durchdringt Körper, Geist und Seele. Manche tragen das Erbe alter Völker in sich, andere sind mit roher, unbändiger Macht erfüllt, die sich in chaotischen Erscheinungen Bahn bricht.</p>
+            <p class="indent">Das Erwachen dieser Kräfte ist unberechenbar. In manchen alten Linien – etwa den Nachfahren der Seher oder Vergessenen – tritt nur alle paar Generationen ein Auserwählter hervor, in anderen Völkern scheint fast jeder zweite von Magie berührt. Manchmal geschieht es grundlos: entfacht durch Kryptisflüche, die Berührung eines uralten Baums, die Nähe zu fremden Sphären – oder das Urteil des Auges von Janthir.</p>
+            <p class="indent">Auserwählte brauchen keine Bücher wie Zaubergelehrte und keinen Pakt wie Hexenmeister. Ihre Kraft ist instinktiv, formbar – und manchmal gefährlich.</p>
+            <h4>UNERKLÄRTE MACHT</h4>
+            <p>Auserwählte sind selten, und ihre Magie duldet keinen Stillstand. Sie drängt nach außen, sucht Ausdruck – ob kontrolliert oder nicht. Viele von ihnen zieht es in die Welt, getrieben von Fragen oder Flucht vor der eigenen Macht.</p>
+            <p class="indent">Manche suchen Antworten auf ihr Wesen, andere streben nach Vollendung oder Befreiung. Doch was immer sie antreibt: Auserwählte sind wertvolle Gefährten – nicht wegen der Breite ihres Wissens, sondern wegen der Flexibilität und Kraft, mit der sie die Magie formen.</p>
+            <h4>ERSTELLUNG EINES AUSERWÄHLTEN</h4>
+            <p>Die wichtigste Frage bei der Erschaffung eines Auserwählten ist die Herkunft deiner Macht. Zu Beginn wählst du einen Ursprung – etwa eine Berührung von Drachenmagie oder chaotische Urmagie – doch der genaue Ursprung bleibt dir überlassen. Ist es ein Familienfluch, der durch vergessene Ahnen weitergegeben wurde? Oder hat ein außergewöhnliches Ereignis dir eine angeborene Gabe hinterlassen – vielleicht mit Narben?</p>
+            <p class="indent">Wie stehst du zu der Magie, die durch deine Adern fließt? Umarmst du sie, versuchst du, sie zu kontrollieren – oder genießt du ihren unberechenbaren Tanz? Ist sie ein Geschenk oder ein Fluch? Hast du sie gesucht oder hat sie dich gefunden? Hattest du die Wahl – und wünschst du dir, du hättest abgelehnt? Was wirst du mit dieser Kraft tun? Vielleicht glaubst du, dass sie dir zu einem höheren Zweck gegeben wurde. Oder du entscheidest, dass sie dir das Recht verleiht, zu nehmen, was du willst. Vielleicht verbindet dich deine Macht mit einem mächtigen Wesen dieser Welt – dem Blassen Baum, der dich gesegnet hat, einem Drachen, dessen Magie Dich berührte, oder einem Gott, der dich auserwählt hat.</p>
+            <h5>SCHNELLEINSTIEG</h5>
+            <p>Wenn du schnell loslegen willst, folge diesen Vorschlägen: Setze Charisma als höchsten Attributswert, gefolgt von Konstitution. Wähle als Hintergrund den Einsiedler. Nimm die Zaubertricks <i>Licht</i>, <i>Zaubertrick</i>, <i>Froststrahl</i> und <i>Schockgriff</i>, sowie die Zauber <i>Magisches Geschoss</i> und <i>Schild</i> auf Grad 1.</p>
+            <h3>KLASSENMERKMALE</h3>
+            <p>Als Auserwählter erhältst du die folgenden Klassenmerkmale.</p>
+            <h5>TREFFERPUNKTE</h5>
+            <ul class="unstyled">
+                <li>
+                    <strong>Trefferwürfel:</strong> 1W6 pro Stufe als Auserwählter</li>
+                <li>
+                    <strong>Trefferpunkte auf Stufe 1:</strong> 6 + Konstitutionsmodifikator</li>
+                <li>
+                    <strong>Trefferpunkte auf höheren Stufen:</strong> 1W6 (oder 4) + Konstitutionsmodifikator pro Stufe</li>
+            </ul>
+            <h5>FERTIGKEITEN</h5>
+            <ul class="unstyled mb">
+                <li>
+                    <strong>Rüstung:</strong> Keine</li>
+                <li>
+                    <strong>Waffen:</strong> Dolche, Wurfpfeile, Schleudern, Kampfstäbe, leichte Armbrüste</li>
+                <li>
+                    <strong>Werkzeuge:</strong> Keine</li>
+            </ul>
+            <ul class="unstyled">
+                <li>
+                    <strong>Rettungswürfe:</strong> Konstitution, Charisma</li>
+                <li>
+                    <strong>Fertigkeiten:</strong> Wähle zwei der folgenden: Arkane Kunde, Täuschen, Motiv erkennen, Einschüchtern, Überzeugen, Religion</li>
+            </ul>
+            <h5>AUSRÜSTUNG</h5>
+            <p>Du beginnst mit der folgenden Ausrüstung zusätzlich zu der, die dir durch deinen Hintergrund gewährt wird:</p>
+            <ul>
+                <li>
+                    <i>(a)</i> eine leichte Armbrust und 20 Bolzen oder <i>(b)</i> eine einfache Waffe deiner Wahl</li>
+                <li>
+                    <i>(a)</i> ein Komponentenbeutel oder <i>(b)</i> ein arkaner Fokus</li>
+                <li>
+                    <i>(a)</i> ein Abenteurerausrüstungspaket oder <i>(b)</i> ein Entdeckerausrüstungspaket</li>
+                <li>Zwei Dolche</li>
+            </ul>
+            <h5 class="caption">DER AUSERWÄHLTE</h5>
+            <table class="class-features">
+                <thead>
+                    <tr>
+                        <td class="col-5">Stufe</td>
+                        <td class="col-10">Zaubereipunkte</td>
+                        <td class="left">Merkmale</td>
+                        <td class="col-10">Zaubertricks</td>
+                        <td class="col-10">Zauber</td>
+                        <td>1.</td>
+                        <td>2.</td>
+                        <td>3.</td>
+                        <td>4.</td>
+                        <td>5.</td>
+                        <td>6.</td>
+                        <td>7.</td>
+                        <td>8.</td>
+                        <td>9.</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td> 1</td>
+                    <td>—</td>
+                    <td class="left">Zauberwirken (Spellcasting), Ursprung der Zauberei (Sorcerous Origin)</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 2</td>
+                    <td>2</td>
+                    <td class="left">Quelle der Magie (Font of Magic)</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 3</td>
+                    <td>3</td>
+                    <td class="left">Metamagie (Metamagic)</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 4</td>
+                    <td>4</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 5</td>
+                    <td>5</td>
+                    <td class="left">—</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 6</td>
+                    <td>6</td>
+                    <td class="left">Merkmal des Ursprungs (Origin Feature)</td>
+                    <td>5</td>
+                    <td>7</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 7</td>
+                    <td>7</td>
+                    <td class="left">—</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 8</td>
+                    <td>8</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>5</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td> 9</td>
+                    <td>9</td>
+                    <td class="left">—</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>10</td>
+                    <td class="left">Metamagie (Metamagic)</td>
+                    <td>6</td>
+                    <td>11</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>11</td>
+                    <td class="left">—</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>12</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>6</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>13</td>
+                    <td class="left">—</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>14</td>
+                    <td class="left">Merkmal des Ursprungs (Origin Feature)</td>
+                    <td>6</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>—</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>15</td>
+                    <td class="left">—</td>
+                    <td>6</td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>16</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>6</td>
+                    <td>14</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>—</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>17</td>
+                    <td class="left">Metamagie (Metamagic)</td>
+                    <td>6</td>
+                    <td>15</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>18</td>
+                    <td class="left">Merkmal des Ursprungs (Origin Feature)</td>
+                    <td>6</td>
+                    <td>15</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>19</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                    <td>6</td>
+                    <td>15</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>20</td>
+                    <td class="left">Zaubereiauffrischung (Sorcerous Restoration)</td>
+                    <td>6</td>
+                    <td>15</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <div element="ID_D4T_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER"/>
+            <div element="ID_D4T_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN"/>
+            <div element="ID_D4T_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC"/>
+            <div element="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC"/>
+            <div element="ID_D4T_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER"/>
+            <div element="ID_D4T_CLASS_FEATURE_SORCERER_SORCEROUS_RESTORATION"/>
+        </description>
+        <sheet display="false">
+            <description>Ein Zauberwirker, dessen Macht aus innerer Gabe oder vererbter Kraft entspringt.</description>
+        </sheet>
+        <setters>
+            <set name="short">Ein Zauberwirker, dessen Macht aus innerer Gabe oder vererbter Kraft entspringt.</set>
+            <set name="hd">d6</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" requirements="!ID_D4T_MULTICLASS_SORCERER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" requirements="!ID_D4T_MULTICLASS_SORCERER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" requirements="!ID_D4T_MULTICLASS_SORCERER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" requirements="!ID_D4T_MULTICLASS_SORCERER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" requirements="!ID_D4T_MULTICLASS_SORCERER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_D4T_MULTICLASS_SORCERER"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" requirements="!ID_D4T_MULTICLASS_SORCERER"/>
+            <!--<select type="Proficiency" name="Skill Proficiency (Sorcerer)" supports="Skill,Sorcerer" number="2" requirements="!ID_D4T_MULTICLASS_SORCERER"/>-->
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC" level="3"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER" level="4"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_SORCERER_SORCEROUS_RESTORATION" level="20"/>
+        </rules>
+        <multiclass id="ID_D4T_MULTICLASS_SORCERER">
+            <prerequisite>Charisma 13</prerequisite>
+            <requirements>[cha:13]</requirements>
+            <setters>
+                <set name="multiclass proficiencies">—</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
+            </rules>
+        </multiclass>
+    </element>
+    <!-- Proficiencies -->
+    <element name="Fertigkeiten (Auserwählter)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_SORCERER_PROFICIENCIES">
+        <description>
+            <p>Wähle zwei Fertigkeiten aus der folgenden Liste, in denen du geübt bist: Arkane Kunde, Täuschen, Motiv erkennen, Einschüchtern, Überzeugen, Religion.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Fertigkeiten" supports="Sorcerer-Proficiency" number="2" level="1"/>
+        </rules>
+    </element>
+    <element name="Arkane Kunde (Arcana)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_SORCERER_PROFICIENCY_ARCANA">
+        <supports>Sorcerer-Proficiency</supports>
+        <description>
+            <p>Arkane Kunde steht für dein Wissen über Zauber, magische Gegenstände, alchemistische Prinzipien, magische Wesen und Ebenenexistenz.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA"/>
+        </rules>
+    </element>
+    <element name="Täuschen (Deception)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_SORCERER_PROFICIENCY_DECEPTION">
+        <supports>Sorcerer-Proficiency</supports>
+        <description>
+            <p>Täuschen wird verwendet, um andere durch Lügen, Ablenkung, Vortäuschung oder Verstellung zu täuschen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
+        </rules>
+    </element>
+    <element name="Motiv erkennen (Insight)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_SORCERER_PROFICIENCY_INSIGHT">
+        <supports>Sorcerer-Proficiency</supports>
+        <description>
+            <p>Motiv erkennen erlaubt dir, das wahre Verhalten einer Person einzuschätzen – zum Beispiel, ob jemand lügt oder verborgene Absichten hat.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
+        </rules>
+    </element>
+    <element name="Einschüchtern (Intimidation)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_SORCERER_PROFICIENCY_INTIMIDATION">
+        <supports>Sorcerer-Proficiency</supports>
+        <description>
+            <p>Einschüchtern setzt Furcht oder Drohgebärden ein, um andere zu einem bestimmten Verhalten zu bewegen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+        </rules>
+    </element>
+    <element name="Überzeugen (Persuasion)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_SORCERER_PROFICIENCY_PERSUASION">
+        <supports>Sorcerer-Proficiency</supports>
+        <description>
+            <p>Überzeugen kommt zum Einsatz, wenn du andere durch Charme, Diplomatie oder vernünftige Argumente zu einem Verhalten bewegen willst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
+        </rules>
+    </element>
+    <element name="Religion (Religion)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_SORCERER_PROFICIENCY_RELIGION">
+        <supports>Sorcerer-Proficiency</supports>
+        <description>
+            <p>Religion umfasst dein Wissen über Götter, Rituale, Glaubensrichtungen, Symbolik und übernatürliche Glaubenssysteme.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION"/>
+        </rules>
+    </element>
+    <element name="Zauberwirken (Spellcasting)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_SPELLCASTING_SORCERER">
+        <description>
+            <p>Ein Ereignis in deiner Vergangenheit – oder im Leben eines deiner Vorfahren – hat dich dauerhaft mit arkaner Magie durchdrungen. Diese Quelle der Macht, wie auch immer sie entstanden ist, nährt deine Zauber.</p>
+            <h5>ZAUBERTRICKS</h5>
+            <p>Auf der 1. Stufe beherrschst du vier Zaubertricks deiner Wahl aus der Zauberliste des Auserwählten. Du lernst im Verlauf deiner Stufen weitere Zaubertricks, wie in der Spalte „Zaubertricks“ der Klassentabelle angegeben.</p>
+            <h5>ZAUBERSLOTS</h5>
+            <p>Die Klassentabelle zeigt, wie viele Zauberplätze du zum Wirken deiner Zauber des Auserwählten hast. Um einen solchen Zauber zu wirken, musst du einen Zauberplatz des entsprechenden oder eines höheren Grades verbrauchen. Du erhältst alle verbrauchten Zauberplätze zurück, wenn du eine lange Rast beendest.</p>
+            <p class="indent">Beispiel: Wenn du den Zauber <i>Brennende Hände</i> beherrschst und über einen Zauberplatz des 1. und des 2. Grades verfügst, kannst du <i>Brennende Hände</i> mit einem der beiden Plätze wirken.</p>
+            <h5>ZAUBER DES 1. GRADES UND HÖHER</h5>
+            <p>Du kennst zu Beginn zwei Zauber des 1. Grades deiner Wahl aus der Zauberliste des Auserwählten.</p>
+            <p class="indent">In der Spalte „Zauber“ der Klassentabelle findest du, wann du weitere Zauber des Auserwählten erlernst. Jeder dieser Zauber muss einem Grad entsprechen, für den du Zauberplätze hast. Wenn du z.B. die 3. Stufe erreichst, kannst du einen neuen Zauber des 1. oder 2. Grades erlernen.</p>
+            <p class="indent">Außerdem kannst du bei jedem Stufenaufstieg einen bekannten Zauber durch einen anderen ersetzen – auch dieser muss ein Zauber des Auserwählten sein, den du wirken kannst.</p>
+            <h5>ZAUBERWIRK-ATTRIBUT</h5>
+            <p>Charisma ist das Zauberattribut deiner Auserwählten-Zauber, denn die Kraft deiner Magie stammt aus deiner inneren Überzeugung und Präsenz. Du verwendest dein Charisma, wann immer ein Zauber sich auf dein Zauberattribut bezieht. Zusätzlich beeinflusst dein Charisma-Modifikator den Rettungswurf-Schwierigkeitsgrad und deine Zauberangriffsmodifikatoren.</p>
+            <center>
+                <p>
+                    <strong>Rettungswurf-SG</strong> = 8 + dein Übungsbonus + dein Charisma-Modifikator</p>
+                <p>
+                    <strong>Zauberangriffsmodifikator</strong> = dein Übungsbonus + dein Charisma-Modifikator</p>
+            </center>
+            <h5>ZAUBERFOCUS</h5>
+            <p>Du kannst einen arkanen Fokus als Zauberfokus für deine Auserwählten-Zauber verwenden.</p>
+        </description>
+        <sheet display="false">
+            <description>Du bist in der Lage, Zauber zu wirken.</description>
+        </sheet>
+        <spellcasting name="Auserwählter" ability="Charisma" allowReplace="true">
+            <list>Sorcerer</list>
+        </spellcasting>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <stat name="auserwählter:spellcasting:slots:1" value="2" level="1"/>
+            <stat name="auserwählter:spellcasting:slots:1" value="1" level="2"/>
+            <stat name="auserwählter:spellcasting:slots:1" value="1" level="3"/>
+            <stat name="auserwählter:spellcasting:slots:2" value="2" level="3"/>
+            <stat name="auserwählter:spellcasting:slots:2" value="1" level="4"/>
+            <stat name="auserwählter:spellcasting:slots:3" value="2" level="5"/>
+            <stat name="auserwählter:spellcasting:slots:3" value="1" level="6"/>
+            <stat name="auserwählter:spellcasting:slots:4" value="1" level="7"/>
+            <stat name="auserwählter:spellcasting:slots:4" value="1" level="8"/>
+            <stat name="auserwählter:spellcasting:slots:4" value="1" level="9"/>
+            <stat name="auserwählter:spellcasting:slots:5" value="1" level="9"/>
+            <stat name="auserwählter:spellcasting:slots:5" value="1" level="10"/>
+            <stat name="auserwählter:spellcasting:slots:5" value="1" level="18"/>
+            <stat name="auserwählter:spellcasting:slots:6" value="1" level="11"/>
+            <stat name="auserwählter:spellcasting:slots:6" value="1" level="19"/>
+            <stat name="auserwählter:spellcasting:slots:7" value="1" level="13"/>
+            <stat name="auserwählter:spellcasting:slots:7" value="1" level="20"/>
+            <stat name="auserwählter:spellcasting:slots:8" value="1" level="15"/>
+            <stat name="auserwählter:spellcasting:slots:9" value="1" level="17"/>
+            <select type="Spell" name="Zaubertrick (Auserwählter)" supports="$(spellcasting:list),0" level="1" number="4" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zaubertrick (Auserwählter)" supports="$(spellcasting:list),0" level="4" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zaubertrick (Auserwählter)" supports="$(spellcasting:list),0" level="10" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="1" number="2" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="2" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="3" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="4" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="5" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="6" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="7" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="8" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="9" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="10" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="11" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="13" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="15" spellcasting="Auserwählter"/>
+            <select type="Spell" name="Zauber (Auserwählter)" supports="$(spellcasting:list),$(spellcasting:slots)" level="17" spellcasting="Auserwählter"/>
+        </rules>
+    </element>
+    <element name="Ursprung der Zauberei (Sorcerous Origin)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_SORCEROUS_ORIGIN">
+        <description>
+            <p>Wähle einen Ursprung der Zauberei, der den Ursprung deiner angeborenen Magie beschreibt: etwa eine alte Blutlinie oder chaotische Urmagie. Beide Optionen findest du am Ende der Klassenbeschreibung.</p>
+            <p class="indent">Deine Wahl verleiht dir Merkmale auf der 1. Stufe sowie erneut auf der 6., 14. und 18. Stufe.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Ursprung der Zauberei" supports="Sorcerous Origin"/>
+        </rules>
+    </element>
+    <element name="Quelle der Magie (Font of Magic)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_FONT_OF_MAGIC">
+        <description>
+            <p>Ab der 2. Stufe zapfst du einen tiefen inneren Quell an magischer Kraft an. Diese Quelle wird durch Zauberpunkte dargestellt, mit denen du verschiedene magische Effekte erschaffen kannst.</p>
+            <h5>ZAUBERPUNKTE</h5>
+            <p>Du verfügst über 2 Zauberpunkte und erhältst mit steigender Stufe weitere, wie in der Spalte „Zauberpunkte“ der Klassentabelle angegeben. Du kannst niemals mehr Zauberpunkte besitzen, als dir auf deiner aktuellen Stufe zustehen. Du erhältst alle verbrauchten Zauberpunkte zurück, wenn du eine lange Rast beendest.</p>
+            <h5>FLEXIBLES ZAUBERN</h5>
+            <p>Du kannst deine Zauberpunkte verwenden, um zusätzliche Zauberplätze zu erschaffen – oder umgekehrt: Zauberplätze opfern, um zusätzliche Zauberpunkte zu erhalten. Auf höheren Stufen lernst du weitere Verwendungen für deine Zauberpunkte.</p>
+            <p class="indent">
+                <strong>
+                    <em>Zauberplätze erschaffen.</em>
+                </strong> Du kannst als Bonusaktion nicht verbrauchte Zauberpunkte in einen Zauberplatz umwandeln. Die folgende Tabelle zeigt die Kosten. Du kannst auf diese Weise nur Zauberplätze bis zum 5. Grad erzeugen.</p>
+            <p class="indent">Ein auf diese Weise erschaffener Zauberplatz verfällt, wenn du eine lange Rast beendest.</p>
+            <h5 class="caption">ZAUBERPLÄTZE ERSCHAFFEN</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td class="col-20">Grad des Zauberplatzes</td>
+                        <td>Kosten in Zauberpunkten</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>7</td>
+                </tr>
+            </table>
+            <p class="indent">
+                <strong>
+                    <em>Zauberplatz in Zauberpunkte umwandeln.</em>
+                </strong> Du kannst als Bonusaktion einen Zauberplatz aufwenden und erhältst eine Anzahl Zauberpunkte in Höhe seines Grades.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Du verfügst über {{sorcery-points}} Zauberpunkte. Du kannst nicht verbrauchte Zauberpunkte in einen Zauberplatz umwandeln (2 > Grad 1, 3 > Grad 2, 5 > Grad 3, 6 > Grad 4, 7 > Grad 5) oder einen Zauberplatz aufwenden, um entsprechend viele Zauberpunkte zu erhalten.</description>
+        </sheet>
+        <rules>
+            <stat name="sorcery-points" value="level:auserwählter"/>
+        </rules>
+    </element>
+    <element name="Metamagie (Metamagic)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC">
+        <description>
+            <p>Ab der 3. Stufe kannst du deine Zauber so formen, dass sie deinen Bedürfnissen besser entsprechen. Du wählst zwei der folgenden Metamagie-Optionen. Auf Stufe 10 und 17 erhältst du jeweils eine weitere Option.</p>
+            <p class="indent">Du kannst nur eine Metamagie-Option gleichzeitig auf einen Zauber anwenden, sofern nicht anders angegeben.</p>
+        </description>
+        <sheet>
+            <description>Du kannst nur eine Metamagie-Option gleichzeitig auf einen Zauber anwenden, sofern nicht anders angegeben.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Metamagie" supports="Metamagic" level="3" number="2"/>
+            <select type="Class Feature" name="Metamagie" supports="Metamagic" level="10"/>
+            <select type="Class Feature" name="Metamagie" supports="Metamagic" level="17"/>
+        </rules>
+    </element>
+    <element name="Zaubereiauffrischung (Sorcerous Restoration)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_SORCEROUS_RESTORATION">
+        <description>
+            <p>Ab der 20. Stufe erhältst du nach jeder kurzen Rast 4 verbrauchte Zauberpunkte zurück.</p>
+        </description>
+        <sheet>
+            <description>Du erhältst nach jeder kurzen Rast 4 verbrauchte Zauberpunkte zurück.</description>
+        </sheet>
+    </element>
+    <!-- Attributswerterhöhung -->
+    <element name="Verbesserungsauswahl" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_ABILITY_SCORE_IMPROVEMENT_SORCERER">
+        <compendium display="false"/>
+        <description>
+            <p>Wenn du die 4. Stufe erreichst, und erneut auf der 8., 12., 16. und 19. Stufe, kannst du einen Attributswert deiner Wahl um 2 erhöhen oder zwei Attributswerte deiner Wahl um je 1 erhöhen. Wie üblich kannst du mit diesem Merkmal keinen Wert über 20 steigern.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Verbesserungsoption (Auserwählter 4)" supports="Improvement Option,Sorcerer,4" level="4"/>
+            <select type="Class Feature" name="Verbesserungsoption (Auserwählter 8)" supports="Improvement Option,Sorcerer,8" level="8"/>
+            <select type="Class Feature" name="Verbesserungsoption (Auserwählter 12)" supports="Improvement Option,Sorcerer,12" level="12"/>
+            <select type="Class Feature" name="Verbesserungsoption (Auserwählter 16)" supports="Improvement Option,Sorcerer,16" level="16"/>
+            <select type="Class Feature" name="Verbesserungsoption (Auserwählter 19)" supports="Improvement Option,Sorcerer,19" level="19"/>
+        </rules>
+    </element>
+    <!-- Verbesserungsoptionen für Auserwählter -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_SORCERER_4">
+        <supports>Improvement Option,Sorcerer,4</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Auserwählter 4)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_SORCERER_4">
+        <supports>Improvement Option,Sorcerer,4</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Auserwählter 4)"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_SORCERER_8">
+        <supports>Improvement Option,Sorcerer,8</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Auserwählter 8)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_SORCERER_8">
+        <supports>Improvement Option,Sorcerer,8</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Auserwählter 8)"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_SORCERER_12">
+        <supports>Improvement Option,Sorcerer,12</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Auserwählter 12)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_SORCERER_12">
+        <supports>Improvement Option,Sorcerer,12</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Auserwählter 12)"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_SORCERER_16">
+        <supports>Improvement Option,Sorcerer,16</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Auserwählter 16)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_SORCERER_16">
+        <supports>Improvement Option,Sorcerer,16</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Auserwählter 16)"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_SORCERER_19">
+        <supports>Improvement Option,Sorcerer,19</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Auserwählter 19)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_SORCERER_19">
+        <supports>Improvement Option,Sorcerer,19</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent (Auserwählter 19)"/>
+        </rules>
+    </element>
+    <element name="Sorgfältiger Zauber (Careful Spell)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC_CAREFUL_SPELL">
+        <supports>Metamagic</supports>
+        <description>
+            <p>Wenn du einen Zauber wirkst, der andere Kreaturen zu einem Rettungswurf zwingt, kannst du einige dieser Kreaturen vor der vollen Wirkung schützen. Dafür gibst du 1 Zauberpunkt aus und wählst eine Anzahl dieser Kreaturen bis zu deinem Charisma-Modifikator (mindestens eine). Die gewählten Kreaturen bestehen ihren Rettungswurf automatisch.</p>
+        </description>
+        <sheet>
+            <description>Wenn du einen Zauber wirkst, der andere Kreaturen zu einem Rettungswurf zwingt, kannst du bis zu {{metamagic careful spell:creatures}} dieser Kreaturen schützen. Sie bestehen ihren Rettungswurf automatisch.</description>
+        </sheet>
+        <rules>
+            <stat name="metamagic careful spell:creatures" value="1" bonus="base"/>
+            <stat name="metamagic careful spell:creatures" value="charisma:modifier" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Entfernter Zauber (Distant Spell)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC_DISTANT_SPELL">
+        <supports>Metamagic</supports>
+        <description>
+            <p>Wenn du einen Zauber mit einer Reichweite von mindestens 1,5m (5feet) wirkst, kannst du 1 Zauberpunkt ausgeben, um seine Reichweite zu verdoppeln. Wenn der Zauber Berührung erfordert, kannst du mit 1 Zauberpunkt stattdessen eine Reichweite von 9m (30feet) festlegen.</p>
+        </description>
+        <sheet>
+            <description>Du kannst die Reichweite eines Zaubers verdoppeln oder Berührungszauber auf 9m ausdehnen (Kosten: 1 Zauberpunkt).</description>
+        </sheet>
+    </element>
+    <element name="Verstärkter Zauber (Empowered Spell)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC_EMPOWERED_SPELL">
+        <supports>Metamagic</supports>
+        <description>
+            <p>Wenn du für einen Zauber Schaden würfelst, kannst du 1 Zauberpunkt ausgeben, um eine Anzahl der Schadenswürfel bis zu deinem Charisma-Modifikator (mindestens 1) neu zu würfeln. Du musst die neuen Würfe verwenden.</p>
+            <p class="indent">Du kannst Verstärkter Zauber auch dann einsetzen, wenn du bereits eine andere Metamagie-Option auf den Zauber angewendet hast.</p>
+        </description>
+        <sheet>
+            <description>Würfle bis zu {{metamagic empowered spell:rerolls}} Schadenswürfel neu. Du musst die neuen Ergebnisse verwenden. Kann mit anderer Metamagie kombiniert werden.</description>
+        </sheet>
+        <rules>
+            <stat name="metamagic empowered spell:rerolls" value="1" bonus="base"/>
+            <stat name="metamagic empowered spell:rerolls" value="charisma:modifier" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Verlängerter Zauber (Extended Spell)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC_EXTENDED_SPELL">
+        <supports>Metamagic</supports>
+        <description>
+            <p>Wenn du einen Zauber mit einer Wirkungsdauer von mindestens 1 Minute wirkst, kannst du 1 Zauberpunkt ausgeben, um seine Dauer zu verdoppeln – maximal auf 24 Stunden.</p>
+        </description>
+        <sheet>
+            <description>Verdopple die Wirkungsdauer eines Zaubers mit einer Dauer von mindestens 1 Minute (max. 24 Stunden).</description>
+        </sheet>
+    </element>
+    <element name="Erschwerter Zauber (Heightened Spell)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC_HEIGHTENED_SPELL">
+        <supports>Metamagic</supports>
+        <description>
+            <p>Wenn du einen Zauber wirkst, der einen Rettungswurf erfordert, kannst du 3 Zauberpunkte ausgeben, um einer Zielkreatur bei ihrem ersten Rettungswurf gegen diesen Zauber Nachteil zu geben.</p>
+        </description>
+        <sheet>
+            <description>Verleiht einer Zielkreatur Nachteil auf den ersten Rettungswurf gegen deinen Zauber (Kosten: 3 Zauberpunkte).</description>
+        </sheet>
+    </element>
+    <element name="Beschleunigter Zauber (Quickened Spell)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC_QUICKEND_SPELL">
+        <supports>Metamagic</supports>
+        <description>
+            <p>Wenn du einen Zauber mit einer Wirkzeit von 1 Aktion wirkst, kannst du 2 Zauberpunkte ausgeben, um ihn als Bonusaktion zu wirken.</p>
+        </description>
+        <sheet>
+            <description>Verkürzt die Wirkzeit eines Zaubers von 1 Aktion auf 1 Bonusaktion (Kosten: 2 Zauberpunkte).</description>
+        </sheet>
+    </element>
+    <element name="Unmerklicher Zauber (Subtle Spell)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC_SUBTLE_SPELL">
+        <supports>Metamagic</supports>
+        <description>
+            <p>Wenn du einen Zauber wirkst, kannst du 1 Zauberpunkt ausgeben, um ihn ohne somatische und verbale Komponenten zu wirken.</p>
+        </description>
+        <sheet>
+            <description>Wirke einen Zauber ohne Gesten oder Worte (Kosten: 1 Zauberpunkt).</description>
+        </sheet>
+    </element>
+    <element name="Gespiegelter Zauber (Twinned Spell)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_SORCERER_METAMAGIC_TWINNED_SPELL">
+        <supports>Metamagic</supports>
+        <description>
+            <p>Wenn du einen Zauber wirkst, der nur eine Kreatur als Ziel hat und keine Selbstreichweite besitzt, kannst du eine Anzahl Zauberpunkte in Höhe des Zaubergrads ausgeben (1 Punkt bei Zaubertricks), um eine zweite Kreatur im Wirkungsbereich mit demselben Zauber zu treffen. Der Zauber muss auf seiner aktuellen Stufe nicht mehr als ein Ziel haben können (z.B. sind <i>Magisches Geschoss</i> und <i>Versengender Strahl</i> ungeeignet, <i>Froststrahl</i> und <i>Chromatische Kugel</i> jedoch erlaubt).</p>
+        </description>
+        <sheet>
+            <description>Du kannst einen Einzelziel-Zauber auf ein zweites Ziel in Reichweite ausweiten (Kosten: Zaubergrad in Zauberpunkten, 1 Punkt bei Zaubertricks).</description>
+        </sheet>
+    </element>
+    <element name="Drachenblutlinie (Draconic Bloodline)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_DRACONIC_BLOODLINE">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>Deine angeborene Magie stammt aus der drakonischen Magie, die einst mit dem Blut deiner Ahnen in Berührung kam. Auserwählte mit diesem Ursprung gehen oft auf einen uralten Magier zurück, dessen Macht durch Kontakt mit einem Drachen, einem Champion der Alt-Drachen oder einem Relikt drakonischer Macht geweckt wurde. Manche dieser Linien sind gut dokumentiert, andere fast vergessen. Manche Auserwählte sind gar die Ersten ihrer Art – durch einen Pakt, einen magischen Unfall oder die Nähe zu einem Ort großer Drachenmacht gezeichnet.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_DRAGON_ANCESTOR"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_DRAGON_WINGS"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_DRACONIC_PRESENCE"/>
+        </description>
+        <sheet display="false">
+            <description>Deine angeborene Magie stammt aus der drakonischen Magie, die einst mit dem Blut deiner Ahnen in Berührung kam.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_DRAGON_ANCESTOR" level="1"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE" level="1"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY" level="6"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_DRAGON_WINGS" level="14"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_DRACONIC_PRESENCE" level="18"/>
+        </rules>
+    </element>
+    <element name="Drachenvorfahren (Dragon Ancestor)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_DRAGON_ANCESTOR">
+        <supports>Draconic Bloodline</supports>
+        <description>
+            <p>Auf Stufe 1 wählst du einen Alt-Drachen, dessen Magie einst deine Blutlinie berührt hat. Die Art des Drachen bestimmt die Schadensart, die in deiner Magie nachklingt und von späteren Merkmalen verwendet wird.</p>
+            <h5 class="caption">DRAKONISCHES ERBE</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Alt-Drache</td>
+                        <td>Schadensart</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Mordremoth</td>
+                    <td>Gift</td>
+                </tr>
+                <tr>
+                    <td>Kralkatorrik</td>
+                    <td>Blitz</td>
+                </tr>
+                <tr>
+                    <td>Jormag</td>
+                    <td>Kälte</td>
+                </tr>
+                <tr>
+                    <td>Primordus</td>
+                    <td>Feuer</td>
+                </tr>
+                <tr>
+                    <td>Zhaitan</td>
+                    <td>Nekrotisch</td>
+                </tr>
+            </table>
+            <p>Gelegentlich spürst du Fragmente des Willens deines drakonischen Vorfahren – flüchtige Eindrücke, Visionen oder Worte, die sich nicht greifen lassen. Du kannst diese Präsenz nicht steuern, doch in stillen Momenten oder bei starker Magie spürst du ihre Nähe.</p>
+            <p class="indent">Immer wenn du eine Charisma-Probe im Umgang mit Kreaturen ablegst, die Diener deines gewählten Alt-Drachen sind, erhältst du Vorteil.</p>
+        </description>
+        <sheet>
+            <description>Du erhältst Vorteil auf Charisma-Proben gegenüber Dienern des gewählten Alt-Drachen.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Drachenvorfahren (Draconic Bloodline)" supports="Dragon Ancestor"/>
+        </rules>
+    </element>
+    <element name="Drakonische Widerstandskraft (Draconic Resilience)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_DRACONIC_RESILIENCE">
+        <supports>Draconic Bloodline</supports>
+        <description>
+            <p>Die Magie deines Vorfahren hinterlässt körperliche Spuren: Ab der 1. Stufe erhöht sich dein Trefferpunktemaximum um 1 und erneut um 1 mit jedem weiteren Stufenaufstieg in dieser Klasse.</p>
+            <p class="indent">Zudem überzieht sich deine Haut an manchen Stellen mit einem dünnen Schimmer drakonischer Schuppen. Solange du keine Rüstung trägst, entspricht deine Rüstungsklasse 13 + dein Geschicklichkeitsmodifikator.</p>
+        </description>
+        <sheet>
+            <description>Solange du keine Rüstung trägst, entspricht deine RK {{ac:draconic resilience}}.</description>
+        </sheet>
+        <rules>
+            <stat name="hp" value="level:auserwählter"/>
+            <stat name="ac:draconic resilience" value="13"/>
+            <stat name="ac:draconic resilience" value="dexterity:modifier"/>
+            <stat name="ac:calculation" value="ac:draconic resilience" bonus="calculation" equipped="[armor:none]" alt="Drakonische Widerstandskraft (Auserwählter)"/>
+        </rules>
+    </element>
+    <element name="Elementare Affinität (Elemental Affinity)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_AFFINITY">
+        <supports>Draconic Bloodline</supports>
+        <description>
+            <p>Ab der 6. Stufe kannst du beim Wirken eines Zaubers, der Schaden des Typs verursacht, der deiner drakonischen Herkunft entspricht, deinen Charisma-Modifikator zu einem Schadenswurf dieses Zaubers addieren. Gleichzeitig kannst du 1 Zauberpunkt ausgeben, um für 1 Stunde Resistenz gegen diesen Schadenstyp zu erhalten.</p>
+        </description>
+        <sheet>
+            <description>Füge {{charisma:modifier}} zu einem Schadenswurf hinzu, wenn du einen Zauber mit {{dragon ancestor damage type}} wirkst. Gib 1 Zauberpunkt aus, um für 1 Stunde Resistenz gegen {{dragon ancestor damage type}} zu erhalten.</description>
+        </sheet>
+    </element>
+    <element name="Drachenflügel (Dragon Wings)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_DRAGON_WINGS">
+        <supports>Draconic Bloodline</supports>
+        <description>
+            <p>Ab der 14. Stufe kannst du als Bonusaktion ein Paar drachenartiger Flügel wachsen lassen. Du erhältst damit eine Fluggeschwindigkeit in Höhe deiner aktuellen Geschwindigkeit. Die Flügel verbleiben, bis du sie als Bonusaktion wieder verschwinden lässt.</p>
+            <p class="indent">Du kannst deine Flügel nicht manifestieren, während du eine Rüstung trägst, es sei denn, sie wurde speziell dafür angepasst. Kleidung, die nicht für die Flügel ausgelegt ist, kann dabei beschädigt werden.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>Lasse dir Flügel wachsen (Fluggeschwindigkeit: {{speed}}ft). Bleiben aktiv, bis du sie als Bonusaktion wieder zurückziehst.</description>
+        </sheet>
+    </element>
+    <element name="Drakonische Präsenz (Draconic Presence)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_DRACONIC_PRESENCE">
+        <supports>Draconic Bloodline</supports>
+        <description>
+            <p>Ab der 18. Stufe kannst du die furchteinflößende Präsenz deines drakonischen Vorfahren kanalisieren. Als Aktion kannst du 5 Zauberpunkte ausgeben, um eine Aura der Ehrfurcht oder Angst (deine Wahl) mit einem Radius von 18m (60feet) zu erzeugen. Diese Aura hält 1 Minute oder bis du deine Konzentration verlierst (als würdest du einen Konzentrationszauber aufrechterhalten).</p>
+            <p class="indent">Jede feindliche Kreatur, die ihren Zug innerhalb der Aura beginnt, muss einen Rettungswurf auf Weisheit bestehen oder wird bis zum Ende der Aura bezaubert (bei Ehrfurcht) oder verängstigt (bei Angst). Kreaturen, die den Wurf bestehen, sind 24 Stunden lang immun gegen diese Aura.</p>
+        </description>
+        <sheet action="Action">
+            <description>Erzeuge eine Aura der Ehrfurcht oder Angst (Radius: 18m). Feinde in der Aura müssen einen Weisheitswurf bestehen oder werden bezaubert oder verängstigt. Hält 1 Minute oder bis Konzentration endet.</description>
+        </sheet>
+    </element>
+    <element name="Mordremoth" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_MORDREMOTH">
+        <supports>Dragon Ancestor</supports>
+        <description>
+            <p>Du wählst Mordremoth als Quelle deiner magischen Herkunft. Die Schadensart Gift wird von späteren Merkmalen verwendet.</p>
+        </description>
+        <sheet>
+            <description>Deine Magie ist mit Mordremoth verbunden. Schadensart: Gift.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="dragon ancestor damage type" value="Poison"/>
+        </rules>
+    </element>
+    <element name="Kralkatorrik" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_KRALKATORRIK">
+        <supports>Dragon Ancestor</supports>
+        <description>
+            <p>Du wählst Kralkatorrik als Quelle deiner magischen Herkunft. Die Schadensart Blitz wird von späteren Merkmalen verwendet.</p>
+        </description>
+        <sheet>
+            <description>Deine Magie ist mit Kralkatorrik verbunden. Schadensart: Blitz.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="dragon ancestor damage type" value="Lightning"/>
+        </rules>
+    </element>
+    <element name="Jormag" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_JORMAG">
+        <supports>Dragon Ancestor</supports>
+        <description>
+            <p>Du wählst Jormag als Quelle deiner magischen Herkunft. Die Schadensart Kälte wird von späteren Merkmalen verwendet.</p>
+        </description>
+        <sheet>
+            <description>Deine Magie ist mit Jormag verbunden. Schadensart: Kälte.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="dragon ancestor damage type" value="Cold"/>
+        </rules>
+    </element>
+    <element name="Primordus" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_PRIMORDUS">
+        <supports>Dragon Ancestor</supports>
+        <description>
+            <p>Du wählst Primordus als Quelle deiner magischen Herkunft. Die Schadensart Feuer wird von späteren Merkmalen verwendet.</p>
+        </description>
+        <sheet>
+            <description>Deine Magie ist mit Primordus verbunden. Schadensart: Feuer.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="dragon ancestor damage type" value="Fire"/>
+        </rules>
+    </element>
+    <element name="Zhaitan" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_DRAGON_ANCESTOR_ZHAITAN">
+        <supports>Dragon Ancestor</supports>
+        <description>
+            <p>Du wählst Zhaitan als Quelle deiner magischen Herkunft. Die Schadensart Nekrotisch wird von späteren Merkmalen verwendet.</p>
+        </description>
+        <sheet>
+            <description>Deine Magie ist mit Zhaitan verbunden. Schadensart: Nekrotisch.</description>
+        </sheet>
+        <rules>
+            <stat inline="true" name="dragon ancestor damage type" value="Necrotic"/>
+        </rules>
+    </element>
+    <element name="Wilde Magie (Wild Magic)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_WILD_MAGIC">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>Deine Magie entstammt den wilden Kräften, die unter der Ordnung der Welt lauern. Vielleicht wurdest du in einem Moment roher Magie berührt – durch ein zerbrochenes Ley-Netz, einen Nebelriss oder einen Kontakt mit chaotischer Energie aus der Tiefe. Vielleicht hat ein uraltes Wesen des Waldes dich gesegnet, ein Kryptis dich gezeichnet oder du bist schlicht das Ergebnis eines unbegreiflichen Zufalls. Wie auch immer deine Gabe erwachte – sie gärt in deinem Innersten und sucht einen Weg nach außen.</p>
+            <p>Deine Wahl verleiht dir Merkmale auf der 1., 6., 14. und 18. Stufe.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WILD_MAGIC_SURGE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_TIDES_OF_CHAOS"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_BEND_LUCK"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_CONTROLLED_CHAOS"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_SPELL_BOMBARDMENT"/>
+            <h5 class="caption">WILDE MAGIE – TABELLE</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>W100</td>
+                        <td>Effekt</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>01–02</td>
+                    <td>Würfle zu Beginn jeder deiner Runden für 1 Minute erneut auf dieser Tabelle. Ignoriere dabei dieses Ergebnis.</td>
+                </tr>
+                <tr>
+                    <td>03–04</td>
+                    <td>Für 1 Minute kannst du unsichtbare Kreaturen sehen, solange du Sichtlinie zu ihnen hast.</td>
+                </tr>
+                <tr>
+                    <td>05–06</td>
+                    <td>Ein Wintertags-Spielzeug erscheint in einem Feld innerhalb von 1,5m. Es verschwindet nach 1 Minute.</td>
+                </tr>
+                <tr>
+                    <td>07–08</td>
+                    <td>Du wirkst <i>Feuerball</i> (Grad 3), zentriert auf dich.</td>
+                </tr>
+                <tr>
+                    <td>09–10</td>
+                    <td>Du wirkst <i>Magisches Geschoss</i> (Grad 5).</td>
+                </tr>
+                <tr>
+                    <td>11–12</td>
+                    <td>Würfle 1W10. Deine Körpergröße verändert sich um entsprechend viele Zoll: Bei einer ungeraden Zahl schrumpfst du, bei einer geraden wächst du.</td>
+                </tr>
+                <tr>
+                    <td>13–14</td>
+                    <td>Du wirkst <i>Verwirrung</i>, zentriert auf dich.</td>
+                </tr>
+                <tr>
+                    <td>15–16</td>
+                    <td>Für die nächste Minute erhältst du zu Beginn jeder deiner Runden 5 Trefferpunkte zurück.</td>
+                </tr>
+                <tr>
+                    <td>17–18</td>
+                    <td>Du bekommst einen langen Bart aus Federn. Beim Niesen explodieren die Federn und verschwinden.</td>
+                </tr>
+                <tr>
+                    <td>19–20</td>
+                    <td>Du wirkst <i>Schmieren</i>, zentriert auf dich.</td>
+                </tr>
+                <tr>
+                    <td>21–22</td>
+                    <td>Für 1 Minute haben Kreaturen Nachteil bei Rettungswürfen gegen den nächsten Zauber von dir, der einen Rettungswurf erfordert.</td>
+                </tr>
+                <tr>
+                    <td>23–24</td>
+                    <td>Deine Haut färbt sich leuchtend blau. Ein <i>Fluch brechen</i>-Zauber kann diesen Effekt beenden.</td>
+                </tr>
+                <tr>
+                    <td>25–26</td>
+                    <td>Ein drittes Auge erscheint für 1 Minute auf deiner Stirn. Solange hast du Vorteil auf Weisheitswürfe (Wahrnehmung), die auf Sehen basieren.</td>
+                </tr>
+                <tr>
+                    <td>27–28</td>
+                    <td>Für 1 Minute haben alle deine Zauber mit einer Wirkzeit von 1 Aktion stattdessen eine Wirkzeit von 1 Bonusaktion.</td>
+                </tr>
+                <tr>
+                    <td>29–30</td>
+                    <td>Du teleportierst dich bis zu 18m weit zu einem Ort deiner Wahl, den du sehen kannst.</td>
+                </tr>
+                <tr>
+                    <td>31–32</td>
+                    <td>Du wirst bis zum Ende deines nächsten Zuges in die Nebelebene versetzt. Danach kehrst du an deinen ursprünglichen Ort oder den nächstgelegenen freien Platz zurück.</td>
+                </tr>
+                <tr>
+                    <td>33–34</td>
+                    <td>Der nächste Schadenszauber, den du innerhalb der nächsten Minute wirkst, verursacht maximalen Schaden.</td>
+                </tr>
+                <tr>
+                    <td>35–36</td>
+                    <td>Würfle 1W10. Dein Alter verändert sich um entsprechend viele Jahre: Bei ungerader Zahl wirst du jünger (mindestens 1 Jahr alt), bei gerader Zahl älter.</td>
+                </tr>
+                <tr>
+                    <td>37–38</td>
+                    <td>1W6 Nebelkreaturen erscheinen in bis zu 18m Entfernung, sind verängstigt von dir und verschwinden nach 1 Minute.</td>
+                </tr>
+                <tr>
+                    <td>39–40</td>
+                    <td>Du erhältst 2W10 Trefferpunkte zurück.</td>
+                </tr>
+                <tr>
+                    <td>41–42</td>
+                    <td>Du verwandelst dich bis zum Beginn deines nächsten Zuges in eine Topfpflanze. In dieser Form bist du handlungsunfähig und erleidest doppelten Schaden. Bei 0 TP zerbricht der Topf und du nimmst deine normale Gestalt wieder an.</td>
+                </tr>
+                <tr>
+                    <td>43–44</td>
+                    <td>Für 1 Minute kannst du dich in jeder deiner Runden als Bonusaktion bis zu 6m teleportieren.</td>
+                </tr>
+                <tr>
+                    <td>45–46</td>
+                    <td>Du wirkst <i>Schweben</i> auf dich selbst.</td>
+                </tr>
+                <tr>
+                    <td>47–48</td>
+                    <td>Ein Baumhirte erscheint für 1 Minute in einem Feld bei dir.</td>
+                </tr>
+                <tr>
+                    <td>49–50</td>
+                    <td>Du kannst 1 Minute lang nicht sprechen. Stattdessen steigen rosa Blasen aus deinem Mund.</td>
+                </tr>
+                <tr>
+                    <td>51–52</td>
+                    <td>Ein spektraler Schild schwebt 1 Minute lang um dich, gewährt +2 RK und Immunität gegen <i>Magisches Geschoss</i>.</td>
+                </tr>
+                <tr>
+                    <td>53–54</td>
+                    <td>Für 5W6 Tage bist du immun gegen Rauschwirkungen von Alkohol.</td>
+                </tr>
+                <tr>
+                    <td>55–56</td>
+                    <td>Deine Haare fallen aus, wachsen aber innerhalb von 24 Stunden nach.</td>
+                </tr>
+                <tr>
+                    <td>57–58</td>
+                    <td>Für 1 Minute entzündet sich jeder brennbare Gegenstand, den du berührst (außer er wird getragen oder gehalten).</td>
+                </tr>
+                <tr>
+                    <td>59–60</td>
+                    <td>Du erhältst deinen verbrauchten Zauberplatz des niedrigsten Grades zurück.</td>
+                </tr>
+                <tr>
+                    <td>61–62</td>
+                    <td>Für 1 Minute musst du schreien, wenn du sprichst.</td>
+                </tr>
+                <tr>
+                    <td>63–64</td>
+                    <td>Du wirkst <i>Nebelwolke</i>, zentriert auf dich.</td>
+                </tr>
+                <tr>
+                    <td>65–66</td>
+                    <td>Bis zu drei Kreaturen deiner Wahl in 9m Entfernung erleiden 4W10 Blitzschaden.</td>
+                </tr>
+                <tr>
+                    <td>67–68</td>
+                    <td>Du wirst von der nächsten Kreatur in deiner Nähe bis zum Ende deines nächsten Zuges verängstigt.</td>
+                </tr>
+                <tr>
+                    <td>69–70</td>
+                    <td>Alle Kreaturen im Umkreis von 9m werden für 1 Minute unsichtbar. Die Unsichtbarkeit endet, wenn sie angreifen oder einen Zauber wirken.</td>
+                </tr>
+                <tr>
+                    <td>71–72</td>
+                    <td>Du erhältst für 1 Minute Resistenz gegen allen Schaden.</td>
+                </tr>
+                <tr>
+                    <td>73–74</td>
+                    <td>Eine zufällige Kreatur in bis zu 18m Entfernung wird für 1W4 Stunden vergiftet.</td>
+                </tr>
+                <tr>
+                    <td>75–76</td>
+                    <td>Du leuchtest 1 Minute lang hell in 9m Radius. Kreaturen, die ihren Zug in 1,5m Umkreis beenden, werden bis Ende ihres nächsten Zuges geblendet.</td>
+                </tr>
+                <tr>
+                    <td>77–78</td>
+                    <td>Du wirkst <i>Verwandlung</i> auf dich selbst. Misslingt der Rettungswurf, wirst du zu einem Dolyak-Kalb.</td>
+                </tr>
+                <tr>
+                    <td>79–80</td>
+                    <td>Für 1 Minute flattern illusorische Schmetterlinge und Blütenblätter in 3m Umkreis um dich.</td>
+                </tr>
+                <tr>
+                    <td>81–82</td>
+                    <td>Du kannst sofort eine zusätzliche Aktion ausführen.</td>
+                </tr>
+                <tr>
+                    <td>83–84</td>
+                    <td>Alle Kreaturen im Umkreis von 9m erleiden 1W10 nekrotischen Schaden. Du erhältst Trefferpunkte in Höhe der Summe zurück.</td>
+                </tr>
+                <tr>
+                    <td>85–86</td>
+                    <td>Du wirkst <i>Spiegelbilder</i>.</td>
+                </tr>
+                <tr>
+                    <td>87–88</td>
+                    <td>Du wirkst <i>Fliegen</i> auf eine zufällige Kreatur in bis zu 18m Entfernung.</td>
+                </tr>
+                <tr>
+                    <td>89–90</td>
+                    <td>Du wirst 1 Minute lang unsichtbar und unhörbar. Der Effekt endet, wenn du angreifst oder einen Zauber wirkst.</td>
+                </tr>
+                <tr>
+                    <td>91–92</td>
+                    <td>Wenn du innerhalb der nächsten Minute stirbst, wirst du sofort wiederbelebt, als hättest du <i>Wiedergeburt</i> gewirkt.</td>
+                </tr>
+                <tr>
+                    <td>93–94</td>
+                    <td>Du wirst für 1 Minute eine Größenkategorie größer.</td>
+                </tr>
+                <tr>
+                    <td>95–96</td>
+                    <td>Du und alle Kreaturen in 9m Umkreis erleiden 1 Minute lang Verwundbarkeit gegenüber Stichschaden.</td>
+                </tr>
+                <tr>
+                    <td>97–98</td>
+                    <td>Du wirst 1 Minute lang von leiser, ätherischer Musik umgeben.</td>
+                </tr>
+                <tr>
+                    <td>99–100</td>
+                    <td>Du erhältst alle verbrauchten Zauberpunkte zurück.</td>
+                </tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description>Deine Magie entstammt den wilden Kräften, die unter der Ordnung der Welt lauern.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WILD_MAGIC_SURGE" level="1"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_TIDES_OF_CHAOS" level="1"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_BEND_LUCK" level="6"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_CONTROLLED_CHAOS" level="14"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_SPELL_BOMBARDMENT" level="18"/>
+        </rules>
+    </element>
+    <element name="Woge der Wilden Magie (Wild Magic Surge)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WILD_MAGIC_SURGE">
+        <supports>Wild Magic</supports>
+        <description>
+            <p>Ab der 1. Stufe kann dein Zauberwirken wilde Magie entfesseln. Einmal pro Runde kann der Spielleiter dich dazu auffordern, sofort nach dem Wirken eines Zaubers des 1. Grades oder höher einen W20 zu würfeln. Bei einer 1 löst du eine Woge der Wilden Magie aus – würfle auf der entsprechenden Tabelle, um den Effekt zu bestimmen.</p>
+            <p class="indent">Wenn durch den Effekt ein Zauber gewirkt wird, ist er zu instabil, um von Metamagie beeinflusst zu werden. Falls er normalerweise Konzentration erfordert, benötigt er in diesem Fall keine – der Zauber wirkt für die volle Dauer.</p>
+        </description>
+        <sheet>
+            <description>Nach dem Wirken eines Zaubers des 1. Grades oder höher kann der SL dich einen W20 würfeln lassen. Bei einer 1 tritt ein Effekt der Wilden Magie auf. Zauber-Effekte aus der Tabelle ignorieren Metamagie und erfordern keine Konzentration.</description>
+        </sheet>
+    </element>
+    <element name="Gezeiten des Chaos (Tides of Chaos)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_TIDES_OF_CHAOS">
+        <supports>Wild Magic</supports>
+        <description>
+            <p>Ab der 1. Stufe kannst du die Kräfte des Zufalls zu deinen Gunsten lenken. Du kannst dir einmal pro langer Rast Vorteil auf einen Angriffswurf, eine Fähigkeit oder einen Rettungswurf geben.</p>
+            <p class="indent">Bevor du diese Fähigkeit erneut nutzen kannst, kann der SL dich nach dem Wirken eines Zaubers des 1. Grades oder höher auf der Tabelle für Wilde Magie würfeln lassen. Danach erhältst du die Nutzung von Gezeiten des Chaos sofort zurück.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>Gewähre dir Vorteil auf einen Wurf. Der SL kann dich danach auf der Wilden-Magie-Tabelle würfeln lassen, um die Fähigkeit sofort zurückzuerhalten.</description>
+        </sheet>
+    </element>
+    <element name="Schicksal zurechtbiegen (Bend Luck)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_BEND_LUCK">
+        <supports>Wild Magic</supports>
+        <description>
+            <p>Ab der 6. Stufe kannst du das Schicksal anderer Wesen mit deiner wilden Magie beeinflussen. Wenn eine Kreatur, die du sehen kannst, einen Angriffswurf, eine Fähigkeit oder einen Rettungswurf macht, kannst du deine Reaktion nutzen und 2 Zauberpunkte ausgeben, um 1W4 zu würfeln. Du addierst oder subtrahierst das Ergebnis (nach Wahl) vom ursprünglichen Wurf. Du musst dies tun, bevor die Auswirkungen des Wurfs feststehen.</p>
+        </description>
+        <sheet action="Reaktion">
+            <description>Reaktion: Gib 2 Zauberpunkte aus, um 1W4 zu würfeln und das Ergebnis zu einem Wurf einer Kreatur zu addieren oder subtrahieren (nach Wahl). Muss vor dem Ausgang des Wurfs erfolgen.</description>
+        </sheet>
+    </element>
+    <element name="Kontrolliertes Chaos (Controlled Chaos)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_CONTROLLED_CHAOS">
+        <supports>Wild Magic</supports>
+        <description>
+            <p>Ab der 14. Stufe erhältst du ein Maß an Kontrolle über deine magischen Entladungen. Wenn du auf der Tabelle für Wilde Magie würfeln musst, darfst du zweimal würfeln und eines der Ergebnisse wählen.</p>
+        </description>
+        <sheet>
+            <description>Wenn du auf der Tabelle für Wilde Magie würfelst, kannst du zweimal würfeln und eines der Ergebnisse wählen.</description>
+        </sheet>
+    </element>
+    <element name="Zauberbombardement (Spell Bombardment)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_SPELL_BOMBARDMENT">
+        <supports>Wild Magic</supports>
+        <description>
+            <p>Ab der 18. Stufe verstärkt sich die zerstörerische Energie deiner Zauber. Wenn du für einen Zauber Schaden würfelst und auf einem Würfel die höchste mögliche Zahl erzielst, kannst du diesen Würfel erneut würfeln und den zusätzlichen Schaden hinzufügen. Dies kannst du nur einmal pro Zug anwenden.</p>
+        </description>
+        <sheet>
+            <description>Einmal pro Zug: Wenn du bei einem Schadenszauber das Maximum auf einem Würfel würfelst, würfle diesen erneut und addiere das Ergebnis.</description>
+        </sheet>
+    </element>
+</elements>
