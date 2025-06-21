@@ -89,15 +89,15 @@
             $spellcasting/schools/school = setters/set[@name='school'])]"/>-->
           <xsl:variable name="spells" select="$spellList/elements/element[@type='Spell' and contains(supports, $baseList) and setters/set[@name='level'] = $lvl]"/>
           <xsl:if test="count($spells) > 0">
-            <xsl:if test="not($spellcasting/schools) or $spellcasting/schools/school = setters/set[@name='school']">
             <h2><xsl:value-of select="@label"/></h2>
             <xsl:for-each select="$spells">
+            <xsl:if test="not($spellcasting/schools) or $spellcasting/schools/school = setters/set[@name='school']">
               <xsl:sort select="@name"/>
               <xsl:call-template name="spell-block">
                 <xsl:with-param name="spell" select="."/>
               </xsl:call-template>
-            </xsl:for-each>
               </xsl:if>
+            </xsl:for-each>
           </xsl:if>
         </xsl:for-each>
         
