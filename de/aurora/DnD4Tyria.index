@@ -20,16 +20,16 @@
 
 		<!-- classes -->
 		<file name="d4t-class-barbarian.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-barbarian.xml" />
-		<file name="d4t-class-bard.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-bard.xml" />
+		<!--<file name="d4t-class-bard.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-bard.xml" />-->
 		<file name="d4t-class-cleric.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-cleric.xml" />
 		<file name="d4t-class-druid.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-druid.xml" />
 		<file name="d4t-class-fighter.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-fighter.xml" />
-		<file name="d4t-class-monk.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-monk.xml" />
+		<!--<file name="d4t-class-monk.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-monk.xml" />-->
 		<file name="d4t-class-paladin.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-paladin.xml" />
 		<file name="d4t-class-ranger.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-ranger.xml" />
 		<file name="d4t-class-rogue.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-rogue.xml" />
 		<file name="d4t-class-sorcerer.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-sorcerer.xml" />
-		<file name="d4t-class-warlock.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-warlock.xml" />
+		<!--<file name="d4t-class-warlock.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-warlock.xml" />-->
 		<file name="d4t-class-wizard.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/classes/d4t-class-wizard.xml" />
 
 		<!-- backgrounds -->		
