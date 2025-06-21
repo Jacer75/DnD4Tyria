@@ -1,0 +1,308 @@
+<?xml version="1.0" ?>
+<elements>
+    <info>
+        <name>Languages</name>
+        <author url="">Aurora4Tyria</author>
+        <update version="0.0.1">
+            <file name="d4t-languages-tyria.xml" url=""/>
+        </update>
+    </info>
+    <element name="Tyrianisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_TYRIAN">
+        <supports>Standard</supports>
+        <description>
+            <p>Tyrianisch ist die Gemeinsprache von Tyria, gesprochen von fast allen empfindungsfähigen Völkern des Kontinents. Sie dient der Verständigung zwischen Kulturen und Rassen – unabhängig von ihrer Herkunft oder eigenen Schriftsystemen.</p>
+            <p>Die Ursprünge der tyrianischen Sprache reichen über 11.000 Jahre zurück, bis zum letzten Erwachen der Alt-Drachen. In dieser Zeit kämpften die ältesten Völker Tyrias – Zwerge, Jotun, Vergessene, Mursaat und Seher – ums Überleben. Trotz ihrer unterschiedlichen Sprachen wurde ihnen klar, dass sie ein gemeinsames Mittel der Verständigung brauchen würden: sowohl für den Augenblick als auch für kommende Generationen. Ob sie dabei eine existierende Sprache übernahmen, eine neue schufen oder ob diese Sprache sogar älter war als sie selbst, ist unklar und Teil der verlorenen Geschichte.</p>
+            <p>Fest steht nur, dass es die erste große Kooperation dieser Völker war, aus der das hervorging, was heute als Tyrianisch bekannt ist – eine Sprache, die jedes Kind in Tyria lernt und die bis heute das Rückgrat von Handel, Diplomatie und auch Krieg bildet.</p>
+        </description>
+        <setters>
+            <set name="standard">true</set>
+            <set name="speakers">Nahezu alle Völker Tyrias</set>
+            <set name="script">Neu-Krytanisch</set>
+        </setters>
+    </element>
+    <element name="Asurisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_ASURAN">
+        <supports>Standard</supports>
+        <description>
+            <p>Asurisch ist die Muttersprache der Asura – eine technisch geprägte Sprache mit stark mathematischem Aufbau. Ursprünglich bestand sie zur Hälfte aus Struktur und zur Hälfte aus Zahlenlogik. Seit ihrem Aufstieg an die Oberfläche hat sich das Schriftsystem weiterentwickelt.</p>
+            <p>Das heute sichtbare Asurische Alphabet, das auf Monitoren und magischen Interfaces erscheint, ist ein chiffriertes Subsystem, abgeleitet aus mathematischen Formeln. Es bildet nur einen kleinen Teil der tatsächlichen Sprache ab, die für Außenstehende größtenteils unverständlich bleibt.</p>
+            <p>Bekannte Begriffe: <b>Bookah</b> – ursprünglich ein imaginäres Monster zur Einschüchterung von Kindern, heute ein Schimpfwort für als minderwertig empfundene Wesen (oft Menschen). <b>Poobah</b> – respektlos-spöttischer Titel für Vorgesetzte.</p>
+        </description>
+        <setters>
+            <set name="standard">true</set>
+            <set name="speakers">Asura</set>
+            <set name="script">Asurisch</set>
+        </setters>
+    </element>
+    <element name="Charrisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_CHARR">
+        <supports>Standard</supports>
+        <description>
+            <p>Charrisch ist eine raue, kehlige Sprache mit militärisch geprägter Struktur, wie sie von den Legionen der Charr gesprochen wird. Die Charr beherrschen bereits seit langem die Gemeinsprache, behielten aber ihre eigene Sprache im kulturellen und militärischen Alltag bei.</p>
+            <p>Vor der Einführung des Neu-Krytanischen Schriftsystems nutzten die Charr keine einheitliche Schrift, sondern übermittelten Informationen über ideographische Symbole – etwa für Schlachtbefehle oder geheime Hinweise. Diese Praxis wird bis heute vereinzelt fortgeführt, insbesondere durch Spione der Asche-Legion.</p>
+            <p>Bekannte Begriffe: <b>Hrangmer</b> – „Schlund der Vergessenheit“, ein Vulkan. <b>Fahrar</b> – Aufzuchtstätte bzw. Kaderschule für junge Charr.</p>
+        </description>
+        <setters>
+            <set name="standard">true</set>
+            <set name="speakers">Charr</set>
+            <set name="script">Ideogramme</set>
+        </setters>
+    </element>
+    <element name="Nornisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_NORN">
+        <supports>Standard</supports>
+        <description>
+            <p>Nornisch ist die ursprüngliche Sprache der Norn – eine kraftvolle, naturverbundene Sprache, die jedoch zunehmend aus dem Alltag verschwindet. Während früher sowohl eine gesprochene als auch eine geschriebene Form existierte, ist die Schriftform heute nahezu ausgestorben und wurde einst nur noch in Form einzelner Runen im Fernen Zittergipfel-Gebirge verwendet.</p>
+            <p>Die gesprochene Sprache hat hingegen Spuren in vielen Ortsnamen hinterlassen – etwa in <b>Hoelbrak</b>, was so viel wie „Tiefebene“ bedeutet. Die Sprache selbst soll mehrere unterschiedliche Begriffe für das Wort „Jagd“ enthalten – ein Hinweis auf ihre Bedeutung in der Kultur der Norn.</p>
+        </description>
+        <setters>
+            <set name="standard">true</set>
+            <set name="speakers">Norn</set>
+            <set name="script">Runen</set>
+        </setters>
+    </element>
+    <element name="Elonisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_ELONIAN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Elonisch ist kein vollständiges Sprachsystem, sondern ein Dialekt mit fragmentarischem Vokabular, das in Verbindung mit der Gemeinsprache verwendet wurde. Einige Begriffe wie <b>Ahai</b> (Gruß) oder <b>Droj</b> (Sand) sind überliefert, doch ihre genaue Bedeutung ist oft nur aus Ortsnamen wie <b>Gandara</b> oder <b>Fahranur</b> zu erahnen.</p>
+            <p>Die Sprache war einst in ganz Istan, Kourna und Vabbi verbreitet, vor allem zur Zeit der Ur-Dynastien. Inschriften aus dieser Epoche finden sich noch heute in den Ruinen von Fahranur. Mit dem Aufstieg Palawa Jokos und der Zerstörung kultureller Stätten wie der Hallen von Chokhin geriet das ursprüngliche Elonische Schriftsystem jedoch zunehmend in Vergessenheit. In der Freien Stadt Amnoon wird heute das Neu-Krytanische Alphabet verwendet.</p>
+            <p>Elonisch weist in seinen Namen und Lautmustern Einflüsse aus arabischen und afrikanischen (z. B. koptischen oder Yoruba) Sprachtraditionen auf.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Elonische Kulturen</set>
+            <set name="script">Neu-Krytanisch</set>
+        </setters>
+    </element>
+    <element name="Canthanisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_CANTHAN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Canthanisch ist eine stilisierte, logografische Sprache, die im Kaiserreich Cantha verwendet wird. Ihre Schriftzeichen erinnern an eine Mischung aus kunstvoller Kalligraphie und symbolischer Bedeutungsverdichtung – jedes Zeichen kann ein ganzes Konzept transportieren.</p>
+            <p>Seit über 200 Jahren besteht kein Kontakt mehr mit dem Kaiserreich Cantha. Nach politischen Umwälzungen und dem Erstarken nationalistischer Strömungen hat sich das Reich vollständig von der übrigen Welt abgeschottet. Die Versuche, durch die südlichen Seewege Verbindung herzustellen, scheiterten spätestens mit dem Erwachen Zhaitans, da untote Flotten jede Passage blockieren.</p>
+            <p>In Zentraltyria existieren nur noch wenige Artefakte, Bücher oder Inschriften in Canthanischer Sprache. Diese gelten als äußerst selten und sind von hohem wissenschaftlichen und kulturellen Interesse – insbesondere für die Gelehrten der Abtei Durmand. Nur wenige Spezialisten sind in der Lage, die komplexen Schriftzeichen zu entziffern, da Canthanisch weder verwandt mit dem Neu-Krytanischen Alphabet ist, noch in der Alltagswelt bekannt war.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Canthaner</set>
+            <set name="script">Canthanisch</set>
+        </setters>
+    </element>
+    <element name="Hylekisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_HYLEK">
+        <supports>Exotic</supports>
+        <description>
+            <p>Hylekisch ist die Sprache der Hylek – eines amphibischen, froschartigen Volkes, das entlang der Küsten des Meers des Leids, der Krytanischen Küste und bis in die Dschungel des Maguuma-Gebiets siedelt. Die Sprache besteht aus einer Mischung klickender, kehliger Laute und besitzt eine ungewöhnlich reichhaltige Symbolik.</p>
+            <p>Ursprünglich zurückgezogen lebend und fremdenfeindlich, haben einige Stämme in jüngerer Zeit begonnen, mit Außenstehenden zu handeln – vor allem Heil- und Giftstoffe sind begehrte Handelsgüter. Andere Stämme hingegen bleiben aggressiv und territorial, insbesondere jene, die für ihre tödlichsten Toxine bekannt sind.</p>
+            <p>Bekannte Begriffe aus dem Hylekischen umfassen unter anderem <b>Amini</b> (Jäger), <b>Cuicani</b> (Sänger), <b>Nahualli</b> (Zauberer), <b>Tequatl</b> („Der in der Dunkelheit“), <b>Tlamatini</b> (Weiser) und <b>Tlatotetl</b> (Sprecher; wörtlich: „Einer, der wie eine Flamme ist“).</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Hylek-Stämme</set>
+            <set name="script">Hylekisch</set>
+        </setters>
+    </element>
+    <element name="Tengu" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_TENGU">
+        <supports>Exotic</supports>
+        <description>
+            <p>Die Sprache der Tengu wird nur innerhalb ihrer stark abgeschotteten Gesellschaften gesprochen, vor allem im Herrschaftsgebiet der Winde an der Angelbucht. Die Tengu misstrauen den anderen Völkern Tyrias zutiefst und verweigern Außenstehenden den Zutritt zu ihren Gebieten – und damit auch zu ihrer Sprache.</p>
+            <p>Die meisten Tengu sprechen eine Variante des Alt-Canthan, und jene, die es nicht tun, gelten als „verloren“ und werden von ihren Artgenossen mit ähnlicher Verachtung behandelt wie andere Völker. Die Sprache gilt als hochkomplex, voller Ehrentitel, Rangbezüge und verschlüsselter Bedeutungen.</p>
+            <p>Die Aussprache ist geprägt von zischenden und schnarrenden Lauten, die teils durch scharfe Schnabelkontakte und kurze Klicklaute verstärkt werden – eine phonetische Eigenart, die es Nicht-Tengu nahezu unmöglich macht, die Sprache authentisch nachzubilden.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Tengu</set>
+            <set name="script">Alt-Canthanisch</set>
+        </setters>
+    </element>
+    <element name="Kodanisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_KODAN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Kodanisch ist die uralte Sprache der Kodan – eines intelligenten, bärenähnlichen Volkes, das aus dem Fernen Zittergipfel-Gebirge stammt. Die Sprache ist stark spirituell geprägt und eng mit der Lehre von Koda verbunden, dem Gott, den die Kodan als Schöpfer Tyrias verehren.</p>
+            <p>Obwohl die Kodan bereits zum letzten Erwachen der Alt-Drachen existierten, hielten sie sich stets aus den großen Konflikten der Welt heraus. Ihre Sprache, über Generationen nur innerhalb ihrer Stämme gepflegt und gelehrt, ist entsprechend abgeschieden, unverändert und archaisch geblieben.</p>
+            <p>Kodanisch enthält viele Begriffe, die sich nicht direkt ins Gemeinsprache übersetzen lassen – etwa Konzepte der kosmischen Balance, des seelischen Gleichgewichts oder der harmonischen Verantwortung. Die Sprache wird oft über Gebetsformeln, Gesänge und meditative Redestrukturen weitergegeben.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Kodan</set>
+            <set name="script">Kodanische Runen</set>
+        </setters>
+    </element>
+    <element name="Quagganisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_QUAGGAN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Quagganisch ist die Lautsprache der friedfertigen Quaggan – ein amphibisches Volk, das von den offenen Ozeanen in die Binnengewässer Tyrias gezogen ist. Die Sprache ist keine klassische gesprochene Sprache, sondern besteht aus einer Kombination aus Summen, Heulen, Kehlgesängen und melodiösem Blubbern. In der Kommunikation erinnern Quaggan oft an ein Duett – Gesprächspartner überlagern sich mit schwingenden Lauten, die Emotionen, Fragen und Antworten ineinander verweben.</p>
+            <p>Die Sprache ist stark stimmungsbasiert: Trauer klingt tief und langgezogen, Freude hell und sprudelnd. Für Außenstehende ist es extrem schwer, einzelne Begriffe oder Bedeutungen zu erkennen, da sich Wort und Ton untrennbar vermischen. Auch innerhalb der Quaggan-Stämme variiert der Stil deutlich – je nachdem, ob sie im Meer, in Flüssen oder in Seen beheimatet sind.</p>
+            <p>Obwohl die meisten Quaggan auch Tyrianisch verstehen und sprechen können, bleibt ihre eigene Sprache ein kultureller Ausdruck reiner Emotion – mehr Lied als Rede.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Quaggan</set>
+            <set name="script">Keine Schriftform</set>
+        </setters>
+    </element>
+    <element name="Alt-Krytanisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_OLD_KRYTAN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Alt-Krytanisch ist eine ausgestorbene menschliche Sprache, die einst in weiten Teilen Krytas verwendet wurde, heute jedoch nur noch auf uralten Druidensteinen, Ruinen oder vergessenen Wegweisern auftaucht. Sie gilt als extrem schwer zu entschlüsseln, selbst für erfahrene Linguisten der Abtei Durmand.</p>
+            <p>Die Schriftform basiert auf einer vertikal angeordneten Runenreihe, die eher einem primitiven Silbensystem als einem Alphabet entspricht. Die Bedeutung einzelner Zeichen ändert sich je nach Kontext, Position und Kombination mit anderen Runen – eine Eigenschaft, die die Sprache für den Alltag unpraktisch machte und letztlich zu ihrem Verfall führte.</p>
+            <p>Das Umstellen zweier Runen kann die Aussprache und Bedeutung drastisch verändern, sodass „AH-MUH“ und „MIH-YEH“ komplett unterschiedliche Begriffe bezeichnen, obwohl sie dieselben Zeichen enthalten. Nur die gelehrtesten Historiker, Druiden oder Magier können Fragmente der Sprache heute noch lesen oder aussprechen.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Druiden, Gelehrte</set>
+            <set name="script">Alt-Krytanische Runen</set>
+        </setters>
+    </element>
+    <element name="Orrianisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_ORRIAN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Orrianisch war die Sprache des untergegangenen Königreichs Orr – ein hochentwickeltes, magisch geprägtes Reich, das mit dem Kataklysmus unterging. Die Sprache selbst ist heute nahezu ausgestorben und nur noch in Fragmenten auf versunkenen Ruinen, alten Steintafeln oder vergessenen Bannkreisen zu finden.</p>
+            <p>Die Schriftform, bekannt als Orrianisches Silbarium, wirkt auf den ersten Blick wie ein Alphasyllabar, entpuppt sich aber bei näherer Betrachtung als komplexe Digraphen-Chiffre. Jedes Zeichen steht nicht nur für einen Laut, sondern verändert sich abhängig von benachbarten Zeichen – wodurch die Sprache verschlüsselt und schwer zu rekonstruieren ist.</p>
+            <p>Orrianische Namen und Begriffe weisen oft eine schwere, fast musikalische Lautstruktur mit arabisch inspirierten Anklängen auf. Viele Gelehrte vermuten, dass die Sprache bewusst so gestaltet wurde, um magische Formeln in ihrer Struktur zu verbergen – was sie für Nekromanten und Kultisten besonders begehrenswert macht.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Orrianer (ehemals), Magier</set>
+            <set name="script">Orrianisches Silbarium</set>
+        </setters>
+    </element>
+    <element name="Askalonisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_ASCALONIAN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Askalonisch ist eine aussterbende Sprache aus dem südöstlichen Menschheitsreich Ascalon. Heute wird sie vor allem noch in Ebonfalke und dessen Umgebung gesprochen, insbesondere von Separatisten, Traditionalisten und älteren Einwohnern. Im offiziellen Alltag wird sie zunehmend von Tyrisch verdrängt – auch durch den wachsenden Einfluss Krytas und die Errichtung eines Asura-Portals.</p>
+            <p>Die Sprache verwendet ein runenbasiertes Schriftsystem, das relativ flexibel und klar strukturiert ist. Obwohl die Alphabetisierungsrate unter den Bewohnern Ascalons traditionell niedrig war, finden sich Askalonische Inschriften bis heute auf alten Bauwerken, Denkmälern und Schriften, die aus der Zeit vor dem Fall des Königreichs stammen.</p>
+            <p>Wer längere Zeit in Ebonfalke verbringt oder sich mit dem Erbe Ascalons beschäftigt, kann die Sprache relativ problemlos erlernen – sie lebt weniger in Akademien als in den Gassen, Tavernen und alten Versen der Menschen fort, die sich ihrer Herkunft erinnern.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Bewohner Ebonfalkes, Separatisten</set>
+            <set name="script">Askalonische Runen</set>
+        </setters>
+    </element>
+    <element name="Mursaatisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_MURSAAT">
+        <supports>Exotic</supports>
+        <description>
+            <p>Mursaatisch ist die verschlüsselte Sprache der Mursaat – eines geheimnisvollen Volkes, das sich selbst als „Die Ungesehenen“ bezeichnete. Ihre Sprache war nie für offene Kommunikation gedacht, sondern diente zur Verschleierung von Gedanken, Anweisungen und magischen Konstrukten vor Außenstehenden.</p>
+            <p>Fragmente der Sprache sind nur an wenigen Orten erhalten geblieben, etwa in den Ruinen der Festung auf der Glutbucht oder in den Aufzeichnungen von Janthir. Um Mursaatisch überhaupt entziffern zu können, bedarf es spezieller magischer Artefakte wie dem <i>Herz des Obskuren</i>, das als Linse für die verborgene Bedeutung dient.</p>
+            <p>Mursaatische Texte sind oft mehrlagig aufgebaut: Ein oberflächlicher Sinn verbirgt tiefer liegende magische Strukturen, deren Bedeutung sich erst durch Perspektivwechsel oder Entschlüsselung erschließt. Die Schriftzeichen sind nicht konstant – sie verändern sich mit Zeit, Ort oder Absicht des Schreibenden.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Mursaat, arkan orientierte Gelehrte</set>
+            <set name="script">Variable magische Struktur</set>
+        </setters>
+    </element>
+    <element name="Sprache der Vergessenen" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_FORGOTTEN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Die Sprache der Vergessenen – einer uralten, schlangenartigen Rasse Tyrias – ist ebenso fremdartig wie erhaben. Als fromme Diener der Sechs Menschengötter erschufen sie eine Form der Kommunikation, die weniger gesprochen als zelebriert wird: eine Mischung aus gesungenen Silben, geformten Lichtmustern und magisch geführten Bewegungen.</p>
+            <p>Die Vergessenen waren bereits in Tyria heimisch, als die Alt-Drachen das letzte Mal erwachten, und suchten stets nach Wegen, die Welt im Gleichgewicht zu halten. Ihre Sprache diente nicht dem Austausch alltäglicher Informationen, sondern dem Ausdruck göttlicher Wahrheiten, der Entschlüsselung kosmischer Zusammenhänge und der Durchführung heiliger Rituale.</p>
+            <p>Nur wenige Fragmente sind erhalten geblieben – etwa in den Aufstiegsstätten Elonas oder auf uralten Schrifttafeln, deren Glyphen keine Buchstaben, sondern Aspekte göttlicher Ordnung darstellen. Es heißt, wer die Sprache der Vergessenen korrekt intoniert, kann mit ihr Tore öffnen, Magie bündeln oder sogar göttliche Antworten herabrufen.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Vergessene, Aufgestiegene</set>
+            <set name="script">Heilige Glyphen der Facetten</set>
+        </setters>
+    </element>
+    <element name="Seherisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_SEER">
+        <supports>Exotic</supports>
+        <description>
+            <p>Seherisch ist die hochmagische Sprache der Seher – eines uralten Volkes, das einst die Struktur der Magie selbst zu verstehen und zu formen suchte. Ihre Sprache war keine gewöhnliche Lautsprache, sondern ein multidimensionales Ausdruckssystem, das gesprochene Worte, magische Resonanz, Lichtmuster und mentale Struktur gleichzeitig vereinte.</p>
+            <p>Bekannt ist die Sprache heute nur aus Fragmenten, die mit dem Ritual der „Divcia Nava“ in Verbindung stehen – einer magischen Attunierung, durch die Sterbliche zu Aufgestiegenen wurden. Es heißt, dass die Sprache der Seher nicht gelernt, sondern nur durch tiefe Meditation, magische Harmonie und Aufstiegsriten intuitiv erschlossen werden kann.</p>
+            <p>Da die Seher sich in der Zeit der letzten Alt-Drachen-Erhebung von ihren Verbündeten zurückzogen und schließlich spurlos verschwanden, ist ihr Vermächtnis nur noch in Splittern erhalten. Einige wenige Schriftzeichen finden sich in uralten Kuppeln oder auf Kristallinschriften, aber ihre genaue Bedeutung ist selbst den gelehrtesten Magiern Tyrias bis heute ein Rätsel.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Seher (ehemals), Aufgestiegene</set>
+            <set name="script">Kristalline Glyphen</set>
+        </setters>
+    </element>
+    <element name="Alt-Jotunisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_OLD_JOTUN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Alt-Jotunisch ist die Sprache eines untergegangenen, einst hochentwickelten Volkes. Die Jotun waren in ferner Vergangenheit nicht nur mächtige Krieger, sondern auch herausragende Magier, Philosophen und Sternendeuter. Ihre Sprache spiegelte dies wider: Sie war präzise, strukturiert und stark von Himmelsbeobachtung und Naturphilosophie geprägt.</p>
+            <p>In alten Monumentsteinen finden sich sternenkundliche Inschriften, deren grammatische Struktur ebenso zyklisch ist wie die Bewegungen der Gestirne. Es wird vermutet, dass die Jotun einst wussten, wann die Alt-Drachen erwachen würden – ihr Wissen ging jedoch mit dem Niedergang ihrer Kultur verloren.</p>
+            <p>Heute sprechen die wenigen überlebenden Jotun nur noch Bruchstücke dieser Sprache, vermischt mit rudimentärem Tyrianisch. Die ursprüngliche Bedeutung vieler Begriffe ist vergessen, doch wer die alten Steine zu deuten vermag, erhält vielleicht einen Blick auf eine Zeit, in der die Jotun noch mit den Sternen sprachen.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Alte Jotun, Gelehrte</set>
+            <set name="script">Himmelsrunen</set>
+        </setters>
+    </element>
+    <element name="Zwergisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_DWARVEN">
+        <supports>Exotic</supports>
+        <description>
+            <p>Zwergisch ist die traditionelle Sprache der Zwerge Tyrias, wie sie seit Jahrtausenden von den Völkern der Deldrimor und Steingipfel verwendet wurde. Sie ist geprägt von harten Lauten, tiefer Betonung und präziser Struktur – ein Spiegelbild der zwergischen Kultur, in der Ehre, Handwerk und Geschichte zentrale Rollen spielen.</p>
+            <p>Die Schriftform besteht aus kantigen, gemeißelten Runen, die häufig auf Waffen, Mauern und unterirdischen Archivplatten zu finden sind. Viele dieser Inschriften sind über Generationen hinweg überliefert und werden von Priestern des Großen Zwergs ebenso bewahrt wie von Kriegern der Steingipfel-Fraktionen.</p>
+            <p>Auch wenn die Deldrimor-Zwerge durch ihr Opfer zur Versteinerung heute kaum mehr aktiv sprechen, lebt ihre Sprache in alten Hallen, magischen Versiegelungen und Artefakten fort. Die Steingipfel-Zwerge wiederum verwenden sie bis heute – wenn auch mit deutlich rauerer Wortwahl und verrohten Begriffen.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Zwerge (Deldrimor, Steingipfel)</set>
+            <set name="script">Zwergenrunen</set>
+        </setters>
+    </element>
+    <element name="Kryptisisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_KRYPTIS">
+        <supports>Exotic</supports>
+        <description>
+            <p>Kryptisisch ist keine Sprache im herkömmlichen Sinn – sie ist ein mentales Echo, das direkt im Geist hallt. Die Wesen der Kryptis kommunizieren über Bilder, Gefühle, verdrängte Erinnerungen und metaphysische Andeutungen. Oft flüstert Kryptisisch in mehreren Stimmen gleichzeitig, widerspricht sich selbst – und trifft dennoch immer ins Mark.</p>
+            <p>Außenstehenden erscheint die Sprache als Wahnsinn: Stimmen aus dem Nebel des Verstandes, Worte, die man nie gelernt hat, aber dennoch versteht. Kryptisische Kommunikation kann emotionale Reaktionen hervorrufen, ohne dass eine klare Bedeutung übermittelt wird – Freude, Angst, Ekstase oder Schuldgefühle, alle vermischt zu einer vielschichtigen Botschaft.</p>
+            <p>Nur wenige sterbliche Geister können Kryptisisch länger ertragen, ohne daran zu zerbrechen. Warlocks, die mit Kryptis in Kontakt stehen, berichten oft von Träumen, in denen sie sich selbst etwas zuflüstern – in einer Sprache, die sie nie gehört, aber immer schon gekannt haben.</p>
+        </description>
+        <setters>
+            <set name="exotic">true</set>
+            <set name="speakers">Kryptis, Wahnsinnige, Hexenmeister</set>
+            <set name="script">Nicht-linear (mental)</set>
+        </setters>
+    </element>
+    <element name="Diebessprache" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_THIEVES_CANT_TYRIA">
+        <supports>Secret</supports>
+        <description>
+            <p>Die Diebessprache ist ein geheimes Kommunikationsmittel unter Kriminellen, Informanten, Spionen und Schmugglern in ganz Tyria. Sie besteht aus einem Mix aus doppeldeutigen Ausdrücken, Slang, Gesten, grafischen Markierungen und scheinbar harmlosen Phrasen, die für Uneingeweihte völlig alltäglich klingen.</p>
+            <p>Die Bedeutungen variieren regional stark – was in Löwenstein ein Warnzeichen ist, kann in Götterfels eine Einladung sein. Häufig werden diese Codes in Kneipengesprächen, als Kreidemarken an Türen oder durch betont platzierte Objekte übermittelt.</p>
+            <p>Nur wer selbst mit der Diebessprache vertraut ist, erkennt ihre verborgenen Botschaften. Außenstehende können ihre Existenz mit einem erfolgreichen Weisheitswurf (Schärfen der Sinne, SG 15) bemerken, doch das Verständnis bleibt ohne magische Hilfe verschlossen.</p>
+        </description>
+        <setters>
+            <set name="secret">true</set>
+            <set name="speakers">Diebe, Spione, Schmuggler, Informanten</set>
+        </setters>
+    </element>
+    <element name="Kampfcodes der Wachsamen" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_VIGIL_CANT">
+        <supports>Secret</supports>
+        <description>
+            <p>Diese Geheimsprache besteht aus taktischen Handzeichen, kodierten Rufen und verschlüsselten Befehlsketten, die innerhalb des Ordens der Wachsamen verwendet werden. Sie ermöglicht lautlose Koordination im Gefecht, schnelle Lageberichte und verschlüsselte Nachrichten im Feld.</p>
+        </description>
+        <setters>
+            <set name="secret">true</set>
+            <set name="speakers">Mitglieder des Ordens der Wachsamen</set>
+        </setters>
+    </element>
+    <element name="Archivcode der Abtei Durmand" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_PRIORY_CODE">
+        <supports>Secret</supports>
+        <description>
+            <p>Der Archivcode ist eine verschlüsselte Schriftsprache, die in den internen Schriften und Expeditionstagebüchern der Abtei Durmand verwendet wird. Sie dient der Klassifikation gefährlicher Artefakte, dem Schutz sensibler Erkenntnisse und der internen Kommunikation zwischen Gelehrten.</p>
+        </description>
+        <setters>
+            <set name="secret">true</set>
+            <set name="speakers">Gelehrte der Abtei Durmand</set>
+        </setters>
+    </element>
+    <element name="Flüstercode des Ordens der Gerüchte" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_WHISPERS_CANT">
+        <supports>Secret</supports>
+        <description>
+            <p>Der Flüstercode ist ein komplexer Mix aus Andeutungen, Betonungen, unterschwelligen Gesten und scheinbar belanglosen Aussagen. Er wird vom Orden der Gerüchte zur Kommunikation in der Öffentlichkeit verwendet, ohne Aufmerksamkeit zu erregen. Nur Eingeweihte erkennen die wahre Bedeutung hinter den Worten.</p>
+        </description>
+        <setters>
+            <set name="secret">true</set>
+            <set name="speakers">Agenten des Ordens der Gerüchte</set>
+        </setters>
+    </element>
+    <element name="Druidisch" type="Language" source="DnD4Tyria" id="ID_D4T_LANGUAGE_DRUIDIC">
+        <supports>Secret</supports>
+        <description>
+            <p>Druidisch ist eine uralte Geheimsprache, die nur Eingeweihten des Druidenpfades bekannt ist. Sie manifestiert sich in geflüsterten Silben, rituellen Zeichen, natürlichen Mustern und astralen Resonanzen. Druiden nutzen sie, um geheime Nachrichten zu hinterlassen, mit Tierboten zu kommunizieren oder Rituale zu bewahren. Wer nicht in den Wegen der Natur unterwiesen ist, kann sie ohne Magie nicht entschlüsseln.</p>
+        </description>
+        <setters>
+            <set name="secret">true</set>
+            <set name="speakers">Druiden</set>
+        </setters>
+    </element>
+</elements>

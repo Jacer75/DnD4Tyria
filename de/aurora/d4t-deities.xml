@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <name>Götter oder gottgleiche Wesen in Tyria</name>
+        <description>Götter und gottgleiche Wesen zur Kanalisierung diviner Magie, adaptiert for DnD4Tyria.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0">
+            <file name="d4t-deities.xml" url="" />
+        </update>
+    </info>
+    <element name="Dwayna" type="Deity" source="DnD4Tyria" id="ID_TYRIA_DEITY_DWAYNA">
+      <description>
+        <p class="flavor">Göttin des Lebens, der Luft und der Heilung</p>
+      </description>
+      <setters>
+        <set name="setting">Tyria</set>
+        <set name="alignment">NG</set>
+        <set name="domains">Life, Light</set>
+        <set name="symbol">Geflügelte Frau im Sonnenaufgang</set>
+        <set name="gender">female</set>
+      </setters>
+      <sheet>
+        <description>Göttin des Lebens, der Luft und der Heilung</description>
+      </sheet>
+    </element>
+    <element name="Melandru" type="Deity" source="DnD4Tyria" id="ID_TYRIA_DEITY_MELANDRU">
+        <description>
+            <p class="flavor">Göttin der Natur, der Erde und der Harmonie</p>
+        </description>
+        <setters>
+            <set name="setting">Tyria</set>
+            <set name="alignment">NG</set>
+            <set name="domains">Nature, Life</set>
+            <set name="symbol">Baum mit einem Geweih als Krone</set>
+            <set name="gender">female</set>
+        </setters>
+        <sheet>
+            <description>Göttin der Natur, der Erde und der Harmonie</description>
+        </sheet>
+    </element>
+    <element name="Grenth" type="Deity" source="DnD4Tyria" id="ID_TYRIA_DEITY_GRENT">
+      <description>
+        <p class="flavor">Gott des Todes, des Gerichts und des Eises</p>
+      </description>
+      <setters>
+        <set name="setting">Tyria</set>
+        <set name="alignment">LN</set>
+        <set name="domains">Knowledge, Trickery</set>
+        <set name="symbol">Schädel, von Ketten umschlungen</set>
+        <set name="gender">male</set>
+      </setters>
+      <sheet>
+        <description>Gott des Todes, des Gerichts und des Eises</description>
+      </sheet>
+    </element>
+    <element name="Balthazar" type="Deity" source="DnD4Tyria" id="ID_TYRIA_DEITY_BALTHAZAR">
+      <description>
+        <p class="flavor">Gott des Krieges, des Feuers und der Stärke</p>
+      </description>
+      <setters>
+        <set name="setting">Tyria</set>
+        <set name="alignment">LN</set>
+        <set name="domains">War, Tempest</set>
+        <set name="symbol">Flammendes Schwert, gekreuzt mit einem Schild</set>
+        <set name="gender">male</set>
+      </setters>
+      <sheet>
+        <description>Gott des Krieges, des Feuers und der Stärke</description>
+      </sheet>
+    </element>
+    <element name="Lyssa" type="Deity" source="DnD4Tyria" id="ID_TYRIA_DEITY_LYSSA">
+      <description>
+        <p class="flavor">Zwillingsgöttin der Illusion, der Schönheit und des Chaos</p>
+      </description>
+      <setters>
+        <set name="setting">Tyria</set>
+        <set name="alignment">CN</set>
+        <set name="domains">Trickery, Knowledge</set>
+        <set name="symbol">Zwei gespiegelte Masken</set>
+        <set name="gender">female</set>
+      </setters>
+      <sheet>
+        <description>Zwillingsgöttin der Illusion, der Schönheit und des Chaos</description>
+      </sheet>
+    </element>
+    <element name="Kormir" type="Deity" source="DnD4Tyria" id="ID_TYRIA_DEITY_KORMIR">
+      <description>
+        <p class="flavor">Göttin der Wahrheit, der Ordnung und des Wissens</p>
+      </description>
+      <setters>
+        <set name="setting">Tyria</set>
+        <set name="alignment">LG</set>
+        <set name="domains">Knowledge, Light</set>
+        <set name="symbol">Offenes Auge über einer Sonnenaura</set>
+        <set name="gender">female</set>
+      </setters>
+      <sheet>
+        <description>Göttin der Wahrheit, der Ordnung und des Wissens</description>
+      </sheet>
+    </element>
+</elements>

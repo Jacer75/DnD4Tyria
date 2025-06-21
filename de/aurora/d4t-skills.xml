@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<elements>
+    <info>
+        <name>Fertigkeiten</name>
+        <description>Fertigkeiten für DnD4Tyria.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0.0">
+            <file name="d4t-skills.xml" url=""/>
+        </update>
+    </info>
+
+    <!-- Strength -->
+    <element name="Athletik (Athletics)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_ATHLETICS">
+        <supports>Skill,Ranger</supports>
+        <description>
+            <p>Athletik deckt schwierige Situationen ab, in denen du beim Klettern, Springen oder Schwimmen stehst.</p>
+            <p class="indent">Beispiele hierfür sind die folgenden Aktivitäten:</p>
+            <ul class="unstyled">
+                <li>Du versuchst, eine steile oder rutschige Klippe zu erklimmen, beim Erklimmen einer Wand Gefahren auszuweichen oder dich an einer Oberfläche festzuhalten, während etwas versucht, dich herunterzustoßen.</li>
+                <li>Du versuchst, ungewöhnlich weit zu springen oder mitten im Sprung einen Sprung zu machen.</li>
+                <li>Du kämpfst beim Schwimmen oder schwimmst in reißenden Strömungen, schwallartigen Wellen oder Gebieten mit dichtem Seegras. Oder eine andere Kreatur versucht, dich unter Wasser zu stoßen oder zu ziehen oder dich anderweitig beim Schwimmen zu behindern.</li>
+            </ul>
+        </description>
+        <sheet>
+            <proficiency type="Skill" name="athletics"/>
+        </sheet>
+    </element>
+
+    <!-- Dexterity -->
+    <element name="Akrobatik (Acrobatics)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_ACROBATICS">
+        <description>
+            <p>Akrobatik deckt deinen Versuch ab, in einer heiklen Situation auf den Beinen zu bleiben, beispielsweise beim Laufen über eine Eisfläche, beim Balancieren auf einem Drahtseil oder beim Stehen auf einem schwankenden Schiffsdeck. Der Spielleiter kann auch einen Wurf auf Geschicklichkeit (Akrobatik) verlangen, um zu prüfen, ob du akrobatische Kunststücke wie Hechtsprünge, Rollen oder Saltos ausführen kannst.</p>
+        </description>
+        <supports>Skill</supports>
+    </element>
+
+    <element name="Fingerfertigkeit (Sleight of Hand)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_SLEIGHT_OF_HAND">
+        <description>
+            <p>Wenn du einen Taschenspielertrick oder eine handwerkliche Täuschung versuchst, z. B. jemandem etwas unterzuschieben oder einen Gegenstand an dir zu verstecken, führst du einen Wurf auf Geschicklichkeit (Fingerfertigkeit) durch. Der SL kann auch einen solchen Wurf verlangen, um festzustellen, ob du jemandem einen Geldbeutel abnehmen oder etwas aus der Tasche einer anderen Person stehlen kannst.</p>
+        </description>
+        <supports>Skill</supports>
+    </element>
+
+    <element name="Heimlichkeit (Stealth)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_STEALTH">
+        <description>
+            <p>Führe einen Wurf auf Geschicklichkeit (Heimlichkeit) durch, wenn du versuchst, dich vor Feinden zu verbergen, an Wachen vorbeizuschleichen, unbemerkt zu verschwinden oder dich an jemanden heranzuschleichen, ohne gesehen oder gehört zu werden.</p>
+        </description>
+        <sheet>
+            <proficiency type="Skill" name="stealth"/>
+        </sheet>
+        <supports>Skill,Ranger</supports>
+    </element>
+
+    <!-- Intelligence -->
+    <element name="Arkane Kunde (Arcana)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_ARCANA">
+        <description>
+            <p>Arkane Kunde misst dein Wissen über Magie, arkane Traditionen, Zauberzeichen, magische Wesen und die Ebenen der Existenz.</p>
+        </description>
+        <supports>Skill,Wizard</supports>
+    </element>
+
+    <element name="Geschichte (History)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_HISTORY">
+        <description>
+            <p>Geschichte misst dein Wissen über historische Ereignisse, legendäre Personen, alte Königreiche, vergangene Konflikte und vergessene Zivilisationen.</p>
+        </description>
+        <supports>Skill,Wizard</supports>
+    </element>
+
+    <element name="Nachforschungen (Investigation)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_INVESTIGATION">
+        <description>
+            <p>Wenn du nach Hinweisen suchst und daraus Schlüsse ziehst, führst du einen Wurf auf Intelligenz (Nachforschungen) durch. Du könntest z. B. den Standort eines versteckten Objekts bestimmen, die Ursache einer Wunde erkennen oder die schwächste Stelle eines Tunnels ausmachen.</p>
+        </description>
+        <supports>Skill,Ranger,Wizard</supports>
+        <sheet>
+            <proficiency type="Skill" name="investigation"/>
+        </sheet>
+    </element>
+
+    <element name="Naturkunde (Nature)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_NATURE">
+        <description>
+            <p>Naturkunde misst dein Wissen über Gelände, Pflanzen, Tiere, Wetter und natürliche Zyklen.</p>
+        </description>
+        <supports>Skill,Ranger</supports>
+    </element>
+
+    <element name="Religion (Religion)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_RELIGION">
+        <description>
+            <p>Religion misst dein Wissen über Gottheiten, Rituale, Gebete, heilige Symbole, Kulte und religiöse Hierarchien.</p>
+        </description>
+        <supports>Skill,Wizard</supports>
+    </element>
+
+    <!-- Wisdom -->
+    <element name="Mit Tieren umgehen (Animal Handling)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_ANIMAL_HANDLING">
+        <description>
+            <p>Führe einen Wurf auf Weisheit (Mit Tieren umgehen) durch, um ein Tier zu beruhigen, ein Reittier vor Panik zu bewahren oder seine Absichten zu deuten. Du kannst damit auch riskante Manöver mit Tieren absichern.</p>
+        </description>
+        <supports>Skill,Ranger</supports>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
+        </rules>
+    </element>
+
+    <element name="Motiv erkennen (Insight)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_INSIGHT">
+        <description>
+            <p>Ein Wurf auf Weisheit (Motiv erkennen) erlaubt es dir, die wahren Absichten einer Kreatur zu erkennen – etwa, ob sie lügt oder was sie als Nächstes tun wird.</p>
+        </description>
+        <supports>Skill,Ranger,Wizard</supports>
+    </element>
+
+    <element name="Heilkunde (Medicine)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_MEDICINE">
+        <description>
+            <p>Mit einem Wurf auf Weisheit (Heilkunde) kannst du versuchen, eine Krankheit zu diagnostizieren oder einen sterbenden Gefährten zu stabilisieren.</p>
+        </description>
+        <supports>Skill</supports>
+    </element>
+
+    <element name="Wahrnehmung (Perception)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_PERCEPTION">
+        <description>
+            <p>Ein Wurf auf Weisheit (Wahrnehmung) erlaubt dir, etwas zu bemerken, zu hören oder anderweitig wahrzunehmen – etwa versteckte Gefahren, leise Geräusche oder Bewegungen im Dunkeln.</p>
+        </description>
+        <supports>Skill,Ranger</supports>
+    </element>
+
+    <element name="Überlebenskunst (Survival)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_SURVIVAL">
+        <description>
+            <p>Führe einen Wurf auf Weisheit (Überlebenskunst) durch, um Spuren zu verfolgen, das Wetter vorherzusagen, dich in Wildnis zurechtzufinden oder Hinweise auf nahe Tiere oder Gefahren zu erkennen.</p>
+        </description>
+        <supports>Skill,Ranger</supports>
+    </element>
+
+    <!-- Charisma -->
+    <element name="Täuschen (Deception)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_DECEPTION">
+        <description>
+            <p>Ein Wurf auf Charisma (Täuschen) entscheidet, wie überzeugend du lügen, verheimlichen oder dich verstellen kannst – sei es mit Worten oder Taten.</p>
+        </description>
+        <supports>Skill</supports>
+    </element>
+
+    <element name="Einschüchtern (Intimidation)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_INTIMIDATION">
+        <description>
+            <p>Wenn du jemanden mit Drohungen, Gewalt oder gezielter Einschüchterung beeinflussen willst, kann ein Wurf auf Charisma (Einschüchtern) nötig sein.</p>
+        </description>
+        <supports>Skill</supports>
+    </element>
+
+    <element name="Auftreten (Performance)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_PERFORMANCE">
+        <description>
+            <p>Ein Wurf auf Charisma (Auftreten) bestimmt, wie gut du ein Publikum mit Musik, Tanz, Schauspiel oder anderen Künsten unterhalten kannst.</p>
+        </description>
+        <supports>Skill</supports>
+    </element>
+
+    <element name="Überzeugen (Persuasion)" type="Proficiency" source="DnD4Tyria" id="ID_D4T_PROFICIENCY_SKILL_PERSUASION">
+        <description>
+            <p>Mit einem Wurf auf Charisma (Überzeugen) kannst du andere mit Taktgefühl, Charme oder guten Argumenten beeinflussen – sei es, um Bitten vorzutragen, Verhandlungen zu führen oder Vertrauen zu gewinnen.</p>
+        </description>
+        <supports>Skill</supports>
+    </element>
+</elements>

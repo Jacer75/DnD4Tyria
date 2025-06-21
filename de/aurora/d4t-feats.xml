@@ -1,0 +1,2117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Feats</name>
+        <description>Besondere Merkmale (Feats) aus dem Player’s Handbook, übersetzt und angepasst für DnD4Tyria.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.0">
+            <file name="d4t-feats.xml" url=""/>
+        </update>
+    </info>
+    <element name="Schauspieler (Actor)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_ACTOR">
+        <description>
+            <p>Du bist geübt in Imitation und Schauspielerei und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Charismawert um 1, bis zu einem Maximum von 20.</li>
+                <li>Du hast Vorteil auf Charismawürfe (Täuschen) und Charismawürfe (Auftreten), wenn du versuchst, dich als eine andere Person auszugeben.</li>
+                <li>Du kannst die Stimme einer anderen Person oder Geräusche anderer Kreaturen nachahmen. Du musst die Person oder das Geräusch mindestens 1 Minute lang gehört haben. Ein Zuhörer kann mit einem erfolgreichen Weisheitswurf (Motiv erkennen), der gegen deinen Charismawurf (Täuschen) konkurriert, erkennen, dass die Nachahmung gefälscht ist.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Vorteil auf Täuschen und Auftreten, wenn du dich als andere Person ausgibst.
+            Du kannst Stimmen oder Geräusche nachahmen, wenn du sie mindestens 1 Minute lang gehört hast. Ein Zuhörer kann mit einem Motiv-erkennen-Wurf gegen deinen Täuschungswurf erkennen, dass es sich um eine Imitation handelt.</description>
+        </sheet>
+        <rules>
+            <stat name="charisma" value="1"/>
+        </rules>
+    </element>
+    <element name="Wachsam (Alert)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_ALERT">
+        <description>
+            <p>Du bist stets auf der Hut vor Gefahren und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Du erhältst einen Bonus von +5 auf deine Initiative.</li>
+                <li>Du kannst nicht überrascht werden, solange du bei Bewusstsein bist.</li>
+                <li>Andere Kreaturen erhalten keinen Vorteil auf Angriffswürfe gegen dich, nur weil du sie nicht sehen kannst.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>+5 auf Initiative. Du kannst nicht überrascht werden, solange du bei Bewusstsein bist. Unsichtbare Gegner erhalten keinen Vorteil auf Angriffswürfe gegen dich.</description>
+        </sheet>
+        <rules>
+            <stat name="initiative" value="5"/>
+        </rules>
+    </element>
+    <element name="Athlet (Athlete)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_ATHLETE">
+        <description>
+            <p>Durch ausgiebiges körperliches Training hast du folgende Vorteile erlangt:</p>
+            <ul>
+                <li>Erhöhe deinen Stärke- oder Geschicklichkeitswert um 1, bis zu einem Maximum von 20.</li>
+                <li>Wenn du liegst, kostet das Aufstehen nur 1,5m (5 Fuß) deiner Bewegung.</li>
+                <li>Klettern kostet dich keine zusätzliche Bewegung.</li>
+                <li>Du kannst einen Anlauf für einen Weitsprung oder Hochsprung bereits nach 1,5m (5 Fuß) Fußweg nehmen, statt wie üblich nach 3m (10 Fuß).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Aufstehen kostet nur 1,5m Bewegung. Klettern kostet keine zusätzliche Bewegung. Für einen Anlauf bei Weit- oder Hochsprung genügen 1,5m.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Athlet)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY"/>
+        </rules>
+    </element>
+    <element name="Stürmer (Charger)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_CHARGER">
+        <description>
+            <p>Wenn du deine Aktion zum Rennen (Dash) verwendest, kannst du als Bonusaktion einen Nahkampfangriff mit einer Waffe ausführen oder eine Kreatur schubsen.</p>
+            <p class="indent">Wenn du dich unmittelbar vor dieser Bonusaktion mindestens 3m (10 Fuß) in gerader Linie bewegst, erhältst du je nach Aktion einen zusätzlichen Effekt: Triffst du mit deinem Nahkampfangriff, verursachst du +5 Schaden; gelingt dir ein Schubsen, kannst du das Ziel bis zu 3m (10 Fuß) weit von dir wegstoßen.</p>
+        </description>
+        <sheet>
+            <description>Nach einem Dash kannst du als Bonusaktion angreifen oder schubsen. Bei 3m Anlauf in gerader Linie: +5 Schaden beim Angriff oder 3m Schubsen beim Erfolg.</description>
+        </sheet>
+    </element>
+    <element name="Armbrustexperte (Crossbow Expert)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_CROSSBOWEXPERT">
+        <description>
+            <p>Dank intensiver Übung mit der Armbrust erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Du ignorierst die Eigenschaft „Nachladen“ bei Armbrüsten, mit denen du geübt bist.</li>
+                <li>Wenn du dich innerhalb von 1,5m (5 Fuß) zu einer feindlichen Kreatur befindest, erleidest du keinen Nachteil auf Angriffswürfe mit Fernkampfwaffen.</li>
+                <li>Wenn du die Aktion „Angreifen“ verwendest und eine einhändige Waffe führst, kannst du als Bonusaktion mit einer Handarmbrust, die du in der anderen Hand hältst, angreifen.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Ignoriert „Nachladen“ bei geübten Armbrüsten. Kein Nachteil im Nahkampf für Fernkampfangriffe. Bonusaktion: Angriff mit Handarmbrust nach Angriff mit einhändiger Waffe.</description>
+        </sheet>
+    </element>
+    <element name="Defensiver Duellant (Defensive Duelist)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_DEFENSIVE_DUELIST">
+        <prerequisite>Geschicklichkeit 13 oder höher</prerequisite>
+        <requirements>[dex:13]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Geschicklichkeit 13 oder höher</i>
+            </p>
+            <p>Wenn du eine Finessewaffe führst, mit der du geübt bist, und eine andere Kreatur dich mit einem Nahkampfangriff trifft, kannst du deine Reaktion verwenden, um deinen Kompetenzbonus auf deine RK gegen diesen Angriff zu addieren. Dadurch kann der Angriff dich verfehlen.</p>
+        </description>
+        <sheet>
+            <description>Mit einer geführten Finessewaffe kannst du bei einem Nahkampftreffer als Reaktion deinen Kompetenzbonus auf die RK gegen diesen Angriff addieren ({{defensive duelist:ac}} RK).</description>
+        </sheet>
+        <rules>
+            <stat name="defensive duelist:ac" value="proficiency"/>
+        </rules>
+    </element>
+    <element name="Zwei-Waffen-Kämpfer (Dual Wielder)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_DUALWIELDER">
+        <description>
+            <p>Du hast das Kämpfen mit zwei Waffen gemeistert und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Solange du in jeder Hand eine Nahkampfwaffe führst, erhältst du einen Bonus von +1 auf deine Rüstungsklasse.</li>
+                <li>Du kannst den Zwei-Waffen-Kampf auch dann einsetzen, wenn deine einhändigen Nahkampfwaffen nicht das Merkmal „Leicht“ haben.</li>
+                <li>Du kannst zwei einhändige Waffen gleichzeitig ziehen oder wegstecken, wenn du normalerweise nur eine ziehen oder wegstecken dürftest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>+1 RK, wenn du in jeder Hand eine Nahkampfwaffe führst. Zwei-Waffen-Kampf auch mit nicht-leichten Waffen möglich. Zwei einhändige Waffen gleichzeitig ziehen oder wegstecken.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:misc" value="1" equipped="[primary:any],[secondary:any],![primary:versatile]"/>
+        </rules>
+    </element>
+    <element name="Gewölbeforscher (Dungeon Delver)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_DUNGEON_DELVER">
+        <description>
+            <p>Du bist besonders wachsam gegenüber versteckten Fallen und geheimen Türen und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Du hast Vorteil auf Weisheitswürfe (Wahrnehmung) und Intelligenzwürfe (Nachforschungen), um geheime Türen zu entdecken.</li>
+                <li>Du hast Vorteil auf Rettungswürfe, um Fallen zu vermeiden oder ihren Effekten zu widerstehen.</li>
+                <li>Du hast Resistenz gegen Schaden, der durch Fallen verursacht wird.</li>
+                <li>Wenn du dich mit schneller Reisegeschwindigkeit bewegst, erleidest du nicht den üblichen Malus von −5 auf deinen passiven Weisheitswert (Wahrnehmung).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Vorteil auf Wahrnehmung und Nachforschungen zum Aufspüren geheimer Türen. Vorteil auf Rettungswürfe gegen Fallen. Resistenz gegen Fallenschaden. Kein Malus auf passive Wahrnehmung bei schneller Reise.</description>
+        </sheet>
+        <!-- Hinweis: Resistenz gegen Fallen-Schaden kann aktuell nicht automatisch abgebildet werden -->
+    </element>
+    <element name="Widerstandsfähig (Durable)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_DURABLE">
+        <description>
+            <p>Du bist zäh und widerstandsfähig und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Konstitutionswert um 1, bis zu einem Maximum von 20. <strong>Hinweis:</strong> Trage die Erhöhung manuell unter „Ability Scores“ ein – Aurora unterstützt diese Auswahl nicht automatisch.</li>
+                <li>Wenn du einen Trefferwürfel verwendest, um Trefferpunkte zurückzugewinnen, beträgt das Minimum der regenerierten Trefferpunkte das Doppelte deines Konstitutionsmodifikators (mindestens 2).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wenn du Trefferwürfel verwendest, erhältst du mindestens {{durable:hd:bonus}} Trefferpunkte zurück.</description>
+        </sheet>
+        <rules>
+            <!-- Manuelle Anpassung erforderlich -->
+            <stat name="durable:constitution modifier" value="constitution:modifier"/>
+            <stat name="durable:hd:bonus" value="2" bonus="feat:durable"/>
+            <stat name="durable:hd:bonus" value="durable:constitution modifier" bonus="feat:durable"/>
+        </rules>
+    </element>
+    <element name="Elementarer Adept (Elemental Adept)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_ELEMENTAL_ADEPT">
+        <prerequisite>Fähigkeit, mindestens einen Zauber zu wirken</prerequisite>
+        <requirements>[type:spell]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Fähigkeit, mindestens einen Zauber zu wirken</i>
+            </p>
+            <p>Wenn du dieses Talent wählst, bestimmst du eine der folgenden Schadensarten: Säure, Kälte, Feuer, Blitz oder Schall.</p>
+            <p class="indent">Zauber, die du wirkst, ignorieren Resistenz gegen die gewählte Schadensart. Außerdem kannst du bei Zauberschaden dieser Art alle Schadenswürfel mit einer 1 als 2 behandeln.</p>
+            <p class="indent">Du kannst dieses Talent mehrfach wählen. Jedes Mal musst du eine andere Schadensart bestimmen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat Feature" name="Elementarer Adept" supports="Elemental Adept"/>
+        </rules>
+    </element>
+    <element name="Säure (Acid)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_FEATURE_ELEMENTAL_ADEPT_ACID">
+        <compendium display="false"/>
+        <supports>Elemental Adept</supports>
+        <description>
+            <p>Deine Zauber ignorieren Resistenz gegen Säureschaden. Zusätzlich behandelst du bei Säureschaden jede 1 auf einem Schadenswürfel als 2.</p>
+        </description>
+        <sheet alt="Elementarer Adept – Säure">
+            <description>Ignoriert Säureresistenz bei Zaubern. 1en bei Säureschaden gelten als 2.</description>
+        </sheet>
+    </element>
+    <element name="Kälte (Cold)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_FEATURE_ELEMENTAL_ADEPT_COLD">
+        <compendium display="false"/>
+        <supports>Elemental Adept</supports>
+        <description>
+            <p>Deine Zauber ignorieren Resistenz gegen Kälteschaden. Zusätzlich behandelst du bei Kälteschaden jede 1 auf einem Schadenswürfel als 2.</p>
+        </description>
+        <sheet alt="Elementarer Adept – Kälte">
+            <description>Ignoriert Kälteresistenz bei Zaubern. 1en bei Kälteschaden gelten als 2.</description>
+        </sheet>
+    </element>
+    <element name="Feuer (Fire)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_FEATURE_ELEMENTAL_ADEPT_FIRE">
+        <compendium display="false"/>
+        <supports>Elemental Adept</supports>
+        <description>
+            <p>Deine Zauber ignorieren Resistenz gegen Feuerschaden. Zusätzlich behandelst du bei Feuerschaden jede 1 auf einem Schadenswürfel als 2.</p>
+        </description>
+        <sheet alt="Elementarer Adept – Feuer">
+            <description>Ignoriert Feuerresistenz bei Zaubern. 1en bei Feuerschaden gelten als 2.</description>
+        </sheet>
+    </element>
+    <element name="Blitz (Lightning)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_FEATURE_ELEMENTAL_ADEPT_LIGHTNING">
+        <compendium display="false"/>
+        <supports>Elemental Adept</supports>
+        <description>
+            <p>Deine Zauber ignorieren Resistenz gegen Blitzschaden. Zusätzlich behandelst du bei Blitzschaden jede 1 auf einem Schadenswürfel als 2.</p>
+        </description>
+        <sheet alt="Elementarer Adept – Blitz">
+            <description>Ignoriert Blitzresistenz bei Zaubern. 1en bei Blitzschaden gelten als 2.</description>
+        </sheet>
+    </element>
+    <element name="Schall (Thunder)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_FEATURE_ELEMENTAL_ADEPT_THUNDER">
+        <compendium display="false"/>
+        <supports>Elemental Adept</supports>
+        <description>
+            <p>Deine Zauber ignorieren Resistenz gegen Schallschaden. Zusätzlich behandelst du bei Schallschaden jede 1 auf einem Schadenswürfel als 2.</p>
+        </description>
+        <sheet alt="Elementarer Adept – Schall">
+            <description>Ignoriert Schallresistenz bei Zaubern. 1en bei Schallschaden gelten als 2.</description>
+        </sheet>
+    </element>
+    <!--<element name="Acid" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_ACID">
+		<compendium display="false" />
+		<supports>Elemental Adept</supports>
+		<description>
+			<p>Spells you cast ignore acid resistance. In addition, when you roll damage for a spell you cast that deals acid damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Acid">
+			<description>Spells you cast ignore acid resistance. Treat any 1 on a damage die as a 2 with acid spells.</description>
+		</sheet>
+	</element>
+	<element name="Cold" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_COLD">
+		<compendium display="false" />
+		<supports>Elemental Adept</supports>
+		<description>
+			<p>Spells you cast ignore cold resistance. In addition, when you roll damage for a spell you cast that deals cold damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Cold">
+			<description>Spells you cast ignore cold resistance. Treat any 1 on a damage die as a 2 with cold spells.</description>
+		</sheet>
+	</element>
+	<element name="Fire" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_FIRE">
+		<compendium display="false" />
+		<supports>Elemental Adept</supports>
+		<description>
+			<p>Spells you cast ignore fire resistance. In addition, when you roll damage for a spell you cast that deals fire damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Fire">
+			<description>Spells you cast ignore fire resistance. Treat any 1 on a damage die as a 2 with fire spells.</description>
+		</sheet>
+	</element>
+	<element name="Lightning" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_LIGHTNING">
+		<compendium display="false" />
+		<supports>Elemental Adept</supports>
+		<description>
+			<p>Spells you cast ignore lightning resistance. In addition, when you roll damage for a spell you cast that deals lightning damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Lightning">
+			<description>Spells you cast ignore lightning resistance. Treat any 1 on a damage die as a 2 with lightning spells.</description>
+		</sheet>
+	</element>
+	<element name="Thunder" type="Feat Feature" source="Player’s Handbook" id="ID_PHB_FEAT_ELEMENTAL_ADEPT_THUNDER">
+		<compendium display="false" />
+		<supports>Elemental Adept</supports>
+		<description>
+			<p>Spells you cast ignore thunder resistance. In addition, when you roll damage for a spell you cast that deals thunder damage, you can treat any 1 on a damage die as a 2.</p>
+		</description>
+		<sheet alt="Elemental Adept, Thunder">
+			<description>Spells you cast ignore thunder resistance. Treat any 1 on a damage die as a 2 with thunder spells.</description>
+		</sheet>
+	</element>-->
+    <element name="Elementarer Adept (Wiederholung)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_ELEMENTAL_ADEPT_2">
+        <compendium display="false"/>
+        <prerequisite>Elementarer Adept und Fähigkeit, mindestens einen Zauber zu wirken</prerequisite>
+        <requirements>ID_D4T_FEAT_ELEMENTAL_ADEPT,[type:spell]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Bereits Elementarer Adept sowie Fähigkeit, mindestens einen Zauber zu wirken</i>
+            </p>
+            <p>Wenn du dieses Talent erneut wählst, bestimmst du eine weitere Schadensart: Säure, Kälte, Feuer, Blitz oder Schall.</p>
+            <p class="indent">Zauber, die du wirkst, ignorieren Resistenz gegen diese Schadensart. Außerdem kannst du bei Zauberschaden dieser Art alle 1en auf Schadenswürfeln als 2 behandeln.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat Feature" name="Elementarer Adept" supports="Elemental Adept"/>
+        </rules>
+    </element>
+    <element name="Elementarer Adept (Wiederholung 2)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_ELEMENTAL_ADEPT_3">
+        <compendium display="false"/>
+        <prerequisite>Bereits zweimal Elementarer Adept sowie Fähigkeit, mindestens einen Zauber zu wirken</prerequisite>
+        <requirements>ID_D4T_FEAT_ELEMENTAL_ADEPT_2,[type:spell]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Bereits zweimal Elementarer Adept sowie Fähigkeit, mindestens einen Zauber zu wirken</i>
+            </p>
+            <p>Wenn du dieses Talent ein drittes Mal wählst, bestimmst du eine weitere Schadensart: Säure, Kälte, Feuer, Blitz oder Schall.</p>
+            <p class="indent">Zauber, die du wirkst, ignorieren Resistenz gegen diese Schadensart. Außerdem kannst du bei Zauberschaden dieser Art alle 1en auf Schadenswürfeln als 2 behandeln.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat Feature" name="Elementarer Adept" supports="Elemental Adept"/>
+        </rules>
+    </element>
+    <element name="Elementarer Adept (Wiederholung 3)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_ELEMENTAL_ADEPT_4">
+        <compendium display="false"/>
+        <prerequisite>Bereits dreimal Elementarer Adept sowie Fähigkeit, mindestens einen Zauber zu wirken</prerequisite>
+        <requirements>ID_D4T_FEAT_ELEMENTAL_ADEPT_3,[type:spell]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Bereits dreimal Elementarer Adept sowie Fähigkeit, mindestens einen Zauber zu wirken</i>
+            </p>
+            <p>Wenn du dieses Talent ein viertes Mal wählst, bestimmst du eine weitere Schadensart: Säure, Kälte, Feuer, Blitz oder Schall.</p>
+            <p class="indent">Zauber, die du wirkst, ignorieren Resistenz gegen diese Schadensart. Außerdem kannst du bei Zauberschaden dieser Art alle 1en auf Schadenswürfeln als 2 behandeln.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat Feature" name="Elementarer Adept" supports="Elemental Adept"/>
+        </rules>
+    </element>
+    <element name="Elementarer Adept (Wiederholung 4)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_ELEMENTAL_ADEPT_5">
+        <compendium display="false"/>
+        <prerequisite>Bereits viermal Elementarer Adept sowie Fähigkeit, mindestens einen Zauber zu wirken</prerequisite>
+        <requirements>ID_D4T_FEAT_ELEMENTAL_ADEPT_4,[type:spell]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Bereits viermal Elementarer Adept sowie Fähigkeit, mindestens einen Zauber zu wirken</i>
+            </p>
+            <p>Wenn du dieses Talent ein fünftes Mal wählst, bestimmst du eine weitere Schadensart: Säure, Kälte, Feuer, Blitz oder Schall.</p>
+            <p class="indent">Zauber, die du wirkst, ignorieren Resistenz gegen diese Schadensart. Außerdem kannst du bei Zauberschaden dieser Art alle 1en auf Schadenswürfeln als 2 behandeln.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat Feature" name="Elementarer Adept" supports="Elemental Adept"/>
+        </rules>
+    </element>
+    <!-- /elemental adept -->
+    <element name="Ringer (Grappler)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_GRAPPLER">
+        <prerequisite>Stärke 13 oder höher</prerequisite>
+        <requirements>[str:13]</requirements>
+        <description>
+            <p class="flavor">Voraussetzung: Stärke 13 oder höher</p>
+            <p>Du hast dir die Fähigkeiten angeeignet, um dich im Nahkampf im Griff zu behalten. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Du hast Vorteil auf Angriffswürfe gegen eine Kreatur, die du im Griff hast.</li>
+                <li>Du kannst deine Aktion verwenden, um eine Kreatur, die du im Griff hast, zu Boden zu zwingen. Dafür machst du einen weiteren Ringkampf-Wurf. Bei Erfolg sind du und die Kreatur festgesetzt, solange der Griff anhält.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Vorteil auf Angriffswürfe gegen eine Kreatur im Griff. Du kannst sie mit einem weiteren Ringkampf-Wurf festsetzen; bei Erfolg sind beide festgesetzt, solange der Griff besteht.</description>
+        </sheet>
+    </element>
+    <element name="Meisterschaft schwerer Waffen (Great Weapon Master)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_GREATWEAPONMASTER">
+        <description>
+            <p>Du hast gelernt, das Gewicht einer Waffe zu deinem Vorteil zu nutzen und ihren Schwung in mächtige Hiebe umzuwandeln. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Wenn du in deinem Zug mit einer Nahkampfwaffe einen kritischen Treffer erzielst oder eine Kreatur auf 0 Trefferpunkte reduzierst, kannst du als Bonusaktion einen weiteren Nahkampfangriff mit einer Waffe ausführen.</li>
+                <li>Bevor du einen Angriff mit einer schweren Waffe ausführst, mit der du geübt bist, kannst du wählen, einen Malus von –5 auf den Angriffswurf zu nehmen. Trifft der Angriff, erhältst du +10 auf den verursachten Schaden.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Bei kritischem Treffer oder Reduktion auf 0 TP: Bonusaktion für Nahkampfangriff. Mit schwerer Waffe optional: –5 auf Angriff, +10 auf Schaden bei Treffer.</description>
+        </sheet>
+    </element>
+    <element name="Heiler (Healer)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_HEALER">
+        <description>
+            <p>Du bist ein geübter Wundversorger und kannst Verletzungen schnell behandeln und deine Gefährten wieder kampfbereit machen. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Wenn du ein Heilerkit verwendest, um eine sterbende Kreatur zu stabilisieren, erhält diese zusätzlich 1 Trefferpunkt zurück.</li>
+                <li>Du kannst als Aktion eine Anwendung eines Heilerkits verbrauchen, um eine Kreatur zu versorgen. Sie erhält 1W6 + 4 Trefferpunkte zurück sowie weitere Trefferpunkte in Höhe ihrer maximalen Anzahl an Trefferwürfeln. Eine Kreatur kann durch dieses Talent erst nach einer kurzen oder langen Rast erneut auf diese Weise geheilt werden.</li>
+            </ul>
+        </description>
+        <sheet action="Aktion">
+            <description>Heilung mit Heilerkit: 1W6 + 4 + maximale Trefferwürfel der Kreatur. Nur einmal pro Rast. Stabilisieren verleiht zusätzlich 1 TP.</description>
+        </sheet>
+    </element>
+    <element name="Schwer gepanzert (Heavily Armored)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_HEAVILYARMORED">
+        <prerequisite>Umgang mit mittelschwerer Rüstung</prerequisite>
+        <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Umgang mit mittelschwerer Rüstung</i>
+            </p>
+            <p>Du hast gelernt, schwere Rüstung zu meistern, und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Stärkewert um 1, bis zu einem Maximum von 20.</li>
+                <li>Du erhältst den Umgang mit schwerer Rüstung.</li>
+            </ul>
+        </description>
+        <sheet display="false">
+            <description>Du hast gelernt, schwere Rüstung zu meistern.</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="1"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR"/>
+        </rules>
+    </element>
+    <element name="Meister der schweren Rüstungen (Heavy Armor Master)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_HEAVYARMORMASTER">
+        <prerequisite>Umgang mit schwerer Rüstung</prerequisite>
+        <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Umgang mit schwerer Rüstung</i>
+            </p>
+            <p>Du kannst deine Rüstung nutzen, um Schläge abzufangen, die andere zu Boden strecken würden. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Stärkewert um 1, bis zu einem Maximum von 20.</li>
+                <li>Solange du eine schwere Rüstung trägst, wird Wucht-, Stich- und Hiebschaden, den du durch nichtmagische Waffen erleidest, um 3 reduziert.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Mit schwerer Rüstung: Reduziert Wucht-, Stich- und Hiebschaden durch nichtmagische Waffen um 3.</description>
+        </sheet>
+        <rules>
+            <stat name="strength" value="1"/>
+        </rules>
+    </element>
+    <element name="Inspirierender Anführer (Inspiring Leader)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_INSPIRINGLEADER">
+        <prerequisite>Charisma 13 oder höher</prerequisite>
+        <requirements>[cha:13]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Charisma 13 oder höher</i>
+            </p>
+            <p>Du kannst 10 Minuten damit verbringen, deine Gefährten zu inspirieren und ihren Kampfgeist zu stärken. Wenn du dies tust, wählst du bis zu sechs befreundete Kreaturen (einschließlich dir selbst) im Umkreis von 9m (30 Fuß), die dich sehen oder hören und verstehen können. Jede dieser Kreaturen erhält temporäre Trefferpunkte in Höhe deines Charismamodifikators plus deiner Stufe. Eine Kreatur kann durch dieses Talent erst nach einer kurzen oder langen Rast erneut auf diese Weise temporäre Trefferpunkte erhalten.</p>
+        </description>
+        <sheet>
+            <description>Nach 10 Minuten Rede erhalten bis zu sechs befreundete Kreaturen im Umkreis von 9m temporäre Trefferpunkte in Höhe von {{inspiring leader:hp:temp}}. Nur einmal pro Rast.</description>
+        </sheet>
+        <rules>
+            <stat name="inspiring leader:hp:temp" value="level"/>
+            <stat name="inspiring leader:hp:temp" value="charisma:modifier"/>
+        </rules>
+    </element>
+    <element name="Scharfer Verstand (Keen Mind)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_KEENMIND">
+        <description>
+            <p>Dein Verstand erfasst Zeit, Richtung und Details mit unheimlicher Präzision. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Intelligenzwert um 1, bis zu einem Maximum von 20.</li>
+                <li>Du weißt immer, in welcher Richtung Norden liegt.</li>
+                <li>Du weißt immer, wie viele Stunden bis zum nächsten Sonnenauf- oder -untergang verbleiben.</li>
+                <li>Du kannst dich exakt an alles erinnern, was du in den letzten 30 Tagen gesehen oder gehört hast.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Du kennst jederzeit die Himmelsrichtung, die verbleibende Zeit bis Sonnenauf-/-untergang und kannst alles Erlebte der letzten 30 Tage exakt erinnern.</description>
+        </sheet>
+        <rules>
+            <stat name="intelligence" value="1"/>
+        </rules>
+    </element>
+    <element name="Leicht gerüstet (Lightly Armored)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_LIGHTLYARMORED">
+        <description>
+            <p>Du hast geübt, den Umgang mit leichter Rüstung zu meistern, und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Stärkewert oder Geschicklichkeitswert um 1, bis zu einem Maximum von 20.</li>
+                <li>Du erhältst den Umgang mit leichter Rüstung.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Du hast gelernt, leichte Rüstung zu meistern.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Leicht gerüstet)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
+        </rules>
+    </element>
+    <element name="Sprachenkundiger (Linguist)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_LINGUIST">
+        <description>
+            <p>Du hast Sprachen und Codes studiert und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Intelligenzwert um 1, bis zu einem Maximum von 20.</li>
+                <li>Du lernst drei Sprachen deiner Wahl.</li>
+                <li>Du kannst schriftliche Geheimcodes erstellen. Andere können deinen Code nur entschlüsseln, wenn du es ihnen beibringst, sie einen Intelligenzwurf (SG = dein Intelligenzwert + dein Kompetenzbonus) bestehen oder Magie verwenden, um ihn zu entschlüsseln.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Du kannst schriftliche Geheimcodes erstellen. SG zum Entschlüsseln: {{linguist:dc}} (Intelligenzwert + Kompetenzbonus).</description>
+        </sheet>
+        <rules>
+            <stat name="intelligence" value="1"/>
+            <select type="Language" name="Sprache (Sprachenkundiger)" number="3"/>
+            <stat name="linguist:dc" value="intelligence:score"/>
+            <stat name="linguist:dc" value="proficiency"/>
+        </rules>
+    </element>
+    <element name="Glückspilz (Lucky)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_LUCKY">
+        <description>
+            <p>Du verfügst über einen unerklärlichen Glückssträhne, die immer genau im richtigen Moment einsetzt.</p>
+            <p class="indent">Du hast 3 Glückspunkte. Immer wenn du einen Angriffswurf, eine Fähigkeitsprobe oder einen Rettungswurf machst, kannst du einen Glückspunkt ausgeben, um einen zusätzlichen W20 zu würfeln. Du kannst dich dazu entscheiden, nachdem du geworfen hast, aber bevor das Ergebnis feststeht. Du bestimmst, welcher der beiden Würfe verwendet wird.</p>
+            <p class="indent">Du kannst auch einen Glückspunkt ausgeben, wenn ein Angriff gegen dich ausgeführt wird. Würfle einen W20 und entscheide, ob der Angriff den Wurf des Angreifers oder deinen eigenen verwendet.</p>
+            <p class="indent">Wenn mehr als eine Kreatur einen Glückspunkt einsetzt, um das Ergebnis desselben Wurfs zu beeinflussen, heben sich die Effekte gegenseitig auf – es werden keine zusätzlichen Würfel geworfen.</p>
+            <p class="indent">Du erhältst alle ausgegebenen Glückspunkte zurück, wenn du eine lange Rast beendest.</p>
+        </description>
+        <sheet usage="3/Lange Rast">
+            <description>Du kannst 3 Glückspunkte verwenden, um bei einem Angriff, einer Probe oder einem Rettungswurf einen zusätzlichen W20 zu würfeln und das bessere Ergebnis zu wählen – auch nachdem du geworfen hast. Bei Angriffen gegen dich kannst du ebenfalls würfeln und den besseren Wurf auswählen.</description>
+        </sheet>
+    </element>
+    <element name="Magiertöter (Mage Slayer)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_MAGESLAYER">
+        <description>
+            <p>Du hast Techniken erlernt, um im Nahkampf gegen Zauberwirker effektiv vorzugehen, und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Wenn eine Kreatur im Umkreis von 1,5m (5 Fuß) einen Zauber wirkt, kannst du deine Reaktion verwenden, um einen Nahkampfangriff mit einer Waffe gegen sie auszuführen.</li>
+                <li>Wenn du einer Kreatur Schaden zufügst, die sich auf einen Zauber konzentriert, hat sie Nachteil auf den Rettungswurf, um die Konzentration aufrechtzuerhalten.</li>
+                <li>Du hast Vorteil auf Rettungswürfe gegen Zauber, die von Kreaturen im Umkreis von 1,5m (5 Fuß) gewirkt werden.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Reaktion: Nahkampfangriff, wenn Kreatur im Nahbereich (1,5m) zaubert.  
+            Verletzte Zauberwirker mit Konzentration haben Nachteil auf den Konzentrieren-Rettungswurf.  
+            Vorteil auf Rettungswürfe gegen Zauber im Nahbereich.</description>
+        </sheet>
+    </element>
+    <element name="Eingeweihter der Magie (Magic Initiate)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_MAGICINITIATE">
+        <description>
+            <p>Wähle eine Klasse: Barde, Kleriker, Druide, Hexenmeister, Magier oder Zaubergelehrter. Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste dieser Klasse.</p>
+            <p class="indent">Zusätzlich lernst du einen Zauber des 1. Grades aus derselben Liste. Du kannst diesen Zauber einmal auf niedrigster Stufe wirken und musst eine lange Rast beenden, um ihn auf diese Weise erneut wirken zu können.</p>
+            <p class="indent">Die Zauberattributswerte hängen von der gewählten Klasse ab: Charisma für Barde, Hexenmeister oder Zauberer; Weisheit für Kleriker oder Druide; Intelligenz für Zaubergelehrter.</p>
+        </description>
+        <sheet/>
+        <rules>
+            <select type="Feat Feature" name="Eingeweihter der Magie" supports="Magic Initiate"/>
+        </rules>
+    </element>
+    <element name="Barde (Magic Initiate)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_MAGIC_INITIATE_BARD">
+        <supports>Magic Initiate</supports>
+        <description>
+            <p>Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste des Barden.</p>
+            <p class="indent">Außerdem lernst du einen Zauber des 1. Grades aus derselben Liste. Du kannst diesen Zauber einmal auf niedrigster Stufe wirken und musst eine lange Rast beenden, um ihn erneut auf diese Weise zu wirken.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Charisma.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Charisma.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zaubertrick (Eingeweihter der Magie)" supports="0,Bard" number="2"/>
+            <select type="Spell" name="Zauber des 1. Grades (Eingeweihter der Magie)" supports="1,Bard"/>
+        </rules>
+    </element>
+    <element name="Kleriker (Magic Initiate)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_MAGIC_INITIATE_CLERIC">
+        <supports>Magic Initiate</supports>
+        <description>
+            <p>Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste des Klerikers.</p>
+            <p class="indent">Außerdem lernst du einen Zauber des 1. Grades aus derselben Liste. Du kannst diesen Zauber einmal auf niedrigster Stufe wirken und musst eine lange Rast beenden, um ihn erneut auf diese Weise zu wirken.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Weisheit.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Weisheit.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zaubertrick (Eingeweihter der Magie)" supports="0,Cleric" number="2"/>
+            <select type="Spell" name="Zauber des 1. Grades (Eingeweihter der Magie)" supports="1,Cleric"/>
+        </rules>
+    </element>
+    <element name="Druide (Magic Initiate)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_MAGIC_INITIATE_DRUID">
+        <supports>Magic Initiate</supports>
+        <description>
+            <p>Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste des Druiden.</p>
+            <p class="indent">Außerdem lernst du einen Zauber des 1. Grades aus derselben Liste. Du kannst diesen Zauber einmal auf niedrigster Stufe wirken und musst eine lange Rast beenden, um ihn erneut auf diese Weise zu wirken.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Weisheit.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Weisheit.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zaubertrick (Eingeweihter der Magie)" supports="0,Druid" number="2"/>
+            <select type="Spell" name="Zauber des 1. Grades (Eingeweihter der Magie)" supports="1,Druid"/>
+        </rules>
+    </element>
+    <element name="Hexenmeister (Magic Initiate)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_MAGIC_INITIATE_WARLOCK">
+        <supports>Magic Initiate</supports>
+        <description>
+            <p>Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste des Hexenmeisters.</p>
+            <p class="indent">Außerdem lernst du einen Zauber des 1. Grades aus derselben Liste. Du kannst diesen Zauber einmal auf niedrigster Stufe wirken und musst eine lange Rast beenden, um ihn erneut auf diese Weise zu wirken.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Charisma.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Charisma.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zaubertrick (Eingeweihter der Magie)" supports="0,Warlock" number="2"/>
+            <select type="Spell" name="Zauber des 1. Grades (Eingeweihter der Magie)" supports="1,Warlock"/>
+        </rules>
+    </element>
+    <element name="Zauberer (Magic Initiate)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_MAGIC_INITIATE_SORCERER">
+        <supports>Magic Initiate</supports>
+        <description>
+            <p>Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste des Zauberers.</p>
+            <p class="indent">Außerdem lernst du einen Zauber des 1. Grades aus derselben Liste. Du kannst diesen Zauber einmal auf niedrigster Stufe wirken und musst eine lange Rast beenden, um ihn erneut auf diese Weise zu wirken.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Charisma.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Charisma.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zaubertrick (Eingeweihter der Magie)" supports="0,Sorcerer" number="2"/>
+            <select type="Spell" name="Zauber des 1. Grades (Eingeweihter der Magie)" supports="1,Sorcerer"/>
+        </rules>
+    </element>
+    <element name="Zaubergelehrter (Magic Initiate)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_MAGIC_INITIATE_WIZARD">
+        <supports>Magic Initiate</supports>
+        <description>
+            <p>Du lernst zwei Zaubertricks deiner Wahl aus der Zauberliste des Zaubergelehrten.</p>
+            <p class="indent">Außerdem lernst du einen Zauber des 1. Grades aus derselben Liste. Du kannst diesen Zauber einmal auf niedrigster Stufe wirken und musst eine lange Rast beenden, um ihn erneut auf diese Weise zu wirken.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Intelligenz.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Intelligenz.</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zaubertrick (Eingeweihter der Magie)" supports="0,Wizard" number="2"/>
+            <select type="Spell" name="Zauber des 1. Grades (Eingeweihter der Magie)" supports="1,Wizard"/>
+        </rules>
+    </element>
+    <!-- /magic initiate -->
+    <element name="Meister der Kampfkunst (Martial Adept)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_MARTIALADEPT">
+        <description>
+            <p>Du hast eine Ausbildung im bewaffneten Nahkampf erhalten und kannst besondere Kampfmanöver ausführen. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Du lernst zwei Kampfmanöver deiner Wahl aus der Liste des Archetyps „Kampfmeister“ (Battle Master) der Kriegerklasse. Wenn eines dieser Manöver einen Rettungswurf erfordert, beträgt der SG 8 + dein Kompetenzbonus + dein Stärkemodifikator oder Geschicklichkeitsmodifikator (nach deiner Wahl).</li>
+                <li>Du erhältst einen Überlegenheitswürfel, ein W6. Dieser Würfel ergänzt alle Überlegenheitswürfel, die du ggf. bereits besitzt, und wird für die Ausführung deiner Manöver verwendet. Ein Würfel wird verbraucht, wenn du ihn einsetzt. Du erhältst alle verbrauchten Überlegenheitswürfel zurück, wenn du eine kurze oder lange Rast beendest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>{{martial adept:dice:amount}}W{{martial adept:dice:size}} Überlegenheitswürfel / kurze Rast. SG {{martial adept:dc}}</description>
+        </sheet>
+        <rules>
+            <!-- SG = 8 + Proficiency + Stärke ODER Geschicklichkeit -->
+            <stat name="martial adept:ability" value="strength:modifier" bonus="martial adept:ability"/>
+            <stat name="martial adept:ability" value="dexterity:modifier" bonus="martial adept:ability"/>
+            <stat name="martial adept:dc" value="8"/>
+            <stat name="martial adept:dc" value="proficiency"/>
+            <stat name="martial adept:dc" value="martial adept:ability"/>
+            <!-- Anzahl und Größe des zusätzlichen Würfels -->
+            <stat name="martial adept:dice:amount" value="1"/>
+            <stat name="martial adept:dice:size" value="6"/>
+            <!-- Auswahl von Manövern -->
+            <select type="Archetype Feature" name="Meister der Kampfkunst" supports="Maneuver,Battle Master" number="2"/>
+            <!-- Integration, falls Battle Master bereits gewählt -->
+            <stat name="superiority dice:amount" value="1" requirements="ID_ARCHETYPE_FEATURE_BATTLE_MASTER_COMBAT_SUPERIORITY"/>
+        </rules>
+    </element>
+    <element name="Meister der mittelschweren Rüstungen (Medium Armor Master)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_MEDIUMARMORMASTER">
+        <prerequisite>Umgang mit mittelschwerer Rüstung</prerequisite>
+        <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Umgang mit mittelschwerer Rüstung</i>
+            </p>
+            <p>Du hast geübt, dich effizient in mittelschwerer Rüstung zu bewegen, und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Mittelschwere Rüstung verursacht keinen Nachteil mehr auf deine Geschicklichkeitswürfe für Heimlichkeit.</li>
+                <li>Wenn du mittelschwere Rüstung trägst, kannst du deinen Geschicklichkeitsmodifikator bis zu +3 auf deine Rüstungsklasse anrechnen (statt +2), sofern dein Geschicklichkeitswert mindestens 16 beträgt.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Mittelschwere Rüstung verursacht keinen Nachteil mehr auf Heimlichkeitswürfe.  
+            Geschicklichkeitsbonus auf RK steigt auf max. +3.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:armored:dexterity:cap" value="3" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Leichtfüßig (Mobile)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_MOBILE">
+        <description>
+            <p>Du bist außergewöhnlich schnell und wendig. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Deine Grundbewegungsrate erhöht sich um 3m (10 Fuß).</li>
+                <li>Wenn du die Aktion „Rennen“ verwendest, kostet dich schwieriges Gelände in diesem Zug keine zusätzliche Bewegung.</li>
+                <li>Wenn du einen Nahkampfangriff gegen eine Kreatur ausführst, provozierst du für den Rest des Zuges keine Gelegenheitsangriffe von dieser Kreatur – unabhängig davon, ob du triffst oder nicht.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>+3m Bewegung. Rennen ignoriert schwieriges Gelände. Nahkampfangriff verhindert Gelegenheitsangriffe durch das Ziel bis zum Zugende.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:misc" value="10"/>
+            <stat name="innate speed:climb:misc" value="10" requirements="[innate speed:climb:1]"/>
+            <stat name="innate speed:fly:misc" value="10" requirements="[innate speed:fly:1]"/>
+            <stat name="innate speed:swim:misc" value="10" requirements="[innate speed:swim:1]"/>
+            <stat name="innate speed:burrow:misc" value="10" requirements="[innate speed:burrow:1]"/>
+        </rules>
+    </element>
+    <element name="Mittelschwer gerüstet (Moderately Armored)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_MODERATELYARMORED">
+        <prerequisite>Umgang mit leichter Rüstung</prerequisite>
+        <requirements>ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Umgang mit leichter Rüstung</i>
+            </p>
+            <p>Du hast gelernt, mittelschwere Rüstung und Schilde zu meistern, und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Stärke- oder Geschicklichkeitswert um 1, bis zu einem Maximum von 20.</li>
+                <li>Du erhältst den Umgang mit mittelschwerer Rüstung und Schilden.</li>
+            </ul>
+        </description>
+        <sheet display="false">
+            <description>Du hast gelernt, mittelschwere Rüstung und Schilde zu meistern.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Mittelschwer gerüstet)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+        </rules>
+    </element>
+    <element name="Berittener Kampf (Mounted Combatant)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_MOUNTEDCOMBATANT">
+        <description>
+            <p>Du bist ein gefährlicher Gegner im Sattel. Solange du beritten bist und nicht kampfunfähig, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Du hast Vorteil auf Nahkampfangriffe gegen nicht berittene Kreaturen, die kleiner als dein Reittier sind.</li>
+                <li>Du kannst einen Angriff, der auf dein Reittier zielt, auf dich selbst umlenken.</li>
+                <li>Wenn dein Reittier einem Effekt ausgesetzt ist, bei dem ein Geschicklichkeitsrettungswurf nur halben Schaden verursacht, erleidet es bei einem erfolgreichen Rettungswurf stattdessen gar keinen Schaden und bei einem misslungenen nur halben Schaden.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Vorteil auf Nahkampfangriffe gegen kleinere, nicht berittene Gegner.  
+            Angriffe auf dein Reittier kannst du auf dich umlenken.  
+            Dein Reittier erhält „Ausweichen“ gegen Flächeneffekte mit Geschicklichkeitsrettungswurf.</description>
+        </sheet>
+    </element>
+    <element name="Aufmerksam (Observant)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_OBSERVANT">
+        <description>
+            <p>Du bemerkst Details deiner Umgebung besonders schnell und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Intelligenz- oder Weisheitswert um 1, bis zu einem Maximum von 20.</li>
+                <li>Wenn du den Mund einer Kreatur sehen kannst, während sie eine dir bekannte Sprache spricht, kannst du durch Lippenlesen verstehen, was sie sagt.</li>
+                <li>Du erhältst einen Bonus von +5 auf deinen passiven Weisheitswert (Wahrnehmung) und deinen passiven Intelligenzwert (Nachforschungen).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Lippenlesen möglich, wenn du die Sprache verstehst.  
+            +5 auf passive Wahrnehmung und passive Nachforschungen.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Aufmerksam)" supports="ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM"/>
+            <stat name="perception:passive" value="5"/>
+            <stat name="investigation:passive" value="5"/>
+        </rules>
+    </element>
+    <element name="Stangenwaffenmeister (Polearm Master)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_POLEARMMASTER">
+        <description>
+            <p>Du kannst Gegner mit Langwaffen effektiv auf Abstand halten und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Wenn du die Angriffsaktion ausführst und nur mit einer Gleve, Hellebarde, einem Kampfstab oder Speer angreifst, kannst du als Bonusaktion einen Nahkampfangriff mit dem anderen Ende der Waffe machen. Der Schadenswürfel für diesen Angriff ist ein W4 und verursacht Wuchtschaden. Du verwendest denselben Attributsmodifikator wie beim Hauptangriff.</li>
+                <li>Solange du eine Gleve, Hellebarde, Piken, einen Kampfstab oder Speer führst, provozieren andere Kreaturen Gelegenheitsangriffe von dir, wenn sie deine Reichweite betreten.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Bonusaktion mit Stangenwaffe: Mit dem anderen Ende deiner Waffe (W4 Wuchtschaden) angreifen.  
+            Kreaturen provozieren Gelegenheitsangriffe, wenn sie deine Reichweite betreten.</description>
+        </sheet>
+    </element>
+    <element name="Belastbar (Resilient)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_RESILIENT">
+        <description>
+            <p>Wähle einen Attributswert. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe den gewählten Attributswert um 1, bis zu einem Maximum von 20.</li>
+                <li>Du erhältst den Rettungswurf-Bonus (Proficiency) für Rettungswürfe mit diesem Attribut.</li>
+            </ul>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat Feature" name="Belastbar (Attributswahl)" supports="Resilient"/>
+        </rules>
+    </element>
+    <element name="Belastbar (Stärke)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RESILIENT_STRENGTH">
+        <compendium display="false"/>
+        <supports>Resilient</supports>
+        <description>
+            <p>Dein Stärkewert steigt um 1.</p>
+            <p>Du erhältst den Rettungswurf-Bonus für Stärke.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="strength" value="1" alt="Belastbar"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
+        </rules>
+    </element>
+    <element name="Belastbar (Geschicklichkeit)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RESILIENT_DEXTERITY">
+        <compendium display="false"/>
+        <supports>Resilient</supports>
+        <description>
+            <p>Dein Geschicklichkeitswert steigt um 1.</p>
+            <p>Du erhältst den Rettungswurf-Bonus für Geschicklichkeit.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="dexterity" value="1" alt="Belastbar"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
+        </rules>
+    </element>
+    <element name="Belastbar (Konstitution)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RESILIENT_CONSTITUTION">
+        <compendium display="false"/>
+        <supports>Resilient</supports>
+        <description>
+            <p>Dein Konstitutionswert steigt um 1.</p>
+            <p>Du erhältst den Rettungswurf-Bonus für Konstitution.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="constitution" value="1" alt="Belastbar"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Belastbar (Intelligenz)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RESILIENT_INTELLIGENCE">
+        <compendium display="false"/>
+        <supports>Resilient</supports>
+        <description>
+            <p>Dein Intelligenzwert steigt um 1.</p>
+            <p>Du erhältst den Rettungswurf-Bonus für Intelligenz.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="intelligence" value="1" alt="Belastbar"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
+        </rules>
+    </element>
+    <element name="Belastbar (Weisheit)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RESILIENT_WISDOM">
+        <compendium display="false"/>
+        <supports>Resilient</supports>
+        <description>
+            <p>Dein Weisheitswert steigt um 1.</p>
+            <p>Du erhältst den Rettungswurf-Bonus für Weisheit.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="wisdom" value="1" alt="Belastbar"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
+        </rules>
+    </element>
+    <element name="Belastbar (Charisma)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RESILIENT_CHARISMA">
+        <compendium display="false"/>
+        <supports>Resilient</supports>
+        <description>
+            <p>Dein Charismawert steigt um 1.</p>
+            <p>Du erhältst den Rettungswurf-Bonus für Charisma.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <stat name="charisma" value="1" alt="Belastbar"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+        </rules>
+    </element>
+    <!-- /resilient -->
+    <element name="Ritualwirker (Ritual Caster)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_RITUALCASTER">
+        <prerequisite>Intelligenz oder Weisheit 13 oder höher</prerequisite>
+        <requirements>[int:13]||[wis:13]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Intelligenz oder Weisheit 13 oder höher</i>
+            </p>
+            <p>Du hast das Wirken bestimmter Zauber als Rituale erlernt. Diese Zauber sind in einem Ritualbuch niedergeschrieben, das du beim Wirken eines dieser Zauber in der Hand halten musst.</p>
+            <p class="indent">Wenn du dieses Talent wählst, erhältst du ein Ritualbuch mit zwei Zaubern des 1. Grades deiner Wahl. Wähle eine der folgenden Klassen: Barde, Kleriker, Druide, Hexenmeister, Zauberer oder Zaubergelehrter. Die Zauber müssen zur Zauberliste dieser Klasse gehören und das Merkmal „Ritual“ besitzen. Die gewählte Klasse bestimmt auch dein Zauberattribut: Charisma für Barde, Hexenmeister oder Zauberer; Weisheit für Kleriker oder Druide; Intelligenz für Zaubergelehrter.</p>
+            <p class="indent">Wenn du auf einen schriftlich festgehaltenen Zauber stößt, etwa auf eine Schriftrolle oder ein Zauberbuch, kannst du ihn eventuell deinem Ritualbuch hinzufügen. Der Zauber muss auf der Liste deiner gewählten Klasse stehen, darf maximal halb so hoch wie dein Charakterlevel (aufgerundet) sein und muss das Ritual-Merkmal besitzen. Das Abschreiben dauert 2 Stunden pro Zaubergrad und kostet 50GM pro Grad. Die Kosten decken Materialien und magische Tinte zur sicheren Niederschrift ab.</p>
+        </description>
+        <sheet>
+            <description>Du kannst Rituale aus einem Ritualbuch wirken, das zwei Zauber des 1. Grades enthält. Neue Rituale können unter bestimmten Bedingungen hinzugefügt werden.</description>
+        </sheet>
+        <rules>
+            <!-- TODO: Möglicher Internal Grant wie ID_INTERNAL_RITUAL -->
+            <select type="Feat Feature" name="Ritualwirker (Klassenwahl)" supports="Ritual Caster"/>
+        </rules>
+    </element>
+    <element name="Barde (Ritualwirker)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RITUAL_CASTER_BARD">
+        <compendium display="false"/>
+        <supports>Ritual Caster</supports>
+        <description>
+            <p>Du erhältst ein Ritualbuch mit zwei Zaubern des 1. Grades deiner Wahl.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Charisma.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Charisma</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zauber des 1. Grades (Ritualwirker)" supports="Ritual,1,Bard" number="2"/>
+        </rules>
+    </element>
+    <element name="Kleriker (Ritualwirker)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RITUAL_CASTER_CLERIC">
+        <compendium display="false"/>
+        <supports>Ritual Caster</supports>
+        <description>
+            <p>Du erhältst ein Ritualbuch mit zwei Zaubern des 1. Grades deiner Wahl.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Weisheit.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Weisheit</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zauber des 1. Grades (Ritualwirker)" supports="Ritual,1,Cleric" number="2"/>
+        </rules>
+    </element>
+    <element name="Druide (Ritualwirker)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RITUAL_CASTER_DRUID">
+        <compendium display="false"/>
+        <supports>Ritual Caster</supports>
+        <description>
+            <p>Du erhältst ein Ritualbuch mit zwei Zaubern des 1. Grades deiner Wahl.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Weisheit.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Weisheit</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zauber des 1. Grades (Ritualwirker)" supports="Ritual,1,Druid" number="2"/>
+        </rules>
+    </element>
+    <element name="Hexenmeister (Ritualwirker)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RITUAL_CASTER_WARLOCK">
+        <compendium display="false"/>
+        <supports>Ritual Caster</supports>
+        <description>
+            <p>Du erhältst ein Ritualbuch mit zwei Zaubern des 1. Grades deiner Wahl.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Charisma.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Charisma</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zauber des 1. Grades (Ritualwirker)" supports="Ritual,1,Warlock" number="2"/>
+        </rules>
+    </element>
+    <element name="Zauberer (Ritualwirker)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RITUAL_CASTER_SORCERER">
+        <compendium display="false"/>
+        <supports>Ritual Caster</supports>
+        <description>
+            <p>Du erhältst ein Ritualbuch mit zwei Zaubern des 1. Grades deiner Wahl.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Charisma.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Charisma</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zauber des 1. Grades (Ritualwirker)" supports="Ritual,1,Sorcerer" number="2"/>
+        </rules>
+    </element>
+    <element name="Zaubergelehrter (Ritualwirker)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_RITUAL_CASTER_WIZARD">
+        <compendium display="false"/>
+        <supports>Ritual Caster</supports>
+        <description>
+            <p>Du erhältst ein Ritualbuch mit zwei Zaubern des 1. Grades deiner Wahl.</p>
+            <p class="indent">Dein Zauberattribut für diese Zauber ist Intelligenz.</p>
+        </description>
+        <sheet>
+            <description>Zauberattribut: Intelligenz</description>
+        </sheet>
+        <rules>
+            <select type="Spell" name="Zauber des 1. Grades (Ritualwirker)" supports="Ritual,1,Wizard" number="2"/>
+        </rules>
+    </element>
+    <!-- /ritual caster -->
+    <element name="Wilder Angreifer (Savage Attacker)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_SAVAGEATTACKER">
+        <description>
+            <p>Einmal pro Zug, wenn du den Schaden eines Nahkampfangriffs mit einer Waffe bestimmst, kannst du alle Schadenswürfel der Waffe neu würfeln und eines der beiden Ergebnisse verwenden.</p>
+        </description>
+        <sheet>
+            <description>Einmal pro Zug kannst du den Waffenschaden eines Nahkampfangriffs neu würfeln und das bessere Ergebnis verwenden.</description>
+        </sheet>
+    </element>
+    <element name="Wächter (Sentinel)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_SENTINEL">
+        <description>
+            <p>Du hast Techniken gemeistert, mit denen du jede Unachtsamkeit deiner Feinde ausnutzen kannst. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Triffst du eine Kreatur mit einem Gelegenheitsangriff, sinkt ihre Bewegungsrate bis zum Ende des Zuges auf 0.</li>
+                <li>Kreaturen provozieren Gelegenheitsangriffe von dir, auch wenn sie die Aktion „Rückzug“ nutzen.</li>
+                <li>Wenn eine Kreatur im Umkreis von 1,5m (5Fuß) ein Ziel außer dir angreift (und dieses Ziel den Feat „Wächter“ nicht besitzt), kannst du deine Reaktion nutzen, um einen Nahkampfangriff mit einer Waffe gegen die angreifende Kreatur durchzuführen.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Gelegenheitsangriffe stoppen Bewegung (Bewegung = 0).  
+            „Rückzug“ verhindert keine Gelegenheitsangriffe von Dir.  
+            Reaktion: Nahkampfangriff gegen Kreatur, die in 1,5m ein anderes Ziel angreift.</description>
+        </sheet>
+    </element>
+    <element name="Scharfschütze (Sharpshooter)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_SHARPSHOOTER">
+        <description>
+            <p>Du hast den Umgang mit Fernkampfwaffen perfektioniert und kannst Schüsse ausführen, die anderen unmöglich erscheinen. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Angriffe mit Fernkampfwaffen auf große Entfernung (jenseits der normalen Reichweite) verursachen keinen Nachteil mehr.</li>
+                <li>Deine Fernkampfangriffe ignorieren halbe und Dreiviertel-Deckung.</li>
+                <li>Bevor du einen Angriff mit einer Fernkampfwaffe ausführst, mit der du geübt bist, kannst du einen Malus von −5 auf deinen Angriffswurf in Kauf nehmen. Triffst du trotzdem, erhält der Angriff +10 Schaden.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Kein Nachteil bei Angriffen auf große Entfernung.  
+            Ignoriert halbe und Dreiviertel-Deckung.  
+            Option: −5 auf Angriffswurf → +10 auf Schaden.</description>
+        </sheet>
+    </element>
+    <element name="Schildmeister (Shield Master)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_SHIELDMASTER">
+        <description>
+            <p>Du setzt deinen Schild nicht nur zur Verteidigung ein, sondern auch offensiv. Solange du einen Schild führst, erhältst du folgende Vorteile:</p>
+            <ul>
+                <li>Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du als Bonusaktion versuchen, eine Kreatur im Umkreis von 1,5 m (5 Fuß) mit deinem Schild zu schubsen.</li>
+                <li>Solange du nicht kampfunfähig bist, kannst du den RK-Bonus deines Schilds auf Geschicklichkeitsrettungswürfe gegen Zauber oder andere schädliche Effekte anwenden, die nur dich betreffen.</li>
+                <li>Wenn ein Effekt dir erlaubt, einen Geschicklichkeitsrettungswurf zu machen, um nur halben Schaden zu erleiden, kannst du deine Reaktion einsetzen, um stattdessen gar keinen Schaden zu nehmen – du hältst dabei deinen Schild zwischen dich und die Quelle des Effekts.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Bonusaktion: Schildstoß bei Angriffsaktion (1,5 m).  
+            RK-Bonus des Schilds auf Geschicklichkeitsrettungswürfe gegen Effekte, die nur dich betreffen.  
+            Reaktion: Bei Erfolg kein Schaden bei Effekten mit Dex-Rettungswurf für halben Schaden.</description>
+        </sheet>
+    </element>
+    <element name="Begabt (Skilled)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED">
+        <description>
+            <p>Du erhältst den Umgang mit drei Fertigkeiten und/oder Werkzeugen deiner Wahl.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat Feature" name="Begabung (Geübt)" supports="Skilled Choice" number="3"/>
+        </rules>
+    </element>
+    <!-- Feat Features für "Begabt" -->
+    <element name="Akrobatik (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_ACROBATICS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Akrobatik.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS"/>
+        </rules>
+    </element>
+    <element name="Mit Tieren umgehen (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_ANIMALHANDLING">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Mit Tieren umgehen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
+        </rules>
+    </element>
+    <element name="Arkane Kunde (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_ARCANA">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Arkane Kunde.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA"/>
+        </rules>
+    </element>
+    <element name="Athletik (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_ATHLETICS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Athletik.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS"/>
+        </rules>
+    </element>
+    <element name="Täuschen (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_DECEPTION">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Täuschen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION"/>
+        </rules>
+    </element>
+    <element name="Geschichte (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_HISTORY">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Geschichte.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
+        </rules>
+    </element>
+    <element name="Motiv erkennen (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_INSIGHT">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Motiv erkennen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
+        </rules>
+    </element>
+    <element name="Einschüchtern (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_INTIMIDATION">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Einschüchtern.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION"/>
+        </rules>
+    </element>
+    <element name="Nachforschungen (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_INVESTIGATION">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Nachforschungen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION"/>
+        </rules>
+    </element>
+    <element name="Heilkunde (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_MEDICINE">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Heilkunde.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE"/>
+        </rules>
+    </element>
+    <element name="Naturkunde (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_NATURE">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Naturkunde.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE"/>
+        </rules>
+    </element>
+    <element name="Wahrnehmung (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_PERCEPTION">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Wahrnehmung.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION"/>
+        </rules>
+    </element>
+    <element name="Auftreten (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_PERFORMANCE">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Auftreten.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE"/>
+        </rules>
+    </element>
+    <element name="Überzeugen (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_PERSUASION">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Überzeugen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION"/>
+        </rules>
+    </element>
+    <element name="Religion (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_RELIGION">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Religion.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION"/>
+        </rules>
+    </element>
+    <element name="Fingerfertigkeit (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_SLEIGHT_OF_HAND">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Fingerfertigkeit.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHT_OF_HAND"/>
+        </rules>
+    </element>
+    <element name="Heimlichkeit (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_STEALTH">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Heimlichkeit.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH"/>
+        </rules>
+    </element>
+    <element name="Überlebenskunst (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_SURVIVAL">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt in der Fertigkeit Überlebenskunst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL"/>
+        </rules>
+    </element>
+    <element name="Alchemistenwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_ALCHEMISTS_SUPPLIES">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Alchemistenwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Brauerbedarf (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_BREWERS_SUPPLIES">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Brauerbedarf.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Kalligrafiewerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_CALLIGRAPHERS_SUPPLIES">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Kalligrafiewerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Zimmermannswerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_CARPENTERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Zimmermannswerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Kartografenwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_CARTOGRAPHERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Kartografenwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Schusterwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_COBBLERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Schusterwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Kochwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_COOKS_UTENSILS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Kochwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS"/>
+        </rules>
+    </element>
+    <element name="Verkleidungsset (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_DISGUISE_KIT">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Verkleidungsset.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT"/>
+        </rules>
+    </element>
+    <element name="Fälscherset (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_FORGERY_KIT">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Fälscherset.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT"/>
+        </rules>
+    </element>
+    <element name="Glasbläserwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_GLASSBLOWERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Glasbläserwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Kräuterkundewerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_HERBALISM_KIT">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Kräuterkundewerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT"/>
+        </rules>
+    </element>
+    <element name="Juwelierwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_JEWELERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Juwelierwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Lederverarbeitungswerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_LEATHERWORKERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Lederverarbeitungswerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Steinmetzwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_MASONS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Steinmetzwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Navigationswerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_NAVIGATORS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Navigationswerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Malerbedarf (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_PAINTERS_SUPPLIES">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Malerbedarf.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Giftspezialistenwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_POISONERS_KIT">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Giftspezialistenwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT"/>
+        </rules>
+    </element>
+    <element name="Töpferwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_POTTERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Töpferwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Schmiedewerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_SMITHS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Schmiedewerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Diebeswerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_THIEVES_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Diebeswerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Bastlerwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_TINKERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Bastlerwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Weberwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_WEAVERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Weberwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Schnitzwerkzeug (Geübt)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_SKILLED_WOODCARVERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Skilled Choice</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Schnitzwerkzeug.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS"/>
+        </rules>
+    </element>
+    <!-- weitere Feats -->
+    <element name="Schleicher (Skulker)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_SKULKER">
+        <prerequisite>Geschicklichkeit 13 oder höher</prerequisite>
+        <requirements>[dex:13]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Geschicklichkeit 13 oder höher</i>
+            </p>
+            <p>Du bist ein Meister darin, dich in den Schatten zu bewegen. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Du kannst dich verstecken, wenn du nur leicht vor der Kreatur verdeckt bist, vor der du dich verbirgst (z. B. durch Halbschatten, Nebel oder dünne Deckung).</li>
+                <li>Wenn du versteckt bist und mit einem Fernkampfangriff verfehlst, verrät der Angriff nicht automatisch deine Position.</li>
+                <li>Gedämpftes Licht (Halbdunkel) verursacht keinen Nachteil mehr auf deine Weisheitswürfe (Wahrnehmung), wenn du dich auf deinen Sehsinn verlässt.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Verstecken auch bei leichter Deckung möglich.  
+            Fehlschlag mit Fernkampf verrät Position nicht.  
+            Kein Nachteil auf Wahrnehmung bei Halbdunkel.</description>
+        </sheet>
+    </element>
+    <element name="Zielgenauer Zauberschütze (Spell Sniper)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_SPELL_SNIPER">
+        <prerequisite>
+            <i>Du musst in der Lage sein, mindestens einen Zauber zu wirken.</i>
+        </prerequisite>
+        <requirements>[type:spell]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Du musst in der Lage sein, mindestens einen Zauber zu wirken.</i>
+            </p>
+            <p>Du hast Techniken erlernt, mit denen du deine Angriffe mit bestimmten Zaubern verbesserst:</p>
+            <ul>
+                <li>Wenn du einen Zauber wirkst, der einen Angriffswurf erfordert, wird seine Reichweite verdoppelt.</li>
+                <li>Deine Fernkampf-Zauberangriffe ignorieren Halbdeckung und Dreivierteldeckung.</li>
+                <li>Du lernst einen Zaubertrick (Cantrip), der einen Angriffswurf erfordert. Wähle ihn aus der Zauberliste von Barde, Kleriker, Druide, Hexenmeister, Magier oder Zauberer. Dein Zauberattribut für diesen Zaubertrick richtet sich nach der gewählten Liste: Charisma (Barde, Hexenmeister, Zauberer), Weisheit (Kleriker, Druide) oder Intelligenz (Magier).</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wenn du einen Zauber wirkst, der einen Angriffswurf erfordert, wird seine Reichweite verdoppelt. Deine Fernkampf-Zauberangriffe ignorieren Halbdeckung und Dreivierteldeckung.</description>
+        </sheet>
+    </element>
+    <element name="Kneipenschläger (Tavern Brawler)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_TAVERN_BRAWLER">
+        <description>
+            <p>Du bist an handfeste Auseinandersetzungen mit allem gewöhnt, was gerade zur Hand ist. Du erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Stärkewert oder Konstitutionswert um 1, auf maximal 20.</li>
+                <li>Du bist geübt im Umgang mit improvisierten Waffen.</li>
+                <li>Deine waffenlosen Angriffe verursachen 1W4 Schaden.</li>
+                <li>Wenn du mit einem waffenlosen Angriff oder einer improvisierten Waffe während deines Zuges eine Kreatur triffst, kannst du als Bonusaktion versuchen, sie zu packen.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Du bist geübt im Umgang mit improvisierten Waffen. Deine waffenlosen Angriffe verursachen 1W4 Schaden. Wenn du mit einem waffenlosen Angriff oder einer improvisierten Waffe während deines Zuges triffst, kannst du als Bonusaktion versuchen, die Kreatur zu packen.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Kneipenschläger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Zäh (Tough)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_TOUGH">
+        <description>
+            <p>Dein maximales Trefferpunktemaximum erhöht sich um das Doppelte deiner Stufe, wenn du diese Fertigkeit erhältst. Jedes Mal, wenn du anschließend eine Stufe aufsteigst, erhöht sich dein Trefferpunktemaximum um 2 weitere Punkte.</p>
+        </description>
+        <sheet>
+            <description>Dein Trefferpunktemaximum erhöht sich um {{tough:hp}}.</description>
+        </sheet>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <rules>
+            <stat name="tough:hp" value="level"/>
+            <stat name="tough:hp" value="level"/>
+            <stat name="hp" value="tough:hp"/>
+        </rules>
+    </element>
+    <element name="Kampferprobter Zauberwirker (War Caster)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_WAR_CASTER">
+        <prerequisite>
+            <i>Du musst in der Lage sein, mindestens einen Zauber zu wirken.</i>
+        </prerequisite>
+        <requirements>[type:spell]</requirements>
+        <description>
+            <p>
+                <i>Voraussetzung: Du musst in der Lage sein, mindestens einen Zauber zu wirken.</i>
+            </p>
+            <p>Du hast geübt, Zauber mitten im Kampf zu wirken, und dadurch folgende Vorteile erlangt:</p>
+            <ul>
+                <li>Du hast Vorteil auf Konstitutions-Rettungswürfe, um Konzentration aufrechtzuerhalten, wenn du Schaden erleidest.</li>
+                <li>Du kannst somatische Komponenten von Zaubern auch dann ausführen, wenn du Waffen oder einen Schild in einer oder beiden Händen hältst.</li>
+                <li>Wenn die Bewegung einer feindlichen Kreatur bei dir eine Gelegenheitsangriff provoziert, kannst du deine Reaktion verwenden, um stattdessen einen Zauber auf diese Kreatur zu wirken. Der Zauber muss eine Wirkungszeit von 1 Aktion haben und darf nur diese Kreatur als Ziel haben.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Du hast Vorteil auf Konstitutionswürfe, um Konzentration aufrechtzuerhalten, wenn du Schaden nimmst. Du kannst somatische Komponenten von Zaubern auch mit Waffen oder Schild in den Händen ausführen. Wenn ein Gegner bei dir eine Gelegenheitsangriff provoziert, kannst du stattdessen einen Zauber mit Wirkungszeit 1 Aktion und nur diesem Ziel wirken.</description>
+        </sheet>
+    </element>
+    <element name="Waffenmeister (Weapon Master)" type="Feat" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER">
+        <description>
+            <p>Du hast ausgiebig mit verschiedenen Waffen trainiert und erhältst folgende Vorteile:</p>
+            <ul>
+                <li>Erhöhe deinen Stärkewert oder Geschicklichkeitswert um 1, auf maximal 20.</li>
+                <li>Du erhältst Übung im Umgang mit vier Waffen deiner Wahl. Jede davon muss eine einfache oder Kriegswaffe sein.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Erhöhe Stärke oder Geschicklichkeit um 1. Du erhältst Übung im Umgang mit vier einfachen oder Kriegswaffen deiner Wahl.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Waffenmeister)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY"/>
+            <select type="Feat Feature" name="Waffenauswahl (Waffenmeister)" supports="Weapon Master" number="4"/>
+        </rules>
+    </element>
+    <!--Feat Ability Score Increase-->
+    <element name="Attributssteigerung (Stärke)" type="Ability Score Improvement" source="DnD4Tyria" id="ID_D4T_FEAT_ASI_STRENGTH">
+        <compendium display="false"/>
+        <supports>Feat</supports>
+        <description>
+            <p>Erhöhe deinen Stärkewert um 1.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <rules>
+            <stat name="strength" value="1" alt="Ability Score Increase"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung (Geschicklichkeit)" type="Ability Score Improvement" source="DnD4Tyria" id="ID_D4T_FEAT_ASI_DEXTERITY">
+        <compendium display="false"/>
+        <supports>Feat</supports>
+        <description>
+            <p>Erhöhe deinen Geschicklichkeitswert um 1.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <rules>
+            <stat name="dexterity" value="1" alt="Ability Score Increase"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung (Konstitution)" type="Ability Score Improvement" source="DnD4Tyria" id="ID_D4T_FEAT_ASI_CONSTITUTION">
+        <compendium display="false"/>
+        <supports>Feat</supports>
+        <description>
+            <p>Erhöhe deinen Konstitutionswert um 1.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <rules>
+            <stat name="constitution" value="1" alt="Ability Score Increase"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung (Intelligenz)" type="Ability Score Improvement" source="DnD4Tyria" id="ID_D4T_FEAT_ASI_INTELLIGENCE">
+        <compendium display="false"/>
+        <supports>Feat</supports>
+        <description>
+            <p>Erhöhe deinen Intelligenzwert um 1.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <rules>
+            <stat name="intelligence" value="1" alt="Ability Score Increase"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung (Weisheit)" type="Ability Score Improvement" source="DnD4Tyria" id="ID_D4T_FEAT_ASI_WISDOM">
+        <compendium display="false"/>
+        <supports>Feat</supports>
+        <description>
+            <p>Erhöhe deinen Weisheitswert um 1.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <rules>
+            <stat name="wisdom" value="1" alt="Ability Score Increase"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung (Charisma)" type="Ability Score Improvement" source="DnD4Tyria" id="ID_D4T_FEAT_ASI_CHARISMA">
+        <compendium display="false"/>
+        <supports>Feat</supports>
+        <description>
+            <p>Erhöhe deinen Charismawert um 1.</p>
+        </description>
+        <setters>
+            <set name="allow duplicate">true</set>
+        </setters>
+        <rules>
+            <stat name="charisma" value="1" alt="Ability Score Increase"/>
+        </rules>
+    </element>
+    <!--<element name="Ability Score Increase (Strength)" type="Ability Score Improvement" source="Player’s Handbook" id="ID_PHB_FEAT_ASI_STRENGTH">
+		<compendium display="false" />
+		<supports>Feat, Athlete</supports>
+		<description>
+			<p>Your Strength increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="strength" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Dexterity)" type="Ability Score Improvement" source="Player’s Handbook" id="ID_PHB_FEAT_ASI_DEXTERITY">
+		<compendium display="false" />
+		<supports>Feat, Athlete</supports>
+		<description>
+			<p>Your Dexterity increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="dexterity" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Constitution)" type="Ability Score Improvement" source="Player’s Handbook" id="ID_PHB_FEAT_ASI_CONSTITUTION">
+		<compendium display="false" />
+		<supports>Feat</supports>
+		<description>
+			<p>Your Constitution increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="constitution" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Intelligence)" type="Ability Score Improvement" source="Player’s Handbook" id="ID_PHB_FEAT_ASI_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Feat</supports>
+		<description>
+			<p>Your Intelligence increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="intelligence" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Wisdom)" type="Ability Score Improvement" source="Player’s Handbook" id="ID_PHB_FEAT_ASI_WISDOM">
+		<compendium display="false" />
+		<supports>Feat</supports>
+		<description>
+			<p>Your Wisdom increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="wisdom" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>
+	<element name="Ability Score Increase (Charisma)" type="Ability Score Improvement" source="Player’s Handbook" id="ID_PHB_FEAT_ASI_CHARISMA">
+		<compendium display="false" />
+		<supports>Feat</supports>
+		<description>
+			<p>Your Charisma increases by 1.</p>
+		</description>
+		<setters>
+			<set name="allow duplicate">true</set>
+		</setters>
+		<rules>
+			<stat name="charisma" value="1" alt="Ability Score Increase" />
+		</rules>
+	</element>-->
+    <element name="Streitaxt (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_BATTLEAXE">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Streitaxt.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE"/>
+        </rules>
+    </element>
+    <element name="Blasrohr (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_BLOWGUN">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Blasrohr.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BLOWGUN"/>
+        </rules>
+    </element>
+    <element name="Keule (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_CLUB">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Keule.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB"/>
+        </rules>
+    </element>
+    <element name="Handarmbrust (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_CROSSBOW_HAND">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Handarmbrust.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND"/>
+        </rules>
+    </element>
+    <element name="Schwere Armbrust (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_CROSSBOW_HEAVY">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Schwere Armbrust.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HEAVY"/>
+        </rules>
+    </element>
+    <element name="Leichte Armbrust (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_CROSSBOW_LIGHT">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Leichte Armbrust.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT"/>
+        </rules>
+    </element>
+    <element name="Dolch (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_DAGGER">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Dolch.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER"/>
+        </rules>
+    </element>
+    <element name="Wurfpfeil (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_DART">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Wurfpfeil.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART"/>
+        </rules>
+    </element>
+    <element name="Flegel (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_FLAIL">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Flegel.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL"/>
+        </rules>
+    </element>
+    <element name="Stangenklinge (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_GLAIVE">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Stangenklinge.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GLAIVE"/>
+        </rules>
+    </element>
+    <element name="Große Axt (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_GREATAXE">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Große Axt.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATAXE"/>
+        </rules>
+    </element>
+    <element name="Großschwert (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_GREATSWORD">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Großschwert.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD"/>
+        </rules>
+    </element>
+    <element name="Hellebarde (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_HALBERD">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Hellebarde.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HALBERD"/>
+        </rules>
+    </element>
+    <element name="Handaxt (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_HANDAXE">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Handaxt.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE"/>
+        </rules>
+    </element>
+    <element name="Wurfspeer (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_JAVELIN">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Wurfspeer.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN"/>
+        </rules>
+    </element>
+    <element name="Lanze (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_LANCE">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Lanze.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LANCE"/>
+        </rules>
+    </element>
+    <element name="Leichter Hammer (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_LIGHT_HAMMER">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Leichten Hammer.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER"/>
+        </rules>
+    </element>
+    <element name="Langbogen (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_LONGBOW">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Langbogen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW"/>
+        </rules>
+    </element>
+    <element name="Langschwert (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_LONGSWORD">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Langschwert.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD"/>
+        </rules>
+    </element>
+    <element name="Streitkolben (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_MACE">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Streitkolben.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE"/>
+        </rules>
+    </element>
+    <element name="Vorschlaghammer (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_MAUL">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Vorschlaghammer.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL"/>
+        </rules>
+    </element>
+    <element name="Morgenstern (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_MORNINGSTAR">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Morgenstern.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MORNINGSTAR"/>
+        </rules>
+    </element>
+    <element name="Netz (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_NET">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Netz.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_NET"/>
+        </rules>
+    </element>
+    <element name="Pike (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_PIKE">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Pike.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_PIKE"/>
+        </rules>
+    </element>
+    <element name="Kampfstab (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_QUARTERSTAFF">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Kampfstab.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF"/>
+        </rules>
+    </element>
+    <element name="Rapier (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_RAPIER">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Rapier.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER"/>
+        </rules>
+    </element>
+    <element name="Krummsäbel (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_SCIMITAR">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Krummsäbel.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR"/>
+        </rules>
+    </element>
+    <element name="Kurzbogen (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_SHORTBOW">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Kurzbogen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW"/>
+        </rules>
+    </element>
+    <element name="Kurzschwert (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_SHORTSWORD">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Kurzschwert.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
+        </rules>
+    </element>
+    <element name="Sichel (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_SICKLE">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Sichel.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE"/>
+        </rules>
+    </element>
+    <element name="Schleuder (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_SLING">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Schleuder.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING"/>
+        </rules>
+    </element>
+    <element name="Speer (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_SPEAR">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Speer.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR"/>
+        </rules>
+    </element>
+    <element name="Dreizack (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_TRIDENT">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Dreizack.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_TRIDENT"/>
+        </rules>
+    </element>
+    <element name="Kriegshammer (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_WARHAMMER">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Kriegshammer.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER"/>
+        </rules>
+    </element>
+    <element name="Kriegspickel (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_WAR_PICK">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Kriegspickel.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WAR_PICK"/>
+        </rules>
+    </element>
+    <element name="Peitsche (Waffenmeister)" type="Feat Feature" source="DnD4Tyria" id="ID_D4T_FEAT_WEAPON_MASTER_WHIP">
+        <compendium display="false"/>
+        <supports>Weapon Master</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Peitsche.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP"/>
+        </rules>
+    </element>
+</elements>
