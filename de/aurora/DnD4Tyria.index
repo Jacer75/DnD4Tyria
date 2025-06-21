@@ -9,7 +9,7 @@
 		</update>
 	</info>
 	<files>	
-		<file name="source.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/source.xml" />
+		<file name="source.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/d4t-source.xml" />
 		
 		<!-- races -->
     		<file name="d4t-race-asura.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/races/d4t-race-asura.xml" />
