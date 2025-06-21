@@ -3,7 +3,7 @@
     <info>
         <name>Krieger (Fighter)</name>
         <author url="">Aurora4Tyria</author>
-        <update version="0.4.1">
+        <update version="0.1.0">
             <file name="d4t-class-fighter.xml" url=""/>
         </update>
     </info>
@@ -942,7 +942,7 @@
     </element>
     <!-- Combat Maneuvers -->
     <element name="Schlag des Befehlshabers (Commander’s Strike)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_COMMANDERS_STRIKE">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du auf einen deiner Angriffe verzichten und stattdessen eine Bonusaktion einsetzen, um einem Verbündeten einen gezielten Schlag zu befehlen. Wähle dazu eine befreundete Kreatur, die dich sehen oder hören kann, und verbrauche einen Überlegenheitswürfel. Diese Kreatur kann sofort ihre Reaktion nutzen, um einen Waffenangriff auszuführen, wobei sie den Überlegenheitswürfel zum Schadenswurf addiert.</p>
         </description>
@@ -951,7 +951,7 @@
         </sheet>
     </element>
     <element name="Entwaffnender Angriff (Disarming Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_DISARMING_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um zu versuchen, sie zu entwaffnen. Du fügst dem Schaden des Angriffs den Überlegenheitswürfel hinzu, und das Ziel muss einen Stärkewurf gegen den SG deines Manövers ablegen. Bei einem Misserfolg lässt es einen von dir gewählten gehaltenen Gegenstand fallen. Der Gegenstand landet zu seinen Füßen.</p>
         </description>
@@ -960,7 +960,7 @@
         </sheet>
     </element>
     <element name="Ablenkender Schlag (Distracting Strike)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_DISTRACTING_STRIKE">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie abzulenken und deinen Verbündeten eine Gelegenheit zu verschaffen. Du fügst dem Schadenswurf den Überlegenheitswürfel hinzu. Der nächste Angriffswurf gegen das Ziel durch eine andere Kreatur als dich hat Vorteil, wenn er vor Beginn deines nächsten Zuges erfolgt.</p>
         </description>
@@ -969,7 +969,7 @@
         </sheet>
     </element>
     <element name="Tänzelnde Beinarbeit (Evasive Footwork)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_EVASIVE_FOOTWORK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du dich bewegst, kannst du einen Überlegenheitswürfel einsetzen. Wirf den Würfel und addiere das Ergebnis bis zum Ende deiner Bewegung zu deiner Rüstungsklasse (RK).</p>
         </description>
@@ -978,7 +978,7 @@
         </sheet>
     </element>
     <element name="Finte (Feinting Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_FEINTING_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Du kannst in deinem Zug eine Bonusaktion und einen Überlegenheitswürfel einsetzen, um eine Finte auszuführen. Wähle eine Kreatur im Umkreis von 1,5m (5 Fuß) als Ziel. Du hast bis zum Ende deines Zuges Vorteil auf deinen nächsten Angriffswurf gegen diese Kreatur. Wenn der Angriff trifft, wird der Überlegenheitswürfel zum Schadenswurf addiert.</p>
         </description>
@@ -987,7 +987,7 @@
         </sheet>
     </element>
     <element name="Provozierender Angriff (Goading Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_GOADING_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie zu provozieren. Du fügst dem Schaden den Überlegenheitswürfel hinzu. Das Ziel muss einen Weisheitsrettungswurf gegen den SG deines Manövers bestehen. Bei einem Fehlschlag hat es bis zum Ende deines nächsten Zuges Nachteil auf alle Angriffswürfe gegen andere Ziele als dich.</p>
         </description>
@@ -996,7 +996,7 @@
         </sheet>
     </element>
     <element name="Angriff mit Ausfallschritt (Lunging Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_LUNGING_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du in deinem Zug einen Nahkampfangriff mit einer Waffe ausführst, kannst du einen Überlegenheitswürfel einsetzen, um die Reichweite dieses Angriffs um 1,5m (5 Fuß) zu erhöhen. Triffst du mit dem Angriff, fügst du dem Schaden zusätzlich den Überlegenheitswürfel hinzu.</p>
         </description>
@@ -1005,7 +1005,7 @@
         </sheet>
     </element>
     <element name="Manövrierender Angriff (Maneuvering Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_MANEUVERING_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um einem Verbündeten eine bessere Position zu ermöglichen. Du fügst dem Schaden den Überlegenheitswürfel hinzu und wählst eine befreundete Kreatur, die dich sehen oder hören kann. Diese Kreatur kann ihre Reaktion nutzen, um sich bis zur Hälfte ihrer Geschwindigkeit zu bewegen, ohne Gelegenheitsangriffe vom Ziel deines Angriffs zu provozieren.</p>
         </description>
@@ -1014,7 +1014,7 @@
         </sheet>
     </element>
     <element name="Bedrohlicher Angriff (Menacing Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_MENACING_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie einzuschüchtern. Du fügst dem Schadenswurf den Überlegenheitswürfel hinzu. Das Ziel muss einen Weisheitsrettungswurf gegen den SG deines Manövers bestehen. Bei einem Fehlschlag wird es bis zum Ende deines nächsten Zuges von dir verängstigt.</p>
         </description>
@@ -1023,7 +1023,7 @@
         </sheet>
     </element>
     <element name="Parieren (Parry)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_PARRY">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn dich eine Kreatur mit einem Nahkampfangriff trifft, kannst du als Reaktion einen Überlegenheitswürfel einsetzen, um den erlittenen Schaden zu verringern. Der Schaden wird um das Ergebnis des Überlegenheitswürfels plus deinen Geschicklichkeitsmodifikator reduziert.</p>
         </description>
@@ -1032,7 +1032,7 @@
         </sheet>
     </element>
     <element name="Präzisionsangriff (Precision Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_PRECISION_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du einen Angriffswurf mit einer Waffe gegen eine Kreatur ausführst, kannst du einen Überlegenheitswürfel einsetzen, um ihn zum Wurf zu addieren. Du kannst dieses Manöver einsetzen, bevor oder nachdem du den Wurf machst – aber bevor der Angriff ausgewertet wird.</p>
         </description>
@@ -1041,7 +1041,7 @@
         </sheet>
     </element>
     <element name="Stoßangriff (Pushing Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_PUSHING_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie zurückzudrängen. Du fügst dem Schaden den Überlegenheitswürfel hinzu. Ist das Ziel groß oder kleiner, muss es einen Stärkewurf gegen den SG deines Manövers bestehen. Bei einem Fehlschlag wird es bis zu 4,5m (15 Fuß) von dir weggestoßen.</p>
         </description>
@@ -1050,7 +1050,7 @@
         </sheet>
     </element>
     <element name="Sammeln (Rally)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_RALLY">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>In deinem Zug kannst du eine Bonusaktion und einen Überlegenheitswürfel einsetzen, um einem Verbündeten Mut zuzusprechen. Wähle eine befreundete Kreatur, die dich sehen oder hören kann. Diese Kreatur erhält temporäre Trefferpunkte in Höhe des geworfenen Überlegenheitswürfels + deinem Charismamodifikator.</p>
         </description>
@@ -1059,7 +1059,7 @@
         </sheet>
     </element>
     <element name="Riposte (Riposte)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_RIPOSTE">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn dich eine Kreatur mit einem Nahkampfangriff verfehlt, kannst du als Reaktion einen Überlegenheitswürfel einsetzen, um sofort einen Nahkampfangriff mit einer Waffe gegen diese Kreatur auszuführen. Triffst du, fügst du dem Schaden den Überlegenheitswürfel hinzu.</p>
         </description>
@@ -1068,7 +1068,7 @@
         </sheet>
     </element>
     <element name="Doppelschlag (Sweeping Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_SWEEPING_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du eine Kreatur mit einem Nahkampfangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um mit demselben Angriff eine zweite Kreatur zu treffen. Wähle eine andere Kreatur, die sich innerhalb von 1,5m (5 Fuß) zum ursprünglichen Ziel und in deiner Reichweite befindet. Wenn dein ursprünglicher Angriffswurf auch die zweite Kreatur treffen würde, erleidet diese Schaden in Höhe des geworfenen Überlegenheitswürfels. Der Schaden hat denselben Typ wie der ursprüngliche Angriff.</p>
         </description>
@@ -1077,7 +1077,7 @@
         </sheet>
     </element>
     <element name="Fällender Angriff (Trip Attack)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_MANEUVER_TRIP_ATTACK">
-        <supports>Maneuver, Battle Master</supports>
+        <supports>Maneuver,Battle Master</supports>
         <description>
             <p>Wenn du eine Kreatur mit einem Waffenangriff triffst, kannst du einen Überlegenheitswürfel einsetzen, um sie zu Fall zu bringen. Du fügst dem Schaden den Überlegenheitswürfel hinzu. Ist das Ziel groß oder kleiner, muss es einen Stärkewurf gegen den SG deines Manövers bestehen. Bei einem Fehlschlag wird es zu Boden geworfen (liegt am Boden).</p>
         </description>
