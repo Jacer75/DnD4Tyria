@@ -1120,6 +1120,10 @@
         <sheet display="false"/>
         <spellcasting name="Arkaner Betrüger" ability="Intelligence" allowReplace="true">
             <list>Wizard,(Enchantment||Illusion)</list>
+            <schools>
+              <school>Enchantment</school>
+              <school>Illusion</school>
+            </schools>
         </spellcasting>
         <rules>
             <stat name="arkaner betrüger:spellcasting:slots:1" value="2" level="3"/>
