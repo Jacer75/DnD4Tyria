@@ -13,7 +13,7 @@
 
     <html>
       <head>
-        <title>30 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>31 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -87,7 +87,8 @@
           <xsl:variable name="spells" select="$spellList/elements/element[@type='Spell' and contains(supports, $baseList) and setters/set[@name='level'] = $lvl]"/>
           <xsl:if test="count($spells) > 0">
             <h2><xsl:value-of select="@label"/></h2>
-            <xsl:for-each select="$spells">
+            <!--<xsl:for-each select="$spells">-->
+            <xsl:for-each select="$spells[not($spellcasting/schools) or count(setters/set[@name='school' and . = $spellcasting/schools/school]) > 0]">
               <!--<xsl:if test="not($spellcasting/schools) or $spellcasting/schools/school = setters/set[@name='school']">-->
               <!--<xsl:if test="not($spellcasting/schools) or count(setters/set[@name='school' and . = $spellcasting/schools/school]) > 0">-->
               <!--<xsl:if test="not($spellcasting/schools)">-->
