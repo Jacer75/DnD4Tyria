@@ -53,9 +53,7 @@
 
                 <!-- Erweiterte Auswahl: Alle Elemente mit passendem supports-Wert anzeigen -->
                 <xsl:for-each select="rules/select">
-                  <div>Select-Schleife</div>
                   <xsl:variable name="supportKey" select="@supports"/>
-                  <div>Support key</div><xsl:value-of select="@supportKey"/>
                   <xsl:for-each select="$data/elements/element[@type='Archetype Feature' and supports = $supportKey]">
                     <details>
                       <summary><xsl:value-of select="@name"/></summary>
