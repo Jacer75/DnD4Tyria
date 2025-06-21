@@ -71,7 +71,7 @@
           </xsl:for-each>
         </xsl:for-each>
 
-        <h1><xsl:value-of select="$labels/labels/label[@id='class.spells']"/></h1>
+        <h1><xsl:value-of select="$labels/global/label[@id='class.spells']"/></h1>
         
         <xsl:for-each select="$labels/global/spell-levels/level">
           <xsl:variable name="lvl" select="."/>
