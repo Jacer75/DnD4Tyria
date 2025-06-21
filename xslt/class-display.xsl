@@ -11,7 +11,7 @@
 
     <html>
       <head>
-        <title>13 <xsl:value-of select="$data/elements/element/@name"/></title>
+        <title>14 <xsl:value-of select="$data/elements/element/@name"/></title>
         <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
       </head>
       <body>
@@ -49,7 +49,6 @@
                 <summary><xsl:value-of select="@name"/></summary>
                 <div class="feature-description">
                   <xsl:copy-of select="description/node()"/>
-                </div>
 
                 <!-- Erweiterte Auswahl: Alle Elemente mit passendem supports-Wert anzeigen -->
                 <xsl:for-each select="select">
@@ -65,6 +64,7 @@
                     </details>
                   </xsl:for-each>
                 </xsl:for-each>
+                </div>
               </details>
             </xsl:for-each>
           </xsl:for-each>
