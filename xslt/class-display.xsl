@@ -8,6 +8,19 @@
   <xsl:template match="/">
     <xsl:variable name="data" select="document(/root/external/@href)"/>
     <xsl:variable name="labels" select="document(/root/external/@href_labels)"/>
+
+    <html>
+      <head>
+        <title><xsl:value-of select="$data/elements/element/@name"/></title>
+        <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+      </head>
+      <body>
+        <h1><xsl:value-of select="$data/elements/element/@name"/></h1>
+        <div class="description">
+          <xsl:copy-of select="$data/elements/element/description/node()"/>
+        </div>
+      </body>
+    </html>
   </xsl:template>
 
 </xsl:stylesheet>
