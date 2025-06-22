@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+
+<encounter>
+  <info>
+    <name>Banditenüberfall</name>
+    <file>MK02-00-01.xml</file>
+    <abenteuer>MK02-00 Die Rache</abenteuer>
+    <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
+  </info>
+
+<statblock name="Wächter von Vael" id="id-d4t-npc-vael-wight">
+  <meta>
+    <size>Mittel</size>
+    <type>Untoter</type>
+    <alignment>neutral böse</alignment>
+    <ac>14 (Gepanzerte Lederrüstung)</ac>
+    <hp>45 (6W8 + 18)</hp>
+    <speed>9 m</speed>
+    <senses>Dunkelsicht 18 m, passive Wahrnehmung 13</senses>
+    <languages>Die Sprachen, die er im Leben kannte</languages>
+    <challenge>3</challenge>
+    <resistances>Nekrotisch; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen, die nicht versilbert sind</resistances>
+    <immunities>Gift</immunities>
+    <conditionImmunities>Erschöpfung, Vergiftet</conditionImmunities>
+    <traits>
+      <trait name="Sonnenlichtempfindlichkeit">
+        Solange sich der Wächter im Sonnenlicht befindet, hat er Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.
+      </trait>
+    </traits>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="15" bonus="+2"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="16" bonus="+3"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="13" bonus="+1"/>
+    <ability name="Cha" score="15" bonus="+2"/>
+  </abilities>
+
+  <skills>
+    <skill name="Wahrnehmung" bonus="+3"/>
+    <skill name="Heimlichkeit" bonus="+4"/>
+  </skills>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>Der Wächter führt zwei Angriffe mit seinem Langschwert oder Langbogen aus. Er kann Lebensentzug anstelle eines Langschwertangriffs einsetzen.</description>
+    </action>
+    <action name="Lebensentzug">
+      <description>Nahkampf-Zauberangriff: +4 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 5 (1W6 + 2) nekrotischer Schaden. Das Ziel muss einen Konstitutionsrettungswurf gegen SG 13 bestehen oder sein Trefferpunktmaximum wird um den erlittenen Schaden verringert. Dieser Effekt hält bis zur nächsten langen Rast an. Stirbt ein Humanoider durch diesen Effekt, steht er nach 24 Stunden als Zombie unter der Kontrolle des Wächters wieder auf, sofern er nicht wiederbelebt oder zerstört wurde. Der Wächter kann bis zu 12 Zombies kontrollieren.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Langschwert">
+      <type>Nahkampf</type>
+      <bonus>+4</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>6 (1W8 + 2) Hiebschaden oder 7 (1W10 + 2) mit zwei Händen</damage>
+    </attack>
+    <attack name="Langbogen">
+      <type>Fernkampf</type>
+      <bonus>+4</bonus>
+      <range>45/180 m</range>
+      <target>ein Ziel</target>
+      <damage>6 (1W8 + 2) Stichschaden</damage>
+    </attack>
+  </attacks>
+</statblock>
+  
+</encounter>
