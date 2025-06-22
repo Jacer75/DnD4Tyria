@@ -109,12 +109,17 @@
     </trait>
   </traits>
 
+  <attack name="Wuchtvoller Schlag">
+    <type>Nahkampf</type>
+    <bonus>+4</bonus>
+    <range>1,50 m</range>
+    <target>ein Ziel</target>
+    <damage>10 (3W6) Kraftschaden</damage>
+  </attack>
+  
   <actions>
     <action name="Lebensentzug">
       <description>Nahkampf-Zauberangriff: +4 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 10 (3W6) nekrotischer Schaden. Das Ziel muss einen Konstitutionsrettungswurf gegen SG 10 bestehen oder sein Trefferpunktmaximum wird um den erlittenen Schaden verringert. Dieser Effekt hält bis zur nächsten langen Rast an. Das Ziel stirbt, wenn dieser Effekt das TP-Maximum auf 0 reduziert.</description>
-    </action>
-    <action name="Wuchtvoller Schlag">
-      <description>Nahkampfangriff: +4 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 10 (3W6) Kraftschaden.</description>
     </action>
     <action name="Telekinetischer Stoß">
       <description>Das Auge wählt eine Kreatur oder ein unbeaufsichtigtes Objekt in bis zu 9 m Entfernung. Kreaturen müssen mittelgroß oder kleiner sein, Objekte bis zu 70 kg schwer.<br/>
