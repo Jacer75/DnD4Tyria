@@ -86,17 +86,6 @@
     <resistances>Säure, Kälte, Feuer, Blitz, Schall; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen</resistances>
     <immunities>Nekrotisch, Gift</immunities>
     <conditionImmunities>Bezaubert, Erschöpfung, Gegriffen, Gelähmt, Versteinert, Vergiftet, Liegend, Bewegungsunfähig, Bewusstlos</conditionImmunities>
-    <traits>
-      <trait name="Inkorporale Bewegung">
-        Das Auge kann sich durch Kreaturen und Objekte bewegen, als wären sie schwieriges Gelände. Es erleidet 5 (1W10) Kraftschaden, wenn es seinen Zug in einem Objekt beendet.
-      </trait>
-      <trait name="Sonnenlichtempfindlichkeit">
-        Solange sich das Auge im Sonnenlicht befindet, hat es Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.
-      </trait>
-      <trait name="Unsichtbarkeit">
-        Das Auge von Vael ist dauerhaft unsichtbar, solange es keinen Angriff ausführt oder einen Zauber wirkt, der Sichtbarkeit erfordert.
-      </trait>
-    </traits>
   </meta>
 
   <abilities>
@@ -107,6 +96,18 @@
     <ability name="Wis" score="10" bonus="+0"/>
     <ability name="Cha" score="11" bonus="+0"/>
   </abilities>
+
+  <traits>
+    <trait name="Inkorporale Bewegung">
+      <description>Das Auge kann sich durch Kreaturen und Objekte bewegen, als wären sie schwieriges Gelände. Es erleidet 5 (1W10) Kraftschaden, wenn es seinen Zug in einem Objekt beendet.</description>
+    </trait>
+    <trait name="Sonnenlichtempfindlichkeit">
+      <description>Solange sich das Auge im Sonnenlicht befindet, hat es Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.</description>
+    </trait>
+    <trait name="Unsichtbarkeit">
+      <description>Das Auge von Vael ist dauerhaft unsichtbar, solange es keinen Angriff ausführt oder einen Zauber wirkt, der Sichtbarkeit erfordert.</description>
+    </trait>
+  </traits>
 
   <actions>
     <action name="Lebensentzug">
