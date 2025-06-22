@@ -71,5 +71,56 @@
     </attack>
   </attacks>
 </statblock>
+
+<statblock name="Auge von Vael" id="id-d4t-npc-vael-specter">
+  <meta>
+    <size>Mittel</size>
+    <type>Untoter</type>
+    <alignment>chaotisch böse</alignment>
+    <ac>12</ac>
+    <hp>22 (5W8)</hp>
+    <speed>Flug 15 m (schwebend)</speed>
+    <senses>Dunkelsicht 18 m, passive Wahrnehmung 10</senses>
+    <languages>Versteht alle Sprachen, die es im Leben kannte (kann aber nicht sprechen)</languages>
+    <challenge>1</challenge>
+    <resistances>Säure, Kälte, Feuer, Blitz, Schall; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen</resistances>
+    <immunities>Nekrotisch, Gift</immunities>
+    <conditionImmunities>Bezaubert, Erschöpfung, Gegriffen, Gelähmt, Versteinert, Vergiftet, Liegend, Bewegungsunfähig, Bewusstlos</conditionImmunities>
+    <traits>
+      <trait name="Inkorporale Bewegung">
+        Das Auge kann sich durch Kreaturen und Objekte bewegen, als wären sie schwieriges Gelände. Es erleidet 5 (1W10) Kraftschaden, wenn es seinen Zug in einem Objekt beendet.
+      </trait>
+      <trait name="Sonnenlichtempfindlichkeit">
+        Solange sich das Auge im Sonnenlicht befindet, hat es Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.
+      </trait>
+      <trait name="Unsichtbarkeit">
+        Das Auge von Vael ist dauerhaft unsichtbar, solange es keinen Angriff ausführt oder einen Zauber wirkt, der Sichtbarkeit erfordert.
+      </trait>
+    </traits>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="1" bonus="-5"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="11" bonus="+0"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="10" bonus="+0"/>
+    <ability name="Cha" score="11" bonus="+0"/>
+  </abilities>
+
+  <actions>
+    <action name="Lebensentzug">
+      <description>Nahkampf-Zauberangriff: +4 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 10 (3W6) nekrotischer Schaden. Das Ziel muss einen Konstitutionsrettungswurf gegen SG 10 bestehen oder sein Trefferpunktmaximum wird um den erlittenen Schaden verringert. Dieser Effekt hält bis zur nächsten langen Rast an. Das Ziel stirbt, wenn dieser Effekt das TP-Maximum auf 0 reduziert.</description>
+    </action>
+    <action name="Wuchtvoller Schlag">
+      <description>Nahkampfangriff: +4 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 10 (3W6) Kraftschaden.</description>
+    </action>
+    <action name="Telekinetischer Stoß">
+      <description>Das Auge wählt eine Kreatur oder ein unbeaufsichtigtes Objekt in bis zu 9 m Entfernung. Kreaturen müssen mittelgroß oder kleiner sein, Objekte bis zu 70 kg schwer.<br/>
+      Bei einer Kreatur: das Auge führt einen Charismacheck durch, der gegen einen Stärkewurf des Ziels konkurriert. Bei Erfolg wird das Ziel bis zu 9 m in eine beliebige Richtung geschleudert. Trifft es dabei auf ein hartes Hindernis, erleidet es 1W6 Schaden pro 3 m Bewegung.<br/>
+      Bei einem Objekt: Das Auge schleudert es bis zu 9 m weit. Wenn es auf dem Weg eine Kreatur trifft, führt es einen Fernkampfangriff (+4 zum Treffen) aus und verursacht bei einem Treffer 5 (2W4) Wuchtschaden.</description>
+    </action>
+  </actions>
+</statblock>
   
 </encounter>
