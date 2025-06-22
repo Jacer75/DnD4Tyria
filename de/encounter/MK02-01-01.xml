@@ -41,7 +41,7 @@
 
   <traits>
     <trait name="Sonnenlichtempfindlichkeit">
-      Solange sich der Wächter im Sonnenlicht befindet, hat er Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.
+      <description>Solange sich der Wächter im Sonnenlicht befindet, hat er Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.</description>
     </trait>
   </traits>
 
