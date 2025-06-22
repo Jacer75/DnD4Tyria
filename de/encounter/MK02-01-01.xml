@@ -23,11 +23,6 @@
     <resistances>Nekrotisch; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen, die nicht versilbert sind</resistances>
     <immunities>Gift</immunities>
     <conditionImmunities>Erschöpfung, Vergiftet</conditionImmunities>
-    <traits>
-      <trait name="Sonnenlichtempfindlichkeit">
-        Solange sich der Wächter im Sonnenlicht befindet, hat er Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.
-      </trait>
-    </traits>
   </meta>
 
   <abilities>
@@ -43,6 +38,12 @@
     <skill name="Wahrnehmung" bonus="+3"/>
     <skill name="Heimlichkeit" bonus="+4"/>
   </skills>
+
+  <traits>
+    <trait name="Sonnenlichtempfindlichkeit">
+      Solange sich der Wächter im Sonnenlicht befindet, hat er Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.
+    </trait>
+  </traits>
 
   <actions>
     <action name="Mehrfachangriff">
