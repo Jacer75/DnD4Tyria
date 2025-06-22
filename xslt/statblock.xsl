@@ -53,12 +53,35 @@
                 </xsl:for-each>
               </div>
 
+              <!-- Senses -->
               <div class="statblock-saves statblock-section" style="text-align: left;">
                 <div class="statblock-save">
                   <strong>Sinne</strong>: <xsl:value-of select="meta/senses"/>
                 </div>
               </div>
 
+              <!-- Resistance -->
+              <div class="statblock-saves statblock-section" style="text-align: left;">
+                <div class="statblock-save">
+                  <strong>Resistent</strong>: <xsl:value-of select="meta/resistances"/>
+                </div>
+              </div>
+
+              <!-- Immunitäten gegen Schaden -->
+              <div class="statblock-saves statblock-section" style="text-align: left;">
+                <div class="statblock-save">
+                  <strong>Immun (Schaden)</strong>: <xsl:value-of select="meta/immunities"/>
+                </div>
+              </div>
+
+              <!-- Immunitäten gegen Zustände -->
+              <div class="statblock-saves statblock-section" style="text-align: left;">
+                <div class="statblock-save">
+                  <strong>Immun (Zustand)</strong>: <xsl:value-of select="meta/conditionImmunities"/>
+                </div>
+              </div>
+
+              <!-- Saves -->
               <div class="statblock-saves statblock-section" style="text-align: left;">
                 <div class="statblock-save">
                   <strong>Rettungswürfe</strong>: 
@@ -69,6 +92,7 @@
                 </div>
               </div>
 
+              <!-- Skills -->
               <div class="statblock-skills statblock-section" style="text-align: left;">
                 <div class="statblock-skill">
                   <strong>Fertigkeiten</strong>: 
@@ -79,6 +103,17 @@
                 </div>
               </div>
 
+              <!-- Traits -->
+              <details class="statblock-section">
+                <summary>Eigenschaften</summary>
+                <xsl:for-each select="traits/trait">
+                  <p>
+                    <p><strong><xsl:value-of select="@name"/>.</strong> <xsl:value-of select="description"/></p>
+                  </p>
+                </xsl:for-each>
+              </details>
+
+              
               <details class="statblock-section">
                 <summary>Angriffe</summary>
                 <xsl:for-each select="attacks/attack">
