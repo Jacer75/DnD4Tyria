@@ -123,11 +123,11 @@
     <saveDC>12</saveDC>
     <attackBonus>+4</attackBonus>
     <spelllist>
-      <spell level="0">Giftige Berührung</spell>
-      <spell level="0">Nebel erschaffen</spell>
-      <spell level="1">Schlaf</spell>
-      <spell level="1">Woge</spell>
-      <spell level="1">Heilung</spell>
+      <spell id="ID_D4T_SPELL_POISON_SPRAY" level="0">Gift versprühen (Poison Spray)</spell>
+      <spell id="ID_D4T_SPELL_GUIDANCE" level="0">Göttliche Führung (Guidance)</spell>
+      <spell id="ID_D4T_SPELL_SLEEP" level="1">Schlaf (Sleep)</spell>
+      <spell id="ID_D4T_SPELL_FOG_CLOUD" level="1">Nebelwolke (Fog Cloud)</spell>
+      <spell id="ID_D4T_SPELL_CURE_WOUNDS" level="1">Wunden heilen (Cure Wounds)</spell>
     </spelllist>
     <slots>
       <slot level="1" count="2"/>
