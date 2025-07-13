@@ -1,3 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+
+<encounter>
+  <info>
+    <name>Krait-Überfall</name>
+    <file>MK02-04-00.xml</file>
+    <abenteuer>MK02-04 Auf dem Weg zum Schattenherzgrund</abenteuer>
+    <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
+  </info>
+
 <statblock name="Krait-Netzjäger" id="id-krait-netzjaeger">
   <meta>
     <size>Mittel</size>
@@ -123,3 +134,4 @@
     </slots>
   </spellcasting>
 </statblock>
+</encounter>
