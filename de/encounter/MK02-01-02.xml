@@ -159,4 +159,140 @@
     </slots>
   </spellcasting>
 </statblock>
+
+<statblock name="Gardist Merek Vondal" id="id-gardist-merek-vondal">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid (Mensch)</type>
+    <alignment>neutral</alignment>
+    <ac>18 (Kettenhemd+Schild)</ac>
+    <hp>22 (3W8 + 9)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 10</senses>
+    <languages>Tyrianisch</languages>
+    <challenge>1/4</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="15" bonus="+2"/>
+    <ability name="Dex" score="11" bonus="+0"/>
+    <ability name="Con" score="14" bonus="+2"/>
+    <ability name="Int" score="8" bonus="-1"/>
+    <ability name="Wis" score="10" bonus="+0"/>
+    <ability name="Cha" score="9" bonus="-1"/>
+  </abilities>
+
+  <saves>
+    <save ability="Con" bonus="+4"/>
+  </saves>
+
+  <skills>
+    <skill name="Einschüchtern" bonus="+2"/>
+  </skills>
+
+  <traits>
+    <trait name="Harte Hand">
+      <description>Vorteil auf Einschüchtern gegen Bauern, Banditen oder Bürger ohne Autorität.</description>
+    </trait>
+    <trait name="Unbelehrbar">
+      <description>Immun gegen Einschüchterung durch Wesen, die er als „weich“ wahrnimmt (z. B. Elfen, Kinder, Sylvari).</description>
+    </trait>
+  </traits>
+
+  <!--<actions>
+  </actions>-->
+
+  <attacks>
+    <attack name="Kurzschwert">
+      <type>Nahkampf</type>
+      <bonus>+4</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>5 (1W6 + 2) Stichschaden</damage>
+    </attack>
+  </attacks>
+
+  <!--<reactions>
+  </reactions>-->
+
+  <!--<spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist>
+    </spelllist>
+    <slots>
+    </slots>
+  </spellcasting>-->
+</statblock>
+
+<statblock name="Gardistin Elira Halmschliff" id="id-gardistin-elira-halmschliff">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid (Mensch)</type>
+    <alignment>neutral gut</alignment>
+    <ac>16 (Kettenhemd)</ac>
+    <hp>27 (4W8 + 8)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 14</senses>
+    <languages>Tyrianisch</languages>
+    <challenge>1/4</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="13" bonus="+1"/>
+    <ability name="Dex" score="12" bonus="+1"/>
+    <ability name="Con" score="14" bonus="+2"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="14" bonus="+2"/>
+    <ability name="Cha" score="12" bonus="+1"/>
+  </abilities>
+
+  <saves>
+    <save ability="Wis" bonus="+4"/>
+    <save ability="Cha" bonus="+3"/>
+  </saves>
+
+  <skills>
+    <skill name="Mit Tieren umgehen" bonus="+4"/>
+    <skill name="Wahrnehmung" bonus="+4"/>
+    <skill name="Überzeugen" bonus="+3"/>
+  </skills>
+
+  <traits>
+    <trait name="Tiervertraut">
+      <description>Vorteil auf alle sozialen Würfe gegenüber Wesen mit Tierbegleitern oder Respekt für die Natur.</description>
+    </trait>
+    <trait name="Innere Zweifel">
+      <description>In moralischen Gesprächen muss sie einen Weisheitswurf gegen SG 12 schaffen, um hart zu bleiben.</description>
+    </trait>
+  </traits>
+
+  <!--<actions>
+  </actions>-->
+
+  <attacks>
+    <attack name="Speer">
+      <type>Nahkampf</type>
+      <bonus>+3</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W6 + 1) Stichschaden</damage>
+    </attack>
+  </attacks>
+
+  <!--<reactions>
+  </reactions>-->
+
+  <!--<spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist>
+    </spelllist>
+    <slots>
+    </slots>
+  </spellcasting>-->
+</statblock>
+
 </encounter>
