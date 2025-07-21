@@ -141,16 +141,16 @@
     <saveDC>14</saveDC>
     <attackBonus>+6</attackBonus>
     <spelllist>
-      <spell level="0">Magie entdecken</spell>
-      <spell level="0">Licht</spell>
-      <spell level="0">Zauberhand</spell>
-      <spell level="0">Botschaft</spell>
-      <spell level="1">Magie entdecken</spell>
-      <spell level="1">Schild</spell>
-      <spell level="1">Identifizieren</spell>
-      <spell level="2">Gedanken wahrnehmen</spell>
-      <spell level="2">Magie bannen</spell>
-      <spell level="3">Magie aufspüren</spell>
+      <spell level="0" id="ID_D4T_SPELL_PRESTIDIGITATION">Taschenspielerei</spell>
+      <spell level="0" id="ID_D4T_SPELL_MAGE_HAND">Magierhand</spell>
+      <spell level="0" id="ID_D4T_SPELL_MESSAGE">Botschaft</spell>
+      <spell level="1" id="ID_D4T_SPELL_DETECT_MAGIC">Magie entdecken (Detect Magic)</spell>
+      <spell level="1" id="ID_D4T_SPELL_SHIELD">Schild</spell>
+      <spell level="1" id="ID_D4T_SPELL_IDENTIFY">Identifizieren</spell>
+      <spell level="2" id="ID_D4T_SPELL_DETECT_THOUGHTS">Gedanken wahrnehmen</spell>
+      <spell level="2" id="ID_D4T_SPELL_LOCATE_OBJECT">Gegenstand aufspüren</spell>
+      <spell level="3" id="ID_D4T_SPELL_DISPEL_MAGIC">Magie bannen</spell>
+      <spell level="3" id="ID_D4T_SPELL_COUNTERSPELL">Gegenzauber</spell>
     </spelllist>
     <slots>
       <slot level="1" count="4"/>
