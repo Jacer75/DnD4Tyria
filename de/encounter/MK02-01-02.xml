@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+
+<encounter>
+  <info>
+    <name>Krait-Überfall</name>
+    <file>MK02-04-00.xml</file>
+    <abenteuer>MK02-04 Auf dem Weg zum Schattenherzgrund</abenteuer>
+    <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
+  </info>
+
+  <statblock name="Hauptmann Heryn Bruckmann" id="id-hauptmann-heryn-bruckmann">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid (Mensch)</type>
+    <alignment>rechtschaffen neutral</alignment>
+    <ac>17 (Kettenhemd, Schild)</ac>
+    <hp>45 (6W8 + 18)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 13</senses>
+    <languages>Tyrianisch</languages>
+    <challenge>1/2</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="14" bonus="+2"/>
+    <ability name="Dex" score="12" bonus="+1"/>
+    <ability name="Con" score="16" bonus="+3"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="12" bonus="+1"/>
+    <ability name="Cha" score="14" bonus="+2"/>
+  </abilities>
+
+  <saves>
+    <save ability="Con" bonus="+5"/>
+    <save ability="Cha" bonus="+4"/>
+  </saves>
+
+  <skills>
+    <skill name="Überzeugen" bonus="+4"/>
+    <skill name="Einschüchtern" bonus="+4"/>
+    <skill name="Wahrnehmung" bonus="+3"/>
+  </skills>
+
+  <traits>
+    <trait name="Autorität der Krone">
+      <description>Heryn hat bei Menschen aus Kryta Vorteil auf Würfe zum Durchsetzen offizieller Befehle.</description>
+    </trait>
+    <trait name="Unbeugsam">
+      <description>Einmal pro Tag kann er einen misslungenen Weisheits- oder Charisma-Rettungswurf wiederholen.</description>
+    </trait>
+  </traits>
+
+  <actions>
+  </actions>
+
+  <attacks>
+    <attack name="Langschwert">
+      <type>Nahkampf</type>
+      <bonus>+4</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>6 (1W8 + 2) Hiebschaden</damage>
+    </attack>
+  </attacks>
+
+  <reactions>
+  </reactions>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist>
+    </spelllist>
+    <slots>
+    </slots>
+  </spellcasting>
+</statblock>
+
+
+</encounter>
