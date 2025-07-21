@@ -78,5 +78,85 @@
   </spellcasting>-->
 </statblock>
 
+<statblock name="Magister Rondred van Daalen" id="id-magister-rondred-van-daalen">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid (Mensch)</type>
+    <alignment>neutral</alignment>
+    <ac>13 (Magier-Robe, Magierrüstung)</ac>
+    <hp>33 (6W8)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 12</senses>
+    <languages>Tyrianisch, Asurisch</languages>
+    <challenge>1</challenge>
+  </meta>
 
+  <abilities>
+    <ability name="Str" score="8" bonus="-1"/>
+    <ability name="Dex" score="12" bonus="+1"/>
+    <ability name="Con" score="10" bonus="+0"/>
+    <ability name="Int" score="18" bonus="+4"/>
+    <ability name="Wis" score="14" bonus="+2"/>
+    <ability name="Cha" score="11" bonus="+0"/>
+  </abilities>
+
+  <saves>
+    <save ability="Int" bonus="+6"/>
+    <save ability="Wis" bonus="+4"/>
+  </saves>
+
+  <skills>
+    <skill name="Arkane Kunde" bonus="+6"/>
+    <skill name="Nachforschungen" bonus="+5"/>
+    <skill name="Einsicht" bonus="+4"/>
+  </skills>
+
+  <traits>
+    <trait name="Arkaner Spürsinn">
+      <description>Kann Magie intuitiv wahrnehmen, auch ohne Konzentration auf Magie entdecken.</description>
+    </trait>
+    <trait name="Bannblick">
+      <description>Wenn ein Zauber im Gespräch gewirkt wird, kann Rondred als Reaktion erkennen, ob er mental beeinflussen soll.</description>
+    </trait>
+  </traits>
+
+  <!--<actions>
+  </actions>-->
+
+  <attacks>
+    <attack name="Zauberstab">
+      <type>Nah- oder Fernkampf</type>
+      <bonus>+6</bonus>
+      <range>1,50 m oder 18 m</range>
+      <target>ein Ziel</target>
+      <damage>5 (1W6 + 2) Blitzschaden</damage>
+    </attack>
+  </attacks>
+
+  <!--<reactions>
+  </reactions>-->
+
+  <spellcasting>
+    <stat>Int</stat>
+    <saveDC>14</saveDC>
+    <attackBonus>+6</attackBonus>
+    <spelllist>
+      <spell level="0">Magie entdecken</spell>
+      <spell level="0">Licht</spell>
+      <spell level="0">Zauberhand</spell>
+      <spell level="0">Botschaft</spell>
+      <spell level="1">Magie entdecken</spell>
+      <spell level="1">Schild</spell>
+      <spell level="1">Identifizieren</spell>
+      <spell level="2">Gedanken wahrnehmen</spell>
+      <spell level="2">Magie bannen</spell>
+      <spell level="3">Magie aufspüren</spell>
+    </spelllist>
+    <slots>
+      <slot level="1" count="4"/>
+      <slot level="2" count="3"/>
+      <slot level="3" count="2"/>
+    </slots>
+  </spellcasting>
+</statblock>
 </encounter>
