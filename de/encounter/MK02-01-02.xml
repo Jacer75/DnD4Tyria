@@ -51,8 +51,8 @@
     </trait>
   </traits>
 
-  <actions>
-  </actions>
+  <!--<actions>
+  </actions>-->
 
   <attacks>
     <attack name="Langschwert">
@@ -64,10 +64,10 @@
     </attack>
   </attacks>
 
-  <reactions>
-  </reactions>
+  <!--<reactions>
+  </reactions>-->
 
-  <spellcasting>
+  <!--<spellcasting>
     <stat></stat>
     <saveDC></saveDC>
     <attackBonus></attackBonus>
@@ -75,7 +75,7 @@
     </spelllist>
     <slots>
     </slots>
-  </spellcasting>
+  </spellcasting>-->
 </statblock>
 
 
