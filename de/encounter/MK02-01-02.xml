@@ -295,4 +295,66 @@
   </spellcasting>-->
 </statblock>
 
+  <?xml version='1.0' encoding='utf-8'?>
+<statblock name="Knappe Sebald" id="id-knappe-sebald">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid (Mensch)</type>
+    <alignment>rechtschaffen neutral</alignment>
+    <ac>11 (einfache Kleidung)</ac>
+    <hp>9 (2W8)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 11</senses>
+    <languages>Tyrianisch</languages>
+    <challenge>0</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="8" bonus="-1"/>
+    <ability name="Dex" score="10" bonus="+0"/>
+    <ability name="Con" score="10" bonus="+0"/>
+    <ability name="Int" score="13" bonus="+1"/>
+    <ability name="Wis" score="12" bonus="+1"/>
+    <ability name="Cha" score="10" bonus="+0"/>
+  </abilities>
+
+  <saves>
+    <save ability="Int" bonus="+3"/>
+  </saves>
+
+  <skills>
+    <skill name="Geschichte" bonus="+3"/>
+    <skill name="Überzeugen" bonus="+2"/>
+    <skill name="Arkane Kunde" bonus="+2"/>
+  </skills>
+
+  <traits>
+    <trait name="Naiver Respekt">
+      <description>Gegen charismatische oder autoritäre Personen hat Sebald Nachteil auf Widerstandswürfe gegen soziale Magie.</description>
+    </trait>
+    <trait name="Beeindruckt von Magie">
+      <description>Vorteil auf Reaktionen (z. B. Freundlichkeit, Gehorsam), wenn Magie vor ihm gewirkt wird – sofern sie nicht bedrohlich ist.</description>
+    </trait>
+  </traits>
+
+  <!--<actions>
+  </actions>
+
+  <attacks>
+  </attacks>
+
+  <reactions>
+  </reactions>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist>
+    </spelllist>
+    <slots>
+    </slots>
+  </spellcasting>-->
+</statblock>
+
 </encounter>
