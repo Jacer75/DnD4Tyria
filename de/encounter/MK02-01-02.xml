@@ -295,7 +295,6 @@
   </spellcasting>-->
 </statblock>
 
-  <?xml version='1.0' encoding='utf-8'?>
 <statblock name="Knappe Sebald" id="id-knappe-sebald">
   <meta>
     <size>Mittel</size>
