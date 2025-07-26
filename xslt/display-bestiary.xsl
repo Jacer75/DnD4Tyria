@@ -30,5 +30,4 @@
       </body>
     </html>
   </xsl:template>
-</html>
 </xsl:stylesheet>
