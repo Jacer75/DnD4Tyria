@@ -31,12 +31,6 @@
     </html>
   </xsl:template>
 
-  <xsl:template match="statblock">
-    <!-- Der folgende Block stammt aus statblock.xsl -->
-    <div class="statblock">
-      <div class="statblock-header"><xsl:value-of select="@name"/></div>
-      <!-- Du kannst hier die Kopie aus statblock.xsl einfügen oder modular aufrufen -->
-    </div>
-  </xsl:template>
+  <xsl:template match="render-statblock" />
 </html>
 </xsl:stylesheet>
