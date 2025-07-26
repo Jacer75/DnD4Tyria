@@ -1,0 +1,21 @@
+<bestiary name="Quaggan" source="DnD4Tyria">
+  <public>
+    <description>
+      <p>Die Quaggan sind friedliebende, amphibische Wesen, die in Seen und Küstengewässern leben...</p>
+    </description>
+  </public>
+
+  <gm>
+    <description>
+      <p>Quaggan können in Rage geraten und verwandeln sich dann in kräftige, aggressive Kämpfer...</p>
+    </description>
+  </gm>
+
+  <statblock name="Quaggan">
+    <!-- Hier kommt dein Standard-Statblock -->
+  </statblock>
+
+  <statblock name="Quaggan-Wächter">
+    <!-- Ein stärkerer Statblock, z. B. für einen Patrouillierenden Wächter -->
+  </statblock>
+</bestiary>
