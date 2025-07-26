@@ -26,7 +26,7 @@
         </details>
 
         <h2>Statblocks</h2>
-        <xsl:apply-templates select="render-statblock"/>
+        <xsl:apply-templates select="bestiary/statblock/"/>
       </body>
     </html>
   </xsl:template>
