@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="../../xslt/bestiary.xsl"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/display-bestiary.xsl"?>
 <bestiary name="Quaggan" source="DnD4Tyria">
   <public>
     <description>
