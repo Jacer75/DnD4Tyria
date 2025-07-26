@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:import href="spell-display.xsl"/>
-  <xsl:output method="html" indent="yes" encoding="UTF-8"/>
   <!-- externe Zauberdaten -->
   <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
-  <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
-  <xsl:template match="/">
-    <html lang="de">
-      <head>
-        <meta charset="UTF-8" />
-        <title>
-          <xsl:value-of select="encounter/info/name"/>
-        </title>
-        <link rel="stylesheet" href="../../css/statblock.css" />
-      </head>
-      <body>
+  <xsl:template match="render-statblock">
+    <xsl:param name="node">
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
-          <xsl:for-each select="encounter/statblock">
+          <xsl:for-each select="$node">
             <div class="statblock">
               <div class="statblock-header">
                 <xsl:value-of select="@name"/>
@@ -176,7 +166,5 @@
             </div>
           </xsl:for-each>
         </div>
-      </body>
-    </html>
   </xsl:template>
 </xsl:stylesheet>
