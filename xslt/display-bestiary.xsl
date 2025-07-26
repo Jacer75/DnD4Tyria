@@ -8,6 +8,7 @@
       <head>
         <meta charset="UTF-8" />
         <title><xsl:value-of select="bestiary/@name"/></title>
+        <link rel="stylesheet" href="../../css/style.css" />
         <link rel="stylesheet" href="../../css/statblock.css" />
       </head>
      <body>
