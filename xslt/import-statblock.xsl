@@ -2,10 +2,10 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:import href="spell-display.xsl"/>
   <!-- externe Zauberdaten -->
-  <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
 
   <xsl:template match="render-statblock">
     <xsl:param name="node">
+      <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
           <xsl:for-each select="$node">
             <div class="statblock">
