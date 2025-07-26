@@ -166,5 +166,6 @@
             </div>
           </xsl:for-each>
         </div>
+    </xsl:param>
   </xsl:template>
 </xsl:stylesheet>
