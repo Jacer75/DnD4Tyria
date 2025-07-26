@@ -13,11 +13,99 @@
     </description>
   </gm>
 
-  <statblock name="Quaggan">
-    <!-- Hier kommt dein Standard-Statblock -->
+  <statblock name="Quaggan" id="quaggan-peasant">
+      <meta>
+    <size>Mittel</size>
+    <type>Humanoid (jede Rasse)</type>
+    <alignment>beliebig</alignment>
+    <ac>12 (15 mit Magierrüstung)</ac>
+    <hp>99 (18W8 + 18)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 12</senses>
+    <languages>sechs Sprachen nach Wahl</languages>
+    <challenge>12</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="10" bonus="+0"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="12" bonus="+1"/>
+    <ability name="Int" score="20" bonus="+5"/>
+    <ability name="Wis" score="15" bonus="+2"/>
+    <ability name="Cha" score="16" bonus="+3"/>
+  </abilities>
+
+  <saves>
+    <save ability="Int" bonus="+9"/>
+    <save ability="Wis" bonus="+6"/>
+  </saves>
+
+  <skills>
+    <skill name="Arkane Kunde" bonus="+13"/>
+    <skill name="Geschichte" bonus="+13"/>
+  </skills>
+
+  <actions>
+    <action name="Magieresistenz">
+      <description>Liselotte hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Dolch">
+      <type>Nah- oder Fernkampf</type>
+      <bonus>+6</bonus>
+      <range>1,50 m oder 6 m/18 m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W4 + 2) Stichschaden</damage>
+    </attack>
+  </attacks>
+
+  <spellcasting>
+    <stat>Int</stat>
+    <saveDC>17</saveDC>
+    <attackBonus>+9</attackBonus>
+    <spelllist>
+      <spell id="ID_D4T_SPELL_FIRE_BOLT" level="0">Feuerpfeil</spell>
+      <spell id="ID_D4T_SPELL_LIGHT" level="0">Licht</spell>
+      <spell id="ID_D4T_SPELL_MAGE_HAND" level="0">Magierhand</spell>
+      <spell id="ID_D4T_SPELL_PRESTIDIGITATION" level="0">Zaubertrick</spell>
+      <spell id="ID_D4T_SPELL_SHOCKING_GRASP" level="0">Schockgriff</spell>
+      <spell id="ID_D4T_SPELL_DETECT_MAGIC" level="1">Magie entdecken</spell>
+      <spell id="ID_D4T_SPELL_IDENTIFY" level="1">Identifizieren</spell>
+      <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierüstung</spell>
+      <spell id="ID_D4T_SPELL_MAGIC_MISSILE" level="1">Magisches Geschoss</spell>
+      <spell id="ID_D4T_SPELL_DETECT_THOUGHTS" level="2">Gedanken lesen</spell>
+      <spell id="ID_D4T_SPELL_MIRROR_IMAGE" level="2">Spiegelbild</spell>
+      <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Nebelhaftes Entweichen</spell>
+      <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber</spell>
+      <spell id="ID_D4T_SPELL_FLY" level="3">Fliegen</spell>
+      <spell id="ID_D4T_SPELL_LIGHTNING_BOLT" level="3">Blitzschlag</spell>
+      <spell id="ID_D4T_SPELL_BANISHMENT" level="4">Verbannung</spell>
+      <spell id="ID_D4T_SPELL_FIRE_SHIELD" level="4">Feuerschild</spell>
+      <spell id="ID_D4T_SPELL_STONESKIN" level="4">Steinhaut</spell>
+      <spell id="ID_D4T_SPELL_CONE_OF_COLD" level="5">Kältekegel</spell>
+      <spell id="ID_D4T_SPELL_SCRYING" level="5">Scrying</spell>
+      <spell id="ID_D4T_SPELL_WALL_OF_FORCE" level="5">Mauer aus Kraft</spell>
+      <spell id="ID_D4T_SPELL_GLOBE_OF_INVULNERABILITY" level="6">Kugel der Unverwundbarkeit</spell>
+      <spell id="ID_D4T_SPELL_TELEPORT" level="7">Teleport</spell>
+      <spell id="ID_D4T_SPELL_MIND_BLANK" level="8">Geistesschild</spell>
+      <spell id="ID_D4T_SPELL_TIME_STOP" level="9">Zeitstopp</spell>
+    </spelllist>
+    <slots>
+      <slot level="1" count="4"/>
+      <slot level="2" count="3"/>
+      <slot level="3" count="3"/>
+      <slot level="4" count="3"/>
+      <slot level="5" count="3"/>
+      <slot level="6" count="1"/>
+      <slot level="7" count="1"/>
+      <slot level="8" count="1"/>
+      <slot level="9" count="1"/>
+    </slots>
+  </spellcasting>
   </statblock>
 
-  <statblock name="Quaggan-Wächter">
-    <!-- Ein stärkerer Statblock, z. B. für einen Patrouillierenden Wächter -->
-  </statblock>
+  <!--<statblock name="Quaggan-Wächter">
+  </statblock>-->
 </bestiary>
