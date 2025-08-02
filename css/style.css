@@ -184,3 +184,53 @@ table.spell-details td {
 .breadcrumbs span {
   font-weight: bold;
 }
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-thumbnail summary {
+  list-style: none;
+  cursor: zoom-in;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.image-thumbnail summary::-webkit-details-marker {
+  display: none;
+}
+
+.preview-img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 0 3px #999;
+}
+
+.full-image {
+  margin-top: 0.5rem;
+  background: #222;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.full-img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #444;
+  box-shadow: 0 0 8px #000;
+}
+
+.caption {
+  margin-top: 0.5rem;
+  color: #ccc;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
