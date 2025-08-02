@@ -4,6 +4,7 @@
   <!-- externe Zauberdaten -->
 
   <xsl:template match="statblock">
+    statblock startet hier.
     <xsl:param name="node">
       <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
