@@ -4,9 +4,8 @@
   <!-- externe Zauberdaten -->
 
   <xsl:template match="statblock">
-    statblock startet hier.
     <!-- <xsl:param name="node">-->
-      <!--<xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>-->
+      <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
           <!--<xsl:for-each select="$node">-->
             <div class="statblock">
@@ -95,7 +94,7 @@
               </div>
 
               <!-- Traits -->
-              <!--<details class="statblock-section">
+              <details class="statblock-section">
                 <summary>Eigenschaften</summary>
                 <xsl:for-each select="traits/trait">
                   <p>
@@ -163,7 +162,7 @@
                     <p><strong><xsl:value-of select="@name"/>.</strong> <xsl:value-of select="description"/></p>
                   </xsl:for-each>
                 </details>
-              </xsl:if>-->
+              </xsl:if>
             </div>
           <!--</xsl:for-each>-->
         </div>
