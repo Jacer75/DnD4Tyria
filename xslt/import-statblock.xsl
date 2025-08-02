@@ -11,12 +11,12 @@
           <!--<xsl:for-each select="$node">-->
             <div class="statblock">
               <div class="statblock-header">
-                <xsl:value-of select="$node/@name"/>
+                <xsl:value-of select="@name"/>
               </div>
 
               <details class="statblock-section">
                 <summary>Allgemeines</summary>
-                <div><strong>Größe</strong>: <xsl:value-of select="$node/meta/size"/></div>
+                <div><strong>Größe</strong>: <xsl:value-of select="/meta/size"/></div>
                 <div><strong>Typ</strong>: <xsl:value-of select="meta/type"/></div>
                 <div><strong>Ausrichtung</strong>: <xsl:value-of select="meta/alignment"/></div>
                 <div><strong>Sprachen</strong>: <xsl:value-of select="meta/languages"/></div>
