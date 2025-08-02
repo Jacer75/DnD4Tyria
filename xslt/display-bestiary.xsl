@@ -7,7 +7,7 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title>3 <xsl:value-of select="bestiary/@name"/></title>
+        <title>4 <xsl:value-of select="bestiary/@name"/></title>
         <link rel="stylesheet" href="../../css/style.css" />
         <link rel="stylesheet" href="../../css/statblock.css" />
       </head>
@@ -26,8 +26,8 @@
           </div>
         </details>
 
-        <!--<h2>Statblocks</h2>
-        <xsl:apply-templates select="bestiary/statblock"/>-->
+        <h2>Statblocks</h2>
+        <xsl:apply-templates select="bestiary/statblock"/>
       </body>
     </html>
   </xsl:template>
