@@ -5,8 +5,8 @@
 
   <xsl:template match="statblock">
     statblock startet hier.
-    <xsl:param name="node">
-      <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
+    <!-- <xsl:param name="node">-->
+      <!--<xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>-->
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
           <!--<xsl:for-each select="$node">-->
             <div class="statblock">
@@ -95,7 +95,7 @@
               </div>
 
               <!-- Traits -->
-              <details class="statblock-section">
+              <!--<details class="statblock-section">
                 <summary>Eigenschaften</summary>
                 <xsl:for-each select="traits/trait">
                   <p>
@@ -164,7 +164,7 @@
                   </xsl:for-each>
                 </details>
               </xsl:if>
-            </div>
+            </div>-->
           <!--</xsl:for-each>-->
         </div>
     </xsl:param>
