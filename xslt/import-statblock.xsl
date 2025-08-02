@@ -163,10 +163,10 @@
                     <p><strong><xsl:value-of select="@name"/>.</strong> <xsl:value-of select="description"/></p>
                   </xsl:for-each>
                 </details>
-              </xsl:if>
-            </div>-->
+              </xsl:if>-->
+            </div>
           <!--</xsl:for-each>-->
         </div>
-    </xsl:param>
+    <!--</xsl:param>-->
   </xsl:template>
 </xsl:stylesheet>
