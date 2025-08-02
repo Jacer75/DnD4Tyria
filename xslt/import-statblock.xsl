@@ -7,7 +7,7 @@
     <xsl:param name="node">
       <xsl:variable name="spellData" select="document('../de/aurora/d4t-spells.xml')"/>
         <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: space-evenly;">
-          <xsl:for-each select="$node">
+          <!--<xsl:for-each select="$node">-->
             <div class="statblock">
               <div class="statblock-header">
                 <xsl:value-of select="$node/@name"/>
@@ -164,7 +164,7 @@
                 </details>
               </xsl:if>
             </div>
-          </xsl:for-each>
+          <!--</xsl:for-each>-->
         </div>
     </xsl:param>
   </xsl:template>
