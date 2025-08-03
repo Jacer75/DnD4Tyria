@@ -13,6 +13,10 @@
     </description>
   </gm>
 
+  <images>
+    <image href="https://wiki-de.guildwars2.com/wiki/Quaggan#/media/Datei:Quaggan_Konzeptkunst.jpg" alt="Quaggan-Matriarchin" />
+  </images>
+  
   <statblock name="Quaggan" id="quaggan-peasant">
       <meta>
     <size>Mittel</size>
