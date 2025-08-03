@@ -32,10 +32,10 @@
             <!--<grant type="Grants" id="ID_INTERNAL_GRANTS_CRIT_TO_NORMAL"/>-->
         </rules>
     </element>
-    <element name="Dolch aus Mithril +1" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_DAGGER_MITHRIL_PLUS1">
+    <element name="Stahldolch mit Siegel der Wiederkehr" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_DAGGER_RETURNING">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
         <description>
-            <p>Ein Dolch aus glänzend poliertem Mithril. Gewährt einen Bonus von +1 auf Angriffs- und Schadenswürfe.</p>
+            <p>Dieser einfache Stahldolch hat einige verzierende Gravuren. Er ist mit einem Sigill der Wiederkehr versehen. Wenn der Dolch als Waffe gezogen war, kehrt er am Ende der Runde in die Hand des Trägers wieder zurück.</p>
         </description>
         <setters>
             <set name="category">Magische Waffen</set>
@@ -47,13 +47,13 @@
             <set name="slot">onehand</set>
             <set name="range">6/18 m</set>
             <set name="damage" type="Stich">1W4</set>
-            <set name="enhancement">1</set>
+            <!--<set name="enhancement">1</set>-->
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
         </setters>
-        <rules>
+        <!--<rules>
             <stat name="weapon:attack" value="1"/>
             <stat name="weapon:damage" value="1"/>
-        </rules>
+        </rules>-->
     </element>
     <element name="Amulett der Jotun-Sternwächter" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_AMULET_JOTUN_STARWARDEN">
         <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
@@ -140,3 +140,4 @@
         </setters>
     </element>
 </elements>
+
