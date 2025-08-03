@@ -141,10 +141,10 @@
     </element>
     <element name="Ring der tierischen Beeinflussung" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_RING_ANIMAL_INFLUENCE">
         <description>
-            <p>Dieser kunstvoll gearbeitete Silberring ist mit filigranen Gravuren versehen, die stilisierte Wellen, Blätter und Tieraugen zeigen.</br>
-            Er besitzt 3 Ladungen und erneuert täglich bei Sonnenaufgang 1W3 verbrauchte Ladungen. Solange du den Ring trägst, kannst du als Aktion 1 Ladung aufwenden, um einen der folgenden Zauber zu wirken (Rettungswurf-SG 13):</br>
-            - Tierfreundschaft (Animal Friendship)</br>
-            - Furcht (Fear), nur gegen Bestien mit Intelligenz 3 oder niedriger</br>
+            <p>Dieser kunstvoll gearbeitete Silberring ist mit filigranen Gravuren versehen, die stilisierte Wellen, Blätter und Tieraugen zeigen.<br>
+            Er besitzt 3 Ladungen und erneuert täglich bei Sonnenaufgang 1W3 verbrauchte Ladungen. Solange du den Ring trägst, kannst du als Aktion 1 Ladung aufwenden, um einen der folgenden Zauber zu wirken (Rettungswurf-SG 13):<br>
+            - Tierfreundschaft (Animal Friendship)<br>
+            - Furcht (Fear), nur gegen Bestien mit Intelligenz 3 oder niedriger<br>
             - Mit Tieren sprechen (Speak with Animals)</p>
         </description>
         <setters>
@@ -159,7 +159,7 @@
     </element>
     <element name="Asurischer Impulsstein" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_CONTACT_STONE">
         <description>
-            <p>Ein faustgroßer Kristall mit kantigem Schliff, eingefasst in eine bronzefarbene Halterung aus sechseckig verschränkten Metallstreben. Wenn der Stein aktiviert wird, pulsiert er kurz in hellem Blau.</br>
+            <p>Ein faustgroßer Kristall mit kantigem Schliff, eingefasst in eine bronzefarbene Halterung aus sechseckig verschränkten Metallstreben. Wenn der Stein aktiviert wird, pulsiert er kurz in hellem Blau.<br>
             Der Impulsstein erlaubt es dem Träger, einmal pro Tag eine Nachricht von bis zu 25 Wörtern direkt an einen Empfänger zu senden – unabhängig von Entfernung oder Aufenthaltsort, solange sich der Benutzer auf der materiellen Ebene befindet. Die Nachricht wird gesprochen, während man den Stein mit einer Aktion aktiviert. Der Empfänger kann darauf unmittelbar mit bis zu 25 Wörtern antworten. Als Empfänger ist der Stein auf Tara Cox festgelegt.</p>
         </description>
         <setters>
@@ -173,5 +173,6 @@
         </setters>
     </element>
 </elements>
+
 
 
