@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:import href="import-statblock.xsl"/>
+  <xsl:import href="import-gallery.xsl"/>
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
   <xsl:template match="/">
@@ -25,10 +26,13 @@
           </div>
         </details>
 
+        <h2>Bilder</h2>
+        <xsl:apply-templates select="bestiary/images/image"/>
+       
         <h2>Statblocks</h2>
         <xsl:apply-templates select="bestiary/statblock"/>
 
-
+        
       </body>
     </html>
   </xsl:template>
