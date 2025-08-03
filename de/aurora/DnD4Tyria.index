@@ -4,7 +4,7 @@
 		<name>Handbuch für DnD4Tyria</name>
 		<description>Das Handbuch enthält die Informationen, die man für ein DnD-Spiel in der Welt von Guild Wars 2 benötigt.</description>
 		<author url="https://jacer75.github.io/DnD4Tyria/de/">Aurora4Tyria</author>
-		<update version="0.1">
+		<update version="0.1.1">
 			<file name="DnD4Tyria.index" url="https://jacer75.github.io/DnD4Tyria/de/aurora/DnD4Tyria.index" />
 		</update>
 	</info>
