@@ -60,6 +60,7 @@
 		<file name="d4t-items-tools.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-tools.xml" />
 		<file name="d4t-items-mounts.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-mounts.xml" />
 		<file name="d4t-items-weapons.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-weapons.xml" />
+		<file name="d4t-items-gear-mycampaign01.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-gear-mycampaign01.xml" />
 
 		<!-- misc -->
 		<file name="d4t-languages.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/d4t-languages.xml" />
