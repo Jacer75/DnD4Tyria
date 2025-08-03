@@ -8,7 +8,7 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title>4 <xsl:value-of select="bestiary/@name"/></title>
+        <title><xsl:value-of select="bestiary/@name"/></title>
         <link rel="stylesheet" href="../../css/style.css" />
         <link rel="stylesheet" href="../../css/statblock.css" />
       </head>
