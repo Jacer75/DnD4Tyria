@@ -27,7 +27,7 @@
         </details>
 
         <h2>Bilder</h2>
-        <xsl:apply-templates select="bestiary/images/image"/>
+        <xsl:apply-templates select="bestiary/images"/>
        
         <h2>Statblocks</h2>
         <xsl:apply-templates select="bestiary/statblock"/>
