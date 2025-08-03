@@ -14,7 +14,6 @@
      <body>
         <h1><xsl:value-of select="bestiary/@name"/></h1>
 
-        <h2>Öffentliche Informationen</h2>
         <div>
           <xsl:copy-of select="bestiary/public/*"/>
         </div>
