@@ -145,7 +145,7 @@
             Er besitzt 3 Ladungen und erneuert täglich bei Sonnenaufgang 1W3 verbrauchte Ladungen. Solange du den Ring trägst, kannst du als Aktion 1 Ladung aufwenden, um einen der folgenden Zauber zu wirken (Rettungswurf-SG 13):<br />
             - Tierfreundschaft (Animal Friendship)<br />
             - Furcht (Fear), nur gegen Bestien mit Intelligenz 3 oder niedriger<br />
-            - Mit Tieren sprechen (Speak with Animals)</p />
+            - Mit Tieren sprechen (Speak with Animals)</p>
         </description>
         <setters>
             <set name="keywords">ring, animal, influence</set>
@@ -173,6 +173,7 @@
         </setters>
     </element>
 </elements>
+
 
 
 
