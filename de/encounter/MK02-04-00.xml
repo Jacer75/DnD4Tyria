@@ -134,4 +134,80 @@
     </slots>
   </spellcasting>
 </statblock>
+
+<statblock name="Rehgar Bisslin" id="id-rehgar-bisslin">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid</type>
+    <alignment>neutral gut</alignment>
+    <ac>10</ac>
+    <hp>9 (2W8)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 10</senses>
+    <languages>Tyrianisch</languages>
+    <challenge>1/8</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="11" bonus="+0"/>
+    <ability name="Dex" score="10" bonus="+0"/>
+    <ability name="Con" score="10" bonus="+0"/>
+    <ability name="Int" score="12" bonus="+1"/>
+    <ability name="Wis" score="13" bonus="+1"/>
+    <ability name="Cha" score="12" bonus="+1"/>
+  </abilities>
+
+  <traits>
+    <trait name="Erfahrener Bootsführer">
+      <description>Rehgar kennt die Wasserwege rund um den Viathan-See wie seine Westentasche. Er hat Vorteil auf Überlebenskunst-Proben, um sich auf dem Wasser zu orientieren.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Fischerhaken">
+      <description>Improvisierter Nahkampfangriff: +2, 1,50 m Reichweite, 2 (1W4) Hiebschaden.</description>
+    </action>
+  </actions>
+</statblock>
+
+<statblock name="Iska Windschneider" id="id-iska-windschneider">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>12</ac>
+    <hp>7 (2W8 - 2)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 12</senses>
+    <languages>Tyrianisch</languages>
+    <challenge>1/8</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="9" bonus="-1"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="8" bonus="-1"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="14" bonus="+2"/>
+    <ability name="Cha" score="10" bonus="+0"/>
+  </abilities>
+
+  <skills>
+    <skill name="Wahrnehmung" bonus="+4"/>
+    <skill name="Heimlichkeit" bonus="+4"/>
+  </skills>
+
+  <traits>
+    <trait name="Kraitüberlebende">
+      <description>Iska hat einmal einem Krait-Angriff entkommen können. Sie hat Vorteil auf Rettungswürfe gegen Angst und wird niemals freiwillig ins Wasser springen.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Wurfmesser">
+      <description>Fernkampfangriff: +4, 6 m Reichweite, 4 (1W4 + 2) Stichschaden.</description>
+    </action>
+  </actions>
+</statblock>
+  
 </encounter>
