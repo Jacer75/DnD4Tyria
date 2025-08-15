@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+
+<encounter>
+  <info>
+    <name>Training mit den Löwenherzen</name>
+    <file>MK02-02-00.xml</file>
+    <abenteuer>MK02-02 Tonteich</abenteuer>
+    <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
+  </info>
+
+<statblock name="Wächter von Vael" id="id-d4t-npc-vael-wight">
+  <meta>
+    <size>Mittel</size>
+    <type>Untoter</type>
+    <alignment>neutral böse</alignment>
+    <ac>14 (Gepanzerte Lederrüstung)</ac>
+    <hp>45 (6W8 + 18)</hp>
+    <speed>9 m</speed>
+    <senses>Dunkelsicht 18 m, passive Wahrnehmung 13</senses>
+    <languages>Die Sprachen, die er im Leben kannte</languages>
+    <challenge>3</challenge>
+    <resistances>Nekrotisch; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen, die nicht versilbert sind</resistances>
+    <immunities>Gift</immunities>
+    <conditionImmunities>Erschöpfung, Vergiftet</conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="15" bonus="+2"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="16" bonus="+3"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="13" bonus="+1"/>
+    <ability name="Cha" score="15" bonus="+2"/>
+  </abilities>
+
+  <skills>
+    <skill name="Wahrnehmung" bonus="+3"/>
+    <skill name="Heimlichkeit" bonus="+4"/>
+  </skills>
+
+  <traits>
+    <trait name="Sonnenlichtempfindlichkeit">
+      <description>Solange sich der Wächter im Sonnenlicht befindet, hat er Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>Der Wächter führt zwei Angriffe mit seinem Langschwert oder Langbogen aus. Er kann Lebensentzug anstelle eines Langschwertangriffs einsetzen.</description>
+    </action>
+    <action name="Lebensentzug">
+      <description>Nahkampf-Zauberangriff: +4 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 5 (1W6 + 2) nekrotischer Schaden. Das Ziel muss einen Konstitutionsrettungswurf gegen SG 13 bestehen oder sein Trefferpunktmaximum wird um den erlittenen Schaden verringert. Dieser Effekt hält bis zur nächsten langen Rast an. Stirbt ein Humanoider durch diesen Effekt, steht er nach 24 Stunden als Zombie unter der Kontrolle des Wächters wieder auf, sofern er nicht wiederbelebt oder zerstört wurde. Der Wächter kann bis zu 12 Zombies kontrollieren.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Langschwert">
+      <type>Nahkampf</type>
+      <bonus>+4</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>6 (1W8 + 2) Hiebschaden oder 7 (1W10 + 2) mit zwei Händen</damage>
+    </attack>
+    <attack name="Langbogen">
+      <type>Fernkampf</type>
+      <bonus>+4</bonus>
+      <range>45/180 m</range>
+      <target>ein Ziel</target>
+      <damage>6 (1W8 + 2) Stichschaden</damage>
+    </attack>
+  </attacks>
+</statblock>
+
+<statblock name="Auge von Vael" id="id-d4t-npc-vael-specter">
+  <meta>
+    <size>Mittel</size>
+    <type>Untoter</type>
+    <alignment>chaotisch böse</alignment>
+    <ac>12</ac>
+    <hp>22 (5W8)</hp>
+    <speed>Flug 15 m (schwebend)</speed>
+    <senses>Dunkelsicht 18 m, passive Wahrnehmung 10</senses>
+    <languages>Versteht alle Sprachen, die es im Leben kannte (kann aber nicht sprechen)</languages>
+    <challenge>1</challenge>
+    <resistances>Säure, Kälte, Feuer, Blitz, Schall; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen</resistances>
+    <immunities>Nekrotisch, Gift</immunities>
+    <conditionImmunities>Bezaubert, Erschöpfung, Gegriffen, Gelähmt, Versteinert, Vergiftet, Liegend, Bewegungsunfähig, Bewusstlos</conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="1" bonus="-5"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="11" bonus="+0"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="10" bonus="+0"/>
+    <ability name="Cha" score="11" bonus="+0"/>
+  </abilities>
+
+  <traits>
+    <trait name="Inkorporale Bewegung">
+      <description>Das Auge kann sich durch Kreaturen und Objekte bewegen, als wären sie schwieriges Gelände. Es erleidet 5 (1W10) Kraftschaden, wenn es seinen Zug in einem Objekt beendet.</description>
+    </trait>
+    <trait name="Sonnenlichtempfindlichkeit">
+      <description>Solange sich das Auge im Sonnenlicht befindet, hat es Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.</description>
+    </trait>
+    <trait name="Unsichtbarkeit">
+      <description>Das Auge von Vael ist dauerhaft unsichtbar, solange es keinen Angriff ausführt oder einen Zauber wirkt, der Sichtbarkeit erfordert.</description>
+    </trait>
+  </traits>
+
+  <attack name="Wuchtvoller Schlag">
+    <type>Nahkampf</type>
+    <bonus>+4</bonus>
+    <range>1,50 m</range>
+    <target>ein Ziel</target>
+    <damage>10 (3W6) Kraftschaden</damage>
+  </attack>
+  
+  <actions>
+    <action name="Lebensentzug">
+      <description>Nahkampf-Zauberangriff: +4 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 10 (3W6) nekrotischer Schaden. Das Ziel muss einen Konstitutionsrettungswurf gegen SG 10 bestehen oder sein Trefferpunktmaximum wird um den erlittenen Schaden verringert. Dieser Effekt hält bis zur nächsten langen Rast an. Das Ziel stirbt, wenn dieser Effekt das TP-Maximum auf 0 reduziert.</description>
+    </action>
+    <action name="Telekinetischer Stoß">
+      <description>Das Auge wählt eine Kreatur oder ein unbeaufsichtigtes Objekt in bis zu 9 m Entfernung. Kreaturen müssen mittelgroß oder kleiner sein, Objekte bis zu 70 kg schwer.<br/>
+      Bei einer Kreatur: das Auge führt einen Charismacheck durch, der gegen einen Stärkewurf des Ziels konkurriert. Bei Erfolg wird das Ziel bis zu 9 m in eine beliebige Richtung geschleudert. Trifft es dabei auf ein hartes Hindernis, erleidet es 1W6 Schaden pro 3 m Bewegung.<br/>
+      Bei einem Objekt: Das Auge schleudert es bis zu 9 m weit. Wenn es auf dem Weg eine Kreatur trifft, führt es einen Fernkampfangriff (+4 zum Treffen) aus und verursacht bei einem Treffer 5 (2W4) Wuchtschaden.</description>
+    </action>
+  </actions>
+</statblock>
+
+<statblock name="Zombie" id="id-d4t-npc-zombie">
+  <meta>
+    <size>Mittel</size>
+    <type>Untoter</type>
+    <alignment>neutral böse</alignment>
+    <ac>8</ac>
+    <hp>22 (3W8 + 9)</hp>
+    <speed>6 m</speed>
+    <senses>Dunkelsicht 18 m, passive Wahrnehmung 8</senses>
+    <languages>Versteht die Sprachen, die es im Leben kannte (kann aber nicht sprechen)</languages>
+    <challenge>1/4</challenge>
+    <immunities>Gift</immunities>
+    <conditionImmunities>Vergiftet</conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="13" bonus="+1"/>
+    <ability name="Dex" score="6" bonus="-2"/>
+    <ability name="Con" score="16" bonus="+3"/>
+    <ability name="Int" score="3" bonus="-4"/>
+    <ability name="Wis" score="6" bonus="-2"/>
+    <ability name="Cha" score="5" bonus="-3"/>
+  </abilities>
+
+  <saves>
+    <save ability="Wis" bonus="+0"/>
+  </saves>
+
+  <traits>
+    <trait name="Untote Zähigkeit">
+      <description>Wird der Zombie auf 0 Trefferpunkte reduziert, macht er einen Konstitutionsrettungswurf mit SG 5 + erlittenem Schaden, außer der Schaden war strahlend oder ein kritischer Treffer. Bei Erfolg fällt er stattdessen auf 1 Trefferpunkt.</description>
+    </trait>
+  </traits>
+
+  <attacks>
+    <attack name="Hieb">
+      <type>Nahkampf</type>
+      <bonus>+3</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W6 + 1) Wuchtschaden</damage>
+    </attack>
+  </attacks>
+</statblock>
+  
+  
+</encounter>
