@@ -16,9 +16,9 @@
     </description>
   </gm>
 
-  <!--<images>
-    <image href="https://wiki-de.guildwars2.com/images/d/d3/Quaggan_Konzeptkunst.jpg" alt="Quaggan-Matriarchin" />
-  </images>-->
+  <images>
+    <image href="https://wiki-de.guildwars2.com/images/a/a1/Veteran_Kamm-Skal.jpg" alt="Veteran-Kammskal" />
+  </images>
   
   <statblock name="Sumpfskal" id="id-sumpfskal">
     <meta>
