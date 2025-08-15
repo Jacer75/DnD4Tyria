@@ -9,200 +9,241 @@
     <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
   </info>
 
-<statblock name="Lira Dornsang" id="id-lira-dornsang">
-  <meta>
-    <size>Mittel</size>
-    <type>Humanoid (Norn)</type>
-    <alignment>chaotisch gut</alignment>
-    <ac>15 (Fellrüstung)</ac>
-    <hp>30 (3W12 + 3)</hp>
-    <speed>9 m</speed>
-    <senses>passive Wahrnehmung 11</senses>
-    <languages>Tyrianisch, Nornisch</languages>
-    <challenge>1</challenge>
-    <resistances>Kälte, Hieb-, Stich- und Wuchtschaden im Kampfrausch</resistances>
-    <conditionImmunities></conditionImmunities>
-  </meta>
-
-  <abilities>
-    <ability name="Str" score="16" bonus="+3"/>
-    <ability name="Dex" score="12" bonus="+1"/>
-    <ability name="Con" score="14" bonus="+2"/>
-    <ability name="Int" score="8" bonus="-1"/>
-    <ability name="Wis" score="10" bonus="+0"/>
-    <ability name="Cha" score="11" bonus="+0"/>
-  </abilities>
-
-  <saves>
-    <save ability="Str" bonus="+5"/>
-    <save ability="Con" bonus="+4"/>
-  </saves>
-
-  <skills>
-    <skill name="Athletik" bonus="+5"/>
-    <skill name="Überlebenskunst" bonus="+3"/>
-    <skill name="Naturkunde" bonus="+1"/>
-    <skill name="Einschüchtern" bonus="+2"/>
-  </skills>
-
-  <traits>
-    <trait name="Kampfrausch (3/LR)">
-      <description>Bonusaktion: Vorteil auf Stärke-Würfe und -Angriffe, +2 Schaden mit Stärke-Angriffen, Resistenz gegen Hieb-, Stich- und Wuchtschaden. Hält 1 Minute oder bis Lira kampfunfähig ist.</description>
-    </trait>
-    <trait name="Raserei">
-      <description>Im Kampfrausch kann Lira als Bonusaktion einen zusätzlichen Nahkampfangriff ausführen. Danach erhält sie 1 Stufe Erschöpfung.</description>
-    </trait>
-    <trait name="Rücksichtsloser Angriff">
-      <description>Lira kann beim ersten Angriff ihres Zugs Vorteil erhalten, Angriffe gegen sie haben bis zu ihrem nächsten Zug ebenfalls Vorteil.</description>
-    </trait>
-    <trait name="Gefahrensinn">
-      <description>Vorteil auf Geschicklichkeitsrettungswürfe gegen sichtbare Effekte wie Fallen oder Zauber, solange Lira nicht blind, taub oder handlungsunfähig ist.</description>
-    </trait>
-    <trait name="Ungepanzerte Verteidigung">
-      <description>Wenn sie keine Rüstung trägt, beträgt ihre RK 13 + GE-Modifikator. Sie kann trotzdem einen Schild tragen.</description>
-    </trait>
-    <trait name="Sturmerprobt">
-      <description>Vorteil auf KO-Würfe gegen Erschöpfung durch raue Umweltbedingungen.</description>
-    </trait>
-    <trait name="Geborene Herausforderin">
-      <description>Vorteil auf Würfe zum Einschüchtern.</description>
-    </trait>
-    <trait name="Tochter der Bärin (1/LR)"
-      <description>1min Vorteil auf Stärkewürfe und Angriffe mit Stärke.</description>
-    </trait>
-  </traits>
-
-  <actions>
-    <action name="Mehrfachangriff">
-      <description>Lira führt zwei Angriffe mit ihrem Spieß aus, wenn sie im Kampfrausch ist.</description>
-    </action>
-  </actions>
-
-  <attacks>
-    <attack name="Spieß">
-      <type>Nahkampf</type>
-      <bonus>+5</bonus>
-      <range>3 m</range>
-      <target>ein Ziel</target>
-      <damage>1W10 + 3 Stichschaden</damage>
-    </attack>
-  </attacks>
-
-  <reactions>
-  </reactions>
-
-  <spellcasting>
-    <stat></stat>
-    <saveDC></saveDC>
-    <attackBonus></attackBonus>
-    <spelllist>
-    </spelllist>
-    <slots>
-    </slots>
-  </spellcasting>
-</statblock>
-
-<statblock name="Auge von Vael" id="id-d4t-npc-vael-specter">
-  <meta>
-    <size>Mittel</size>
-    <type>Untoter</type>
-    <alignment>chaotisch böse</alignment>
-    <ac>12</ac>
-    <hp>22 (5W8)</hp>
-    <speed>Flug 15 m (schwebend)</speed>
-    <senses>Dunkelsicht 18 m, passive Wahrnehmung 10</senses>
-    <languages>Versteht alle Sprachen, die es im Leben kannte (kann aber nicht sprechen)</languages>
-    <challenge>1</challenge>
-    <resistances>Säure, Kälte, Feuer, Blitz, Schall; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen</resistances>
-    <immunities>Nekrotisch, Gift</immunities>
-    <conditionImmunities>Bezaubert, Erschöpfung, Gegriffen, Gelähmt, Versteinert, Vergiftet, Liegend, Bewegungsunfähig, Bewusstlos</conditionImmunities>
-  </meta>
-
-  <abilities>
-    <ability name="Str" score="1" bonus="-5"/>
-    <ability name="Dex" score="14" bonus="+2"/>
-    <ability name="Con" score="11" bonus="+0"/>
-    <ability name="Int" score="10" bonus="+0"/>
-    <ability name="Wis" score="10" bonus="+0"/>
-    <ability name="Cha" score="11" bonus="+0"/>
-  </abilities>
-
-  <traits>
-    <trait name="Inkorporale Bewegung">
-      <description>Das Auge kann sich durch Kreaturen und Objekte bewegen, als wären sie schwieriges Gelände. Es erleidet 5 (1W10) Kraftschaden, wenn es seinen Zug in einem Objekt beendet.</description>
-    </trait>
-    <trait name="Sonnenlichtempfindlichkeit">
-      <description>Solange sich das Auge im Sonnenlicht befindet, hat es Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.</description>
-    </trait>
-    <trait name="Unsichtbarkeit">
-      <description>Das Auge von Vael ist dauerhaft unsichtbar, solange es keinen Angriff ausführt oder einen Zauber wirkt, der Sichtbarkeit erfordert.</description>
-    </trait>
-  </traits>
-
-  <attack name="Wuchtvoller Schlag">
-    <type>Nahkampf</type>
-    <bonus>+4</bonus>
-    <range>1,50 m</range>
-    <target>ein Ziel</target>
-    <damage>10 (3W6) Kraftschaden</damage>
-  </attack>
+  <statblock name="Lira Dornsang" id="id-lira-dornsang">
+    <meta>
+      <size>Mittel</size>
+      <type>Humanoid (Norn)</type>
+      <alignment>chaotisch gut</alignment>
+      <ac>15 (Fellrüstung)</ac>
+      <hp>30 (3W12 + 3)</hp>
+      <speed>9 m</speed>
+      <senses>passive Wahrnehmung 11</senses>
+      <languages>Tyrianisch, Nornisch</languages>
+      <challenge>1</challenge>
+      <resistances>Kälte, Hieb-, Stich- und Wuchtschaden im Kampfrausch</resistances>
+      <conditionImmunities></conditionImmunities>
+    </meta>
   
-  <actions>
-    <action name="Lebensentzug">
-      <description>Nahkampf-Zauberangriff: +4 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 10 (3W6) nekrotischer Schaden. Das Ziel muss einen Konstitutionsrettungswurf gegen SG 10 bestehen oder sein Trefferpunktmaximum wird um den erlittenen Schaden verringert. Dieser Effekt hält bis zur nächsten langen Rast an. Das Ziel stirbt, wenn dieser Effekt das TP-Maximum auf 0 reduziert.</description>
-    </action>
-    <action name="Telekinetischer Stoß">
-      <description>Das Auge wählt eine Kreatur oder ein unbeaufsichtigtes Objekt in bis zu 9 m Entfernung. Kreaturen müssen mittelgroß oder kleiner sein, Objekte bis zu 70 kg schwer.<br/>
-      Bei einer Kreatur: das Auge führt einen Charismacheck durch, der gegen einen Stärkewurf des Ziels konkurriert. Bei Erfolg wird das Ziel bis zu 9 m in eine beliebige Richtung geschleudert. Trifft es dabei auf ein hartes Hindernis, erleidet es 1W6 Schaden pro 3 m Bewegung.<br/>
-      Bei einem Objekt: Das Auge schleudert es bis zu 9 m weit. Wenn es auf dem Weg eine Kreatur trifft, führt es einen Fernkampfangriff (+4 zum Treffen) aus und verursacht bei einem Treffer 5 (2W4) Wuchtschaden.</description>
-    </action>
-  </actions>
-</statblock>
-
-<statblock name="Zombie" id="id-d4t-npc-zombie">
-  <meta>
-    <size>Mittel</size>
-    <type>Untoter</type>
-    <alignment>neutral böse</alignment>
-    <ac>8</ac>
-    <hp>22 (3W8 + 9)</hp>
-    <speed>6 m</speed>
-    <senses>Dunkelsicht 18 m, passive Wahrnehmung 8</senses>
-    <languages>Versteht die Sprachen, die es im Leben kannte (kann aber nicht sprechen)</languages>
-    <challenge>1/4</challenge>
-    <immunities>Gift</immunities>
-    <conditionImmunities>Vergiftet</conditionImmunities>
-  </meta>
-
-  <abilities>
-    <ability name="Str" score="13" bonus="+1"/>
-    <ability name="Dex" score="6" bonus="-2"/>
-    <ability name="Con" score="16" bonus="+3"/>
-    <ability name="Int" score="3" bonus="-4"/>
-    <ability name="Wis" score="6" bonus="-2"/>
-    <ability name="Cha" score="5" bonus="-3"/>
-  </abilities>
-
-  <saves>
-    <save ability="Wis" bonus="+0"/>
-  </saves>
-
-  <traits>
-    <trait name="Untote Zähigkeit">
-      <description>Wird der Zombie auf 0 Trefferpunkte reduziert, macht er einen Konstitutionsrettungswurf mit SG 5 + erlittenem Schaden, außer der Schaden war strahlend oder ein kritischer Treffer. Bei Erfolg fällt er stattdessen auf 1 Trefferpunkt.</description>
-    </trait>
-  </traits>
-
-  <attacks>
-    <attack name="Hieb">
-      <type>Nahkampf</type>
-      <bonus>+3</bonus>
-      <range>1,50 m</range>
-      <target>ein Ziel</target>
-      <damage>4 (1W6 + 1) Wuchtschaden</damage>
-    </attack>
-  </attacks>
-</statblock>
+    <abilities>
+      <ability name="Str" score="16" bonus="+3"/>
+      <ability name="Dex" score="12" bonus="+1"/>
+      <ability name="Con" score="14" bonus="+2"/>
+      <ability name="Int" score="8" bonus="-1"/>
+      <ability name="Wis" score="10" bonus="+0"/>
+      <ability name="Cha" score="11" bonus="+0"/>
+    </abilities>
+  
+    <saves>
+      <save ability="Str" bonus="+5"/>
+      <save ability="Con" bonus="+4"/>
+    </saves>
+  
+    <skills>
+      <skill name="Athletik" bonus="+5"/>
+      <skill name="Überlebenskunst" bonus="+3"/>
+      <skill name="Naturkunde" bonus="+1"/>
+      <skill name="Einschüchtern" bonus="+2"/>
+    </skills>
+  
+    <traits>
+      <trait name="Kampfrausch (3/LR)">
+        <description>Bonusaktion: Vorteil auf Stärke-Würfe und -Angriffe, +2 Schaden mit Stärke-Angriffen, Resistenz gegen Hieb-, Stich- und Wuchtschaden. Hält 1 Minute oder bis Lira kampfunfähig ist.</description>
+      </trait>
+      <trait name="Raserei">
+        <description>Im Kampfrausch kann Lira als Bonusaktion einen zusätzlichen Nahkampfangriff ausführen. Danach erhält sie 1 Stufe Erschöpfung.</description>
+      </trait>
+      <trait name="Rücksichtsloser Angriff">
+        <description>Lira kann beim ersten Angriff ihres Zugs Vorteil erhalten, Angriffe gegen sie haben bis zu ihrem nächsten Zug ebenfalls Vorteil.</description>
+      </trait>
+      <trait name="Gefahrensinn">
+        <description>Vorteil auf Geschicklichkeitsrettungswürfe gegen sichtbare Effekte wie Fallen oder Zauber, solange Lira nicht blind, taub oder handlungsunfähig ist.</description>
+      </trait>
+      <trait name="Ungepanzerte Verteidigung">
+        <description>Wenn sie keine Rüstung trägt, beträgt ihre RK 13 + GE-Modifikator. Sie kann trotzdem einen Schild tragen.</description>
+      </trait>
+      <trait name="Sturmerprobt">
+        <description>Vorteil auf KO-Würfe gegen Erschöpfung durch raue Umweltbedingungen.</description>
+      </trait>
+      <trait name="Geborene Herausforderin">
+        <description>Vorteil auf Würfe zum Einschüchtern.</description>
+      </trait>
+      <trait name="Tochter der Bärin (1/LR)"
+        <description>1min Vorteil auf Stärkewürfe und Angriffe mit Stärke.</description>
+      </trait>
+    </traits>
+  
+    <actions>
+      <action name="Mehrfachangriff">
+        <description>Lira führt zwei Angriffe mit ihrem Spieß aus, wenn sie im Kampfrausch ist.</description>
+      </action>
+    </actions>
+  
+    <attacks>
+      <attack name="Spieß">
+        <type>Nahkampf</type>
+        <bonus>+5</bonus>
+        <range>3 m</range>
+        <target>ein Ziel</target>
+        <damage>1W10 + 3 Stichschaden</damage>
+      </attack>
+    </attacks>
+  
+    <!--<reactions>
+    </reactions>
+  
+    <spellcasting>
+      <stat></stat>
+      <saveDC></saveDC>
+      <attackBonus></attackBonus>
+      <spelllist>
+      </spelllist>
+      <slots>
+      </slots>
+    </spellcasting>-->
+  </statblock>
+  
+  <statblock name="Rahim ben Tarek" id="id-rahim-ben-tarek">
+    <meta>
+      <size>Mittel</size>
+      <type>Humanoid (Mensch)</type>
+      <alignment>rechtschaffen gut</alignment>
+      <ac>18 (Kettenrüstung und Schild)</ac>
+      <hp>26 (3W8 + 3)</hp>
+      <speed>6 m</speed>
+      <senses>passive Wahrnehmung 13</senses>
+      <languages>Tyrianisch, Elonisch, Askalonisch, Alt-Krytanisch</languages>
+      <challenge>1</challenge>
+      <resistances></resistances>
+      <immunities></immunities>
+      <conditionImmunities></conditionImmunities>
+    </meta>
+  
+    <abilities>
+      <ability name="Str" score="9" bonus="-1"/>
+      <ability name="Dex" score="14" bonus="+2"/>
+      <ability name="Con" score="15" bonus="+2"/>
+      <ability name="Int" score="11" bonus="+0"/>
+      <ability name="Wis" score="16" bonus="+3"/>
+      <ability name="Cha" score="13" bonus="+1"/>
+    </abilities>
+  
+    <saves>
+      <save ability="Wis" bonus="+5"/>
+      <save ability="Cha" bonus="+3"/>
+    </saves>
+  
+    <skills>
+      <skill name="Geschichte" bonus="+2"/>
+      <skill name="Einsicht" bonus="+5"/>
+      <skill name="Medizin" bonus="+3"/>
+      <skill name="Überzeugen" bonus="+3"/>
+      <skill name="Religion" bonus="+2"/>
+    </skills>
+  
+    <traits>
+      <trait name="Kriegspriester (3/LR)">
+        <description>Wenn Rahim die Angriffsaktion ausführt, kann er als Bonusaktion einen weiteren Waffenangriff durchführen.</description>
+      </trait>
+      <trait name="Göttliche Macht fokussieren (1/KR)">
+        <description>Rahim kann als Bonusaktion einen seiner Domänen-Effekte aktivieren, z. B. +10 auf einen Angriffswurf (*Geführter Schlag*) oder *Untote vertreiben*.</description>
+      </trait>
+      <trait name="Ungebrochener Wille (1/LR)">
+        <description>Einmal pro langer Rast kann Rahim einen gescheiterten Angriff, Rettungs- oder Attributswurf wiederholen.</description>
+      </trait>
+    </traits>
+  
+    <actions>
+      <action name="Streitkolben">
+        <description>Meele Weapon Attack: +1 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 1W6 − 1 Wuchtschaden.</description>
+      </action>
+      <action name="Zauberwirken (siehe unten)">
+        <description>Rahim ist ein Zauberwirker des 3. Grades. Sein Zauberattribut ist Weisheit (Zauber-SG 13, +5 zum Treffen).</description>
+      </action>
+    </actions>
+  
+    <attacks>
+      <attack name="Streitkolben">
+        <type>Nahkampf</type>
+        <bonus>+1</bonus>
+        <range>1,50 m</range>
+        <target>ein Ziel</target>
+        <damage>1W6 − 1 Wuchtschaden</damage>
+      </attack>
+    </attacks>
+  
+    <!--<reactions>
+    </reactions>-->
+  
+    <spellcasting>
+      <stat>Weisheit</stat>
+      <saveDC>13</saveDC>
+      <attackBonus>+5</attackBonus>
+      <spelllist>
+        <spell id="ID_D4T_SPELL_GUIDANCE" level="0">Göttliche Führung (Guidance)</spell>
+        <spell id="ID_D4T_SPELL_SACRED_FLAME" level="0">Heilige Flamme (Sacred Flame)</spell>
+        <spell id="ID_D4T_SPELL_SPARE_THE_DYING" level="0">Verschonung der Toten (Spare the Dying)</spell>
+        <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
+        <spell id="ID_D4T_SPELL_DIVINE_FAVOR" level="1">Göttliche Gunst (Divine Favor)</spell>
+        <spell id="ID_D4T_SPELL_HEALING_WORD" level="1">Heilendes Wort (Healing Word)</spell>
+        <spell id="ID_D4T_SPELL_GUIDING_BOLT" level="1">Lenkendes Geschoss (Guiding Bolt)</spell>
+        <spell id="ID_D4T_SPELL_SHIELD_OF_FAITH" level="1">Schild des Glaubens (Shield of Faith)</spell>
+        <spell id="ID_D4T_SPELL_CURE_WOUNDS" level="1">Wunden heilen (Cure Wounds)</spell>
+        <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden verursachen (Inflict Wounds)</spell>
+        <spell id="ID_D4T_SPELL_MAGIC_WEAPON" level="2">Magische Waffe (Magic Weapon)</spell>
+        <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+        <spell id="ID_D4T_SPELL_SPIRITUAL_WEAPON" level="2">Waffe des Glaubens (Spiritual Weapon)</spell>
+      </spelllist>
+      <slots>
+        <slot level="1" count="4"/>
+        <slot level="2" count="2"/>
+      </slots>
+    </spellcasting>
+  </statblock>
+  
+  <statblock name="Zombie" id="id-d4t-npc-zombie">
+    <meta>
+      <size>Mittel</size>
+      <type>Untoter</type>
+      <alignment>neutral böse</alignment>
+      <ac>8</ac>
+      <hp>22 (3W8 + 9)</hp>
+      <speed>6 m</speed>
+      <senses>Dunkelsicht 18 m, passive Wahrnehmung 8</senses>
+      <languages>Versteht die Sprachen, die es im Leben kannte (kann aber nicht sprechen)</languages>
+      <challenge>1/4</challenge>
+      <immunities>Gift</immunities>
+      <conditionImmunities>Vergiftet</conditionImmunities>
+    </meta>
+  
+    <abilities>
+      <ability name="Str" score="13" bonus="+1"/>
+      <ability name="Dex" score="6" bonus="-2"/>
+      <ability name="Con" score="16" bonus="+3"/>
+      <ability name="Int" score="3" bonus="-4"/>
+      <ability name="Wis" score="6" bonus="-2"/>
+      <ability name="Cha" score="5" bonus="-3"/>
+    </abilities>
+  
+    <saves>
+      <save ability="Wis" bonus="+0"/>
+    </saves>
+  
+    <traits>
+      <trait name="Untote Zähigkeit">
+        <description>Wird der Zombie auf 0 Trefferpunkte reduziert, macht er einen Konstitutionsrettungswurf mit SG 5 + erlittenem Schaden, außer der Schaden war strahlend oder ein kritischer Treffer. Bei Erfolg fällt er stattdessen auf 1 Trefferpunkt.</description>
+      </trait>
+    </traits>
+  
+    <attacks>
+      <attack name="Hieb">
+        <type>Nahkampf</type>
+        <bonus>+3</bonus>
+        <range>1,50 m</range>
+        <target>ein Ziel</target>
+        <damage>4 (1W6 + 1) Wuchtschaden</damage>
+      </attack>
+    </attacks>
+  </statblock>
   
   
 </encounter>
