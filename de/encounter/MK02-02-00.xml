@@ -9,67 +9,97 @@
     <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
   </info>
 
-<statblock name="Wächter von Vael" id="id-d4t-npc-vael-wight">
+<statblock name="Lira Dornsang" id="id-lira-dornsang">
   <meta>
     <size>Mittel</size>
-    <type>Untoter</type>
-    <alignment>neutral böse</alignment>
-    <ac>14 (Gepanzerte Lederrüstung)</ac>
-    <hp>45 (6W8 + 18)</hp>
+    <type>Humanoid (Norn)</type>
+    <alignment>chaotisch gut</alignment>
+    <ac>15 (Fellrüstung)</ac>
+    <hp>30 (3W12 + 3)</hp>
     <speed>9 m</speed>
-    <senses>Dunkelsicht 18 m, passive Wahrnehmung 13</senses>
-    <languages>Die Sprachen, die er im Leben kannte</languages>
-    <challenge>3</challenge>
-    <resistances>Nekrotisch; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen, die nicht versilbert sind</resistances>
-    <immunities>Gift</immunities>
-    <conditionImmunities>Erschöpfung, Vergiftet</conditionImmunities>
+    <senses>passive Wahrnehmung 11</senses>
+    <languages>Tyrianisch, Nornisch</languages>
+    <challenge>1</challenge>
+    <resistances>Kälte, Hieb-, Stich- und Wuchtschaden im Kampfrausch</resistances>
+    <conditionImmunities></conditionImmunities>
   </meta>
 
   <abilities>
-    <ability name="Str" score="15" bonus="+2"/>
-    <ability name="Dex" score="14" bonus="+2"/>
-    <ability name="Con" score="16" bonus="+3"/>
-    <ability name="Int" score="10" bonus="+0"/>
-    <ability name="Wis" score="13" bonus="+1"/>
-    <ability name="Cha" score="15" bonus="+2"/>
+    <ability name="Str" score="16" bonus="+3"/>
+    <ability name="Dex" score="12" bonus="+1"/>
+    <ability name="Con" score="14" bonus="+2"/>
+    <ability name="Int" score="8" bonus="-1"/>
+    <ability name="Wis" score="10" bonus="+0"/>
+    <ability name="Cha" score="11" bonus="+0"/>
   </abilities>
 
+  <saves>
+    <save ability="Str" bonus="+5"/>
+    <save ability="Con" bonus="+4"/>
+  </saves>
+
   <skills>
-    <skill name="Wahrnehmung" bonus="+3"/>
-    <skill name="Heimlichkeit" bonus="+4"/>
+    <skill name="Athletik" bonus="+5"/>
+    <skill name="Überlebenskunst" bonus="+3"/>
+    <skill name="Naturkunde" bonus="+1"/>
+    <skill name="Einschüchtern" bonus="+2"/>
   </skills>
 
   <traits>
-    <trait name="Sonnenlichtempfindlichkeit">
-      <description>Solange sich der Wächter im Sonnenlicht befindet, hat er Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.</description>
+    <trait name="Kampfrausch (3/LR)">
+      <description>Bonusaktion: Vorteil auf Stärke-Würfe und -Angriffe, +2 Schaden mit Stärke-Angriffen, Resistenz gegen Hieb-, Stich- und Wuchtschaden. Hält 1 Minute oder bis Lira kampfunfähig ist.</description>
+    </trait>
+    <trait name="Raserei">
+      <description>Im Kampfrausch kann Lira als Bonusaktion einen zusätzlichen Nahkampfangriff ausführen. Danach erhält sie 1 Stufe Erschöpfung.</description>
+    </trait>
+    <trait name="Rücksichtsloser Angriff">
+      <description>Lira kann beim ersten Angriff ihres Zugs Vorteil erhalten, Angriffe gegen sie haben bis zu ihrem nächsten Zug ebenfalls Vorteil.</description>
+    </trait>
+    <trait name="Gefahrensinn">
+      <description>Vorteil auf Geschicklichkeitsrettungswürfe gegen sichtbare Effekte wie Fallen oder Zauber, solange Lira nicht blind, taub oder handlungsunfähig ist.</description>
+    </trait>
+    <trait name="Ungepanzerte Verteidigung">
+      <description>Wenn sie keine Rüstung trägt, beträgt ihre RK 13 + GE-Modifikator. Sie kann trotzdem einen Schild tragen.</description>
+    </trait>
+    <trait name="Sturmerprobt">
+      <description>Vorteil auf KO-Würfe gegen Erschöpfung durch raue Umweltbedingungen.</description>
+    </trait>
+    <trait name="Geborene Herausforderin">
+      <description>Vorteil auf Würfe zum Einschüchtern.</description>
+    </trait>
+    <trait name="Tochter der Bärin (1/LR)"
+      <description>1min Vorteil auf Stärkewürfe und Angriffe mit Stärke.</description>
     </trait>
   </traits>
 
   <actions>
     <action name="Mehrfachangriff">
-      <description>Der Wächter führt zwei Angriffe mit seinem Langschwert oder Langbogen aus. Er kann Lebensentzug anstelle eines Langschwertangriffs einsetzen.</description>
-    </action>
-    <action name="Lebensentzug">
-      <description>Nahkampf-Zauberangriff: +4 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 5 (1W6 + 2) nekrotischer Schaden. Das Ziel muss einen Konstitutionsrettungswurf gegen SG 13 bestehen oder sein Trefferpunktmaximum wird um den erlittenen Schaden verringert. Dieser Effekt hält bis zur nächsten langen Rast an. Stirbt ein Humanoider durch diesen Effekt, steht er nach 24 Stunden als Zombie unter der Kontrolle des Wächters wieder auf, sofern er nicht wiederbelebt oder zerstört wurde. Der Wächter kann bis zu 12 Zombies kontrollieren.</description>
+      <description>Lira führt zwei Angriffe mit ihrem Spieß aus, wenn sie im Kampfrausch ist.</description>
     </action>
   </actions>
 
   <attacks>
-    <attack name="Langschwert">
+    <attack name="Spieß">
       <type>Nahkampf</type>
-      <bonus>+4</bonus>
-      <range>1,50 m</range>
+      <bonus>+5</bonus>
+      <range>3 m</range>
       <target>ein Ziel</target>
-      <damage>6 (1W8 + 2) Hiebschaden oder 7 (1W10 + 2) mit zwei Händen</damage>
-    </attack>
-    <attack name="Langbogen">
-      <type>Fernkampf</type>
-      <bonus>+4</bonus>
-      <range>45/180 m</range>
-      <target>ein Ziel</target>
-      <damage>6 (1W8 + 2) Stichschaden</damage>
+      <damage>1W10 + 3 Stichschaden</damage>
     </attack>
   </attacks>
+
+  <reactions>
+  </reactions>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist>
+    </spelllist>
+    <slots>
+    </slots>
+  </spellcasting>
 </statblock>
 
 <statblock name="Auge von Vael" id="id-d4t-npc-vael-specter">
