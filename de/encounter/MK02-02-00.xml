@@ -200,111 +200,212 @@
     </spellcasting>
   </statblock>
   
-<statblock name="Theryn" id="id-theryn">
-  <meta>
-    <size>Mittel</size>
-    <type>Humanoid (Sylvari)</type>
-    <alignment>neutral gut</alignment>
-    <ac>15 (genietete Lederrüstung)</ac>
-    <hp>32 (3W10 + 6)</hp>
-    <speed>9 m</speed>
-    <senses>passive Wahrnehmung 14</senses>
-    <languages>Tyrianisch, Asurisch, Nornisch</languages>
-    <challenge>1</challenge>
-    <resistances></resistances>
-    <immunities></immunities>
-    <conditionImmunities></conditionImmunities>
-  </meta>
-
-  <abilities>
-    <ability name="Str" score="12" bonus="+1"/>
-    <ability name="Dex" score="16" bonus="+3"/>
-    <ability name="Con" score="14" bonus="+2"/>
-    <ability name="Int" score="10" bonus="+0"/>
-    <ability name="Wis" score="15" bonus="+2"/>
-    <ability name="Cha" score="8" bonus="-1"/>
-  </abilities>
-
-  <saves>
-    <save ability="Str" bonus="+3"/>
-    <save ability="Dex" bonus="+5"/>
-  </saves>
-
-  <skills>
-    <skill name="Athletik" bonus="+3"/>
-    <skill name="Tierkunde" bonus="+4"/>
-    <skill name="Einschüchtern" bonus="+1"/>
-    <skill name="Wahrnehmung" bonus="+4"/>
-    <skill name="Überlebenskunst" bonus="+4"/>
-  </skills>
-
-  <traits>
-    <trait name="Erzfeind: Drachendiener">
-      <description>Vorteil auf Überlebenskunst und Intelligenzproben gegen Drachendiener.</description>
-    </trait>
-    <trait name="Bevorzugtes Gelände: Wald">
-      <description>Kenntnis des Waldes: keine Verirrung, erhöhte Nahrungsausbeute, verstärkte Wachsamkeit und Heimlichkeit im Wald.</description>
-    </trait>
-    <trait name="Kampfstil: Bogenschütze">
-      <description>+2 Bonus auf Angriffswürfe mit Fernkampfwaffen.</description>
-    </trait>
-    <trait name="Kolossschlächter">
-      <description>Einmal pro Runde +1W8 Schaden gegen verwundete Ziele (nicht bei vollen TP).</description>
-    </trait>
-    <trait name="Trauminstinkt (1/Tag)">
-      <description>Einmal täglich Wiederholung eines fehlgeschlagenen Weisheits- oder Intelligenzwurfs.</description>
-    </trait>
-    <trait name="Photosynthese">
-      <description>Erhalte 1W6 temporäre Trefferpunkte nach 30 min Rast im Sonnenlicht.</description>
-    </trait>
-    <trait name="Biolumineszenz (1/Tag)">
-      <description>Leuchtet 1 Minute lang (6 m hell, 12 m dämmrig). Gegner im Licht haben Nachteil auf Heimlichkeit gegen Theryn.</description>
-    </trait>
-  </traits>
-
-  <actions>
-    <action name="Langbogen">
-      <description>Fernkampfangriff: +7 zum Treffen, Reichweite 45 m/180 m, ein Ziel. Treffer: 1W8 + 3 Stichschaden.</description>
-    </action>
-    <action name="Rapier">
-      <description>Nahkampfangriff: +5 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 1W8 + 3 Stichschaden.</description>
-    </action>
-  </actions>
-
-  <attacks>
-    <attack name="Langbogen">
-      <type>Fernkampf</type>
-      <bonus>+7</bonus>
-      <range>45 m</range>
-      <target>ein Ziel</target>
-      <damage>1W8 + 3 Stichschaden</damage>
-    </attack>
-    <attack name="Rapier">
-      <type>Nahkampf</type>
-      <bonus>+5</bonus>
-      <range>1,50 m</range>
-      <target>ein Ziel</target>
-      <damage>1W8 + 3 Stichschaden</damage>
-    </attack>
-  </attacks>
-
-  <!--<reactions>
-  </reactions>-->
-
-  <spellcasting>
-    <stat>Weisheit</stat>
-    <saveDC>12</saveDC>
-    <attackBonus>+4</attackBonus>
-    <spelllist>
-      <spell id="ID_D4T_SPELL_HUNTERS_MARK" level="1">Zeichen des Jägers (Hunter’s Mark)</spell>
-      <spell id="ID_D4T_SPELL_HAIL_OF_THORNS" level="1">Dornenhagel (Hail of Thorns)</spell>
-      <spell id="ID_D4T_SPELL_CURE_WOUNDS" level="1">Wunden heilen (Cure Wounds)</spell>
-    </spelllist>
-    <slots>
-      <slot level="1" count="3"/>
-    </slots>
-  </spellcasting>
-</statblock>
+  <statblock name="Theryn" id="id-theryn">
+    <meta>
+      <size>Mittel</size>
+      <type>Humanoid (Sylvari)</type>
+      <alignment>neutral gut</alignment>
+      <ac>15 (genietete Lederrüstung)</ac>
+      <hp>32 (3W10 + 6)</hp>
+      <speed>9 m</speed>
+      <senses>passive Wahrnehmung 14</senses>
+      <languages>Tyrianisch, Asurisch, Nornisch</languages>
+      <challenge>1</challenge>
+      <resistances></resistances>
+      <immunities></immunities>
+      <conditionImmunities></conditionImmunities>
+    </meta>
   
+    <abilities>
+      <ability name="Str" score="12" bonus="+1"/>
+      <ability name="Dex" score="16" bonus="+3"/>
+      <ability name="Con" score="14" bonus="+2"/>
+      <ability name="Int" score="10" bonus="+0"/>
+      <ability name="Wis" score="15" bonus="+2"/>
+      <ability name="Cha" score="8" bonus="-1"/>
+    </abilities>
+  
+    <saves>
+      <save ability="Str" bonus="+3"/>
+      <save ability="Dex" bonus="+5"/>
+    </saves>
+  
+    <skills>
+      <skill name="Athletik" bonus="+3"/>
+      <skill name="Tierkunde" bonus="+4"/>
+      <skill name="Einschüchtern" bonus="+1"/>
+      <skill name="Wahrnehmung" bonus="+4"/>
+      <skill name="Überlebenskunst" bonus="+4"/>
+    </skills>
+  
+    <traits>
+      <trait name="Erzfeind: Drachendiener">
+        <description>Vorteil auf Überlebenskunst und Intelligenzproben gegen Drachendiener.</description>
+      </trait>
+      <trait name="Bevorzugtes Gelände: Wald">
+        <description>Kenntnis des Waldes: keine Verirrung, erhöhte Nahrungsausbeute, verstärkte Wachsamkeit und Heimlichkeit im Wald.</description>
+      </trait>
+      <trait name="Kampfstil: Bogenschütze">
+        <description>+2 Bonus auf Angriffswürfe mit Fernkampfwaffen.</description>
+      </trait>
+      <trait name="Kolossschlächter">
+        <description>Einmal pro Runde +1W8 Schaden gegen verwundete Ziele (nicht bei vollen TP).</description>
+      </trait>
+      <trait name="Trauminstinkt (1/Tag)">
+        <description>Einmal täglich Wiederholung eines fehlgeschlagenen Weisheits- oder Intelligenzwurfs.</description>
+      </trait>
+      <trait name="Photosynthese">
+        <description>Erhalte 1W6 temporäre Trefferpunkte nach 30 min Rast im Sonnenlicht.</description>
+      </trait>
+      <trait name="Biolumineszenz (1/Tag)">
+        <description>Leuchtet 1 Minute lang (6 m hell, 12 m dämmrig). Gegner im Licht haben Nachteil auf Heimlichkeit gegen Theryn.</description>
+      </trait>
+    </traits>
+  
+    <actions>
+      <action name="Langbogen">
+        <description>Fernkampfangriff: +7 zum Treffen, Reichweite 45 m/180 m, ein Ziel. Treffer: 1W8 + 3 Stichschaden.</description>
+      </action>
+      <action name="Rapier">
+        <description>Nahkampfangriff: +5 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 1W8 + 3 Stichschaden.</description>
+      </action>
+    </actions>
+  
+    <attacks>
+      <attack name="Langbogen">
+        <type>Fernkampf</type>
+        <bonus>+7</bonus>
+        <range>45 m</range>
+        <target>ein Ziel</target>
+        <damage>1W8 + 3 Stichschaden</damage>
+      </attack>
+      <attack name="Rapier">
+        <type>Nahkampf</type>
+        <bonus>+5</bonus>
+        <range>1,50 m</range>
+        <target>ein Ziel</target>
+        <damage>1W8 + 3 Stichschaden</damage>
+      </attack>
+    </attacks>
+  
+    <!--<reactions>
+    </reactions>-->
+  
+    <spellcasting>
+      <stat>Weisheit</stat>
+      <saveDC>12</saveDC>
+      <attackBonus>+4</attackBonus>
+      <spelllist>
+        <spell id="ID_D4T_SPELL_HUNTERS_MARK" level="1">Zeichen des Jägers (Hunter’s Mark)</spell>
+        <spell id="ID_D4T_SPELL_HAIL_OF_THORNS" level="1">Dornenhagel (Hail of Thorns)</spell>
+        <spell id="ID_D4T_SPELL_CURE_WOUNDS" level="1">Wunden heilen (Cure Wounds)</spell>
+      </spelllist>
+      <slots>
+        <slot level="1" count="3"/>
+      </slots>
+    </spellcasting>
+  </statblock>
+    
+  <statblock name="Kaelen Merrowind" id="id-kaelen-merrowind">
+    <meta>
+      <size>Mittel</size>
+      <type>Humanoid (Mensch)</type>
+      <alignment>chaotisch gut</alignment>
+      <ac>10 (Magierrobe)</ac>
+      <hp>17 (3W6 + 3)</hp>
+      <speed>9 m</speed>
+      <senses>passive Wahrnehmung 12</senses>
+      <languages>Tyrianisch, Elonisch, Alt-Krytanisch</languages>
+      <challenge>1</challenge>
+      <resistances></resistances>
+      <immunities></immunities>
+      <conditionImmunities></conditionImmunities>
+    </meta>
+  
+    <abilities>
+      <ability name="Str" score="9" bonus="-1"/>
+      <ability name="Dex" score="11" bonus="+0"/>
+      <ability name="Con" score="14" bonus="+2"/>
+      <ability name="Int" score="13" bonus="+1"/>
+      <ability name="Wis" score="15" bonus="+2"/>
+      <ability name="Cha" score="16" bonus="+3"/>
+    </abilities>
+  
+    <saves>
+      <save ability="Con" bonus="+4"/>
+      <save ability="Cha" bonus="+5"/>
+    </saves>
+  
+    <skills>
+      <skill name="Geschichte" bonus="+3"/>
+      <skill name="Überzeugen" bonus="+5"/>
+      <skill name="Täuschen" bonus="+3"/>
+      <skill name="Einschüchtern" bonus="+3"/>
+      <skill name="Auftreten" bonus="+3"/>
+    </skills>
+  
+    <traits>
+      <trait name="Gezeiten des Chaos (1/Tag)">
+        <description>Kaelen kann sich Vorteil auf einen Wurf geben. Danach kann der SL verlangen, dass er auf der Tabelle für Wilde Magie würfelt.</description>
+      </trait>
+      <trait name="Woge der Wilden Magie">
+        <description>Nach dem Wirken eines Zaubers ab Grad 1 kann der SL einen W20-Wurf verlangen. Bei einer 1 tritt ein Effekt der Wilden Magie auf.</description>
+      </trait>
+      <trait name="Metamagie: Sorgfältiger Zauber">
+        <description>Bis zu 3 Kreaturen bestehen automatisch ihren Rettungswurf gegen einen Zauber mit Rettungswurf, um sie zu schonen.</description>
+      </trait>
+      <trait name="Metamagie: Verstärkter Zauber">
+        <description>Kaelen kann bis zu 3 Schadenswürfel eines Zaubers neu würfeln.</description>
+      </trait>
+      <trait name="Quelle der Magie">
+        <description>3 Zauberpunkte zur Umwandlung in Zauberplätze oder zum Aktivieren von Metamagie.</description>
+      </trait>
+      <trait name="Ungebrochener Wille (1/Tag)">
+        <description>Kaelen kann einmal täglich einen gescheiterten Wurf wiederholen.</description>
+      </trait>
+    </traits>
+  
+    <actions>
+      <action name="Keule">
+        <description>Nahkampfangriff: −1 zum Treffen, Reichweite 1,50 m, ein Ziel. Treffer: 1W4 −1 Wuchtschaden.</description>
+      </action>
+      <action name="Zauberwirken (siehe unten)">
+        <description>Kaelen ist ein Zauberwirker des 3. Grades. Sein Zauberattribut ist Charisma (Zauber-SG 13, +5 zum Treffen).</description>
+      </action>
+    </actions>
+  
+    <attacks>
+      <attack name="Keule">
+        <type>Nahkampf</type>
+        <bonus>-1</bonus>
+        <range>1,50 m</range>
+        <target>ein Ziel</target>
+        <damage>1W4 −1 Wuchtschaden</damage>
+      </attack>
+    </attacks>
+  
+    <reactions>
+    </reactions>
+  
+    <spellcasting>
+      <stat>Charisma</stat>
+      <saveDC>13</saveDC>
+      <attackBonus>+5</attackBonus>
+      <spelllist>
+        <spell id="ID_D4T_SPELL_FIRE_BOLT" level="0">Feuerpfeil (Fire Bolt)</spell>
+        <spell id="ID_D4T_SPELL_MESSAGE" level="0">Botschaft (Message)</spell>
+        <spell id="ID_D4T_SPELL_FRIENDS" level="0">Freundschaft (Friends)</spell>
+        <spell id="ID_D4T_SPELL_BLADE_WARD" level="0">Klingenbann (Blade Ward)</spell>
+        <spell id="ID_D4T_SPELL_BURNING_HANDS" level="1">Brennende Hände (Burning Hands)</spell>
+        <spell id="ID_D4T_SPELL_THUNDERWAVE" level="1">Donnerwoge (Thunderwave)</spell>
+        <spell id="ID_D4T_SPELL_MAGIC_MISSILE" level="1">Magisches Geschoss (Magic Missile)</spell>
+        <spell id="ID_D4T_SPELL_MIRROR_IMAGE" level="2">Spiegelbilder (Mirror Image)</spell>
+      </spelllist>
+      <slots>
+        <slot level="1" count="4"/>
+        <slot level="2" count="2"/>
+      </slots>
+    </spellcasting>
+  </statblock>
   
 </encounter>
