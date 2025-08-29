@@ -4,7 +4,7 @@
   <xsl:output method="html" indent="yes" encoding="UTF-8"/>
 
   <!-- Root-Match -->
-  <xsl:template match="/">
+  <xsl:template match="/root">
     <html>
       <head>
         <title>DnD4Tyria Feats</title>
@@ -22,7 +22,8 @@
             <th>Name</th>
             <th>Beschreibung</th>
           </tr>
-          <xsl:apply-templates select="//element[@type='Feat']"/>
+          <!-- Feats aus externer Datei laden -->
+          <xsl:apply-templates select="document(external/@href)//element[@type='Feat']"/>
         </table>
       </body>
     </html>
@@ -38,7 +39,7 @@
     </tr>
   </xsl:template>
 
-  <!-- Beschreibung darf HTML-Tags enthalten -->
+  <!-- Beschreibung darf HTML enthalten -->
   <xsl:template match="description">
     <xsl:value-of select="." disable-output-escaping="yes"/>
   </xsl:template>
