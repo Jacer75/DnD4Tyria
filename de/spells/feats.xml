@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/list-feats.xsl"?>
+<root>
+  <external href="../aurora/d4t-feats.xml"/>
+  <external href_labels="../labels.xml"/>
+</root>
