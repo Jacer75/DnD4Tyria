@@ -149,4 +149,79 @@
     </attack>
   </attacks>
 </statblock>
+
+  <statblock name="Auferstandener Ettin" id="id-d4t-undead-ettin">
+  <meta>
+    <size>Groß</size>
+    <type>Untoter</type>
+    <alignment>chaotisch böse</alignment>
+    <ac>12 (natürliche Rüstung)</ac>
+    <hp>95 (10W10 + 40)</hp>
+    <speed>12 m</speed>
+    <senses>Dunkelsicht 18 m, passive Wahrnehmung 14</senses>
+    <languages>versteht Riesisch und Tyrianisch; bruchstückliche, heisere Sprache</languages>
+    <challenge>5</challenge>
+    <resistances>Nekrotisch</resistances>
+    <immunities>Gift</immunities>
+    <conditionImmunities>Vergiftet</conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="21" bonus="+5"/>
+    <ability name="Dex" score="8" bonus="-1"/>
+    <ability name="Con" score="18" bonus="+4"/>
+    <ability name="Int" score="6" bonus="-2"/>
+    <ability name="Wis" score="10" bonus="+0"/>
+    <ability name="Cha" score="8" bonus="-1"/>
+  </abilities>
+
+  <saves>
+    <save ability="Con" bonus="+7"/>
+    <save ability="Wis" bonus="+2"/>
+  </saves>
+
+  <skills>
+    <skill name="Wahrnehmung" bonus="+4"/>
+  </skills>
+
+  <traits>
+    <trait name="Zwei Köpfe">
+      <description>Der Ettin hat Vorteil auf Würfe für Wahrnehmung sowie auf Rettungswürfe gegen Blind, Bezaubert, Taub, Verängstigt und Betäubt.</description>
+    </trait>
+    <trait name="Untote Zähigkeit">
+      <description>Wird der Ettin auf 0 TP reduziert, macht er einen Konstitutionsrettungswurf (SG 5 + erlittenen Schaden). Bei Erfolg fällt er stattdessen auf 1 TP (außer der Schaden war strahlend oder ein kritischer Treffer).</description>
+    </trait>
+    <trait name="Leichengestank (Aura 3 m)">
+      <description>Kreaturen, die ihren Zug innerhalb von 3 m um den Ettin beginnen, müssen einen Konstitutionsrettungswurf SG 14 bestehen, sonst sind sie bis zum Beginn ihres nächsten Zuges vergiftet (Vergiftet). Bei Erfolg ist die Kreatur 24 Stunden gegen diesen Gestank immun.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>Der Ettin führt zwei Angriffe aus: einen mit der Morgenstern-Keule und einen mit der Streitaxt.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Morgenstern-Keule">
+      <type>Nahkampf</type>
+      <bonus>+8</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>14 (2W8 + 5) Stichschaden</damage>
+    </attack>
+    <attack name="Streitaxt">
+      <type>Nahkampf</type>
+      <bonus>+8</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>10 (1W10 + 5) Hiebschaden</damage>
+    </attack>
+  </attacks>
+
+  <reactions>
+    <!-- keine -->
+  </reactions>
+</statblock>
+
 </encounter>
