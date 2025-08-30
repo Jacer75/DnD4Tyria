@@ -9,5 +9,100 @@
     <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
   </info>
 
-  
+  <statblock name="Auferstandener Zentaurenschamane" id="id-d4t-undead-centaur-shaman">
+  <meta>
+    <size>Groß</size>
+    <type>Untoter</type>
+    <alignment>chaotisch böse</alignment>
+    <ac>15 (natürliche Rüstung)</ac>
+    <hp>102 (12W10 + 36)</hp>
+    <speed>12 m</speed>
+    <senses>passive Wahrnehmung 16</senses>
+    <languages>Tyrianisch, Sylvanisch, Zentaurisch</languages>
+    <challenge>6</challenge>
+    <resistances>Nekrotisch</resistances>
+    <immunities>Gift</immunities>
+    <conditionImmunities>Vergiftet</conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="18" bonus="+4"/>
+    <ability name="Dex" score="12" bonus="+1"/>
+    <ability name="Con" score="16" bonus="+3"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="16" bonus="+3"/>
+    <ability name="Cha" score="14" bonus="+2"/>
+  </abilities>
+
+  <saves>
+    <save ability="Wis" bonus="+6"/>
+    <save ability="Con" bonus="+6"/>
+  </saves>
+
+  <skills>
+    <skill name="Wahrnehmung" bonus="+6"/>
+    <skill name="Religion" bonus="+3"/>
+  </skills>
+
+  <traits>
+    <trait name="Untotenbefehl (Bonusaktion)">
+      <description>Bis zu drei Zombies im Umkreis von 9 m führen sofort eine Bewegung oder einen Angriff aus, sofern sie ihn hören und verstehen.</description>
+    </trait>
+    <trait name="Stampfen (Trampelstoß)">
+      <description>Bewegt sich der Schamane mindestens 6 m geradeaus und trifft anschließend mit einem Nahkampfangriff, muss das Ziel einen ST-Rettungswurf SG 14 bestehen oder es wird zu Boden geworfen (liegend).</description>
+    </trait>
+    <trait name="Verderbnis des Sumpfs">
+      <description>Der Schamane ignoriert schwieriges Gelände durch Schlamm, Morast und seichtes Wasser.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>Der Schamane führt zwei Angriffe mit Hufen aus <i>oder</i> wirkt einen Zauber und benutzt Untotenbefehl (sofern verfügbar).</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Hufe">
+      <type>Nahkampf</type>
+      <bonus>+6</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>11 (2W6 + 4) Wuchtschaden</damage>
+    </attack>
+    <attack name="Geisterbrand">
+      <type>Fernkampf (Zauberangriff)</type>
+      <bonus>+6</bonus>
+      <range>9 m</range>
+      <target>ein Ziel</target>
+      <damage>18 (4W8) nekrotischer Schaden</damage>
+    </attack>
+  </attacks>
+
+  <reactions>
+    <!-- keine -->
+  </reactions>
+
+  <spellcasting>
+    <stat>Wis</stat>
+    <saveDC>14</saveDC>
+    <attackBonus>+6</attackBonus>
+    <spelllist>
+      <spell id="ID_D4T_SPELL_TOLL_THE_DEAD" level="0">Glocke des Todes (Toll the Dead)</spell>
+      <spell id="ID_D4T_SPELL_GUIDANCE" level="0">Führung (Guidance)</spell>
+      <spell id="ID_D4T_SPELL_ENTANGLE" level="1">Fesseln (Entangle)</spell>
+      <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden zufügen (Inflict Wounds)</spell>
+      <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+      <spell id="ID_D4T_SPELL_SPIRITUAL_WEAPON" level="2">Geistliche Waffe (Spiritual Weapon)</spell>
+      <spell id="ID_D4T_SPELL_BESTOW_CURSE" level="3">Fluch auferlegen (Bestow Curse)</spell>
+      <spell id="ID_D4T_SPELL_SPIRIT_GUARDIANS" level="3">Geisterhafte Wächter (Spirit Guardians)</spell>
+    </spelllist>
+    <slots>
+      <slot level="1" count="4"/>
+      <slot level="2" count="3"/>
+      <slot level="3" count="2"/>
+    </slots>
+  </spellcasting>
+</statblock>
+
 </encounter>
