@@ -1,1 +1,13 @@
-s
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+
+<encounter>
+  <info>
+    <name>Schlacht am Ziggurat</name>
+    <file>MK02-05-01.xml</file>
+    <abenteuer>MK02-05 Der Schattenherzgrund</abenteuer>
+    <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
+  </info>
+
+  
+</encounter>
