@@ -85,37 +85,37 @@
     <saveDC>17</saveDC>
     <attackBonus>+9</attackBonus>
     <spelllist>
-      <spell level="0">Thaumaturgie (Thaumaturgy)</spell>
-      <spell level="0">Trugbild (Minor Illusion)</spell>
-      <spell level="0">Feuerpfeil (Fire Bolt)</spell>
-      <spell level="0">Grabesberührung (Chill Touch)</spell>
+      <spell level="0" id="ID_D4T_SPELL_THAUMATURGY">Thaumaturgie (Thaumaturgy)</spell>
+      <spell level="0" id="ID_D4T_SPELL_MINOR_ILLUSION">Einfache Illusion (Minor Illusion)</spell>
+      <spell level="0" id="ID_D4T_SPELL_FIRE_BOLT">Feuerpfeil (Fire Bolt)</spell>
+      <spell level="0" id="ID_D4T_SPELL_CHILL_TOUCH">Kalte Hand (Chill Touch)</spell>
 
-      <spell level="1">Schild (Shield)</spell>
-      <spell level="1">Magisches Geschoss (Magic Missile)</spell>
-      <spell level="1">Hexenblitz (Witch Bolt)</spell>
+      <spell level="1" id="ID_D4T_SPELL_SHIELD">Schild (Shield)</spell>
+      <spell level="1" id="ID_D4T_SPELL_MAGIC_MISSILE">Magisches Geschoss (Magic Missile)</spell>
+      <spell level="1" id="ID_D4T_SPELL_WITCH_BOLT">Hexenpfeil (Witch Bolt)</spell>
 
-      <spell level="2">Nebelschritt (Misty Step)</spell>
-      <spell level="2">Spiegelbild (Mirror Image)</spell>
-      <spell level="2">Sengender Strahl (Scorching Ray)</spell>
+      <spell level="2" id="ID_D4T_SPELL_MISTY_STEP">Nebelschritt (Misty Step)</spell>
+      <spell level="2" id="ID_D4T_SPELL_MIRROR_IMAGE">Spiegelbilder (Mirror Image)</spell>
+      <spell level="2" id="ID_D4T_SPELL_SCORCHING_RAY">Sengender Strahl (Scorching Ray)</spell>
 
-      <spell level="3">Gegenzauber (Counterspell)</spell>
-      <spell level="3">Magie bannen (Dispel Magic)</spell>
-      <spell level="3">Feuerball (Fireball)</spell>
+      <spell level="3" id="ID_D4T_SPELL_COUNTERSPELL">Gegenzauber (Counterspell)</spell>
+      <spell level="3" id="ID_D4T_SPELL_DISPEL_MAGIC">Magie bannen (Dispel Magic)</spell>
+      <spell level="3" id="ID_D4T_SPELL_FIREBALL">Feuerball (Fireball)</spell>
 
-      <spell level="4">Große Unsichtbarkeit (Greater Invisibility)</spell>
-      <spell level="4">Dimensionstür (Dimension Door)</spell>
-      <spell level="4">Verseuchung (Blight)</spell>
+      <spell level="4" id="ID_D4T_SPELL_GREATER_INVISIBILITY">Mächtige Unsichtbarkeit (Greater Invisibility)</spell>
+      <spell level="4" id="ID_D4T_SPELL_DIMENSION_DOOR">Dimensionstür (Dimension Door)</spell>
+      <spell level="4" id="ID_D4T_SPELL_BLIGHT">Dürre (Blight)</spell>
 
-      <spell level="5">Mauer der Macht (Wall of Force)</spell>
-      <spell level="5">Giftwolke (Cloudkill)</spell>
-      <spell level="5">Synaptische Störung (Synaptic Static)</spell>
-      <spell level="5">Monster festhalten (Hold Monster)</spell>
+      <spell level="5" id="ID_D4T_SPELL_WALL_OF_FORCE">Energiewand (Wall of Force)</spell>
+      <spell level="5" id="ID_D4T_SPELL_CLOUDKILL">Todeswolke (Cloudkill)</spell>
+      <!--<spell level="5" id="">Synaptische Störung (Synaptic Static)</spell>-->
+      <spell level="5" id="ID_D4T_SPELL_HOLD_MONSTER">Monster festhalten (Hold Monster)</spell>
 
-      <spell level="6">Sphäre der Unverwundbarkeit (Globe of Invulnerability)</spell>
+      <spell level="6" id="ID_D4T_SPELL_GLOBE_OF_INVULNERABILITY">Kugel der Unverwundbarkeit (Globe of Invulnerability)</spell>
 
-      <spell level="7">Finger des Todes (Finger of Death)</spell>
+      <spell level="7" id="ID_D4T_SPELL_FINGER_OF_DEATH">Finger des Todes (Finger of Death)</spell>
 
-      <spell level="8">Teleport (Teleport)</spell>
+      <spell level="8" id="ID_D4T_SPELL_TELEPORT">Teleportieren (Teleport)</spell>
     </spelllist>
     <slots>
       <slot level="1" count="4"/>
