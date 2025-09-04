@@ -94,7 +94,7 @@
       <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden zufügen (Inflict Wounds)</spell>
       <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
       <spell id="ID_D4T_SPELL_SHATTER" level="2">Zerbersten (Shatter)</spell>
-      <spell id="ID_D4T_SPELL_BESTOW_CURSE" level="3">Fluch auferlegen (Bestow Curse)</spell>
+      <spell id="ID_D4T_SPELL_VAMPIRIC_TOUCH" level="3">Vampirgriff (Vampiric Touch)</spell>
       <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber (Counterspell)</spell>
       <spell id="ID_D4T_SPELL_SPIRIT_GUARDIANS" level="3">Geisterhafte Wächter (Spirit Guardians)</spell>
     </spelllist>
