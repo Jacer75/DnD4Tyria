@@ -88,13 +88,14 @@
     <saveDC>14</saveDC>
     <attackBonus>+6</attackBonus>
     <spelllist>
-      <spell id="ID_D4T_SPELL_TOLL_THE_DEAD" level="0">Glocke des Todes (Toll the Dead)</spell>
+      <spell id="ID_D4T_SPELL_POISON_SPRAY" level="0">Gift versprühen (Poison Spray)</spell>
       <spell id="ID_D4T_SPELL_GUIDANCE" level="0">Führung (Guidance)</spell>
       <spell id="ID_D4T_SPELL_ENTANGLE" level="1">Fesseln (Entangle)</spell>
       <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden zufügen (Inflict Wounds)</spell>
       <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
-      <spell id="ID_D4T_SPELL_SPIRITUAL_WEAPON" level="2">Geistliche Waffe (Spiritual Weapon)</spell>
+      <spell id="ID_D4T_SPELL_SHATTER" level="2">Zerbersten (Shatter)</spell>
       <spell id="ID_D4T_SPELL_BESTOW_CURSE" level="3">Fluch auferlegen (Bestow Curse)</spell>
+      <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber (Counterspell)</spell>
       <spell id="ID_D4T_SPELL_SPIRIT_GUARDIANS" level="3">Geisterhafte Wächter (Spirit Guardians)</spell>
     </spelllist>
     <slots>
