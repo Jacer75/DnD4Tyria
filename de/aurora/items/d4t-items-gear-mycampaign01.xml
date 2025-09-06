@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.0.3">
+        <update version="1.0.4">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -206,7 +206,7 @@
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE</set>
         </setters>
     </element>
-    <element name="Nerains Geheimnis" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_RAPIER">
+    <element name="Nerains Geheimnis" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
         <description>
             <p>Eine schlanke Klinge aus gehärtetem Pflanzenholz, durchzogen von feinen, weinroten Adern, die im Licht schwach pulsieren. Der Griff wirkt wie lebendig gewachsen und liegt überraschend warm in der Hand.</p>
@@ -223,6 +223,7 @@
         </setters>
     </element>
 </elements>
+
 
 
 
