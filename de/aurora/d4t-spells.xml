@@ -3,7 +3,7 @@
     <info>
         <name>Zaubersprüche (DnD4Tyria)</name>
         <author url="">Aurora4Tyria</author>
-        <update version="1.0.0">
+        <update version="1.0.1">
             <file name="d4t-spells.xml" url=""/>
         </update>
     </info>
