@@ -347,7 +347,7 @@
     <ability name="Dex" score="16" bonus="+3"/>
     <ability name="Con" score="14" bonus="+2"/>
     <ability name="Int" score="10" bonus="+0"/>
-    <ability name="Wis" score="14" bonus="+2"/>
+    <ability name="Wis" score="15" bonus="+2"/>
     <ability name="Cha" score="8" bonus="-1"/>
   </abilities>
 
