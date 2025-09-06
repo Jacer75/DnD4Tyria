@@ -225,4 +225,100 @@
   </reactions>
 </statblock>
 
+<statblock name="Hauptmann Kentigearna" id="id-d4t-kentigearna">
+  <meta>
+    <size>Mittelgroß</size>
+    <type>Sylvari, Humanoid</type>
+    <alignment>rechtschaffen gut</alignment>
+    <ac>16 (Kettenrüstung)</ac>
+    <hp>31 (4W10 + 8)</hp>
+    <speed>9 m</speed>
+    <senses>passive Wahrnehmung 14</senses>
+    <languages>Tyrianisch, Asurisch</languages>
+    <challenge>4</challenge>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="15" bonus="+2"/>
+    <ability name="Dex" score="9" bonus="-1"/>
+    <ability name="Con" score="13" bonus="+1"/>
+    <ability name="Int" score="11" bonus="+0"/>
+    <ability name="Wis" score="14" bonus="+2"/>
+    <ability name="Cha" score="14" bonus="+2"/>
+  </abilities>
+
+  <saves>
+    <save ability="Str" bonus="+4"/>
+    <save ability="Cha" bonus="+4"/>
+  </saves>
+
+  <skills>
+    <skill name="Athletik" bonus="+4"/>
+    <skill name="Wahrnehmung" bonus="+4"/>
+    <skill name="Überzeugen" bonus="+4"/>
+    <skill name="Religion" bonus="+2"/>
+  </skills>
+
+  <traits>
+    <trait name="Inspirierender Anführer">
+      <description>Nach 10 Minuten Rede erhalten bis zu sechs befreundete Kreaturen im Umkreis von 9 m 6 temporäre Trefferpunkte. 1× pro Rast.</description>
+    </trait>
+    <trait name="Göttliches Gespür (3/Tag)">
+      <description>Als Aktion kannst du die Position von Himmlischen, Teuflischen und Untoten im Umkreis von 18 m wahrnehmen sowie geweihte/entweihte Orte erspüren.</description>
+    </trait>
+    <trait name="Heilende Hand">
+      <description>20 Trefferpunkte pro langer Rast. Als Aktion kannst du TP wiederherstellen oder pro 5 Punkte Krankheit/Gift heilen.</description>
+    </trait>
+    <trait name="Göttlicher Zorn">
+      <description>Bei einem Nahkampftreffer kannst du einen Zauberplatz aufwenden, um zusätzlich 2W8 Strahlenschaden zu verursachen (gegen Untote/Teuflische +1W8). +1W8 pro Grad über 1.</description>
+    </trait>
+    <trait name="Göttliche Gesundheit">
+      <description>Immun gegen Krankheiten.</description>
+    </trait>
+    <trait name="Channel Divinity: Heilige Waffe">
+      <description>1 Minute lang +2 auf Angriffswürfe, die Waffe leuchtet 6 m hell, 6 m dämmrig. Zählt als magisch.</description>
+    </trait>
+    <trait name="Channel Divinity: Die Unheiligen vertreiben">
+      <description>Als Aktion: Untote/Teuflische im Umkreis von 9 m machen Weisheitsrettungswurf, sonst 1 Minute vertrieben.</description>
+    </trait>
+    <trait name="Sylvari-Volksmerkmale">
+      <description>Trauminstinkt (Reaktion 1/LR, Wurf wiederholen), Photosynthese (1W6 TP temporär nach Rast in Sonne), Biolumineszenz (1/LR, 1 Minute Licht, Gegner Nachteil auf Heimlichkeit).</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Großschwert">
+      <description>Melee Weapon Attack: +4, Reichweite 1,50 m, ein Ziel. Treffer: 11 (2W6 + 2) Hiebschaden.</description>
+    </action>
+    <action name="Wurfspeer">
+      <description>Melee oder Fernkampf: +4, Reichweite 9/36 m, ein Ziel. Treffer: 5 (1W6 + 2) Stichschaden.</description>
+    </action>
+  </actions>
+
+  <spellcasting>
+    <stat>Cha</stat>
+    <saveDC>12</saveDC>
+    <attackBonus>+4</attackBonus>
+    <slots>
+      <slot level="1" count="3"/>
+    </slots>
+    <spelllist>
+      <spell id="ID_D4T_SPELL_BLESS" level="1">Segnen (Bless)</spell>
+      <spell id="ID_D4T_SPELL_CURE_WOUNDS" level="1">Wunden heilen (Cure Wounds)</spell>
+      <!--<spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
+      <spell id="ID_D4T_SPELL_DETECT_POISON_AND_DISEASE" level="1">Gift und Krankheit entdecken (Detect Poison and Disease)</spell>
+      <spell id="ID_D4T_SPELL_DIVINE_FAVOR" level="1">Göttliche Gunst (Divine Favor)</spell>
+      <spell id="ID_D4T_SPELL_DETECT_EVIL_AND_GOOD" level="1">Gutes und Böses entdecken (Detect Evil and Good)</spell>
+      <spell id="ID_D4T_SPELL_HEROISM" level="1">Heldenmut (Heroism)</spell>
+      <spell id="ID_D4T_SPELL_DETECT_MAGIC" level="1">Magie entdecken (Detect Magic)</spell>
+      <spell id="ID_D4T_SPELL_PURIFY_FOOD_AND_DRINK" level="1">Nahrung und Wasser reinigen (Purify Food and Drink)</spell>
+      <spell id="ID_D4T_SPELL_SHIELD_OF_FAITH" level="1">Schild des Glaubens (Shield of Faith)</spell>
+      <spell id="ID_D4T_SPELL_SANCTUARY" level="1">Heiligtum (Sanctuary)</spell>
+      <spell id="ID_D4T_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" level="1">Schutz vor Gut und Böse (Protection from Evil and Good)</spell>-->
+      <spell id="ID_D4T_SPELL_THUNDEROUS_SMITE" level="1">Donnerndes Niederstrecken (Thunderous Smite)</spell>
+      <spell id="ID_D4T_SPELL_COMPELLED_DUEL" level="1">Erzwungenes Duell (Compelled Duel)</spell>
+    </spelllist>
+  </spellcasting>
+</statblock>
+  
 </encounter>
