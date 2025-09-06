@@ -286,14 +286,22 @@
     </trait>
   </traits>
 
-  <actions>
-    <action name="Großschwert">
-      <description>Melee Weapon Attack: +4, Reichweite 1,50 m, ein Ziel. Treffer: 11 (2W6 + 2) Hiebschaden.</description>
-    </action>
-    <action name="Wurfspeer">
-      <description>Melee oder Fernkampf: +4, Reichweite 9/36 m, ein Ziel. Treffer: 5 (1W6 + 2) Stichschaden.</description>
-    </action>
-  </actions>
+  <attacks>
+    <attack name="Großschwert">
+      <type>Nahkampf</type>
+      <bonus>+6</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>2W6 + 2 Hieb</damage>
+    </attack>
+    <attack name="Wurfspeer">
+      <type>Nah-/Fernkampf</type>
+      <bonus>+4</bonus>
+      <range>9/36 m</range>
+      <target>ein Ziel</target>
+      <damage>1W6 + 2 Stich</damage>
+    </attack>
+  </attacks>
 
   <spellcasting>
     <stat>Cha</stat>
@@ -320,6 +328,7 @@
     </spelllist>
   </spellcasting>
 </statblock>
+  
 <statblock name="Fenrael" id="id-d4t-fenrael">
   <meta>
     <size>Mittelgroß</size>
@@ -373,14 +382,22 @@
     </trait>
   </traits>
 
-  <actions>
-    <action name="Langbogen">
-      <description>Fernkampfangriff: +7, Reichweite 45/180 m, ein Ziel. Treffer: 7 (1W8 + 3) Stichschaden + ggf. 1W8 Kolossschlächter.</description>
-    </action>
-    <action name="Rapier">
-      <description>Nahkampfangriff: +5, Reichweite 1,50 m, ein Ziel. Treffer: 7 (1W8 + 3) Stichschaden.</description>
-    </action>
-  </actions>
+  <attacks>
+    <attack name="Langbogen">
+      <type>Fernkampf</type>
+      <bonus>+7</bonus>
+      <range>45/180 m</range>
+      <target>ein Ziel</target>
+      <damage>1W8 + 3 Stich</damage>
+    </attack>
+    <attack name="Rapier">
+      <type>Nahkampf</type>
+      <bonus>+5</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>1W8 + 3 Stich</damage>
+    </attack>
+  </attacks>
 
   <spellcasting>
     <stat>Weisheit</stat>
