@@ -8750,7 +8750,7 @@
         </setters>
     </element>
     <!-- Hexenpfeil -->
-    <element name="Witch Bolt (Hexenpfeil)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_WITCH_BOLT">
+    <element name="Hexenpfeil (Witch Bolt)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_WITCH_BOLT">
         <supports>Sorcerer, Warlock, Wizard</supports>
         <description>
             <p>Ein Strahl knisternder, blauer Energie schnellt auf ein Ziel innerhalb der Reichweite zu und bildet eine beständige Lichtbogenverbindung zwischen dir und dem Ziel. Führe einen Fernkampf-Zauberangriff durch. Bei einem Treffer erleidet das Ziel 1W12 Blitzschaden, und du kannst in jedem deiner folgenden Züge eine Aktion nutzen, um automatisch weiteren 1W12 Blitzschaden zu verursachen. Der Zauber endet, wenn du eine andere Aktion ausführst, das Ziel außer Reichweite ist oder totale Deckung erhält.</p>
