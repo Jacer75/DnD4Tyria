@@ -174,7 +174,56 @@
             <set name="rarity">Ungewöhnlich</set>
         </setters>
     </element>
+    <element name="Großschwert der Grafen Vael" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_TWOHANDER_VAEL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>Das Großschwert der Familie des Grafen Vael, ursprünglich an einer Statue im Anwesen ausgestellt.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Hieb">2W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
+        </setters>
+        <!--<rules>
+            <stat name="weapon:attack" value="1"/>
+            <stat name="weapon:damage" value="1"/>
+        </rules>-->
+    </element>
+    <element name="Sylvari-Streitkolben" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_SYLVARI_MACE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_GROUP_MACES</supports>
+        <description>
+            <p>Ein robuster Knüppel mit verstärktem Kopf, ideal zum Zerschmettern von Knochen und Rüstungen. Nach Art der Sylvari wirkt die Waffe wie gewachsen, als Teil einer PFlanze</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Wucht">1W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE</set>
+        </setters>
+    </element>
+    <element name="Nerains Geheimnis" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_RAPIER">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>Eine schlanke Klinge aus gehärtetem Pflanzenholz, durchzogen von feinen, weinroten Adern, die im Licht schwach pulsieren. Der Griff wirkt wie lebendig gewachsen und liegt überraschend warm in der Hand.</p>
+            <p>Ein Stück der Traumknospe des Schattenherzgrunds ist in der Waffe verarbeitet.</p>
+            <p>+1 auf Angriffs- und Schadenswürfe, +1 auf Initiativewürfe. Erfordert Bindung an den Träger.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
+        </setters>
+    </element>
 </elements>
+
 
 
 
