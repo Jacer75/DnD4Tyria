@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.0.5">
+        <update version="1.2.6">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -55,7 +55,7 @@
             <stat name="weapon:damage" value="1"/>
         </rules>-->
     </element>
-    <element name="Dolch aus Mithril" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_DAGGER_RETURNING">
+    <element name="Dolch aus Mithril" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_DAGGER_MITHRIL">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
         <description>
             <p>Ein Dolch, gefertigt aus Mithril und glänzend poliert.</p>
@@ -247,6 +247,7 @@
         </setters>
     </element>
 </elements>
+
 
 
 
