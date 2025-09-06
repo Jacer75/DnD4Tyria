@@ -110,6 +110,7 @@
       <spell level="5" id="ID_D4T_SPELL_CLOUDKILL">Todeswolke (Cloudkill)</spell>
       <!--<spell level="5" id="">Synaptische Störung (Synaptic Static)</spell>-->
       <spell level="5" id="ID_D4T_SPELL_HOLD_MONSTER">Monster festhalten (Hold Monster)</spell>
+      <spell level="5" id="ID_D4T_SPELL_GEAS">Geas</spell>
 
       <spell level="6" id="ID_D4T_SPELL_GLOBE_OF_INVULNERABILITY">Kugel der Unverwundbarkeit (Globe of Invulnerability)</spell>
 
