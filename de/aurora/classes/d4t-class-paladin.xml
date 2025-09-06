@@ -4,7 +4,7 @@
         <name>Wächter</name>
         <description>Die Klasse Wächter für DnD4Tyria, basierend auf dem Paladin aus dem Player’s Handbook.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.0">
+        <update version="1.0.1">
             <file name="d4t-class-paladin.xml" url=""/>
         </update>
     </info>
@@ -348,7 +348,7 @@
         </description>
         <sheet display="false"/>
         <rules>
-            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMAL_HANDLING"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING"/>
         </rules>
     </element>
     <element name="Einschüchtern (Intimidation)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_PALADIN_PROFICIENCY_INTIMIDATION">
