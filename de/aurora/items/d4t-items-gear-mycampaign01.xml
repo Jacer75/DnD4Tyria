@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.0.4">
+        <update version="1.0.5">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -48,6 +48,30 @@
             <set name="range">6/18 m</set>
             <set name="damage" type="Stich">1W4</set>
             <!--<set name="enhancement">1</set>-->
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+        </setters>
+        <!--<rules>
+            <stat name="weapon:attack" value="1"/>
+            <stat name="weapon:damage" value="1"/>
+        </rules>-->
+    </element>
+    <element name="Dolch aus Mithril" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_DAGGER_RETURNING">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>Ein Dolch, gefertigt aus Mithril und glänzend poliert.</p>
+            <p>Der Dolch gibt auf Angriffs- und Schadenswürfe einen Bonus von +1.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Waffen</set>
+            <set name="keywords">dagger</set>
+            <set name="type" addition="dagger">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">300</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Stich">1W4</set>
+            <set name="enhancement">1</set>
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
         </setters>
         <!--<rules>
@@ -223,6 +247,7 @@
         </setters>
     </element>
 </elements>
+
 
 
 
