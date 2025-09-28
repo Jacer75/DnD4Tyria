@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+
+<encounter>
+  <info>
+    <name>Schlacht am Ziggurat</name>
+    <file>MK02-05-01.xml</file>
+    <abenteuer>MK02-05 Der Schattenherzgrund</abenteuer>
+    <kampagne>MK02 - Die Jagd nach Calmor Vael</kampagne>
+  </info>
+
+  <statblock name="Dschungelwurm-Schlurfer" id="dschungelwurm-schlurfer">
+  <meta>
+    <size>Groß</size>
+    <type>Monströses Ungeheuer</type>
+    <alignment>neutral</alignment>
+    <ac>15 (natürliche Rüstung)</ac>
+    <hp>105 (14W10 + 28)</hp>
+    <speed>6 m, Klettern 6 m, Graben 3 m</speed>
+    <senses>Dunkelsicht 18 m, passive Wahrnehmung 14</senses>
+    <languages>—</languages>
+    <challenge>4 (1.100 XP)</challenge>
+    <resistances>Wucht, Stich und Hieb von nichtmagischen Waffen</resistances>
+    <immunities></immunities>
+    <conditionImmunities></conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="18" bonus="+4"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="15" bonus="+2"/>
+    <ability name="Int" score="2"  bonus="-4"/>
+    <ability name="Wis" score="14" bonus="+2"/>
+    <ability name="Cha" score="5"  bonus="-3"/>
+  </abilities>
+
+  <saves>
+    <save ability="Dex" bonus="+4"/>
+  </saves>
+
+  <skills>
+    <skill name="Heimlichkeit" bonus="+6"/>
+    <skill name="Wahrnehmung" bonus="+4"/>
+  </skills>
+
+  <traits>
+    <trait name="Herkunft">
+      <description>Tief im Tempel der Unsichtbaren haust dieser wurmähnliche Fleischfresser, umwuchert von schimmerndem Pilzpanzer und von Skritt-Legenden als „Wandermaul“ gefürchtet. (Basierend auf: Grick, MM S. 173)</description>
+    </trait>
+    <trait name="Mursaat-Hunger">
+      <description>Wenn sich innerhalb von 9 m ein magischer Effekt (z. B. Lichtzauber, Aura, aktiver Buff) befindet, erhält der Schlurfer Vorteil auf seine nächsten beiden Angriffe gegen das Ziel, das diesen Effekt auslöst.</description>
+    </trait>
+    <trait name="Tarnung im Schleim">
+      <description>Solange der Schlurfer sich nicht bewegt, zählt er als vollständig verborgen in natürlicher Umgebung (Felsen, Wurzelwerk, Pilzbewuchs).</description>
+    </trait>
+    <trait name="Tunneljäger">
+      <description>Der Schlurfer kann sich durch nichtmagisches Erdreich graben, ohne eine Schneise zu hinterlassen, und bewegt sich lautlos unter der Erde.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Multiangriff">
+      <description>Der Schlurfer führt zwei Angriffe aus: einen mit seinen Tentakeln und einen mit dem Biss.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Tentakel">
+      <type>Nahkampf</type>
+      <bonus>+6</bonus>
+      <range>3 m</range>
+      <target>ein Ziel</target>
+      <damage>10 (2W6 + 3) Schaden + 4 (1W8) säurehaltiger Schleimschaden</damage>
+      <rider>Das Ziel muss einen Stärkewurf (SG 13) bestehen oder es ist zu Boden geworfen.</rider>
+    </attack>
+    <attack name="Biss">
+      <type>Nahkampf</type>
+      <bonus>+6</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>16 (3W8 + 3) Stichschaden</damage>
+      <rider>Gegen am Boden liegende Kreaturen hat dieser Angriff Vorteil.</rider>
+    </attack>
+  </attacks>
+
+  <reactions></reactions>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist></spelllist>
+    <slots></slots>
+  </spellcasting>
+</statblock>
+
+<statblock name="Rattenbär" id="rattenbaer">
+  <meta>
+    <size>Groß</size>
+    <type>Monströses Ungeheuer</type>
+    <alignment>neutral böse</alignment>
+    <ac>13 (natürliche Rüstung)</ac>
+    <hp>59 (7W10 + 21)</hp>
+    <speed>12 m</speed>
+    <senses>Dunkelsicht 18 m, passive Wahrnehmung 13</senses>
+    <languages>—</languages>
+    <challenge>2 (450 EP)</challenge>
+    <resistances></resistances>
+    <immunities></immunities>
+    <conditionImmunities></conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="17" bonus="+3"/>
+    <ability name="Dex" score="12" bonus="+1"/>
+    <ability name="Con" score="16" bonus="+3"/>
+    <ability name="Int" score="2"  bonus="-4"/>
+    <ability name="Wis" score="12" bonus="+1"/>
+    <ability name="Cha" score="7"  bonus="-2"/>
+  </abilities>
+
+  <saves>
+  </saves>
+
+  <skills>
+    <skill name="Wahrnehmung" bonus="+3"/>
+  </skills>
+
+  <traits>
+    <trait name="Aggressive Stinkdrüse">
+      <description>Einmal pro kurzer Rast kann der Rattenbär eine stinkende Wolke ausstoßen (6 m Radius, 1 Minute). Kreaturen im Bereich müssen einen Konstitutionsrettungswurf SG 13 bestehen oder sind 1 Runde lang vergiftet.</description>
+    </trait>
+    <trait name="Geruchssinn">
+      <description>Der Rattenbär hat Vorteil auf Weisheit (Wahrnehmung)-Würfe, die auf Geruch basieren.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Multiangriff">
+      <description>Der Rattenbär führt zwei Angriffe aus: einen mit dem Biss und einen mit den Klauen.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Biss">
+      <type>Nahkampf</type>
+      <bonus>+5</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>12 (2W8 + 3) Stichschaden</damage>
+      <rider></rider>
+    </attack>
+    <attack name="Klauen">
+      <type>Nahkampf</type>
+      <bonus>+5</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>10 (2W6 + 3) Hiebschaden</damage>
+      <rider></rider>
+    </attack>
+  </attacks>
+
+  <reactions></reactions>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist></spelllist>
+    <slots></slots>
+  </spellcasting>
+</statblock>
+  
+</encounter>
