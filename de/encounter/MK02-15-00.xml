@@ -95,21 +95,24 @@
       <spell level="1" id="ID_D4T_SPELL_WITCH_BOLT">Hexenpfeil (Witch Bolt)</spell>
 
       <spell level="2" id="ID_D4T_SPELL_MISTY_STEP">Nebelschritt (Misty Step)</spell>
+      <spell level="2" id="ID_D4T_SPELL_LOCATE_OBJECT">Gegenstand aufspüren (Locate Object)</spell>
       <spell level="2" id="ID_D4T_SPELL_MIRROR_IMAGE">Spiegelbilder (Mirror Image)</spell>
       <spell level="2" id="ID_D4T_SPELL_SCORCHING_RAY">Sengender Strahl (Scorching Ray)</spell>
 
       <spell level="3" id="ID_D4T_SPELL_COUNTERSPELL">Gegenzauber (Counterspell)</spell>
+      <spell level="3" id="ID_D4T_SPELL_GASEOUS_FORM">Gasförmige Gestalt (Gaseous Form)</spell>
       <spell level="3" id="ID_D4T_SPELL_DISPEL_MAGIC">Magie bannen (Dispel Magic)</spell>
       <spell level="3" id="ID_D4T_SPELL_FIREBALL">Feuerball (Fireball)</spell>
 
-      <spell level="4" id="ID_D4T_SPELL_GREATER_INVISIBILITY">Mächtige Unsichtbarkeit (Greater Invisibility)</spell>
+      <!--<spell level="4" id="ID_D4T_SPELL_GREATER_INVISIBILITY">Mächtige Unsichtbarkeit (Greater Invisibility)</spell>-->
       <spell level="4" id="ID_D4T_SPELL_DIMENSION_DOOR">Dimensionstür (Dimension Door)</spell>
+      <spell level="4" id="ID_D4T_SPELL_STONESKIN">Steinhaut (Stoneskin)</spell>
       <spell level="4" id="ID_D4T_SPELL_BLIGHT">Dürre (Blight)</spell>
 
-      <spell level="5" id="ID_D4T_SPELL_WALL_OF_FORCE">Energiewand (Wall of Force)</spell>
+      <!--<spell level="5" id="ID_D4T_SPELL_WALL_OF_FORCE">Energiewand (Wall of Force)</spell>-->
       <spell level="5" id="ID_D4T_SPELL_CLOUDKILL">Todeswolke (Cloudkill)</spell>
       <!--<spell level="5" id="">Synaptische Störung (Synaptic Static)</spell>-->
-      <spell level="5" id="ID_D4T_SPELL_HOLD_MONSTER">Monster festhalten (Hold Monster)</spell>
+      <!--<spell level="5" id="ID_D4T_SPELL_HOLD_MONSTER">Monster festhalten (Hold Monster)</spell>-->
       <spell level="5" id="ID_D4T_SPELL_GEAS">Geas</spell>
 
       <spell level="6" id="ID_D4T_SPELL_GLOBE_OF_INVULNERABILITY">Kugel der Unverwundbarkeit (Globe of Invulnerability)</spell>
