@@ -87,7 +87,7 @@
     <spelllist>
       <spell level="0" id="ID_D4T_SPELL_THAUMATURGY">Thaumaturgie (Thaumaturgy)</spell>
       <spell level="0" id="ID_D4T_SPELL_MINOR_ILLUSION">Einfache Illusion (Minor Illusion)</spell>
-      <spell level="0" id="ID_D4T_SPELL_FIRE_BOLT">Feuerpfeil (Fire Bolt)</spell>
+      <spell level="0" id="ID_D4T_SPELL_MAGE_HAND">Magierhand (Mage Hand)</spell>
       <spell level="0" id="ID_D4T_SPELL_CHILL_TOUCH">Kalte Hand (Chill Touch)</spell>
 
       <spell level="1" id="ID_D4T_SPELL_SHIELD">Schild (Shield)</spell>
