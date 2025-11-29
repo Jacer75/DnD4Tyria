@@ -134,4 +134,115 @@
   </spellcasting>
 </statblock>
 
+<statblock name="Erwachsener Grüner Drache (Adult Green Dragon)" id="ID_D4T_STATBLOCK_ADULT_GREEN_DRAGON">
+  <meta>
+    <size>Riesig</size>
+    <type>Drache</type>
+    <alignment>rechtschaffen böse</alignment>
+    <ac>19 (natürliche Rüstung)</ac>
+    <hp>207 (18W12 + 90)</hp>
+    <speed>12 m, fliegen 24 m, schwimmen 12 m</speed>
+    <senses>Dunkelsicht 36 m, Blindsicht 18 m, passive Wahrnehmung 22</senses>
+    <languages>Gemeinsprache, Drakonisch</languages>
+    <challenge>15 (13.000 EP)</challenge>
+    <resistances></resistances>
+    <immunities>Gift</immunities>
+    <conditionImmunities>Vergiftet</conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="23" bonus="+6"/>
+    <ability name="Dex" score="12" bonus="+1"/>
+    <ability name="Con" score="21" bonus="+5"/>
+    <ability name="Int" score="18" bonus="+4"/>
+    <ability name="Wis" score="15" bonus="+2"/>
+    <ability name="Cha" score="17" bonus="+3"/>
+  </abilities>
+
+  <saves>
+    <save ability="Dex" bonus="+6"/>
+    <save ability="Con" bonus="+10"/>
+    <save ability="Wis" bonus="+7"/>
+    <save ability="Cha" bonus="+8"/>
+  </saves>
+
+  <skills>
+    <skill name="Täuschen" bonus="+8"/>
+    <skill name="Motiv erkennen" bonus="+7"/>
+    <skill name="Wahrnehmung" bonus="+12"/>
+    <skill name="Überzeugen" bonus="+8"/>
+    <skill name="Heimlichkeit" bonus="+6"/>
+  </skills>
+
+  <traits>
+    <trait name="Amphibisch">
+      <description>Der Drache kann sowohl an der Luft als auch unter Wasser atmen.</description>
+    </trait>
+
+    <trait name="Legendäre Resistenz (3/Tag)">
+      <description>Wenn der Drache einen Rettungswurf verfehlt, kann er stattdessen entscheiden, ihn zu bestehen.</description>
+    </trait>
+
+    <trait name="Furchteinflößende Präsenz">
+      <description>Jede Kreatur nach Wahl des Drachen im Umkreis von 36 m, die ihn sehen und von ihm wissen kann, muss einen Weisheitsrettungswurf gegen SG 16 bestehen oder ist für 1 Minute verängstigt. Eine betroffene Kreatur kann den Rettungswurf am Ende jedes ihrer Züge wiederholen und bei Erfolg endet der Effekt für sie. Besteht eine Kreatur den Rettungswurf oder endet der Effekt für sie, ist sie für die nächsten 24 Stunden gegen die Furchteinflößende Präsenz dieses Drachen immun.</description>
+    </trait>
+
+    <trait name="Giftatem (Aufladen 5–6)">
+      <description>Der Drache speit giftiges Gas in einem 18-m-Kegel. Jede Kreatur in diesem Bereich muss einen Konstitutionsrettungswurf gegen SG 18 ablegen und erleidet bei einem misslungenen Rettungswurf 56 (16W6) Giftschaden oder bei einem erfolgreichen Rettungswurf die Hälfte des Schadens.</description>
+    </trait>
+
+    <trait name="Legendäre Aktionen">
+      <description>Der Drache kann 3 legendäre Aktionen aus den folgenden Optionen einsetzen. Es kann immer nur eine legendäre Aktion gleichzeitig verwendet werden und nur am Ende des Zuges einer anderen Kreatur. Der Drache erhält zu Beginn seines Zuges alle verbrauchten legendären Aktionen zurück.
+      • Erkunden: Der Drache führt einen Wahrnehmungswurf (Weisheit) aus.
+      • Schwanzangriff: Der Drache führt einen Schwanzangriff aus.
+      • Flügelangriff (kostet 2 Aktionen): Der Drache schlägt mit seinen Flügeln. Jede Kreatur im Umkreis von 3 m um den Drachen muss einen Geschicklichkeitsrettungswurf gegen SG 19 ablegen oder erleidet 13 (2W6 + 6) Wuchtschaden und wird zu Boden geworfen. Anschließend kann der Drache bis zur Hälfte seiner Fluggeschwindigkeit fliegen.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>Der Drache setzt seine Furchteinflößende Präsenz ein und führt dann drei Angriffe aus: einen mit seinem Biss und zwei mit seinen Klauen.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Biss">
+      <type>Nahkampf</type>
+      <bonus>+11</bonus>
+      <range>3 m</range>
+      <target>ein Ziel</target>
+      <damage>17 (2W10 + 6) Stichschaden plus 7 (2W6) Giftschaden</damage>
+    </attack>
+
+    <attack name="Klaue">
+      <type>Nahkampf</type>
+      <bonus>+11</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>13 (2W6 + 6) Hiebschaden</damage>
+    </attack>
+
+    <attack name="Schwanz">
+      <type>Nahkampf</type>
+      <bonus>+11</bonus>
+      <range>4,50 m</range>
+      <target>ein Ziel</target>
+      <damage>15 (2W8 + 6) Wuchtschaden</damage>
+    </attack>
+  </attacks>
+
+  <reactions>
+  </reactions>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist>
+    </spelllist>
+    <slots>
+    </slots>
+  </spellcasting>
+</statblock>
+  
 </encounter>
