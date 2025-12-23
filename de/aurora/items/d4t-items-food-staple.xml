@@ -478,5 +478,133 @@
     <set name="dc">15</set>
   </setters>
 </element>
-    
+
+<element name="Brombeere" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_BLACKBERRY">
+  <description>
+    <p>Dunkel-säuerliche Beere, ideal für kräftige Saucen und robuste Desserts.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">6</set>
+    <set name="weight" lb="0.1">0,05 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Erholung und Moral (Charisma)</set>
+    <set name="grade">4</set>
+    <set name="region">Waldsäume in Kryta/Gendarran; dichter Bewuchs, oft dornenreich.</set>
+    <set name="dc">16</set>
+  </setters>
+</element>
+
+<element name="Blumenkohlkopf" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_CAULIFLOWER">
+  <description>
+    <p>Mild und fein – nimmt Gewürze an und wirkt „edel“, ohne schwer zu sein.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">5</set>
+    <set name="weight" lb="0.4">0,2 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">keine</set>
+    <set name="grade">4</set>
+    <set name="region">Kryta (bessere Höfe), kühles Ackerland; weniger verbreitet als Kohl.</set>
+    <set name="dc">16</set>
+  </setters>
+</element>
+
+<element name="Nelke" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_CLOVE">
+  <description>
+    <p>Sehr intensives Gewürz – ein Hauch davon verändert ein ganzes Gericht.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">2</set>
+    <set name="weight" lb="0.01">0,005 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">4</set>
+    <set name="region">Selten als Wildpflanze; meist kultiviert oder als Trockenware gehandelt.</set>
+    <set name="dc">18</set>
+  </setters>
+</element>
+
+<element name="Koriandersamen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_CORIANDER_SEED">
+  <description>
+    <p>Zitronig-warm und nussig – gibt Speisen einen „Reisegeschmack“.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">1</set>
+    <set name="weight" lb="0.05">0,02 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">4</set>
+    <set name="region">Handelsware; lokal in warmen Feldern kultivierbar, aber nicht häufig.</set>
+    <set name="dc">17</set>
+  </setters>
+</element>
+
+<element name="Grüne Zwiebel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_GREEN_ONION">
+  <description>
+    <p>Frische Schärfe ohne Wucht – perfekt zum Abschluss über heißem Essen.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">4</set>
+    <set name="weight" lb="0.05">0,02 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">4</set>
+    <set name="region">Kryta (Gärten), Löwenstein-Umfeld; wächst schnell, aber ist empfindlich.</set>
+    <set name="dc">16</set>
+  </setters>
+</element>
+
+<element name="Minzblatt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_MINT">
+  <description>
+    <p>Kühl und klar – macht Getränke, Salate und leichte Speisen „wach“.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">4</set>
+    <set name="weight" lb="0.02">0,01 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Reaktion und Gewandtheit (Dexterity)</set>
+    <set name="grade">4</set>
+    <set name="region">Feuchte Gärten und Bachufer; beliebt in Sylvari-Nähe und Kräuterbeeten.</set>
+    <set name="dc">16</set>
+  </setters>
+</element>
+
+<element name="Kohlrübe" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_KOHLRABI">
+  <description>
+    <p>Herzhaft und erdig – eine Knolle für große Töpfe und lange Reisen.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">5</set>
+    <set name="weight" lb="0.35">0,18 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Sättigung und Ausdauer (Constitution)</set>
+    <set name="grade">4</set>
+    <set name="region">Kühles Ackerland; eher ländliche Regionen, oft als Wintervorrat.</set>
+    <set name="dc">17</set>
+  </setters>
+</element>
+
+<element name="Zuckerkürbis" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_SUGAR_PUMPKIN">
+  <description>
+    <p>Süß und samtig – ideal für Suppen, Pürees und backbare Füllungen.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">5</set>
+    <set name="weight" lb="0.5">0,25 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Erholung und Moral (Charisma)</set>
+    <set name="grade">4</set>
+    <set name="region">Kryta (Herbsternte), wärmere Höfe; nicht überall wild zu finden.</set>
+    <set name="dc">17</set>
+  </setters>
+</element>
+
 </elements>
