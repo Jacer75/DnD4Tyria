@@ -607,4 +607,420 @@
   </setters>
 </element>
 
+    <element name="Artischocke" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_ARTICHOKE">
+  <description>
+    <p>Fein und aufwendig – wer sie zubereitet, meint es ernst.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">5</set>
+    <set name="weight" lb="0.4">0,2 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">keine</set>
+    <set name="grade">5</set>
+    <set name="region">Seltene Kulturpflanze; meist auf gut geführten Höfen oder als Import.</set>
+    <set name="dc">20</set>
+  </setters>
+</element>
+
+<element name="Spargelstange" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_ASPARAGUS">
+  <description>
+    <p>Zart und edel – schmeckt nach Frühling und „guter Gesellschaft“.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">4</set>
+    <set name="weight" lb="0.25">0,12 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Erholung und Moral (Charisma)</set>
+    <set name="grade">5</set>
+    <set name="region">Sehr saisonal; feuchte, gepflegte Böden – kaum echte Wildfunde.</set>
+    <set name="dc">21</set>
+  </setters>
+</element>
+
+<element name="Butternusskürbis" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_BUTTERNUT_SQUASH">
+  <description>
+    <p>Nussig-süß und cremig – ein Kürbis, der aus Suppe ein Fest macht.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">3</set>
+    <set name="weight" lb="0.6">0,3 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Erholung und Moral (Charisma)</set>
+    <set name="grade">5</set>
+    <set name="region">Wärmere Regionen und gepflegte Felder; eher selten als Wildfrucht.</set>
+    <set name="dc">20</set>
+  </setters>
+</element>
+
+<element name="Cayennepfefferschote" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_CAYENNE">
+  <description>
+    <p>Trockene, aggressive Schärfe – ein Gewürz für Mutige und Profis.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">2</set>
+    <set name="weight" lb="0.02">0,01 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">5</set>
+    <set name="region">Heißes Klima oder Import; in Tyria meist über Händler verfügbar.</set>
+    <set name="dc">22</set>
+  </setters>
+</element>
+
+<element name="Lauchstange" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_LEEK">
+  <description>
+    <p>Mild-süßliche Zwiebelnote – gibt Brühen und Pfannen eine runde Basis.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">2</set>
+    <set name="weight" lb="0.3">0,15 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Sättigung und Ausdauer (Constitution)</set>
+    <set name="grade">5</set>
+    <set name="region">Kryta (Höfe), feuchte Felder; als Handelsware verbreitet.</set>
+    <set name="dc">19</set>
+  </setters>
+</element>
+
+<element name="Pastinakenwurzel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_PARSNIP">
+  <description>
+    <p>Süßlich-erdig – macht Eintöpfe „reich“, ohne schwer zu werden.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">2</set>
+    <set name="weight" lb="0.25">0,12 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Sättigung und Ausdauer (Constitution)</set>
+    <set name="grade">5</set>
+    <set name="region">Kühles Ackerland; häufig Wintervorrat in ländlichen Regionen.</set>
+    <set name="dc">19</set>
+  </setters>
+</element>
+
+<element name="Himbeere" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_RASPBERRY">
+  <description>
+    <p>Hell-säuerlich und duftend – perfekt für elegante Desserts und Saucen.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">1</set>
+    <set name="weight" lb="0.1">0,05 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Erholung und Moral (Charisma)</set>
+    <set name="grade">5</set>
+    <set name="region">Waldsäume; empfindlich und oft schnell weggefressen – Saisonfund.</set>
+    <set name="dc">20</set>
+  </setters>
+</element>
+
+<element name="Estragonblätter" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_TARRAGON">
+  <description>
+    <p>Fein, anisartig – der Unterschied zwischen „gut“ und „meisterlich“.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">3</set>
+    <set name="weight" lb="0.02">0,01 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">5</set>
+    <set name="region">Meist kultiviert; als Kräuterbündel in größeren Städten erhältlich.</set>
+    <set name="dc">21</set>
+  </setters>
+</element>
+
+<element name="Zitronengras" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_LEMONGRASS">
+  <description>
+    <p>Zitrisch und frisch – hebt schwere Speisen und passt zu Fisch.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">3</set>
+    <set name="weight" lb="0.05">0,02 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">5</set>
+    <set name="region">Warm-feuchte Regionen oder Import; selten in freier Wildbahn.</set>
+    <set name="dc">22</set>
+  </setters>
+</element>
+
+<element name="Maracuja" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_PASSION_FRUIT">
+  <description>
+    <p>Säuerlich-exotisch – macht Getränke und Glasuren unverwechselbar.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">5</set>
+    <set name="weight" lb="0.15">0,07 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Erholung und Moral (Charisma)</set>
+    <set name="grade">5</set>
+    <set name="region">Tropisches Importgut; in Tyria fast immer Händlerware.</set>
+    <set name="dc">23</set>
+  </setters>
+</element>
+
+<element name="Lotuswurzel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_LOTUS_ROOT">
+  <description>
+    <p>Knackig und mild – wirkt „rein“ und passt zu feinen Brühen.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">6</set>
+    <set name="weight" lb="0.25">0,12 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Konzentration und Erkenntnis (Intelligence)</set>
+    <set name="grade">5</set>
+    <set name="region">Seen und ruhige Gewässer; selten und oft nur mit Ortskenntnis zu finden.</set>
+    <set name="dc">23</set>
+  </setters>
+</element>
+
+<element name="Seetang" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_SEAWEED">
+  <description>
+    <p>Salzig-umami – ein kleines Bündel verändert Suppen sofort.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">2</set>
+    <set name="weight" lb="0.1">0,05 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Wachsamkeit und Instinkt (Wisdom)</set>
+    <set name="grade">5</set>
+    <set name="region">Küsten, Felsbuchten; abhängig von Gezeiten und Wetter.</set>
+    <set name="dc">21</set>
+  </setters>
+</element>
+
+<element name="Schneetrüffel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_SNOW_TRUFFLE">
+  <description>
+    <p>Selten, erdig, luxuriös – das Aroma hängt noch Stunden in der Luft.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="gp">2</set>
+    <set name="weight" lb="0.05">0,02 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Wachsamkeit und Instinkt (Wisdom)</set>
+    <set name="grade">5</set>
+    <set name="region">Zittergipfel; unter Schnee/Erde, meist nur mit Spürnase oder Tier.</set>
+    <set name="dc">24</set>
+  </setters>
+</element>
+
+<element name="Orrianischer Trüffel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_ORRIAN_TRUFFLE">
+  <description>
+    <p>Dunkel und intensiv – ein Luxus, der immer nach Risiko schmeckt.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="gp">4</set>
+    <set name="weight" lb="0.05">0,02 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Konzentration und Erkenntnis (Intelligence)</set>
+    <set name="grade">5</set>
+    <set name="region">Orr-nahe Gebiete; praktisch nie „normal“ zu ernten und oft gefährlich.</set>
+    <set name="dc">25</set>
+  </setters>
+</element>
+
+<element name="Geisterchili" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_GHOST_PEPPER">
+  <description>
+    <p>Schärfe wie ein Schlag – bringt Schweiß, Tränen und Fokus zugleich.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="gp">1</set>
+    <set name="weight" lb="0.02">0,01 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">5</set>
+    <set name="region">Extrem selten; wächst nur unter speziellen Bedingungen oder als Spezialkultur.</set>
+    <set name="dc">25</set>
+  </setters>
+</element>
+
+<element name="Omnombeere" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_OMNOMBERRY">
+  <description>
+    <p>Süß und kräftig – als wäre in jeder Beere ein kleines Fest gespeichert.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="gp">1</set>
+    <set name="weight" lb="0.1">0,05 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Erholung und Moral (Charisma)</set>
+    <set name="grade">5</set>
+    <set name="region">Sehr seltene Beere; meist nur Kennerplätze oder teure Händlerware.</set>
+    <set name="dc">24</set>
+  </setters>
+</element>
+
+<element name="Safranfaden" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_SAFFRON">
+  <description>
+    <p>Goldene Fäden, die ein Gericht zugleich färben und adeln.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="gp">2</set>
+    <set name="weight" lb="0.01">0,005 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">5</set>
+    <set name="region">Extrem arbeitsintensiv; fast immer Händlerware aus spezialisierten Anbaugebieten.</set>
+    <set name="dc">24</set>
+  </setters>
+</element>
+
+<element name="Nopal" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_NOPAL">
+  <description>
+    <p>Saftig und leicht säuerlich – ungewöhnlich, aber erstaunlich vielseitig.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">3</set>
+    <set name="weight" lb="0.25">0,12 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Reaktion und Gewandtheit (Dexterity)</set>
+    <set name="grade">5</set>
+    <set name="region">Trockene Regionen; Kaktusflächen, wo Wasser knapp und Sonne hart ist.</set>
+    <set name="dc">22</set>
+  </setters>
+</element>
+
+<element name="Kaktusfeige" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_PRICKLY_PEAR">
+  <description>
+    <p>Süß und kernig – eine Delikatesse, die man sich verdienen muss.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">6</set>
+    <set name="weight" lb="0.2">0,1 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Erholung und Moral (Charisma)</set>
+    <set name="grade">5</set>
+    <set name="region">Trockene Regionen; Ernte ist unangenehm ohne Handschuhe/Erfahrung.</set>
+    <set name="dc">23</set>
+  </setters>
+</element>
+
+<element name="Haufen aus Leinsamen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_FLAXSEED_PILE">
+  <description>
+    <p>Ölreich und nussig – gut für Brot, Brei und sättigende Mischungen.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">2</set>
+    <set name="weight" lb="0.2">0,1 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Konzentration und Erkenntnis (Intelligence)</set>
+    <set name="grade">5</set>
+    <set name="region">Felder und Vorratslager; in der Wildnis selten als „Haufen“ zu finden.</set>
+    <set name="dc">21</set>
+  </setters>
+</element>
+
+<element name="Sägeblattpilz" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_SAWGILL_MUSHROOM">
+  <description>
+    <p>Kräftig und eigen – ein Pilz, den nur Kenner wirklich gut einsetzen.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="gp">1</set>
+    <set name="weight" lb="0.2">0,1 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Wachsamkeit und Instinkt (Wisdom)</set>
+    <set name="grade">5</set>
+    <set name="region">Dunkle, feuchte Wälder; oft an verrottendem Holz – nicht leicht zu erkennen.</set>
+    <set name="dc">23</set>
+  </setters>
+</element>
+
+<element name="Cassavawurzel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_CASSAVA">
+  <description>
+    <p>Stärke pur – neutral im Geschmack, aber perfekt zum Binden und Sattmachen.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">4</set>
+    <set name="weight" lb="0.35">0,18 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Sättigung und Ausdauer (Constitution)</set>
+    <set name="grade">5</set>
+    <set name="region">Warm-feuchte Böden; in Tyria meist Import oder Spezialanbau.</set>
+    <set name="dc">22</set>
+  </setters>
+</element>
+
+<element name="Miesmuschel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_BLUE_MUSSEL">
+  <description>
+    <p>Salzig und kräftig – klassisch für Eintöpfe, Brühen und Pfannengerichte.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">4</set>
+    <set name="weight" lb="0.3">0,15 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Kampfesrausch und Tempo (Strength)</set>
+    <set name="grade">5</set>
+    <set name="region">Küstenfelsen; bei falscher Saison/Ort riskant (Strömung, Gezeiten).</set>
+    <set name="dc">22</set>
+  </setters>
+</element>
+
+<element name="Haufen Pimentbeeren" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_ALLSPICE_PILE">
+  <description>
+    <p>Warm-würzig mit Nelkennote – macht aus „normal“ sofort „besonders“.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="gp">1</set>
+    <set name="weight" lb="0.05">0,02 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">5</set>
+    <set name="region">Seltene Wildbeeren; meist als Handelsware gebündelt zu bekommen.</set>
+    <set name="dc">23</set>
+  </setters>
+</element>
+
+<element name="Auster" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_OYSTER">
+  <description>
+    <p>Meer pur – weich, salzig und ein bisschen luxuriös.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">6</set>
+    <set name="weight" lb="0.25">0,12 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Kampfesrausch und Tempo (Strength)</set>
+    <set name="grade">5</set>
+    <set name="region">Küsten und Flussmündungen; oft nur bei Niedrigwasser erreichbar.</set>
+    <set name="dc">22</set>
+  </setters>
+</element>
+
+<element name="Handvoll rote Linsen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_RED_LENTILS_HANDFUL">
+  <description>
+    <p>Schnell gar, proteinreich – macht Suppen und Eintöpfe effektiv.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="sp">1</set>
+    <set name="weight" lb="0.2">0,1 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Sättigung und Ausdauer (Constitution)</set>
+    <set name="grade">5</set>
+    <set name="region">Felder und Vorratslager; in der Wildnis eher selten als „Handvoll“ zu finden.</set>
+    <set name="dc">21</set>
+  </setters>
+</element>
+
 </elements>
