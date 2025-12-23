@@ -334,4 +334,149 @@
       <set name="dc">14</set>
     </setters>
   </element>    
+
+<element name="Zucchini" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_ZUCCHINI">
+  <description>
+    <p>Saftig-mildes Gemüse, das Saucen bindet und Gewürze trägt.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">3</set>
+    <set name="weight" lb="0.25">0,12 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">keine</set>
+    <set name="grade">3</set>
+    <set name="region">Gärten und Höfe in Kryta; wärmeliebend, daher nicht überall.</set>
+    <set name="dc">14</set>
+  </setters>
+</element>
+
+<element name="Kohlkopf" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_CABBAGE">
+  <description>
+    <p>Deftiges Blattgemüse – ideal für Eintöpfe, Rollen und Fermentiertes.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">3</set>
+    <set name="weight" lb="0.4">0,2 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Sättigung und Ausdauer (Constitution)</set>
+    <set name="grade">3</set>
+    <set name="region">Kühleres Ackerland (Ascalon, Zittergipfel-Vorland), große Felder.</set>
+    <set name="dc">14</set>
+  </setters>
+</element>
+
+<element name="Dillzweig" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_DILL">
+  <description>
+    <p>Fein und anisartig – macht Fisch- und Sahnesaucen sofort „fertig“.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">3</set>
+    <set name="weight" lb="0.02">0,01 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">3</set>
+    <set name="region">Kräutergärten in Kryta; in der Wildnis eher an Gewässerrändern.</set>
+    <set name="dc">15</set>
+  </setters>
+</element>
+
+<element name="Traube" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_GRAPE">
+  <description>
+    <p>Süß und saftig – für Most, Reduktionen und festliche Beilagen.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">4</set>
+    <set name="weight" lb="0.15">0,07 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Erholung und Moral (Charisma)</set>
+    <set name="grade">3</set>
+    <set name="region">Obstgärten/Weinberge (Kryta), als Handelsware häufig.</set>
+    <set name="dc">14</set>
+  </setters>
+</element>
+
+<element name="Grünkohlblatt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_KALE">
+  <description>
+    <p>Herb, kräftig, nahrhaft – ein Klassiker für „Durchhalte“-Gerichte.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">3</set>
+    <set name="weight" lb="0.3">0,15 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Sättigung und Ausdauer (Constitution)</set>
+    <set name="grade">3</set>
+    <set name="region">Kühle Regionen und Wintergärten (Zittergipfel-Vorland, Ascalon).</set>
+    <set name="dc">15</set>
+  </setters>
+</element>
+
+<element name="Portobellopilz" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_PORTOBELLO_G3">
+  <description>
+    <p>Fleischiger Speisepilz mit kräftigem Aroma und „Biss“.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">5</set>
+    <set name="weight" lb="0.3">0,15 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Wachsamkeit und Instinkt (Wisdom)</set>
+    <set name="grade">3</set>
+    <set name="region">Schattige Wälder (Caledon, Maguuma-Rand), nicht überall zuverlässig.</set>
+    <set name="dc">14</set>
+  </setters>
+</element>
+
+<element name="Rosmarinzweig" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_ROSEMARY">
+  <description>
+    <p>Harzig-aromatisch – riecht nach Feuer, Fett und knuspriger Kruste.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">3</set>
+    <set name="weight" lb="0.02">0,01 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Gewürz</set>
+    <set name="grade">3</set>
+    <set name="region">Trockene, sonnige Hänge (Ascalon), oft als Gartenkraut kultiviert.</set>
+    <set name="dc">15</set>
+  </setters>
+</element>
+
+<element name="Sesamsamen" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_SESAME">
+  <description>
+    <p>Nussig und ölreich – für Krusten, Pasten und „Finish“ auf Gemüse.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">4</set>
+    <set name="weight" lb="0.05">0,02 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Konzentration und Erkenntnis (Intelligence)</set>
+    <set name="grade">3</set>
+    <set name="region">Meist Import-/Handelsware; lokal nur in warmen Regionen anbaubar.</set>
+    <set name="dc">16</set>
+  </setters>
+</element>
+
+<element name="Süßkartoffel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_SWEET_POTATO">
+  <description>
+    <p>Süß und sättigend – wie Kartoffel, aber festlicher und aromatischer.</p>
+  </description>
+  <setters>
+    <set name="category">Grundnahrungsmittel</set>
+    <set name="cost" currency="cp">4</set>
+    <set name="weight" lb="0.25">0,12 kg</set>
+    <set name="stackable">true</set>
+    <set name="type">Sättigung und Ausdauer (Constitution)</set>
+    <set name="grade">3</set>
+    <set name="region">Wärmere Böden (Küstenhandel), seltener in Kryta kultiviert.</set>
+    <set name="dc">15</set>
+  </setters>
+</element>
+    
 </elements>
