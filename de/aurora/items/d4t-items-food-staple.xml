@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<elements>
+    <info>
+        <author>Aurora4Tyria</author>
+        <author url=""/>
+        <update/>
+        <file name="d4t-items-food-staple.xml" url=""/>
+        <supports>Item</supports>
+    </info>
+    <!-- Grade 1: Grundnahrungsmittel / Zutaten -->
+    <element name="Karotte" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_CARROT">
+        <description>
+            <p>Knackiges Wurzelgemüse, das roh wie gekocht ordentlich Substanz bringt.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="0.2">0,1 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Sättigung und Ausdauer (Constitution)</set>
+            <set name="grade">1</set>
+            <set name="region">Kryta (Ackerland), Gendarran, gelegentlich Caledon-Gärten.</set>
+            <set name="dc">10</set>
+        </setters>
+    </element>
+    <element name="Salatkopf" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_LETTUCE">
+        <description>
+            <p>Frisch und wasserreich – gut für leichte Speisen und schnelle Beilagen.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="0.2">0,1 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">keine</set>
+            <set name="grade">1</set>
+            <set name="region">Kryta (Höfe), Löwenstein-Umland, feuchte Felder in Gendarran.</set>
+            <set name="dc">10</set>
+        </setters>
+    </element>
+    <element name="Pilz" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_MUSHROOM">
+        <description>
+            <p>Allgemeiner Speisepilz; schmeckt erdig und nimmt Gewürze gut auf.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="0.2">0,1 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Wachsamkeit und Instinkt (Wisdom)</set>
+            <set name="grade">1</set>
+            <set name="region">Caledon-Wald, Maguuma-Randgebiete, schattige Regionen in Kryta.</set>
+            <set name="dc">11</set>
+        </setters>
+    </element>
+    <element name="Zwiebel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_ONION">
+        <description>
+            <p>Schärfe und Süße zugleich – die Basis für fast jede herzhafte Küche.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="0.2">0,1 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Sättigung und Ausdauer (Constitution)</set>
+            <set name="grade">1</set>
+            <set name="region">Kryta (Dörfer), Gendarran-Felder, Handelsware in jeder Stadt.</set>
+            <set name="dc">10</set>
+        </setters>
+    </element>
+    <element name="Kartoffel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_POTATO">
+        <description>
+            <p>Sättigend, robust und vielseitig – das klassische „Kraftfutter“ Tyrias.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="0.2">0,1 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Sättigung und Ausdauer (Constitution)</set>
+            <set name="grade">1</set>
+            <set name="region">Kryta (Ackerland), Ascalon-Farmen, hochgelegene Beete in den Zittergipfeln.</set>
+            <set name="dc">10</set>
+        </setters>
+    </element>
+    <element name="Petersilienblatt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_PARSLEY">
+        <description>
+            <p>Feines Kraut mit frischer Note, das schwere Speisen „aufhellt“.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">1</set>
+            <set name="weight" lb="0.02">0,01 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Gewürz</set>
+            <set name="grade">1</set>
+            <set name="region">Gartenkräuter in Kryta und Löwenstein; häufig an Marktständen.</set>
+            <set name="dc">10</set>
+        </setters>
+    </element>
+    <element name="Blaubeere" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_BLUEBERRY">
+        <description>
+            <p>Kleine süße Beeren, die sich für Gebäck, Brei und Saucen eignen.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">2</set>
+            <set name="weight" lb="0.1">0,05 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Erholung und Moral (Charisma)</set>
+            <set name="grade">1</set>
+            <set name="region">Waldsäume in Kryta und Gendarran; auch in Caledon wild zu finden.</set>
+            <set name="dc">11</set>
+        </setters>
+    </element>
+    <element name="Knoblauchknolle" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_GARLIC">
+        <description>
+            <p>Intensiv und würzig – ein kleines bisschen reicht, um ein Gericht zu tragen.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">2</set>
+            <set name="weight" lb="0.05">0,02 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Gewürz</set>
+            <set name="grade">1</set>
+            <set name="region">Kryta (Dörfer), trockene Beete in Ascalon; verbreitete Handelsware.</set>
+            <set name="dc">11</set>
+        </setters>
+    </element>
+    <element name="Schwarzes Pfefferkorn" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_BLACK_PEPPER">
+        <description>
+            <p>Trocken-scharfes Gewürz, das Wärme in jede Mahlzeit bringt.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">5</set>
+            <set name="weight" lb="0.02">0,01 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Gewürz</set>
+            <set name="grade">1</set>
+            <set name="region">Importgewürz (Häfen, Händler), seltener in warmen Küstenstreifen kultiviert.</set>
+            <set name="dc">12</set>
+        </setters>
+    </element>
+    <element name="Vanilleschote" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_VANILLA">
+        <description>
+            <p>Süßes Duftgewürz, das Desserts und Getränke „edel“ wirken lässt.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="sp">1</set>
+            <set name="weight" lb="0.02">0,01 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Gewürz</set>
+            <set name="grade">1</set>
+            <set name="region">Seltenes Importgut über Löwenstein; wächst nur in sehr warmen Regionen.</set>
+            <set name="dc">13</set>
+        </setters>
+    </element>
+    <element name="Thymianblatt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_THYME">
+        <description>
+            <p>Herb und aromatisch – ideal für Eintöpfe, Braten und Wild.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">2</set>
+            <set name="weight" lb="0.02">0,01 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Gewürz</set>
+            <set name="grade">1</set>
+            <set name="region">Steinige Hänge in Kryta/Ascalon; häufig in Kräutergärten.</set>
+            <set name="dc">11</set>
+        </setters>
+    </element>
+    <element name="Chilischote" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_CHILI">
+        <description>
+            <p>Scharf und belebend – der Klassiker, wenn ein Gericht „kick“ braucht.</p>
+        </description>
+        <setters>
+            <set name="category">Grundnahrungsmittel</set>
+            <set name="cost" currency="cp">3</set>
+            <set name="weight" lb="0.05">0,02 kg</set>
+            <set name="stackable">true</set>
+            <set name="type">Gewürz</set>
+            <set name="grade">1</set>
+            <set name="region">Wärmere Anbaugebiete (Küstenhandel), oft als Trockenware verfügbar.</set>
+            <set name="dc">12</set>
+        </setters>
+    </element>
+</elements>
