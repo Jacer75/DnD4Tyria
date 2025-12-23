@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/list-items.xsl"?>
+<root>
+  <external href="../aurora/items/d4t-items-food-staple.xml"/>
+  <external href_labels="../labels.xml"/>
+</root>
