@@ -188,4 +188,150 @@
             <set name="dc">12</set>
         </setters>
     </element>
+
+  <!-- Grade 2: Verbesserte Grundnahrungsmittel / Zutaten -->
+
+  <element name="Erdbeere" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_STRAWBERRY">
+    <description>
+      <p>Süß und saftig – beliebt in Törtchen, Marmeladen und Sommerspeisen.</p>
+    </description>
+    <setters>
+      <set name="category">Grundnahrungsmittel</set>
+      <set name="cost" currency="cp">3</set>
+      <set name="weight" lb="0.1">0,05 kg</set>
+      <set name="stackable">true</set>
+      <set name="type">Erholung und Moral (Charisma)</set>
+      <set name="grade">2</set>
+      <set name="region">Kryta (Obstgärten), Gendarran, als Saisonware auf Märkten.</set>
+      <set name="dc">12</set>
+    </setters>
+  </element>
+
+  <element name="Rote Beete" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_BEETROOT">
+    <description>
+      <p>Erdig-süßes Wurzelgemüse, das satt macht und Farbe ins Essen bringt.</p>
+    </description>
+    <setters>
+      <set name="category">Grundnahrungsmittel</set>
+      <set name="cost" currency="cp">2</set>
+      <set name="weight" lb="0.25">0,12 kg</set>
+      <set name="stackable">true</set>
+      <set name="type">Sättigung und Ausdauer (Constitution)</set>
+      <set name="grade">2</set>
+      <set name="region">Kryta (Felder), Ascalon (robuste Sorten), häufig eingelagert.</set>
+      <set name="dc">12</set>
+    </setters>
+  </element>
+
+  <element name="Muschel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_MUSSEL">
+    <description>
+      <p>Salzig-frisch – Meeresgeschmack für Suppen, Eintöpfe und Pfannen.</p>
+    </description>
+    <setters>
+      <set name="category">Grundnahrungsmittel</set>
+      <set name="cost" currency="cp">4</set>
+      <set name="weight" lb="0.3">0,15 kg</set>
+      <set name="stackable">true</set>
+      <set name="type">Kampfesrausch und Tempo (Strength)</set>
+      <set name="grade">2</set>
+      <set name="region">Küsten und Flussmündungen (Gendarran, Löwenstein-Umfeld).</set>
+      <set name="dc">13</set>
+    </setters>
+  </element>
+
+  <element name="Oreganoblatt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_OREGANO">
+    <description>
+      <p>Würzig-kräftiges Kraut, das Tomaten- und Fleischgerichte abrundet.</p>
+    </description>
+    <setters>
+      <set name="category">Grundnahrungsmittel</set>
+      <set name="cost" currency="cp">2</set>
+      <set name="weight" lb="0.02">0,01 kg</set>
+      <set name="stackable">true</set>
+      <set name="type">Gewürz</set>
+      <set name="grade">2</set>
+      <set name="region">Trockene Hänge (Ascalon), Kräutergärten in Städten und Dörfern.</set>
+      <set name="dc">12</set>
+    </setters>
+  </element>
+
+  <element name="Salbeiblatt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_SAGE">
+    <description>
+      <p>Warm-herb und leicht bitter – klassisch zu Fettigem und Wild.</p>
+    </description>
+    <setters>
+      <set name="category">Grundnahrungsmittel</set>
+      <set name="cost" currency="cp">2</set>
+      <set name="weight" lb="0.02">0,01 kg</set>
+      <set name="stackable">true</set>
+      <set name="type">Gewürz</set>
+      <set name="grade">2</set>
+      <set name="region">Höhere, trockenere Lagen (Kryta-Rand), als Gartenkraut verbreitet.</set>
+      <set name="dc">12</set>
+    </setters>
+  </element>
+
+  <element name="Spinatblatt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_SPINACH">
+    <description>
+      <p>Weich, grün und nährstoffreich – gut für Füllungen, Pfannen und Suppen.</p>
+    </description>
+    <setters>
+      <set name="category">Grundnahrungsmittel</set>
+      <set name="cost" currency="cp">2</set>
+      <set name="weight" lb="0.15">0,07 kg</set>
+      <set name="stackable">true</set>
+      <set name="type">keine</set>
+      <set name="grade">2</set>
+      <set name="region">Feuchte Felder in Kryta und Gendarran; häufige Marktware.</set>
+      <set name="dc">12</set>
+    </setters>
+  </element>
+
+  <element name="Steckrübe" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_TURNIP">
+    <description>
+      <p>Robuste Winterknolle, die lange hält und kräftig sättigt.</p>
+    </description>
+    <setters>
+      <set name="category">Grundnahrungsmittel</set>
+      <set name="cost" currency="cp">2</set>
+      <set name="weight" lb="0.3">0,15 kg</set>
+      <set name="stackable">true</set>
+      <set name="type">Sättigung und Ausdauer (Constitution)</set>
+      <set name="grade">2</set>
+      <set name="region">Kühles Ackerland (Zittergipfel-Vorland), Kryta (Wintervorräte).</set>
+      <set name="dc">13</set>
+    </setters>
+  </element>
+
+  <element name="Lorbeerblatt" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_BAYLEAF">
+    <description>
+      <p>Ein Blatt genügt – gibt Eintöpfen und Brühen Tiefe und Struktur.</p>
+    </description>
+    <setters>
+      <set name="category">Grundnahrungsmittel</set>
+      <set name="cost" currency="cp">2</set>
+      <set name="weight" lb="0.01">0,005 kg</set>
+      <set name="stackable">true</set>
+      <set name="type">Gewürz</set>
+      <set name="grade">2</set>
+      <set name="region">Als Trockenware überall; frisch eher in milden Küstenregionen.</set>
+      <set name="dc">13</set>
+    </setters>
+  </element>
+
+  <element name="Portobellopilz" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_FOOD_STAPLE_PORTOBELLO">
+    <description>
+      <p>Fleischiger Speisepilz mit kräftigem Aroma und „Biss“.</p>
+    </description>
+    <setters>
+      <set name="category">Grundnahrungsmittel</set>
+      <set name="cost" currency="cp">4</set>
+      <set name="weight" lb="0.3">0,15 kg</set>
+      <set name="stackable">true</set>
+      <set name="type">Wachsamkeit und Instinkt (Wisdom)</set>
+      <set name="grade">2</set>
+      <set name="region">Schattige Wälder (Caledon, Maguuma-Rand), nicht überall zuverlässig.</set>
+      <set name="dc">14</set>
+    </setters>
+  </element>    
 </elements>
