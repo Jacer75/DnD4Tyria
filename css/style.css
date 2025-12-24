@@ -234,3 +234,23 @@ table.spell-details td {
   font-style: italic;
 }
 
+read-aloud,
+.read-aloud {
+  display: block;
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 4px solid #888;
+  font-style: italic;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  border-left: 4px solid #888;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+blockquote p {
+  margin: 0;              /* wichtig: sonst doppelte Abstände */
+  font-style: italic;
+}

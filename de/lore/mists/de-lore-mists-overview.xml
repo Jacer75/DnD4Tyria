@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-lore.xsl"?>
+<lore id="ID_D4T_LORE_MISTS" title="Die Nebel" source="DnD4Tyria">
+    <info>
+        <description>Die Nebel sind das unendliche, chaotische Zwischenreich zwischen Welten, in dem nur wenige gezielt navigieren können.</description>
+        <author url="">DnD4Tyria</author>
+        <update version="1.0.0">
+            <file name="de-lore-mists-overview.xml" url=""/>
+        </update>
+    </info>
+    <public>
+        <blockquote>
+            <p>Als ihr die Schwelle überschreitet, verschwindet jede Richtung. Kein oben, kein unten – nur ein graues, fließendes Nichts, das auf Gedanken reagiert wie Wasser auf Wind. Geräusche werden verschluckt, Entfernungen verlieren Bedeutung. Irgendwo in dieser Weite treiben Inseln der Wirklichkeit – Reiche, Fragmente, Erinnerungen. Doch ohne Ziel vor Augen seid ihr nur ein weiterer Funke, der im Nebel verlischt.</p>
+        </blockquote>
+        <p>Die Nebel sind kein einzelner Ort, sondern ein unendliches, schwer begreifbares Geflecht aus Möglichkeiten, Übergängen und verlorenen Realitäten. In ihnen liegen Wege zwischen Welten – und zugleich das große Dazwischen, das weder Karte noch festen Horizont kennt. Wer von den Nebeln spricht, meint selten dasselbe: für manche sind sie ein Jenseits, für andere ein Ozean aus reiner Magie, für wieder andere ein Irrgarten aus Erinnerung und Traum.</p>
+        <h2>Ein Meer ohne Küsten</h2>
+        <p>In der Vorstellung vieler Gelehrter sind die Nebel kein geordneter Raum, sondern ein grenzenloses Urmedium. Distanz, Richtung und Zeit verhalten sich unzuverlässig – manchmal scheinbar gar nicht. Ein Schritt kann zur Ewigkeit werden, ein Augenblick zu einer langen Reise. Darum gelten die Nebel als gefährlich: Nicht, weil sie stets feindselig wären, sondern weil sie so selten verlässlich sind.</p>
+        <h2>Reiche und Blasen in der Weite</h2>
+        <p>Dennoch existieren in den Nebeln stabile Orte: Reiche, Domänen und Fragmente – gleichsam Inseln in einem endlosen Strom. Manche werden mit Göttern in Verbindung gebracht, andere wirken wie eigenständige Welten mit eigenen Regeln. Solche Orte sind real und betretbar, doch ihre Zugänge sind selten. Nur wenige Orden, Traditionslinien oder kundige Reisende wissen, wie man sie findet – und noch weniger wissen, wie man wieder sicher zurückkehrt.</p>
+        <h2>Warum Nebelreisen schwierig sind</h2>
+        <ul>
+            <li>Ohne Ziel oder Anker ist Navigation kaum möglich; wer “einfach in die Nebel” reist, kann sich verlieren.</li>
+            <li>Stabile Übergänge entstehen meist an besonderen Orten: Ritualstätten, uralten Portalen, magischen Knotenpunkten oder durch mächtige Artefakte.</li>
+            <li>Viele Berichte widersprechen einander, weil die Nebel subjektiv wirken: Gedanken, Furcht und Erinnerung können Wahrnehmung und Verlauf einer Reise beeinflussen.</li>
+            <li>Einige Nebelphänomene wiederholen Ereignisse wie in Schleifen – Fragmente von Geschichte, Möglichkeit oder Irrtum.</li>
+        </ul>
+        <h2>Was Sterbliche über die Nebel glauben</h2>
+        <p>Für die meisten Bewohner Tyrias sind die Nebel Mythos und Fernes. Man kennt sie aus Legenden über die Götter, aus Erzählungen über verlorene Seelen, aus den Berichten der Nebelkriege oder aus den seltenen Aufzeichnungen von Expeditionen. Wer wirklich versteht, wie die Nebel funktionieren, schweigt oft – aus Verantwortung, aus Furcht oder weil Wissen allein noch keinen sicheren Pfad erschafft.</p>
+    </public>
+    <gm>
+        <p>In dieser Kampagne sind die Nebel vor allem ein chaotischer, richtungsloser Zwischenzustand: ein “Limbo”, in dem stabile Reiche nur als seltene, schwer auffindbare Blasen existieren. Wer wiederholt den Schleier übertritt oder Nebelreisen erzwingt, zieht Aufmerksamkeit auf sich – etwa durch die Astralwache, die Übergänge überwacht und auf ungewöhnliche Aktivität reagiert. Die Alt-Drachen haben keine Resonanz in den Nebeln und wirken ausschließlich auf der Materiellen Ebene; echte Nebelmächte sind anderer Natur (Götterreiche, Kryptis, Urmächte, Fraktal-Phänomene).</p>
+        <ul>
+            <li>Hook: Wiederholte Nebelreisen der Gruppe werden registriert; ein Beobachter testet, ob die Helden Risiko oder Ressource sind.</li>
+            <li>Gefahr: Ein fehlgeschlagenes Ritual “wirft” Reisende nicht in ein Reich, sondern in die Nebel an sich – Orientierung, Zeit und Identität werden zur Bedrohung.</li>
+            <li>Twist: Ein scheinbar bekannter Pfad führt nicht mehr zum erwarteten Reich – ein Zugang hat sich verschoben, wurde versiegelt oder von einer fremden Macht “umgeleitet”.</li>
+            <li>Konsequenz: Jede Nebelreise hinterlässt Spuren (magische Resonanz am Schleier), die Kryptis oder andere Entitäten nutzen können.</li>
+        </ul>
+    </gm>
+    <images>
+        <!-- Optional -->
+    </images>
+</lore>

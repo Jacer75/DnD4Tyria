@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-entry.xsl"?>
+<entry id="npc-gjorna-gerasdottir" title="Gjorna Gerasdottir" source="DnD4Tyria">
+    <info>
+        <description>Eine Schamanin des Raben.</description>
+        <author url="">DnD4Tyria</author>
+        <update version="1.0.0">
+            <file name="de-norn-gjorna-gerasdottir.xml" url=""/>
+        </update>
+    </info>
+    <public>
+        <h2>Alter / Erscheinung</h2>
+        <p>Mitte 40; ca. 2,20 m groß; kräftig und trainiert. Schwarzes Haar, meist streng gebunden. Wettergegerbte, harte Gesichtszüge. Ruhige, wachsame Augen. Präsenz ohne Lautstärke. Still, aufmerksam, unprätentiös. Klagt nicht, bittet nicht um Hilfe. Hilft, weil es richtig ist, nicht weil man sie darum bittet. Spricht wenig, stellt dafür präzise Fragen. Trägt Verantwortung selbstverständlich.</p>
+        <h2>Hintergrund</h2>
+        <p>Hielt mit ihrer Familie so lange wie möglich im hohen Norden aus und trotzte Jormags Winter über Jahre hinweg. Zog erst nach Süden, als der Preis untragbar wurde. Reiste mit drei Kindern (damals etwa 6–10 Jahre alt) durch von Eisbrut durchsetztes Gebiet. Lebt heute im Flüchtlingsgebiet „Unter dem Eis“.</p>
+        <p>Verheiratet, drei Kinder (heute max. 12 Jahre alt). Teilt ihr Zelt mit einer alten, nicht verwandten Norn, die der Familie einst Unterschlupf gewährte. Diese Frau ist Teil der Familie geworden – Oma durch Entscheidung, nicht durch Blut.</p>
+        <h2>Alltag und Haltung</h2>
+        <p>Unterstützt das Flüchtlingsgebiet praktisch und leise: Heilung, Gold, fairer Ankauf von Kräutern, Hilfe ohne Aufhebens. Kennt Kälte, Hunger und Wachsamkeit aus eigener Erfahrung. Handelt vorausschauend, ohne Pathos. Nicht ständig anwesend. Erscheint zur Deutung, Vorbereitung von Ritualen oder wenn Orientierung gesucht wird. Keine Havroun, aber erfahrene Schamanin des Raben. Verkörpert List als Überleben, Scharfsinn als Verantwortung und Erinnerung als Pflicht.</p>
+        <h2>Tränke und Tinkturen</h2>
+        <p>Braut gelegentlich einfache, wirksame Tränke – meist für alle Kranken, bis der Topf leer ist. Verkauft nicht. Kann für Außenstehende abfüllen, wenn kleine Fläschchen und passende Kräuter gestellt werden. Erklärt knapp Nutzung und Grenzen.</p>
+        <h2>Magische Einordnung (SL)</h2>
+        <p>Funktioniert ingame wie eine Klerikerin der Natur: Heilung, Schutz, Unterstützung. Keine aggressive Missionierung, keine Machtdemonstration. Magie wirkt ruhig, bodenständig und zweckgebunden.</p>
+    </public>
+    <!-- Read-Aloud 
+        <blockquote>
+            <p>Read-Aloud</p>
+        </blockquote> -->
+    <!--<gm>
+    <p>Bei schönem Wetter ist es kalt, bei normalem Wetter ist es bitterkalt, bei schlechtem Wetter ist es gefährlich, sich im Freien aufzuhalten. Konstitutionsrettungswürfe gegen Erschöpfung sind angemessen.</p>
+  </gm>-->
+    <!--<images>
+    <image href="https://wiki-de.guildwars2.com/images/b/bd/Hoelbrak_Karte.jpg"
+           alt="Karte von Hoelbrak"/>
+  </images>-->
+</entry>

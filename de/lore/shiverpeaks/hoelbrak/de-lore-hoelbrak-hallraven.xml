@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-lore.xsl"?>
+<lore id="lore-hoelbrak-overview" title="Halle des Raben" source="DnD4Tyria">
+    <info>
+        <description>Die Halle des Raben liegt in Hoelbrak und verehrt den Geist des Raben.</description>
+        <author url="">DnD4Tyria</author>
+        <update version="1.0.0">
+            <file name="de-lore-hoelbrak-hallraven.xml" url=""/>
+        </update>
+    </info>
+    <public>
+        <h2>Widmung</h2>
+        <p>Dem Geist des Raben – List, Scharfsinn, Weitsicht, Erinnerung und Übergang.</p>
+        <h2>Bedeutung</h2>
+        <p>Die Halle des Raben ist die größte der vier großen Hallen Hoelbraks. Sie dient nicht als Wohnort, sondern als Ort der Ausrichtung, Deutung und stillen Entscheidung. Hier werden keine Befehle erteilt und keine Wahrheiten verkündet – hier wird beobachtet, erinnert und abgewogen. Worte haben Gewicht, Schweigen ebenso.</p>
+        <h2>Read-Aloud</h2>
+        <blockquote>
+            <p>Vor euch erhebt sich die Halle des Raben, ein gewaltiger Holzbau, dessen Front sich wie ein gespannter Schnabel gegen den grauen Himmel der Zittergipfel richtet. Zu beiden Seiten ragen dichte Baum- und Ästegewirre empor, aus denen riesige Eisskulpturen des Raben auf Hoelbrak herabblicken.Beim Betreten öffnet sich ein Raum von überwältigender Höhe. Die Decke verliert sich weit über euch im Dunkel des Holzes. Links und rechts liegen zwei Schreine, einander gegenübergestellt – der eine scharfkantig und verschlungen, der andere klar und ruhig. Zwischen ihnen zieht sich ein erhöhter Mittelgang durch die Halle, geschmückt mit Bannern, Windspielen und Standbildern vergangener Helden.</p>
+            <p>Mit jedem Schritt knarrt das Holz leise. Windspiele reagieren auf Bewegung und Luftzug, ein unregelmäßiges Klingen erfüllt den Raum. Stimmen werden weich, Worte tragen weit. An den Seiten führen schmale Treppen zu einer kleinen oberen Ebene, von der aus man die Halle überblicken kann.</p>
+            <p>Mehrere Norn halten sich hier auf, sprechen gedämpft oder schweigen ganz. Blicke sind aufmerksam, prüfend, nicht feindselig. In dieser Halle scheint jedes Wort eine Spur zu hinterlassen – und jedes unausgesprochene ebenso.</p>
+        </blockquote>
+        <h2>Architektur</h2>
+        <p>Ein kathedralenartiger Holzbau mit etwa 40 m Deckenhöhe. Vor der Halle wuchern dichte Baum- und Ästegewirre, aus denen gewaltige Eisskulpturen des Raben über die Stadt blicken.
+Im Inneren teilt sich die Halle in drei Ebenen:</p>
+        <ul>
+            <li>Links und rechts je ein Schrein, die Listigkeit und Scharfsinn repräsentieren</li>
+            <li>Ein leicht erhöhter Mittelgang, festlich geschmückt mit Bannern, Windspielen und Statuen</li>
+            <li>Schmale Treppen an Ost- und Westwand führen zu einer kleinen oberen Ebene, die der Beobachtung und Vorbereitung dient, nicht dem Aufenthalt</li>
+        </ul>
+        <h2>Atmosphäre</h2>
+        <p>Gedämpfte Stimmen, knarrendes Holz, das leise Klingen von Windspielen. Geruch von Harz, Rauch und kalter Luft. Bewegungen und Worte tragen weit, verlieren aber an Schärfe. Die Halle wirkt wachsam, nicht feierlich. Rabenschamanen halten sich hier zeitweise auf, kehren aber in ihre Zelte und Familien zurück. Die Halle kennt keinen abgeschlossenen Klerus. Verkünderin der Halle ist Moda die Flinke. Einzelne Zubereiter oder Schamanen arbeiten hier gelegentlich still im Hintergrund, ohne Marktstände oder Auslagen.</p>
+    </public>
+    <!--<gm>
+    <p>Bei schönem Wetter ist es kalt, bei normalem Wetter ist es bitterkalt, bei schlechtem Wetter ist es gefährlich, sich im Freien aufzuhalten. Konstitutionsrettungswürfe gegen Erschöpfung sind angemessen.</p>
+  </gm>-->
+    <!--<images>
+    <image href="https://wiki-de.guildwars2.com/images/b/bd/Hoelbrak_Karte.jpg"
+           alt="Karte von Hoelbrak"/>
+  </images>-->
+</lore>

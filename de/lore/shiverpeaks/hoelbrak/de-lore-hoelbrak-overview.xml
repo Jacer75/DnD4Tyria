@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-lore.xsl"?>
+<lore id="lore-hoelbrak-overview" title="Hoelbrak" source="DnD4Tyria">
+
+  <info>
+    <description>Hauptstadt der Norn in den Zittergipfeln</description>
+    <author url="">DnD4Tyria</author>
+    <update version="1.0.0">
+      <file name="d4t-lore-hoelbrak-overview.xml" url=""/>
+    </update>
+  </info>
+
+  <public>
+    <p>Hoelbrak ist die Hauptstadt der Norn und liegt im Herzen der Zittergipfel, umgeben von Schnee, Eis und unnachgiebigem Fels. Die Stadt ist kein Zufluchtsort aus Komfort, sondern aus Notwendigkeit entstanden – ein Sammelpunkt für ein Volk, das vor Jormags Winter nach Süden gedrängt wurde und dennoch standhält. Gewaltige Hallen, weite Plätze und einfache Zelte existieren hier nebeneinander und spiegeln die nornische Kultur wider: stolz, individuell, gemeinschaftlich und rau. Hoelbrak ist kein Ort starrer Ordnung, sondern ein lebendiges Gefüge aus Geschichten, Ruhm, Verlust und Zusammenhalt – ein Knotenpunkt, von dem aus die Norn in die Zittergipfel hinausziehen und zu dem sie immer wieder zurückkehren.</p>
+  </public>
+
+  <gm>
+    <p>Bei schönem Wetter ist es kalt, bei normalem Wetter ist es bitterkalt, bei schlechtem Wetter ist es gefährlich, sich im Freien aufzuhalten. Konstitutionsrettungswürfe gegen Erschöpfung sind angemessen.</p>
+  </gm>
+
+  <!--<images>
+    <image href="https://wiki-de.guildwars2.com/images/b/bd/Hoelbrak_Karte.jpg"
+           alt="Karte von Hoelbrak"/>
+  </images>-->
+
+</lore>
