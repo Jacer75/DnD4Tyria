@@ -48,6 +48,23 @@
           <xsl:apply-templates select="entry/statblocks/*"/>
         </xsl:if>
 
+        <xsl:if test="entry/pages/page">
+          <h2>Inhalte</h2>
+          <ul>
+            <xsl:for-each select="entry/pages/page">
+              <li>
+                <a>
+                  <xsl:attribute name="href"><xsl:value-of select="@file"/></xsl:attribute>
+                  <xsl:value-of select="title"/>
+                </a>
+                <xsl:if test="summary">
+                  <div><xsl:value-of select="summary"/></div>
+                </xsl:if>
+              </li>
+            </xsl:for-each>
+          </ul>
+        </xsl:if>
+
       </body>
     </html>
   </xsl:template>

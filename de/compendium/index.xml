@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-entry.xsl"?>
+<entry
+  id="compendium-index"
+  kind="index"
+  title="Kompendium"
+  source="DnD4Tyria">
+
+  <public>
+    <p>Regelartikel, Übersichten und tyrianische Anpassungen.</p>
+  </public>
+
+  <pages>
+    <page file="races/index.xml">
+      <title>Völker</title>
+      <summary>Übersicht über die spielbaren Völker in DnD4Tyria und ihre Regeln.</summary>
+    </page>
+    
+    <page file="classes/index.xml">
+      <title>Klassen</title>
+      <summary>Übersicht über die Klassen in DnD4Tyria.</summary>
+    </page>
+  
+    <page file="de-bestiary-monstertypes.xml">
+      <title>Kreaturentypen</title>
+      <summary>Übersicht der Kreaturentypen in D&amp;D 5e mit tyrianischer Einordnung.</summary>
+    </page>
+
+    <page file="de-compendium-spells.xml">
+      <title>Zauber</title>
+      <summary>Es mussten manche Änderungen an den D&amp;D-Zaubern vorgenommen werden, um Tyria und die Nebel abzubilden. Diese Seite zeigt die Zauber für den Aurora-Download an.</summary>
+    </page>
+
+    <page file="de-compendium-languages.xml">
+      <title>Sprachen</title>
+      <summary>Eine Übersicht über die Sprachen, die in Tyria gesprochen und geschrieben werden oder wurden.</summary>
+    </page>
+    
+    <!-- weitere Artikel -->
+    <!--
+    <page file="...">
+      <title>...</title>
+      <summary>...</summary>
+    </page>
+    -->
+  </pages>
+
+</entry>

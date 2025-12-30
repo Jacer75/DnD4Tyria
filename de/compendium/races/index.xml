@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-entry.xsl"?>
+<entry
+  id="compendium-index"
+  kind="index"
+  title="Kompendium"
+  source="DnD4Tyria">
+
+  <public>
+    <p>In Tyria leben ganz andere spielbare Völker. Diese sind hier beschrieben.</p>
+  </public>
+
+  <pages>
+    <page file="de-compendium-races-asura.xml">
+      <title>Asura</title>
+      <summary>Kleine Statur, großer Verstand – Meister der arkanen Wissenschaft.</summary>
+    </page>
+    
+    <page file="de-compendium-races-charr.xml">
+      <title>Charr</title>
+      <summary>Die Charr sind ein katzenartiges, kriegerisches Volk mit straffer militärischer Organisation und einem tief verwurzelten Glauben an Technik, Disziplin und Stärke durch Einheit.</summary>
+    </page>
+    
+    <page file="de-compendium-races-human.xml">
+      <title>Menschen</title>
+      <summary>Die Menschen Tyrias sind zäh, ehrgeizig und gläubig. Sie haben große Reiche errichtet und wieder verloren – und dennoch nie ihren Mut.</summary>
+    </page>
+
+    <page file="de-compendium-races-norn.xml">
+      <title>Norn</title>
+      <summary>Die Norn sind riesenhafte, stolze Krieger und Jäger aus dem Norden Tyrias. Sie leben für Ruhm, erzählen ihre Taten am Feuer – und suchen ständig nach der nächsten Herausforderung. </summary>
+    </page>
+
+    <page file="de-compendium-races-sylvari.xml">
+      <title>Sylvari</title>
+      <summary>Sylvari sind pflanzenhafte Humanoide, die aus dem Blassen Baum hervorgehen. Sie sind junge, wissbegierige Wesen, die die Welt mit frischen Augen betrachten. Der "Traum der Träume" verbindet sie miteinander und gibt ihnen ein Gefühl kollektiver Intuition.</summary>
+    </page>
+
+  </pages>
+
+</entry>

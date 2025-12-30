@@ -3,7 +3,7 @@
     <info>
         <name>Zaubersprüche (DnD4Tyria)</name>
         <author url="">Aurora4Tyria</author>
-        <update version="1.0.1">
+        <update version="1.0.2">
             <file name="d4t-spells.xml" url=""/>
         </update>
     </info>
@@ -19,7 +19,7 @@
             <set name="school">Conjuration</set>
             <set name="time">1 Aktion</set>
             <set name="duration">Augenblicklich</set>
-            <set name="range">18 Meter (60 feet)</set>
+            <set name="range">18m (60 feet)</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
@@ -43,7 +43,7 @@
             <set name="school">Abjuration</set>
             <set name="time">1 Aktion</set>
             <set name="duration">8 Stunden</set>
-            <set name="range">9 Meter (30 feet)</set>
+            <set name="range">9m (30 feet)</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">true</set>
@@ -505,14 +505,16 @@
     </element>
     <element name="Nebelprojektion (Astral Projection)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_ASTRAL_PROJECTION">
         <supports>Cleric, Warlock, Wizard</supports>
-        <description>
-            <p>Du und bis zu acht willige Kreaturen in Reichweite projizieren eure astralen Körper in die **Nebel** – den grenzenlosen Schleier zwischen den Welten (der Zauber schlägt fehl, wenn du dich bereits in den Nebeln befindest). Euer materieller Körper verbleibt zurück, fällt in tiefe Bewusstlosigkeit und benötigt weder Nahrung noch Luft – und altert nicht.</p>
-            <p class="indent">Dein astraler Körper gleicht deinem sterblichen in fast jeder Hinsicht – einschließlich deiner Werte und Ausrüstung. Der größte Unterschied ist eine silberne Schnur, die zwischen deinen Schulterblättern entspringt, hinter dir herweht und nach etwa 30 Zentimetern unsichtbar wird. Diese Schnur verbindet dich mit deinem physischen Körper. Solange sie intakt ist, kannst du jederzeit zurückkehren. Wird sie durchtrennt – was nur durch explizit angegebene Effekte möglich ist – stirbst du augenblicklich.</p>
-            <p class="indent">Dein astrales Selbst kann frei durch die Nebel reisen und dort durch Portale zu anderen Ebenen schreiten. Wenn du eine andere Ebene betrittst oder zu deiner Ursprungswelt zurückkehrst, wird dein Körper samt Ausrüstung durch die silberne Schnur nachgezogen, sodass du wieder in ihn eintreten kannst. Dein astrales Selbst ist eine getrennte Inkarnation – alle erlittenen Effekte oder Schäden betreffen deinen physischen Körper nicht und vergehen bei der Rückkehr.</p>
-            <p class="indent">Der Zauber endet für dich und deine Gefährten, wenn du ihn mit einer Aktion beendest. Dann kehren alle betroffenen Kreaturen zu ihren Körpern zurück und erwachen.</p>
-            <p class="indent">Der Zauber kann vorzeitig enden: Wird *Magie bannen* erfolgreich gegen deinen Körper oder dein astrales Selbst gewirkt, endet der Zauber für dich. Dasselbe geschieht, wenn eines der beiden 0 Trefferpunkte erreicht. In diesem Fall zieht die silberne Schnur dich automatisch zurück, sofern sie noch intakt ist.</p>
-            <p class="indent">Solltest du allein zurückkehren, bleiben deine Gefährten in den Nebeln zurück und müssen einen eigenen Weg zurückfinden – meist durch das Erreichen von 0 Trefferpunkten.</p>
-        </description>
+<description>
+    <p>Du und bis zu acht willige Kreaturen in Reichweite verlagern euer Bewusstsein und eure magische Essenz in die Nebel – den formlosen Schleier zwischen den Welten. Der Zauber schlägt fehl, wenn du dich bereits in den Nebeln befindest. Eure physischen Körper verbleiben an ihrem Ort, fallen in tiefe Bewusstlosigkeit und sind während der Wirkungsdauer stabil: Sie benötigen weder Nahrung noch Luft und altern nicht.</p>
+    <p class="indent">In den Nebeln manifestiert sich für jede betroffene Kreatur eine Nebelgestalt, die dem jeweiligen Körper in Aussehen, Werten und getragener Ausrüstung entspricht. Diese Gestalt ist keine eigenständige Inkarnation, sondern eine Projektion eurer Essenz.</p>
+    <p class="indent">Jede Nebelgestalt ist durch eine silberne Schnur mit ihrem physischen Körper verbunden. Diese Verbindung ist normalerweise unsichtbar und kann nur durch ausdrücklich benannte Effekte getrennt werden. Solange die silberne Schnur intakt ist, kann die Kreatur jederzeit zu ihrem Körper zurückkehren. Wird die Schnur durchtrennt, stirbt die Kreatur augenblicklich.</p>
+    <p class="indent">Die Nebelgestalt kann sich frei innerhalb der Nebel bewegen und dort bestehende Übergänge, Fraktale oder stabile Nebelpfade nutzen. Beim Verlassen der Nebel oder bei der Rückkehr in die materielle Welt wird die Projektion aufgelöst und die Kreatur kehrt augenblicklich in ihren physischen Körper zurück.</p>
+    <p class="indent">Alle Schäden, Zustände und Effekte, die der Nebelgestalt widerfahren, betreffen ausschließlich die Projektion und vergehen bei der Rückkehr, sofern nicht ausdrücklich anders angegeben.</p>
+    <p class="indent">Der Zauber endet für dich und alle betroffenen Kreaturen, wenn du ihn mit einer Aktion beendest. Alle kehren dann gleichzeitig zu ihren Körpern zurück und erwachen.</p>
+    <p class="indent">Der Zauber endet vorzeitig für eine Kreatur, wenn entweder ihr physischer Körper oder ihre Nebelgestalt 0 Trefferpunkte erreicht oder wenn <i>Magie bannen</i> erfolgreich auf eines von beiden gewirkt wird. In diesem Fall zieht die silberne Schnur die Essenz der Kreatur sofort zurück, sofern sie noch intakt ist.</p>
+    <p class="indent">Solltest du den Zauber beenden oder selbst zurückkehren, während andere Kreaturen noch projiziert sind, verbleiben diese in den Nebeln und müssen eigenständig einen Weg zur Rückkehr finden.</p>
+</description>
         <setters>
             <set name="keywords">Nebel, Reise</set>
             <set name="level">9</set>
@@ -531,7 +533,7 @@
     <element name="Vorahnung (Augury)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_AUGURY">
         <supports>Cleric</supports>
         <description>
-            <p>Durch das Werfen edelsteinbesetzter Stäbchen, das Lesen von Drachenknochen, das Auslegen verzierter Karten oder ein anderes Wahrsagewerkzeug empfängst du ein Omen von einer anderenweltlichen Entität über die Folgen eines bestimmten Handelns, das du innerhalb der nächsten 30 Minuten planst. Der SL wählt eines der folgenden Omen:</p>
+            <p>Durch das Werfen edelsteinbesetzter Stäbchen, das Lesen von Ettinknochen, das Auslegen verzierter Karten oder ein anderes Wahrsagewerkzeug empfängst du ein Omen von einer anderenweltlichen Entität über die Folgen eines bestimmten Handelns, das du innerhalb der nächsten 30 Minuten planst. Der SL wählt eines der folgenden Omen:</p>
             <ul>
                 <li>Glück – für gute Ergebnisse</li>
                 <li>Unheil – für schlechte Ergebnisse</li>
@@ -665,10 +667,11 @@
     </element>
     <element name="Verbannendes Niederstrecken (Banishing Smite)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_BANISHING_SMITE">
         <supports>Paladin</supports>
-        <description>
-            <p>Das nächste Mal, wenn du eine Kreatur mit einem Waffenangriff triffst, bevor dieser Zauber endet, knistert deine Waffe vor magischer Kraft, und der Angriff verursacht zusätzlich 5W10 Energieschaden (force damage).</p>
-            <p class="indent">Wird das Ziel durch diesen Angriff auf 50 Trefferpunkte oder weniger reduziert, wird es verbannt. Ist die Kreatur nicht aus deiner derzeitigen Existenzebene, kehrt sie auf ihre Heimatebene zurück. Ist sie einheimisch, wird sie in eine harmlose Halbebene verbannt. Dort ist sie handlungsunfähig (incapacitated). Sie bleibt dort, bis der Zauber endet, dann kehrt sie an ihren ursprünglichen Ort zurück – oder an den nächstgelegenen freien Ort, falls dieser besetzt ist.</p>
-        </description>
+<description>
+    <p>Das nächste Mal, wenn du eine Kreatur mit einem Waffenangriff triffst, bevor dieser Zauber endet, knistert deine Waffe vor bannender Kraft, und der Angriff verursacht zusätzlich 5W10 Energieschaden (force damage).</p>
+    <p class="indent">Wird das Ziel durch diesen Angriff auf 50 Trefferpunkte oder weniger reduziert, wird es verbannt: Es wird der materiellen Welt entrissen und in die Nebel gerissen. Stammt die Kreatur nicht aus Tyria (das heißt, sie ist nicht an die materielle Welt gebunden), wird sie von der Bannung vollständig abgestoßen und kehrt an ihren Ursprung zurück; in diesem Fall erscheint sie nicht wieder, wenn der Zauber endet.</p>
+    <p class="indent">Ist die Kreatur hingegen einheimisch, wird sie in eine harmlose, abgeschirmte Nebeltasche verbannt. Dort ist sie handlungsunfähig (incapacitated). Sie bleibt dort, bis der Zauber endet; dann kehrt sie an den Ort zurück, an dem sie verbannt wurde – oder an den nächstgelegenen freien Ort, falls dieser besetzt ist.</p>
+</description>
         <setters>
             <set name="keywords">Energie, Niederstrecken</set>
             <set name="level">5</set>
@@ -686,15 +689,15 @@
     </element>
     <element name="Verbannung (Banishment)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_BANISHMENT">
         <supports>Cleric, Paladin, Sorcerer, Warlock, Wizard</supports>
-        <description>
-            <p>Du versuchst, eine Kreatur, die du in Reichweite sehen kannst, in eine andere Existenzebene zu verbannen. Das Ziel muss einen Rettungswurf auf Charisma ablegen. Bei einem Misserfolg wird es verbannt.</p>
-            <p class="indent">Ist das Ziel auf der aktuellen Ebene beheimatet, wird es in eine harmlose Halbebene verbannt, in der es handlungsunfähig ist (incapacitated). Es bleibt dort, bis der Zauber endet, und erscheint dann wieder am ursprünglichen Ort oder an einem benachbarten freien Ort.</p>
-            <p class="indent">Ist das Ziel jedoch nicht auf der aktuellen Ebene beheimatet, wird es mit einem leisen Ploppen auf seine Heimatebene zurückgeschleudert. Endet der Zauber vor Ablauf von 1 Minute, kehrt das Ziel wie oben beschrieben zurück. Bleibt der Zauber jedoch volle 1 Minute bestehen, bleibt das Ziel dauerhaft verbannt und kehrt nicht zurück.</p>
-            <p class="indent">
-                <b>
-                    <i>Auf höheren Graden.</i>
-                </b> Wenn du diesen Zauber mit einem Zauberplatz des 5. oder höheren Grades wirkst, kannst du eine zusätzliche Kreatur pro Grad über dem 4. hinaus als Ziel wählen.</p>
-        </description>
+<description>
+    <p>Du versuchst, eine Kreatur, die du in Reichweite sehen kannst, der materiellen Welt zu entreißen und in die Nebel zu stoßen. Das Ziel muss einen Rettungswurf auf Charisma ablegen. Bei einem Misserfolg wird es verbannt.</p>
+    <p class="indent">Ist das Ziel an Tyria gebunden (das heißt, es stammt aus der materiellen Welt), wird es in eine harmlose, abgeschirmte Nebeltasche verbannt. Dort ist es handlungsunfähig (incapacitated). Es bleibt dort, bis der Zauber endet, und erscheint anschließend wieder an dem Ort, an dem es verbannt wurde, oder an einem benachbarten freien Ort.</p>
+    <p class="indent">Ist das Ziel hingegen nicht an die materielle Welt gebunden, wird es augenblicklich von den Nebeln abgestoßen und an seinen Ursprung zurückgedrängt. Endet der Zauber, bevor 1 Minute verstrichen ist, kehrt das Ziel wie oben beschrieben zurück. Hält der Zauber jedoch volle 1 Minute an, wird die Verbindung zur materiellen Welt dauerhaft gelöst, und das Ziel kehrt nicht zurück.</p>
+    <p class="indent">
+        <b>
+            <i>Auf höheren Graden.</i>
+        </b> Wenn du diesen Zauber mit einem Zauberplatz des 5. oder höheren Grades wirkst, kannst du eine zusätzliche Kreatur pro Grad über dem 4. hinaus als Ziel wählen.</p>
+</description>
         <setters>
             <set name="keywords">Verbannung, Kontrolle</set>
             <set name="level">4</set>
@@ -1278,9 +1281,13 @@
     </element>
     <element name="Klon (Clone)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_CLONE">
         <supports>Wizard</supports>
-        <description>
-            <p>Dieser Zauber erschafft ein inaktives Duplikat einer lebenden Kreatur als Schutzmaßnahme gegen den Tod. Der Klon wächst in einem versiegelten Behälter heran und erreicht nach 120 Tagen seine vollständige Größe und Reife.</p>
-        </description>
+<description>
+    <p>Dieser Zauber erschafft ein inaktives Duplikat einer lebenden Kreatur als Schutzmaßnahme gegen den Tod. Der Klon wächst in einem versiegelten Behälter heran und erreicht nach 120 Tagen seine vollständige Größe und Reife. Du kannst entscheiden, ob der Klon eine jüngere Version derselben Kreatur darstellen soll.</p>
+    <p class="indent">Der Klon bleibt nach seiner Reifung dauerhaft inaktiv und verfällt nicht, solange sein Behälter unversehrt und versiegelt bleibt.</p>
+    <p class="indent">Zu jedem Zeitpunkt nach der vollständigen Reifung des Klons gilt: Stirbt die ursprüngliche Kreatur, so geht ihre Seele in den Klon über, sofern die Seele frei ist und bereitwillig zurückkehrt. Der Klon erwacht daraufhin zum Leben.</p>
+    <p class="indent">Der erwachte Klon ist körperlich identisch mit der ursprünglichen Kreatur und besitzt dieselbe Persönlichkeit, dieselben Erinnerungen und dieselben Fähigkeiten, jedoch keine der Ausrüstung der ursprünglichen Kreatur.</p>
+    <p class="indent">Die sterblichen Überreste der ursprünglichen Kreatur, sofern sie noch existieren, werden inert und können danach nicht mehr ins Leben zurückgerufen werden, da sich die Seele der Kreatur nun an einem anderen Ort befindet.</p>
+</description>
         <setters>
             <set name="keywords">Schutz, Wiederbelebung</set>
             <set name="level">8</set>
@@ -1819,10 +1826,11 @@
     </element>
     <element name="Kontakt zu anderen Ebenen (Contact Other Plane)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_CONTACT_OTHER_PLANE">
         <supports>Warlock, Wizard</supports>
-        <description>
-            <p>Du nimmst mental Kontakt zu einem Halbgott, dem Geist eines längst verstorbenen Weisen oder einer anderen rätselhaften Entität aus einer fremden Ebene auf. Der Kontakt zu solch außerweltlichem Wissen kann deinen Verstand belasten oder sogar zerstören. Wenn du diesen Zauber wirkst, musst du einen Intelligenzrettungswurf gegen SG 15 ablegen. Bei einem Misserfolg erleidest du 6W6 psychischen Schaden und wirst wahnsinnig, bis du eine lange Rast beendest. Während du wahnsinnig bist, kannst du keine Aktionen ausführen, verstehst keine gesprochene Sprache, kannst nicht lesen und sprichst nur Kauderwelsch. Ein Zauber wie <i>Große Genesung</i> (Greater Restoration) hebt diesen Zustand auf.</p>
-            <p class="indent">Bei einem erfolgreichen Rettungswurf darfst du der Entität bis zu fünf Fragen stellen. Alle Fragen müssen innerhalb der Wirkungsdauer des Zaubers gestellt werden. Die Spielleitung beantwortet jede Frage mit einem Wort, z. B. „ja“, „nein“, „vielleicht“, „nie“, „irrelevant“ oder „unklar“ (wenn die Entität die Antwort nicht kennt). Sollte eine Ein-Wort-Antwort irreführend sein, kann die Spielleitung stattdessen eine kurze Phrase verwenden.</p>
-        </description>
+<description>
+    <p>Du zwingst deinen Geist in Kontakt mit einem mächtigen Bewusstsein in den Nebeln – etwa einer uralten Nebelentität, dem Echo einer Gottheit oder der Seele eines lange verstorbenen Weisen. Der Zugriff auf solches Wissen überfordert sterbliche Wahrnehmung und kann den Verstand nachhaltig schädigen.</p>
+    <p class="indent">Wenn du diesen Zauber wirkst, musst du einen Intelligenzrettungswurf gegen SG 15 ablegen. Bei einem Misserfolg erleidest du 6W6 psychischen Schaden und wirst wahnsinnig, bis du eine lange Rast beendest. Während du wahnsinnig bist, kannst du keine Aktionen ausführen, verstehst keine gesprochene Sprache, kannst nicht lesen und sprichst nur Kauderwelsch. Ein Zauber wie <i>Große Genesung</i> hebt diesen Zustand auf.</p>
+    <p class="indent">Bei einem erfolgreichen Rettungswurf darfst du der kontaktierten Entität bis zu fünf Fragen stellen. Alle Fragen müssen innerhalb der Wirkungsdauer des Zaubers gestellt werden. Die Spielleitung beantwortet jede Frage mit einem Wort, z. B. „ja“, „nein“, „vielleicht“, „nie“, „irrelevant“ oder „unklar“, falls das Wissen der Entität begrenzt oder unzugänglich ist. Sollte eine Ein-Wort-Antwort irreführend sein, kann stattdessen eine kurze Phrase verwendet werden.</p>
+</description>
         <setters>
             <set name="keywords">divination</set>
             <set name="level">5</set>
@@ -2208,22 +2216,22 @@
     </element>
     <element name="Erschaffung (Creation)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_CREATION">
         <supports>Sorcerer, Artificer</supports>
-        <description>
-            <p>Du ziehst Schleier aus Schattenmaterial aus dem Schattenfell heran, um innerhalb von 9m (30 feet) einen leblosen Gegenstand aus pflanzlichem Material zu erschaffen – etwa Stoffe, Seile, Holz oder Ähnliches. Du kannst mit diesem Zauber auch mineralische Objekte wie Stein, Kristall oder Metall erschaffen. Der Gegenstand darf nicht größer sein als ein Würfel mit 1,50m (5 feet) Kantenlänge und muss aus einer dir bekannten Form und einem bekannten Material bestehen.</p>
-            <p class="indent">Die Dauer hängt vom Material ab. Besteht das Objekt aus mehreren Materialien, gilt die kürzeste Dauer:</p>
-            <ul>
-                <li>Pflanzliches Material – 1 Tag</li>
-                <li>Stein oder Kristall – 12 Stunden</li>
-                <li>Unedle Metalle – 1 Stunde</li>
-                <li>Edelsteine – 10 Minuten</li>
-                <li>Adamant oder Mithral – 1 Minute</li>
-            </ul>
-            <p class="indent">Wird ein mit diesem Zauber erzeugter Gegenstand als Materialkomponente für einen anderen Zauber verwendet, schlägt dieser Zauber fehl.</p>
-            <p class="indent">
-                <b>
-                    <i>Auf höheren Zaubergraden.</i>
-                </b> Wenn du diesen Zauber mit einem Zauberplatz des 6. oder höheren Grades wirkst, vergrößert sich die Würfellänge des Objekts um jeweils 1,50m (5 feet) pro Slot-Stufe über 5 hinaus.</p>
-        </description>
+<description>
+    <p>Du ziehst formlose Substanz aus den Nebeln heran und verdichtest sie zu einem leblosen Gegenstand aus pflanzlichem Material – etwa Stoff, Seil, Holz oder Ähnlichem – innerhalb von 9 Metern (30 feet). Du kannst mit diesem Zauber auch mineralische Objekte wie Stein, Kristall oder Metall erschaffen. Der Gegenstand darf nicht größer sein als ein Würfel mit 1,50 Metern (5 feet) Kantenlänge und muss aus einer dir bekannten Form und einem dir bekannten Material bestehen.</p>
+    <p class="indent">Die durch diesen Zauber geschaffene Materie ist magisch stabilisiert, jedoch nicht dauerhaft. Die Wirkungsdauer hängt vom verwendeten Material ab. Besteht das Objekt aus mehreren Materialien, gilt die jeweils kürzeste Dauer:</p>
+    <ul>
+        <li>Pflanzliches Material – 1 Tag</li>
+        <li>Stein oder Kristall – 12 Stunden</li>
+        <li>Unedle Metalle – 1 Stunde</li>
+        <li>Edelsteine – 10 Minuten</li>
+        <li>Adamant oder Mithral – 1 Minute</li>
+    </ul>
+    <p class="indent">Wird ein mit diesem Zauber erschaffener Gegenstand als Materialkomponente für einen anderen Zauber verwendet, schlägt dieser Zauber fehl.</p>
+    <p class="indent">
+        <b>
+            <i>Auf höheren Zaubergraden.</i>
+        </b> Wenn du diesen Zauber mit einem Zauberplatz des 6. oder höheren Grades wirkst, vergrößert sich die Kantenlänge des erschaffenen Würfels um jeweils 1,50 Meter (5 feet) pro Zaubergrad über dem 5. hinaus.</p>
+</description>
         <setters>
             <set name="keywords">creation</set>
             <set name="level">5</set>
@@ -2439,11 +2447,12 @@
     </element>
     <element name="Halbebene (Demiplane)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_DEMIPLANE">
         <supports>Warlock, Wizard</supports>
-        <description>
-            <p>Du erschaffst eine schattenhafte Tür auf einer ebenen, festen Oberfläche, die du innerhalb von 18m (60 feet) sehen kannst. Die Tür ist groß genug, damit Kreaturen mittlerer Größe (Medium) ungehindert hindurchgehen können. Beim Öffnen führt die Tür zu einer Halbebene, die wie ein leerer Raum erscheint, 9m (30 feet) lang, breit und hoch, und aus Holz oder Stein besteht.</p>
-            <p>Wenn der Zauber endet, verschwindet die Tür, und alle Kreaturen oder Gegenstände in der Halbebene bleiben dort eingeschlossen, da die Tür auch von der anderen Seite verschwindet.</p>
-            <p>Jedes Mal, wenn du diesen Zauber wirkst, kannst du eine neue Halbebene erschaffen oder die Tür mit einer Halbebene verbinden, die du bei einer früheren Anwendung dieses Zaubers erschaffen hast. Wenn du außerdem die Natur und den Inhalt einer Halbebene kennst, die durch diesen Zauber von einer anderen Kreatur erschaffen wurde, kannst du die Tür stattdessen mit dieser Halbebene verbinden lassen.</p>
-        </description>
+<description>
+    <p>Du erschaffst eine schattenhafte Tür auf einer ebenen, festen Oberfläche, die du innerhalb von 18 Metern (60 feet) sehen kannst. Die Tür ist groß genug, damit Kreaturen mittlerer Größe (Medium) ungehindert hindurchgehen können. Beim Öffnen führt die Tür in eine stabilisierte Nebelblase – einen abgeschirmten Raum innerhalb der Nebel.</p>
+    <p class="indent">Diese Nebelblase erscheint als leerer Raum mit einer Ausdehnung von 9 Metern (30 feet) in Länge, Breite und Höhe und besteht aus einfachem Holz oder Stein. Sie ist vollständig vom restlichen Nebelraum isoliert und bleibt in ihrer Struktur stabil, solange sie nicht von außen beeinflusst wird.</p>
+    <p class="indent">Wenn der Zauber endet, verschwindet die Tür. Alle Kreaturen oder Gegenstände, die sich zu diesem Zeitpunkt in der Nebelblase befinden, bleiben dort eingeschlossen, da kein Ausgang mehr existiert.</p>
+    <p class="indent">Jedes Mal, wenn du diesen Zauber wirkst, kannst du entweder eine neue Nebelblase erschaffen oder die Tür mit einer Nebelblase verbinden, die du durch eine frühere Anwendung dieses Zaubers erschaffen hast. Wenn du außerdem die Beschaffenheit und den Inhalt einer Nebelblase kennst, die durch diesen Zauber von einer anderen Kreatur erschaffen wurde, kannst du die Tür stattdessen mit dieser verbinden.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">8</set>
@@ -2640,14 +2649,15 @@
     </element>
     <element name="Gutes und Böses bannen (Dispel Evil and Good)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_DISPEL_EVIL_AND_GOOD">
         <supports>Cleric, Paladin</supports>
-        <description>
-            <p>Schimmernde Energie umgibt dich und schützt dich vor Feenwesen, Untoten und Kreaturen, die nicht aus der materiellen Ebene stammen. Für die Wirkungsdauer haben Celestische, Elementare, Feenwesen, Unholde und Untote Nachteil bei Angriffswürfen gegen dich.</p>
-            <p>Du kannst den Zauber vorzeitig beenden, indem du eine der folgenden besonderen Funktionen nutzt:</p>
-            <p class="indent">
-                <b>Bannzauber.</b> Als Aktion berührst du eine Kreatur in Reichweite, die von einem Celestischen, Elementar, Feenwesen, Unhold oder Untoten bezaubert, verängstigt oder besessen ist. Die betroffene Kreatur ist anschließend nicht länger von einer solchen Wirkung betroffen.</p>
-            <p class="indent">
-                <b>Verbannung.</b> Als Aktion führst du einen Nahkampf-Zauberangriff gegen einen Celestischen, Elementar, ein Feenwesen, einen Unhold oder einen Untoten durch, den du erreichen kannst. Bei einem Treffer versuchst du, die Kreatur auf ihre Heimatebene zurückzuschicken. Sie muss einen Rettungswurf auf Charisma bestehen oder wird – sofern sie sich nicht bereits dort befindet – auf ihre Heimatebene verbannt. Untote kehren ins Schattenreich (Shadowfell), Feenwesen in die Feenwildnis (Feywild) zurück.</p>
-        </description>
+<description>
+    <p>Schimmernde Energie umgibt dich und schützt dich vor Feenwesen, Untoten und Kreaturen, die nicht an die materielle Welt gebunden sind. Für die Wirkungsdauer haben Celestische, Elementare, Feenwesen, Unholde und Untote Nachteil bei Angriffswürfen gegen dich.</p>
+    <p>Du kannst den Zauber vorzeitig beenden, indem du eine der folgenden besonderen Funktionen nutzt:</p>
+    <p class="indent">
+        <b>Bannzauber.</b> Als Aktion berührst du eine Kreatur in Reichweite, die von einem Celestischen, Elementar, Feenwesen, Unhold oder Untoten bezaubert, verängstigt oder besessen ist. Die betroffene Kreatur ist anschließend nicht länger von einer solchen Wirkung betroffen.</p>
+    <p class="indent">
+        <b>Verbannung.</b> Als Aktion führst du einen Nahkampf-Zauberangriff gegen einen Celestischen, Elementar, ein Feenwesen, einen Unhold oder einen Untoten durch, den du erreichen kannst. Bei einem Treffer versuchst du, die Kreatur aus der materiellen Welt zu verdrängen. Sie muss einen Rettungswurf auf Charisma bestehen oder wird verbannt.</p>
+    <p class="indent">Ist die Kreatur nicht an Tyria gebunden, wird sie von der Bannung abgestoßen und an ihren Ursprung zurückgedrängt; sie erscheint nicht wieder, sofern sie sich nicht bereits dort befindet. Ist die Kreatur an Tyria gebunden, wird sie stattdessen in eine abgeschirmte Nebeltasche verbannt und kehrt zurück, wenn der Effekt endet.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">5</set>
@@ -2714,10 +2724,11 @@
     </element>
     <element name="Weissagung (Divination)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_DIVINATION">
         <supports>Cleric</supports>
-        <description>
-            <p>Durch deine Magie und ein Opfer kommst du in Kontakt mit einer Gottheit oder deren Dienern. Du stellst eine einzelne Frage zu einem bestimmten Ziel, Ereignis oder einer Handlung, die innerhalb der nächsten 7 Tage eintreten soll. Die Spielleitung gibt dir eine wahrheitsgemäße Antwort. Diese Antwort kann ein kurzer Satz, ein rätselhafter Reim oder ein Omen sein.</p>
-            <p>Der Zauber berücksichtigt keine möglichen Umstände, die das Ergebnis verändern könnten, etwa das Wirken zusätzlicher Zauber oder der Verlust oder Gewinn eines Gefährten. Wenn du diesen Zauber zwei- oder mehrmals vor deiner nächsten langen Rast wirkst, besteht ab dem zweiten Mal eine kumulative Wahrscheinlichkeit von 25%, dass du eine zufällige Antwort erhältst. Diesen Wurf führt die Spielleitung im Geheimen aus.</p>
-        </description>
+<description>
+    <p>Durch deine Magie und ein Opfer richtest du deine Bitte an eine höhere geistige Instanz, ein kosmisches Prinzip oder ein Glaubenskonzept, dem du folgst. Du stellst eine einzelne Frage zu einem bestimmten Ziel, Ereignis oder einer Handlung, die innerhalb der nächsten 7 Tage eintreten soll. Die Spielleitung gibt dir eine wahrheitsgemäße Antwort. Diese Antwort kann ein kurzer Satz, ein rätselhafter Reim oder ein Omen sein.</p>
+    <p class="indent">Der Zauber berücksichtigt keine möglichen Umstände, die das Ergebnis verändern könnten, etwa das Wirken zusätzlicher Zauber oder den Verlust oder Gewinn eines Gefährten.</p>
+    <p class="indent">Wenn du diesen Zauber zwei- oder mehrmals vor deiner nächsten langen Rast wirkst, besteht ab dem zweiten Mal eine kumulative Wahrscheinlichkeit von 25%, dass du eine zufällige Antwort erhältst. Dieser Wurf wird von der Spielleitung im Geheimen durchgeführt.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">4</set>
@@ -2755,16 +2766,16 @@
     </element>
     <element name="Göttliches Wort (Divine Word)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_DIVINE_WORD">
         <supports>Cleric</supports>
-        <description>
-            <p>Du sprichst ein göttliches Wort, durchdrungen von der Macht, die die Welt zur Zeit der Schöpfung formte. Wähle eine beliebige Anzahl von Kreaturen, die du innerhalb von 9m (30 feet) sehen kannst. Jede Kreatur, die dich hören kann, muss einen Rettungswurf auf Charisma ablegen. Bei einem misslungenen Wurf erleidet die Kreatur einen Effekt entsprechend ihrer aktuellen Trefferpunkte:</p>
-            <ul>
-                <li>50 oder weniger Trefferpunkte: 1 Minute lang taub</li>
-                <li>40 oder weniger Trefferpunkte: 10 Minuten lang taub und blind</li>
-                <li>30 oder weniger Trefferpunkte: 1 Stunde lang taub, blind und betäubt</li>
-                <li>20 oder weniger Trefferpunkte: stirbt sofort</li>
-            </ul>
-            <p class="indent">Unabhängig von den Trefferpunkten wird ein Celestischer, Elementar, Feenwesen oder Unhold, der den Rettungswurf nicht besteht, auf seine Heimatebene zurückgeschleudert (sofern er sich nicht bereits dort befindet) und kann deine Ebene für 24 Stunden nicht mehr betreten – es sei denn durch einen <i>Wunsch</i>-Zauber (Wish).</p>
-        </description>
+<description>
+    <p>Du sprichst ein machtvolles Urwort, ein Echo jener ordnenden Kräfte, die die Welt in ihren frühesten Tagen geformt haben. Wähle eine beliebige Anzahl von Kreaturen, die du innerhalb von 9 Metern (30 feet) sehen kannst. Jede Kreatur, die dich hören kann, muss einen Rettungswurf auf Charisma ablegen. Bei einem misslungenen Wurf erleidet die Kreatur einen Effekt entsprechend ihrer aktuellen Trefferpunkte:</p>
+    <ul>
+        <li>50 oder weniger Trefferpunkte: 1 Minute lang taub</li>
+        <li>40 oder weniger Trefferpunkte: 10 Minuten lang taub und blind</li>
+        <li>30 oder weniger Trefferpunkte: 1 Stunde lang taub, blind und betäubt</li>
+        <li>20 oder weniger Trefferpunkte: stirbt sofort</li>
+    </ul>
+    <p class="indent">Unabhängig von ihren Trefferpunkten wird ein Celestischer, Elementar, Feenwesen oder Unhold, der den Rettungswurf nicht besteht, gewaltsam aus der materiellen Welt verdrängt. Ist die Kreatur nicht an Tyria gebunden, wird sie an ihren Ursprung zurückgestoßen und kann für die nächsten 24 Stunden nicht in die materielle Welt zurückkehren, es sei denn durch einen <i>Wunsch</i>-Zauber (Wish).</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">7</set>
@@ -2886,12 +2897,13 @@
     </element>
     <element name="Traum (Dream)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_DREAM">
         <supports>Bard, Warlock, Wizard</supports>
-        <description>
-            <p>Dieser Zauber formt die Träume einer Kreatur. Wähle eine dir bekannte Kreatur als Ziel. Das Ziel muss sich auf derselben Existenzebene befinden wie du. Kreaturen, die nicht schlafen – wie Elfen – können mit diesem Zauber nicht kontaktiert werden. Du selbst oder eine willige Kreatur, die du berührst, tritt in einen Trancezustand ein und fungiert als Bote. Während der Trance ist der Bote sich seiner Umgebung bewusst, kann jedoch keine Aktionen ausführen oder sich bewegen.</p>
-            <p class="indent">Wenn das Ziel schläft, erscheint der Bote in dessen Traum und kann mit dem Ziel sprechen, solange es schläft und der Zauber andauert. Der Bote kann außerdem die Traumumgebung gestalten, einschließlich Landschaften, Objekte und anderer Bilder. Der Bote kann die Trance jederzeit verlassen, was den Zauber vorzeitig beendet. Das Ziel erinnert sich beim Erwachen vollständig an den Traum. Ist das Ziel beim Wirken des Zaubers wach, weiß der Bote dies und kann entweder die Trance (und den Zauber) beenden oder warten, bis das Ziel einschläft – dann beginnt der Traumkontakt.</p>
-            <p class="indent">Du kannst den Boten monströs und furchterregend erscheinen lassen. In diesem Fall kann der Bote eine Botschaft von höchstens zehn Wörtern überbringen, danach muss das Ziel einen Rettungswurf auf Weisheit ablegen. Bei einem Misserfolg wird das Ziel von einem Albtraum geplagt, der die gesamte Schlafdauer anhält und verhindert, dass es durch diesen Schlaf irgendeinen Nutzen erlangt. Außerdem erleidet das Ziel beim Erwachen 3W6 psychischen Schaden.</p>
-            <p class="indent">Verfügst du über einen Körperteil des Ziels – etwa eine Haarlocke, einen Nagelschnitt oder etwas Vergleichbares – hat das Ziel Nachteil beim Rettungswurf.</p>
-        </description>
+<description>
+    <p>Dieser Zauber formt die Träume einer Kreatur. Wähle eine dir bekannte Kreatur als Ziel. Du selbst oder eine willige Kreatur, die du berührst, tritt in einen Trancezustand ein und fungiert als Bote. Während der Trance ist der Bote sich seiner Umgebung bewusst, kann jedoch keine Aktionen ausführen oder sich bewegen.</p>
+    <p class="indent">Sobald das Ziel in einen Schlaf- oder traumähnlichen Bewusstseinszustand fällt, erscheint der Bote in dessen Traum und kann mit dem Ziel sprechen, solange der Zauber andauert. Der Bote kann die Traumumgebung gestalten, einschließlich Landschaften, Objekten und anderen Bildern. Der Bote kann die Trance jederzeit verlassen, was den Zauber vorzeitig beendet. Das Ziel erinnert sich beim Erwachen vollständig an den Traum.</p>
+    <p class="indent">Ist das Ziel beim Wirken des Zaubers wach, erkennt der Bote dies und kann entweder die Trance (und damit den Zauber) beenden oder warten, bis das Ziel einschläft; dann beginnt der Traumkontakt.</p>
+    <p class="indent">Du kannst den Boten monströs und furchterregend erscheinen lassen. In diesem Fall kann der Bote eine Botschaft von höchstens zehn Wörtern überbringen. Anschließend muss das Ziel einen Rettungswurf auf Weisheit ablegen. Bei einem Misserfolg wird das Ziel von einem Albtraum geplagt, der die gesamte Schlafdauer anhält und verhindert, dass es aus diesem Schlaf irgendeinen Nutzen zieht. Außerdem erleidet das Ziel beim Erwachen 3W6 psychischen Schaden.</p>
+    <p class="indent">Verfügst du über einen Körperteil des Ziels – etwa eine Haarlocke, einen Nagelschnitt oder etwas Vergleichbares – hat das Ziel Nachteil beim Rettungswurf.</p>
+</description>
         <setters>
             <set name="keywords">psychic</set>
             <set name="level">5</set>
@@ -3157,16 +3169,17 @@
     </element>
     <element name="Ätherische Gestalten (Etherealness)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_ETHEREALNESS">
         <supports>Bard, Cleric, Sorcerer, Warlock, Wizard</supports>
-        <description>
-            <p>Du trittst in die Grenzregion der Ätherebene ein – jenen Bereich, in dem sie sich mit deiner aktuellen Ebene überschneidet. Du verweilst für die Wirkungsdauer oder bis du deine Aktion verwendest, um den Zauber zu beenden, in der Grenz-Ätherebene.</p>
-            <p class="indent">Während dieser Zeit kannst du dich in jede Richtung bewegen. Bewegst du dich nach oben oder unten, kostet dich jeder Schritt doppelt so viel Bewegung. Du kannst die Ebene, aus der du stammst, grau eingefärbt sehen und hören, aber nicht weiter als 18m (60 feet) sehen. Auf der Ätherebene kannst du nur mit anderen Kreaturen auf derselben Ebene interagieren – und nur diese mit dir. Kreaturen außerhalb der Ätherebene können dich weder wahrnehmen noch mit dir interagieren, es sei denn, sie verfügen über eine besondere Fähigkeit oder Magie.</p>
-            <p class="indent">Du ignorierst alle Objekte und Effekte, die nicht auf der Ätherebene existieren, und kannst dich durch feste Materie der Ursprungswelt bewegen. Wenn der Zauber endet, kehrst du sofort an den Ort deiner aktuellen Position auf deiner Ursprungswelt zurück. Befindest du dich dabei an einem Ort, der von einem festen Objekt oder einer Kreatur eingenommen wird, wirst du zur nächstgelegenen freien Position geschoben und erleidest Energieschaden (force) in Höhe des doppelten Werts der verschobenen Fußzahl.</p>
-            <p class="indent">Dieser Zauber hat keine Wirkung, wenn du ihn auf der Ätherebene oder auf einer Ebene wirkst, die nicht an sie grenzt (z.B. einer der äußeren Ebenen).</p>
-            <p class="indent">
-                <b>
-                    <i>Auf höheren Zaubergraden.</i>
-                </b> Wenn du diesen Zauber mit einem Zauberplatz des 8. Grades oder höher wirkst, kannst du für jede Slot-Stufe über 7 bis zu drei willige Kreaturen (einschließlich dir selbst) als Ziel bestimmen. Diese müssen sich beim Wirken innerhalb von 3m (10 feet) um dich befinden.</p>
-        </description>
+<description>
+    <p>Du trittst in den Schleier ein – den ätherischen Grenzraum, der Tyria wie eine geisterhafte Überlagerung durchdringt. Für die Wirkungsdauer oder bis du deine Aktion verwendest, um den Zauber zu beenden, existierst du in diesem Zustand des Dazwischen, halb gelöst von der materiellen Welt.</p>
+    <p class="indent">Während dieser Zeit kannst du dich in jede Richtung bewegen. Bewegst du dich nach oben oder unten, kostet dich jeder Schritt doppelt so viel Bewegung. Die Welt Tyrias erscheint dir grau und gedämpft; du kannst sie sehen und hören, jedoch nur bis zu einer Entfernung von 18 Metern (60 feet).</p>
+    <p class="indent">Im Schleier kannst du nur mit Kreaturen interagieren, die sich ebenfalls dort befinden. Kreaturen, die vollständig an die materielle Welt gebunden sind, können dich weder wahrnehmen noch mit dir interagieren, es sei denn, sie verfügen über besondere Fähigkeiten oder Magie, die den Schleier durchdringen.</p>
+    <p class="indent">Du ignorierst alle Objekte und Effekte, die ausschließlich in der materiellen Welt existieren, und kannst dich durch feste Materie bewegen. Wenn der Zauber endet, kehrst du augenblicklich an die entsprechende Position in Tyria zurück. Befindest du dich dabei an einem Ort, der von einem festen Objekt oder einer Kreatur eingenommen wird, wirst du zur nächstgelegenen freien Position geschoben und erleidest Energieschaden (force) in Höhe des doppelten Werts der verschobenen Fußzahl.</p>
+    <p class="indent">Dieser Zauber hat keine Wirkung, wenn du ihn wirkst, während du dich bereits im Schleier befindest oder wenn du dich an einem Ort aufhältst, der vollständig von Tyria gelöst ist.</p>
+    <p class="indent">
+        <b>
+            <i>Auf höheren Zaubergraden.</i>
+        </b> Wenn du diesen Zauber mit einem Zauberplatz des 8. Grades oder höher wirkst, kannst du für jede Slot-Stufe über dem 7. bis zu drei willige Kreaturen (einschließlich dir selbst) als Ziel bestimmen. Diese müssen sich beim Wirken innerhalb von 3 Metern (10 feet) um dich befinden.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">7</set>
@@ -3439,13 +3452,14 @@
     </element>
     <element name="Reittier finden (Find Steed)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_FIND_STEED">
         <supports>Paladin</supports>
-        <description>
-            <p>Du beschwörst einen Geist, der die Gestalt eines ungewöhnlich intelligenten, starken und loyalen Reittiers annimmt und eine dauerhafte bindung mit dir eingeht. Das Reittier erscheint in einem unbesetzten Bereich innerhalb von 9m (30 feet) und nimmt eine Form deiner Wahl an, etwa ein Streitross, Pony, Kamel, Elch oder großer Hund (Mastiff). (Dein SL kann auch andere Tierformen zulassen.) Das Reittier besitzt die Spielwerte der gewählten Form, ist jedoch ein Celestischer, Feenwesen oder Unhold (deine Wahl) statt seines ursprünglichen Kreaturentyps. Falls das Reittier eine Intelligenz von 5 oder weniger hätte, steigt sie auf 6 und es versteht eine Sprache deiner Wahl, die du sprichst.</p>
-            <p class="indent">Dein Reittier dient dir als Reittier im Kampf wie außerhalb. Ihr seid instinktiv miteinander verbunden, sodass ihr wie eine Einheit agieren könnt. Während du auf dem Reittier sitzt, kann jeder Zauber, der normalerweise nur dich betrifft, auch dein Reittier mit einschließen.</p>
-            <p class="indent">Sinkt das Reittier auf 0 Trefferpunkte, verschwindet es spurlos. Du kannst es auch jederzeit als Aktion entlassen, wodurch es ebenfalls verschwindet. In beiden Fällen beschwört ein erneutes Wirken dieses Zaubers dasselbe Reittier zurück – mit vollen Trefferpunkten.</p>
-            <p class="indent">Solange sich das Reittier innerhalb von 1,5km (1 mile) befindet, könnt ihr telepathisch miteinander kommunizieren.</p>
-            <p class="indent">Du kannst nur ein Reittier auf diese Weise gebunden haben. Als Aktion kannst du das Band jederzeit auflösen, wodurch das Reittier verschwindet.</p>
-        </description>
+<description>
+    <p>Du rufst einen Nebelgeist an und bindest ihn dauerhaft an dich. Dieser Geist manifestiert sich als ungewöhnlich intelligentes, starkes und loyales Reittier und erscheint in einem unbesetzten Bereich innerhalb von 9 Metern (30 feet). Die Gestalt des Reittiers wählst du beim Wirken des Zaubers, etwa eine Kriegsklaue, einen Raptor, einen Moa, einen Schweberochen oder eine vergleichbare reitfähige Kreatur (weitere Formen nach Ermessen der Spielleitung).</p>
+    <p class="indent">Das Reittier besitzt die Spielwerte der gewählten Form, ist jedoch ein Celestischer, Feenwesen oder Unhold (deine Wahl) statt seines ursprünglichen Kreaturentyps. Falls das Reittier normalerweise eine Intelligenz von 5 oder weniger hätte, steigt sie auf 6, und es versteht eine Sprache deiner Wahl, die du sprichst.</p>
+    <p class="indent">Zwischen dir und dem Reittier besteht ein instinktives Band. Es dient dir im Kampf wie außerhalb, und ihr agiert wie eine Einheit. Während du auf dem Reittier sitzt, kann jeder Zauber, der normalerweise nur dich betrifft, auch dein Reittier mit einschließen.</p>
+    <p class="indent">Sinken die Trefferpunkte des Reittiers auf 0, löst sich seine Manifestation auf und der Nebelgeist zieht sich zurück. Du kannst das Reittier auch jederzeit als Aktion entlassen, wodurch es ebenfalls verschwindet. In beiden Fällen beschwört ein erneutes Wirken dieses Zaubers denselben gebundenen Geist erneut – mit vollen Trefferpunkten.</p>
+    <p class="indent">Solange sich das Reittier innerhalb von 1,5 Kilometern (1 mile) befindet, könnt ihr telepathisch miteinander kommunizieren.</p>
+    <p class="indent">Du kannst nur ein Reittier auf diese Weise gebunden haben. Als Aktion kannst du das Band jederzeit auflösen, wodurch der Nebelgeist freigegeben wird und verschwindet.</p>
+</description>
         <setters>
             <set name="keywords">summoning</set>
             <set name="level">2</set>
@@ -3886,10 +3900,12 @@
     </element>
     <element name="Tor (Gate)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_GATE">
         <supports>Cleric, Sorcerer, Wizard</supports>
-        <description>
-            <p>Du beschwörst ein Portal, das einen unbesetzten Ort, den du im Wirkungsbereich sehen kannst, mit einem präzisen Ort auf einer anderen Existenzebene verbindet. Das Portal ist eine kreisförmige Öffnung mit einem Durchmesser von 1,5m bis 6m (5 to 20 feet), dessen Ausrichtung du frei bestimmen kannst. Es bleibt für die Wirkungsdauer bestehen und besitzt auf jeder Ebene eine Vorder- und Rückseite. Nur durch die Vorderseite ist Durchgang möglich. Alles, was hindurchtritt, wird sofort zur Ziel-Ebene transportiert und erscheint dort im nächstgelegenen unbesetzten Raum. Göttliche Wesen und andere Herrscher extraplanarer Domänen können verhindern, dass Portale dieses Zaubers in ihrer Nähe oder ihren Reichen erscheinen.</p>
-            <p class="indent">Wenn du diesen Zauber wirkst, kannst du den Namen eines bestimmten Wesens nennen (Pseudonyme, Titel oder Spitznamen funktionieren nicht). Falls sich dieses Wesen auf einer anderen Ebene befindet, öffnet sich das Portal direkt bei ihm und zieht es durch die Öffnung zu dir, wo es im nächstgelegenen unbesetzten Raum erscheint. Du hast jedoch keine Kontrolle über das Wesen – es kann nach Belieben handeln, etwa dich angreifen, fliehen oder dir helfen (nach Entscheidung der SL).</p>
-        </description>
+<description>
+    <p>Du öffnest ein mächtiges Tor, das einen unbesetzten Ort, den du im Wirkungsbereich sehen kannst, mit den Nebeln verbindet. Das Tor ist eine kreisförmige Öffnung mit einem Durchmesser von 1,5 bis 6 Metern (5 to 20 feet), dessen Ausrichtung du frei bestimmen kannst. Es bleibt für die Wirkungsdauer bestehen und besitzt eine klar definierte Vorder- und Rückseite; nur durch die Vorderseite ist ein Durchgang möglich.</p>
+    <p class="indent">Alles, was das Tor durchschreitet, wird augenblicklich durch die Nebel versetzt und erscheint an einem präzise bestimmten Zielort, sofern ein stabiler Nebelpfad dorthin existiert. Andernfalls führt das Tor in einen form- und richtungslosen Nebelraum. Mächtige Nebelentitäten oder Wesen, die fest an bestimmte Nebeldomänen gebunden sind, können verhindern, dass ein Tor dieses Zaubers in ihrer unmittelbaren Nähe oder innerhalb ihres Einflussbereichs Bestand hat.</p>
+    <p class="indent">Wenn du diesen Zauber wirkst, kannst du den wahren Namen eines bestimmten Wesens nennen (Pseudonyme, Titel oder Spitznamen funktionieren nicht). Befindet sich dieses Wesen nicht an Tyria gebunden in den Nebeln oder an einem Ort, der über die Nebel erreichbar ist, öffnet sich das Tor unmittelbar bei ihm und zieht es durch die Öffnung zu dir, wo es im nächstgelegenen unbesetzten Raum erscheint.</p>
+    <p class="indent">Du hast keine Kontrolle über das herbeigezogene Wesen. Es kann nach eigenem Ermessen handeln – etwa dich angreifen, fliehen oder mit dir interagieren, entsprechend der Entscheidung der Spielleitung.</p>
+</description>
         <setters>
             <set name="keywords">teleport,planar</set>
             <set name="level">9</set>
@@ -4950,11 +4966,12 @@
     </element>
     <element name="Leomunds geheime Truhe (Leomund’s Secret Chest)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_LEOMUNDS_SECRET_CHEST">
         <supports>Wizard, Artificer</supports>
-        <description>
-            <p>Du verbirgst eine Truhe mitsamt Inhalt auf der Ätherebene. Du musst sowohl die Truhe als auch ihre Miniaturausgabe berühren, die als Materialkomponente dient. Die Truhe kann bis zu 0,34m³ (3×2×2 feet) nichtlebende Materie enthalten.</p>
-            <p class="indent">Solange die Truhe auf der Ätherebene verbleibt, kannst du sie mit einer Aktion und durch Berührung der Replik zurückrufen. Sie erscheint in einem unbesetzten Feld am Boden in bis zu 1,5m (5 feet) Entfernung. Du kannst die Truhe wieder zurückschicken, indem du mit einer Aktion sowohl Truhe als auch Replik berührst.</p>
-            <p class="indent">Nach 60 Tagen besteht täglich eine kumulative Chance von 5%, dass der Zauber endet. Er endet auch, wenn du ihn erneut wirkst, wenn die Replik zerstört wird oder wenn du den Zauber als Aktion beendest. Ist die Truhe beim Ende des Zaubers noch auf der Ätherebene, ist sie unwiederbringlich verloren.</p>
-        </description>
+<description>
+    <p>Du verbirgst eine Truhe mitsamt ihrem Inhalt im Schleier – dem ätherischen Grenzzustand, der Tyria wie eine geisterhafte Überlagerung durchdringt. Du musst sowohl die Truhe als auch ihre Miniaturausgabe berühren, die als Materialkomponente dient. Die Truhe kann bis zu 0,34 Kubikmeter (3×2×2 feet) nichtlebende Materie enthalten.</p>
+    <p class="indent">Solange sich die Truhe im Schleier befindet, ist sie für Kreaturen, die vollständig an die materielle Welt gebunden sind, unsichtbar und unerreichbar. Die Truhe verbleibt ortsgebunden an der Stelle, an der sie verborgen wurde.</p>
+    <p class="indent">Du kannst die Truhe mit einer Aktion und durch Berührung der Miniaturausgabe in die materielle Welt zurückholen. Sie erscheint dann in einem unbesetzten Bereich am Boden in bis zu 1,5 Metern (5 feet) Entfernung von dir. Mit einer weiteren Aktion kannst du die Truhe wieder in den Schleier zurückschicken, indem du sowohl Truhe als auch Replik berührst.</p>
+    <p class="indent">Nach 60 Tagen besteht täglich eine kumulative Chance von 5 %, dass der Zauber endet. Er endet außerdem, wenn du ihn erneut wirkst, wenn die Miniaturausgabe zerstört wird oder wenn du den Zauber als Aktion beendest. Befindet sich die Truhe beim Ende des Zaubers noch im Schleier, ist sie unwiederbringlich verloren.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">4</set>
@@ -5236,9 +5253,9 @@
     <element name="Schutzkreis (Magic Circle)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_MAGIC_CIRCLE">
         <supports>Cleric, Paladin, Warlock, Wizard</supports>
         <description>
-            <p>Du erschaffst einen Zylinder aus magischer Energie mit 3m (10 feet) Radius und 6m (20 feet) Höhe, zentriert auf einen Punkt auf dem Boden, den du innerhalb der Reichweite sehen kannst. Leuchtende Runen erscheinen überall dort, wo der Zylinder mit Boden oder Oberfläche in Berührung kommt. Wähle eine oder mehrere der folgenden Kreaturentypen: Himmlische, Elementare, Feenwesen, Unholde oder Untote. Der Kreis wirkt auf Kreaturen des gewählten Typs wie folgt:</p>
+            <p>Du erschaffst einen Zylinder aus magischer Energie mit 3m (10 feet) Radius und 6m (20 feet) Höhe, zentriert auf einen Punkt auf dem Boden, den du innerhalb der Reichweite sehen kannst. Leuchtende Runen erscheinen überall dort, wo der Zylinder mit Boden oder Oberfläche in Berührung kommt. Wähle eine oder mehrere der folgenden Kreaturentypen: Celestial, Elementare, Feenwesen, Unholde oder Untote. Der Kreis wirkt auf Kreaturen des gewählten Typs wie folgt:</p>
             <ul>
-                <li>Die Kreatur kann den Zylinder nicht freiwillig auf nichtmagischem Weg betreten. Bei Verwendung von Teleportation oder interplanarem Reisen muss sie zuerst einen Charismarettungswurf bestehen.</li>
+                <li>Die Kreatur kann den Zylinder nicht freiwillig auf nichtmagischem Weg betreten. Bei Verwendung von Teleportation oder Nebelreisen muss sie zuerst einen Charismarettungswurf bestehen.</li>
                 <li>Die Kreatur hat Nachteil bei Angriffswürfen gegen Ziele im Zylinder.</li>
                 <li>Ziele im Zylinder können von der Kreatur nicht bezaubert, verängstigt oder besessen werden.</li>
             </ul>
@@ -5479,10 +5496,10 @@
     </element>
     <element name="Irrgarten (Maze)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_MAZE">
         <supports>Wizard</supports>
-        <description>
-            <p>Du verbannst eine Kreatur, die du innerhalb der Reichweite sehen kannst, in eine labyrinthartige Halbebene. Das Ziel verbleibt dort, bis der Zauber endet oder es entkommt. Es kann als Aktion versuchen, zu entkommen – dafür muss es eine Intelligenzprobe gegen SG 20 bestehen. Bei Erfolg endet der Zauber. Minotauren oder Goristro-Dämonen bestehen diese Probe automatisch.</p>
-            <p>Wenn der Zauber endet, erscheint das Ziel wieder an der Stelle, von der es verschwunden ist, oder – falls diese belegt ist – an der nächstgelegenen unbesetzten Stelle.</p>
-        </description>
+<description>
+    <p>Du entrückst eine Kreatur, die du innerhalb der Reichweite sehen kannst, in eine abgeschlossene, labyrinthartige Nebeltasche. Das Ziel verbleibt dort, bis der Zauber endet oder es entkommt. Als Aktion kann die Kreatur versuchen, einen Ausweg zu finden; dafür muss sie eine Intelligenzprobe gegen SG 20 bestehen. Bei Erfolg endet der Zauber. Minotauren oder Goristro-Dämonen bestehen diese Probe automatisch.</p>
+    <p class="indent">Wenn der Zauber endet, erscheint das Ziel wieder an der Stelle, von der es verschwunden ist, oder – falls diese belegt ist – an der nächstgelegenen unbesetzten Stelle.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">8</set>
@@ -5786,11 +5803,11 @@
     </element>
     <element name="Mordenkainens treuer Hund (Mordenkainen’s Faithful Hound)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_MORDENKAINENS_FAITHFUL_HOUND">
         <supports>Wizard, Artificer</supports>
-        <description>
-            <p>Du beschwörst einen Phantom-Wachhund in einem unbesetzten Bereich innerhalb von 9m (30 feet), den du sehen kannst. Er verbleibt dort für die Wirkungsdauer, bis du ihn als Aktion entlässt oder dich mehr als 30m (100 feet) von ihm entfernst.</p>
-            <p>Der Hund ist für alle anderen Kreaturen unsichtbar und kann nicht verletzt werden. Wenn sich eine Kreatur der Größe Klein oder größer auf 9m (30 feet) nähert, ohne das beim Wirken festgelegte Passwort zu sprechen, beginnt der Hund laut zu bellen.</p>
-            <p>Der Hund kann unsichtbare Kreaturen sehen und in die Ätherebene blicken. Er ignoriert Illusionen. Zu Beginn deines Zuges beißt der Hund eine feindliche Kreatur innerhalb von 1,5m (5 feet). Sein Angriffswurf nutzt deinen Zauberangriffsbonus, und bei einem Treffer verursacht er 4d8 Stichschaden.</p>
-        </description>
+<description>
+    <p>Du formst aus Nebelessenz einen treuen, ortsgebundenen Wächter in Gestalt eines Hundes. Der Nebelhund erscheint in einem unbesetzten Bereich innerhalb von 9 Metern (30 feet), den du sehen kannst. Er verbleibt dort für die Wirkungsdauer, bis du ihn als Aktion entlässt oder dich mehr als 30 Meter (100 feet) von ihm entfernst.</p>
+    <p class="indent">Der Nebelhund ist für alle anderen Kreaturen unsichtbar und kann nicht verletzt werden. Wenn sich eine Kreatur der Größe Klein oder größer auf 9 Meter (30 feet) nähert, ohne das beim Wirken festgelegte Passwort zu sprechen, beginnt der Hund laut zu bellen.</p>
+    <p class="indent">Der Nebelhund existiert teilweise im Schleier. Er kann unsichtbare Kreaturen wahrnehmen, durch Illusionen hindurchsehen und in den Schleier blicken. Zu Beginn jedes deiner Züge beißt der Hund eine feindliche Kreatur innerhalb von 1,5 Metern (5 feet). Sein Angriffswurf verwendet deinen Zauberangriffsbonus, und bei einem Treffer verursacht er 4W8 Stichschaden.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">4</set>
@@ -5809,7 +5826,7 @@
     <element name="Mordenkainens Herrliches Herrenhaus (Mordenkainen’s Magnificent Mansion)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_MORDENKAINENS_MAGNIFICENT_MANSION">
         <supports>Bard, Wizard</supports>
         <description>
-            <p>Du erschaffst eine extradimensionale Behausung innerhalb von 90m (300 feet), die für die Wirkungsdauer besteht. Du bestimmst den Ort des Eingangs: ein schimmerndes Portal von 1,5m Breite und 3m Höhe.</p>
+            <p>Du erschaffst eine Nebeltasche innerhalb von 90m (300 feet), die für die Wirkungsdauer besteht. Du bestimmst den Ort des Eingangs: ein schimmerndes Portal von 1,5m Breite und 3m Höhe.</p>
             <p class="indent">Durch das Portal gelangt man in ein prächtiges Foyer mit vielen Räumen. Die Atmosphäre ist sauber, frisch und warm.</p>
             <p class="indent">Du kannst den Grundriss beliebig gestalten, bis zu 50 Würfel mit je 3m (10 feet) Kantenlänge. Die Räume sind möbliert und dekoriert, enthalten Essen für ein 9-Gänge-Menü für 100 Personen und werden von 100 durchscheinenden Dienern betreut, die alle nicht angreifen können.</p>
             <p class="indent">Die Diener befolgen alle Anweisungen, können aber den Bereich nicht verlassen. Alle Objekte lösen sich in Rauch auf, wenn sie hinausgebracht werden. Wenn der Zauber endet, erscheinen alle Kreaturen nahe des Eingangs im normalen Raum.</p>
@@ -5840,7 +5857,7 @@
                 <li>Sensoren durch Erkenntniszauber können weder erscheinen noch eindringen.</li>
                 <li>Kreaturen im Bereich können nicht Ziel von Erkenntniszaubern werden.</li>
                 <li>Teleportation in oder aus dem Bereich ist nicht möglich.</li>
-                <li>Planare Reisen werden im Bereich unterbunden.</li>
+                <li>Nebelreisen werden im Bereich unterbunden.</li>
             </ul>
             <p class="indent">Wenn du den Zauber ein Jahr lang täglich am selben Ort wirkst, wird der Effekt permanent.</p>
             <p class="indent">
@@ -5865,11 +5882,11 @@
     </element>
     <element name="Mordenkainens Schwert (Mordenkainen’s Sword)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_MORDENKAINENS_SWORD">
         <supports>Bard, Wizard</supports>
-        <description>
-            <p>Du erschaffst eine schwerthafte Ebene aus reiner magischer Energie, die innerhalb von 18m (60 feet) in der Luft schwebt und für die Wirkungsdauer bestehen bleibt.</p>
-            <p class="indent">Wenn das Schwert erscheint, führst du einen Nahkampf-Zauberangriff gegen eine Kreatur deiner Wahl innerhalb von 1,5m (5 feet) des Schwerts aus. Bei einem Treffer verursacht es 3d10 Wucht-Schaden.</p>
-            <p class="indent">Solange der Zauber wirkt, kannst du als Bonusaktion das Schwert bis zu 6m (20 feet) weit bewegen und denselben oder einen anderen Gegner erneut angreifen lassen.</p>
-        </description>
+<description>
+    <p>Du formst aus reiner magischer Energie ein schwebendes, schwertförmiges Konstrukt, das an einem Punkt deiner Wahl innerhalb von 18 Metern (60 feet) erscheint und für die Wirkungsdauer bestehen bleibt.</p>
+    <p class="indent">Wenn das Schwert erscheint, führst du einen Nahkampf-Zauberangriff gegen eine Kreatur deiner Wahl innerhalb von 1,5 Metern (5 feet) des Schwerts aus. Bei einem Treffer verursacht das Schwert 3W10 Wucht-Schaden.</p>
+    <p class="indent">Solange der Zauber wirkt, kannst du als Bonusaktion das Schwert bis zu 6 Meter (20 feet) weit bewegen und es denselben oder einen anderen Gegner erneut angreifen lassen.</p>
+</description>
         <setters>
             <set name="keywords">force</set>
             <set name="level">7</set>
@@ -6095,7 +6112,7 @@
         <description>
             <p>Du greifst in die Albträume einer Kreatur, die du in bis zu 36m (120 feet) Entfernung sehen kannst, und erschaffst eine illusorische Verkörperung ihrer tiefsten Ängste, die nur für diese Kreatur sichtbar ist. Das Ziel muss einen Weisheitsrettungswurf machen. Bei einem Misserfolg wird es für die Zauberdauer verängstigt.</p>
             <p class="indent">Am Ende jeder seiner Runden muss das Ziel erneut einen Weisheitsrettungswurf bestehen oder 4d10 psychischen Schaden erleiden. Bei einem erfolgreichen Rettungswurf endet der Zauber.</p>
-            <p class="indent"/>
+            <!--<p class="indent"/>-->
         </description>
         <setters>
             <set name="keywords">psychic</set>
@@ -6114,10 +6131,11 @@
     </element>
     <element name="Geisterross (Phantom Steed)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_PHANTOM_STEED">
         <supports>Wizard</supports>
-        <description>
-            <p>Ein großes, quasi-reales, pferdeähnliches Wesen erscheint am Boden in einem unbesetzten Bereich deiner Wahl in bis zu 9m (30 feet) Entfernung. Du bestimmst das Aussehen der Kreatur; sie ist mit Sattel, Zaumzeug und Zügel ausgestattet. Ausrüstung, die durch den Zauber erschaffen wurde, verschwindet in Rauch, wenn sie sich mehr als 3m vom Reittier entfernt.</p>
-            <p class="indent">Für die Dauer kann eine von dir gewählte Kreatur (auch du selbst) das Reittier benutzen. Es nutzt die Werte eines Reitpferds, besitzt jedoch eine Bewegungsrate von 30m (100 feet) und kann 16km in einer Stunde oder 21km bei schneller Bewegung zurücklegen. Wenn der Zauber endet, verblasst das Reittier langsam, wobei der Reiter 1 Minute Zeit hat, abzusteigen. Der Zauber endet ebenfalls, wenn das Reittier Schaden erleidet oder du es mit einer Aktion entlässt.</p>
-        </description>
+<description>
+    <p>Du rufst einen kurzlebigen Nebelgeist herbei, der sich in der Gestalt einer katzenartigen Kriegsklaue manifestiert. Das geisterhafte Reittier erscheint am Boden in einem unbesetzten Bereich deiner Wahl innerhalb von 9 Metern (30 feet). Sein Erscheinungsbild ist schemenhaft und von fließendem Nebel durchzogen. Es ist mit Sattel, Zaumzeug und Zügeln ausgestattet; diese durch den Zauber erschaffene Ausrüstung löst sich in Rauch auf, wenn sie sich mehr als 3 Meter vom Reittier entfernt.</p>
+    <p class="indent">Für die Wirkungsdauer kann eine von dir gewählte Kreatur – auch du selbst – das Reittier nutzen. Es verwendet die Spielwerte einer Kriegsklaue, besitzt jedoch eine Bewegungsrate von 30 Metern (100 feet) und kann bis zu 16 Kilometer in einer Stunde oder 21 Kilometer bei schneller Bewegung zurücklegen.</p>
+    <p class="indent">Das Geisterross ist nicht für den Kampf bestimmt. Erleidet es Schaden, endet der Zauber augenblicklich. Wenn der Zauber regulär endet, beginnt das Reittier langsam zu verblassen, sodass der Reiter 1 Minute Zeit hat, sicher abzusteigen. Du kannst den Zauber außerdem jederzeit mit einer Aktion beenden.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">3</set>
@@ -6135,12 +6153,13 @@
     </element>
     <element name="Verbündeter aus den Ebenen (Planar Ally)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_PLANAR_ALLY">
         <supports>Cleric</supports>
-        <description>
-            <p>Du bittest eine anderweltliche Entität um Hilfe. Dieses Wesen muss dir bekannt sein – ein Gott, ein Urwesen, ein Dämonenfürst oder eine andere kosmisch mächtige Entität. Dieses Wesen sendet ein ihm loyales himmlisches Wesen, Elementarwesen oder Unhold, das in einem unbesetzten Bereich in bis zu 18m (60 feet) Entfernung erscheint.</p>
-            <p class="indent">Wenn du beim Wirken den Namen einer bestimmten Kreatur nennst, kannst du diese anfordern – aber möglicherweise erscheint eine andere (nach Ermessen der SL). Die Kreatur ist zu nichts verpflichtet. Du kannst ihr Aufgaben anbieten, für die sie eine Bezahlung verlangt – sei es Gold, ein Opfer, ein Artefakt oder ein erfüllter Wunsch.</p>
-            <p class="indent">Als Faustregel gilt: Aufgaben, die Minuten dauern, kosten etwa 100 GM pro Minute, stundenlange 1.000 GM pro Stunde, tagelange (bis zu 10 Tage) 10.000 GM pro Tag. Wenn die Aufgabe dem Wesen liegt, kann der Preis halbiert oder gestrichen werden. Nach Beendigung des Auftrags kehrt die Kreatur zurück, möglicherweise nach einer kurzen Rückmeldung. Lehnt sie die Bedingungen ab, verschwindet sie sofort.</p>
-            <p class="indent">Wenn die Kreatur sich deiner Gruppe anschließt, zählt sie als volles Gruppenmitglied für die XP-Verteilung.</p>
-        </description>
+<description>
+    <p>Du richtest eine formelle Bitte an eine mächtige geistige Entität, die dir persönlich bekannt ist – etwa eine Gottheit, ein uraltes Nebelwesen, ein Urgeist oder eine andere kosmisch bedeutsame Macht. Diese Entität entscheidet, ob und wie sie reagiert, und entsendet gegebenenfalls einen ihr loyalen Celestischen, Elementar, Unhold oder ein vergleichbares Wesen, das in einem unbesetzten Bereich in bis zu 18 Metern (60 feet) Entfernung erscheint.</p>
+    <p class="indent">Wenn du beim Wirken den Namen einer bestimmten Kreatur nennst, kannst du versuchen, genau diese anzufordern; es ist jedoch möglich, dass stattdessen ein anderes, geeignetes Wesen erscheint (nach Ermessen der Spielleitung). Die herbeigerufene Kreatur ist zu nichts verpflichtet. Du kannst ihr Aufgaben anbieten, für die sie eine Gegenleistung verlangt – etwa Gold, ein Opfer, ein Artefakt oder das Erfüllen einer zukünftigen Forderung.</p>
+    <p class="indent">Als Richtwert gilt: Aufgaben von wenigen Minuten Dauer kosten etwa 100 GM pro Minute, stundenlange Aufgaben etwa 1.000 GM pro Stunde und tagelange Aufgaben (bis zu 10 Tage) etwa 10.000 GM pro Tag. Liegt die Aufgabe im Interesse oder im Wesen der Entität, kann die geforderte Bezahlung reduziert oder ganz erlassen werden.</p>
+    <p class="indent">Nach Erfüllung der Aufgabe kehrt die Kreatur zu ihrem Ursprung zurück, möglicherweise nach einer kurzen Rückmeldung. Lehnt sie die Bedingungen ab, verschwindet sie unverzüglich.</p>
+    <p class="indent">Schließt sich die Kreatur der Gruppe an, zählt sie als vollwertiges Gruppenmitglied bei der Verteilung von Erfahrungspunkten.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">6</set>
@@ -6156,16 +6175,17 @@
             <set name="isRitual"/>
         </setters>
     </element>
-    <element name="bindung der Ebenen (Planar Binding)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_PLANAR_BINDING">
+    <element name="Bindung der Ebenen (Planar Binding)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_PLANAR_BINDING">
         <supports>Bard, Cleric, Druid, Wizard</supports>
-        <description>
-            <p>Mit diesem Zauber versuchst du, einen Celestischen, Elementar, Feenwesen oder einen Unhold in deinen Dienst zu zwingen. Die Kreatur muss sich während der gesamten Wirkungszeit innerhalb der Reichweite befinden (üblicherweise wird sie zunächst durch einen umgekehrten Magischen Kreis gefangen gehalten). Am Ende der Wirkungszeit muss das Ziel einen Rettungswurf auf Charisma ablegen. Bei einem Misserfolg ist es für die Wirkungsdauer an deinen Dienst gebunden. Falls die Kreatur durch einen anderen Zauber beschworen oder erschaffen wurde, verlängert sich dessen Wirkungsdauer entsprechend.</p>
-            <p class="indent">Eine gebundene Kreatur muss deinen Anweisungen nach bestem Können Folge leisten. Du kannst ihr zum Beispiel befehlen, dich auf einem Abenteuer zu begleiten, einen Ort zu bewachen oder eine Nachricht zu überbringen. Die Kreatur befolgt den genauen Wortlaut deiner Anweisungen, versucht aber – falls sie dir feindlich gesinnt ist – diese zu verdrehen, um ihre eigenen Ziele zu erreichen. Führt die Kreatur deine Anweisungen vollständig aus, bevor der Zauber endet, kehrt sie zu dir zurück, um Bericht zu erstatten, sofern ihr euch auf derselben Existenzebene befindet. Andernfalls kehrt sie an den Ort zurück, an dem du sie gebunden hast, und verweilt dort, bis der Zauber endet.</p>
-            <p class="indent">
-                <b>
-                    <i>Auf höheren Graden.</i>
-                </b> Wenn du diesen Zauber mit einem Zauberplatz höheren Grades wirkst, erhöht sich die Wirkungsdauer: auf 10 Tage mit einem Zauberplatz des 6. Grades, auf 30 Tage mit dem 7. Grad, auf 180 Tage mit dem 8. Grad und auf ein Jahr und einen Tag mit einem Zauberplatz des 9. Grades.</p>
-        </description>
+<description>
+    <p>Mit diesem Zauber versuchst du, einen Celestischen, Elementar, ein Feenwesen oder einen Unhold durch magischen Zwang an deinen Dienst zu binden. Die Kreatur muss sich während der gesamten Wirkungszeit innerhalb der Reichweite befinden (üblicherweise wird sie zuvor durch einen umgekehrten <i>Magischen Kreis</i> festgesetzt). Am Ende der Wirkungszeit muss das Ziel einen Rettungswurf auf Charisma ablegen. Bei einem Misserfolg ist es für die Wirkungsdauer an deinen Dienst gebunden. Falls die Kreatur durch einen anderen Zauber beschworen oder erschaffen wurde, verlängert sich dessen Wirkungsdauer entsprechend.</p>
+    <p class="indent">Eine gebundene Kreatur muss deinen Anweisungen nach bestem Können Folge leisten. Du kannst ihr befehlen, dich auf einem Abenteuer zu begleiten, einen Ort zu bewachen oder eine Nachricht zu überbringen. Die Kreatur befolgt den genauen Wortlaut deiner Anweisungen, versucht jedoch – falls sie dir feindlich gesinnt ist – diese zu verdrehen oder zu ihren Gunsten auszulegen.</p>
+    <p class="indent">Erfüllt die Kreatur deine Anweisungen vollständig, bevor der Zauber endet, kehrt sie zu dir zurück, um Bericht zu erstatten, sofern ihr euch in derselben Welt befindet oder eine direkte Rückkehr möglich ist. Andernfalls kehrt sie an den Ort zurück, an dem du sie gebunden hast, und verbleibt dort, bis der Zauber endet.</p>
+    <p class="indent">
+        <b>
+            <i>Auf höheren Graden.</i>
+        </b> Wenn du diesen Zauber mit einem Zauberplatz höheren Grades wirkst, erhöht sich die Wirkungsdauer: auf 10 Tage mit einem Zauberplatz des 6. Grades, auf 30 Tage mit dem 7. Grad, auf 180 Tage mit dem 8. Grad und auf ein Jahr und einen Tag mit einem Zauberplatz des 9. Grades.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">5</set>
@@ -6183,11 +6203,11 @@
     </element>
     <element name="Ebenenwechsel (Plane Shift)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_PLANE_SHIFT">
         <supports>Cleric, Druid, Sorcerer, Warlock, Wizard</supports>
-        <description>
-            <p>Du und bis zu acht willige Kreaturen, die sich an den Händen halten, werdet auf eine andere Existenzebene transportiert. Du kannst ein Ziel allgemein benennen (z.B. die Messingstadt auf der Elementarebene des Feuers), woraufhin ihr an einem passenden Ort erscheint, den der SL bestimmt.</p>
-            <p class="indent">Alternativ kannst du die Sigilfolge eines Teleportationskreises auf einer anderen Ebene angeben, um genau dorthin zu reisen. Falls der Kreis zu klein für alle ist, erscheinen übrige Kreaturen in der Nähe.</p>
-            <p class="indent">Du kannst diesen Zauber auch einsetzen, um eine feindliche Kreatur zu verbannen. Wähle eine Kreatur in Reichweite und führe einen Nahkampf-Zauberangriff durch. Bei einem Treffer muss das Ziel einen Rettungswurf auf Charisma bestehen oder wird an einen zufälligen Ort auf der von dir gewählten Ebene transportiert.</p>
-        </description>
+<description>
+    <p>Du und bis zu acht willige Kreaturen, die sich an den Händen halten, werdet durch die Nebel versetzt. Das Ziel der Reise muss ein bekannter oder zumindest eindeutig beschriebener Ort sein, der über stabile Nebelpfade erreichbar ist. Erscheint das Ziel ungenau oder unzureichend bestimmt, entscheidet die Spielleitung über einen passenden Ankunftsort.</p>
+    <p class="indent">Alternativ kannst du einen präzisen Nebelanker benennen – etwa das abgestimmte Muster eines bekannten Teleportationskreises oder eines fest verankerten Übergangsortes. In diesem Fall erscheint die Gruppe genau dort. Ist der Zielort zu klein für alle Reisenden, erscheinen die übrigen Kreaturen in der nächstgelegenen freien Umgebung.</p>
+    <p class="indent">Du kannst diesen Zauber auch einsetzen, um eine feindliche Kreatur gewaltsam durch die Nebel zu stoßen. Wähle eine Kreatur in Reichweite und führe einen Nahkampf-Zauberangriff durch. Bei einem Treffer muss das Ziel einen Rettungswurf auf Charisma bestehen oder wird an einen zufälligen, von dir bestimmten Zielbereich versetzt, der über die Nebel erreichbar ist.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">7</set>
@@ -6762,74 +6782,58 @@
     </element>
     <element name="Wiedergeburt (Reincarnate)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_REINCARNATE">
         <supports>Druid</supports>
-        <description>
-            <p>Du berührst einen toten Humanoiden oder ein Körperteil davon. Wenn die Kreatur nicht länger als 10 Tage tot ist, erschafft der Zauber einen neuen erwachsenen Körper und ruft die Seele in diesen hinein. Ist die Seele nicht bereit oder nicht verfügbar, schlägt der Zauber fehl. Die Magie erschafft einen neuen Körper, was meist zu einem Wechsel der Rasse führt. Der Spielleiter würfelt mit 1W100 oder wählt eine Form aus der folgenden Tabelle:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <td>1W100</td>
-                        <td>Volk</td>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>01–04</td>
-                    <td>Drachenblütiger</td>
-                </tr>
-                <tr>
-                    <td>05–13</td>
-                    <td>Zwerg (Hügel)</td>
-                </tr>
-                <tr>
-                    <td>14–21</td>
-                    <td>Zwerg (Berg)</td>
-                </tr>
-                <tr>
-                    <td>22–25</td>
-                    <td>Drow (Dunkelelf)</td>
-                </tr>
-                <tr>
-                    <td>26–34</td>
-                    <td>Hochelf</td>
-                </tr>
-                <tr>
-                    <td>35–42</td>
-                    <td>Waldelf</td>
-                </tr>
-                <tr>
-                    <td>43–46</td>
-                    <td>Waldgnom</td>
-                </tr>
-                <tr>
-                    <td>47–52</td>
-                    <td>Felsgnom</td>
-                </tr>
-                <tr>
-                    <td>53–56</td>
-                    <td>Halbelf</td>
-                </tr>
-                <tr>
-                    <td>57–60</td>
-                    <td>Halbork</td>
-                </tr>
-                <tr>
-                    <td>61–68</td>
-                    <td>Halbling (Leichtfuß)</td>
-                </tr>
-                <tr>
-                    <td>69–76</td>
-                    <td>Halbling (Robust)</td>
-                </tr>
-                <tr>
-                    <td>77–96</td>
-                    <td>Mensch</td>
-                </tr>
-                <tr>
-                    <td>97–00</td>
-                    <td>Teufelsblütiger</td>
-                </tr>
-            </table>
-            <p>Die wiedergeborene Kreatur behält ihre Erinnerungen und Fähigkeiten aus dem vorherigen Leben, tauscht jedoch ihre Rasse und die dazugehörigen Rassenmerkmale gegen die der neuen Gestalt aus.</p>
-        </description>
+<description>
+    <p>Du berührst einen toten Humanoiden oder einen Teil seines Körpers. Ist die Kreatur seit nicht mehr als 10 Tagen tot, erschafft der Zauber einen neuen, voll ausgewachsenen Körper und ruft die Seele der Kreatur in diesen hinein. Ist die Seele nicht frei oder nicht bereit zurückzukehren, schlägt der Zauber fehl.</p>
+    <p class="indent">Die Magie formt einen neuen Körper nach den in Tyria verankerten Mustern sterblicher Völker. Dieser Vorgang ist unvorhersehbar und kann zu einem Wechsel des Volkes führen. Die Spielleitung würfelt mit 1W100 oder wählt eine passende Gestalt aus der folgenden Tabelle:</p>
+
+    <table>
+        <thead>
+            <tr>
+                <td>1W100</td>
+                <td>Volk</td>
+            </tr>
+        </thead>
+        <tr>
+            <td>01–35</td>
+            <td>Mensch</td>
+        </tr>
+        <tr>
+            <td>36–50</td>
+            <td>Charr</td>
+        </tr>
+        <tr>
+            <td>51–60</td>
+            <td>Norn</td>
+        </tr>
+        <tr>
+            <td>61–70</td>
+            <td>Asura</td>
+        </tr>
+        <tr>
+            <td>71–80</td>
+            <td>Sylvari</td>
+        </tr>
+        <tr>
+            <td>81–85</td>
+            <td>Tengu</td>
+        </tr>
+        <tr>
+            <td>86–90</td>
+            <td>Grawl</td>
+        </tr>
+        <tr>
+            <td>91–95</td>
+            <td>Skritt</td>
+        </tr>
+        <tr>
+            <td>96–00</td>
+            <td>Quaggan</td>
+        </tr>
+    </table>
+
+    <p class="indent">Die wiedergeborene Kreatur behält alle Erinnerungen, Klassen, Stufen, Fertigkeiten und Fähigkeiten aus ihrem früheren Leben. Ihr Volk und alle damit verbundenen Volksmerkmale werden jedoch vollständig durch die der neuen Gestalt ersetzt.</p>
+    <p class="indent">Der neu erschaffene Körper ist funktionsfähig und an das gewählte Volk angepasst. Etwaige körperliche, kulturelle oder soziale Anpassungsschwierigkeiten sind Teil der Konsequenzen dieses Zaubers.</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">5</set>
@@ -7048,7 +7052,7 @@
             <p class="indent">- Abbild oder Porträt: –2</p>
             <p class="indent">- Besitz oder Kleidung: –4</p>
             <p class="indent">- Körperteil, Haar, Nagel o.Ä.: –10</p>
-            <p>Bei Erfolg ist das Ziel nicht betroffen, und du kannst es 24 Stunden lang nicht erneut anvisieren. Bei Misserfolg erscheint ein unsichtbarer Sensor in bis zu 3m Nähe zum Ziel, durch den du sehen und hören kannst. Der Sensor folgt dem Ziel während der Wirkungsdauer. Sichtbare Kreaturen erkennen ihn als leuchtende Kugel.</p>
+            <p>Bei Erfolg ist das Ziel nicht betroffen, und du kannst es 24 Stunden lang nicht erneut anvisieren. Bei Misserfolg erscheint ein unsichtbarer Sensor in bis zu 3m Nähe zum Ziel, durch den du sehen und hören kannst. Der Sensor folgt dem Ziel während der Wirkungsdauer. Kreaturen mit Wahrsicht erkennen ihn als leuchtende Kugel.</p>
             <p class="indent">Statt einer Kreatur kannst du auch einen Ort anvisieren, den du bereits gesehen hast. Der Sensor erscheint dann dort und bleibt stationär.</p>
         </description>
         <setters>
@@ -7836,9 +7840,33 @@
     <!-- Symbol -->
     <element name="Symbol (Symbol)" type="Spell" source="DnD4Tyria" id="ID_D4T_SPELL_SYMBOL">
         <supports>Bard, Cleric, Wizard</supports>
-        <description>
-            <p>Wenn du diesen Zauber wirkst, zeichnest du ein schädliches Glyphenzeichen auf eine Fläche (z.B. Boden, Wand oder Tisch) oder in ein verschließbares Objekt (z.B. Buch, Schriftrolle oder Truhe). Bei einer Fläche darf die Glyphe maximal 3m (10 feet) Durchmesser haben. Wird ein Objekt gewählt, darf es sich während der Wirkungsdauer nicht von seinem Platz entfernen.</p>
-        </description>
+<description>
+    <p>Wenn du diesen Zauber wirkst, zeichnest du ein schädliches magisches Glyphenzeichen auf eine Oberfläche (z. B. einen Bodenabschnitt, eine Wand oder einen Tisch) oder in ein verschließbares Objekt (z. B. ein Buch, eine Schriftrolle oder eine Truhe). Wird eine Oberfläche gewählt, darf die Glyphe einen Bereich mit einem Durchmesser von höchstens 3 Metern (10 feet) einnehmen. Wird ein Objekt gewählt, muss dieses während der Wirkungsdauer an seinem Platz verbleiben; wird es mehr als 3 Meter (10 feet) von dem Ort entfernt, an dem der Zauber gewirkt wurde, bricht die Glyphe zusammen und der Zauber endet, ohne ausgelöst zu werden.</p>
+
+    <p class="indent">Die Glyphe ist nahezu unsichtbar. Um sie zu entdecken, ist eine Probe auf Intelligenz (Nachforschungen) gegen deinen Zauberrettungswurf-SG erforderlich.</p>
+
+    <p class="indent">Beim Wirken des Zaubers bestimmst du, wodurch die Glyphe ausgelöst wird. Bei Glyphen auf Oberflächen sind typische Auslöser etwa das Berühren oder Betreten der Glyphe, das Entfernen eines sie verdeckenden Objekts, das Nähern bis auf eine bestimmte Distanz oder das Manipulieren des Objekts, auf dem sie angebracht ist. Bei Glyphen in Objekten sind häufige Auslöser das Öffnen des Objekts, das Nähern bis auf eine bestimmte Distanz oder das Betrachten oder Lesen der Glyphe.</p>
+
+    <p class="indent">Du kannst den Auslöser weiter verfeinern, sodass der Zauber nur unter bestimmten Umständen aktiviert wird oder nur auf Kreaturen mit bestimmten körperlichen Merkmalen (z. B. Größe oder Gewicht) oder einer bestimmten Art (z. B. Gestaltwandler) reagiert. Du kannst außerdem festlegen, dass bestimmte Kreaturen die Glyphe nicht auslösen, etwa solche, die ein zuvor bestimmtes Passwort aussprechen.</p>
+
+    <p class="indent">Beim Anbringen der Glyphe wählst du einen der folgenden Effekte. Wird die Glyphe ausgelöst, beginnt sie zu leuchten und erfüllt eine Kugel mit 18 Metern (60 feet) Radius für 10 Minuten mit dämmrigem Licht. Danach endet der Zauber. Jede Kreatur, die sich beim Auslösen der Glyphe in diesem Bereich befindet, ist von dem Effekt betroffen, ebenso jede Kreatur, die den Bereich erstmals in einem Zug betritt oder ihren Zug dort beendet.</p>
+
+    <p class="indent"><b>Tod.</b> Jedes Ziel muss einen Rettungswurf auf Konstitution ablegen. Bei einem misslungenen Wurf erleidet es 10W10 nekrotischen Schaden, bei einem erfolgreichen Wurf die Hälfte davon.</p>
+
+    <p class="indent"><b>Zwietracht.</b> Jedes Ziel muss einen Rettungswurf auf Konstitution ablegen. Bei einem misslungenen Wurf streitet und zankt es sich 1 Minute lang mit anderen Kreaturen. Während dieser Zeit ist es zu sinnvoller Kommunikation unfähig und hat Nachteil bei Angriffswürfen und Attributsproben.</p>
+
+    <p class="indent"><b>Furcht.</b> Jedes Ziel muss einen Rettungswurf auf Weisheit ablegen. Bei einem misslungenen Wurf ist es 1 Minute lang verängstigt. Solange es verängstigt ist, lässt es alles fallen, was es hält, und muss sich in jedem seiner Züge, sofern möglich, mindestens 9 Meter (30 feet) von der Glyphe entfernen.</p>
+
+    <p class="indent"><b>Hoffnungslosigkeit.</b> Jedes Ziel muss einen Rettungswurf auf Charisma ablegen. Bei einem misslungenen Wurf ist es 1 Minute lang von tiefer Verzweiflung überwältigt. Während dieser Zeit kann es keine Angriffe ausführen und keine Kreaturen mit schädlichen Fähigkeiten, Zaubern oder anderen magischen Effekten als Ziel wählen.</p>
+
+    <p class="indent"><b>Wahnsinn.</b> Jedes Ziel muss einen Rettungswurf auf Intelligenz ablegen. Bei einem misslungenen Wurf wird es 1 Minute lang wahnsinnig. Eine wahnsinnige Kreatur kann keine Aktionen ausführen, versteht keine gesprochene Sprache, kann nicht lesen und spricht nur Kauderwelsch. Die Spielleitung bestimmt ihre erratischen Bewegungen.</p>
+
+    <p class="indent"><b>Schmerz.</b> Jedes Ziel muss einen Rettungswurf auf Konstitution ablegen. Bei einem misslungenen Wurf ist es 1 Minute lang durch qualvolle Schmerzen handlungsunfähig (incapacitated).</p>
+
+    <p class="indent"><b>Schlaf.</b> Jedes Ziel muss einen Rettungswurf auf Weisheit ablegen. Bei einem misslungenen Wurf fällt es für 10 Minuten bewusstlos. Die Kreatur erwacht, wenn sie Schaden erleidet oder wenn jemand eine Aktion verwendet, um sie zu schütteln oder zu schlagen.</p>
+
+    <p class="indent"><b>Betäubung.</b> Jedes Ziel muss einen Rettungswurf auf Weisheit ablegen. Bei einem misslungenen Wurf ist es 1 Minute lang betäubt (stunned).</p>
+</description>
         <setters>
             <set name="keywords"/>
             <set name="level">7</set>

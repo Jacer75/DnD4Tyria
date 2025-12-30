@@ -1,0 +1,77 @@
+<entry
+  id="ID_HIER_EINTRAGEN"
+  kind="compendium | lore | npc | bestiary | index"
+  title="Titel des Artikels"
+  source="DnD4Tyria">
+
+  <info>
+    <description>Kurzbeschreibung für Übersicht, Tooltips oder Indexseiten.</description>
+    <author url="">DnD4Tyria</author>
+    <update version="1.0.0">
+      <file name="DATEINAME.xml" url=""/>
+    </update>
+  </info>
+
+  <public>
+    <!--
+      Öffentliche Inhalte:
+      - Regeltexte
+      - Beschreibungen
+      - Lore
+      - Spielerrelevante Informationen
+    -->
+
+    <p>Einleitender Absatz.</p>
+
+    <h2>Abschnittsüberschrift</h2>
+    <p>Fließtext.</p>
+
+    <h3>Unterabschnitt</h3>
+    <ul>
+      <li>Listenpunkt</li>
+      <li>Listenpunkt</li>
+    </ul>
+
+    <!-- Optional: Read-Aloud -->
+    <blockquote>
+      <p>Text, der am Spieltisch vorgelesen wird.</p>
+    </blockquote>
+  </public>
+
+  <gm>
+    <!--
+      Spielleiterinformationen:
+      - Hintergründe
+      - Geheimnisse
+      - Regelhinweise
+      - SL-Entscheidungen
+    -->
+
+    <p>SL-Hinweis oder Hintergrundinformation.</p>
+  </gm>
+
+  <!-- Optional: Bilder -->
+  <images>
+    <!--
+    <image href="URL_ODER_PFAD" alt="Beschreibung"/>
+    -->
+  </images>
+
+  <!-- Optional: Statblocks oder Referenzen -->
+  <statblocks>
+    <!--
+    <statblock ref="ID_STATBLOCK"/>
+    -->
+  </statblocks>
+
+  <!-- Optional: Für Index-/Hub-Seiten -->
+  <pages>
+    <!--
+    <page file="DATEI.xml">
+      <title>Titel der Unterseite</title>
+      <summary>Kurzbeschreibung</summary>
+    </page>
+    -->
+  </pages>
+
+</entry>

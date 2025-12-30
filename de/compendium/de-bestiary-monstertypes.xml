@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-entry.xsl"?>
+<entry
+  id="compendium-creature-types"
+  kind="compendium"
+  title="Kreaturentypen"
+  source="DnD4Tyria">
+
+  <info>
+    <description>
+      Übersicht und Einordnung der Kreaturentypen in D&amp;D 5e mit tyrianischer Interpretation.
+    </description>
+    <author url="">DnD4Tyria</author>
+    <update version="1.0.0">
+      <file name="d4t-compendium-creature-types.xml" url=""/>
+    </update>
+  </info>
+
+  <public>
+    <p>
+      In Dungeons &amp; Dragons beschreibt der <strong>Kreaturentyp</strong> die grundlegende
+      metaphysische und biologische Natur eines Wesens. Viele Zauber, Fähigkeiten und Effekte
+      beziehen sich explizit auf bestimmte Kreaturentypen.
+    </p>
+
+    <p>
+      In <em>DnD4Tyria</em> orientieren sich die Kreaturentypen an den offiziellen Regeln von D&amp;D 5e,
+      werden jedoch an die Besonderheiten Tyrias, der Nebel und der Alt-Drachen angepasst.
+    </p>
+
+    <h2>Aberrationen</h2>
+    <p>
+      Aberrationen sind Kreaturen, die außerhalb der natürlichen und metaphysischen Ordnung existieren.
+      Sie entstammen keiner bekannten Schöpfungslinie Tyrias und folgen weder biologischen noch
+      spirituellen Gesetzmäßigkeiten. Ihre Magie wirkt fremdartig, instabil oder geistig verzerrt
+      und lässt sich keiner klassischen Schule eindeutig zuordnen.
+    </p>
+    <p>
+      In Tyria gelten Wesen als Aberrationen, die durch magische Entartung, Leereinfluss oder
+      arkane Katastrophen entstanden sind – etwa Leere-Kreaturen, Blutstein-Entartete oder
+      instabile Leylinien-Manifestationen.
+    </p>
+
+    <h2>Bestien</h2>
+    <p>
+      Bestien sind nicht-humanoide Kreaturen, die ein natürlicher Bestandteil des tyrianischen
+      Ökosystems sind. Sie handeln instinktgetrieben, besitzen in der Regel keine Sprache und
+      keine ausgeprägte Gesellschaftsstruktur.
+    </p>
+    <p>
+      Auch wenn manche Bestien magische Fähigkeiten oder ungewöhnliche Größe aufweisen,
+      gelten sie dennoch als Teil der natürlichen Ordnung. Zu den Bestien zählen Moas,
+      Devourer, Skale, Raptoren und ähnliche Tierformen.
+    </p>
+
+    <h2>Himmlische (Celestials)</h2>
+    <p>
+      Himmlische sind Wesen spiritueller oder göttlicher Natur. Sie entstehen nicht durch Geburt,
+      sondern durch Manifestation höherer Mächte oder kosmischer Prinzipien. In Tyria treten sie
+      nur selten auf und meist mit großer Bedeutung.
+    </p>
+    <p>
+      Ihre Ziele sind nicht zwangsläufig gut oder böse, sondern folgen einer eigenen,
+      oft schwer verständlichen Logik. Zu den Himmlischen zählen göttliche Avatare,
+      Spiegelwesen Lyssas, Traumwächter oder uralte Lichtentitäten.
+    </p>
+
+    <h2>Konstrukte</h2>
+    <p>
+      Konstrukte wurden erschaffen, nicht geboren. Sie bestehen aus Metall, Stein, Magie oder
+      gebundener Energie und folgen vorgegebenen Befehlen oder inneren Programmen.
+    </p>
+    <p>
+      Manche Konstrukte besitzen eine einfache Intelligenz, andere sogar ein rudimentäres
+      Bewusstsein. In Tyria zählen dazu die Golems der Asura, seelengebundene Mechaniken,
+      alchemistische Automaten und Relikte vergangener Zivilisationen.
+    </p>
+
+    <h2>Drachendiener</h2>
+    <p>
+      Drachen sind uralte, kosmische Wesen von gewaltiger Macht. In Tyria bezeichnet diese
+      Kategorie nicht gewöhnliche große Reptilien, sondern die Altdrachen selbst sowie ihre
+      direkten Diener.
+    </p>
+    <p>
+      Ihre Existenz verändert die Welt, absorbiert Magie und prägt ganze Regionen. Auch
+      verdorbene Kreaturen, die eindeutig durch die Macht eines Altdrachen geformt wurden –
+      etwa Zhaitans Auferstandene – gelten als Drachendiener und fallen unter diese Kategorie.
+    </p>
+
+    <h2>Elementare</h2>
+    <p>
+      Elementare sind Wesen, die aus reiner Elementarmagie bestehen. Sie können formlos oder
+      klar gestaltet erscheinen und sind oft an Leylinien, Ritualorte oder magische
+      Brennpunkte gebunden.
+    </p>
+    <p>
+      Feuer-, Wasser-, Eis-, Erd- oder Sturmwesen zählen ebenso dazu wie komplexere
+      Elementarhybride. Elementare handeln selten moralisch, sondern folgen der Dynamik
+      ihres jeweiligen Elements.
+    </p>
+
+    <h2>Feenwesen (Fey)</h2>
+    <p>
+      Feenwesen sind magische Kreaturen, die tief mit Natur, Traum und zyklischer Erneuerung
+      verbunden sind. Sie entstammen keiner klaren biologischen Linie und folgen eigenen
+      Regeln jenseits menschlicher Moralvorstellungen.
+    </p>
+    <p>
+      In Tyria zählen dazu Druidengeister, Tiergeister der Norn, traumhafte Manifestationen
+      des Blassen Baums und uralte Waldhüter. Fey sind nicht grundsätzlich gut oder böse,
+      sondern naturhaft fremd.
+    </p>
+
+    <h2>Unholde (Fiends)</h2>
+    <p>
+      Unholde sind bösartige Wesen aus den tieferen Schichten der Nebel oder aus fremden,
+      chaotischen Reichen. Sie nähren sich von Leid, Verderbnis oder Macht und treten häufig
+      durch Beschwörung oder Risse in der Realität in Tyria ein.
+    </p>
+    <p>
+      Zu dieser Kategorie zählen Dämonen, Kryptis, Oni und verderbte Götzengeister.
+      Ihre Präsenz bringt stets Unheil mit sich.
+    </p>
+
+    <h2>Riesen</h2>
+    <p>
+      Riesen sind Humanoide von außergewöhnlicher Größe und physischer Kraft. Sie leben
+      oft in archaischen Gesellschaften, folgen alten Traditionen oder roher Gewalt.
+    </p>
+    <p>
+      In Tyria zählen dazu Ettins, Trolle, Oger und Jotun. Manche bewahren uraltes Wissen,
+      andere leben als Plünderer oder territoriale Herrscher.
+    </p>
+
+    <h2>Humanoide</h2>
+    <p>
+      Humanoide sind die kulturschaffenden Völker Tyrias. Sie besitzen Sprache,
+      Gesellschaft, Glaubenssysteme und individuelle Weltanschauungen.
+    </p>
+    <p>
+      Zu ihnen zählen Menschen, Charr, Norn, Sylvari und Asura ebenso wie regionale
+      Völker wie Tengu, Grawle, Skritt oder Zentauren. Ihre Fähigkeit zur Organisation,
+      Anpassung und Intrige macht sie zu den wandelbarsten – und oft gefährlichsten – Gegnern.
+    </p>
+
+    <h2>Monstrositäten</h2>
+    <p>
+      Monstrositäten sind Kreaturen, die sich keiner klaren Ordnung zuweisen lassen.
+      Sie sind weder natürlich noch eindeutig künstlich, sondern entstehen häufig
+      aus Experimenten, Flüchen oder uralten Fehlentwicklungen.
+    </p>
+    <p>
+      In Tyria zählen dazu Harpyien, Chimären, Krait-Abscheulichkeiten oder Blutkreaturen.
+      Sie verkörpern das Unheimliche und Unbegreifliche.
+    </p>
+
+    <h2>Schleime (Oozes)</h2>
+    <p>
+      Schleime sind formlose, gallertartige Wesen ohne feste Anatomie. Sie reagieren auf
+      Bewegung, Wärme oder Magie und zersetzen organisches Material.
+    </p>
+    <p>
+      In Tyria findet man sie vor allem in alchemistisch verseuchten Gebieten,
+      alten Laboren oder als Nebenprodukte nekromantischer Prozesse.
+    </p>
+
+    <h2>Pflanzen</h2>
+    <p>
+      Pflanzenwesen sind lebendige, oft aggressive Formen der Flora. Sie bewegen sich,
+      greifen an und können begrenztes Bewusstsein besitzen, sind jedoch keine Feenwesen.
+    </p>
+    <p>
+      Dazu zählen erwachte Bäume, fleischfressende Ranken, Pilzkolonien und Baumhirten.
+      Besonders häufig treten sie in verwunschenen Wäldern oder alten Druidenheiligtümern auf.
+    </p>
+
+    <h2>Untote</h2>
+    <p>
+      Untote sind Kreaturen, die durch nekromantische Rituale, Flüche oder ungebundene
+      Todesmagie wiederbelebt wurden. Sie existieren außerhalb des natürlichen Lebenszyklus
+      und reichen von körperlichen Untoten wie Zombies und Skeletten bis zu körperlosen
+      Erscheinungen wie Geistern oder Schatten.
+    </p>
+    <p>
+      Diener eines Altdrachen – insbesondere Zhaitans Auferstandene – zählen nicht als Untote,
+      sondern als Drachendiener.
+    </p>
+  </public>
+
+  <gm>
+    <p>
+      <strong>SL-Hinweis:</strong> Kreaturentypen sind in D&amp;D regelrelevant.
+      Viele Zauber, Klassenfähigkeiten und magische Effekte beziehen sich explizit
+      auf bestimmte Typen (z. B. <em>Untote vertreiben</em>, <em>Schutz vor Gut und Böse</em>,
+      <em>Erzfeind</em>).
+    </p>
+    <p>
+      In DnD4Tyria dienen die hier definierten Typen außerdem als erzählerisches
+      Werkzeug, um Wesen klar von Alt-Drachen-Einflüssen, Nebelentitäten oder
+      natürlicher Magie abzugrenzen.
+    </p>
+  </gm>
+
+</entry>

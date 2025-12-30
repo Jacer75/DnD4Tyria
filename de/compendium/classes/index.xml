@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-entry.xsl"?>
+<entry
+  id="compendium-index"
+  kind="index"
+  title="Kompendium"
+  source="DnD4Tyria">
+
+  <public>
+    <p>Obwohl die Klassen 1:1 aus D&amp;D übernommen sind, haben sie doch ein tyrianisches Flair bekommen.</p>
+  </public>
+
+  <pages>
+    <page file="de-compendium-classes-barbarian.xml">
+      <title>Berserker (Barbarian)</title>
+      <summary>Ein Kämpfer ohne formelle Ausbildung, der sich in einen Kampfrausch steigert.</summary>
+    </page>
+    
+    <page file="de-compendium-classes-cleric.xml">
+      <title>Kleriker (Cleric)</title>
+      <summary>Kleriker glauben fest an ein Konzept; seien es die tyrianischen Götter oder Grundprinzipien der Magie. Durch diesen Glauben gewinnen sie an Macht.</summary>
+    </page>
+    
+    <page file="de-compendium-classes-druid.xml">
+      <title>Druiden (Druid)</title>
+      <summary>Druiden sind seit Jahrtausenden auf Tyria existierende Naturgeister, die seit einigen Jahrhunderten Verstärkung unter den Völkern von Tyria suche.</summary>
+    </page>
+
+    <page file="de-compendium-classes-fighter.xml">
+      <title>Krieger (Fighter)</title>
+      <summary>Krieger erlernen die Grundlagen aller Kampfkunst. Jeder Krieger kann eine Axt schwingen, mit einem Rapier fechten, ein Langschwert oder Großschwert führen, mit dem Bogen umgehen und sogar ein Netz einsetzen, um Feinde zu fangen. </summary>
+    </page>
+
+    <page file="de-compendium-classes-paladin.xml">
+      <title>Wächter (Paladin)</title>
+      <summary>Ein Wächter verpflichtet sich, das Gute zu bewahren, Unschuldige zu beschützen und allem entgegenzutreten, was finstere Absicht verfolgt – ob Untote, Fanatiker oder dämonische Mächte.</summary>
+    </page>
+
+    <page file="de-compendium-classes-ranger.xml">
+      <title>Waldläufer (Ranger)</title>
+      <summary>Waldläufer sind Krieger der Wildnis, die sich auf die Jagd nach Kreaturen spezialisiert haben, welche die Grenzen der Zivilisation bedrohen – marodierende Banditen, entfesselte Bestien, monströse Abscheulichkeiten, gewaltige Riesen oder gar Drachen.</summary>
+    </page>
+
+    <page file="de-compendium-classes-rogue.xml">
+      <title>Schurke (Rogue)</title>
+      <summary>Schurken widmen ihre Energie ebenso sehr der Perfektionierung ihrer Kampftechniken wie der Beherrschung zahlreicher Fertigkeiten, was ihnen eine Vielseitigkeit verleiht, die nur wenige andere Klassen erreichen.</summary>
+    </page>
+
+    <page file="de-compendium-classes-sorcerer.xml">
+      <title>Auserwählter (Sorcerer)</title>
+      <summary>Die Magie ist Teil des Auserwählten – sie durchdringt Körper, Geist und Seele. Manche tragen das Erbe alter Völker in sich, andere sind mit roher, unbändiger Macht erfüllt, die sich in chaotischen Erscheinungen Bahn bricht.</summary>
+    </page>
+
+    <page file="de-compendium-classes-wizard.xml">
+      <title>Zaubergelehrter (Wizard)</title>
+      <summary>Magie ist allgegenwärtig in Tyria – doch nur wenige verstehen wirklich, wie sie funktioniert. Zaubergelehrte sind jene, die sich dieser Herausforderung stellen. Getrieben von Wissensdurst und Disziplin, widmen sie ihr Leben der Entschlüsselung arkaner Formeln und energetischer Muster.</summary>
+    </page>
+
+    <page file="de-compendium-classes-monk.xml">
+      <title>Wiedergänger (Monk)</title>
+      <summary>Wiedergänger haben in den Nebeln mächtige Geister getroffen, die ihnen Schnelligkeit und Stärke im Kampf verleihen.</summary>
+    </page>
+
+    <page file="">
+      <title>Barde (Bard) (to-do)</title>
+      <summary>Barden sind einfach zu spaßige Klassen, um sie nicht nach Tyria zu übernehmen.</summary>
+    </page>
+
+    <page file="">
+      <title>Ingenieur (Artificer) (to-do)</title>
+      <summary>Ingenieure haben ihren ganz eigenen Zugang zu Magie. Sie verzaubern Gegenstände, die ihnen im Kampf hilfreich sind.</summary>
+    </page>
+
+    <page file="">
+      <title>Nebelpaktierer (Warlock) (to-do)</title>
+      <summary>Nebelpaktierer (engl. Mistbound oder Pactbound) haben einen Vertrag mit einem machtvollen Wesen aus den Nebeln geschlossen. Dieses Wesen gewährt ihnen arkanes Wissen oder rohe Macht – oft gegen einen Preis. Ihre Magie ist fremdartig, manchmal gefährlich – aber machtvoll.</summary>
+    </page>
+
+    <page file="">
+      <title>Mesmer (Fernziel)</title>
+      <summary>Mesmer, Meister der Illusionen, sind eine ikonische Klasse für Guild Wars. Diese müssen allerdings vollkommen "homebrewed" werden, daher sind sie ein Fernziel.</summary>
+    </page>
+
+  </pages>
+
+</entry>

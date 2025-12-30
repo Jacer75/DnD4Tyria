@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-race.xsl"?>
+<root>
+  <external href="/DnD4Tyria/de/aurora/races/d4t-race-charr.xml"/>
+  <external href_labels="/DnD4Tyria/de/labels.xml"/>
+</root>

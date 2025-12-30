@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-lore.xsl"?>
+<lore id="ID_D4T_LORE_DWAYNA_DOMAIN" title="Dwaynas Himmelsdomäne" source="DnD4Tyria">
+    <info>
+        <description>Dwaynas Reich ist ein schwebendes Übergangsreich für verletzte Seelen, das seit dem Weggang der Götter langsam verfällt und sich mit Unheilbaren füllt.</description>
+        <author url="">DnD4Tyria</author>
+        <update version="1.0.0">
+            <file name="de-lore-mists-realmdwayna.xml" url=""/>
+        </update>
+    </info>
+    <public>
+        <blockquote>
+            <p>Ihr tretet in eine Weite aus Licht und Wind. Kein Himmel wölbt sich über euch, kein Boden trägt euch unterhalb eines Horizonts – nur ein stilles, strahlendes Nichts. Darin schweben Inseln wie Gedanken, und auf jeder ruht weißer Marmor, als hätte jemand einen Palast aus Ruhe in die Leere gesetzt. Der Wind ist warm und trägt Stimmen, die nicht sprechen, sondern erinnern. Und doch liegt über allem eine leise Abwesenheit, als wäre das Herz dieses Ortes längst fort.</p>
+        </blockquote>
+        <p>Dwaynas Himmelsdomäne ist ein Reich der Höhe, des Lichts und der Luft. Es liegt in den Nebeln wie eine Kette schwebender Inseln, getragen von unsichtbaren Strömungen, die eher Gebet als Wetter sind. Im Zentrum erhebt sich ein Palast aus weißem Marmor, dessen Hallen offen sind und den Wind durch sich hindurchziehen lassen. Dieser Ort war nie als Ziel gedacht, sondern als Übergang: Dwayna nahm Seelen auf, die zu verletzt waren, um den Tod zu begreifen, und schenkte ihnen Heilung, bevor sie weiterziehen konnten.</p>
+        <p>Seit dem Weggang der Götter ist die Domäne nicht verstummt, aber sie ist verändert. Dwaynas eigene Gegenwart fehlt, und mit ihr fehlt das, was diesen Ort einst erfüllte: das sanfte Ordnen des Inneren, das Loslassen, das Stillwerden nach dem Sturm. Die Diener der Göttin, ihre Envoys, tun weiterhin ihren Dienst. Sie finden die Seelen, die des Trostes bedürfen, sie geleiten sie durch den Schleier, und sie bringen sie zuverlässig in diese Domäne. Doch dort endet ihre Macht. Sie können begleiten, bewahren und führen, aber sie können nicht ersetzen, was Dwayna selbst war.</p>
+        <p>So beginnt sich selbst dieses unermeßliche Reich zu füllen. Immer mehr Seelen verweilen, weil niemand sie heilt und vorbereitet. Manche sind gebrochen von Krieg, Verrat oder Krankheit, manche tragen Wunden, die nicht am Körper, sondern am Selbst liegen. Dwaynas Reich war für Durchgang geschaffen, nicht für Dauer. Wo der Fluss stockt, sammelt sich Wasser. Wo der Übergang ausbleibt, wird das Warten zum Zustand.</p>
+        <p>Gleichzeitig zerfällt die Domäne langsam, als würde ihr die Pflege fehlen, die sie einst stabil hielt. Nichts stürzt auf einmal ein; der Verfall ist leise und schleichend. Licht wird milder und diffuser, Luftströme werden unruhiger, und in den Marmorflächen liegen feine Risse wie Ermüdung. Ob dieser Zustand allein aus der Abwesenheit der Göttin entsteht oder ob eine höhere Macht aus den Nebeln ihre Hand im Spiel hatte, ist nicht offensichtlich. Doch wer lange genug hinsieht, spürt: Dieser Ort trägt eine Wunde.</p>
+        <p>Dwaynas Himmelsdomäne bleibt damit ein Reich der Hoffnung, aber einer Hoffnung, die müde geworden ist. Es ist ein Ort, an dem Seelen ankommen, die nicht bereit sind weiterzugehen, und an dem die Hilfe, die einst selbstverständlich war, nun zur Erinnerung geworden ist. Wer diesen Ort betritt, spürt nicht den Zorn eines gefallenen Gottes, sondern die Tragik eines Mechanismus, der ohne seine Quelle weiterläuft, bis er sich erschöpft.</p>
+        <h2>Kreaturen in Dwaynas Reich</h2>
+        <p>Dwaynas Wirken in Tyria endet nicht mit dem Weggang der Göttin selbst. Ihre Diener bestehen fort und erfüllen ihre Aufgaben weiterhin, wenn auch unvollständig und oft ohne die Führung, die ihnen einst selbstverständlich war. Gemeinsam bilden sie ein fragiles System, das zwischen Leben, Tod und Übergang vermittelt.</p>
+        <h3>Die Wächter Dwaynas</h3>
+        <p>Diese gewaltigen, geflügelten Wesen ragen mehrere Schritt hoch und wirken weniger wie Personen als wie lebendige Statuen aus Licht und Stein. Sie dienen nicht als Boten oder Richter, sondern als tragende Kräfte. In Dwaynas Reich stabilisieren sie Inseln, Luftströme und die Ordnung des Ortes selbst. In Tyria erscheinen sie nur äußerst selten, meist reglos am Himmel oder über Orten großen Leidens. Legenden beschreiben sie als stumme Zeichen, dass eine Grenze erreicht ist.</p>
+        <h3>Die Envoys Dwaynas</h3>
+        <p>Envoys sind menschengroße, geflügelte Gestalten von ruhiger Ausstrahlung. Ihre Aufgabe ist klar und unverändert: Sie begleiten Seelen aus Tyria durch den Schleier in Dwaynas Domäne. Sie heilen nicht, urteilen nicht und trösten nur durch ihre bloße Anwesenheit. Seit dem Weggang der Götter erfüllen sie ihren Dienst weiterhin, wohl wissend, dass sie die letzte Phase der Heilung nicht mehr gewährleisten können. Für viele Gläubige ist ihre fortgesetzte Tätigkeit der stärkste Beweis, dass Dwaynas Einfluss nicht erloschen ist.</p>
+        <h3>Die heilenden Engel</h3>
+        <p>Kleine, oft unsichtbare Wesen, die sich frei zwischen Dwaynas Reich und Tyria bewegen. Sie wirken leise und punktuell: Sie lindern Krankheiten, schließen Wunden, stabilisieren Leben in Momenten größter Not. In Tyria werden sie selten bewusst wahrgenommen und gelten meist als Wunder, Glück oder Segen. Sie greifen nicht ein, um Schicksale zu wenden, sondern um unnötiges Leid zu mindern.</p>
+        <!-- Die Windboten
+Diese Diener bewegen sich schneller und freier als andere. Sie bringen keine Seelen, sondern Eindrücke: Träume, Vorahnungen, Warnungen. In Tyria zeigen sie sich als ungewöhnliche Windphänomene, flüsternde Böen oder plötzliche Stille vor einem Sturm. Kleriker und Paladine Dwaynas berichten, dass wichtige Erkenntnisse oft mit dem Gefühl von Höhe und Leere einhergehen.-->
+        <!-- Die Hüter der Stille
+Wesen von kaum greifbarer Präsenz, deren Aufgabe es ist, emotionale Ruhe zu bewahren. Sie verhindern, dass Schmerz, Angst oder Erinnerung Dwaynas Reich überfluten. Seit der Abwesenheit der Göttin sind sie zunehmend überfordert. Wo sie versagen, entstehen Zonen intensiver seelischer Unruhe. In Tyria machen sie sich nur indirekt bemerkbar, etwa dort, wo Trauer unerklärlich gedämpft oder plötzlich überwältigend ist.-->
+        <!--Die Träger der Schwelle
+Diese Diener existieren ausschließlich am Übergang zwischen Dwaynas Reich und der Unterwelt Grenths. Sie entscheiden nichts, sie prüfen nichts, sie erkennen nur, ob eine Seele bereit ist weiterzugehen. Seit Jahrhunderten stehen viele von ihnen untätig, da kaum noch Seelen diesen Zustand erreichen. Ihr Schweigen ist eines der deutlichsten Zeichen für das gestörte Gleichgewicht.-->
+        <h3>Die Gebrochenen Seelen</h3>
+        <p>Da Dwaynas Reich ursprünglich für besonders verletzte Seelen bestimmt war, finden sich dort heute zahllose Wesen, die nicht weitergehen können. Diese erscheinen als dunkelblau leuchtende, menschenähnliche Gestalten mit fragmentierter Ausstrahlung. Sie sind keine Untoten, sondern fehlgeleitete Übergänge. Manche von ihnen treten auch in Tyria auf, meist an Orten dünnen Schleiers. Sie sind nicht bösartig, doch ihre innere Zerrissenheit macht sie unberechenbar.</p>
+        <h3>Verlorene Envoys und Märtyrerengel</h3>
+        <p>Einige Diener Dwaynas versuchten im Laufe der Jahrhunderte, ihre Aufgabe zu erweitern oder zu ersetzen, was ihnen nicht mehr möglich war. Diese Wesen sind weder vollständig gefallen noch unverändert geblieben. Sie heilen falsch, halten Seelen fest oder greifen dort ein, wo sie es nicht sollten. Religiöse Texte erwähnen sie als Warnung: Nicht jedes geflügelte Wesen dient noch dem ursprünglichen Gleichgewicht.</p>
+    </public>
+    <gm>
+        <p>In dieser Kampagne ist Dwaynas Himmelsdomäne ein Übergangsreich, das ursprünglich der Heilung schwer verletzter Seelen diente, bevor diese an Grenths Unterwelt weitergegeben wurden. Seit dem Weggang der Götter wird die eigentliche Heilung nicht mehr vollzogen. Dwaynas Envoys erfüllen ihre Pflicht weiterhin und bringen Seelen in die Domäne, aber sie können den göttlichen Kernprozess nicht ersetzen. Dadurch füllt sich das Reich allmählich mit Seelen, die feststecken, und der Ort selbst verfällt langsam. Der Zerfall kann rein strukturell durch die Abwesenheit der Göttin erklärt werden oder zusätzlich durch einen vergangenen Angriff eines höheren Nebelwesens; diese Unklarheit ist bewusst als Werkzeug für spätere Enthüllungen angelegt.</p>
+        <p>Für Spielleitung und Plot eignet sich die Domäne als mythischer Schauplatz für spätere Stufen, als Quelle seltener Erkenntnisse über die Seelenordnung oder als moralisches Problem mit langfristigen Folgen. Jeder Eingriff in den „Stau“ der Seelen kann Konsequenzen haben: für Grenths Reich, für den Schleier und für die Aufmerksamkeit von Wächterorganisationen. Die Astralwache oder verwandte Kräfte könnten ungewöhnliche Bewegungen am Schleier registrieren, wenn Sterbliche beginnen, regelmäßig zwischen Tyria und dieser Domäne zu wechseln.</p>
+    </gm>
+    <images>
+        <!-- Optional -->
+    </images>
+</lore>

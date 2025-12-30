@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/DnD4Tyria/xslt/display-class.xsl"?>
+<root>
+  <external href="/DnD4Tyria/de/aurora/classes/d4t-class-rogue.xml"/>
+  <external href_spells="/DnD4Tyria/de/aurora/d4t-spells.xml"/>
+  <external href_labels="/DnD4Tyria/de/labels.xml"/>
+</root>

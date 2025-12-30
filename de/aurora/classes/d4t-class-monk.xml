@@ -1,0 +1,1653 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Wiedergänger</name>
+        <description>Ein Wiedergänger hat in den Nebeln eine mächtige Seele getroffen, die ihm Schnelligkeit verleiht.</description>
+        <author url="">DnD4Tyria</author>
+        <update version="0.0.1">
+            <file name="d4t-class-monk.xml" url=""/>
+        </update>
+    </info>
+    <element name="Wiedergänger" type="Class" source="DnD4Tyria" id="ID_D4T_CLASS_MONK">
+        <description>
+            <p>Ihre Handflächen sind nur ein Wimpernschlag entfernt, als die Pfeile einschlagen – und doch prallen sie ab, als hätte die Luft selbst einen Willen. Mit jedem Atemzug folgt eine zweite Bewegung, eine dritte, und plötzlich steht die Frau allein inmitten zerbrochener Schäfte – unbewegt, als hätte sie das alles schon einmal geträumt.</p>
+            <p class="indent">Ein Charr im Staub der Schlacht zieht die Schultern hoch, und sein Blick wird leer, als lausche er einer Stimme, die niemand sonst hören kann. Dann setzt er sich in Bewegung: nicht schnell, sondern unausweichlich. Wo sein Tritt landet, ist da für einen Herzschlag zu viel Gewicht – als hätte ein unsichtbarer Riese mitgetreten.</p>
+            <p class="indent">In einer Gasse, irgendwo zwischen Löwenstein und den Wegen der Händler, gleitet eine Gestalt durch Schatten, die zu dicht sind für gewöhnliche Nacht. Der Dolch berührt nicht einmal die Haut – und doch sackt der Wächter weg, als hätte jemand in seinem Inneren einen Faden durchtrennt.</p>
+            <p class="indent">In Tyria nennt man solche Asketen und Kämpfer manchmal Wiedergänger: Menschen, Charr, Norn, Sylvari oder Asura, die in den Nebeln einer Legende begegnet sind – einem Echo großer Namen, einer Seele, die sich nicht ganz von der Welt gelöst hat. Ob Zufall, Schicksal oder ein gefährlicher Riss zwischen den Sphären: Seit dieser Begegnung folgt ihnen etwas zurück nach Tyria. Und mit Disziplin formen sie diese Berührung zu einer Kraft, die sie Ki nennen.</p>
+            <h4>DIE MACHT DES KI</h4>
+            <p>Ki ist in DnD4Tyria keine fremde “östliche” Mystik, sondern eine Nebelkraft: die Resonanz, die entsteht, wenn ein Sterblicher gelernt hat, mit den Echos der Nebel in Einklang zu treten. Manche Wiedergänger beschreiben es wie einen zweiten Atem, andere wie ein kaum hörbares Flüstern hinter den Gedanken – die Gegenwart einer Legende, die nicht befiehlt, sondern antwortet.</p>
+            <p class="indent">Dieses Ki ist weder “Untod” noch Nekromantie. Es ist Erinnerung, Abdruck und Wille – und es verlangt Kontrolle. Wer sich ihm hingibt, wird unstet, fremd im eigenen Körper, zu leicht zum Werkzeug eines fremden Echos. Wer es beherrscht, gewinnt übernatürliche Präzision, Geschwindigkeit und die Fähigkeit, den eigenen Körper – und manchmal den des Gegners – für einen Augenblick den Regeln der Welt zu entziehen.</p>
+            <h4>TRAINING UND ASKESE</h4>
+            <p>Wiedergänger entstehen selten im bequemen Alltag. Viele werden durch Krisen geformt: Expeditionen, Schlachten, Portale, Fraktale, uralte Ruinen – Orte, an denen die Nebel dünn werden. Manche finden danach Zuflucht in Klöstern, Dojos oder abgeschiedenen Schulen; andere bleiben Wanderer, die ihre Disziplin auf Straßen und Schlachtfeldern härten.</p>
+            <p class="indent">Fast alle entwickeln Rituale, die sie erden: Atemformen, Gelübde, strenge Tagesabläufe oder symbolische Anker – Namen, Masken, Mantras. Nicht, weil das Ki sonst verschwindet, sondern weil es sonst übernimmt. Ein Wiedergänger trainiert nicht nur den Körper. Er trainiert die Grenze zwischen sich – und der Legende, die ihm geantwortet hat.</p>
+            <p class="indent">Manche Wiedergänger leben vollständig abgeschieden von der umgebenden Bevölkerung, zurückgezogen an Orten, an denen nichts ihre geistige Disziplin oder ihre Kontrolle über die Nebelkraft stören kann. Andere sind zur Isolation verpflichtet und treten nur dann aus dem Verborgenen, wenn sie als Kundschafter, Agenten oder Assassinen im Auftrag ihres Ordens, eines einflussreichen Gönners oder einer sterblichen – manchmal auch übernatürlichen – Macht handeln.</p>
+            <p class="indent">Die Mehrheit der Wiedergänger meidet ihre Nachbarn jedoch nicht. Sie besuchen regelmäßig nahegelegene Städte oder Dörfer und tauschen ihre Dienste gegen Nahrung, Unterkunft oder andere Güter. Als vielseitige Kämpfer finden sie sich oft in der Rolle von Beschützern wieder, wenn Monster, Banditen oder Tyrannen eine Gemeinschaft bedrohen.</p>
+            <p class="indent">Für einen Wiedergänger bedeutet es, Abenteurer zu werden, eine strukturierte, gemeinschaftliche Lebensweise hinter sich zu lassen und zum Wanderer zu werden. Dieser Übergang ist hart und wird selten leichtfertig gewählt. Wer seine Schule, seinen Orden oder seine Lehrmeister verlässt, nimmt diesen Schritt ernst und versteht jedes Abenteuer als persönliche Prüfung der körperlichen Disziplin und der Kontrolle über die eigene Nebelresonanz. In der Regel messen Wiedergänger materiellem Reichtum wenig Bedeutung bei; sie werden vielmehr von dem Wunsch angetrieben, einer größeren Aufgabe zu dienen, als lediglich Monster zu erschlagen und ihre Schätze an sich zu nehmen.</p>
+            <h4>EINEN WIEDERGÄNGER ERSCHAFFEN</h4>
+            <p>Wenn du deinen Wiedergänger erschaffst, denke über deine Verbindung zu dem Ort oder der Gemeinschaft nach, an dem du deine Fähigkeiten erlernt hast. War es ein abgeschiedener Orden, eine lose Schule, ein einzelner Mentor – oder vielleicht eine Begegnung in den Nebeln selbst? Warst du ein Waisenkind oder wurdest du als Kind dorthin gebracht? Haben deine Eltern dich aus Dankbarkeit oder aus Not fortgegeben? Suchtest du Zuflucht, um einer Schuld oder einem Verbrechen zu entkommen? Oder hast du diesen Weg bewusst und aus eigenem Antrieb gewählt?</p>
+            <p class="indent">Überlege auch, warum du diesen Ort verlassen hast. Wurdest du für eine wichtige Aufgabe außerhalb der Gemeinschaft ausgewählt? Wurdest du verstoßen, weil du gegen Regeln oder Gelübde verstoßen hast? Hast du den Abschied gefürchtet – oder ihn herbeigesehnt? Gibt es ein Ziel, das du in der Welt Tyrias erreichen willst? Oder hoffst du insgeheim, eines Tages zurückzukehren?</p>
+            <p class="indent">Aufgrund des strukturierten Lebens in solchen Gemeinschaften und der strengen Disziplin, die nötig ist, um Ki – die Nebelkraft – zu beherrschen, neigen Wiedergänger fast immer zu einer gesetzestreuen Gesinnung.</p>
+            <h5 class="caption">SCHNELLBAU</h5>
+            <p>Du kannst einen Wiedergänger schnell erstellen, indem du diesen Vorschlägen folgst. Setze zuerst Geschicklichkeit als deinen höchsten Attributswert, gefolgt von Weisheit. Wähle als Hintergrund den Einsiedler.</p>
+            <h3>KLASSENMERKMALE</h3>
+            <p>Als Wiedergänger erhältst du die folgenden Klassenmerkmale.</p>
+            <h5 class="caption">TREFFERPUNKTE</h5>
+            <ul class="unstyled">
+                <li>
+                    <strong>Trefferwürfel:</strong> 1W8 pro Wiedergänger-Stufe</li>
+                <li>
+                    <strong>Trefferpunkte auf Stufe 1:</strong> 8 + dein Konstitutionsmodifikator</li>
+                <li>
+                    <strong>Trefferpunkte auf höheren Stufen:</strong> 1W8 (oder 5) + dein Konstitutionsmodifikator pro Wiedergänger-Stufe nach der 1.</li>
+            </ul>
+            <h5 class="caption">FERTIGKEITEN</h5>
+            <ul class="unstyled mb">
+                <li>
+                    <strong>Rüstungen:</strong> Keine</li>
+                <li>
+                    <strong>Waffen:</strong> Einfache Waffen, Kurzschwerter</li>
+                <li>
+                    <strong>Werkzeuge:</strong> Wähle eine Art Handwerkszeug oder ein Musikinstrument</li>
+            </ul>
+            <ul class="unstyled">
+                <li>
+                    <strong>Rettungswürfe:</strong> Stärke, Geschicklichkeit</li>
+                <li>
+                    <strong>Fertigkeiten:</strong> Wähle zwei aus Akrobatik, Athletik, Geschichte, Motiv erkennen, Religion und Heimlichkeit</li>
+            </ul>
+            <h5 class="caption">AUSRÜSTUNG</h5>
+            <p>Du beginnst mit der folgenden Ausrüstung zusätzlich zu der Ausrüstung, die dir dein Hintergrund gewährt:</p>
+            <ul>
+                <li>(a) ein Kurzschwert oder (b) eine beliebige einfache Waffe</li>
+                <li>(a) ein Abenteurerausrüstungsset (Dungeoneer’s Pack) oder (b) ein Entdeckerausrüstungsset (Explorer’s Pack)</li>
+                <li>10 Wurfpfeile</li>
+            </ul>
+            <h5 class="caption">DER WIEDERGÄNGER (THE MONK)</h5>
+            <table class="class-features">
+                <thead>
+                    <tr>
+                        <td class="col-10">Stufe</td>
+                        <td class="col-10">Kampfkünste<br/>(Martial Arts)</td>
+                        <td class="col-10">Ki-Punkte<br/>(Ki Points)</td>
+                        <td class="col-10">Ungerüstete Bewegung<br/>(Unarmored Movement)</td>
+                        <td class="col-60 left">Merkmale</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>1.</td>
+                    <td>1W4</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td class="left">Ungerüstete Verteidigung (Unarmored Defense), Kampfkünste (Martial Arts)</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>1W4</td>
+                    <td>2</td>
+                    <td>+3 m</td>
+                    <td class="left">Ki (Ki), Ungerüstete Bewegung (Unarmored Movement)</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>1W4</td>
+                    <td>3</td>
+                    <td>+3 m</td>
+                    <td class="left">Pfad der Legende (Monastic Tradition), Geschosse abwehren (Deflect Missiles)</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>1W4</td>
+                    <td>4</td>
+                    <td>+3 m</td>
+                    <td class="left">Verbesserungsauswahl, Sturz abfedern (Slow Fall)</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>1W6</td>
+                    <td>5</td>
+                    <td>+3 m</td>
+                    <td class="left">Zusätzlicher Angriff (Extra Attack), Betäubender Schlag (Stunning Strike)</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>1W6</td>
+                    <td>6</td>
+                    <td>+4,5 m</td>
+                    <td class="left">Ki-Schläge (Ki-Empowered Strikes), Merkmal: Pfad der Legende (Monastic Tradition feature)</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>1W6</td>
+                    <td>7</td>
+                    <td>+4,5 m</td>
+                    <td class="left">Entrinnen (Evasion), Ruhiger Geist (Stillness of Mind)</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>1W6</td>
+                    <td>8</td>
+                    <td>+4,5 m</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>1W6</td>
+                    <td>9</td>
+                    <td>+4,5 m</td>
+                    <td class="left">Verbesserte Ungerüstete Bewegung (Unarmored Movement Improvement)</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>1W6</td>
+                    <td>10</td>
+                    <td>+6 m</td>
+                    <td class="left">Reinheit des Körpers (Purity of Body)</td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td>1W8</td>
+                    <td>11</td>
+                    <td>+6 m</td>
+                    <td class="left">Merkmal: Pfad der Legende (Monastic Tradition feature)</td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td>1W8</td>
+                    <td>12</td>
+                    <td>+6 m</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>13.</td>
+                    <td>1W8</td>
+                    <td>13</td>
+                    <td>+6 m</td>
+                    <td class="left">Sprache von Sonne und Mond (Tongue of the Sun and Moon)</td>
+                </tr>
+                <tr>
+                    <td>14.</td>
+                    <td>1W8</td>
+                    <td>14</td>
+                    <td>+7,5 m</td>
+                    <td class="left">Diamantseele (Diamond Soul)</td>
+                </tr>
+                <tr>
+                    <td>15.</td>
+                    <td>1W8</td>
+                    <td>15</td>
+                    <td>+7,5 m</td>
+                    <td class="left">Zeitloser Körper (Timeless Body)</td>
+                </tr>
+                <tr>
+                    <td>16.</td>
+                    <td>1W8</td>
+                    <td>16</td>
+                    <td>+7,5 m</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>17.</td>
+                    <td>1W10</td>
+                    <td>17</td>
+                    <td>+7,5 m</td>
+                    <td class="left">Merkmal: Pfad der Legende (Monastic Tradition feature)</td>
+                </tr>
+                <tr>
+                    <td>18.</td>
+                    <td>1W10</td>
+                    <td>18</td>
+                    <td>+9 m</td>
+                    <td class="left">Geist über Körper (Empty Body)</td>
+                </tr>
+                <tr>
+                    <td>19.</td>
+                    <td>1W10</td>
+                    <td>19</td>
+                    <td>+9 m</td>
+                    <td class="left">Verbesserungsauswahl</td>
+                </tr>
+                <tr>
+                    <td>20.</td>
+                    <td>1W10</td>
+                    <td>20</td>
+                    <td>+9 m</td>
+                    <td class="left">Perfektes Selbst (Perfect Self)</td>
+                </tr>
+            </table>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_UNARMORED_DEFENSE"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_MARTIAL_ARTS"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_KI"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_MONASTIC_TRADITION"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_DEFLECT_MISSILES"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_SLOW_FALL"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_EXTRA_ATTACK_MONK"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_STUNNING_STRIKE"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_KI_EMPOWERED_STRIKES"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_EVASION_MONK"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_STILLNESS_OF_MIND"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_PURITY_OF_BODY"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_DIAMOND_SOUL"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_EMPTY_BODY"/>
+            <div element="ID_D4T_CLASS_FEATURE_MONK_PERFECT_SELF"/>
+        </description>
+        <sheet display="false">
+            <description>A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.</description>
+        </sheet>
+        <setters>
+            <set name="short">A master of martial arts, harnessing the power of the body in pursuit of physical and spiritual perfection.</set>
+            <set name="hd">d8</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_D4T_MULTICLASS_MONK"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" requirements="!ID_D4T_MULTICLASS_MONK"/>
+            <select type="Proficiency" name="Tool Proficiency (Monk)" supports="Musical Instrument||Artisan tools" requirements="!ID_D4T_MULTICLASS_MONK"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_D4T_MULTICLASS_MONK"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_D4T_MULTICLASS_MONK"/>
+            <select type="Proficiency" name="Skill Proficiency (Monk)" supports="Skill,Monk" number="2" requirements="!ID_D4T_MULTICLASS_MONK"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_UNARMORED_DEFENSE" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_MARTIAL_ARTS" level="1"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_KI" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT" level="2"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_MONASTIC_TRADITION" level="3"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_DEFLECT_MISSILES" level="3"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK" level="4"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_SLOW_FALL" level="4"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_EXTRA_ATTACK_MONK" level="5"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_STUNNING_STRIKE" level="5"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_KI_EMPOWERED_STRIKES" level="6"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_EVASION_MONK" level="7"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_STILLNESS_OF_MIND" level="7"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_PURITY_OF_BODY" level="10"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON" level="13"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_DIAMOND_SOUL" level="14"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK" level="15"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_EMPTY_BODY" level="18"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_PERFECT_SELF" level="20"/>
+        </rules>
+        <multiclass id="ID_D4T_MULTICLASS_MONK">
+            <prerequisite>Dexterity 13 and Wisdom 13</prerequisite>
+            <requirements>([dex:13],[wis:13])</requirements>
+            <setters>
+                <set name="multiclass proficiencies">Simple weapons, shortswords</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"/>
+                <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD"/>
+            </rules>
+        </multiclass>
+    </element>
+    <!-- ASI - Verbesserungsauswahl -->
+    <element name="Verbesserungsauswahl (Ability Score Improvement)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_ABILITYSCOREIMPROVEMENT">
+        <compendium display="false"/>
+        <description>
+            <p>Wenn du die 4. Stufe erreichst, und erneut auf der 8., 12., 16. und 19. Stufe, kannst du einen Attributswert deiner Wahl um 2 erhöhen oder zwei Attributswerte deiner Wahl um je 1 erhöhen. Wie üblich kannst du durch dieses Merkmal keinen Attributswert über 20 steigern.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wiedergänger 4)" supports="Improvement Option,Monk,4" level="4"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wiedergänger 8)" supports="Improvement Option,Monk,8" level="8"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wiedergänger 12)" supports="Improvement Option,Monk,12" level="12"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wiedergänger 16)" supports="Improvement Option,Monk,16" level="16"/>
+            <select type="Class Feature" name="Verbesserungsauswahl (Wiedergänger 19)" supports="Improvement Option,Monk,19" level="19"/>
+        </rules>
+    </element>
+    <!-- Improvement Options -->
+    <!-- Monk 4 -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_MONK_4">
+        <supports>Improvement Option,Monk,4</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wiedergänger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_MONK_4">
+        <supports>Improvement Option,Monk,4</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <!-- Monk 8 -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_MONK_8">
+        <supports>Improvement Option,Monk,8</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wiedergänger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_MONK_8">
+        <supports>Improvement Option,Monk,8</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <!-- Monk 12 -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_MONK_12">
+        <supports>Improvement Option,Monk,12</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wiedergänger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_MONK_12">
+        <supports>Improvement Option,Monk,12</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <!-- Monk 16 -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_MONK_16">
+        <supports>Improvement Option,Monk,16</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wiedergänger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_MONK_16">
+        <supports>Improvement Option,Monk,16</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <!-- Monk 19 -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ABILITY_SCORE_MONK_19">
+        <supports>Improvement Option,Monk,19</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Wiedergänger)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_MONK_19">
+        <supports>Improvement Option,Monk,19</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <!-- Proficiencies -->
+    <element name="Fertigkeiten (Wiedergänger)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_PROFICIENCIES">
+        <description>
+            <p>Wähle zwei Fertigkeiten aus der folgenden Liste, in denen du geübt bist: Akrobatik, Athletik, Geschichte, Motiv erkennen, Religion und Heimlichkeit.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Fertigkeiten" supports="Monk-Proficiency" number="2" level="1"/>
+        </rules>
+    </element>
+    <element name="Akrobatik (Acrobatics)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_ACROBATICS">
+        <supports>Monk-Proficiency</supports>
+        <description>
+            <p>Akrobatik deckt schwierige Situationen ab, in denen du das Gleichgewicht halten oder kunstvolle Bewegungen ausführen musst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS"/>
+        </rules>
+    </element>
+    <element name="Athletik (Athletics)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_ATHLETICS">
+        <supports>Monk-Proficiency</supports>
+        <description>
+            <p>Athletik deckt schwierige Situationen ab, in denen du beim Klettern, Springen oder Schwimmen stehst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ATHLETICS"/>
+        </rules>
+    </element>
+    <element name="Geschichte (History)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_HISTORY">
+        <supports>Monk-Proficiency</supports>
+        <description>
+            <p>Geschichte spiegelt dein Wissen über bedeutende Ereignisse, Legenden und Reiche wider.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY"/>
+        </rules>
+    </element>
+    <element name="Motiv erkennen (Insight)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_INSIGHT">
+        <supports>Monk-Proficiency</supports>
+        <description>
+            <p>Motiv erkennen hilft dir, die Absichten anderer zu deuten und Lügen oder Unsicherheit zu bemerken.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT"/>
+        </rules>
+    </element>
+    <element name="Religion (Religion)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_RELIGION">
+        <supports>Monk-Proficiency</supports>
+        <description>
+            <p>Religion umfasst Wissen über Kulte, Riten, heilige Traditionen und göttliche Mächte.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION"/>
+        </rules>
+    </element>
+    <element name="Heimlichkeit (Stealth)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_STEALTH">
+        <supports>Monk-Proficiency</supports>
+        <description>
+            <p>Heimlichkeit beschreibt deine Fähigkeit, dich unbemerkt zu bewegen und im Schatten zu verschwinden.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH"/>
+        </rules>
+    </element>
+    <!-- Auswahl Werkzeugproficiency -->
+    <element name="Werkzeug oder Instrument (Tool Proficiency)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_TOOLS">
+        <description>
+            <p>Du erhältst den Umgang mit einem Werkzeug oder Musikinstrument deiner Wahl.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Class Feature" name="Werkzeug oder Instrument" supports="Monk-Tools" number="1" level="1"/>
+        </rules>
+    </element>
+    <!-- Monk-Tools: Auswahloptionen (Artisan's Tools + Musical Instruments) -->
+    <element name="Alchemistenbedarf (Alchemist’s Supplies) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_ALCHEMISTS_SUPPLIES">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Alchemistenbedarf (Alchemist’s Supplies).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Brauerbedarf (Brewer’s Supplies) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_BREWERS_SUPPLIES">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Brauerbedarf (Brewer’s Supplies).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BREWERS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Kalligraphenbedarf (Calligrapher’s Supplies) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_CALLIGRAPHERS_SUPPLIES">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Kalligraphenbedarf (Calligrapher’s Supplies).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Zimmermannswerkzeug (Carpenter’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_CARPENTERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Zimmermannswerkzeug (Carpenter’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARPENTERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Kartographenwerkzeug (Cartographer’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_CARTOGRAPHERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Kartographenwerkzeug (Cartographer’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CARTOGRAPHERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Schusterwerkzeug (Cobbler’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_COBBLERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Schusterwerkzeug (Cobbler’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COBBLERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Kochutensilien (Cook’s Utensils) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_COOKS_UTENSILS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Kochutensilien (Cook’s Utensils).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS"/>
+        </rules>
+    </element>
+    <element name="Verkleidungsset (Disguise Kit) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_DISGUISE_KIT">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit einem Verkleidungsset (Disguise Kit).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DISGUISE_KIT"/>
+        </rules>
+    </element>
+    <element name="Fälschungsset (Forgery Kit) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_FORGERY_KIT">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit einem Fälschungsset (Forgery Kit).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT"/>
+        </rules>
+    </element>
+    <element name="Glasbläserwerkzeug (Glassblower’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_GLASSBLOWERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Glasbläserwerkzeug (Glassblower’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_GLASSBLOWERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Kräuterkundekasten (Herbalism Kit) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_HERBALISM_KIT">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit einem Kräuterkundekasten (Herbalism Kit).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HERBALISM_KIT"/>
+        </rules>
+    </element>
+    <element name="Juwelierwerkzeug (Jeweler’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_JEWELERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Juwelierwerkzeug (Jeweler’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_JEWELERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Lederarbeiterwerkzeug (Leatherworker’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_LEATHERWORKERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Lederarbeiterwerkzeug (Leatherworker’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Steinmetzwerkzeug (Mason’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_MASONS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Steinmetzwerkzeug (Mason’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_MASONS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Navigatorenwerkzeug (Navigator’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_NAVIGATORS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Navigatorenwerkzeug (Navigator’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_NAVIGATORS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Malerbedarf (Painter’s Supplies) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_PAINTERS_SUPPLIES">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Malerbedarf (Painter’s Supplies).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAINTERS_SUPPLIES"/>
+        </rules>
+    </element>
+    <element name="Giftmischerset (Poisoner’s Kit) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_POISONERS_KIT">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit einem Giftmischerset (Poisoner’s Kit).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT"/>
+        </rules>
+    </element>
+    <element name="Töpferwerkzeug (Potter’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_POTTERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Töpferwerkzeug (Potter’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POTTERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Schmiedewerkzeug (Smith’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_SMITHS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Schmiedewerkzeug (Smith’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Diebeswerkzeug (Thieves’ Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_THIEVES_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Diebeswerkzeug (Thieves’ Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Bastlerwerkzeug (Tinker’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_TINKERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Bastlerwerkzeug (Tinker’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Weberwerkzeug (Weaver’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_WEAVERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Weberwerkzeug (Weaver’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WEAVERS_TOOLS"/>
+        </rules>
+    </element>
+    <element name="Holzschnitzwerkzeug (Woodcarver’s Tools) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_WOODCARVERS_TOOLS">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit Holzschnitzwerkzeug (Woodcarver’s Tools).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_WOODCARVERS_TOOLS"/>
+        </rules>
+    </element>
+    <!-- Instruments -->
+    <element name="Dudelsack (Bagpipes) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_BAGPIPES">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Dudelsack (Bagpipes).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_BAGPIPES"/>
+        </rules>
+    </element>
+    <element name="Trommel (Drum) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_DRUM">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Trommel (Drum).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM"/>
+        </rules>
+    </element>
+    <element name="Hackbrett (Dulcimer) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_DULCIMER">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Hackbrett (Dulcimer).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DULCIMER"/>
+        </rules>
+    </element>
+    <element name="Flöte (Flute) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_FLUTE">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Flöte (Flute).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FLUTE"/>
+        </rules>
+    </element>
+    <element name="Laute (Lute) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_LUTE">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Laute (Lute).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LUTE"/>
+        </rules>
+    </element>
+    <element name="Leier (Lyre) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_LYRE">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Leier (Lyre).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_LYRE"/>
+        </rules>
+    </element>
+    <element name="Horn (Horn) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_HORN">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit dem Horn (Horn).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_HORN"/>
+        </rules>
+    </element>
+    <element name="Panflöte (Pan Flute) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_PAN_FLUTE">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Panflöte (Pan Flute).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_PAN_FLUTE"/>
+        </rules>
+    </element>
+    <element name="Schalmei (Shawm) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_SHAWM">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Schalmei (Shawm).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SHAWM"/>
+        </rules>
+    </element>
+    <element name="Viole (Viol) (Geübt)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_MONK_PROFICIENCY_VIOL">
+        <compendium display="false"/>
+        <supports>Monk-Tools</supports>
+        <description>
+            <p>Du bist nun geübt im Umgang mit der Viole (Viol).</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VIOL"/>
+        </rules>
+    </element>
+    <!-- Klasseneigenschaften -->
+    <element name="Ungerüstete Verteidigung (Unarmored Defense)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_UNARMORED_DEFENSE">
+        <description>
+            <p>Ab der 1. Stufe entspricht deine Rüstungsklasse 10 + deinem Geschicklichkeitsmodifikator + deinem Weisheitsmodifikator, solange du keine Rüstung trägst und keinen Schild führst.</p>
+        </description>
+        <sheet>
+            <description>Solange du keine Rüstung trägst und keinen Schild führst, entspricht deine Rüstungsklasse {{ac:unarmored defense monk}}.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:unarmored defense monk:base" value="10"/>
+            <stat name="ac:unarmored defense monk:dexterity" value="dexterity:modifier"/>
+            <stat name="ac:unarmored defense monk:wisdom" value="wisdom:modifier"/>
+            <stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:base"/>
+            <stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:dexterity"/>
+            <stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:wisdom"/>
+            <stat name="ac:calculation" value="ac:unarmored defense monk" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Ungerüstete Verteidigung (Monk)"/>
+        </rules>
+    </element>
+    <element name="Kampfkünste (Martial Arts)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_MARTIAL_ARTS">
+        <description>
+            <p>Ab der 1. Stufe formt die Verbindung zu einer legendären Seele aus den Nebeln deinen Kampfstil. Das Echo eines Wesens, das einst selbst auf Tyria wandelte und außergewöhnliche Macht besaß, überträgt Fragmente seines Könnens auf dich. Diese Resonanz verleiht dir eine instinktive Meisterschaft im Kampf mit bloßen Händen und bestimmten Waffen.</p>
+            <p class="indent">Die folgenden Vorteile erhältst du, solange du unbewaffnet bist oder ausschließlich Wiedergängerwaffen führst – das sind Kurzschwerter sowie einfache Nahkampfwaffen, die weder die Eigenschaft zweihändig noch schwer besitzen – und solange du keine Rüstung trägst und keinen Schild führst:</p>
+            <ul>
+                <li>Du kannst Geschicklichkeit anstelle von Stärke für die Angriffs- und Schadenswürfe deiner unbewaffneten Angriffe und deiner Wiedergängerwaffen verwenden.</li>
+                <li>Du kannst einen W4 anstelle des normalen Schadenswürfels für deine unbewaffneten Angriffe oder Wiedergängerwaffen verwenden. Dieser Würfel verbessert sich mit deinen Wiedergänger-Stufen, wie in der Spalte „Kampfkünste“ der Klassen-Tabelle dargestellt.</li>
+                <li>Wenn du in deinem Zug die Angriffsaktion mit einem unbewaffneten Angriff oder einer Wiedergängerwaffe ausführst, kannst du einen unbewaffneten Angriff als Bonusaktion durchführen. Wenn du beispielsweise mit der Angriffsaktion einen Angriff mit einem Kampfstab ausführst, kannst du zusätzlich einen unbewaffneten Angriff als Bonusaktion durchführen, sofern du in diesem Zug noch keine Bonusaktion genutzt hast.</li>
+            </ul>
+            <p>Die Form, die diese Kampfkünste annehmen, variiert je nach Legende, mit der du verbunden bist. Manche Wiedergänger greifen zu schlichten Waffen, andere zu ungewöhnlichen oder persönlich bedeutungsvollen Gerätschaften. Unabhängig von ihrer Bezeichnung verwendest du stets die Spielwerte der entsprechenden Waffe.</p>
+        </description>
+        <sheet>
+            <description>
+            Dein unbewaffneter Angriff verursacht 1W{{martial arts:dice}}+{{martial arts:damage}} Schaden. Du kannst für diese Angriffe Stärke oder Geschicklichkeit verwenden.
+            Wenn du in deinem Zug die Angriffsaktion mit einem unbewaffneten Angriff oder einer Wiedergängerwaffe ausführst, kannst du einen unbewaffneten Angriff als Bonusaktion durchführen.
+        </description>
+        </sheet>
+        <rules>
+            <stat name="martial arts:attack" value="strength:modifier" bonus="martial arts"/>
+            <stat name="martial arts:attack" value="dexterity:modifier" bonus="martial arts"/>
+            <stat name="martial arts:damage" value="strength:modifier" bonus="martial arts"/>
+            <stat name="martial arts:damage" value="dexterity:modifier" bonus="martial arts"/>
+            <stat name="martial arts:dice" value="4" bonus="martial arts"/>
+            <stat name="martial arts:dice" value="6" bonus="martial arts" level="5"/>
+            <stat name="martial arts:dice" value="8" bonus="martial arts" level="11"/>
+            <stat name="martial arts:dice" value="10" bonus="martial arts" level="17"/>
+        </rules>
+    </element>
+    <element name="Ki (Ki)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_KI">
+        <description>
+            <p>Ab der 2. Stufe erlaubt dir das Bündnis mit einer legendären Seele aus den Nebeln, auf eine innere Kraft zuzugreifen, die als Ki bezeichnet wird. Diese Kraft ist kein erlerntes Geheimwissen, sondern eine Resonanz – ein Echo der Fähigkeiten, die diese Seele bereits zu Lebzeiten auf Tyria besaß.</p>
+            <p class="indent">Dein Zugriff auf diese Nebelkraft wird durch eine Anzahl von Ki-Punkten dargestellt. Deine Wiedergänger-Stufe bestimmt, wie viele Ki-Punkte dir zur Verfügung stehen, wie in der Spalte „Ki-Punkte“ der Klassen-Tabelle dargestellt.</p>
+            <p class="indent">Du kannst diese Punkte einsetzen, um verschiedene Ki-Fähigkeiten zu aktivieren. Zu Beginn beherrschst du drei solcher Techniken: Schlaghagel (Flurry of Blows), Geduldige Verteidigung (Patient Defense) und Windschritt (Step of the Wind). Mit steigender Stufe erlangst du Zugriff auf weitere Ki-Fähigkeiten.</p>
+            <p class="indent">Wenn du einen Ki-Punkt einsetzt, steht er dir erst wieder zur Verfügung, nachdem du eine kurze oder lange Rast abgeschlossen hast. Am Ende der Rast ziehst du deine verbrauchte Ki-Kraft wieder in dich zurück. Um deine Ki-Punkte wiederzuerlangen, musst du während der Rast mindestens 30 Minuten in stiller Sammlung, Meditation oder innerer Zwiesprache mit der gebundenen Seele verbringen.</p>
+            <p class="indent">Einige deiner Ki-Fähigkeiten erfordern, dass dein Ziel einen Rettungswurf ablegt, um ihren Effekten zu widerstehen. Der SG für diese Rettungswürfe wird wie folgt berechnet:</p>
+            <center>
+                <p>
+                    <strong>Ki-Rettungswurf-SG</strong> = 8 + dein Kompetenzbonus + dein Weisheitsmodifikator
+            </p>
+            </center>
+            <h6>SCHLAGHAGEL (FLURRY OF BLOWS)</h6>
+            <p>Unmittelbar nachdem du in deinem Zug die Angriffsaktion ausgeführt hast, kannst du 1 Ki-Punkt ausgeben, um zwei unbewaffnete Angriffe als Bonusaktion durchzuführen.</p>
+            <h6>GEDULDIGE VERTEIDIGUNG (PATIENT DEFENSE)</h6>
+            <p>Du kannst 1 Ki-Punkt ausgeben, um in deinem Zug die Aktion Ausweichen als Bonusaktion durchzuführen.</p>
+            <h6>WINDSCHRITT (STEP OF THE WIND)</h6>
+            <p>Du kannst 1 Ki-Punkt ausgeben, um in deinem Zug entweder die Aktion Lösen oder Sprinten als Bonusaktion durchzuführen. Zusätzlich wird deine Sprungweite für diesen Zug verdoppelt.</p>
+        </description>
+        <sheet>
+            <description>Du verfügst über {{ki:points}} Ki-Punkte. Der SG für deine Ki-Fähigkeiten beträgt {{ki:dc}}.</description>
+        </sheet>
+        <rules>
+            <stat name="ki:points" value="level:monk"/>
+            <stat name="ki:dc" value="8"/>
+            <stat name="ki:dc" value="proficiency"/>
+            <stat name="ki:dc" value="wisdom:modifier"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_KI_FLURRY_OF_BLOWS"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_KI_PATIENT_DEFENSE"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_KI_STEP_OF_THE_WIND"/>
+        </rules>
+    </element>
+    <!-- Schlaghagel -->
+    <element name="Schlaghagel (Flurry of Blows)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_KI_FLURRY_OF_BLOWS">
+        <description>
+            <p>Unmittelbar nachdem du in deinem Zug die Angriffsaktion ausgeführt hast, kannst du 1 Ki-Punkt ausgeben, um zwei unbewaffnete Angriffe als Bonusaktion durchzuführen.</p>
+        </description>
+        <sheet action="Bonus Action" usage="Ki">
+            <description>Nachdem du die Angriffsaktion ausgeführt hast, kannst du 1 Ki-Punkt ausgeben, um zwei unbewaffnete Angriffe durchzuführen.</description>
+        </sheet>
+    </element>
+    <!-- Geduldige Verteidigung -->
+    <element name="Geduldige Verteidigung (Patient Defense)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_KI_PATIENT_DEFENSE">
+        <description>
+            <p>Du kannst 1 Ki-Punkt ausgeben, um in deinem Zug die Aktion Ausweichen als Bonusaktion durchzuführen.</p>
+        </description>
+        <sheet action="Bonus Action" usage="Ki">
+            <description>Du kannst 1 Ki-Punkt ausgeben, um die Aktion Ausweichen durchzuführen.</description>
+        </sheet>
+    </element>
+    <!-- Windschritt -->
+    <element name="Windschritt (Step of the Wind)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_KI_STEP_OF_THE_WIND">
+        <description>
+            <p>Du kannst 1 Ki-Punkt ausgeben, um in deinem Zug entweder die Aktion Lösen oder Sprinten als Bonusaktion durchzuführen. Zusätzlich wird deine Sprungweite für diesen Zug verdoppelt.</p>
+        </description>
+        <sheet action="Bonus Action" usage="Ki">
+            <description>Du kannst 1 Ki-Punkt ausgeben, um Lösen oder Sprinten auszuführen; deine Sprungweite ist für diesen Zug verdoppelt.</description>
+        </sheet>
+    </element>
+    <!-- Ungerüstete Bewegung -->
+    <element name="Ungerüstete Bewegung (Unarmored Movement)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT">
+        <description>
+            <p>Ab der 2. Stufe trägt die Resonanz mit der gebundenen Seele deine Bewegungen. Solange du keine Rüstung trägst und keinen Schild führst, erhöht sich deine Bewegungsrate um 3 m. Dieser Bonus steigt mit höheren Wiedergänger-Stufen an, wie in der Klassen-Tabelle dargestellt.</p>
+            <p class="indent">Ab der 9. Stufe erlaubt dir diese Nebelresonanz, dich während deines Zuges an senkrechten Flächen entlangzubewegen und über Flüssigkeiten zu laufen, ohne während der Bewegung zu fallen.</p>
+        </description>
+        <sheet>
+            <description>Deine Bewegungsrate erhöht sich um {{monk:unarmored movement}} m, solange du keine Rüstung trägst und keinen Schild führst.</description>
+            <description level="9">Deine Bewegungsrate erhöht sich um {{monk:unarmored movement}} m, solange du keine Rüstung trägst und keinen Schild führst. Zudem kannst du dich während deines Zuges an senkrechten Flächen entlangbewegen und über Flüssigkeiten laufen, ohne während der Bewegung zu fallen.</description>
+        </sheet>
+        <rules>
+            <stat name="monk:unarmored movement" value="10" bonus="unarmored movement" level="2"/>
+            <stat name="monk:unarmored movement" value="15" bonus="unarmored movement" level="6"/>
+            <stat name="monk:unarmored movement" value="20" bonus="unarmored movement" level="10"/>
+            <stat name="monk:unarmored movement" value="25" bonus="unarmored movement" level="14"/>
+            <stat name="monk:unarmored movement" value="30" bonus="unarmored movement" level="18"/>
+            <stat name="innate speed:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:1]"/>
+            <stat name="innate speed:climb:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:climb:1]"/>
+            <stat name="innate speed:fly:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:fly:1]"/>
+            <stat name="innate speed:swim:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:swim:1]"/>
+            <stat name="innate speed:burrow:misc" value="monk:unarmored movement" bonus="unarmored movement" equipped="[armor:none],[shield:none]" requirements="[innate speed:burrow:1]"/>
+        </rules>
+    </element>
+    <element name="Pfad der Legende (Monastic Tradition)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_MONASTIC_TRADITION">
+        <description>
+            <p>Wenn du die 3. Stufe erreichst, festigt sich deine Bindung an eine bestimmte Legende aus den Nebeln und du wählst einen Pfad der Legende, etwa den Pfad des Kriegers. Dein Pfad der Legende gewährt dir Merkmale auf der 3. Stufe sowie erneut auf der 6., 11. und 17. Stufe.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Archetype" name="Pfad der Legende (Monastic Tradition)" supports="Monastic Tradition"/>
+        </rules>
+    </element>
+    <element name="Geschosse abwehren (Deflect Missiles)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_DEFLECT_MISSILES">
+        <description>
+            <p>Ab der 3. Stufe erlaubt dir die Resonanz mit der gebundenen Seele, auf unmittelbare Bedrohungen zu reagieren, noch bevor sie dich voll treffen. Wenn du von einem Fernkampfangriff mit einer Waffe getroffen wirst, kannst du deine Reaktion einsetzen, um das Geschoss abzulenken oder abzufangen.</p>
+            <p class="indent">Wenn du dies tust, wird der Schaden des Angriffs um 1W10 + deinen Geschicklichkeitsmodifikator + deine Wiedergänger-Stufe reduziert.</p>
+            <p class="indent">Reduzierst du den Schaden auf 0, kannst du das Geschoss auffangen, sofern es klein genug ist, um es mit einer Hand zu halten, und du mindestens eine freie Hand hast. Fängst du ein Geschoss auf diese Weise, kannst du 1 Ki-Punkt ausgeben, um als Teil derselben Reaktion einen Fernkampfangriff mit der aufgefangenen Waffe oder Munition auszuführen. Du führst diesen Angriff mit Kompetenzbonus aus, unabhängig von deinen Waffenfertigkeiten, und das Geschoss zählt für diesen Angriff als Wiedergängerwaffe.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>
+            Wenn du von einem Fernkampfangriff mit einer Waffe getroffen wirst, kannst du deine Reaktion einsetzen, um das Geschoss abzulenken oder abzufangen. Der Schaden des Angriffs wird um 1W10+{{monk:deflect missiles bonus}} reduziert.
+            Reduzierst du den Schaden auf 0, kannst du das Geschoss auffangen (sofern du eine freie Hand hast). In diesem Fall kannst du 1 Ki-Punkt ausgeben, um als Teil derselben Reaktion einen Fernkampfangriff mit dem Geschoss auszuführen; dieser Angriff erfolgt mit Kompetenzbonus und das Geschoss zählt als Wiedergängerwaffe.
+        </description>
+        </sheet>
+        <rules>
+            <stat name="monk:deflect missiles bonus" value="dexterity:modifier"/>
+            <stat name="monk:deflect missiles bonus" value="level:monk"/>
+        </rules>
+    </element>
+    <element name="Sturz abfedern (Slow Fall)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_SLOW_FALL">
+        <description>
+            <p>Ab der 4. Stufe kannst du beim Fallen die Resonanz mit der gebundenen Seele nutzen, um die auf dich wirkende Bewegungsenergie abzufangen. Wenn du fällst, kannst du deine Reaktion einsetzen, um den erlittenen Fallschaden um einen Betrag in Höhe des Fünffachen deiner Wiedergänger-Stufe zu reduzieren.</p>
+        </description>
+        <sheet usage="Reaction">
+            <description>Reduziere den Fallschaden, den du erleidest, um {{monk:slowfall}}.</description>
+        </sheet>
+        <rules>
+            <stat name="monk:slowfall" value="level:monk"/>
+            <stat name="monk:slowfall" value="level:monk"/>
+            <stat name="monk:slowfall" value="level:monk"/>
+            <stat name="monk:slowfall" value="level:monk"/>
+            <stat name="monk:slowfall" value="level:monk"/>
+        </rules>
+    </element>
+    <element name="Zusätzlicher Angriff (Extra Attack)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_EXTRA_ATTACK_MONK">
+        <description>
+            <p>Ab der 5. Stufe erlaubt dir die fortgeschrittene Resonanz mit der gebundenen Seele, Angriffsabläufe auszuführen, die über die Fähigkeiten eines einzelnen Körpers hinausgehen. Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du zweimal angreifen statt nur einmal.</p>
+        </description>
+        <sheet>
+            <description>Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du zweimal angreifen statt nur einmal.</description>
+        </sheet>
+        <rules>
+            <stat name="extra attack:count" value="2" level="5" bonus="extra attack"/>
+        </rules>
+    </element>
+    <element name="Betäubender Schlag (Stunning Strike)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_STUNNING_STRIKE">
+        <description>
+            <p>Ab der 5. Stufe kannst du durch die Resonanz mit der gebundenen Seele den Moment des Aufpralls nutzen, um das Ziel aus dem Gleichgewicht seiner eigenen Existenz zu reißen. Wenn du eine Kreatur mit einem Nahkampfangriff triffst, kannst du 1 Ki-Punkt ausgeben, um einen betäubenden Schlag zu versuchen.</p>
+            <p class="indent">Das Ziel muss einen Rettungswurf auf Konstitution bestehen. Bei einem Misserfolg ist es bis zum Ende deines nächsten Zuges betäubt.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>
+            Wenn du eine Kreatur mit einem Nahkampfangriff triffst, kannst du 1 Ki-Punkt ausgeben, um einen betäubenden Schlag zu versuchen. Das Ziel muss einen Rettungswurf auf Konstitution bestehen oder ist bis zum Ende deines nächsten Zuges betäubt.
+        </description>
+        </sheet>
+    </element>
+    <element name="Ki-Schläge (Ki-Empowered Strikes)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_KI_EMPOWERED_STRIKES">
+        <description>
+            <p>Ab der 6. Stufe sind deine unbewaffneten Angriffe von der Macht der gebundenen Seele durchdrungen. Jeder Schlag trägt ein Echo aus den Nebeln in sich und trifft nicht nur den Körper, sondern auch das Wesen des Ziels.</p>
+            <p class="indent">Für den Zweck, Widerstände und Immunitäten gegen nichtmagische Angriffe und Schaden zu überwinden, gelten deine unbewaffneten Angriffe als magisch.</p>
+        </description>
+        <sheet>
+            <description>Deine unbewaffneten Angriffe gelten als magisch, um Widerstände und Immunitäten gegen nichtmagische Angriffe und Schaden zu überwinden.</description>
+        </sheet>
+    </element>
+    <element name="Entrinnen (Evasion)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_EVASION_MONK">
+        <description>
+            <p>Ab der 7. Stufe erlaubt dir die Resonanz mit der gebundenen Seele, großflächigen Gefahren instinktiv zu entgehen. Wenn du einem Effekt ausgesetzt bist, der dir einen Geschicklichkeitsrettungswurf erlaubt, um nur halben Schaden zu erleiden – etwa einer Explosion arkaner Energie oder einer elementaren Entladung – kannst du dich im entscheidenden Moment aus dem Wirkungsbereich lösen.</p>
+            <p class="indent">Bestehst du den Rettungswurf, erleidest du keinen Schaden. Misslingt dir der Rettungswurf, erleidest du nur den halben Schaden.</p>
+        </description>
+        <sheet>
+            <description>
+            Wenn du einem Effekt ausgesetzt bist, der dir bei einem erfolgreichen Geschicklichkeitsrettungswurf nur halben Schaden zufügen würde, erleidest du stattdessen keinen Schaden bei Erfolg und nur halben Schaden bei Misserfolg.
+        </description>
+        </sheet>
+    </element>
+    <element name="Ruhiger Geist (Stillness of Mind)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_STILLNESS_OF_MIND">
+        <description>
+            <p>Ab der 7. Stufe hast du gelernt, deinen eigenen Willen gegenüber fremden Einflüssen zu behaupten. Die Bindung an die Seele aus den Nebeln verleiht dir einen festen inneren Anker, der es dir erlaubt, äußere Manipulationen bewusst abzuschütteln.</p>
+            <p class="indent">Du kannst deine Aktion einsetzen, um einen Effekt auf dir selbst zu beenden, durch den du bezaubert oder verängstigt bist.</p>
+        </description>
+        <sheet action="Action">
+            <description>Du kannst deine Aktion einsetzen, um einen Effekt auf dir selbst zu beenden, durch den du bezaubert oder verängstigt bist.</description>
+        </sheet>
+    </element>
+    <element name="Reinheit des Körpers (Purity of Body)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_PURITY_OF_BODY">
+        <description>
+            <p>Ab der 10. Stufe hat sich die Bindung zwischen dir und der gebundenen Seele so weit stabilisiert, dass äußere Verderbnisse kaum noch Einfluss auf deinen Körper haben. Krankheiten und Gifte können sich nicht mehr dauerhaft in dir festsetzen.</p>
+            <p class="indent">Du bist immun gegen Krankheiten und den Zustand vergiftet.</p>
+        </description>
+        <sheet>
+            <description>Du bist immun gegen Krankheiten und den Zustand vergiftet.</description>
+        </sheet>
+    </element>
+    <element name="Sprache von Sonne und Mond (Tongue of the Sun and Moon)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_TONGUE_OF_THE_SUN_AND_MOON">
+        <description>
+            <p>Ab der 13. Stufe erlaubt dir die tiefe Resonanz mit den Nebeln, die Bedeutung hinter Worten zu erfassen, unabhängig von Sprache oder Herkunft. Du nimmst nicht einzelne Laute wahr, sondern den Willen und die Absicht, die sie tragen.</p>
+            <p class="indent">Du verstehst alle gesprochenen Sprachen. Darüber hinaus kann jede Kreatur, die grundsätzlich in der Lage ist, eine Sprache zu verstehen, auch begreifen, was du sagst.</p>
+        </description>
+        <sheet>
+            <description>Du verstehst alle gesprochenen Sprachen. Jede Kreatur, die eine Sprache verstehen kann, versteht auch, was du sagst.</description>
+        </sheet>
+    </element>
+    <element name="Diamantseele (Diamond Soul)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_DIAMOND_SOUL">
+        <description>
+            <p>Ab der 14. Stufe ist deine Existenz durch die anhaltende Bindung an die Nebel vollständig verankert. Körper, Geist und Wille bilden ein geschlossenes Ganzes, das äußeren Einflüssen nur schwer aus dem Gleichgewicht zu bringen ist.</p>
+            <p class="indent">Du erhältst Kompetenz in allen Rettungswürfen.</p>
+            <p class="indent">Misslingt dir ein Rettungswurf, kannst du 1 Ki-Punkt ausgeben, um ihn zu wiederholen und das neue Ergebnis zu verwenden.</p>
+        </description>
+        <sheet usage="Ki">
+            <description>
+            Wenn dir ein Rettungswurf misslingt, kannst du 1 Ki-Punkt ausgeben, um ihn zu wiederholen und das neue Ergebnis zu verwenden.
+        </description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA"/>
+        </rules>
+    </element>
+    <element name="Zeitloser Körper (Timeless Body)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_TIMELESS_BODY_MONK">
+        <description>
+            <p>Ab der 15. Stufe trägt dich die dauerhafte Bindung an die Nebel so, dass du nicht unter den Gebrechen des Alters leidest, und du kannst nicht auf magische Weise gealtert werden. Du kannst jedoch weiterhin an Altersschwäche sterben.</p>
+            <p class="indent">Außerdem benötigst du weder Nahrung noch Wasser.</p>
+        </description>
+        <sheet>
+            <description>Du leidest nicht unter den Gebrechen des Alters und kannst nicht auf magische Weise gealtert werden. Du benötigst weder Nahrung noch Wasser.</description>
+        </sheet>
+    </element>
+    <element name="Geist über Körper (Empty Body)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_EMPTY_BODY">
+        <description>
+            <p>Ab der 18. Stufe kannst du deine Existenz kurzzeitig aus der festen Materie lösen und dich in eine nebelhafte Zwischenform versetzen. Du kannst deine Aktion einsetzen und 4 Ki-Punkte ausgeben, um für 1 Minute unsichtbar zu werden. Während dieser Zeit besitzt du außerdem Resistenz gegen allen Schaden außer Kraftschaden.</p>
+            <p class="indent">Zusätzlich kannst du 8 Ki-Punkte ausgeben, um den Zauber Astralprojektion (Astral Projection) zu wirken, ohne Materialkomponenten zu benötigen. Wenn du dies tust, kannst du keine anderen Kreaturen mitnehmen.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_ASTRAL_PROJECTION"/>
+            </div>
+        </description>
+        <sheet action="Action" usage="Ki">
+            <description>Du kannst 4 Ki-Punkte ausgeben, um für 1 Minute unsichtbar zu werden; währenddessen besitzt du Resistenz gegen allen Schaden außer Kraftschaden.
+Du kannst 8 Ki-Punkte ausgeben, um Astralprojektion (Astral Projection) ohne Materialkomponenten zu wirken; du kannst dabei keine anderen Kreaturen mitnehmen.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_ASTRAL_PROJECTION"/>
+        </rules>
+    </element>
+    <element name="Perfektes Selbst (Perfect Self)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_PERFECT_SELF">
+        <description>
+            <p>Auf der 20. Stufe ist die Resonanz mit deiner Legende so vollkommen, dass sie im Moment der Gefahr von selbst wieder aufflammt. Wenn du auf Initiative würfelst und keine Ki-Punkte mehr übrig hast, erhältst du 4 Ki-Punkte zurück.</p>
+        </description>
+        <sheet>
+            <description>Wenn du auf Initiative würfelst und keine Ki-Punkte mehr übrig hast, erhältst du 4 Ki-Punkte zurück.</description>
+        </sheet>
+    </element>
+    <!-- Pfad des Kriegers -->
+    <element name="Pfad des Kriegers (Way of the Open Hand)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_WAY_OF_THE_OPEN_HAND">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>Wiedergänger auf dem Pfad des Kriegers sind mit den Echos legendärer Kämpfer verbunden – Persönlichkeiten, die Schlachten entschieden und selbst im Angesicht des Todes ungebrochen blieben. Diese Seelen waren Krieger, Feldherren oder Duellanten von außergewöhnlicher Präsenz.</p>
+            <p class="indent">Die gebundene Legende verleiht keine verborgenen Techniken, sondern absolute Kontrolle: über den eigenen Körper, über das Schlachtfeld und über den Moment, in dem ein Gegner das Gleichgewicht verliert. Jeder Stoß, jeder Griff und jede Bewegung ist von der Erfahrung eines Wesens geprägt, das unzählige Kämpfe überlebt hat.</p>
+            <p class="indent">Die Macht dieses Pfades zeigt sich in der Überlegenheit im direkten Kampf – im Wurf, im Niederringen und in dem unausweichlichen Augenblick, in dem der Feind erkennt, dass er bereits verloren hat.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_OPEN_HAND_TECHNIQUE"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_WHOLENESS_OF_BODY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_TRANQUILITY"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_QUIVERING_PALM"/>
+        </description>
+        <sheet display="false">
+            <description>Ein Wiedergänger, der durch die gebundene Seele eines legendären Kriegers im direkten Kampf unangefochtene Dominanz erlangt.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_OPEN_HAND_TECHNIQUE" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_WHOLENESS_OF_BODY" level="6"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_TRANQUILITY" level="11"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_QUIVERING_PALM" level="17"/>
+        </rules>
+    </element>
+    <!-- Technik des Kriegers -->
+    <element name="Technik des Kriegers (Open Hand Technique)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_OPEN_HAND_TECHNIQUE">
+        <description>
+            <p>Ab der 3. Stufe überlagern sich deine Bewegungen mit der Kampferfahrung der gebundenen Legende. Wenn du deine Ki-Kraft entfesselst, greifst du instinktiv zu Techniken, die Gegner aus dem Gleichgewicht bringen.</p>
+            <p class="indent">Immer wenn du eine Kreatur mit einem der Angriffe triffst, die dir durch deinen Schlaghagel (Flurry of Blows) gewährt werden, kannst du einen der folgenden Effekte auf das Ziel anwenden:</p>
+            <ul>
+                <li>Das Ziel muss einen Geschicklichkeitsrettungswurf bestehen oder wird zu Boden geworfen.</li>
+                <li>Das Ziel muss einen Stärkerettungswurf ablegen. Bei einem Fehlschlag kannst du es bis zu 4,5 m von dir wegstoßen.</li>
+                <li>Das Ziel kann bis zum Ende deines nächsten Zuges keine Reaktionen ausführen.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Wenn du mit einem Angriff aus Schlaghagel triffst, kannst du einen Effekt wählen: zu Boden werfen (GES-RW), 4,5 m wegstoßen (ST-RW) oder Reaktionen unterbinden.</description>
+        </sheet>
+    </element>
+    <!-- Unversehrtheit des Körpers -->
+    <element name="Unversehrtheit des Körpers (Wholeness of Body)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_WHOLENESS_OF_BODY">
+        <description>
+            <p>Ab der 6. Stufe kannst du die Widerstandskraft der gebundenen Legende auf dich selbst übertragen. Als Aktion kannst du deine Wunden schließen und Trefferpunkte in Höhe des Dreifachen deiner Wiedergänger-Stufe wiederherstellen.</p>
+            <p class="indent">Nachdem du diese Fähigkeit eingesetzt hast, musst du eine lange Rast abschließen, bevor du sie erneut nutzen kannst.</p>
+        </description>
+        <sheet action="Action" usage="1/Long Rest">
+            <description>Du stellst {{monk:wholeness of body}} Trefferpunkte wieder her.</description>
+        </sheet>
+        <rules>
+            <stat name="monk:wholeness of body" value="level:monk"/>
+            <stat name="monk:wholeness of body" value="level:monk"/>
+            <stat name="monk:wholeness of body" value="level:monk"/>
+        </rules>
+    </element>
+    <!-- Innere Ruhe -->
+    <element name="Innere Ruhe (Tranquility)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_TRANQUILITY">
+        <description>
+            <p>Ab der 11. Stufe verleiht dir die Präsenz der gebundenen Legende eine unerschütterliche innere Ruhe. Nach Abschluss einer langen Rast bist du von einer Aura der Gelassenheit umgeben, die Feindseligkeit instinktiv unterdrückt.</p>
+            <p class="indent">Du erhältst den Effekt des Zaubers Schutzheiligtum (Sanctuary), der bis zum Beginn deiner nächsten langen Rast anhält (der Zauber kann wie üblich vorzeitig enden). Der Rettungswurf-SG entspricht 8 + dein Weisheitsmodifikator + dein Übungsbonus.</p>
+        </description>
+        <sheet>
+            <description>Nach einer langen Rast wirkst du Schutzheiligtum (Sanctuary) bis zur nächsten langen Rast. SG {{tranquility:dc}}.</description>
+        </sheet>
+        <rules>
+            <stat name="tranquility:dc" value="8"/>
+            <stat name="tranquility:dc" value="proficiency"/>
+            <stat name="tranquility:dc" value="wisdom:modifier"/>
+        </rules>
+    </element>
+    <!-- Vibrierende Handfläche -->
+    <element name="Vibrierende Handfläche (Quivering Palm)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WAYOFTHEOPENHAND_QUIVERING_PALM">
+        <description>
+            <p>Ab der 17. Stufe kannst du mit einem gezielten Schlag die tödliche Präzision der gebundenen Legende entfesseln. Wenn du eine Kreatur mit einem waffenlosen Angriff triffst, kannst du 3 Ki-Punkte ausgeben, um eine kaum wahrnehmbare Resonanz in ihrem Körper zu verankern.</p>
+            <p class="indent">Diese Resonanz hält eine Anzahl von Tagen an, die deiner Wiedergänger-Stufe entspricht, und bleibt harmlos, bis du sie auslöst. Als Aktion – vorausgesetzt, du und das Ziel befinden euch auf derselben Existenzebene – kannst du die Resonanz aktivieren. Das Ziel muss einen Konstitutionsrettungswurf bestehen. Bei einem Fehlschlag wird es auf 0 Trefferpunkte reduziert, bei einem Erfolg erleidet es 10W10 nekrotischen Schaden.</p>
+            <p class="indent">Du kannst immer nur eine Kreatur gleichzeitig unter dem Effekt dieser Fähigkeit halten. Du kannst die Resonanz jederzeit harmlos beenden, ohne eine Aktion zu verwenden.</p>
+        </description>
+        <sheet>
+            <description>Du kannst bei einem waffenlosen Treffer 3 Ki ausgeben, um eine Resonanz für {{level:monk}} Tage zu setzen. Als Aktion kannst du sie auslösen: KO-RW, bei Fehlschlag 0 TP, sonst 10W10 nekrotischer Schaden.</description>
+        </sheet>
+    </element>
+    <!-- Pfad des Schattens -->
+    <element name="Pfad des Schattens (Way of Shadow)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_MONK_WAY_OF_SHADOW">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>Wiedergänger auf dem Pfad des Schattens sind an Seelen gebunden, die nicht durch offene Schlachten, sondern durch gezielte Taten Geschichte schrieben. Diese Legenden waren Assassinen, Verräter und lautlose Mörder – Figuren, deren Namen oft geflüstert werden, wenn überhaupt.</p>
+            <p class="indent">Die Resonanz dieses Pfades schärft Wahrnehmung, Bewegung und Instinkt. Schatten werden zu Verbündeten, Stille zu einer Waffe. Jeder Schritt ist berechnet, jeder Angriff endgültig.</p>
+            <p class="indent">Ein Wiedergänger des Schattens sucht keine fairen Kämpfe. Er erscheint, wenn der Moment perfekt ist – und verschwindet, bevor das Opfer begreift, was geschehen ist.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_ARTS"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_STEP"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_CLOAK_OF_SHADOWS"/>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_OPPORTUNIST"/>
+        </description>
+        <sheet display="false">
+            <description>Ein Wiedergänger, dessen gebundene Legende Heimlichkeit, Präzision und tödliche Effizienz verkörpert.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_ARTS" level="3"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_STEP" level="6"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_CLOAK_OF_SHADOWS" level="11"/>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_OPPORTUNIST" level="17"/>
+        </rules>
+    </element>
+    <!-- Schattenkünste -->
+    <element name="Schattenkünste (Shadow Arts)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_ARTS">
+        <description>
+            <p>Ab der 3. Stufe kannst du durch die Resonanz mit deiner gebundenen Legende Nebelenergie formen, um die Effekte bestimmter Zauber nachzuahmen. Als Aktion kannst du 2 Ki-Punkte ausgeben, um Dunkelheit (Darkness), Dunkelsicht (Darkvision), Spurlosigkeit (Pass without Trace) oder Stille (Silence) zu wirken, ohne Materialkomponenten zu benötigen.</p>
+            <p class="indent">Zusätzlich erlernst du den Zaubertrick Kleine Illusion (Minor Illusion), falls du ihn noch nicht beherrschst.</p>
+        </description>
+        <sheet action="Action" usage="Ki">
+            <description>Du kannst 2 Ki-Punkte ausgeben, um Darkness, Darkvision, Pass without Trace oder Silence ohne Materialkomponenten zu wirken. Zusätzlich erhältst du Minor Illusion.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_MINOR_ILLUSION"/>
+        </rules>
+    </element>
+    <!-- Schattenschritt -->
+    <element name="Schattenschritt (Shadow Step)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_SHADOW_STEP">
+        <description>
+            <p>Ab der 6. Stufe kannst du dich durch Schatten bewegen, als wären sie Tore. Befindest du dich in dämmrigem Licht oder in Dunkelheit, kannst du als Bonusaktion bis zu 18 m weit zu einem freien Feld teleportieren, das du sehen kannst und das sich ebenfalls in dämmrigem Licht oder Dunkelheit befindet.</p>
+            <p class="indent">Nach diesem Sprung hast du bis zum Ende deines Zuges Vorteil auf den ersten Nahkampfangriff, den du ausführst.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>In dämmrigem Licht oder Dunkelheit teleportierst du dich bis zu 18 m zu einem sichtbaren Schattenfeld. Dein erster Nahkampfangriff in diesem Zug hat Vorteil.</description>
+        </sheet>
+    </element>
+    <!-- Mantel aus Schatten -->
+    <element name="Mantel aus Schatten (Cloak of Shadows)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_CLOAK_OF_SHADOWS">
+        <description>
+            <p>Ab der 11. Stufe kannst du vollständig mit den Schatten verschmelzen. Befindest du dich in dämmrigem Licht oder in Dunkelheit, kannst du deine Aktion nutzen, um unsichtbar zu werden.</p>
+            <p class="indent">Du bleibst unsichtbar, bis du angreifst, einen Zauber wirkst oder dich in helles Licht begibst.</p>
+        </description>
+        <sheet action="Action">
+            <description>In dämmrigem Licht oder Dunkelheit wirst du unsichtbar, bis du angreifst, einen Zauber wirkst oder helles Licht betrittst.</description>
+        </sheet>
+    </element>
+    <!-- Opportunist -->
+    <element name="Opportunist (Opportunist)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_SHADOW_OPPORTUNIST">
+        <description>
+            <p>Ab der 17. Stufe erkennst du jede noch so kurze Unachtsamkeit. Immer wenn eine Kreatur innerhalb von 1,5 m von dir durch den Angriff einer anderen Kreatur als dir selbst getroffen wird, kannst du deine Reaktion nutzen, um einen Nahkampfangriff gegen dieses Ziel auszuführen.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Wird eine Kreatur innerhalb von 1,5 m von dir von jemand anderem getroffen, kannst du als Reaktion einen Nahkampfangriff gegen sie ausführen.</description>
+        </sheet>
+    </element>
+    <!-- Pfad der Elemente -->
+    <element name="Pfad der Elemente (Way of the Four Elements)" type="Archetype" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_MONK_WAY_OF_THE_FOUR_ELEMENTS">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>Der Pfad der Elemente bindet den Wiedergänger an Seelen, die zu Lebzeiten Magie nicht nur wirkten, sondern beherrschten. Diese Legenden waren Zauberer, Herrscher oder arkane Meister, die die Elemente als Werkzeuge verstanden – als Verlängerung ihres eigenen Willens.</p>
+            <p class="indent">Durch die Resonanz mit diesen Seelen lernt der Wiedergänger, Feuer, Wasser, Erde und Luft zu lenken. Nicht durch Studium, Zauberformeln oder Rituale, sondern durch das Nachhallen einer Macht, die einst Tyrias Ordnung geprägt hat.</p>
+            <p class="indent">Manche Wiedergänger dieses Pfades konzentrieren sich auf ein einzelnes Element und perfektionieren dessen Anwendung. Andere verweben mehrere Elemente zu einem instabilen, oft zerstörerischen Gleichgewicht.</p>
+            <div element="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_ELEMENTS_DISCIPLE_OF_THE_ELEMENTS"/>
+        </description>
+        <sheet display="false">
+            <description>Ein Wiedergänger, der durch die gebundene Seele eines arkane Meisters die Elemente selbst seinem Willen unterwirft.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_ELEMENTS_DISCIPLE_OF_THE_ELEMENTS" level="3"/>
+        </rules>
+    </element>
+    <!-- Schüler der Elemente -->
+    <element name="Schüler der Elemente (Disciple of the Elements)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_WAY_OF_THE_FOUR_ELEMENTS_DISCIPLE_OF_THE_ELEMENTS">
+        <description>
+            <p>Wenn du diesen Pfad auf der 3. Stufe wählst, erschließt dir die gebundene Legende arkane Disziplinen, mit denen du die Macht der vier Elemente lenkst. Jede dieser Disziplinen erfordert den Einsatz von Ki-Punkten.</p>
+            <p class="indent">Du erlernst die Disziplin Elementare Einstimmung (Elemental Attunement) sowie eine weitere elementare Disziplin deiner Wahl, die im Abschnitt „Elementare Disziplinen“ beschrieben sind. Auf der 6., 11. und 17. Stufe erlernst du jeweils eine zusätzliche elementare Disziplin deiner Wahl.</p>
+            <p class="indent">Jedes Mal, wenn du eine neue elementare Disziplin erlernst, kannst du außerdem eine bereits bekannte Disziplin gegen eine andere austauschen.</p>
+            <p class="indent">
+                <strong>
+                    <em>Wirken elementarer Zauber.</em>
+                </strong>
+            Einige elementare Disziplinen erlauben es dir, Zauber zu wirken. Wenn du einen solchen Zauber wirkst, verwendest du dessen normale Wirkzeit und Regeln, benötigst jedoch keine Materialkomponenten.
+        </p>
+            <p class="indent">Sobald du die 5. Stufe in dieser Klasse erreichst, kannst du zusätzliche Ki-Punkte ausgeben, um die Stufe eines durch eine Disziplin gewirkten Zaubers zu erhöhen, sofern dieser Zauber auf höheren Stufen einen verstärkten Effekt besitzt. Für jeden zusätzlich ausgegebenen Ki-Punkt erhöht sich die Zauberstufe um 1.</p>
+            <p class="indent">Die maximale Anzahl an Ki-Punkten, die du auf diese Weise für einen Zauber ausgeben kannst (einschließlich der Grundkosten der Disziplin), richtet sich nach deiner Wiedergänger-Stufe, wie in der untenstehenden Tabelle angegeben.</p>
+            <h5 class="caption">ZAUBER UND KI-PUNKTE</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Wiedergänger-Stufe</td>
+                        <td>Maximale Ki-Punkte für einen Zauber</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>5.–8.</td>
+                    <td>
+                        <em>3</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>9.–12.</td>
+                    <td>
+                        <em>4</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>13.–16.</td>
+                    <td>
+                        <em>5</em>
+                    </td>
+                </tr>
+                <tr>
+                    <td>17.–20.</td>
+                    <td>
+                        <em>6</em>
+                    </td>
+                </tr>
+            </table>
+        </description>
+        <sheet usage="Ki">
+            <description>Du erlernst elementare Disziplinen, mit denen du Feuer, Wasser, Erde und Luft lenkst.</description>
+            <description level="5">Du kannst zusätzliche Ki-Punkte (max. 3) ausgeben, um die Stufe eines elementaren Disziplinzaubers zu erhöhen.</description>
+            <description level="9">Du kannst zusätzliche Ki-Punkte (max. 4) ausgeben, um die Stufe eines elementaren Disziplinzaubers zu erhöhen.</description>
+            <description level="13">Du kannst zusätzliche Ki-Punkte (max. 5) ausgeben, um die Stufe eines elementaren Disziplinzaubers zu erhöhen.</description>
+            <description level="17">Du kannst zusätzliche Ki-Punkte (max. 6) ausgeben, um die Stufe eines elementaren Disziplinzaubers zu erhöhen.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_ELEMENTAL_ATTUNEMENT"/>
+            <select type="Archetype Feature" name="Elementare Disziplin (Stufe 3)" supports="Elemental Discipline" level="3"/>
+            <select type="Archetype Feature" name="Elementare Disziplin (Stufe 6)" supports="Elemental Discipline" level="6"/>
+            <select type="Archetype Feature" name="Elementare Disziplin (Stufe 11)" supports="Elemental Discipline" level="11"/>
+            <select type="Archetype Feature" name="Elementare Disziplin (Stufe 17)" supports="Elemental Discipline" level="17"/>
+        </rules>
+    </element>
+    <!-- Elemental Disciplines -->
+    <!-- Elementare Einstimmung -->
+    <element name="Elementare Einstimmung (Elemental Attunement)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_ELEMENTAL_ATTUNEMENT">
+        <supports>Elemental Discipline</supports>
+        <description>
+            <p>Du kannst deine Aktion nutzen, um durch die Resonanz mit der gebundenen Legende elementare Kräfte in deiner Nähe kurzzeitig zu lenken. Wähle einen der folgenden Effekte innerhalb von 9 m um dich herum:</p>
+            <ul>
+                <li>Erzeuge einen harmlosen, augenblicklichen Sinneseindruck, der mit Luft, Erde, Feuer oder Wasser verbunden ist – etwa ein Funkenregen, ein Windstoß, ein Hauch kühlen Nebels oder ein sanftes Grollen von Stein.</li>
+                <li>Entzünde augenblicklich eine Kerze, Fackel oder ein kleines Lagerfeuer oder lösche es.</li>
+                <li>Kühle oder erwärme bis zu 0,5 kg unbelebtes Material für bis zu 1 Stunde.</li>
+                <li>Lasse Erde, Feuer, Wasser oder Nebel, der in einen Würfel mit 30 cm Kantenlänge passt, sich für 1 Minute zu einer groben Form gestalten, die du bestimmst.</li>
+            </ul>
+        </description>
+        <sheet action="Action">
+            <description>Du kannst elementare Kräfte innerhalb von 9 m kurzzeitig lenken.</description>
+        </sheet>
+    </element>
+    <!-- Atem des Winters -->
+    <element name="Atem des Winters (Breath of Winter)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_BREATH_OF_WINTER">
+        <supports>Elemental Discipline</supports>
+        <requirements>[level:17]</requirements>
+        <description>
+            <p>
+                <em>Voraussetzung: 17. Stufe</em>
+            </p>
+            <p>Du kannst 6 Ki-Punkte ausgeben, um Kältekegel (Cone of Cold) zu wirken.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_CONE_OF_COLD"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 6 Ki-Punkte ausgeben, um Kältekegel (Cone of Cold) zu wirken.</description>
+        </sheet>
+        <rules>
+            <!-- remove from known spells but allow modded spellcards for reference -->
+            <grant type="Spell" id="ID_D4T_SPELL_CONE_OF_COLD"/>
+        </rules>
+    </element>
+    <!-- Umklammerung des Nordwindes -->
+    <element name="Umklammerung des Nordwindes (Clench of the North Wind)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_CLENCH_OF_THE_NORTH_WIND">
+        <supports>Elemental Discipline</supports>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p>
+                <em>Voraussetzung: 6. Stufe</em>
+            </p>
+            <p>Du kannst 3 Ki-Punkte ausgeben, um Person festhalten (Hold Person) zu wirken.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_HOLD_PERSON"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 3 Ki-Punkte ausgeben, um Person festhalten (Hold Person) zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_HOLD_PERSON"/>
+        </rules>
+    </element>
+    <!-- Schutz des Ewigen Berges -->
+    <element name="Schutz des Ewigen Berges (Eternal Mountain Defense)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_ETERNAL_MOUNTAIN_DEFENSE">
+        <supports>Elemental Discipline</supports>
+        <requirements>[level:17]</requirements>
+        <description>
+            <p>
+                <em>Voraussetzung: 17. Stufe</em>
+            </p>
+            <p>Du kannst 5 Ki-Punkte ausgeben, um Steinhaut (Stoneskin) zu wirken, wobei du dich selbst als Ziel wählst.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_STONESKIN"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 5 Ki-Punkte ausgeben, um Steinhaut (Stoneskin) auf dich selbst zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_STONESKIN"/>
+        </rules>
+    </element>
+    <!-- Giftzähne der Feuerschlange -->
+    <element name="Giftzähne der Feuerschlange (Fangs of the Fire Snake)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FANGS_OF_THE_FIRE_SNAKE">
+        <supports>Elemental Discipline</supports>
+        <description>
+            <p>Wenn du in deinem Zug die Angriffsaktion ausführst, kannst du 1 Ki-Punkt ausgeben, um die Resonanz eines feurigen Vermächtnisses zu entfesseln. Flammenzungen strecken sich aus deinen Fäusten und Füßen und verlängern die Reichweite deiner waffenlosen Angriffe für diese Aktion und für den Rest des Zuges um 3 m.</p>
+            <p class="indent">Trifft ein solcher Angriff, verursacht er Feuerschaden anstelle von Wuchtschaden. Gibst du beim Treffer zusätzlich 1 Ki-Punkt aus, fügt der Angriff außerdem 1W10 zusätzlichen Feuerschaden zu.</p>
+        </description>
+        <sheet>
+            <description>Bei der Angriffsaktion kannst du 1 Ki ausgeben, um die Reichweite deiner waffenlosen Angriffe um 3 m zu erhöhen und Feuerschaden zu verursachen. Bei Treffer kannst du 1 weiteres Ki ausgeben für +1W10 Feuerschaden.</description>
+        </sheet>
+    </element>
+    <!-- Faust der Vier Donnerschläge -->
+    <element name="Faust der Vier Donnerschläge (Fist of Four Thunders)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FIST_OF_FOUR_THUNDERS">
+        <supports>Elemental Discipline</supports>
+        <description>
+            <p>Du kannst 2 Ki-Punkte ausgeben, um Donnerschlag (Thunderwave) zu wirken.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_THUNDERWAVE"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 2 Ki-Punkte ausgeben, um Donnerschlag (Thunderwave) zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_THUNDERWAVE"/>
+        </rules>
+    </element>
+    <!-- Faust des Stetigen Windes -->
+    <element name="Faust des Stetigen Windes (Fist of Unbroken Air)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FIST_OF_UNBROKEN_AIR">
+        <supports>Elemental Discipline</supports>
+        <description>
+            <p>Du kannst eine konzentrierte Explosion aus komprimierter Luft entfesseln, die mit der Wucht eines unsichtbaren Schlages trifft. Als Aktion kannst du 2 Ki-Punkte ausgeben und eine Kreatur innerhalb von 9 m wählen.</p>
+            <p class="indent">Das Ziel muss einen Stärkerettungswurf ablegen. Bei einem Fehlschlag erleidet es 3W10 Wuchtschaden sowie zusätzlich 1W10 Wuchtschaden für jeden weiteren Ki-Punkt, den du ausgibst. Außerdem kannst du das Ziel bis zu 6 m von dir wegstoßen und zu Boden werfen. Bei einem erfolgreichen Rettungswurf erleidet die Kreatur nur halben Schaden und wird weder gestoßen noch zu Boden geworfen.</p>
+        </description>
+        <sheet action="Action">
+            <description>Als Aktion gibst du 2 Ki aus: Ziel in 9 m macht ST-RW. Fehlschlag: 3W10 Wuchtschaden (+1W10 pro weiterem Ki), 6 m zurückstoßen und zu Boden werfen. Erfolg: halber Schaden.</description>
+        </sheet>
+    </element>
+    <!-- Flammen des Phönix -->
+    <element name="Flammen des Phönix (Flames of the Phoenix)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_FLAMES_OF_THE_PHOENIX">
+        <supports>Elemental Discipline</supports>
+        <requirements>[level:11]</requirements>
+        <description>
+            <p>
+                <em>Voraussetzung: 11. Stufe</em>
+            </p>
+            <p>Du kannst 4 Ki-Punkte ausgeben, um Feuerball (Fireball) zu wirken.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_FIREBALL"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 4 Ki-Punkte ausgeben, um Feuerball (Fireball) zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_FIREBALL"/>
+        </rules>
+    </element>
+    <!-- Gongschlag des Berggipfels -->
+    <element name="Gongschlag des Berggipfels (Gong of the Summit)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_GONG_OF_THE_SUMMIT">
+        <supports>Elemental Discipline</supports>
+        <requirements>[level:6]</requirements>
+        <description>
+            <p>
+                <em>Voraussetzung: 6. Stufe</em>
+            </p>
+            <p>Du kannst 3 Ki-Punkte ausgeben, um Zerschmettern (Shatter) zu wirken. Die freigesetzte Resonanz gleicht einem donnernden Schlag, der Stein, Metall und Körper erzittern lässt.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_SHATTER"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 3 Ki-Punkte ausgeben, um Zerschmettern (Shatter) zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_SHATTER"/>
+        </rules>
+    </element>
+    <!-- Nebelhaltung -->
+    <element name="Nebelhaltung (Mist Stance)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_MIST_STANCE">
+        <supports>Elemental Discipline</supports>
+        <requirements>[level:11]</requirements>
+        <description>
+            <p>
+                <em>Voraussetzung: 11. Stufe</em>
+            </p>
+            <p>Du kannst 4 Ki-Punkte ausgeben, um Gasförmige Gestalt (Gaseous Form) auf dich selbst zu wirken. Dein Körper löst sich dabei teilweise in Nebel auf, getragen von der elementaren Resonanz der gebundenen Legende.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_GASEOUS_FORM"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 4 Ki-Punkte ausgeben, um Gasförmige Gestalt (Gaseous Form) auf dich selbst zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_GASEOUS_FORM"/>
+        </rules>
+    </element>
+    <!-- Windritt -->
+    <element name="Windritt (Ride the Wind)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_RIDE_THE_WIND">
+        <supports>Elemental Discipline</supports>
+        <requirements>[level:11]</requirements>
+        <description>
+            <p>
+                <em>Voraussetzung: 11. Stufe</em>
+            </p>
+            <p>Du kannst 4 Ki-Punkte ausgeben, um Fliegen (Fly) auf dich selbst zu wirken. Strömungen aus Luft und Nebel tragen dich, gelenkt durch die Macht der gebundenen Legende.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_FLY"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 4 Ki-Punkte ausgeben, um Fliegen (Fly) auf dich selbst zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_FLY"/>
+        </rules>
+    </element>
+    <!-- Fluss der Hungrigen Flamme -->
+    <element name="Fluss der Hungrigen Flamme (River of Hungry Flame)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_RIVER_OF_HUNGRY_FLAME">
+        <supports>Elemental Discipline</supports>
+        <requirements>[level:17]</requirements>
+        <description>
+            <p>
+                <em>Voraussetzung: 17. Stufe</em>
+            </p>
+            <p>Du kannst 5 Ki-Punkte ausgeben, um Flammenwand (Wall of Fire) zu wirken. Die entfesselten Flammen folgen deinem Willen wie ein reißender Strom, der alles verzehrt, was sich ihm entgegenstellt.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_WALL_OF_FIRE"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 5 Ki-Punkte ausgeben, um Flammenwand (Wall of Fire) zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_WALL_OF_FIRE"/>
+        </rules>
+    </element>
+    <!-- Ansturm der Orkangeister -->
+    <element name="Ansturm der Orkangeister (Rush of the Gale Spirits)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_RUSH_OF_THE_GALE_SPIRITS">
+        <supports>Elemental Discipline</supports>
+        <description>
+            <p>Du kannst 2 Ki-Punkte ausgeben, um Windstoß (Gust of Wind) zu wirken. Die entfesselte Luft gleicht einem rasenden Ansturm, der Gegner zurückdrängt und das Schlachtfeld neu ordnet.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_GUST_OF_WIND"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 2 Ki-Punkte ausgeben, um Windstoß (Gust of Wind) zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_GUST_OF_WIND"/>
+        </rules>
+    </element>
+    <!-- Forme den Fließenden Fluss -->
+    <element name="Forme den Fließenden Fluss (Shape the Flowing River)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_SHAPE_THE_FLOWING_RIVER">
+        <supports>Elemental Discipline</supports>
+        <description>
+            <p>Als Aktion kannst du 1 Ki-Punkt ausgeben, um Wasser und Eis deinem Willen zu unterwerfen. Wähle ein Gebiet aus Wasser oder Eis innerhalb von 36 m, das nicht größer als 9 m Kantenlänge ist.</p>
+            <p class="indent">Du kannst Wasser augenblicklich zu Eis gefrieren lassen oder Eis schmelzen und das Eis beliebig umformen: Du kannst es anheben oder absenken, Gräben schaffen oder füllen, Wände errichten oder eine Fläche einebnen. Das Ausmaß der Veränderung darf dabei nicht mehr als die Hälfte der größten Gebietsabmessung betragen.</p>
+            <p class="indent">Du kannst das Eis nicht so formen, dass Kreaturen im Gebiet eingeschlossen oder verletzt werden.</p>
+        </description>
+        <sheet action="Action">
+            <description>Du kannst 1 Ki ausgeben, um Wasser oder Eis in einem Gebiet bis 9 m Kantenlänge innerhalb von 36 m zu formen oder zu verwandeln. Kreaturen können dabei nicht verletzt oder eingeschlossen werden.</description>
+        </sheet>
+    </element>
+    <!-- Weitreichender Ascheangriff -->
+    <element name="Weitreichender Ascheangriff (Sweeping Cinder Strike)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_SWEEPING_CINDER_STRIKE">
+        <supports>Elemental Discipline</supports>
+        <description>
+            <p>Du kannst 2 Ki-Punkte ausgeben, um Brennende Hände (Burning Hands) zu wirken.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_BURNING_HANDS"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 2 Ki-Punkte ausgeben, um Brennende Hände (Burning Hands) zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_BURNING_HANDS"/>
+        </rules>
+    </element>
+    <!-- Wasserpeitsche -->
+    <element name="Wasserpeitsche (Water Whip)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_WATER_WHIP">
+        <supports>Elemental Discipline</supports>
+        <description>
+            <p>Als Aktion kannst du 2 Ki-Punkte ausgeben, um eine peitschende Wasserlanze zu erschaffen. Wähle eine Kreatur innerhalb von 9 m, die du sehen kannst. Das Ziel muss einen Geschicklichkeitsrettungswurf ablegen.</p>
+            <p class="indent">Bei einem Fehlschlag erleidet die Kreatur 3W10 Wuchtschaden sowie zusätzlich 1W10 Wuchtschaden für jeden weiteren Ki-Punkt, den du ausgibst. Außerdem kannst du sie entweder zu Boden werfen oder bis zu 7,5 m näher zu dir heranziehen. Bei einem erfolgreichen Rettungswurf erleidet das Ziel nur halben Schaden und wird weder gezogen noch zu Boden geworfen.</p>
+        </description>
+        <sheet action="Action">
+            <description>Als Aktion gibst du 2 Ki aus: Ziel in 9 m macht GES-RW. Fehlschlag: 3W10 Wuchtschaden (+1W10 pro weiterem Ki) und zu Boden werfen oder 7,5 m heranziehen. Erfolg: halber Schaden.</description>
+        </sheet>
+    </element>
+    <!-- Welle der Wallenden Erde -->
+    <element name="Welle der Wallenden Erde (Wave of Rolling Earth)" type="Archetype Feature" source="DnD4Tyria" id="ID_D4T_ARCHETYPE_FEATURE_ELEMENTAL_DISCIPLINE_WAVE_OF_ROLLING_EARTH">
+        <supports>Elemental Discipline</supports>
+        <requirements>[level:17]</requirements>
+        <description>
+            <p>
+                <em>Voraussetzung: 17. Stufe</em>
+            </p>
+            <p>Du kannst 6 Ki-Punkte ausgeben, um Steinwand (Wall of Stone) zu wirken. Massive Erd- und Steinmassen erheben sich auf deinen Befehl und formen das Schlachtfeld nach deinem Willen.</p>
+            <div class="reference">
+                <div element="ID_D4T_SPELL_WALL_OF_STONE"/>
+            </div>
+        </description>
+        <sheet>
+            <description>Du kannst 6 Ki-Punkte ausgeben, um Steinwand (Wall of Stone) zu wirken.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_D4T_SPELL_WALL_OF_STONE"/>
+        </rules>
+    </element>
+</elements>
