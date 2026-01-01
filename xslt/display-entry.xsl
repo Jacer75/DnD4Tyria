@@ -11,8 +11,11 @@
     <html lang="de">
       <head>
         <meta charset="UTF-8" />
-        <title><xsl:value-of select="lore/@title"/></title>
-
+        <title><xsl:value-of select="/entry/@title"/></title>
+        <meta property="og:title" content="{/entry/@title}"/>
+        <meta property="og:description" content="{/entry/info/description}"/>
+        <meta property="og:type" content="article"/>
+        
         <!-- Pfad wie bei dir: ggf. an die Ordner-Tiefe anpassen -->
         <link rel="stylesheet" href="/DnD4Tyria/css/style.css" />
         <link rel="stylesheet" href="/DnD4Tyria/css/statblock.css" />
