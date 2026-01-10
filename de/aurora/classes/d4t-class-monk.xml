@@ -4,7 +4,7 @@
         <name>Wiedergänger</name>
         <description>Ein Wiedergänger hat in den Nebeln eine mächtige Seele getroffen, die ihm Schnelligkeit verleiht.</description>
         <author url="">DnD4Tyria</author>
-        <update version="1.0.1">
+        <update version="1.0.2">
             <file name="d4t-class-monk.xml" url=""/>
         </update>
     </info>
@@ -1089,11 +1089,11 @@
             <description>Reduziere den Fallschaden, den du erleidest, um {{monk:slowfall}}.</description>
         </sheet>
         <rules>
-            <stat name="monk:slowfall" value="level:monk"/>
-            <stat name="monk:slowfall" value="level:monk"/>
-            <stat name="monk:slowfall" value="level:monk"/>
-            <stat name="monk:slowfall" value="level:monk"/>
-            <stat name="monk:slowfall" value="level:monk"/>
+            <stat name="monk:slowfall" value="level:wiedergänger"/>
+            <stat name="monk:slowfall" value="level:wiedergänger"/>
+            <stat name="monk:slowfall" value="level:wiedergänger"/>
+            <stat name="monk:slowfall" value="level:wiedergänger"/>
+            <stat name="monk:slowfall" value="level:wiedergänger"/>
         </rules>
     </element>
     <element name="Zusätzlicher Angriff (Extra Attack)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASS_FEATURE_MONK_EXTRA_ATTACK_MONK">
@@ -1265,9 +1265,9 @@ Du kannst 8 Ki-Punkte ausgeben, um Astralprojektion (Astral Projection) ohne Mat
             <description>Du stellst {{monk:wholeness of body}} Trefferpunkte wieder her.</description>
         </sheet>
         <rules>
-            <stat name="monk:wholeness of body" value="level:monk"/>
-            <stat name="monk:wholeness of body" value="level:monk"/>
-            <stat name="monk:wholeness of body" value="level:monk"/>
+            <stat name="monk:wholeness of body" value="level:wiedergänger"/>
+            <stat name="monk:wholeness of body" value="level:wiedergänger"/>
+            <stat name="monk:wholeness of body" value="level:wiedergänger"/>
         </rules>
     </element>
     <!-- Innere Ruhe -->
@@ -1293,7 +1293,7 @@ Du kannst 8 Ki-Punkte ausgeben, um Astralprojektion (Astral Projection) ohne Mat
             <p class="indent">Du kannst immer nur eine Kreatur gleichzeitig unter dem Effekt dieser Fähigkeit halten. Du kannst die Resonanz jederzeit harmlos beenden, ohne eine Aktion zu verwenden.</p>
         </description>
         <sheet>
-            <description>Du kannst bei einem waffenlosen Treffer 3 Ki ausgeben, um eine Resonanz für {{level:monk}} Tage zu setzen. Als Aktion kannst du sie auslösen: KO-RW, bei Fehlschlag 0 TP, sonst 10W10 nekrotischer Schaden.</description>
+            <description>Du kannst bei einem waffenlosen Treffer 3 Ki ausgeben, um eine Resonanz für {{level:wiedergänger}} Tage zu setzen. Als Aktion kannst du sie auslösen: KO-RW, bei Fehlschlag 0 TP, sonst 10W10 nekrotischer Schaden.</description>
         </sheet>
     </element>
     <!-- Pfad des Schattens -->
