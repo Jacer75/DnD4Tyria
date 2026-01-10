@@ -4,7 +4,7 @@
         <name>Wiedergänger</name>
         <description>Ein Wiedergänger hat in den Nebeln eine mächtige Seele getroffen, die ihm Schnelligkeit verleiht.</description>
         <author url="">DnD4Tyria</author>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="d4t-class-monk.xml" url=""/>
         </update>
     </info>
@@ -254,7 +254,7 @@
             <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_UNARMORED_MOVEMENT" level="2"/>
             <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_MONASTIC_TRADITION" level="3"/>
             <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_DEFLECT_MISSILES" level="3"/>
-            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_ABILITYSCOREIMPROVEMENT_MONK" level="4"/>
+            <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_ABILITYSCOREIMPROVEMENT" level="4"/>
             <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_SLOW_FALL" level="4"/>
             <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_EXTRA_ATTACK_MONK" level="5"/>
             <grant type="Class Feature" id="ID_D4T_CLASS_FEATURE_MONK_STUNNING_STRIKE" level="5"/>
