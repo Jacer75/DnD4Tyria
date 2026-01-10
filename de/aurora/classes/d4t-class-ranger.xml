@@ -4,7 +4,7 @@
         <name>Waldläufer</name>
         <description>Die Klasse Waldläufer für das DnD4Tyria-Projekt. Anpassung der PHB-Klasse „Ranger“ an die Welt von Tyria (Guild Wars).</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.0.0">
+        <update version="1.0.1">
             <file name="d4t-class-ranger.xml" url=""/>
         </update>
     </info>
@@ -512,6 +512,108 @@
             <select type="Class Feature" name="Verbesserungsauswahl (Waldläufer 19)" supports="Improvement Option,Ranger,19" level="19"/>
         </rules>
     </element>
+    <!-- Improvement Options -->
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ASI_RANGER_4">
+        <supports>Improvement Option,Ranger,4</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Waldläufer)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ASI_RANGER_8">
+        <supports>Improvement Option,Ranger,8</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Waldläufer)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ASI_RANGER_12">
+        <supports>Improvement Option,Ranger,12</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Waldläufer)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ASI_RANGER_16">
+        <supports>Improvement Option,Ranger,16</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Waldläufer)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Attributssteigerung" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_ASI_RANGER_19">
+        <supports>Improvement Option,Ranger,19</supports>
+        <description>
+            <p>Erhöhe einen Attributswert deiner Wahl um 2 oder zwei Attributswerte deiner Wahl um je 1. Du kannst keinen Attributswert über 20 erhöhen.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Ability Score Improvement" name="Attributssteigerung (Waldläufer)" supports="ID_D4T_FEAT_ASI_STRENGTH|ID_D4T_FEAT_ASI_DEXTERITY|ID_D4T_FEAT_ASI_CONSTITUTION|ID_D4T_FEAT_ASI_INTELLIGENCE|ID_D4T_FEAT_ASI_WISDOM|ID_D4T_FEAT_ASI_CHARISMA" number="2"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_RANGER_4">
+        <supports>Improvement Option,Ranger,4</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_RANGER_8">
+        <supports>Improvement Option,Ranger,8</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_RANGER_12">
+        <supports>Improvement Option,Ranger,12</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_RANGER_16">
+        <supports>Improvement Option,Ranger,16</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    <element name="Talent auswählen" type="Class Feature" source="DnD4Tyria" id="ID_D4T_IMPROVEMENT_OPTION_FEAT_RANGER_19">
+        <supports>Improvement Option,Ranger,19</supports>
+        <description>
+            <p>Wähle ein Talent deiner Wahl, das du erfüllst.</p>
+        </description>
+        <sheet display="false"/>
+        <rules>
+            <select type="Feat" name="Ausgewähltes Talent"/>
+        </rules>
+    </element>
+    
     <element name="Zusätzlicher Angriff (Extra Attack)" type="Class Feature" source="DnD4Tyria" id="ID_D4T_CLASSFEATURE_RANGER_EXTRA_ATTACK">
         <description>
             <p>Ab der 5. Stufe kannst du zweimal angreifen, anstatt nur einmal, wenn du in deinem Zug die Angriffsaktion durchführst.</p>
