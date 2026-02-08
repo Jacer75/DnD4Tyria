@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-11 Seris Caelum</name>
+        <file>MK03-11-01.xml</file>
+        <abenteuer>MK03-11 Seris Caelum</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Seris Caelum" id="id-seris-caelum">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Mensch)</type>
+            <alignment>neutral gut</alignment>
+            <ac>10</ac>
+            <!-- Rüstungsklasse des NSC -->
+            <hp>20 (3W6 + 6)</hp>
+            <!-- Trefferpunkte inklusive Würfelangabe -->
+            <speed>9 m</speed>
+            <!-- Bewegungsrate in Metern -->
+            <initiative>+0</initiative>
+            <!-- Finaler Initiativbonus, der direkt gewürfelt wird -->
+            <senses>Passive Wahrnehmung 12</senses>
+            <!-- Passive Sinne wie Wahrnehmung, ggf. ergänzt um Dunkelsicht etc. -->
+            <languages>Tyrianisch, Elonisch, Canthanisch, Charrisch</languages>
+            <!-- Gesprochene Sprachen -->
+            <challenge>1</challenge>
+            <!-- Herausforderungsgrad -->
+            <proficiency>+2</proficiency>
+            <!-- Kompetenzbonus -->
+        </meta>
+        <abilities>
+            <str score="9" mod="-1"/>
+            <dex score="11" mod="+0"/>
+            <con score="14" mod="+2"/>
+            <int score="16" mod="+3"/>
+            <wis score="15" mod="+2"/>
+            <cha score="13" mod="+1"/>
+        </abilities>
+        <saves>
+            <save name="INT">+5</save>
+            <save name="WIS">+4</save>
+        </saves>
+        <skills>
+            <skill name="Arkane Kunde" bonus="+5"/>
+            <skill name="Geschichte" bonus="+5"/>
+            <skill name="Motiv erkennen" bonus="+4"/>
+            <skill name="Nachforschungen" bonus="+5"/>
+        </skills>
+        <traits>
+            <trait name="Arkane Erholung (1/Kurze Rast)">
+                <description>Nach einer kurzen Rast kann Seris Zauberplätze bis zu einer kombinierten Stufe von 1 oder niedriger zurückgewinnen.</description>
+            </trait>
+            <trait name="Omen (Portent)">
+                <description>Nach jeder langen Rast würfelt Seris 2W20 und notiert die Ergebnisse. Sie kann eines dieser Ergebnisse als Ersatz für einen Angriffswurf, Rettungswurf oder Attributswurf verwenden, den sie oder eine Kreatur, die sie sehen kann, macht (entschieden vor dem Wurf).</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Dolch">
+                <description>Nahkampf- oder Fernkampfangriff: +2 zum Treffen, Reichweite 1,5 m oder 6/18 m, ein Ziel. Treffer: 2 (1W4) Stichschaden.</description>
+            </action>
+        </actions>
+        <spellcasting>
+            <name>Zaubergelehrter (Schule der Erkenntnismagie)</name>
+            <level>3</level>
+            <ability>INT</ability>
+            <saveDC>13</saveDC>
+            <!-- Rettungswurf-SG für Zauber -->
+            <attackBonus>+5</attackBonus>
+            <!-- Angriffsbonus für Zauberangriffe -->
+            <spelllist>
+                <!-- Zaubertricks -->
+                <spell id="ID_D4T_SPELL_MENDING" level="0">Ausbessern (Mending)</spell>
+                <spell id="ID_D4T_SPELL_MINOR_ILLUSION" level="0">Einfache Illusion (Minor Illusion)</spell>
+                <spell id="ID_D4T_SPELL_ACID_SPLASH" level="0">Säurespritzer (Acid Splash)</spell>
+                <!-- 1. Grad -->
+                <spell id="ID_D4T_SPELL_IDENTIFY" level="1">Identifizieren (Identify)</spell>
+                <spell id="ID_D4T_SPELL_DETECT_MAGIC" level="1">Magie entdecken (Detect Magic)</spell>
+                <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung (Mage Armor)</spell>
+                <spell id="ID_D4T_SPELL_CHARM_PERSON" level="1">Person bezaubern (Charm Person)</spell>
+                <spell id="ID_D4T_SPELL_SLEEP" level="1">Schlaf (Sleep)</spell>
+                <spell id="ID_D4T_SPELL_COMPREHEND_LANGUAGES" level="1">Sprachen verstehen (Comprehend Languages)</spell>
+                <!-- 2. Grad -->
+                <spell id="ID_D4T_SPELL_DETECT_THOUGHTS" level="2">Gedanken wahrnehmen (Detect Thoughts)</spell>
+                <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Nebelschritt (Misty Step)</spell>
+                <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1">4</slot>
+                <slot level="2">2</slot>
+            </slots>
+        </spellcasting>
+    </statblock>
+</encounter>

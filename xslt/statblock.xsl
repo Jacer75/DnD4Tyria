@@ -30,6 +30,7 @@
                 <div><strong>Ausrichtung</strong>: <xsl:value-of select="meta/alignment"/></div>
                 <div><strong>Sprachen</strong>: <xsl:value-of select="meta/languages"/></div>
                 <div><strong>HG</strong>: <xsl:value-of select="meta/challenge"/></div>
+                <div><strong>Initiative</strong>: <xsl:value-of select="meta/initiative"/></div>
               </details>
 
               <div class="statblock-meta statblock-section">

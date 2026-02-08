@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03 Zellenbrüder</name>
+        <file>MK03-01.xml</file>
+        <abenteuer>MK03 Kampagne</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="[ZB] Hrothgar Steinruh (Krieger)" id="id-zb-hrothgar-steinruh">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Norn)</type>
+            <alignment>neutral böse</alignment>
+            <ac>16 (Kettenrüstung)</ac>
+            <hp>44 (5W10 + 10)</hp>
+            <speed>9 m</speed>
+            <initiative>+1</initiative>
+            <senses>Passive Wahrnehmung 14</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>2</challenge>
+            <proficiency>+3</proficiency>
+        </meta>
+        <abilities>
+            <ability name="Str" score="17" bonus="+3"/>
+            <ability name="Dex" score="13" bonus="+1"/>
+            <ability name="Con" score="15" bonus="+2"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="12" bonus="+1"/>
+            <ability name="Cha" score="8" bonus="-1"/>
+        </abilities>
+        <saves>
+            <save ability="Str" bonus="+6"/>
+            <save ability="Con" bonus="+5"/>
+        </saves>
+        <skills>
+            <skill name="Athletik" bonus="+6"/>
+            <skill name="Einschüchtern" bonus="+2"/>
+            <skill name="Wahrnehmung" bonus="+4"/>
+            <skill name="Überlebenskunst" bonus="+4"/>
+            <skill name="Heimlichkeit" bonus="+1"/>
+        </skills>
+        <traits>
+            <trait name="Kampfstil: Kampf mit Zweihänder (Great Weapon Fighting)">
+                <description>Wenn Hrothgar bei einem Schadenswurf mit einer Nahkampfwaffe, die er mit beiden Händen führt, eine 1 oder 2 würfelt, kann er den Würfel einmal neu werfen. Er muss das neue Ergebnis verwenden.</description>
+            </trait>
+            <trait name="Tatendrang (Action Surge) (1/Kurze Rast)">
+                <description>In seinem Zug kann Hrothgar eine zusätzliche Aktion ausführen, zusätzlich zu seiner regulären Aktion.</description>
+            </trait>
+            <trait name="Kampfüberlegenheit (Combat Superiority)">
+                <description>Hrothgar hat 4 Überlegenheitswürfel (W8). Er setzt pro Manöver 1 Überlegenheitswürfel ein und addiert ihn je nach Manöver zum Schaden oder Effekt. Er erhält alle verbrauchten Überlegenheitswürfel zurück, wenn er eine kurze oder lange Rast beendet. SG für Manöver: 14 (8 + Übungsbonus + STÄ-Modifikator).</description>
+            </trait>
+            <trait name="Magiertöter (Mage Slayer)">
+                <description>Hrothgar hat Vorteil bei Rettungswürfen gegen Zauber, die von Kreaturen im Umkreis von 1,5 m gewirkt werden. Wenn er einer Kreatur Schaden zufügt, die Konzentration hält, hat diese Kreatur Nachteil auf ihren Rettungswurf, um die Konzentration aufrechtzuerhalten.</description>
+            </trait>
+            <trait name="Sturmerprobt">
+                <description>Hrothgar hat Vorteil auf Konstitutionswürfe gegen Erschöpfung durch raue Umweltbedingungen.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Hrothgar führt zwei Angriffe mit der Großaxt aus.</description>
+            </action>
+            <action name="Durchschnaufen (Second Wind) (Bonusaktion, 1/Kurze Rast)">
+                <description>Hrothgar erhält 1W10 + 5 Trefferpunkte zurück.</description>
+            </action>
+            <action name="Fällender Angriff (Trip Attack)">
+                <description>Wenn Hrothgar eine Kreatur (Groß oder kleiner) mit einem Waffenangriff trifft, kann er 1 Überlegenheitswürfel einsetzen, um zusätzlich 1W8 Schaden zu verursachen. Das Ziel muss einen STÄ-Rettungswurf SG 14 bestehen oder wird zu Boden geworfen (liegt am Boden).</description>
+            </action>
+            <action name="Finte (Feinting Attack) (Bonusaktion)">
+                <description>Hrothgar kann 1 Überlegenheitswürfel einsetzen und als Bonusaktion eine Finte ausführen. Er hat Vorteil auf seinen nächsten Angriffswurf gegen ein Ziel in Reichweite innerhalb dieses Zuges. Trifft der Angriff, verursacht er zusätzlich 1W8 Schaden.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Großaxt">
+                <type>Nahkampf</type>
+                <bonus>+6</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>9 (1W12 + 3) Hiebschaden</damage>
+            </attack>
+        </attacks>
+        <reactions>
+            <reaction name="Riposte (Riposte)">
+                <description>Wenn eine Kreatur Hrothgar mit einem Nahkampfangriff verfehlt, kann Hrothgar 1 Überlegenheitswürfel einsetzen, um einen Nahkampfangriff gegen diese Kreatur durchzuführen. Trifft er, verursacht er zusätzlich 1W8 Schaden.</description>
+            </reaction>
+            <reaction name="Magiertöter (Mage Slayer)">
+                <description>Wenn eine Kreatur im Umkreis von 1,5 m einen Zauber wirkt, kann Hrothgar als Reaktion einen Nahkampfangriff gegen diese Kreatur ausführen.</description>
+            </reaction>
+        </reactions>
+    </statblock>
+    <statblock name="[ZB] Corren Vale (Schurke)" id="id-zb-corren-vale">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Mensch)</type>
+            <alignment>neutral böse</alignment>
+            <ac>14</ac>
+            <hp>44 (5W8 + 10)</hp>
+            <speed>9 m</speed>
+            <initiative>+8</initiative>
+            <senses>Passive Wahrnehmung 18</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>2</challenge>
+            <proficiency>+3</proficiency>
+        </meta>
+        <abilities>
+            <ability name="Str" score="9" bonus="-1"/>
+            <ability name="Dex" score="16" bonus="+3"/>
+            <ability name="Con" score="15" bonus="+2"/>
+            <ability name="Int" score="13" bonus="+1"/>
+            <ability name="Wis" score="14" bonus="+2"/>
+            <ability name="Cha" score="11" bonus="+0"/>
+        </abilities>
+        <saves>
+            <save ability="Dex" bonus="+6"/>
+            <save ability="Int" bonus="+4"/>
+        </saves>
+        <skills>
+            <skill name="Akrobatik" bonus="+6"/>
+            <skill name="Fingerfertigkeit" bonus="+6"/>
+            <skill name="Heimlichkeit" bonus="+9"/>
+            <skill name="Motiv erkennen" bonus="+5"/>
+            <skill name="Täuschen" bonus="+3"/>
+            <skill name="Wahrnehmung" bonus="+8"/>
+        </skills>
+        <traits>
+            <trait name="Wachsam (Alert)">
+                <description>+5 auf Initiative. Corren kann nicht überrascht werden, solange er bei Bewusstsein ist. Unsichtbare Gegner erhalten keinen Vorteil auf Angriffswürfe gegen ihn.</description>
+            </trait>
+            <trait name="Hinterhältiger Angriff (Sneak Attack)">
+                <description>Einmal pro Runde verursacht Corren zusätzlich 3W6 Schaden, wenn er mit einer Finesse- oder Fernkampfwaffe trifft und Vorteil auf den Angriffswurf hat, oder wenn ein Verbündeter des Zieles innerhalb von 1,5 m steht und Corren keinen Nachteil auf den Angriffswurf hat.</description>
+            </trait>
+            <trait name="Raffinierte Aktion (Cunning Action)">
+                <description>Corren kann in jedem seiner Züge im Kampf eine Bonusaktion ausführen, um Rennen, Rückzug oder Verstecken zu nutzen.</description>
+            </trait>
+            <trait name="Expertise">
+                <description>Corren hat Expertise in Heimlichkeit und Wahrnehmung (sein Übungsbonus wird für diese Fertigkeiten verdoppelt).</description>
+            </trait>
+            <trait name="Attentat (Assassinate)">
+                <description>Corren hat Vorteil auf Angriffswürfe gegen Kreaturen, die in der Begegnung noch nicht gehandelt haben. Jeder Treffer gegen eine überraschte Kreatur ist ein kritischer Treffer.</description>
+            </trait>
+            <trait name="Gaunersprache (Thieves&#39; Cant)">
+                <description>Corren versteht und verwendet die Gaunersprache, um verdeckte Botschaften zu übermitteln und Zeichen zu deuten, die auf Gefahr, Gildenreviere oder Verstecke hinweisen.</description>
+            </trait>
+            <trait name="Geheimnisse der Stadt (City Secrets)">
+                <description>Corren kennt die Muster und Abkürzungen des städtischen Lebens. Wenn er sich nicht im Kampf befindet, kann er (und eine Gruppe, die er führt) doppelt so schnell durch die Stadt reisen.</description>
+            </trait>
+        </traits>
+        <attacks>
+            <attack name="Kurzschwert (Shortsword)">
+                <type>Nahkampf</type>
+                <bonus>+6</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>5 (1W6 + 3) Stichschaden</damage>
+            </attack>
+            <attack name="Dolch (Dagger)">
+                <type>Nah-/Fernkampf</type>
+                <bonus>+6</bonus>
+                <range>6/18 m</range>
+                <target>ein Ziel</target>
+                <damage>4 (1W4 + 3) Stichschaden</damage>
+            </attack>
+        </attacks>
+        <!--<actions>
+            <action name="Kurzschwert (Shortsword)">
+                <description>Nahkampfangriff: +5 zum Treffen, Reichweite 1,5 m, ein Ziel. Treffer: 5 (1W6 + 2) Stichschaden.</description>
+            </action>
+            <action name="Dolch (Dagger)">
+                <description>Nahkampf- oder Fernkampfangriff: +5 zum Treffen, Reichweite 1,5 m oder 6/18 m, ein Ziel. Treffer: 4 (1W4 + 2) Stichschaden.</description>
+            </action>
+        </actions>-->
+        <reactions>
+            <reaction name="Unglaubliches Ausweichen (Uncanny Dodge)">
+                <description>Wenn Corren von einem Angreifer getroffen wird, den er sehen kann, kann er seine Reaktion verwenden, um den erlittenen Schaden zu halbieren.</description>
+            </reaction>
+        </reactions>
+    </statblock>
+    <statblock name="[ZB] Lyssa Vale (Zauberkundige)" id="id-zb-lyssa-vale">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Mensch)</type>
+            <alignment>neutral böse</alignment>
+            <ac>13 (Magierrüstung)</ac>
+            <hp>33 (5W6 + 10)</hp>
+            <speed>9 m</speed>
+            <initiative>+0</initiative>
+            <senses>Passive Wahrnehmung 11</senses>
+            <languages>Tyrianisch, Elonisch</languages>
+            <challenge>3</challenge>
+            <proficiency>+3</proficiency>
+        </meta>
+        <abilities>
+            <ability name="Str" score="9" bonus="-1"/>
+            <ability name="Dex" score="11" bonus="+0"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="16" bonus="+3"/>
+            <ability name="Wis" score="13" bonus="+1"/>
+            <ability name="Cha" score="15" bonus="+2"/>
+        </abilities>
+        <saves>
+            <save ability="Int" bonus="+5"/>
+            <save ability="Wis" bonus="+4"/>
+        </saves>
+        <skills>
+            <skill name="Arkane Kunde" bonus="+6"/>
+            <skill name="Motiv erkennen" bonus="+4"/>
+            <skill name="Täuschen" bonus="+5"/>
+            <skill name="Fingerfertigkeit" bonus="+3"/>
+        </skills>
+        <traits>
+            <trait name="Falsche Identität (False Identity)">
+                <description>Lyssa besitzt eine zweite Identität mit entsprechenden Papieren, Bekanntschaften und einer plausiblen Legende. Wer sie enttarnen will, braucht mehr als einen flüchtigen Blick.</description>
+            </trait>
+            <trait name="Ungebrochener Wille">
+                <description>Wiederhole einen verpatzten Angriff, Rettungs- oder Fertigkeitswurf.</description>
+            </trait>
+            <trait name="Kriegszauberer (War Caster)">
+                <description>Lyssa hat Vorteil auf Konstitutionsrettungswürfe, um Konzentration aufrechtzuerhalten. Sie kann die somatischen Komponenten von Zaubern auch mit Waffen/Focus in der Hand ausführen. Wenn eine Kreatur in 1,5 m einen Gelegenheitsangriff provoziert, kann Lyssa als Reaktion einen Zauber auf sie wirken (anstatt des Angriffs).</description>
+            </trait>
+            <trait name="Arkane Erholung (Arcane Recovery) (1/Kurze Rast)">
+                <description>Nach einer kurzen Rast kann Lyssa Zauberplätze bis zu einer kombinierten Stufe von 2 oder niedriger zurückgewinnen.</description>
+            </trait>
+            <trait name="Abwehrmagie-Gelehrte (Abjuration Savant)">
+                <description>Das Abschreiben von Bannzaubern in ihr Zauberbuch kostet nur halb so viel Zeit und Gold wie üblich.</description>
+            </trait>
+            <trait name="Arkane Abwehr (Arcane Ward)">
+                <description>Wenn Lyssa einen Bannzauber des 1. Grades oder höher wirkt, erschafft sie eine magische Schutzbarriere mit 12 Trefferpunkten (2 × Zauberstufe + INT-Modifikator = 2×5 + 2). Solange die Barriere besteht, nimmt sie Schaden an Lyssas Stelle. Wenn Lyssa erneut Bannzauber wirkt, regeneriert die Barriere Trefferpunkte in Höhe von 2 × Zaubergrad (bis zum Maximum).</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Zauberwirken">
+                <description>Lyssa wirkt einen Zauber aus ihrer Zauberliste.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Dolch">
+                <type>Nahkampf oder Fernkampf</type>
+                <bonus>+3</bonus>
+                <range>1,5 m oder 6/18 m</range>
+                <target>ein Ziel</target>
+                <damage>2 (1W4) Stichschaden</damage>
+            </attack>
+            <attack name="Viertelstab">
+                <type>Nahkampf</type>
+                <bonus>+2</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>2 (1W6 − 1) Wuchtschaden</damage>
+            </attack>
+        </attacks>
+        <spellcasting>
+            <name>Zaubergelehrte (Schule der Bannmagie)</name>
+            <level>5</level>
+            <ability>INT</ability>
+            <saveDC>14</saveDC>
+            <attackBonus>+6</attackBonus>
+            <spelllist>
+                <!-- Zaubertricks -->
+                <spell id="ID_D4T_SPELL_BLADE_WARD" level="0">Klingenbann (Blade Ward)</spell>
+                <spell id="ID_D4T_SPELL_MAGE_HAND" level="0">Magierhand (Mage Hand)</spell>
+                <spell id="ID_D4T_SPELL_SHOCKING_GRASP" level="0">Schockgriff (Shocking Grasp)</spell>
+                <spell id="ID_D4T_SPELL_PRESTIDIGITATION" level="0">Taschenspielerei (Prestidigitation)</spell>
+                <!-- 1. Grad -->
+                <spell id="ID_D4T_SPELL_FEATHER_FALL" level="1">Federfall (Feather Fall)</spell>
+                <spell id="ID_D4T_SPELL_MAGIC_MISSILE" level="1">Magisches Geschoss (Magic Missile)</spell>
+                <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung (Mage Armor)</spell>
+                <spell id="ID_D4T_SPELL_FOG_CLOUD" level="1">Nebelwolke (Fog Cloud)</spell>
+                <spell id="ID_D4T_SPELL_CHARM_PERSON" level="1">(Person bezaubern (Charm Person))</spell>
+                <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild (Shield)</spell>
+                <spell id="ID_D4T_SPELL_DISGUISE_SELF" level="1">Selbstverkleidung (Disguise Self)</spell>
+                <spell id="ID_D4T_SPELL_FIND_FAMILIAR" level="1">(Vertrauten finden (Find Familiar))</spell>
+                <!-- 2. Grad -->
+                <spell id="ID_D4T_SPELL_ALTER_SELF" level="2">(Gestalt verändern (Alter Self))</spell>
+                <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Nebelschritt (Misty Step)</spell>
+                <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+                <spell id="ID_D4T_SPELL_MIRROR_IMAGE" level="2">Spiegelbilder (Mirror Image)</spell>
+                <!-- 3. Grad -->
+                <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber (Counterspell)</spell>
+                <spell id="ID_D4T_SPELL_HASTE" level="3">Hast (Haste)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1">4</slot>
+                <slot level="2">3</slot>
+                <slot level="3">2</slot>
+            </slots>
+        </spellcasting>
+    </statblock>
+    <statblock name="[ZB] Caelthorn (Waldläufer)" id="id-zb-caelthorn">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Sylvari)</type>
+            <alignment>neutral böse</alignment>
+            <ac>12 (Fellrüstung (Hide))</ac>
+            <hp>46 (5W10 + 5)</hp>
+            <speed>9 m</speed>
+            <initiative>+2</initiative>
+            <senses>Passive Wahrnehmung 20</senses>
+            <languages>Tyrianisch, Asurisch, Norn</languages>
+            <challenge>3</challenge>
+            <proficiency>+3</proficiency>
+        </meta>
+        <abilities>
+            <ability name="Str" score="14" bonus="+2"/>
+            <ability name="Dex" score="16" bonus="+3"/>
+            <ability name="Con" score="13" bonus="+1"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="15" bonus="+2"/>
+            <ability name="Cha" score="8" bonus="-1"/>
+        </abilities>
+        <saves>
+            <save ability="Str" bonus="+5"/>
+            <save ability="Dex" bonus="+6"/>
+        </saves>
+        <skills>
+            <skill name="Athletik" bonus="+5"/>
+            <skill name="Überlebenskunst" bonus="+5"/>
+            <skill name="Heimlichkeit" bonus="+6"/>
+            <skill name="Wahrnehmung" bonus="+5"/>
+            <skill name="Naturkunde" bonus="+3"/>
+        </skills>
+        <traits>
+            <trait name="Beobachtend (Observant)">
+                <description>Caelthorn erhält +5 auf seine passive Wahrnehmung. Außerdem kann er die Lippenbewegungen einer Kreatur verstehen, wenn er sie sehen kann und eine gemeinsame Sprache besteht.</description>
+            </trait>
+            <trait name="Bevorzugter Feind: Humanoide (Menschen, Norn)">
+                <description>Caelthorn hat Vorteil auf Weisheitswürfe (Überlebenskunst), um seine bevorzugten Feinde aufzuspüren, sowie auf Intelligenzwürfe, um Informationen über sie zu erinnern.</description>
+            </trait>
+            <trait name="Natürlicher Entdecker: Wald">
+                <description>In Wäldern ist Caelthorn besonders effizient beim Überleben und Reisen (z. B. Orientierung, Nahrungssuche, Spurenlesen). Entsprechende INT-/WEI-Würfe können situativ Vorteil haben.</description>
+            </trait>
+            <trait name="Kampfstil: Kampf mit zwei Waffen (Two-Weapon Fighting)">
+                <description>Wenn Caelthorn im Zuge des Kampfes mit zwei Waffen einen Angriff mit der Bonusaktion ausführt, addiert er seinen Attributsmodifikator auf den Schaden.</description>
+            </trait>
+            <trait name="Mehrfachangriff (Extra Attack)">
+                <description>Wenn Caelthorn die Angriffsaktion ausführt, kann er zwei Angriffe durchführen.</description>
+            </trait>
+            <trait name="Jägers Beute: Hordenbrecher (Hunter&#39;s Prey: Horde Breaker)">
+                <description>Einmal pro Zug kann Caelthorn, wenn er eine Kreatur mit einem Waffenangriff trifft, einen weiteren Waffenangriff gegen eine andere Kreatur ausführen, die sich innerhalb von 1,5 m des ursprünglichen Ziels befindet und in Reichweite steht.</description>
+            </trait>
+            <trait name="Urtümliches Bewusstsein (Primeval Awareness)">
+                <description>Caelthorn kann einen Zauberplatz einsetzen, um für kurze Zeit die ungefähre Präsenz seiner bevorzugten Feinde in der Umgebung zu erspüren (Richtung/Distanz grob, je nach Regelung am Tisch).</description>
+            </trait>
+            <trait name="Trauminstinkt (Dream Instinct) (Reaktion, 1/Lange Rast)">
+                <description>Wenn Caelthorn einen Weisheits-, Intelligenz- oder Charisma-Rettungswurf verfehlt, kann er als Reaktion den Wurf wiederholen. Er muss das neue Ergebnis verwenden.</description>
+            </trait>
+            <trait name="Photosynthese (Photosynthesis)">
+                <description>Caelthorn kann sich in geeigneter Umgebung durch Sonnenlicht/ähnliche natürliche Energie regenerieren (kampagnen-/settingabhängig; meist außerhalb des Kampfes relevant).</description>
+            </trait>
+            <trait name="Biolumineszenz (Bioluminescence)">
+                <description>Caelthorn kann schwaches Licht erzeugen (als stimmiges, kontrollierbares Leuchten seines Körpers). Reichweite/Intensität nach eurer Sylvari-Umsetzung.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Caelthorn führt zwei Waffenangriffe aus.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Kurzschwert (Shortsword)">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>5 (1W6 + 2) Stichschaden</damage>
+            </attack>
+            <attack name="Langbogen (Longbow)">
+                <type>Fernkampf</type>
+                <bonus>+5</bonus>
+                <range>45/180 m</range>
+                <target>ein Ziel</target>
+                <damage>6 (1W8 + 2) Stichschaden</damage>
+            </attack>
+        </attacks>
+        <spellcasting>
+            <name>Waldläufer</name>
+            <level>5</level>
+            <ability>WEI</ability>
+            <saveDC>13</saveDC>
+            <attackBonus>+5</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_GOODBERRY" level="1">Gute Beeren (Goodberry)</spell>
+                <spell id="ID_D4T_SPELL_FOG_CLOUD" level="1">Nebelwolke (Fog Cloud)</spell>
+                <spell id="ID_D4T_SPELL_HUNTERS_MARK" level="1">Zeichen des Jägers (Hunter’s Mark)</spell>
+                <spell id="ID_D4T_SPELL_PASS_WITHOUT_TRACE" level="2">Spurloses Gehen (Pass without Trace)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1">4</slot>
+                <slot level="2">2</slot>
+            </slots>
+        </spellcasting>
+    </statblock>
+    <statblock name="[ZB] Ilyr Nebelschritt (Wiedergänger)" id="id-zb-ilyr-nebelschritt">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Mensch)</type>
+            <alignment>neutral böse</alignment>
+            <ac>13 (Ungerüstete Verteidigung)</ac>
+            <hp>38 (5W8 + 10)</hp>
+            <speed>12 m</speed>
+            <initiative>+8</initiative>
+            <senses>Passive Wahrnehmung 11</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>3</challenge>
+            <proficiency>+3</proficiency>
+        </meta>
+        <abilities>
+            <ability name="Str" score="12" bonus="+1"/>
+            <ability name="Dex" score="15" bonus="+2"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="13" bonus="+1"/>
+            <ability name="Cha" score="8" bonus="-1"/>
+        </abilities>
+        <saves>
+            <save ability="Str" bonus="+4"/>
+            <save ability="Dex" bonus="+5"/>
+        </saves>
+        <skills>
+            <skill name="Akrobatik" bonus="+6"/>
+            <skill name="Motiv erkennen" bonus="+5"/>
+            <skill name="Taschenspielerei" bonus="+6"/>
+            <skill name="Heimlichkeit" bonus="+6"/>
+            <!-- Wenn du die Skill-Boni aus dem PDF übernehmen willst, trag sie hier ein -->
+            <!-- Beispiel: <skill name="Akrobatik" bonus="+5"/> -->
+        </skills>
+        <traits>
+            <trait name="Ungerüstete Verteidigung (Unarmored Defense)">
+                <description>Solange Ilyr keine Rüstung trägt und keinen Schild führt, beträgt seine RK 10 + GE-Modifikator + WE-Modifikator.</description>
+            </trait>
+            <trait name="Kampfkunst (Martial Arts)">
+                <description>Wenn Ilyr in seinem Zug angreift und ungerüstet ist sowie keine schweren/zweihändigen Waffen führt, kann er als Bonusaktion einen unbewaffneten Angriff ausführen. Sein Kampfkunstwürfel ist 1W6. Er kann für unbewaffnete Angriffe GE statt STÄ verwenden.</description>
+            </trait>
+            <trait name="Ki (5 Punkte)">
+                <description>Ilyr hat 5 Ki-Punkte. Er erhält alle verbrauchten Ki-Punkte zurück, wenn er eine kurze oder lange Rast beendet. Ki-Rettungswurf-SG: 12 (8 + Übungsbonus + WE-Modifikator).</description>
+            </trait>
+            <trait name="Ki: Hagel der Schläge (Flurry of Blows)">
+                <description>Direkt nachdem Ilyr die Angriffsaktion ausgeführt hat, kann er 1 Ki-Punkt ausgeben, um als Bonusaktion zwei unbewaffnete Angriffe auszuführen.</description>
+            </trait>
+            <trait name="Ki: Geduldige Verteidigung (Patient Defense)">
+                <description>Als Bonusaktion kann Ilyr 1 Ki-Punkt ausgeben, um bis zum Beginn seines nächsten Zuges die Aktion „Ausweichen“ zu nutzen.</description>
+            </trait>
+            <trait name="Ki: Schritt des Windes (Step of the Wind)">
+                <description>Als Bonusaktion kann Ilyr 1 Ki-Punkt ausgeben, um „Rennen“ oder „Rückzug“ zu nutzen. Seine Sprungweite wird für den Zug verdoppelt.</description>
+            </trait>
+            <trait name="Extra Attack (Mehrfachangriff)">
+                <description>Wenn Ilyr die Angriffsaktion ausführt, kann er zwei Angriffe durchführen.</description>
+            </trait>
+            <trait name="Betäubender Schlag (Stunning Strike)">
+                <description>Wenn Ilyr eine Kreatur mit einem Nahkampfwaffenangriff trifft, kann er 1 Ki-Punkt ausgeben. Das Ziel muss einen KON-Rettungswurf gegen SG 12 bestehen oder ist bis zum Ende von Ilyrs nächstem Zug betäubt.</description>
+            </trait>
+            <trait name="Schattenkünste (Shadow Arts)">
+                <description>Als Aktion kannst du 2 Ki-Punkte ausgeben, um Dunkelheit (Darkness), Dunkelsicht (Darkvision), Spurlosigkeit (Pass without Trace) oder Stille (Silence) zu wirken, ohne Materialkomponenten zu benötigen.</description>
+            </trait>
+            <trait name="Geschosse ablenken (Deflect Missiles)">
+                <description>Als Reaktion kann Ilyr den Schaden eines Fernwaffenangriffs um 1W10 + GE-Modifikator + Stufe reduzieren. Reduziert er den Schaden auf 0, kann er 1 Ki-Punkt ausgeben, um das Geschoss zurückzuwerfen (Fernkampfangriff, Reichweite 6/18 m).</description>
+            </trait>
+            <trait name="Langsamer Fall (Slow Fall)">
+                <description>Als Reaktion kann Ilyr Fallschaden um 25 reduzieren.</description>
+            </trait>
+            <trait name="Ungerüstete Bewegung (Unarmored Movement)">
+                <description>Solange Ilyr keine Rüstung trägt und keinen Schild führt, erhöht sich seine Bewegungsrate um 3 m.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Ilyr führt zwei Angriffe aus.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Unbewaffneter Angriff (Martial Arts)">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>5 (1W6 + 2) Wuchtschaden</damage>
+            </attack>
+            <attack name="Viertelstab (Quarterstaff)">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>6 (1W8 + 2) Wuchtschaden</damage>
+            </attack>
+            <attack name="Dolch (Dagger)">
+                <type>Nahkampf oder Fernkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m oder 6/18 m</range>
+                <target>ein Ziel</target>
+                <damage>4 (1W4 + 2) Stichschaden</damage>
+            </attack>
+        </attacks>
+        <reactions>
+            <reaction name="Geschosse ablenken (Deflect Missiles)">
+                <description>Wenn Ilyr von einem Fernwaffenangriff getroffen wird, kann er als Reaktion den Schaden um 1W10 + 2 + 5 reduzieren. Reduziert er den Schaden auf 0, kann er 1 Ki-Punkt ausgeben, um das Geschoss zurückzuwerfen.</description>
+            </reaction>
+            <reaction name="Langsamer Fall (Slow Fall)">
+                <description>Wenn Ilyr Fallschaden erleiden würde, kann er als Reaktion den Schaden um 25 reduzieren.</description>
+            </reaction>
+        </reactions>
+        <spellcasting>
+            <name>Wiedergänger</name>
+            <level>5</level>
+            <ability>WEI</ability>
+            <saveDC>12</saveDC>
+            <attackBonus>+4</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_MINOR_ILLUSION" level="0">Einfache Illusion (Minor Illusion)</spell>
+            </spelllist>
+        </spellcasting>
+    </statblock>
+</encounter>

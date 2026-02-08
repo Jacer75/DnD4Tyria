@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.2.6">
+        <update version="1.2.7">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -116,7 +116,7 @@
     <element name="Schild mit Sigill des wachsamen Blicks" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_SHIELD_WACHSAMER_BLICK">
         <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
         <description>
-            <p>Der Schild ist rund, robust und aus poliertem Stahl gefertigt. In seiner Mitte prangt ein flaches Emblem – ein weit geöffnetes Auge, eingefasst in einen feinen Kreis aus Kupferdraht. Das Auge scheint dem Betrachter zu folgen, je nachdem, wie man ihn hält.</p>
+            <p>Der Schild ist rund, robust und aus poliertem Stahl gefertigt. In seiner Mitte prangt ein flaches Emblem – ein weit geöffnetes Auge, eingefasst in einen feinen Kreis aus Kupferdraht. Das Auge scheint dem Betrachter zu folgen, je nachdem, wie man ihn hält. Gibt Vorteil auf Initiative.</p>
         </description>
         <setters>
             <set name="category">Schild</set>
