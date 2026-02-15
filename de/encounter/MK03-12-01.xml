@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-12 Eisbrut</name>
+        <file>MK03-12-01.xml</file>
+        <abenteuer>MK03-12 Eisbrut</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Rokh Eisenspur" id="d4t-rokh-eisenspur">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Charr)</type>
+            <alignment>rechtschaffen gut</alignment>
+            <ac>19</ac>
+            <hp>49</hp>
+            <speed>9 m</speed>
+            <initiative>+2</initiative>
+            <senses>Passive Wahrnehmung 14</senses>
+            <languages>Tyrianisch, Charrisch</languages>
+            <challenge>3</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="15" bonus="+2"/>
+            <ability name="Dex" score="15" bonus="+2"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="11" bonus="+0"/>
+            <ability name="Wis" score="12" bonus="+1"/>
+            <ability name="Cha" score="8" bonus="-1"/>
+        </abilities>
+        <saves>
+            <save ability="Str" bonus="+5"/>
+            <save ability="Con" bonus="+5"/>
+        </saves>
+        <skills>
+            <skill name="Athletik" bonus="+5"/>
+            <skill name="Einschüchtern" bonus="+2"/>
+            <skill name="Wahrnehmung" bonus="+4"/>
+            <skill name="Überlebenskunst" bonus="+4"/>
+        </skills>
+        <traits>
+            <trait name="Erweiterte Sinne">
+                <description>Rokh hat Vorteil auf Weisheitswürfe (Wahrnehmung), die auf Hören basieren.</description>
+            </trait>
+            <trait name="Charr-Klauen">
+                <description>Unbewaffnete Angriffe von Rokh verursachen 1W4 Hiebschaden. Rokh gilt als bewaffnet, wenn er seine Klauen einsetzt.</description>
+            </trait>
+            <trait name="Kampfstil: Verteidigung">
+                <description>Solange Rokh eine Rüstung trägt, erhält er +1 auf seine Rüstungsklasse (bereits eingerechnet).</description>
+            </trait>
+            <trait name="Zusätzlicher Angriff (Extra Attack)">
+                <description>Rokh kann zweimal angreifen, wenn er in seinem Zug die Angriffsaktion ausführt.</description>
+            </trait>
+            <trait name="Kampfüberlegenheit (Kampfmeister)">
+                <description>Rokh hat 4 Überlegenheitswürfel (W8). Rettungswurf-SG 13. Ein Manöver kann pro Angriff nur einmal eingesetzt werden.</description>
+            </trait>
+            <trait name="Manöver: Manövrierender Angriff (Maneuvering Attack)">
+                <description>Wenn Rokh eine Kreatur mit einem Waffenangriff trifft, kann er 1 Überlegenheitswürfel ausgeben, um den Schaden um 1W8 zu erhöhen. Ein Verbündeter, den Rokh sehen kann, kann sich als Reaktion bis zur Hälfte seiner Bewegungsrate bewegen, ohne dabei Gelegenheitsangriffe durch das Ziel auszulösen.</description>
+            </trait>
+            <trait name="Manöver: Schlag des Befehlshabers (Commander's Strike)">
+                <description>Wenn Rokh die Angriffsaktion ausführt, kann er 1 Überlegenheitswürfel ausgeben, um auf einen Angriff zu verzichten und stattdessen einem Verbündeten einen Angriff zu befehlen. Dieser Verbündete kann als Reaktion sofort einen Waffenangriff ausführen und erhält den Überlegenheitswürfel als Bonus auf den Schaden.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Rokh führt zwei Angriffe mit dem Langschwert aus.</description>
+            </action>
+            <action name="Durchschnaufen (Second Wind) (1/Kurze Rast)">
+                <description>(Bonus) Rokh erhält 1W10 + 5 Trefferpunkte zurück.</description>
+            </action>
+            <action name="Sammeln (Rally)">
+                <description>(Bonus) Rokh gibt 1 Überlegenheitswürfel aus und wählt einen Verbündeten, den er sehen oder hören kann. Dieser erhält temporäre Trefferpunkte in Höhe des Überlegenheitswurfs + 1.</description>
+            </action>
+            <action name="Raubtierhafte Bewegung (1/Lange Rast)">
+                <description>(Bonus) Rokh erhöht für diesen Zug seine Bewegungsrate um 6 m und ignoriert schwieriges Gelände.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Langschwert (Longsword)">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>6 (1W8 + 2) Hiebschaden</damage>
+            </attack>
+            <attack name="Charr-Klauen">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>4 (1W4 + 2) Hiebschaden</damage>
+            </attack>
+        </attacks>
+        <reactions>
+            <reaction name="Wächter (Sentinel)">
+                <description>Gelegenheitsangriffe von Rokh reduzieren die Bewegung des Ziels bis zum Ende des aktuellen Zuges auf 0. Kreaturen provozieren Gelegenheitsangriffe von Rokh auch dann, wenn sie die Aktion Rückzug verwenden. Wenn eine Kreatur innerhalb von 1,5 m ein anderes Ziel als Rokh angreift, kann Rokh als Reaktion einen Nahkampfangriff gegen diese Kreatur ausführen.</description>
+            </reaction>
+        </reactions>
+    </statblock>
+    <statblock name="Eisbrut-Koloss" id="d4t-eisbrut-koloss">
+        <meta>
+            <size>Riesig</size>
+            <type>Riese</type>
+            <alignment>neutral</alignment>
+            <ac>17 (Natürliche Rüstung)</ac>
+            <hp>126 (11W12 + 55)</hp>
+            <speed>12 m</speed>
+            <initiative>+2</initiative>
+            <senses>Dunkelsicht 18 m, Passive Wahrnehmung 14</senses>
+            <languages>Keine</languages>
+            <challenge>7</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="23" bonus="+6"/>
+            <ability name="Dex" score="15" bonus="+2"/>
+            <ability name="Con" score="20" bonus="+5"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="12" bonus="+1"/>
+            <ability name="Cha" score="9" bonus="-1"/>
+        </abilities>
+        <saves>
+            <save ability="Dex" bonus="+5"/>
+            <save ability="Con" bonus="+8"/>
+            <save ability="Wis" bonus="+4"/>
+        </saves>
+        <skills>
+            <skill name="Athletik" bonus="+12"/>
+            <skill name="Wahrnehmung" bonus="+4"/>
+        </skills>
+        <traits>
+            <trait name="Eistarnung (Ice Camouflage)">
+                <description>Der Koloss hat Vorteil bei Geschicklichkeitswürfen (Heimlichkeit), um sich in felsigem Gelände zu verstecken.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff (Multiattack)">
+                <description>Der Koloss führt zwei Angriffe mit seinem Großknüppel aus.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Großknüppel (Greatclub)">
+                <type>Nahkampf</type>
+                <bonus>+9</bonus>
+                <range>4,50 m</range>
+                <target>ein Ziel</target>
+                <damage>19 (3W8 + 6) Wuchtschaden</damage>
+            </attack>
+            <attack name="Eisbrocken (Rock)">
+                <type>Fernkampf</type>
+                <bonus>+9</bonus>
+                <range>18/72 m</range>
+                <target>ein Ziel</target>
+                <damage>28 (4W10 + 6) Wuchtschaden; Ziel-Kreatur: SG 17 Str-Rettungswurf, bei Misslingen liegend</damage>
+            </attack>
+        </attacks>
+        <reactions>
+            <reaction name="Eisbrocken fangen (Rock Catching)">
+                <description>Wenn ein Felsbrocken oder ein ähnliches Objekt auf den Koloss geschleudert wird, kann er bei einem erfolgreichen Geschicklichkeits-Rettungswurf SG 10 das Geschoss fangen und erleidet bestätigtenfalls keinen Wuchtschaden dadurch.</description>
+            </reaction>
+        </reactions>
+        <!--        <legendary>
+            <resistances>
+                <resistance uses="3">
+                    <description/>
+                </resistance>
+            </resistances>
+            <actions perRound="3">
+                <intro/>
+                <action name="NAME DER AKTION" cost="1">
+                    <description/>
+                </action>
+            </actions>
+        </legendary>
+        <spellcasting>
+            <stat>Cha</stat>
+            <saveDC>0</saveDC>
+            <attackBonus>+0</attackBonus>
+            <spelllist/>
+            <slots/>
+        </spellcasting>-->
+    </statblock>
+    <statblock name="Eisbrut-Norn" id="d4t-eisbrut-norn">
+        <meta>
+            <size>Groß</size>
+            <type>Riese</type>
+            <alignment>chaotisch böse</alignment>
+            <ac>13 (Natürliche Rüstung)</ac>
+            <hp>105 (10W12 + 40)</hp>
+            <speed>12 m</speed>
+            <initiative>-1</initiative>
+            <senses>Passive Wahrnehmung 12</senses>
+            <languages>Riesisch</languages>
+            <challenge>5</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="21" bonus="+5"/>
+            <ability name="Dex" score="8" bonus="-1"/>
+            <ability name="Con" score="19" bonus="+4"/>
+            <ability name="Int" score="5" bonus="-3"/>
+            <ability name="Wis" score="9" bonus="-1"/>
+            <ability name="Cha" score="6" bonus="-2"/>
+        </abilities>
+        <skills>
+            <skill name="Wahrnehmung" bonus="+2"/>
+        </skills>
+        <actions>
+            <action name="Mehrfachangriff (Multiattack)">
+                <description>Der Riese führt zwei Angriffe mit seinem Großknüppel aus.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Großknüppel (Greatclub)">
+                <type>Nahkampf</type>
+                <bonus>+8</bonus>
+                <range>3 m</range>
+                <target>ein Ziel</target>
+                <damage>18 (3W8 + 5) Wuchtschaden</damage>
+            </attack>
+            <attack name="Felsbrocken (Rock)">
+                <type>Fernkampf</type>
+                <bonus>+8</bonus>
+                <range>18/72 m</range>
+                <target>ein Ziel</target>
+                <damage>21 (3W10 + 5) Wuchtschaden</damage>
+            </attack>
+        </attacks>
+        <!--<reactions>
+  </reactions>
+        <legendary>
+            <resistances>
+                <resistance uses="3">
+                    <description/>
+                </resistance>
+            </resistances>
+            <actions perRound="3">
+                <intro/>
+                <action name="NAME DER AKTION" cost="1">
+                    <description/>
+                </action>
+            </actions>
+        </legendary>
+        <spellcasting>
+            <stat>Cha</stat>
+            <saveDC>0</saveDC>
+            <attackBonus>+0</attackBonus>
+            <spelllist/>
+            <slots/>
+        </spellcasting>-->
+    </statblock>
+    <statblock name="Eisschamane der Söhne Svanirs" id="d4t-eisschamane-svanir">
+        <meta>
+            <size>Groß</size>
+            <type>Humanoid (Norn)</type>
+            <alignment>chaotisch böse</alignment>
+            <ac>15 (Eisgehärtete Haut)</ac>
+            <hp>82 (11W8 + 33)</hp>
+            <speed>9 m</speed>
+            <initiative>+2</initiative>
+            <senses>Passive Wahrnehmung 15</senses>
+            <languages>Nornisch, Tyrianisch</languages>
+            <challenge>4</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="11" bonus="+0"/>
+            <ability name="Dex" score="14" bonus="+2"/>
+            <ability name="Con" score="16" bonus="+3"/>
+            <ability name="Int" score="12" bonus="+1"/>
+            <ability name="Wis" score="16" bonus="+3"/>
+            <ability name="Cha" score="12" bonus="+1"/>
+        </abilities>
+        <saves>
+            <save ability="Con" bonus="+5"/>
+            <save ability="Wis" bonus="+5"/>
+        </saves>
+        <skills>
+            <skill name="Wahrnehmung" bonus="+5"/>
+            <skill name="Naturkunde" bonus="+3"/>
+        </skills>
+        <traits>
+            <trait name="Kälteresistenz">
+                <description>Der Schamane besitzt Resistenz gegen Kälteschaden.</description>
+            </trait>
+        </traits>
+        <spellcasting>
+            <stat>Wis</stat>
+            <saveDC>14</saveDC>
+            <attackBonus>+6</attackBonus>
+            <description>Der Schamane ist ein Zauberwirker der 6. Stufe. Seine Zauberwirkungsfähigkeit ist Weisheit.</description>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_RAY_OF_FROST" level="0">Kältestrahl (Ray of Frost)</spell>
+                <spell id="ID_D4T_SPELL_DRUIDCRAFT" level="0">Druidenkunst (Druidcraft)</spell>
+                <spell id="ID_D4T_SPELL_SHILLELAGH" level="0">Shillelagh</spell>
+                <spell id="ID_D4T_SPELL_ENTANGLE" level="1">Verstricken (Entangle)</spell>
+                <spell id="ID_D4T_SPELL_THUNDERWAVE" level="1">Donnerwoge (Thunderwave)</spell>
+                <spell id="ID_D4T_SPELL_LONGSTRIDER" level="1">Langschritt (Longstrider)</spell>
+                <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+                <spell id="ID_D4T_SPELL_BARKSKIN" level="2">Rindenhaut (Barkskin)</spell>
+                <spell id="ID_D4T_SPELL_SLEET_STORM" level="3">Schneesturm (Sleet Storm)</spell>
+                <spell id="ID_D4T_SPELL_SPIRIT_GUARDIANS" level="3">Schutzgeister (Spirit Guardians)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1">4</slot>
+                <slot level="2">3</slot>
+                <slot level="3">3</slot>
+            </slots>
+        </spellcasting>
+        <attacks>
+            <attack name="Eisstab">
+                <type>Nahkampf</type>
+                <bonus>+6</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>1W8 + 3 Wuchtschaden + 1W8 Kälteschaden</damage>
+            </attack>
+        </attacks>
+        <actions>
+            <action name="Eis formen/Druidcraft">
+                <description>Druidcraft bezieht sich beim Eisschamanen auf Eis.</description>
+            </action>
+            <action name="Verstricken (Entangle)">
+                <description>Verstricken (Entangle) macht Kälteschaden.</description>
+            </action>
+            <action name="Donnerwoge (Thunderwave)">
+                <description>Donnerwoge macht Kälteschaden.</description>
+            </action>
+            <action name="Schutzgeister (Spirit Guardians)">
+                <description>Schutzgeister (Spirit Guardians) erzeugt kleine Eiselementare, die Kälteschaden verursachen.</description>
+            </action>
+        </actions>
+        <reactions>
+            <reaction name="Gefrorener Panzer">
+                <description>Wenn der Schamane von einem Angriff getroffen wird, erhält er bis zum Beginn seines nächsten Zuges +2 auf seine RK und 10 temporäre Trefferpunkte.</description>
+            </reaction>
+        </reactions>
+        <!--  <legendary>
+    <resistances>
+      <resistance uses="3">
+        <description></description>
+      </resistance>
+    </resistances>
+
+    <actions perRound="3">
+      <intro></intro>
+      <action name="NAME DER AKTION" cost="1">
+        <description></description>
+      </action>
+    </actions>
+  </legendary>-->
+    </statblock>
+    <statblock name="Sohn Svanirs" id="d4t-sohn-svanirs">
+        <meta>
+            <size>Groß</size>
+            <type>Humanoid (Norn)</type>
+            <alignment>Neutral Böse</alignment>
+            <ac>11 (Lederrüstung)</ac>
+            <hp>32 (5W8 + 10)</hp>
+            <speed>9 m</speed>
+            <initiative>+0</initiative>
+            <senses>Passive Wahrnehmung 10</senses>
+            <languages>Nornisch, Tyrianisch</languages>
+            <challenge>1/2</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="15" bonus="+2"/>
+            <ability name="Dex" score="11" bonus="+0"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="10" bonus="+0"/>
+            <ability name="Cha" score="11" bonus="+0"/>
+        </abilities>
+        <skills>
+            <skill name="Einschüchtern" bonus="+2"/>
+        </skills>
+        <traits>
+            <trait name="Rudel-Taktik (Pack Tactics)">
+                <description>Der Sohn Svanirs hat Vorteil bei einem Angriffswurf gegen eine Kreatur, wenn sich mindestens ein Verbündeter des Sohnes Svanirs innerhalb von 1,5 m um das Ziel befindet und der Verbündete nicht kampfunfähig ist.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff (Multiattack)">
+                <description>Der Sohn Svanirs führt zwei Nahkampfangriffe aus.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Streitkolben (Mace)">
+                <type>Nahkampf</type>
+                <bonus>+4</bonus>
+                <range>1,5 m</range>
+                <target>eine Kreatur</target>
+                <damage>5 (1W6 + 2) Wuchtschaden</damage>
+            </attack>
+        </attacks>
+        <!--<reactions>
+  </reactions>
+
+  <legendary>
+    <resistances>
+      <resistance uses="3">
+        <description></description>
+      </resistance>
+    </resistances>
+
+    <actions perRound="3">
+      <intro></intro>
+      <action name="NAME DER AKTION" cost="1">
+        <description></description>
+      </action>
+    </actions>
+  </legendary>
+
+  <spellcasting>
+    <stat>Cha</stat>
+    <saveDC>0</saveDC>
+    <attackBonus>+0</attackBonus>
+    <spelllist></spelllist>
+    <slots></slots>
+  </spellcasting>-->
+    </statblock>
+</encounter>
