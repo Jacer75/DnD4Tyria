@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-15-06-4 Allerheiligste</name>
+        <file>MK03-15-06-4.xml</file>
+        <abenteuer>MK03-15 Expedition</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Jade-Wächter" id="jade-guardian">
+        <meta>
+            <size>Groß</size>
+            <type>Konstrukt</type>
+            <alignment>neutral</alignment>
+            <ac>17</ac>
+            <hp>95 (10W10 + 40)</hp>
+            <speed>6 m</speed>
+            <initiative>-1</initiative>
+            <senses>Dunkelsicht 36 m, Passive Wahrnehmung 10</senses>
+            <languages>versteht die Sprachen seines Erschaffers, kann aber nicht sprechen</languages>
+            <challenge>5</challenge>
+            <resistances/>
+            <immunities>Gift, Psychisch; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen, die nicht aus Adamant bestehen</immunities>
+            <conditionImmunities>Bezaubert, Erschöpfung, Verängstigt, Gelähmt, Versteinert, Vergiftet</conditionImmunities>
+        </meta>
+        <abilities>
+            <ability name="Str" score="18" bonus="+4"/>
+            <ability name="Dex" score="9" bonus="-1"/>
+            <ability name="Con" score="18" bonus="+4"/>
+            <ability name="Int" score="3" bonus="-4"/>
+            <ability name="Wis" score="11" bonus="+0"/>
+            <ability name="Cha" score="1" bonus="-5"/>
+        </abilities>
+        <!--<saves>
+  </saves>
+        <skills>
+  </skills>-->
+        <traits>
+            <trait name="Unveränderliche Form">
+                <description>
+        Der Jade-Wächter ist immun gegen jeden Zauber oder Effekt, der seine Form verändern würde. Er ist empfindlich (Schaden verdoppelt) gegen Donnerschaden.
+      </description>
+            </trait>
+            <trait name="Magieresistenz">
+                <description>
+        Der Jade-Wächter hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.
+      </description>
+            </trait>
+            <trait name="Magische Waffen">
+                <description>
+        Die Angriffe des Jade-Wächters gelten als magisch.
+      </description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>
+        Der Jade-Wächter führt zwei Hiebangriffe aus.
+      </description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Jadehieb">
+                <type>Nahkampf</type>
+                <bonus>+8</bonus>
+                <range>1,50 m</range>
+                <target>ein Ziel</target>
+                <damage>14 (2W8 + 5) Wuchtschaden</damage>
+            </attack>
+        </attacks>
+        <!--<reactions>
+  </reactions>
+
+  <legendary>
+    <resistances>
+    </resistances>
+
+    <actions perRound="0">
+      <intro></intro>
+    </actions>
+  </legendary>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist>
+    </spelllist>
+    <slots>
+    </slots>
+  </spellcasting>-->
+    </statblock>
+    <statblock name="Jade-Schütze" id="jade-archer">
+        <meta>
+            <size>Groß</size>
+            <type>Konstrukt</type>
+            <alignment>neutral</alignment>
+            <ac>15</ac>
+            <hp>63 (9W10 + 14)</hp>
+            <speed>9 m</speed>
+            <initiative>+1</initiative>
+            <senses>Dunkelsicht 36 m, Passive Wahrnehmung 10</senses>
+            <languages>versteht die Sprachen seines Erschaffers, kann aber nicht sprechen</languages>
+            <challenge>4</challenge>
+            <resistances/>
+            <immunities>Gift, Psychisch; Wucht-, Stich- und Hiebschaden von nichtmagischen Waffen, die nicht aus Adamant bestehen</immunities>
+            <conditionImmunities>Bezaubert, Erschöpfung, Verängstigt, Gelähmt, Versteinert, Vergiftet</conditionImmunities>
+        </meta>
+        <abilities>
+            <ability name="Str" score="14" bonus="+2"/>
+            <ability name="Dex" score="12" bonus="+1"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="3" bonus="-4"/>
+            <ability name="Wis" score="11" bonus="+0"/>
+            <ability name="Cha" score="1" bonus="-5"/>
+        </abilities>
+        <saves>
+  </saves>
+        <skills>
+  </skills>
+        <traits>
+            <trait name="Unveränderliche Form">
+                <description>
+        Der Jade-Schütze ist immun gegen jeden Zauber oder Effekt, der seine Form verändern würde. Er ist empfindlich (Schaden verdoppelt) gegen Donnerschaden.
+      </description>
+            </trait>
+            <trait name="Magieresistenz">
+                <description>
+        Der Jade-Schütze hat Vorteil auf Rettungswürfe gegen Zauber und andere magische Effekte.
+      </description>
+            </trait>
+            <trait name="Magische Waffen">
+                <description>
+        Die Angriffe des Jade-Schützen gelten als magisch.
+      </description>
+            </trait>
+        </traits>
+        <actions>
+  </actions>
+        <attacks>
+            <attack name="Jadebolzen">
+                <type>Fernkampf</type>
+                <bonus>+6</bonus>
+                <range>24/72 m</range>
+                <target>ein Ziel</target>
+                <damage>11 (2W8 + 2) Stichschaden. Wird ein großes oder kleineres Ziel getroffen, ist seine Bewegungsrate bis zum Beginn seines nächsten Zuges um 3 m verringert.</damage>
+            </attack>
+            <attack name="Resonanzstoß (Recharge 5–6)">
+                <type>Magischer Effekt</type>
+                <bonus>-</bonus>
+                <range>3 m Radius</range>
+                <target>alle Kreaturen im Umkreis</target>
+                <damage>9 (2W8) Wuchtschaden, CON-Rettungswurf SG 14 halbiert den Schaden. Bei misslungenem Rettungswurf wird das Ziel zusätzlich 3 m zurückgestoßen.</damage>
+            </attack>
+            <!--<attack name="Jadeklinge">
+      <type>Nahkampf</type>
+      <bonus>+4</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>7 (1W10 + 2) Hiebschaden</damage>
+    </attack>-->
+        </attacks>
+        <!--<reactions>
+  </reactions>
+
+  <legendary>
+    <resistances>
+    </resistances>
+
+    <actions perRound="0">
+      <intro></intro>
+    </actions>
+  </legendary>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist>
+    </spelllist>
+    <slots>
+    </slots>
+  </spellcasting>-->
+    </statblock>
+</encounter>

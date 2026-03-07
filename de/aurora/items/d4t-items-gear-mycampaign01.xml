@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.2.7">
+        <update version="1.2.8">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -245,6 +245,24 @@
             <set name="damage" type="Stich">1W8</set>
             <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
         </setters>
+    </element>
+    <element name="Talisman des Gefrorenen Herzens" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_AMULET_FROZEN_HEART">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>Ein faustgroßes, unregelmäßiges Fragment aus makellos klarem Eis, das niemals schmilzt. In seinem Inneren verlaufen feine, milchige Schlieren. Betrachtet man den Splitter im richtigen Licht, scheint tief im Kern ein schwaches, kaltes Leuchten zu pulsieren.</p>
+            <p>(1× pro langer Rast): Wenn der Träger Schaden erleidet, kann er seine Reaktion verwenden, um den erlittenen Schaden zu halbieren.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">neck</set>
+            <set name="weight">0</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+        <!--<rules>
+            <stat name="spellcasting:attack" value="1"/>
+            <stat name="spellcasting:dc" value="1"/>
+        </rules>-->
     </element>
 </elements>
 
