@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.2.8">
+        <update version="1.2.9">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -327,6 +327,31 @@
             <set name="weight" lb="15">1 Pfund</set>
             <!--<set name="stash" lb="500" weightless="true">true</set>-->
         </setters>
+    </element>
+    <element name="Symbol der Dwayna-Priesterschaft" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_DWAYNA_SYMBOL">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong>Ein filigran gearbeitetes, silbern schimmerndes Amulett in Form eines stilisierten Flügelpaares, das sich nach oben öffnet. Zwischen den Flügeln ruht ein kleiner, klarer Kristall, der im Licht fast unsichtbar wirkt.</p>
+            <p>
+                <strong>Funktion:</strong>Das Symbol kann bis zu 4 Zaubergrade speichern. Es kann enthalten:
+                <ul class="unstyled">
+                    <li>vier Zauber der 1. Stufe</li>
+                    <li>einen Zauber der 4. Stufe</li>
+                </ul>
+                oder eine beliebige Kombination, deren Gesamtstufe 4 nicht überschreitet. Nur Zauber, die Leben schützen, stärken oder bewahren, können im Symbol gespeichert werden (z. B. Heilzauber, Schutzzauber, unterstützende Magie nach Ermessen des Spielleiters). Ein gespeicherter Zauber kann als Aktion gewirkt werden. Das Symbol entlädt sich nicht von selbst. Gespeicherte Magie verbleibt im Kristall, bis sie gewirkt wird.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">neck</set>
+            <set name="weight">0</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+        <rules>
+            <stat name="spellcasting:attack" value="1"/>
+            <stat name="spellcasting:dc" value="1"/>
+        </rules>
     </element>
 </elements>
 
