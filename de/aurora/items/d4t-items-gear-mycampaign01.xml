@@ -343,15 +343,15 @@
         </description>
         <setters>
             <set name="category">Magische Gegenstände</set>
-            <set name="rarity">Uncommon</set>
+            <set name="rarity">Rare</set>
             <set name="slot">neck</set>
             <set name="weight">0</set>
             <set name="cost" currency="gp">0</set>
         </setters>
-        <rules>
+        <!--<rules>
             <stat name="spellcasting:attack" value="1"/>
             <stat name="spellcasting:dc" value="1"/>
-        </rules>
+        </rules>-->
     </element>
 </elements>
 
