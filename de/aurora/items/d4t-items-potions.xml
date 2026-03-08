@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tränke</name>
+		<description></description>
+		<author url="">DnD4Tyria</author>
+		<update version="0.0.3">
+			<file name="d4t-items-potions.xml" url="" />
+		</update>
+	</info>
+	
+	<element name="Klettertrank (Potion of Climbing)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_CLIMBING">
+		<description>
+			<p><strong>Beschreibung:</strong> Der Trank ist in braune, silberne und graue Schichten getrennt, die an Bänder aus Stein erinnern. Selbst kräftiges Schütteln vermischt die Farben nicht.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde eine Klettergeschwindigkeit in Höhe deiner Bewegungsrate. Während dieser Zeit hast du Vorteil auf Stärkewürfe (Athletik), die du zum Klettern ablegst.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Heiltrank (Potion of Healing)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_HEALING">
+		<description>
+			<p><strong>Beschreibung:</strong> Unabhängig von seiner Wirksamkeit schimmert die rote Flüssigkeit dieses Tranks, wenn sie bewegt wird.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du 2W4 + 2 Trefferpunkte zurück.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="cost" currency="gp">50</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Common</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der stärkeren Heilung (Potion of Greater Healing)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_GREATER_HEALING">
+		<description>
+			<p><strong>Beschreibung:</strong> Unabhängig von seiner Wirksamkeit schimmert die rote Flüssigkeit dieses Tranks, wenn sie bewegt wird.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du 4W4 + 4 Trefferpunkte zurück.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der überlegenen Heilung (Potion of Superior Healing)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_SUPERIOR_HEALING">
+		<description>
+			<p><strong>Beschreibung:</strong> Unabhängig von seiner Wirksamkeit schimmert die rote Flüssigkeit dieses Tranks, wenn sie bewegt wird.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du 8W4 + 8 Trefferpunkte zurück.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der höchsten Heilung (Potion of Supreme Healing)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_SUPREME_HEALING">
+		<description>
+			<p><strong>Beschreibung:</strong> Unabhängig von seiner Wirksamkeit schimmert die rote Flüssigkeit dieses Tranks, wenn sie bewegt wird.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du 10W4 + 20 Trefferpunkte zurück.</p>
+		</description>
+		<setters>
+			<set name="keywords">healing</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Liebeselixier (Philter of Love)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_PHILTER_OF_LOVE">
+		<description>
+			<p><strong>Beschreibung:</strong> Die rosafarbene, perlende Flüssigkeit dieses Tranks enthält eine leicht zu übersehende Blase in Form eines Herzens.</p>
+			<p><strong>Funktion:</strong> Das nächste Mal, wenn du innerhalb von 10 Minuten nach dem Trinken dieses Elixiers eine Kreatur siehst, bist du dieser Kreatur gegenüber für 1 Stunde bezaubert. Falls die Kreatur zu einer Spezies und einem Geschlecht gehört, zu denen du dich normalerweise hingezogen fühlst, betrachtest du sie für die Dauer der Bezauberung als deine wahre Liebe.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Tierfreundschaft (Potion of Animal Friendship)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_ANIMAL_FRIENDSHIP">
+		<description>
+			<p><strong>Beschreibung:</strong> Wenn die trübe Flüssigkeit bewegt wird, werden kleine Bestandteile sichtbar: eine Fischschuppe, die Zunge eines Kolibris, eine Katzenkralle oder ein Eichhörnchenhaar.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, kannst du für 1 Stunde den Zauber Tierfreundschaft (Animal Friendship) nach Belieben wirken (Rettungswurf SG 13).</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank des Feueratems (Potion of Fire Breath)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_FIRE_BREATH">
+		<description>
+			<p><strong>Beschreibung:</strong> Die orangefarbene Flüssigkeit dieses Tranks flackert, und Rauch sammelt sich am oberen Rand des Behälters und quillt heraus, sobald er geöffnet wird.</p>
+			<p><strong>Funktion:</strong> Nachdem du diesen Trank getrunken hast, kannst du als Bonusaktion Feuer auf ein Ziel innerhalb von 9 m ausatmen. Das Ziel muss einen Geschicklichkeitsrettungswurf gegen SG 13 bestehen. Bei einem misslungenen Rettungswurf erleidet es 4W6 Feuerschaden, bei einem erfolgreichen halb so viel. Der Effekt endet, nachdem du das Feuer dreimal ausgeatmet hast oder nach 1 Stunde.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank des Wachstums (Potion of Growth)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_GROWTH">
+		<description>
+			<p><strong>Beschreibung:</strong> Das Rot in der Flüssigkeit dieses Tranks dehnt sich fortwährend von einem winzigen Tropfen aus, färbt die klare Flüssigkeit ringsum und zieht sich dann wieder zusammen. Selbst Schütteln unterbricht diesen Vorgang nicht.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1W4 Stunden den Vergrößern-Effekt des Zaubers Vergrößern/Verkleinern (Enlarge/Reduce), ohne dass Konzentration erforderlich ist.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Hügelriesenkraft (Potion of Hill Giant Strength)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_HILL_GIANT_STRENGTH">
+		<description>
+			<p><strong>Beschreibung:</strong> In der klaren Flüssigkeit dieses Tranks schwebt ein Fingernagelsplitter eines Riesen der entsprechenden Art. Der Trank der Frostriesenkraft (Potion of Frost Giant Strength) und der Trank der Steinriesenkraft (Potion of Stone Giant Strength) sehen genauso aus.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, verändert sich dein Stärkewert für 1 Stunde. Der Riesentyp bestimmt den Wert: Hügelriese 21, Frost- oder Steinriese 23, Feuerriese 25, Wolkenriese 27, Sturmriese 29. Hat dein Stärkewert bereits denselben oder einen höheren Wert, hat der Trank keine Wirkung.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Gifttrank (Potion of Poison)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_POISON">
+		<description>
+			<p><strong>Beschreibung:</strong> Dieses Gebräu sieht aus, riecht und schmeckt wie ein Heiltrank oder ein anderer nützlicher Trank. Tatsächlich handelt es sich jedoch um ein Gift, das durch Illusionsmagie verborgen wird. Der Zauber Identifizieren (Identify) enthüllt seine wahre Natur.</p>
+			<p><strong>Funktion:</strong> Wenn du ihn trinkst, erleidest du 3W6 Giftschaden und musst einen Konstitutionsrettungswurf gegen SG 13 bestehen, andernfalls bist du vergiftet. Zu Beginn jedes deiner Züge, solange du auf diese Weise vergiftet bist, erleidest du 3W6 Giftschaden. Am Ende jedes deiner Züge kannst du den Rettungswurf wiederholen. Bei einem erfolgreichen Rettungswurf verringert sich der Giftschaden in deinen folgenden Zügen um 1W6. Das Gift endet, wenn der Schaden auf 0 sinkt.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Säureresistenz (Potion of Resistance, Acid)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_ACID">
+		<description>
+			<p><strong>Beschreibung:</strong> Die Flüssigkeit dieses Tranks ist von einem ätzend grünlichen Schimmer durchzogen und zieht zähe Fäden am Glas entlang.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen Säureschaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Kälteresistenz (Potion of Resistance, Cold)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_COLD">
+		<description>
+			<p><strong>Beschreibung:</strong> Die blassblaue Flüssigkeit dieses Tranks ist eisig kühl, und an der Innenseite des Gefäßes bildet sich feiner Reif.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen Kälteschaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Feuerresistenz (Potion of Resistance, Fire)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_FIRE">
+		<description>
+			<p><strong>Beschreibung:</strong> Die bernsteinfarbene Flüssigkeit dieses Tranks ist angenehm warm und wirft im Licht flackernde Reflexe.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen Feuerschaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Machtresistenz (Potion of Resistance, Force)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_FORCE">
+		<description>
+			<p><strong>Beschreibung:</strong> Die farblose Flüssigkeit dieses Tranks wirkt unnatürlich schwer und verzerrt das Licht an den Rändern der Phiole.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen Machtschaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Blitzresistenz (Potion of Resistance, Lightning)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_LIGHTNING">
+		<description>
+			<p><strong>Beschreibung:</strong> Durch die gelbweiße Flüssigkeit dieses Tranks zucken feine Lichtadern wie winzige Blitze.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen Blitzschaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der nekrotischen Resistenz (Potion of Resistance, Necrotic)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_NECROTIC">
+		<description>
+			<p><strong>Beschreibung:</strong> Die dunkle Flüssigkeit dieses Tranks schluckt das Licht fast vollständig und hinterlässt einen fahlen, ungesunden Schimmer.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen nekrotischen Schaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Giftresistenz (Potion of Resistance, Poison)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_POISON">
+		<description>
+			<p><strong>Beschreibung:</strong> Die trübe grüne Flüssigkeit dieses Tranks riecht scharf nach Kräutern und bitterem Harz.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen Giftschaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der psychischen Resistenz (Potion of Resistance, Psychic)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_PSYCHIC">
+		<description>
+			<p><strong>Beschreibung:</strong> Die violette Flüssigkeit dieses Tranks scheint beim Hinsehen kurz Muster zu formen, die sich sofort wieder auflösen.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen psychischen Schaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Strahlenresistenz (Potion of Resistance, Radiant)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_RADIANT">
+		<description>
+			<p><strong>Beschreibung:</strong> Die goldene Flüssigkeit dieses Tranks leuchtet sanft von innen heraus, ohne dabei Wärme abzugeben.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen Strahlenschaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Donnerresistenz (Potion of Resistance, Thunder)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_RESISTANCE_THUNDER">
+		<description>
+			<p><strong>Beschreibung:</strong> Die tiefgraue Flüssigkeit dieses Tranks vibriert bei jeder Bewegung des Gefäßes ganz leicht nach.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde Resistenz gegen Donnerschaden.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank des Wasseratmens (Potion of Water Breathing)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_WATER_BREATHING">
+		<description>
+			<p><strong>Beschreibung:</strong> Die trübe grüne Flüssigkeit dieses Tranks riecht nach Meerwasser und enthält eine blasenartige Einschließung, die an eine Qualle erinnert.</p>
+			<p><strong>Funktion:</strong> Nachdem du diesen Trank getrunken hast, kannst du für 1 Stunde unter Wasser atmen.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Uncommon</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Elixier der Gesundheit (Elixir of Health)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_ELIXIR_OF_HEALTH">
+		<description>
+			<p><strong>Beschreibung:</strong> Die klare rote Flüssigkeit dieses Tranks enthält winzige Bläschen aus Licht.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, heilt er jede Krankheit, an der du leidest, und beendet die Zustände geblendet, taub, gelähmt und vergiftet.</p>
+		</description>
+		<setters>
+			<set name="keywords">disease</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank des Hellsehens (Potion of Clairvoyance)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_CLAIRVOYANCE">
+		<description>
+			<p><strong>Beschreibung:</strong> In der gelblichen Flüssigkeit dieses Tranks treibt ein Augapfel auf und ab, der verschwindet, sobald der Trank geöffnet wird.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du die Wirkung des Zaubers Hellsehen (Clairvoyance).</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Verkleinerung (Potion of Diminution)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_DIMINUTION">
+		<description>
+			<p><strong>Beschreibung:</strong> Das Rot in der Flüssigkeit dieses Tranks zieht sich fortwährend zu einem winzigen Tropfen zusammen und dehnt sich dann wieder aus, bis es die klare Flüssigkeit ringsum färbt. Selbst Schütteln unterbricht diesen Vorgang nicht.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1W4 Stunden den Verkleinern-Effekt des Zaubers Vergrößern/Verkleinern (Enlarge/Reduce), ohne dass Konzentration erforderlich ist.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Feuerriesenkraft (Potion of Fire Giant Strength)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_FIRE_GIANT_STRENGTH">
+		<description>
+			<p><strong>Beschreibung:</strong> In der klaren Flüssigkeit dieses Tranks schwebt ein Fingernagelsplitter eines Riesen der entsprechenden Art. Der Trank der Frostriesenkraft (Potion of Frost Giant Strength) und der Trank der Steinriesenkraft (Potion of Stone Giant Strength) sehen genauso aus.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, verändert sich dein Stärkewert für 1 Stunde. Der Riesentyp bestimmt den Wert: Hügelriese 21, Frost- oder Steinriese 23, Feuerriese 25, Wolkenriese 27, Sturmriese 29. Hat dein Stärkewert bereits denselben oder einen höheren Wert, hat der Trank keine Wirkung.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Frostriesenkraft (Potion of Frost Giant Strength)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_FROST_GIANT_STRENGTH">
+		<description>
+			<p><strong>Beschreibung:</strong> In der klaren Flüssigkeit dieses Tranks schwebt ein Fingernagelsplitter eines Riesen der entsprechenden Art. Der Trank der Frostriesenkraft (Potion of Frost Giant Strength) und der Trank der Steinriesenkraft (Potion of Stone Giant Strength) sehen genauso aus.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, verändert sich dein Stärkewert für 1 Stunde. Der Riesentyp bestimmt den Wert: Hügelriese 21, Frost- oder Steinriese 23, Feuerriese 25, Wolkenriese 27, Sturmriese 29. Hat dein Stärkewert bereits denselben oder einen höheren Wert, hat der Trank keine Wirkung.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der gasförmigen Gestalt (Potion of Gaseous Form)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_GASEOUS_FORM">
+		<description>
+			<p><strong>Beschreibung:</strong> Der Behälter dieses Tranks scheint Nebel zu enthalten, der sich bewegt und wie Wasser fließt.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde die Wirkung des Zaubers Gasförmige Gestalt (Gaseous Form), ohne dass Konzentration erforderlich ist, oder bis du den Effekt als Bonusaktion beendest.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank des Heldentums (Potion of Heroism)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_HEROISM">
+		<description>
+			<p><strong>Beschreibung:</strong> Die blaue Flüssigkeit dieses Tranks blubbert und dampft, als würde sie kochen.</p>
+			<p><strong>Funktion:</strong> Für 1 Stunde, nachdem du diesen Trank getrunken hast, erhältst du 10 temporäre Trefferpunkte, die für 1 Stunde bestehen bleiben. Für dieselbe Dauer stehst du außerdem unter der Wirkung des Zaubers Segnen (Bless), ohne dass Konzentration erforderlich ist.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Unverwundbarkeit (Potion of Invulnerability)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_INVULNERABILITY">
+		<description>
+			<p><strong>Beschreibung:</strong> Die sirupartige Flüssigkeit dieses Tranks sieht aus wie verflüssigtes Eisen.</p>
+			<p><strong>Funktion:</strong> Für 1 Minute, nachdem du diesen Trank getrunken hast, besitzt du Resistenz gegen allen Schaden.</p>
+		</description>
+		<setters>
+			<set name="keywords">resistance</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank des Gedankenlesens (Potion of Mind Reading)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_MIND_READING">
+		<description>
+			<p><strong>Beschreibung:</strong> Die dichte violette Flüssigkeit dieses Tranks enthält eine rosafarbene, eiförmige Wolke.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du die Wirkung des Zaubers Gedanken entdecken (Detect Thoughts) mit Rettungswurf SG 13.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Steinriesenkraft (Potion of Stone Giant Strength)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_STONE_GIANT_STRENGTH">
+		<description>
+			<p><strong>Beschreibung:</strong> In der klaren Flüssigkeit dieses Tranks schwebt ein Fingernagelsplitter eines Riesen der entsprechenden Art. Der Trank der Frostriesenkraft (Potion of Frost Giant Strength) und der Trank der Steinriesenkraft (Potion of Stone Giant Strength) sehen genauso aus.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, verändert sich dein Stärkewert für 1 Stunde. Der Riesentyp bestimmt den Wert: Hügelriese 21, Frost- oder Steinriese 23, Feuerriese 25, Wolkenriese 27, Sturmriese 29. Hat dein Stärkewert bereits denselben oder einen höheren Wert, hat der Trank keine Wirkung.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Wolkenriesenkraft (Potion of Cloud Giant Strength)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_CLOUD_GIANT_STRENGTH">
+		<description>
+			<p><strong>Beschreibung:</strong> In der klaren Flüssigkeit dieses Tranks schwebt ein Fingernagelsplitter eines Riesen der entsprechenden Art. Der Trank der Frostriesenkraft (Potion of Frost Giant Strength) und der Trank der Steinriesenkraft (Potion of Stone Giant Strength) sehen genauso aus.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, verändert sich dein Stärkewert für 1 Stunde. Der Riesentyp bestimmt den Wert: Hügelriese 21, Frost- oder Steinriese 23, Feuerriese 25, Wolkenriese 27, Sturmriese 29. Hat dein Stärkewert bereits denselben oder einen höheren Wert, hat der Trank keine Wirkung.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank des Fliegens (Potion of Flying)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_FLYING">
+		<description>
+			<p><strong>Beschreibung:</strong> Die klare Flüssigkeit dieses Tranks schwebt oben im Behälter und enthält trübe weiße Einschlüsse, die darin treiben.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Stunde eine Fluggeschwindigkeit in Höhe deiner Bewegungsrate und kannst schweben. Befindest du dich in der Luft, wenn die Wirkung endet, fällst du, sofern du keine andere Möglichkeit hast, dich in der Luft zu halten.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Unsichtbarkeit (Potion of Invisibility)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_INVISIBILITY">
+		<description>
+			<p><strong>Beschreibung:</strong> Der Behälter dieses Tranks wirkt leer, fühlt sich aber an, als wäre er mit Flüssigkeit gefüllt.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, wirst du für 1 Stunde unsichtbar. Alles, was du trägst oder bei dir führst, wird ebenfalls unsichtbar. Die Wirkung endet vorzeitig, wenn du angreifst oder einen Zauber wirkst.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Langlebigkeit (Potion of Longevity)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_LONGEVITY">
+		<description>
+			<p><strong>Beschreibung:</strong> In der bernsteinfarbenen Flüssigkeit dieses Tranks schweben ein Skorpionschwanz, ein Schlangenzahn, eine tote Spinne und ein winziges Herz, das allen vernünftigen Erwartungen zum Trotz noch schlägt. Diese Bestandteile verschwinden, sobald der Trank geöffnet wird.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, verringert sich dein körperliches Alter um 1W6 + 6 Jahre, bis zu einem Minimum von 13 Jahren. Jedes Mal, wenn du danach erneut einen Trank der Langlebigkeit (Potion of Longevity) trinkst, besteht eine kumulative Chance von 10 Prozent, dass du stattdessen um 1W6 + 6 Jahre alterst.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Schnelligkeit (Potion of Speed)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_SPEED">
+		<description>
+			<p><strong>Beschreibung:</strong> Die gelbe Flüssigkeit dieses Tranks ist von schwarzen Schlieren durchzogen und wirbelt von selbst.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, erhältst du für 1 Minute die Wirkung des Zaubers Hast (Haste), ohne dass Konzentration erforderlich ist.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Vitalität (Potion of Vitality)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_VITALITY">
+		<description>
+			<p><strong>Beschreibung:</strong> Die purpurrote Flüssigkeit dieses Tranks pulsiert regelmäßig mit dumpfem Licht und erinnert an einen Herzschlag.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, entfernt er jede Erschöpfung, unter der du leidest, und heilt jede Krankheit oder Vergiftung, die dich betrifft. Für die nächsten 24 Stunden erhältst du bei jedem Trefferwürfel, den du ausgibst, die maximale Anzahl an Trefferpunkten zurück.</p>
+		</description>
+		<setters>
+			<set name="keywords">disease, poison</set>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Very Rare</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+	<element name="Trank der Sturmriesenkraft (Potion of Storm Giant Strength)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_STORM_GIANT_STRENGTH">
+		<description>
+			<p><strong>Beschreibung:</strong> In der klaren Flüssigkeit dieses Tranks schwebt ein Fingernagelsplitter eines Riesen der entsprechenden Art. Der Trank der Frostriesenkraft (Potion of Frost Giant Strength) und der Trank der Steinriesenkraft (Potion of Stone Giant Strength) sehen genauso aus.</p>
+			<p><strong>Funktion:</strong> Wenn du diesen Trank trinkst, verändert sich dein Stärkewert für 1 Stunde. Der Riesentyp bestimmt den Wert: Hügelriese 21, Frost- oder Steinriese 23, Feuerriese 25, Wolkenriese 27, Sturmriese 29. Hat dein Stärkewert bereits denselben oder einen höheren Wert, hat der Trank keine Wirkung.</p>
+		</description>
+		<setters>
+			<set name="category">Potions</set>
+			<set name="weight" lb="0.5">0,25 kg</set>
+			<set name="type">Potion</set>
+			<set name="rarity">Legendary</set>
+			<set name="stackable">true</set>
+		</setters>
+	</element>
+
+</elements>

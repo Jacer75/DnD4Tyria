@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>D4T Item Handouts</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+#layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+}
+
+#itemList {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.card {
+    border: 1px solid #000;
+    padding: 8mm;
+    margin-bottom: 8mm;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+@page {
+    size: A4 portrait;
+    margin: 12mm;
+}
+
+@media print {
+
+    body {
+        margin: 0;
+    }
+
+    #layout {
+        display: block;
+    }
+
+    #itemList, .controls {
+        display: none;
+    }
+
+    #preview {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4mm;
+    }
+
+    .card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        padding: 4mm;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+    .card h3 {
+        margin: 0 0 2mm 0;
+        font-size: 12pt;
+    }
+
+    .card p {
+        margin: 0 0 2mm 0;
+    }
+
+    
+}
+</style>
+</head>
+
+<body>
+
+<h1>D4T Item Handouts</h1>
+
+<div class="controls">
+<button onclick="loadXML()">XML laden</button>
+<button onclick="selectAll()">Alle auswählen</button>
+<button onclick="clearAll()">Keine</button>
+<button onclick="generate()">Handouts erzeugen</button>
+<button onclick="window.print()">Drucken / PDF</button>
+<input type="file" id="fileInput">
+</div>
+
+<div id="layout">
+
+<div id="itemList">
+<b>Items</b>
+<div id="items"></div>
+</div>
+
+<div id="preview"></div>
+
+</div>
+
+<script>
+let items = [];
+
+document.getElementById("fileInput").addEventListener("change", function(e) {
+    const reader = new FileReader();
+    reader.onload = function() {
+        parseXML(reader.result);
+    };
+    reader.readAsText(e.target.files[0]);
+});
+
+function loadXML() {
+    fetch("/de/aurora/items/d4t-items-gear-mycampaign01.xml")
+    .then(r => r.text())
+    .then(parseXML);
+}
+
+function parseXML(text) {
+
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(text, "text/xml");
+
+    items = [];
+
+    xml.querySelectorAll("element").forEach(el => {
+
+        const name = el.getAttribute("name");
+        const descNode = el.querySelector("description");
+
+        if (!descNode) return;
+
+        const paragraphs = descNode.querySelectorAll("p");
+
+        let description = "";
+        let functionText = "";
+
+        paragraphs.forEach((p, i) => {
+
+            const html = p.innerHTML;
+
+            if (html.includes("Beschreibung:")) {
+                description += html.replace(/<strong>Beschreibung:<\/strong>/i,"") + "<br>";
+            }
+            else if (html.includes("Funktion:") || html.includes("Identifiziert:")) {
+                functionText += html.replace(/<strong>(Funktion|Identifiziert):<\/strong>/i,"") + "<br>";
+            }
+            else {
+                if (i === 0) description += html + "<br>";
+                else functionText += html + "<br>";
+            }
+        });
+
+        items.push({
+            name,
+            description,
+            functionText
+        });
+
+    });
+
+    renderList();
+}
+
+function renderList() {
+
+    const container = document.getElementById("items");
+    container.innerHTML = "";
+
+    items.forEach((item, i) => {
+
+        const div = document.createElement("div");
+
+        div.innerHTML = `
+        <label>
+        <input type="checkbox" value="${i}">
+        ${item.name}
+        </label>
+        `;
+
+        container.appendChild(div);
+    });
+}
+
+function selectAll() {
+    document.querySelectorAll("#items input").forEach(c => c.checked = true);
+}
+
+function clearAll() {
+    document.querySelectorAll("#items input").forEach(c => c.checked = false);
+}
+
+function generate() {
+
+    const preview = document.getElementById("preview");
+    preview.innerHTML = "";
+
+    document.querySelectorAll("#items input:checked").forEach(c => {
+
+        const item = items[c.value];
+
+        const card = document.createElement("div");
+        card.className = "card";
+
+        card.innerHTML = `
+        <h3>${item.name}</h3>
+        <p>${item.description}</p>
+        <p><b>Funktion</b><br>${item.functionText}</p>
+        `;
+
+        preview.appendChild(card);
+
+    });
+}
+</script>
+
+</body>
+</html>

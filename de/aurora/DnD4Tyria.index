@@ -4,7 +4,7 @@
 		<name>Handbuch für DnD4Tyria</name>
 		<description>Das Handbuch enthält die Informationen, die man für ein DnD-Spiel in der Welt von Guild Wars 2 benötigt.</description>
 		<author url="https://jacer75.github.io/DnD4Tyria/de/">Aurora4Tyria</author>
-		<update version="0.1.2">
+		<update version="0.1.3">
 			<file name="DnD4Tyria.index" url="https://jacer75.github.io/DnD4Tyria/de/aurora/DnD4Tyria.index" />
 		</update>
 	</info>
@@ -60,6 +60,7 @@
 		<file name="d4t-items-tools.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-tools.xml" />
 		<file name="d4t-items-mounts.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-mounts.xml" />
 		<file name="d4t-items-weapons.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-weapons.xml" />
+        <file name="d4t-items-potions.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-potions.xml" />
 		<file name="d4t-items-gear-mycampaign01.xml" url="https://jacer75.github.io/DnD4Tyria/de/aurora/items/d4t-items-gear-mycampaign01.xml" />
 
 		<!-- misc -->
