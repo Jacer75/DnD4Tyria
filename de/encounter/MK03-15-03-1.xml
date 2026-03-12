@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-15-03 Gasthaus</name>
+        <file>MK03-15-03-1.xml</file>
+        <abenteuer>MK03-15 Abtei Durmand</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Zombie" id="zombie">
+        <meta>
+            <size>Mittel</size>
+            <type>Untoter</type>
+            <alignment>neutral böse</alignment>
+            <ac>8</ac>
+            <hp>22 (3W8 + 9)</hp>
+            <speed>6 m</speed>
+            <initiative>-2</initiative>
+            <senses>Dunkelsicht 18 m, Passive Wahrnehmung 8</senses>
+            <languages>versteht die Sprachen, die er im Leben kannte, kann aber nicht sprechen</languages>
+            <challenge>1/4</challenge>
+            <resistances/>
+            <immunities>Gift</immunities>
+            <conditionImmunities>Vergiftet</conditionImmunities>
+        </meta>
+        <abilities>
+            <ability name="Str" score="13" bonus="+1"/>
+            <ability name="Dex" score="6" bonus="-2"/>
+            <ability name="Con" score="16" bonus="+3"/>
+            <ability name="Int" score="3" bonus="-4"/>
+            <ability name="Wis" score="6" bonus="-2"/>
+            <ability name="Cha" score="5" bonus="-3"/>
+        </abilities>
+        <saves>
+            <save ability="Wis" bonus="+0"/>
+        </saves>
+        <!--<skills></skills>-->
+        <traits>
+            <trait name="Untote Zähigkeit">
+                <description>
+        Wenn Schaden den Zombie auf 0 Trefferpunkte reduziert, muss er einen Konstitutionsrettungswurf mit SG 5 + dem erlittenen Schaden bestehen, sofern der Schaden nicht durch einen kritischen Treffer oder Strahlenschaden verursacht wurde. Bei Erfolg fällt der Zombie stattdessen auf 1 Trefferpunkt zurück.
+      </description>
+            </trait>
+        </traits>
+        <!--<actions></actions>-->
+        <attacks>
+            <attack name="Hieb">
+                <type>Nahkampf</type>
+                <bonus>+3</bonus>
+                <range>1,50 m</range>
+                <target>ein Ziel</target>
+                <damage>4 (1W6 + 1) Wuchtschaden</damage>
+            </attack>
+        </attacks>
+        <!--<reactions>
+  </reactions>
+        <legendary>
+            <resistances>
+    </resistances>
+            <actions perRound="0">
+                <intro/>
+            </actions>
+        </legendary>
+        <spellcasting>
+            <stat/>
+            <saveDC/>
+            <attackBonus/>
+            <spelllist>
+    </spelllist>
+            <slots>
+    </slots>
+        </spellcasting>-->
+    </statblock>
+</encounter>
