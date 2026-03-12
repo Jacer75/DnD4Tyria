@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-15 NPCs</name>
+        <file>MK03-15-01.xml</file>
+        <abenteuer>MK03-15 Abtei Durmand</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Clara Weidenhof" id="d4t-clara-weidenhof">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Mensch)</type>
+            <alignment>rechtschaffen böse</alignment>
+            <ac>15 (Kettenhemd)</ac>
+            <hp>41 (5W8 + 10)</hp>
+            <speed>9 m</speed>
+            <initiative>+0</initiative>
+            <senses>Passive Wahrnehmung 13</senses>
+            <languages>Tyrianisch, Mursaatisch</languages>
+            <challenge>4</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="9" bonus="-1"/>
+            <ability name="Dex" score="11" bonus="+0"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="13" bonus="+1"/>
+            <ability name="Wis" score="16" bonus="+3"/>
+            <ability name="Cha" score="16" bonus="+3"/>
+        </abilities>
+        <saves>
+            <save ability="Wis" bonus="+6"/>
+            <save ability="Cha" bonus="+6"/>
+        </saves>
+        <skills>
+            <skill name="Täuschen" bonus="+6"/>
+            <skill name="Motiv erkennen" bonus="+6"/>
+            <skill name="Überzeugen" bonus="+6"/>
+            <skill name="Heimlichkeit" bonus="+3"/>
+        </skills>
+        <traits>
+            <trait name="Schauspieler (Actor)">
+                <description>Clara hat Vorteil auf Charismawürfe (Täuschen) und Charismawürfe (Auftreten), wenn sie versucht, sich als eine andere Person auszugeben. Sie kann die Stimme einer anderen Person oder Geräusche anderer Kreaturen nachahmen, wenn sie diese mindestens 1 Minute lang gehört hat. Ein Zuhörer kann mit einem erfolgreichen Weisheitswurf (Motiv erkennen), der gegen Claras Charismawurf (Täuschen) konkurriert, erkennen, dass die Nachahmung gefälscht ist.</description>
+            </trait>
+            <trait name="Göttliche Macht fokussieren (Channel Divinity) (1/Kurze Rast)">
+                <description>Clara kann ihre Göttliche Macht fokussieren, um Untote zu vertreiben oder ein illusorisches Abbild zu beschwören.</description>
+            </trait>
+            <trait name="Segen der List (Blessing of the Trickster)">
+                <description>Clara kann als Aktion eine andere Kreatur berühren, um ihr 1 Stunde lang Vorteil auf Geschicklichkeitswürfe (Heimlichkeit) zu gewähren.</description>
+            </trait>
+            <trait name="Ungebrochener Wille (1/Lange Rast)">
+                <description>Nachdem Clara einen Angriffs-, Fertigkeits- oder Rettungswurf verfehlt hat, kann sie diesen Wurf als Reaktion wiederholen. Sie muss das neue Ergebnis verwenden.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Göttliche Macht fokussieren: Abbild beschwören (Invoke Duplicity) ">
+                <description>Clara erschafft für 1 Minute ein perfektes illusorisches Doppel von sich innerhalb von 9 m (30 feet). Als Bonusaktion kann sie das Abbild bis zu 9 m (30 feet) bewegen, solange es sich innerhalb von 36 m (120 feet) befindet. Clara kann Zauber wirken, als befände sie sich im Raum des Abbilds. Wenn sowohl Clara als auch ihr Abbild sich innerhalb von 1,5 m (5 feet) eines Gegners befinden, hat Clara Vorteil auf Angriffswürfe gegen dieses Ziel, sofern das Abbild und Clara den Angriffswurf sehen können.</description>
+            </action>
+            <action name="Göttliche Macht fokussieren: Untote vertreiben (Turn Undead)">
+                <description>Jeder Untote im Umkreis von 9 m (30 feet), der Clara sehen oder hören kann, muss einen Weisheitsrettungswurf SG 14 ablegen. Bei einem Misserfolg ist er 1 Minute lang oder bis er Schaden erleidet vertrieben. Vertriebene Kreaturen müssen sich so weit wie möglich von Clara entfernen, können sich ihr nicht freiwillig auf 9 m (30 feet) nähern, keine Reaktionen einsetzen und dürfen nur Rennen oder Ausweichen nutzen. (Untote vernichten) Wenn ein Untoter mit HG 1/2 oder niedriger bei Claras Untote vertreiben den Rettungswurf verfehlt, wird er sofort vernichtet.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Kampfstab (Quarterstaff)">
+                <type>Nahkampf</type>
+                <bonus>+2</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>1W6 - 1 Wuchtschaden</damage>
+            </attack>
+        </attacks>
+        <!--<bonusactions>
+            <bonusaction name="Heilendes Wort (Healing Word)">
+                <description>Clara kann als Bonusaktion eine Kreatur, die sie innerhalb von 18 m (60 feet) sehen kann, um 1W4 + 3 Trefferpunkte heilen.</description>
+            </bonusaction>
+        </bonusactions>
+        <reactions>
+            <reaction name="Ungebrochener Wille (Indomitable Spirit) (1/Lange Rast)">
+                <description>Nachdem Clara einen Angriffs-, Fertigkeits- oder Rettungswurf verfehlt hat, kann sie den Wurf wiederholen. Sie muss das neue Ergebnis behalten.</description>
+            </reaction>
+        </reactions>-->
+        <spellcasting>
+            <stat>Wis</stat>
+            <saveDC>14</saveDC>
+            <attackBonus>+6</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_GUIDANCE" level="0">Göttliche Führung (Guidance)</spell>
+                <spell id="ID_D4T_SPELL_LIGHT" level="0">Licht (Light)</spell>
+                <spell id="ID_D4T_SPELL_THAUMATURGY" level="0">Thaumaturgie (Thaumaturgy)</spell>
+                <spell id="ID_D4T_SPELL_SPARE_THE_DYING" level="0">Verschonung der Toten (Spare the Dying)</spell>
+                <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
+                <spell id="ID_D4T_SPELL_HEALING_WORD" level="1">Heilendes Wort (Healing Word)</spell>
+                <spell id="ID_D4T_SPELL_CHARM_PERSON" level="1">Person bezaubern (Charm Person)</spell>
+                <spell id="ID_D4T_SPELL_DISGUISE_SELF" level="1">Selbstverkleidung (Disguise Self)</spell>
+                <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden verursachen (Inflict Wounds)</spell>
+                <spell id="ID_D4T_SPELL_BLINDNESS_DEAFNESS" level="2">Blindheit/Taubheit (Blindness/Deafness)</spell>
+                <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+                <spell id="ID_D4T_SPELL_LESSER_RESTORATION" level="2">Schwache Genesung (Lesser Restoration)</spell>
+                <spell id="ID_D4T_SPELL_MIRROR_IMAGE" level="2">Spiegelbilder (Mirror Image)</spell>
+                <spell id="ID_D4T_SPELL_PASS_WITHOUT_TRACE" level="2">Spurloses Gehen (Pass without Trace)</spell>
+                <spell id="ID_D4T_SPELL_SILENCE" level="2">Stille (Silence)</spell>
+                <spell id="ID_D4T_SPELL_BLINK" level="3">Flimmern (Blink)</spell>
+                <spell id="ID_D4T_SPELL_DISPEL_MAGIC" level="3">Magie bannen (Dispel Magic)</spell>
+                <spell id="ID_D4T_SPELL_SENDING" level="3">Verständigung (Sending)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1" count="4"/>
+                <slot level="2" count="3"/>
+                <slot level="3" count="2"/>
+            </slots>
+        </spellcasting>
+        <!--<legendary>
+    <resistances>
+      <resistance uses="3">
+        <description></description>
+      </resistance>
+    </resistances>
+
+    <actions perRound="3">
+      <intro></intro>
+      <action name="NAME DER AKTION" cost="1">
+        <description></description>
+      </action>
+    </actions>
+  </legendary>-->
+    </statblock>
+    <statblock name="Kenjiro Takahane" id="d4t-kenjiro-takahane">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Mensch)</type>
+            <alignment>rechtschaffen neutral</alignment>
+            <ac>16 (Kettenrüstung)</ac>
+            <!-- Rüstungsklasse des NSC -->
+            <hp>44 (5W10 + 10)</hp>
+            <!-- Trefferpunkte inklusive Würfelangabe -->
+            <speed>9 m</speed>
+            <!-- Bewegungsrate in Metern -->
+            <initiative>+1</initiative>
+            <!-- Finaler Initiativbonus, der direkt gewürfelt wird -->
+            <senses>Passive Wahrnehmung 15</senses>
+            <!-- Passive Sinne wie Wahrnehmung, ggf. ergänzt um Dunkelsicht etc. -->
+            <languages>Tyrianisch, Canthanisch</languages>
+            <!-- Gesprochene Sprachen -->
+            <challenge>3</challenge>
+            <!-- Herausforderungsgrad -->
+            <resistances/>
+            <!-- Schadensresistenzen als Klartext -->
+            <immunities/>
+            <!-- Schadensimmunitäten -->
+            <conditionImmunities/>
+            <!-- Zustandsimmunitäten -->
+        </meta>
+        <abilities>
+            <ability name="Str" score="16" bonus="+3"/>
+            <ability name="Dex" score="13" bonus="+1"/>
+            <ability name="Con" score="15" bonus="+2"/>
+            <ability name="Int" score="11" bonus="+0"/>
+            <ability name="Wis" score="14" bonus="+2"/>
+            <ability name="Cha" score="9" bonus="-1"/>
+            <!-- Attributswerte mit explizitem Modifikator -->
+        </abilities>
+        <saves>
+            <!-- Rettungswürfe, falls der NSC darin geübt ist -->
+            <save ability="Str" bonus="+6"/>
+            <save ability="Con" bonus="+5"/>
+        </saves>
+        <skills>
+            <!-- Fertigkeiten mit Bonus, z. B. Heimlichkeit, Wahrnehmung -->
+            <skill name="Athletik" bonus="+6"/>
+            <skill name="Motiv erkennen" bonus="+5"/>
+            <skill name="Einschüchtern" bonus="+2"/>
+            <skill name="Wahrnehmung" bonus="+5"/>
+        </skills>
+        <traits>
+            <!-- Passive Eigenschaften oder dauerhafte Sonderregeln -->
+            <trait name="Magiertöter (Mage Slayer)">
+                <description>Wenn eine Kreatur innerhalb von 1,50 m (5 feet) von Kenjiro einen Zauber wirkt, kann Kenjiro seine Reaktion verwenden, um einen Nahkampfangriff mit einer Waffe gegen sie auszuführen. Wenn Kenjiro einer Kreatur Schaden zufügt, die sich auf einen Zauber konzentriert, hat sie Nachteil auf ihren Rettungswurf, um die Konzentration aufrechtzuerhalten. Kenjiro hat Vorteil auf Rettungswürfe gegen Zauber, die von Kreaturen innerhalb von 1,50 m (5 feet) gewirkt werden.</description>
+            </trait>
+            <trait name="Kampfstil: Kampf mit Zweihänder">
+                <description>Wenn Kenjiro bei einem Schadenswurf mit einer Nahkampfwaffe, die er mit beiden Händen führt, eine 1 oder 2 würfelt, kann er den Würfel einmal neu werfen. Er muss das neue Ergebnis verwenden. Die Waffe muss das Merkmal „Zweihändig“ oder „Vielseitig“ besitzen.</description>
+            </trait>
+            <trait name="Zusätzlicher Angriff (Extra Attack)">
+                <description>Kenjiro kann zweimal angreifen, wenn er in seinem Zug die Angriffsaktion durchführt.</description>
+            </trait>
+            <trait name="Zauberwirken (Spellcasting)">
+                <description>Kenjiro ist ein Zauberwirker der 5. Stufe. Sein Zauberattribut ist Intelligenz (Zauberrettungswurf SG 11, +3 auf Zauberangriffe).</description>
+            </trait>
+        </traits>
+        <actions>
+            <!-- Normale Aktionen, die der NSC in seinem Zug ausführen kann -->
+            <action name="Mehrfachangriff">
+                <description>Kenjiro führt zwei Angriffe mit seinem Großschwert aus.</description>
+            </action>
+            <action name="Tatendrang (Action Surge) (1/Kurze Rast)">
+                <description>In seinem Zug kann Kenjiro eine zusätzliche Aktion ausführen, zusätzlich zu seiner regulären Aktion und einer möglichen Bonusaktion.</description>
+            </action>
+        </actions>
+        <attacks>
+            <!-- Einzelne Angriffe mit Trefferbonus, Reichweite und Schaden -->
+            <attack name="Großschwert (Greatsword)">
+                <type>Nahkampf</type>
+                <bonus>+6</bonus>
+                <range>1,50 m (5 feet)</range>
+                <target>ein Ziel</target>
+                <damage>10 (2W6 + 3) Hiebschaden</damage>
+            </attack>
+        </attacks>
+        <reactions>
+            <!-- Reaktionen, die durch einen klaren Trigger ausgelöst werden -->
+            <reaction name="Schild (Shield)">
+                <description>Reaktion: Wenn Kenjiro von einem Angriff getroffen oder von Magisches Geschoss anvisiert wird, erschafft er eine unsichtbare magische Barriere. Bis zum Beginn seines nächsten Zuges erhält er +5 auf seine RK, auch gegen den auslösenden Angriff, und erleidet keinen Schaden durch Magisches Geschoss.</description>
+            </reaction>
+        </reactions>
+        <!--<legendary>
+            <resistances>
+                <resistance uses="3">
+                    <description>
+                    </description>
+                </resistance>
+            </resistances>
+            <actions perRound="3">
+                <intro>
+                </intro>
+                <action name="NAME DER AKTION" cost="1">
+                    <description>
+                    </description>
+                </action>
+            </actions>
+        </legendary>-->
+        <spellcasting>
+            <stat>Int</stat>
+            <!-- Zauberattribut -->
+            <saveDC>11</saveDC>
+            <!-- Rettungswurf-SG für Zauber -->
+            <attackBonus>+3</attackBonus>
+            <!-- Angriffsbonus für Zauberangriffe -->
+            <spelllist>
+                <spell id="ID_D4T_SPELL_BLADE_WARD" level="0">Klingenbann (Blade Ward)</spell>
+                <spell id="ID_D4T_SPELL_DANCING_LIGHTS" level="0">Tanzende Lichter (Dancing Lights)</spell>
+                <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild (Shield)</spell>
+                <spell id="ID_D4T_SPELL_THUNDERWAVE" level="1">Donnerwoge (Thunderwave)</spell>
+                <spell id="ID_D4T_SPELL_MAGIC_MISSILE" level="1">Magisches Geschoss (Magic Missile)</spell>
+                <spell id="ID_D4T_SPELL_FIND_FAMILIAR" level="1">Vertrauten finden (Find Familiar)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1" count="3"/>
+            </slots>
+        </spellcasting>
+    </statblock>
+</encounter>
