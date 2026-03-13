@@ -71,4 +71,102 @@
     </slots>
         </spellcasting>-->
     </statblock>
+<statblock name="Riesendachs" id="giant-badger">
+  <meta>
+    <size>Mittel</size>
+    <type>Tier</type>
+    <alignment>unaligned</alignment>
+
+    <ac>10</ac>
+
+    <hp>13 (2W8 + 4)</hp>
+
+    <speed>9 m, Graben 3 m</speed>
+
+    <initiative>+0</initiative>
+
+    <senses>Dunkelsicht 9 m, Passive Wahrnehmung 11</senses>
+
+    <languages>-</languages>
+
+    <challenge>1/4</challenge>
+
+    <resistances></resistances>
+
+    <immunities></immunities>
+
+    <conditionImmunities></conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="13" bonus="+1"/>
+    <ability name="Dex" score="10" bonus="+0"/>
+    <ability name="Con" score="15" bonus="+2"/>
+    <ability name="Int" score="2" bonus="-4"/>
+    <ability name="Wis" score="12" bonus="+1"/>
+    <ability name="Cha" score="5" bonus="-3"/>
+  </abilities>
+
+  <saves>
+  </saves>
+
+  <skills>
+    <skill name="Wahrnehmung" bonus="+3"/>
+  </skills>
+
+  <traits>
+    <trait name="Scharfer Geruchssinn">
+      <description>Der Riesendachs hat Vorteil auf Weisheitswürfe (Wahrnehmung), die auf Geruch basieren.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>Der Riesendachs führt zwei Angriffe aus: einen mit seinem Biss und einen mit seinen Klauen.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Biss">
+      <type>Nahkampf</type>
+      <bonus>+3</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W6 + 1) Stichschaden</damage>
+    </attack>
+
+    <attack name="Klauen">
+      <type>Nahkampf</type>
+      <bonus>+3</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>6 (2W4 + 1) Hiebschaden</damage>
+    </attack>
+  </attacks>
+
+  <!--<reactions>
+  </reactions>
+
+  <legendary>
+    <resistances>
+    </resistances>
+
+    <actions perRound="0">
+      <intro>
+      </intro>
+    </actions>
+  </legendary>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+
+    <spelllist>
+    </spelllist>
+
+    <slots>
+    </slots>
+  </spellcasting>-->
+</statblock>    
 </encounter>
