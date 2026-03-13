@@ -280,9 +280,9 @@
                 <spell id="ID_D4T_SPELL_HASTE" level="3">Hast (Haste)</spell>
             </spelllist>
             <slots>
-                <slot level="1">4</slot>
-                <slot level="2">3</slot>
-                <slot level="3">2</slot>
+                <slot level="1" count="4"/>
+                <slot level="2" count="3"/>
+                <slot level="3" count="2"/>
             </slots>
         </spellcasting>
     </statblock>
@@ -385,8 +385,8 @@
                 <spell id="ID_D4T_SPELL_PASS_WITHOUT_TRACE" level="2">Spurloses Gehen (Pass without Trace)</spell>
             </spelllist>
             <slots>
-                <slot level="1">4</slot>
-                <slot level="2">2</slot>
+                <slot level="1" count="4"/>
+                <slot level="2" count="2"/>
             </slots>
         </spellcasting>
     </statblock>
@@ -506,6 +506,10 @@
             <attackBonus>+4</attackBonus>
             <spelllist>
                 <spell id="ID_D4T_SPELL_MINOR_ILLUSION" level="0">Einfache Illusion (Minor Illusion)</spell>
+                <spell id="ID_D4T_SPELL_DARKNESS" level="0">Dunkelheit (Darkness)</spell>
+                <spell id="ID_D4T_SPELL_DARKVISION" level="0">Dunkelsicht (Darkvision)</spell>
+                <spell id="ID_D4T_SPELL_PASS_WITHOUT_TRACE" level="0">Spurloses Gehen (Pass without Trace)</spell>
+                <spell id="ID_D4T_SPELL_SILENCE" level="0">Stille (Silence)</spell>
             </spelllist>
         </spellcasting>
     </statblock>
