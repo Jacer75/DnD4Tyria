@@ -419,6 +419,47 @@
             <set name="weight" lb="0">0</set>
         </setters>
     </element>
+<element name="Schlüsselstein der Ekklesiarchie" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCHLUESSELSTEIN_EKKLESIARCHIE">
+	<supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+	<description>
+		<p>
+			<strong>Beschreibung:</strong> Ein flacher, milchig-glasiger Stein, eingefasst in eine schlichte Messingfassung. Seine Oberfläche wirkt glatt, doch das Licht bricht sich darin auf unnatürliche Weise, als würde es etwas reflektieren, das sich nicht im Raum befindet. Trotz seines unscheinbaren Äußeren haftet ihm eine spürbare Schwere und Fremdartigkeit an.</p>
+		<p>
+			<strong>Funktion:</strong> Der Schlüsselstein ist von uralter göttlicher Magie durchzogen. Arkane Analyse zeigt, dass er Teil eines größeren Mechanismus ist und als Fokus oder Schlüssel dient – jedoch nicht für einen Ort in dieser Welt.</p>
+		<p/>
+	</description>
+	<setters>
+		<set name="category">Magische Gegenstände</set>
+		<set name="rarity">Legendary</set>
+		<set name="cost" currency="gp">0</set>
+		<set name="weight" lb="1">1 Pfund</set>
+		<!--<set name="stash" lb="500" weightless="true">true</set>-->
+	</setters>
+</element>
+```xml
+<element name="Fragmentiertes Stadtbuch von Lethan" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_STADTBUCH_LETHAN">
+	<supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+	<description>
+		<p>
+			<strong>Beschreibung:</strong> Ein schwerer, in Leder gebundener Foliant, dessen Seiten durch Wasser aufgequollen und teilweise miteinander verklebt sind. Viele Einträge sind unleserlich geworden, die Tinte verlaufen oder vollständig verschwunden. Zwischen den beschädigten Seiten finden sich jedoch einzelne Fragmente, die noch entzifferbar sind. Der Einband trägt das verblasste Wappen der Stadt – kaum mehr als ein Schatten seiner ursprünglichen Form.</p>
+		<p>
+			<strong>Funktion:</strong> Trotz seines Zustands lassen sich aus dem Stadtbuch einige wichtige Informationen rekonstruieren:
+			<br/>– Die Stadt litt über Jahre hinweg unter zunehmenden Bedrohungen aus Richtung des Tempels der Toleranz.
+			<br/>– Berichte sprechen von Überfällen, Verschwinden und wachsender Unruhe unter den Bewohnern.
+			<br/>– Schließlich wurde ein Zauberer mit dem Schutz der Stadt betraut, der sich in einem Turm in der Stadt niederließ.
+			<br/>– Seine Magie wurde als dauerhaft und mächtig beschrieben, doch ihre genaue Natur bleibt unklar.
+			<br/>– Die letzten Einträge wirken hastig und brechen abrupt ab – ein Hinweis auf das plötzliche Ende der Stadt.
+		</p>
+		<p/>
+	</description>
+	<setters>
+		<set name="category">Bücher und Dokumente</set>
+		<set name="rarity">Common</set>
+		<set name="cost" currency="gp">5</set>
+		<set name="weight" lb="2">2 Pfund</set>
+	</setters>
+</element>
+```
 </elements>
 
 

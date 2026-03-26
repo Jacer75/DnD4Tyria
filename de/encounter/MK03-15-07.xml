@@ -31,8 +31,8 @@
             <ability name="Wis" score="6" bonus="-2"/>
             <ability name="Cha" score="5" bonus="-3"/>
         </abilities>
-        <saves></saves>
-        <skills></skills>
+        <saves/>
+        <skills/>
         <traits>
             <trait name="Hordenkörper">
                 <description>Die Zombiehorde besteht aus einer Vielzahl einzelner Untoter und besetzt ein Gebiet statt nur eines einzelnen Feldes. Sie kann sich durch die Felder anderer Kreaturen bewegen und umgekehrt, doch ein Bereich, den die Horde besetzt, gilt für Gegner als schwieriges Gelände.</description>
@@ -86,5 +86,175 @@
             <slots>
     </slots>
         </spellcasting>-->
+    </statblock>
+    <statblock name="Zauberer von Lethan" id="zauberer-von-lethan">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid</type>
+            <alignment>neutral böse</alignment>
+            <ac>12 (15 mit Magierrüstung)</ac>
+            <hp>60</hp>
+            <speed>9 m</speed>
+            <initiative>+2</initiative>
+            <senses>Passive Wahrnehmung 11</senses>
+            <languages>Tyrianisch, Orrianisch, Asurisch, Alt-Krytanisch</languages>
+            <challenge>6</challenge>
+            <resistances/>
+            <immunities/>
+            <conditionImmunities/>
+        </meta>
+        <abilities>
+            <ability name="Str" score="9" bonus="-1"/>
+            <ability name="Dex" score="14" bonus="+2"/>
+            <ability name="Con" score="11" bonus="+0"/>
+            <ability name="Int" score="17" bonus="+3"/>
+            <ability name="Wis" score="12" bonus="+1"/>
+            <ability name="Cha" score="11" bonus="+0"/>
+        </abilities>
+        <saves>
+            <save ability="Int" bonus="+6"/>
+            <save ability="Wis" bonus="+4"/>
+        </saves>
+        <skills>
+            <skill name="Arkane Kunde" bonus="+6"/>
+            <skill name="Geschichte" bonus="+6"/>
+        </skills>
+        <traits>
+            <trait name="Zauberwirken">
+                <description>Der Zauberer von Lethan ist ein Zauberwirker der 9. Stufe. Sein Zauberattribut ist Intelligenz (Rettungswurf-SG 14, +6 auf Zauberangriffe). Er hat die folgenden Zauber vorbereitet.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Dolch">
+                <description>Nah- oder Fernkampfangriff: +5 auf Treffer, Reichweite 1,50 m oder 6/18 m, ein Ziel. Treffer: 4 (1W4 + 2) Stichschaden.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Dolch">
+                <type>Nahkampf oder Fernkampf</type>
+                <bonus>+5</bonus>
+                <range>1,50 m oder 6/18 m</range>
+                <target>ein Ziel</target>
+                <damage>4 (1W4 + 2) Stichschaden</damage>
+            </attack>
+        </attacks>
+        <reactions>
+  </reactions>
+        <legendary>
+            <resistances>
+    </resistances>
+            <actions perRound="0">
+                <intro>
+      </intro>
+            </actions>
+        </legendary>
+        <spellcasting>
+            <stat>Int</stat>
+            <saveDC>14</saveDC>
+            <attackBonus>+6</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_FIRE_BOLT" level="0">Feuerpfeil (Fire Bolt)</spell>
+                <spell id="ID_D4T_SPELL_LIGHT" level="0">Licht (Light)</spell>
+                <spell id="ID_D4T_SPELL_MAGE_HAND" level="0">Magierhand (Mage Hand)</spell>
+                <spell id="ID_D4T_SPELL_PRESTIDIGITATION" level="0">Fingerfertigkeit (Prestidigitation)</spell>
+                <spell id="ID_D4T_SPELL_DETECT_MAGIC" level="1">Magie entdecken (Detect Magic)</spell>
+                <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung (Mage Armor)</spell>
+                <spell id="ID_D4T_SPELL_MAGIC_MISSILE" level="1">Magisches Geschoss (Magic Missile)</spell>
+                <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild (Shield)</spell>
+                <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Nebelschritt (Misty Step)</spell>
+                <spell id="ID_D4T_SPELL_SUGGESTION" level="2">Suggestion (Suggestion)</spell>
+                <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber (Counterspell)</spell>
+                <spell id="ID_D4T_SPELL_FIREBALL" level="3">Feuerball (Fireball)</spell>
+                <spell id="ID_D4T_SPELL_FLY" level="3">Fliegen (Fly)</spell>
+                <spell id="ID_D4T_SPELL_GREATER_INVISIBILITY" level="4">Höhere Unsichtbarkeit (Greater Invisibility)</spell>
+                <spell id="ID_D4T_SPELL_ICE_STORM" level="4">Eissturm (Ice Storm)</spell>
+                <spell id="ID_D4T_SPELL_CONE_OF_COLD" level="5">Kältekegel (Cone of Cold)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1">4</slot>
+                <slot level="2">3</slot>
+                <slot level="3">3</slot>
+                <slot level="4">3</slot>
+                <slot level="5">1</slot>
+            </slots>
+        </spellcasting>
+    </statblock>
+    <statblock name="Untote Monstrosität" id="untote-monstrositaet">
+        <meta>
+            <size>Groß</size>
+            <type>Untote</type>
+            <alignment>neutral böse</alignment>
+            <ac>8</ac>
+            <hp>85 (9W10 + 36)</hp>
+            <speed>9 m</speed>
+            <initiative>-2</initiative>
+            <senses>Dunkelsicht 18 m, Passive Wahrnehmung 8</senses>
+            <languages>versteht Tyrianisch und Riesisch, kann aber nicht sprechen</languages>
+            <challenge>2</challenge>
+            <resistances/>
+            <immunities>Gift</immunities>
+            <conditionImmunities>Vergiftet</conditionImmunities>
+        </meta>
+        <abilities>
+            <ability name="Str" score="19" bonus="+4"/>
+            <ability name="Dex" score="6" bonus="-2"/>
+            <ability name="Con" score="18" bonus="+4"/>
+            <ability name="Int" score="3" bonus="-4"/>
+            <ability name="Wis" score="6" bonus="-2"/>
+            <ability name="Cha" score="5" bonus="-3"/>
+        </abilities>
+        <saves>
+            <save ability="Wis" bonus="+0"/>
+        </saves>
+        <skills>
+  </skills>
+        <traits>
+            <trait name="Untote Zähigkeit">
+                <description>Sinkt die Untote Monstrosität durch Schaden auf 0 Trefferpunkte, muss sie einen Konstitutionsrettungswurf mit einem SG von 5 + dem erlittenen Schaden ablegen, sofern der Schaden nicht gleißend ist oder von einem kritischen Treffer stammt. Bei Erfolg sinken ihre Trefferpunkte stattdessen auf 1.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Morgenstern">
+                <description>Nahkampfangriff: +6 auf Treffer, Reichweite 1,50 m, ein Ziel. Treffer: 13 (2W8 + 4) Wuchtschaden.</description>
+            </action>
+            <action name="Trampeln durch die Barrikade">
+                <description>Wenn die Monstrosität sich in gerader Linie mindestens 6 m auf einen Wagen zubewegt, verursacht sie beim ersten Treffer +7 (2W6) Schaden.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Morgenstern">
+                <type>Nahkampf</type>
+                <bonus>+6</bonus>
+                <range>1,50 m</range>
+                <target>ein Ziel</target>
+                <damage>13 (2W8 + 4) Wuchtschaden</damage>
+            </attack>
+        </attacks>
+        <!--<reactions>
+  </reactions>
+
+  <legendary>
+    <resistances>
+    </resistances>
+
+    <actions perRound="0">
+      <intro>
+      </intro>
+    </actions>
+  </legendary>
+
+  <spellcasting>
+    <stat></stat>
+
+    <saveDC></saveDC>
+
+    <attackBonus></attackBonus>
+
+    <spelllist>
+    </spelllist>
+
+    <slots>
+    </slots>
+  </spellcasting>-->
     </statblock>
 </encounter>
