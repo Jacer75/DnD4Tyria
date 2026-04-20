@@ -271,8 +271,8 @@
     </spelllist>
 
     <slots>
-      <slot level="1">4</slot>
-      <slot level="2">3</slot>
+      <slot level="1" count="4"/>
+      <slot level="2" count="3"/>
     </slots>
   </spellcasting>
 </statblock> 

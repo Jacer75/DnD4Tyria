@@ -171,11 +171,11 @@
                 <spell id="ID_D4T_SPELL_CONE_OF_COLD" level="5">Kältekegel (Cone of Cold)</spell>
             </spelllist>
             <slots>
-                <slot level="1">4</slot>
-                <slot level="2">3</slot>
-                <slot level="3">3</slot>
-                <slot level="4">3</slot>
-                <slot level="5">1</slot>
+                <slot level="1" count="4"/>
+                <slot level="2" count="3"/>
+                <slot level="3" count="3"/>
+                <slot level="4" count="3"/>
+                <slot level="5" count="1"/>
             </slots>
         </spellcasting>
     </statblock>
