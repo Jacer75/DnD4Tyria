@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-24-03 Der Überfall</name>
+        <file>MK03-24-03.xml</file>
+        <abenteuer>MK03-24 Katakomben</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Untote Monstrosität" id="untote-monstrositaet">
+        <meta>
+            <size>Groß</size>
+            <type>Untote</type>
+            <alignment>neutral böse</alignment>
+            <ac>8</ac>
+            <hp>85 (9W10 + 36)</hp>
+            <speed>9 m</speed>
+            <initiative>-2</initiative>
+            <senses>Dunkelsicht 18 m, Passive Wahrnehmung 8</senses>
+            <languages>versteht Tyrianisch und Riesisch, kann aber nicht sprechen</languages>
+            <challenge>2</challenge>
+            <resistances/>
+            <immunities>Gift</immunities>
+            <conditionImmunities>Vergiftet</conditionImmunities>
+        </meta>
+        <abilities>
+            <ability name="Str" score="19" bonus="+4"/>
+            <ability name="Dex" score="6" bonus="-2"/>
+            <ability name="Con" score="18" bonus="+4"/>
+            <ability name="Int" score="3" bonus="-4"/>
+            <ability name="Wis" score="6" bonus="-2"/>
+            <ability name="Cha" score="5" bonus="-3"/>
+        </abilities>
+        <saves>
+            <save ability="Wis" bonus="+0"/>
+        </saves>
+        <skills>
+  </skills>
+        <traits>
+            <trait name="Untote Zähigkeit">
+                <description>Sinkt die Untote Monstrosität durch Schaden auf 0 Trefferpunkte, muss sie einen Konstitutionsrettungswurf mit einem SG von 5 + dem erlittenen Schaden ablegen, sofern der Schaden nicht gleißend ist oder von einem kritischen Treffer stammt. Bei Erfolg sinken ihre Trefferpunkte stattdessen auf 1.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Morgenstern">
+                <description>Nahkampfangriff: +6 auf Treffer, Reichweite 1,50 m, ein Ziel. Treffer: 13 (2W8 + 4) Wuchtschaden.</description>
+            </action>
+            <action name="Trampeln durch die Barrikade">
+                <description>Wenn die Monstrosität sich in gerader Linie mindestens 6 m auf einen Wagen zubewegt, verursacht sie beim ersten Treffer +7 (2W6) Schaden.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Morgenstern">
+                <type>Nahkampf</type>
+                <bonus>+6</bonus>
+                <range>1,50 m</range>
+                <target>ein Ziel</target>
+                <damage>13 (2W8 + 4) Wuchtschaden</damage>
+            </attack>
+        </attacks>
+        <!--<reactions>
+  </reactions>
+
+  <legendary>
+    <resistances>
+    </resistances>
+
+    <actions perRound="0">
+      <intro>
+      </intro>
+    </actions>
+  </legendary>
+
+  <spellcasting>
+    <stat></stat>
+
+    <saveDC></saveDC>
+
+    <attackBonus></attackBonus>
+
+    <spelllist>
+    </spelllist>
+
+    <slots>
+    </slots>
+  </spellcasting>-->
+    </statblock>
+<statblock name="Kultveteran" id="cult-cleric">
+  <meta>
+    <size>Mittel</size>
+    <type>Mensch</type>
+    <alignment>neutral böse</alignment>
+
+    <ac>13</ac>
+
+    <hp>33 (6W8 + 6)</hp>
+
+    <speed>6 m</speed>
+
+    <initiative>+0</initiative>
+
+    <senses>assive Wahrnehmung 10</senses>
+
+    <languages>Tyrianisch</languages>
+
+    <challenge>2</challenge>
+
+    <resistances></resistances>
+
+    <immunities></immunities>
+
+    <conditionImmunities></conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="11" bonus="+0"/>
+    <ability name="Dex" score="10" bonus="+0"/>
+    <ability name="Con" score="16" bonus="+3"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="13" bonus="+1"/>
+    <ability name="Cha" score="12" bonus="+1"/>
+  </abilities>
+
+  <saves>
+  </saves>
+
+  <skills>
+    <skill name="Religion" bonus="+2"/>
+  </skills>
+
+  <traits>
+    <trait name="Dunkle Hingabe">
+      <description>
+        Der Priester hat Vorteil auf Rettungswürfe gegen Bezaubern und Furcht.
+      </description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>
+        Der Priester führt zwei Angriffe mit seinem Dolch aus.
+      </description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Dolch">
+      <type>Nahkampf oder Fernkampf</type>
+      <bonus>+3</bonus>
+      <range>1,50 m oder 6/18 m</range>
+      <target>eine Kreatur</target>
+      <damage>4 (1W4 + 2) Stichschaden</damage>
+    </attack>
+  </attacks>
+
+  <!--<reactions>
+  </reactions>
+
+  <legendary>
+    <resistances>
+    </resistances>
+
+    <actions perRound="0">
+      <intro></intro>
+    </actions>
+  </legendary>-->
+
+  <spellcasting>
+    <stat>Wis</stat>
+
+    <saveDC>11</saveDC>
+
+    <attackBonus>+3</attackBonus>
+
+    <spelllist>
+      <spell id="ID_D4T_SPELL_CHILL_TOUCH" level="0">Kalte Hand (Chill Touch)</spell>
+      <spell id="ID_D4T_SPELL_SACRED_FLAME" level="0">Heilige Flamme</spell>
+      <spell id="ID_D4T_SPELL_THAUMATURGY" level="0">Thaumaturgie</spell>
+
+      <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
+      <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden verursachen (Inflict Wounds)</spell>
+      <spell id="ID_D4T_SPELL_RAY_OF_SICKNESS" level="1">Strahl der Übelkeit (Ray of Sickness)</spell>
+
+      <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+      <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
+    </spelllist>
+
+    <slots>
+      <slot level="1">4</slot>
+      <slot level="2">3</slot>
+    </slots>
+  </spellcasting>
+</statblock> 
+</encounter>
