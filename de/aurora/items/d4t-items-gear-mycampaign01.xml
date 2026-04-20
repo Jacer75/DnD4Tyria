@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.3.1">
+        <update version="1.3.2">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -319,6 +319,22 @@
             <p>
                 <strong>Funktion:</strong> Das Medaillon zeigt das Abbild des legitimen Herrsches von Kryta.</p>
             <p/>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Legendary</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="15">1 Pfund</set>
+            <!--<set name="stash" lb="500" weightless="true">true</set>-->
+        </setters>
+    </element>
+    <element name="Medaillon" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MEDAILLON_KRYTA">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schweres Medaillon aus Gold und weißem Stein, mit einer Gravur des alten krytanischen Wappens.</p>
+            <!--<p>
+                <strong>Funktion:</strong> Das Medaillon zeigt das Abbild des legitimen Herrsches von Kryta.</p>-->
         </description>
         <setters>
             <set name="category">Magische Gegenstände</set>
