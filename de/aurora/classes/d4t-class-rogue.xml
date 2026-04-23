@@ -3,7 +3,7 @@
     <info>
         <name>Rogue</name>
         <author url="">Aurora4Tyria</author>
-        <update version="0.3.3">
+        <update version="0.3.4">
             <file name="d4t-class-rogue.xml" url=""/>
         </update>
     </info>
@@ -1136,7 +1136,7 @@
             <stat name="arkaner betrüger:spellcasting:slots:3" value="1" level="16"/>
             <stat name="arkaner betrüger:spellcasting:slots:4" value="1" level="19"/>
             <grant type="Spell" id="ID_D4T_SPELL_MAGE_HAND" level="3" spellcasting="Arkaner Betrüger"/>
-            <select type="Spell" name="Zaubertrick (Arkaner Betrüger)" supports="Wizard, 0" level="3" number="2" spellcasting="Arkaner Betrüger"/>
+            <select type="Spell" name="Zaubertrick (Arkaner Betrüger)" supports="Wizard, 0" level="3" number="3" spellcasting="Arkaner Betrüger"/>
             <select type="Spell" name="Zaubertrick (Arkaner Betrüger)" supports="Wizard, 0" level="10" number="1" spellcasting="Arkaner Betrüger"/>
             <select type="Spell" name="Zauberspruch (Arkaner Betrüger)" supports="Wizard, 1" level="3" number="1" spellcasting="Arkaner Betrüger"/>
             <!--<select type="Spell" name="Zauberspruch (Arkaner Betrüger)" supports="$(spellcasting:list), 1" level="3" number="2" spellcasting="Arkaner Betrüger"/>-->

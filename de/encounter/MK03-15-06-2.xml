@@ -276,4 +276,79 @@
     </slots>
   </spellcasting>
 </statblock> 
+<statblock name="Ankheg" id="ankheg">
+  <meta>
+    <size>Riesig</size>
+    <type>Monstrosität</type>
+    <alignment>gesinnungslos</alignment>
+
+    <ac>14 (natürliche Rüstung), 11 wenn liegend</ac>
+    <hp>39 (6W10 + 6)</hp>
+    <speed>9 m, Graben 3 m</speed>
+    <initiative>+0</initiative>
+    <senses>Dunkelsicht 18 m, Erschütterungssinn 18 m, Passive Wahrnehmung 11</senses>
+    <languages>-</languages>
+    <challenge>2</challenge>
+    <resistances></resistances>
+    <immunities></immunities>
+    <conditionImmunities></conditionImmunities>
+    </meta>
+
+  <abilities>
+    <ability name="Str" score="17" bonus="+3"/>
+    <ability name="Dex" score="11" bonus="+0"/>
+    <ability name="Con" score="13" bonus="+1"/>
+    <ability name="Int" score="1" bonus="-5"/>
+    <ability name="Wis" score="13" bonus="+1"/>
+    <ability name="Cha" score="6" bonus="-2"/>
+    </abilities>
+
+  <saves>
+  </saves>
+
+  <skills>
+  </skills>
+
+  <traits>
+  </traits>
+
+  <actions>
+    <action name="Säurepreis (Wiederaufladung 6)">
+      <description>Der Ankheg speit Säure in einer 9 m langen und 1,50 m breiten Linie aus, vorausgesetzt, er hat keine Kreatur gepackt. Jede Kreatur in dieser Linie muss einen Rettungswurf auf Geschicklichkeit (SG 13) ablegen. Bei einem misslungenen Wurf erleidet sie 10 (3W6) Säureschaden, bei einem erfolgreichen Rettungswurf die Hälfte.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Biss">
+      <type>Nahkampf</type>
+      <bonus>+5</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>9 (2W6 + 3) slashing damage plus 3 (1W6) Säureschaden</damage>
+      <description>Wenn das Ziel eine riesige oder kleinere Kreatur ist, wird sie gepackt (Entrinnen SG 13). Bis der Griff endet, kann der Ankheg nur die gepackte Kreatur beißen und ist bei den Angriffswürfen dafür im Vorteil.</description>
+    </attack>
+  </attacks>
+
+  <reactions>
+  </reactions>
+
+  <legendary>
+    <resistances>
+    </resistances>
+
+    <actions perRound="0">
+      <intro></intro>
+    </actions>
+  </legendary>
+
+  <spellcasting>
+    <stat></stat>
+    <saveDC></saveDC>
+    <attackBonus></attackBonus>
+    <spelllist>
+    </spelllist>
+    <slots>
+    </slots>
+  </spellcasting>
+</statblock>
 </encounter>
