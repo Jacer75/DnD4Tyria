@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.3.2">
+        <update version="1.3.3">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -435,47 +435,105 @@
             <set name="weight" lb="0">0</set>
         </setters>
     </element>
-<element name="Schlüsselstein der Ekklesiarchie" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCHLUESSELSTEIN_EKKLESIARCHIE">
-	<supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
-	<description>
-		<p>
-			<strong>Beschreibung:</strong> Ein flacher, milchig-glasiger Stein, eingefasst in eine schlichte Messingfassung. Seine Oberfläche wirkt glatt, doch das Licht bricht sich darin auf unnatürliche Weise, als würde es etwas reflektieren, das sich nicht im Raum befindet. Trotz seines unscheinbaren Äußeren haftet ihm eine spürbare Schwere und Fremdartigkeit an.</p>
-		<p>
-			<strong>Funktion:</strong> Der Schlüsselstein ist von uralter göttlicher Magie durchzogen. Arkane Analyse zeigt, dass er Teil eines größeren Mechanismus ist und als Fokus oder Schlüssel dient – jedoch nicht für einen Ort in dieser Welt.</p>
-		<p/>
-	</description>
-	<setters>
-		<set name="category">Magische Gegenstände</set>
-		<set name="rarity">Legendary</set>
-		<set name="cost" currency="gp">0</set>
-		<set name="weight" lb="1">1 Pfund</set>
-		<!--<set name="stash" lb="500" weightless="true">true</set>-->
-	</setters>
-</element>
-```xml
-<element name="Fragmentiertes Stadtbuch von Lethan" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_STADTBUCH_LETHAN">
-	<supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
-	<description>
-		<p>
-			<strong>Beschreibung:</strong> Ein schwerer, in Leder gebundener Foliant, dessen Seiten durch Wasser aufgequollen und teilweise miteinander verklebt sind. Viele Einträge sind unleserlich geworden, die Tinte verlaufen oder vollständig verschwunden. Zwischen den beschädigten Seiten finden sich jedoch einzelne Fragmente, die noch entzifferbar sind. Der Einband trägt das verblasste Wappen der Stadt – kaum mehr als ein Schatten seiner ursprünglichen Form.</p>
-		<p>
-			<strong>Funktion:</strong> Trotz seines Zustands lassen sich aus dem Stadtbuch einige wichtige Informationen rekonstruieren:
+    <element name="Schlüsselstein der Ekklesiarchie" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCHLUESSELSTEIN_EKKLESIARCHIE">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein flacher, milchig-glasiger Stein, eingefasst in eine schlichte Messingfassung. Seine Oberfläche wirkt glatt, doch das Licht bricht sich darin auf unnatürliche Weise, als würde es etwas reflektieren, das sich nicht im Raum befindet. Trotz seines unscheinbaren Äußeren haftet ihm eine spürbare Schwere und Fremdartigkeit an.</p>
+            <p>
+                <strong>Funktion:</strong> Der Schlüsselstein ist von uralter göttlicher Magie durchzogen. Arkane Analyse zeigt, dass er Teil eines größeren Mechanismus ist und als Fokus oder Schlüssel dient – jedoch nicht für einen Ort in dieser Welt.</p>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Legendary</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <!--<set name="stash" lb="500" weightless="true">true</set>-->
+        </setters>
+    </element>
+    <element name="Fragmentiertes Stadtbuch von Lethan" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_STADTBUCH_LETHAN">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schwerer, in Leder gebundener Foliant, dessen Seiten durch Wasser aufgequollen und teilweise miteinander verklebt sind. Viele Einträge sind unleserlich geworden, die Tinte verlaufen oder vollständig verschwunden. Zwischen den beschädigten Seiten finden sich jedoch einzelne Fragmente, die noch entzifferbar sind. Der Einband trägt das verblasste Wappen der Stadt – kaum mehr als ein Schatten seiner ursprünglichen Form.</p>
+            <p>
+                <strong>Funktion:</strong> Trotz seines Zustands lassen sich aus dem Stadtbuch einige wichtige Informationen rekonstruieren:
 			<br/>– Die Stadt litt über Jahre hinweg unter zunehmenden Bedrohungen aus Richtung des Tempels der Toleranz.
 			<br/>– Berichte sprechen von Überfällen, Verschwinden und wachsender Unruhe unter den Bewohnern.
 			<br/>– Schließlich wurde ein Zauberer mit dem Schutz der Stadt betraut, der sich in einem Turm in der Stadt niederließ.
 			<br/>– Seine Magie wurde als dauerhaft und mächtig beschrieben, doch ihre genaue Natur bleibt unklar.
 			<br/>– Die letzten Einträge wirken hastig und brechen abrupt ab – ein Hinweis auf das plötzliche Ende der Stadt.
 		</p>
-		<p/>
-	</description>
-	<setters>
-		<set name="category">Bücher und Dokumente</set>
-		<set name="rarity">Common</set>
-		<set name="cost" currency="gp">5</set>
-		<set name="weight" lb="2">2 Pfund</set>
-	</setters>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Bücher und Dokumente</set>
+            <set name="rarity">Common</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="2">2 Pfund</set>
+        </setters>
+    </element>
+    <element name="Perle der Kraft (Pearl of Power)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_PEARL_OF_POWER">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine kleine, schimmernde Perle von mystischer Natur.</p>
+            <p>
+                <strong>Funktion:</strong> Du kannst als Aktion das Befehlswort dieser Perle sprechen, um einen verbrauchten Zauberplatz bis zum 3. Grad zurückzuerhalten. Sobald du die Perle benutzt hast, kann sie bis zum nächsten Morgengrauen nicht mehr verwendet werden. Erfordert Einstimmung durch einen Zauberwirker.</p>
+        </description>
+        <setters>
+            <set name="keywords">perle, kraft, pearl, power</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+<element name="Amulett der Gesundheit (Amulet of Health)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_AMULET_OF_HEALTH">
+    <description>
+        <p><strong>Beschreibung:</strong> Dieses Amulett ist oft mit Symbolen der Vitalität und Ausdauer verziert.</p>
+        <p><strong>Funktion:</strong> Dein Konstitutionswert beträgt 19, solange du dieses Amulett trägst. Es hat keine Auswirkungen auf dich, wenn dein Konstitutionswert bereits 19 oder höher ist.</p>
+    </description>
+    <setters>
+        <set name="keywords">amulett, gesundheit, constitution</set>
+        <set name="category">Magische Gegenstände</set>
+        <set name="cost" currency="gp">4000</set>
+        <set name="weight" lb="1">1 Pfund</set>
+        <set name="slot">neck</set>
+        <set name="type">Wondrous Item</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement">true</set>
+    </setters>
+    <rules>
+        <stat name="constitution" value="19" bonus="base" requirements="[constitution:score:18]" />
+    </rules>
 </element>
-```
+<element name="Stab der Verdorrung (Staff of Withering)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_STAFF_OF_WITHERING">
+    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+    <description>
+        <p><strong>Beschreibung:</strong> Dieser Stab ist aus dunklem, knorrigem Holz gefertigt, das sich trocken und leblos anfühlt.</p>
+        <p><strong>Funktion:</strong> Der Stab kann als magischer Kampfstab geführt werden. Er hat 3 Ladungen und erhält täglich bei Dämmerung 1W3 verbrauchte Ladungen zurück.</p>
+        <p>Bei einem Treffer verursacht er Schaden wie ein normaler Kampfstab. Du kannst 1 Ladung ausgeben, um dem Ziel zusätzlich 2W10 Nekrotikschaden zuzufügen. Außerdem muss dem Ziel ein Konstitutionsrettungswurf (SG 15) gelingen, andernfalls ist es für 1 Stunde im Nachteil bei allen Attributs- oder Rettungswürfen, die Stärke oder Konstitution verwenden.</p>
+    </description>
+    <setters>
+        <set name="keywords">staff, withering, necro</set>
+        <set name="category">Magische Gegenstände</set>
+        <set name="cost" currency="gp">8000</set>
+        <set name="weight" lb="4">4 Pfund</set>
+        <set name="slot">onehand</set>
+        <set name="type">Staff</set>
+        <set name="rarity">Rare</set>
+        <set name="attunement" addition="durch einen Kleriker, Druiden oder Hexenmeister">true</set>
+        <set name="charges">3</set>
+        <set name="recharge">1d3</set>
+        <set name="damage" type="Wucht">1W6</set>
+        <set name="versatile">1W8</set>
+        <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+    </setters>
+</element>
 </elements>
 
 
