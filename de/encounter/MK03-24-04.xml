@@ -2,8 +2,8 @@
 <?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
 <encounter>
     <info>
-        <name>MK03-24-03 Der Überfall</name>
-        <file>MK03-24-03.xml</file>
+        <name>MK03-24-04 Kultversteck</name>
+        <file>MK03-24-04.xml</file>
         <abenteuer>MK03-24 Katakomben</abenteuer>
         <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
     </info>
@@ -341,7 +341,6 @@
                 <spell id="ID_D4T_SPELL_RAY_OF_SICKNESS" level="1">Strahl der Übelkeit (Ray of Sickness)</spell>
                 <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
                 <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
-                <spell id="ID_D4T_SPELL_SILENCE" level="2">Stille (Silence)</spell>
             </spelllist>
             <slots>
                 <slot level="1">4</slot>

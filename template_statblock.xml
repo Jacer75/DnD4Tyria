@@ -1,0 +1,170 @@
+<statblock name="NAME" id="ID_D4T_[TYPE]_[NAME]">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid</type>
+    <alignment>neutral</alignment>
+
+    <ac base="15">
+    <!-- Rüstungsklasse des NSC -->
+        <source>Natürliche Rüstung</source> <!-- Optional: z.B. Plattenrüstung, Lederrüstung, Natürliche Rüstung -->
+    </ac>
+
+    <hp total="35" dice="6W8 + 6"/>
+    <!-- Trefferpunkte inklusive Würfelangabe -->
+
+    <speed>
+    <!-- Bewegungsrate in Metern -->
+        <walk value="9" unit="m"/>
+        <!-- Optional: <fly value="18" unit="m"/> -->
+        <!-- Optional: <swim value="6" unit="m"/> -->
+    </speed>
+
+    <initiative bonus="2"/>
+    <!-- Finaler Initiativbonus, der direkt gewürfelt wird -->
+
+    <senses>
+    <!-- Passive Sinne wie Wahrnehmung, ggf. ergänzt um Dunkelsicht etc. -->
+        <sense name="Passive Wahrnehmung" value="10"/>
+        <!-- Optional: <sense name="Dunkelsicht" value="18" unit="m"/> -->
+    </senses>
+
+    <languages>
+    <!-- Gesprochene Sprachen -->
+        <language>Tyrianisch</language>
+        <!-- Optional: <language>Charrisch</language> -->
+    </languages>
+
+    <challenge value="1" xp="200"/>
+    <!-- Herausforderungsgrad -->
+
+    <vulnerabilities>
+    <!-- Schadensempfindlichkeiten als Klartext -->
+        <vulnerability>Schlag</vulnerability>
+        <!-- Optional: <vulnerability>Gleißend</vulnerability> -->
+    </vulnerabilities>
+    
+    <resistances>
+    <!-- Schadensresistenzen als Klartext -->
+        <resistance>Nekrotisch</resistance>
+        <!-- Optional: <resistance>Feuer</resistance> -->
+    </resistances>
+
+    <immunities>
+    <!-- Schadensimmunitäten -->
+        <immunity>Gift</immunity>
+        <!-- Optional: <immunity>Kälte</immunity> -->
+    </immunities>
+
+    <conditionImmunities>
+    <!-- Zustandsimmunitäten -->
+        <conditionImmunity>Erschöpfung</conditionImmunity>
+        <conditionImmunity>Vergiftet</conditionImmunity>
+    </conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="12" bonus="1"/>
+    <ability name="Dex" score="14" bonus="2"/>
+    <ability name="Con" score="13" bonus="1"/>
+    <ability name="Int" score="10" bonus="0"/>
+    <ability name="Wis" score="11" bonus="0"/>
+    <ability name="Cha" score="8" bonus="-1"/>
+    <!-- Attributswerte mit explizitem Modifikator -->
+  </abilities>
+
+  <!-- Optional, wenn Saves vorhanden sind -->
+  <saves>
+    <!-- Rettungswürfe, falls der NSC darin geübt ist -->
+    <!-- Optional: <save ability="Dex" bonus="+4"/> -->
+  </saves>
+
+  <!-- Optional, wenn Skills vorhanden sind -->
+  <skills>
+    <!-- Fertigkeiten mit Bonus, z. B. Heimlichkeit, Wahrnehmung -->
+    <!-- Optional: <skill name="Heimlichkeit" bonus="+4"/> -->
+  </skills>
+
+  <!-- Optional, wenn Traits vorhanden sind -->
+  <traits>
+    <!-- Passive Eigenschaften oder dauerhafte Sonderregeln -->
+    <!-- Optional: <trait name="Sonnenlichtempfindlichkeit">
+        <description>Solange sich der Wächter im Sonnenlicht befindet, hat er Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.</description>
+    </trait> -->
+  </traits>
+
+  <!-- Optional, wenn Actions vorhanden sind. Nicht mit Attacks doppeln -->
+  <actions>
+    <!-- Normale Aktionen, die der NSC in seinem Zug ausführen kann -->
+    <!-- Optional: <action name="Mehrfachangriff">
+      <description>Der NSC führt zwei Angriffe mit seiner Hauptwaffe aus.</description>
+    </action> -->
+  </actions>
+
+  <attacks>
+    <!-- Einzelne Angriffe mit Trefferbonus, Reichweite und Schaden -->
+    <!-- Optional: <attack name="Kurzschwert">
+      <type>Nahkampf</type>
+      <bonus>+4</bonus>
+      <range>1,50m</range>
+      <target>ein Ziel</target>
+      <damage total="5" dice="1W6" bonus="2" type="Stichschaden"/>
+    </attack> -->
+  </attacks>
+
+  <!-- Optional, wenn Reactions vorhanden sind -->
+  <reactions>
+    <!-- Reaktionen, die durch einen klaren Trigger ausgelöst werden -->
+    <!-- Optional: <reaction name="Parieren">
+      <description>Der NSC addiert 2 zu seiner RK gegen einen Nahkampfangriff, den er sehen kann.</description>
+    </reaction> -->
+  </reactions>
+
+  <!-- Optional, wenn Legendäre Aktionen/Resistenzen vorhanden sind -->
+  <legendary>
+    <resistances>
+      <resistance uses="3">
+        <description>
+          <!-- Regeltext der legendären Resistenz (z. B. automatisches Bestehen eines Rettungswurfs) -->
+        </description>
+      </resistance>
+    </resistances>
+
+    <actions perRound="3">
+      <intro>
+        <!-- Allgemeine Erklärung, wie viele legendäre Aktionen der NSC hat
+             und wann sie eingesetzt werden dürfen -->
+      </intro>
+
+      <action name="NAME DER AKTION" cost="1">
+        <description>
+          <!-- Effekt dieser legendären Aktion -->
+        </description>
+      </action>
+
+      <!-- Weitere legendäre Aktionen mit ggf. höheren Kosten -->
+    </actions>
+  </legendary>
+
+  <!-- Optional, wenn Zaubersprüche vorhanden sind -->
+  <spellcasting>
+    <stat>Cha</stat>
+    <!-- Zauberattribut -->
+
+    <saveDC>12</saveDC>
+    <!-- Rettungswurf-SG für Zauber -->
+
+    <attackBonus>+4</attackBonus>
+    <!-- Angriffsbonus für Zauberangriffe -->
+
+    <spelllist>
+      <!-- Zauberliste mit ID, Zaubergrad und angezeigtem Namen -->
+      <!-- Optional: <spell id="ID_D4T_SPELL_FIRE_BOLT" level="0">Feuerpfeil</spell> -->
+    </spelllist>
+
+    <slots>
+      <!-- Zauberplätze nach Grad, bsp -->
+      <!--       <slot level="1" count="4"/>
+      <slot level="2" count="3"/> -->
+    </slots>
+  </spellcasting>
+</statblock>
