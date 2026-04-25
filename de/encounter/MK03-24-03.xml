@@ -7,6 +7,93 @@
         <abenteuer>MK03-24 Katakomben</abenteuer>
         <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
     </info>
+    <statblock name="Elara Lichtbringer" id="ID_D4T_NPC_ELARA_LICHTBRINGER">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Mensch)</type>
+            <alignment>Rechtschaffen Gut</alignment>
+            <ac>18 (Plattenrüstung)</ac>
+            <hp>60 (6W10 + 12)</hp>
+            <speed>9 m</speed>
+            <initiative>+1</initiative>
+            <senses>Passive Wahrnehmung 10</senses>
+            <languages>Tyrianisch, Charrisch, Ascalonisch</languages>
+            <challenge>4</challenge>
+            <vulnerabilities/>
+            <resistances/>
+            <immunities/>
+            <conditionImmunities/>
+        </meta>
+        <abilities>
+            <ability name="Str" score="18" bonus="+3"/>
+            <ability name="Dex" score="13" bonus="+1"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="9" bonus="-1"/>
+            <ability name="Wis" score="11" bonus="+0"/>
+            <ability name="Cha" score="15" bonus="+2"/>
+        </abilities>
+        <saves>
+            <save ability="Wis" bonus="+3"/>
+            <save ability="Cha" bonus="+5"/>
+        </saves>
+        <skills>
+            <skill name="Athletik" bonus="+6"/>
+            <skill name="Geschichte" bonus="+2"/>
+            <skill name="Medizin" bonus="+3"/>
+            <skill name="Überzeugen" bonus="+5"/>
+        </skills>
+        <traits>
+            <trait name="Schutz-Aura">
+                <description>Solange Elara bei Bewusstsein ist, erhalten sie und alle befreundeten Kreaturen innerhalb von 3m einen Bonus auf Rettungswürfe in Höhe ihres Charismamodifikators (+5).</description>
+            </trait>
+            <trait name="Meisterschaft schwerer Waffen">
+                <description>Bei einem kritischen Treffer oder wenn sie eine Kreatur auf 0 TP reduziert, kann Elara als Bonusaktion einen Nahkampfangriff ausführen. Vor einem Angriff mit einer schweren Waffe kann sie wählen, einen Malus von -5 auf den Trefferwurf zu nehmen, um +10 auf den Schaden zu erhalten.</description>
+            </trait>
+            <trait name="Göttliches Gespür (3/Tag)">
+                <description>Als Aktion kann Elara die Position von Himmlischen, Teuflischen und Untoten sowie geweihten/entweihten Orten in einem Umkreis von 18m spüren.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Elara führt zwei Nahkampfangriffe aus.</description>
+            </action>
+            <action name="Handauflegen (30 TP)">
+                <description>Elara kann eine Kreatur berühren und Trefferpunkte aus einem Pool von 30 TP regenerieren oder eine Krankheit/ein Gift heilen (kostet 5 TP aus dem Pool).</description>
+            </action>
+            <action name="Göttliche Macht fokussieren: Heilige Waffe">
+                <description>Für 1 Minute addiert Elara +2 auf Angriffswürfe mit ihrer Waffe. Die Waffe leuchtet und zählt als magisch.</description>
+            </action>
+            <action name="Göttliche Macht fokussieren: Die Unheiligen vertreiben">
+                <description>Teuflische und Untote im Umkreis von 9m müssen einen Weisheitsrettungswurf (SG 13) bestehen oder werden für 1 Minute vertrieben.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Zweihänder">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,50 m</range>
+                <target>ein Ziel</target>
+                <damage>10 (2W6 + 3) Hiebschaden</damage>
+            </attack>
+        </attacks>
+        <spellcasting>
+            <stat>Cha</stat>
+            <saveDC>13</saveDC>
+            <attackBonus>+5</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_BLESS" level="1">Segnen</spell>
+                <spell id="ID_D4T_SPELL_DIVINE_FAVOR" level="1">Göttliche Gunst</spell>
+                <spell id="ID_D4T_SPELL_CURE_WOUNDS" level="1">Wunden heilen</spell>
+                <spell id="ID_D4T_SPELL_AID" level="2">Beistand</spell>
+                <spell id="ID_D4T_SPELL_MAGIC_WEAPON" level="2">Magische Waffe</spell>
+                <spell id="ID_D4T_SPELL_ZONE_OF_TRUTH" level="2">Zone der Wahrheit</spell>
+            </spelllist>
+            <slots>
+                <slot level="1" count="4"/>
+                <slot level="2" count="2"/>
+            </slots>
+        </spellcasting>
+    </statblock>
     <statblock name="Untote Monstrosität" id="untote-monstrositaet">
         <meta>
             <size>Groß</size>
@@ -85,76 +172,59 @@
     </slots>
   </spellcasting>-->
     </statblock>
-<statblock name="Kultveteran" id="cult-cleric">
-  <meta>
-    <size>Mittel</size>
-    <type>Mensch</type>
-    <alignment>neutral böse</alignment>
-
-    <ac>13</ac>
-
-    <hp>33 (6W8 + 6)</hp>
-
-    <speed>6 m</speed>
-
-    <initiative>+0</initiative>
-
-    <senses>assive Wahrnehmung 10</senses>
-
-    <languages>Tyrianisch</languages>
-
-    <challenge>2</challenge>
-
-    <resistances></resistances>
-
-    <immunities></immunities>
-
-    <conditionImmunities></conditionImmunities>
-  </meta>
-
-  <abilities>
-    <ability name="Str" score="11" bonus="+0"/>
-    <ability name="Dex" score="10" bonus="+0"/>
-    <ability name="Con" score="16" bonus="+3"/>
-    <ability name="Int" score="10" bonus="+0"/>
-    <ability name="Wis" score="13" bonus="+1"/>
-    <ability name="Cha" score="12" bonus="+1"/>
-  </abilities>
-
-  <saves>
+    <statblock name="Kultveteran" id="cult-cleric">
+        <meta>
+            <size>Mittel</size>
+            <type>Mensch</type>
+            <alignment>neutral böse</alignment>
+            <ac>13</ac>
+            <hp>33 (6W8 + 6)</hp>
+            <speed>6 m</speed>
+            <initiative>+0</initiative>
+            <senses>assive Wahrnehmung 10</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>2</challenge>
+            <resistances/>
+            <immunities/>
+            <conditionImmunities/>
+        </meta>
+        <abilities>
+            <ability name="Str" score="11" bonus="+0"/>
+            <ability name="Dex" score="10" bonus="+0"/>
+            <ability name="Con" score="16" bonus="+3"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="13" bonus="+1"/>
+            <ability name="Cha" score="12" bonus="+1"/>
+        </abilities>
+        <saves>
   </saves>
-
-  <skills>
-    <skill name="Religion" bonus="+2"/>
-  </skills>
-
-  <traits>
-    <trait name="Dunkle Hingabe">
-      <description>
+        <skills>
+            <skill name="Religion" bonus="+2"/>
+        </skills>
+        <traits>
+            <trait name="Dunkle Hingabe">
+                <description>
         Der Priester hat Vorteil auf Rettungswürfe gegen Bezaubern und Furcht.
       </description>
-    </trait>
-  </traits>
-
-  <actions>
-    <action name="Mehrfachangriff">
-      <description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>
         Der Priester führt zwei Angriffe mit seinem Dolch aus.
       </description>
-    </action>
-  </actions>
-
-  <attacks>
-    <attack name="Dolch">
-      <type>Nahkampf oder Fernkampf</type>
-      <bonus>+3</bonus>
-      <range>1,50 m oder 6/18 m</range>
-      <target>eine Kreatur</target>
-      <damage>4 (1W4 + 2) Stichschaden</damage>
-    </attack>
-  </attacks>
-
-  <!--<reactions>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Dolch">
+                <type>Nahkampf oder Fernkampf</type>
+                <bonus>+3</bonus>
+                <range>1,50 m oder 6/18 m</range>
+                <target>eine Kreatur</target>
+                <damage>4 (1W4 + 2) Stichschaden</damage>
+            </attack>
+        </attacks>
+        <!--<reactions>
   </reactions>
 
   <legendary>
@@ -165,31 +235,24 @@
       <intro></intro>
     </actions>
   </legendary>-->
-
-  <spellcasting>
-    <stat>Wis</stat>
-
-    <saveDC>11</saveDC>
-
-    <attackBonus>+3</attackBonus>
-
-    <spelllist>
-      <spell id="ID_D4T_SPELL_CHILL_TOUCH" level="0">Kalte Hand (Chill Touch)</spell>
-      <spell id="ID_D4T_SPELL_SACRED_FLAME" level="0">Heilige Flamme</spell>
-      <spell id="ID_D4T_SPELL_THAUMATURGY" level="0">Thaumaturgie</spell>
-
-      <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
-      <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden verursachen (Inflict Wounds)</spell>
-      <spell id="ID_D4T_SPELL_RAY_OF_SICKNESS" level="1">Strahl der Übelkeit (Ray of Sickness)</spell>
-
-      <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
-      <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
-    </spelllist>
-
-    <slots>
-      <slot level="1">4</slot>
-      <slot level="2">3</slot>
-    </slots>
-  </spellcasting>
-</statblock> 
+        <spellcasting>
+            <stat>Wis</stat>
+            <saveDC>11</saveDC>
+            <attackBonus>+3</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_CHILL_TOUCH" level="0">Kalte Hand (Chill Touch)</spell>
+                <spell id="ID_D4T_SPELL_SACRED_FLAME" level="0">Heilige Flamme</spell>
+                <spell id="ID_D4T_SPELL_THAUMATURGY" level="0">Thaumaturgie</spell>
+                <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
+                <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden verursachen (Inflict Wounds)</spell>
+                <spell id="ID_D4T_SPELL_RAY_OF_SICKNESS" level="1">Strahl der Übelkeit (Ray of Sickness)</spell>
+                <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+                <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1">4</slot>
+                <slot level="2">3</slot>
+            </slots>
+        </spellcasting>
+    </statblock>
 </encounter>
