@@ -187,85 +187,7 @@
             </slots>
         </spellcasting>
     </statblock>
-    <statblock name="Untote Monstrosität" id="untote-monstrositaet">
-        <meta>
-            <size>Groß</size>
-            <type>Untote</type>
-            <alignment>neutral böse</alignment>
-            <ac>8</ac>
-            <hp>85 (9W10 + 36)</hp>
-            <speed>9 m</speed>
-            <initiative>-2</initiative>
-            <senses>Dunkelsicht 18 m, Passive Wahrnehmung 8</senses>
-            <languages>versteht Tyrianisch und Riesisch, kann aber nicht sprechen</languages>
-            <challenge>2</challenge>
-            <resistances/>
-            <immunities>Gift</immunities>
-            <conditionImmunities>Vergiftet</conditionImmunities>
-        </meta>
-        <abilities>
-            <ability name="Str" score="19" bonus="+4"/>
-            <ability name="Dex" score="6" bonus="-2"/>
-            <ability name="Con" score="18" bonus="+4"/>
-            <ability name="Int" score="3" bonus="-4"/>
-            <ability name="Wis" score="6" bonus="-2"/>
-            <ability name="Cha" score="5" bonus="-3"/>
-        </abilities>
-        <saves>
-            <save ability="Wis" bonus="+0"/>
-        </saves>
-        <skills>
-  </skills>
-        <traits>
-            <trait name="Untote Zähigkeit">
-                <description>Sinkt die Untote Monstrosität durch Schaden auf 0 Trefferpunkte, muss sie einen Konstitutionsrettungswurf mit einem SG von 5 + dem erlittenen Schaden ablegen, sofern der Schaden nicht gleißend ist oder von einem kritischen Treffer stammt. Bei Erfolg sinken ihre Trefferpunkte stattdessen auf 1.</description>
-            </trait>
-        </traits>
-        <actions>
-            <action name="Morgenstern">
-                <description>Nahkampfangriff: +6 auf Treffer, Reichweite 1,50 m, ein Ziel. Treffer: 13 (2W8 + 4) Wuchtschaden.</description>
-            </action>
-            <action name="Trampeln durch die Barrikade">
-                <description>Wenn die Monstrosität sich in gerader Linie mindestens 6 m auf einen Wagen zubewegt, verursacht sie beim ersten Treffer +7 (2W6) Schaden.</description>
-            </action>
-        </actions>
-        <attacks>
-            <attack name="Morgenstern">
-                <type>Nahkampf</type>
-                <bonus>+6</bonus>
-                <range>1,50 m</range>
-                <target>ein Ziel</target>
-                <damage>13 (2W8 + 4) Wuchtschaden</damage>
-            </attack>
-        </attacks>
-        <!--<reactions>
-  </reactions>
-
-  <legendary>
-    <resistances>
-    </resistances>
-
-    <actions perRound="0">
-      <intro>
-      </intro>
-    </actions>
-  </legendary>
-
-  <spellcasting>
-    <stat></stat>
-
-    <saveDC></saveDC>
-
-    <attackBonus></attackBonus>
-
-    <spelllist>
-    </spelllist>
-
-    <slots>
-    </slots>
-  </spellcasting>-->
-    </statblock>
-    <statblock name="Kultveteran" id="cult-cleric">
+    <statblock name="Kultzauberer" id="cult-cleric">
         <meta>
             <size>Mittel</size>
             <type>Mensch</type>
@@ -349,4 +271,193 @@
             </slots>
         </spellcasting>
     </statblock>
+    <statblock name="Kult-Schläger" id="ID_D4T_NPC_KULT_SCHLAEGER">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (beliebiges Volk)</type>
+            <alignment>jede nicht gute Gesinnung</alignment>
+            <ac>11 (Lederrüstung)</ac>
+            <hp>32 (5W8 + 10)</hp>
+            <speed>9 m</speed>
+            <initiative>+0</initiative>
+            <senses>Passive Wahrnehmung 10</senses>
+            <languages>eine beliebige Sprache (meist Tyrianisch)</languages>
+            <challenge>1/2</challenge>
+            <vulnerabilities/>
+            <resistances/>
+            <immunities/>
+            <conditionImmunities/>
+        </meta>
+        <abilities>
+            <ability name="Str" score="15" bonus="+2"/>
+            <ability name="Dex" score="11" bonus="+0"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="10" bonus="+0"/>
+            <ability name="Cha" score="11" bonus="+0"/>
+        </abilities>
+        <skills>
+            <skill name="Einschüchtern" bonus="+2"/>
+            <skill name="Religion" bonus="+2"/>
+        </skills>
+        <traits>
+            <trait name="Rudel-Taktik">
+                <description>Der Kult-Schläger ist im Vorteil bei einem Angriffswurf gegen eine Kreatur, wenn sich mindestens einer seiner Verbündeten innerhalb von 1,5 m (5 Fuß) um die Kreatur befindet und der Verbündete nicht kampfunfähig ist.</description>
+            </trait>
+            <trait name="Fanatischer Fokus">
+                <description>Der Kult-Schläger ist im Vorteil bei Rettungswürfen gegen Bezauberung oder Furcht.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Der Kult-Schläger führt zwei Nahkampfangriffe aus.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Streitkolben">
+                <type>Nahkampf</type>
+                <bonus>+4</bonus>
+                <range>1,50 m</range>
+                <target>eine Kreatur</target>
+                <damage>5 (1W6 + 2) Wuchtschaden</damage>
+            </attack>
+            <attack name="Schwere Armbrust">
+                <type>Fernkampf</type>
+                <bonus>+2</bonus>
+                <range>30/120 m</range>
+                <target>eine Kreatur</target>
+                <damage>5 (1W10) Stichschaden</damage>
+            </attack>
+        </attacks>
+    </statblock>
+    <statblock name="Auferstandener Quillix" id="ID_D4T_NPC_RESURRECTED_QUILLIX">
+        <meta>
+            <size>Mittel</size>
+            <type>Untoter</type>
+            <alignment>Jede Gesinnung</alignment>
+            <ac>12 (15 mit Magierrüstung)</ac>
+            <hp>40 (9W8)</hp>
+            <speed>9 m</speed>
+            <initiative>+2</initiative>
+            <senses>Dunkelsicht 18m, Passive Wahrnehmung 11</senses>
+            <languages>Vier beliebige Sprachen</languages>
+            <challenge>6</challenge>
+            <immunities>Gift</immunities>
+            <conditionImmunities>Vergiftet, Erschöpfung</conditionImmunities>
+        </meta>
+        <abilities>
+            <ability name="Str" score="9" bonus="-1"/>
+            <ability name="Dex" score="14" bonus="+2"/>
+            <ability name="Con" score="11" bonus="+0"/>
+            <ability name="Int" score="17" bonus="+3"/>
+            <ability name="Wis" score="12" bonus="+1"/>
+            <ability name="Cha" score="11" bonus="+0"/>
+        </abilities>
+        <saves>
+            <save ability="Int" bonus="+6"/>
+            <save ability="Wis" bonus="+4"/>
+        </saves>
+        <skills>
+            <skill name="Arkane Kunde" bonus="+6"/>
+            <skill name="Geschichte" bonus="+6"/>
+        </skills>
+        <traits>
+            <trait name="Untote Natur">
+                <description>Quillix benötigt keine Luft, Nahrung, Trinken oder Schlaf.</description>
+            </trait>
+        </traits>
+        <spellcasting>
+            <stat>Int</stat>
+            <saveDC>14</saveDC>
+            <attackBonus>+6</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_FIRE_BOLT" level="0">Feuerpfeil</spell>
+                <spell id="ID_D4T_SPELL_LIGHT" level="0">Licht</spell>
+                <spell id="ID_D4T_SPELL_MAGE_HAND" level="0">Magierhand</spell>
+                <spell id="ID_D4T_SPELL_PRESTIDIGITATION" level="0">Zaubertrick</spell>
+                <spell id="ID_D4T_SPELL_DETECT_MAGIC" level="1">Magie entdecken</spell>
+                <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung</spell>
+                <spell id="ID_D4T_SPELL_MAGIC_MISSILE" level="1">Magisches Geschoss</spell>
+                <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild</spell>
+                <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Nebelschritt</spell>
+                <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
+                <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber</spell>
+                <spell id="ID_D4T_SPELL_ANIMATE_DEAD" level="3">Tote beleben (Animate Dead)</spell>
+                <spell id="ID_D4T_SPELL_VAMPIRIC_TOUCH" level="3">Vampirgriff (Vampiric Touch)</spell>
+                <spell id="ID_D4T_SPELL_GREATER_INVISIBILITY" level="4">Mächtige Unsichtbarkeit</spell>
+                <spell id="ID_D4T_SPELL_BLIGHT" level="4">Dürre</spell>
+                <spell id="ID_D4T_SPELL_CONE_OF_COLD" level="5">Kältekegel</spell>
+            </spelllist>
+            <slots>
+                <slot level="1" count="4"/>
+                <slot level="2" count="3"/>
+                <slot level="3" count="3"/>
+                <slot level="4" count="3"/>
+                <slot level="5" count="1"/>
+            </slots>
+        </spellcasting>
+        <attacks>
+            <attack name="Dolch">
+                <type>Nahkampf- oder Fernkampf-Waffenangriff</type>
+                <bonus>+5</bonus>
+                <range>1,5 m (6 m/18 m)</range>
+                <target>Ein Ziel</target>
+                <damage>4 (1W4 + 2) Stichschaden</damage>
+            </attack>
+        </attacks>
+    </statblock>
+    <statblock name="Zhaitan-Kultist (Minion)" id="ID_D4T_MONSTER_ZHAITAN_CULTIST">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid (jede Spezies)</type>
+    <alignment>jede nicht gute Gesinnung</alignment>
+    <ac>12 (Lederrüstung)</ac>
+    <hp>9 (2W8)</hp>
+    <speed>9 m</speed>
+    <initiative>+1</initiative>
+    <senses>passive Wahrnehmung 10, Dunkelsicht 18m</senses>
+    <languages>Tyrianisch</languages>
+    <challenge>1/4</challenge>
+    <resistances>Nekrotisch</resistances>
+    <immunities>Gift</immunities>
+    <conditionImmunities>Vergiftet</conditionImmunities>
+  </meta>
+  <abilities>
+    <ability name="Str" score="11" bonus="+0"/>
+    <ability name="Dex" score="12" bonus="+1"/>
+    <ability name="Con" score="10" bonus="+0"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="11" bonus="+0"/>
+    <ability name="Cha" score="10" bonus="+0"/>
+  </abilities>
+  <skills>
+    <skill name="Täuschen" bonus="+2"/>
+    <skill name="Religion" bonus="+2"/>
+  </skills>
+  <traits>
+    <trait name="Dunkle Hingabe">
+      <description>Der Kultist hat Vorteil bei Rettungswürfen gegen Bezauberung oder Verängstigung.</description>
+    </trait>
+    <trait name="Zhaitans Korruption">
+      <description>Der Kultist ist immun gegen die Effekte von nekrotischer Energie, die von Dienern Zhaitans ausgeht.</description>
+    </trait>
+  </traits>
+  <attacks>
+    <attack name="Verdorbenes Krummschwert">
+      <type>Nahkampf</type>
+      <bonus>+3</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W6 + 1) Hiebschaden plus 2 (1W4) nekrotischer Schaden</damage>
+    </attack>
+  </attacks>
+  <!--<spellcasting>
+    <stat>Wis</stat>
+    <saveDC>10</saveDC>
+    <attackBonus>+2</attackBonus>
+    <spelllist>
+      <spell id="ID_D4T_SPELL_CHILL_TOUCH" level="0">Kalte Hand</spell>
+    </spelllist>
+  </spellcasting>-->
+</statblock>
 </encounter>

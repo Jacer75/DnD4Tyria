@@ -492,48 +492,158 @@
             <set name="attunement">true</set>
         </setters>
     </element>
-<element name="Amulett der Gesundheit (Amulet of Health)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_AMULET_OF_HEALTH">
-    <description>
-        <p><strong>Beschreibung:</strong> Dieses Amulett ist oft mit Symbolen der Vitalität und Ausdauer verziert.</p>
-        <p><strong>Funktion:</strong> Dein Konstitutionswert beträgt 19, solange du dieses Amulett trägst. Es hat keine Auswirkungen auf dich, wenn dein Konstitutionswert bereits 19 oder höher ist.</p>
-    </description>
-    <setters>
-        <set name="keywords">amulett, gesundheit, constitution</set>
-        <set name="category">Magische Gegenstände</set>
-        <set name="cost" currency="gp">4000</set>
-        <set name="weight" lb="1">1 Pfund</set>
-        <set name="slot">neck</set>
-        <set name="type">Wondrous Item</set>
-        <set name="rarity">Rare</set>
-        <set name="attunement">true</set>
-    </setters>
-    <rules>
-        <stat name="constitution" value="19" bonus="base" requirements="[constitution:score:18]" />
-    </rules>
-</element>
-<element name="Stab der Verdorrung (Staff of Withering)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_STAFF_OF_WITHERING">
-    <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
-    <description>
-        <p><strong>Beschreibung:</strong> Dieser Stab ist aus dunklem, knorrigem Holz gefertigt, das sich trocken und leblos anfühlt.</p>
-        <p><strong>Funktion:</strong> Der Stab kann als magischer Kampfstab geführt werden. Er hat 3 Ladungen und erhält täglich bei Dämmerung 1W3 verbrauchte Ladungen zurück.</p>
-        <p>Bei einem Treffer verursacht er Schaden wie ein normaler Kampfstab. Du kannst 1 Ladung ausgeben, um dem Ziel zusätzlich 2W10 Nekrotikschaden zuzufügen. Außerdem muss dem Ziel ein Konstitutionsrettungswurf (SG 15) gelingen, andernfalls ist es für 1 Stunde im Nachteil bei allen Attributs- oder Rettungswürfen, die Stärke oder Konstitution verwenden.</p>
-    </description>
-    <setters>
-        <set name="keywords">staff, withering, necro</set>
-        <set name="category">Magische Gegenstände</set>
-        <set name="cost" currency="gp">8000</set>
-        <set name="weight" lb="4">4 Pfund</set>
-        <set name="slot">onehand</set>
-        <set name="type">Staff</set>
-        <set name="rarity">Rare</set>
-        <set name="attunement" addition="durch einen Kleriker, Druiden oder Hexenmeister">true</set>
-        <set name="charges">3</set>
-        <set name="recharge">1d3</set>
-        <set name="damage" type="Wucht">1W6</set>
-        <set name="versatile">1W8</set>
-        <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
-    </setters>
-</element>
+    <element name="Amulett der Gesundheit (Amulet of Health)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_AMULET_OF_HEALTH">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieses Amulett ist oft mit Symbolen der Vitalität und Ausdauer verziert.</p>
+            <p>
+                <strong>Funktion:</strong> Dein Konstitutionswert beträgt 19, solange du dieses Amulett trägst. Es hat keine Auswirkungen auf dich, wenn dein Konstitutionswert bereits 19 oder höher ist.</p>
+        </description>
+        <setters>
+            <set name="keywords">amulett, gesundheit, constitution</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">4000</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">neck</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="constitution" value="19" bonus="base" requirements="[constitution:score:18]"/>
+        </rules>
+    </element>
+    <element name="Stab der Verdorrung (Staff of Withering)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_STAFF_OF_WITHERING">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser Stab ist aus dunklem, knorrigem Holz gefertigt, das sich trocken und leblos anfühlt.</p>
+            <p>
+                <strong>Funktion:</strong> Der Stab kann als magischer Kampfstab geführt werden. Er hat 3 Ladungen und erhält täglich bei Dämmerung 1W3 verbrauchte Ladungen zurück.</p>
+            <p>Bei einem Treffer verursacht er Schaden wie ein normaler Kampfstab. Du kannst 1 Ladung ausgeben, um dem Ziel zusätzlich 2W10 Nekrotikschaden zuzufügen. Außerdem muss dem Ziel ein Konstitutionsrettungswurf (SG 15) gelingen, andernfalls ist es für 1 Stunde im Nachteil bei allen Attributs- oder Rettungswürfen, die Stärke oder Konstitution verwenden.</p>
+        </description>
+        <setters>
+            <set name="keywords">staff, withering, necro</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">8000</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="type">Staff</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement" addition="durch einen Kleriker, Druiden oder Hexenmeister">true</set>
+            <set name="charges">3</set>
+            <set name="recharge">1d3</set>
+            <set name="damage" type="Wucht">1W6</set>
+            <set name="versatile">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+        </setters>
+    </element>
+    <element name="Gewand der Hundert Augen (Robe of Eyes)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_ROBE_OF_EYES">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schwerer, tiefblauer Samtstoff, in den mit feinstem Golddraht unzählige stilisierte Augenpaare eingewebt sind. Bei genauerem Hinsehen scheint der Brokatbesatz am Saum und an den Manschetten leicht zu flimmern, als würden die eingestickten Pupillen der Bewegung im Raum folgen. Ein Stück für den, der nichts verpassen darf, Gelehrter. Der Brokat ist mit den Essenzen von Greifenaugen gewebt.</p>
+            <p>
+                <strong>Funktion:</strong> Du hast Vorteil auf Wahrnehmungsprobem, die auf Sicht basieren. Du kannst nicht überrascht werden. Du hast Dunkelsicht mit einer Reichweite von 120 Fuß (36 m). Du kannst unsichtbare Kreaturen und Objekte sowie in die Ätherische Ebene sehen, ebenfalls bis zu 120 Fuß. Wenn der Zauber Light auf die Robe oder Daylight innerhalb von 5 Fuß gewirkt wird, bist du für 1 Minute blind (Konstitution SG 11 bzw. 15 am Ende deines Zugs, um den Effekt zu beenden). Die Augen der Robe können nicht geschlossen werden.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Rare</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+            <grant type="Vision" id="ID_VISION_SEE_INVISIBILITY"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PERCEPTION_ADVANTAGE"/>
+        </rules>
+    </element>
+    <element name="Gewand der Ewigen Sterne (Robe of Stars)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_ROBE_OF_STARS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Diese Robe ist aus einem Stoff gefertigt, der so dunkel ist wie der Nachthimmel über den Zittergipfeln. Auf der Brust prangen sechs markante, siebenstrahlige Sterne aus echtem Weißgold-Brokat, die ein sanftes Eigenlicht abgeben. Diese Sterne sind gefangene Splitter reiner Magie.</p>
+            <p>
+                <strong>Funktion:</strong> Du erhältst einen Bonus von +1 auf alle Rettungswürfe. Du kannst eine Aktion nutzen, um in die Astralebene zu wechseln oder von dort zurückzukehren. Zudem kannst du als Aktion einen Brokat-Stern abziehen, um den Zauber Magic Missile auf dem 5. Grad zu wirken. Täglich in der Abenddämmerung erscheinen 1d6 verbrauchte Sterne wieder auf der Robe.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Very Rare</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="save:all" value="1"/>
+        </rules>
+    </element>
+    <element name="Gewand der Gleißenden Farben (Robe of Scintillating Colors)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_ROBE_OF_SCINTILLATING_COLORS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Auf den ersten Blick wirkt die Robe wie schlichter, grauer Seidenstoff. Doch der eingewebte Brokat ist mit Prismen-Staub versetzt; bricht sich das Licht darin, entstehen Muster, die sich wie Öl auf Wasser bewegen. Ein Impuls Eures Willens genügt, und der Brokat entfesselt ein Farbspektakel.</p>
+            <p>
+                <strong>Funktion:</strong> Die Robe hat 3 Ladungen (Regeneration: 1d3 im Morgengrauen). Als Aktion kannst du 1 Ladung nutzen: Bis zum Ende deines nächsten Zuges strahlst du helles Licht (30 Fuß) und dämmriges Licht (weitere 30 Fuß) aus. Angreifer, die dich sehen können, haben Nachteil auf Angriffswürfe gegen dich. Kreaturen im hellen Licht müssen einen Weisheits-Rettungswurf (SG 15) bestehen oder sind betäubt (Stunned).</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Very Rare</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Trank der Vitalität (Potion of Vitality)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_VITALITY">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Die purpurrote Flüssigkeit dieses Tranks pulsiert regelmäßig mit dumpfem Licht und erinnert an einen Herzschlag.</p>
+            <p>
+                <strong>Funktion:</strong> Wenn du diesen Trank trinkst, entfernt er jede Erschöpfung, unter der du leidest, und heilt jede Krankheit oder Vergiftung, die dich betrifft. Für die nächsten 24 Stunden erhältst du bei jedem Trefferwürfel, den du ausgibst, die maximale Anzahl an Trefferpunkten zurück.</p>
+        </description>
+        <setters>
+            <set name="keywords">vitality, heartbeat</set>
+            <set name="category">Potions</set>
+            <set name="cost" currency="gp">1000</set>
+            <set name="weight" lb="0.5">0,25 kg</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Schutzschriftrolle (Undote)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCROLL_OF_PROTECTION_UNDEAD">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Jede Schutzschriftrolle wirkt gegen einen bestimmten Kreaturentyp: in diesem Fall Untote.</p>
+            <p>
+                <strong>Funktion:</strong> Das Lesen der Schriftrolle als Aktion hüllt dich in eine unsichtbare Barriere ein, die sich von dir ausbreitet und einen Zylinder mit einem Radius von 1,5m und einer Höhe von 3m bildet. Für 5 Minuten verhindert diese Barriere, dass Kreaturen des angegebenen Typs den Zylinder betreten oder irgendetwas darin beeinflussen. Der Zylinder bewegt sich mit dir und bleibt auf dich zentriert. Wenn du dich jedoch so bewegst, dass sich eine Kreatur des angegebenen Typs innerhalb des Zylinders befinden würde, endet der Effekt. Eine Kreatur kann versuchen, die Barriere zu überwinden, indem sie eine Aktion nutzt, um einen Charisma-Wurf (SG 15) durchzuführen. Bei Erfolg wird die Kreatur nicht mehr von der Barriere beeinflusst.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="0">0 kg</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Amulett der Seelenwacht" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_AMULET_SOUL_WARD">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p><strong>Beschreibung:</strong> Ein fein gearbeitetes Amulett, das eine schützende Aura der Lebensenergie ausstrahlt. Es scheint in Momenten größter Gefahr schwach golden zu glimmen.</p>
+            <p><strong>Funktion:</strong> Dieses Amulett besitzt 1 Ladung. Wenn du Schaden erleidest, der deine Trefferpunkte auf 0 reduzieren würde, sinken sie stattdessen auf 1 und die Ladung wird verbraucht. Sobald die Ladung verbraucht ist, verliert das Amulett seine Magie bis zum nächsten Blutmond (oder zerfällt zu Staub).</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">neck</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+    </element>
 </elements>
 
 
