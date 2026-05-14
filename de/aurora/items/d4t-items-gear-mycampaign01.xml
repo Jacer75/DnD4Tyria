@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.3.5">
+        <update version="1.3.6">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -646,7 +646,7 @@
             <set name="cost" currency="gp">0</set>
         </setters>
     </element>
-    <element name="Umhang der Stalskjeggs" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WONDEROUS_UMHANG_DER_STALSKJEGGS">
+    <element name="Umhang des Wolfs" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WONDEROUS_UMHANG_DES_WOLFS">
         <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
         <description>
             <p>
@@ -698,7 +698,7 @@
                 <strong>Funktion:</strong> Der Ring besitzt 3 Ladungen und regeneriert täglich bei Sonnenaufgang 1W3 verbrauchte Ladungen. Während du den Ring trägst, kannst du eine Aktion verwenden und 1 Ladung ausgeben, um den Zauber Tierfreundschaft (Rettungswurf-SG 13) zu wirken. Das Ziel (ein Tier mit Intelligenz 3 oder niedriger) muss einen Weisheitsrettungswurf gegen SG 13 bestehen oder wird für 24 Stunden bezaubert (Charmed). Der Zauber endet vorzeitig, wenn du oder deine Gefährten dem Tier Schaden zufügen.</p>
         </description>
         <setters>
-            <set name="category">Wundergegenstände</set>
+            <set name="category">Magische Gegenstände</set>
             <set name="rarity">Unique</set>
             <set name="cost" currency="gp">500</set>
             <set name="weight" lb="0">—</set>
