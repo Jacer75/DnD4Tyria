@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.3.3">
+        <update version="1.3.4">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -614,7 +614,7 @@
             <set name="stackable">true</set>
         </setters>
     </element>
-    <element name="Schutzschriftrolle (Undote)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCROLL_OF_PROTECTION_UNDEAD">
+    <element name="Schutzschriftrolle (Untote)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCROLL_OF_PROTECTION_UNDEAD">
         <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
         <description>
             <p>
@@ -633,8 +633,10 @@
     <element name="Amulett der Seelenwacht" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_AMULET_SOUL_WARD">
         <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
         <description>
-            <p><strong>Beschreibung:</strong> Ein fein gearbeitetes Amulett, das eine schützende Aura der Lebensenergie ausstrahlt. Es scheint in Momenten größter Gefahr schwach golden zu glimmen.</p>
-            <p><strong>Funktion:</strong> Dieses Amulett besitzt 1 Ladung. Wenn du Schaden erleidest, der deine Trefferpunkte auf 0 reduzieren würde, sinken sie stattdessen auf 1 und die Ladung wird verbraucht. Sobald die Ladung verbraucht ist, verliert das Amulett seine Magie bis zum nächsten Blutmond (oder zerfällt zu Staub).</p>
+            <p>
+                <strong>Beschreibung:</strong> Ein fein gearbeitetes Amulett, das eine schützende Aura der Lebensenergie ausstrahlt. Es scheint in Momenten größter Gefahr schwach golden zu glimmen.</p>
+            <p>
+                <strong>Funktion:</strong> Dieses Amulett besitzt 1 Ladung. Wenn du Schaden erleidest, der deine Trefferpunkte auf 0 reduzieren würde, sinken sie stattdessen auf 1 und die Ladung wird verbraucht. Das Amulett ist dann nicht mehr magisch und hat noch einen Wert von 50gp.</p>
         </description>
         <setters>
             <set name="category">Magische Gegenstände</set>
@@ -642,6 +644,49 @@
             <set name="slot">neck</set>
             <set name="weight" lb="1">0,45 kg</set>
             <set name="cost" currency="gp">0</set>
+        </setters>
+    </element>
+    <element name="Umhang der Stalskjeggs" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WONDEROUS_UMHANG_DER_STALSKJEGGS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser schwere Umhang besteht aus dem dichten, grauen Winterfell eines außergewöhnlich großen Wolfes. Anders als bei gewöhnlicher Kleidung ist das Fell nicht stumpf, sondern besitzt einen seidigen, fast silbrigen Glanz, der Schnee und Wasser mühelos abperlen lässt.</p>
+            <p>
+                <strong>Funktion:</strong> Du erhältst einen Bonus von +1 auf deine RK und deine Rettungswürfe, solange du diesen Umhang trägst. Erfordert Einstimmung.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">back</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="3">3 Pfund</set>
+        </setters>
+        <rules>
+            <stat name="ac:misc" value="1"/>
+            <stat name="strength:save:misc" value="1"/>
+            <stat name="dexterity:save:misc" value="1"/>
+            <stat name="constitution:save:misc" value="1"/>
+            <stat name="intelligence:save:misc" value="1"/>
+            <stat name="wisdom:save:misc" value="1"/>
+            <stat name="charisma:save:misc" value="1"/>
+        </rules>
+    </element>
+    <element name="Laterne der Enthüllung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WONDEROUS_LANTERN_OF_REVEALING">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine speziell gefertigte Kapuzenlaterne, die mit feinen Runen graviert ist.</p>
+            <p>
+                <strong>Funktion:</strong> Während sie brennt, verbraucht diese Kapuzenlaterne in 6 Stunden 0,5 l Öl. Sie wirft helles Licht in einem Radius von 9 m und dämmriges Licht in weiteren 9 m. Unsichtbare Kreaturen und Objekte werden sichtbar, solange sie sich im hellen Licht der Laterne befinden. Du kannst eine Aktion nutzen, um die Haube zu senken, wodurch sich das Licht auf dämmriges Licht in einem Radius von 1,5 m reduziert.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="keywords">licht, unsichtbarkeit, laterne</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 Pfund</set>
         </setters>
     </element>
 </elements>

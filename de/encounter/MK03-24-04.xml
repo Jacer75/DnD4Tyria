@@ -265,7 +265,7 @@
     </slots>
   </spellcasting>-->
     </statblock>
-    <statblock name="Kultveteran" id="cult-cleric">
+    <statblock name="Kultzauberer" id="cult-cleric">
         <meta>
             <size>Mittel</size>
             <type>Mensch</type>
@@ -339,13 +339,154 @@
                 <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
                 <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden verursachen (Inflict Wounds)</spell>
                 <spell id="ID_D4T_SPELL_RAY_OF_SICKNESS" level="1">Strahl der Übelkeit (Ray of Sickness)</spell>
-                <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+                <!--<spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>-->
                 <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
+                <spell id="ID_D4T_SPELL_SILENCE" level="2">Stille (Silence)</spell>
             </spelllist>
             <slots>
-                <slot level="1">4</slot>
-                <slot level="2">3</slot>
+                <slot level="1" count="4"/>
+                <slot level="2" count="3"/>
             </slots>
         </spellcasting>
+    </statblock>
+    <statblock name="Hochrichter Malakor (Kultchef)" id="ID_D4T_NPC_MALAKOR">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid (Norn/Mensch)</type>
+    <alignment>Rechtschaffen Böse</alignment>
+    <ac>15 (Magierrüstung)</ac>
+    <hp>65 (9W8 + 25)</hp>
+    <speed>9 m</speed>
+    <initiative>+2</initiative>
+    <senses>Passive Wahrnehmung 12</senses>
+    <languages>Gemeinsprache, Norn, Abyssal</languages>
+    <challenge>4</challenge>
+    <resistances>Nekrotisch</resistances>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="10" bonus="+0"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="14" bonus="+2"/>
+    <ability name="Int" score="17" bonus="+3"/>
+    <ability name="Wis" score="15" bonus="+2"/>
+    <ability name="Cha" score="12" bonus="+1"/>
+  </abilities>
+
+  <saves>
+    <save ability="Int" bonus="+6"/>
+    <save ability="Wis" bonus="+5"/>
+  </saves>
+
+  <skills>
+    <skill name="Arkana" bonus="+6"/>
+    <skill name="Religion" bonus="+6"/>
+    <skill name="Täuschung" bonus="+4"/>
+  </skills>
+
+  <traits>
+    <trait name="Aura der Grabesfäule">
+      <description>Malakor verströmt einen beißenden Geruch nach Schwefel und Verwesung. Kreaturen innerhalb von 3 m haben Nachteil auf Konzentrationswürfe.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Todesurteil">
+      <description>Wenn Ragvar auf 0 TP sinkt, kann Malakor diese Aktion nutzen, um das Ritual zu vollenden. Er muss dafür innerhalb von 1,5 m von Ragvar oder dem Podest sein.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Dolch der Qual">
+      <type>Nahkampf</type>
+      <bonus>+5</bonus>
+      <range>1,5 m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W4 + 2) Stichschaden plus 7 (2W6) nekrotischer Schaden</damage>
+    </attack>
+  </attacks>
+
+  <reactions>
+    <reaction name="Fleischschild">
+      <description>Wenn Malakor Ziel eines Angriffs wird und ein Verbündeter innerhalb von 1,5 m steht, kann er den Platz mit ihm tauschen. Der Verbündete wird stattdessen getroffen.</description>
+    </reaction>
+  </reactions>
+
+  <spellcasting>
+    <stat>Int</stat>
+    <saveDC>14</saveDC>
+    <attackBonus>+6</attackBonus>
+    <spelllist>
+      <spell id="ID_D4T_SPELL_CHILL_TOUCH" level="0">Kalte Hand (Chill Touch)</spell>
+      <spell id="ID_D4T_SPELL_MAGE_HAND" level="0">Magierhand (Mage Hand)</spell>
+      <spell id="ID_D4T_SPELL_RAY_OF_FROST" level="0">Froststrahl (Ray of Frost)</spell>
+      <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung (Mage Armor)</spell>
+      <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild (Shield)</spell>
+      <spell id="ID_D4T_SPELL_RAY_OF_SICKNESS" level="1">Strahl der Übelkeit (Ray of Sickness)</spell>
+      <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+      <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Nebelschritt (Misty Step)</spell>
+      <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber (Counterspell)</spell>
+      <spell id="ID_D4T_SPELL_VAMPIRIC_TOUCH" level="3">Vampirberührung (Vampiric Touch)</spell>
+      <spell id="ID_D4T_SPELL_ANIMATE_DEAD" level="3">Tote beleben (Animate Dead)</spell>
+      <spell id="ID_D4T_SPELL_BLIGHT" level="4">Dürre (Blight)</spell>
+      <spell id="ID_D4T_SPELL_CONFUSION" level="4">Verwirrung (Confusion)</spell>
+      <spell id="ID_D4T_SPELL_CLOUDKILL" level="5">Todeswolke (Cloudkill)</spell>
+    </spelllist>
+    <slots>
+      <slot level="1" count="4"/>
+      <slot level="2" count="3"/>
+      <slot level="3" count="3"/>
+      <slot level="4" count="3"/>
+      <slot level="5" count="1"/>
+    </slots>
+  </spellcasting>
+</statblock>
+    <statblock name="Auferstandener Abteigelehrter" id="ID_D4T_MONSTER_ABTEIGELEHRTER">
+        <meta>
+            <size>Mittel</size>
+            <type>Untoter</type>
+            <alignment>Rechtschaffen Böse</alignment>
+            <ac>16 (Verrottete Abtei-Rüstung)</ac>
+            <hp>45 (7W8 + 14)</hp>
+            <speed>7,5 m</speed>
+            <initiative>+0</initiative>
+            <senses>Dunkelsicht 18 m, Passive Wahrnehmung 10</senses>
+            <languages>Tyrianisch, Alt-Lathanisch</languages>
+            <challenge>2</challenge>
+            <vulnerabilities/>
+            <resistances/>
+            <immunities>Gift</immunities>
+            <conditionImmunities>Vergiftet, Erschöpfung</conditionImmunities>
+        </meta>
+        <abilities>
+            <ability name="Str" score="16" bonus="+3"/>
+            <ability name="Dex" score="10" bonus="+0"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="12" bonus="+1"/>
+            <ability name="Wis" score="10" bonus="+0"/>
+            <ability name="Cha" score="8" bonus="-1"/>
+        </abilities>
+        <traits>
+            <trait name="Eisiger Griff">
+                <description>Wenn der Gelehrte einen Gegner mit einem Gelegenheitsangriff trifft, sinkt dessen Geschwindigkeit für den Rest des Zuges auf 0.</description>
+            </trait>
+            <trait name="Untote Standhaftigkeit">
+                <description>Falls Schaden die Trefferpunkte des Gelehrten auf 0 reduziert, muss er einen Rettungswurf auf Konstitution gegen einen SG von 5 + erlittener Schaden ablegen, außer der Schaden ist gleißend oder ein kritischer Treffer. Bei einem Erfolg sinken die Trefferpunkte stattdessen nur auf 1.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Grabeshauch (Wiederaufladung 5-6)">
+                <description>Der Gelehrte stößt eisigen Nebel in einem 4,5 m Kegel aus. Jede Kreatur in diesem Bereich muss einen DC 13 Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleidet das Ziel 10 (3d6) Kälteschaden und ist bis zum Ende seines nächsten Zuges festgesetzt (Restrained). Bei einem Erfolg erleidet es nur halben Schaden.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Verrostete Klinge">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>8 (1d10 + 3) Schlagschaden plus 3 (1d6) nekrotischer Schaden</damage>
+            </attack>
+        </attacks>
     </statblock>
 </encounter>

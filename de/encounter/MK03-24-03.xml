@@ -261,13 +261,13 @@
                 <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
                 <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden verursachen (Inflict Wounds)</spell>
                 <spell id="ID_D4T_SPELL_RAY_OF_SICKNESS" level="1">Strahl der Übelkeit (Ray of Sickness)</spell>
-                <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+                <!--<spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>-->
                 <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
                 <spell id="ID_D4T_SPELL_SILENCE" level="2">Stille (Silence)</spell>
             </spelllist>
             <slots>
-                <slot level="1">4</slot>
-                <slot level="2">3</slot>
+                <slot level="1" count="4"/>
+                <slot level="2" count="3"/>
             </slots>
         </spellcasting>
     </statblock>
