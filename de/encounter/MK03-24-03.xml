@@ -100,93 +100,6 @@
             </reaction>
         </reactions>
     </statblock>
-    <statblock name="Elara Lichtbringer" id="ID_D4T_NPC_ELARA_LICHTBRINGER">
-        <meta>
-            <size>Mittel</size>
-            <type>Humanoid (Mensch)</type>
-            <alignment>Rechtschaffen Gut</alignment>
-            <ac>18 (Plattenrüstung)</ac>
-            <hp>60 (6W10 + 12)</hp>
-            <speed>9 m</speed>
-            <initiative>+1</initiative>
-            <senses>Passive Wahrnehmung 10</senses>
-            <languages>Tyrianisch, Charrisch, Ascalonisch</languages>
-            <challenge>4</challenge>
-            <vulnerabilities/>
-            <resistances/>
-            <immunities/>
-            <conditionImmunities/>
-        </meta>
-        <abilities>
-            <ability name="Str" score="18" bonus="+3"/>
-            <ability name="Dex" score="13" bonus="+1"/>
-            <ability name="Con" score="14" bonus="+2"/>
-            <ability name="Int" score="9" bonus="-1"/>
-            <ability name="Wis" score="11" bonus="+0"/>
-            <ability name="Cha" score="15" bonus="+2"/>
-        </abilities>
-        <saves>
-            <save ability="Wis" bonus="+3"/>
-            <save ability="Cha" bonus="+5"/>
-        </saves>
-        <skills>
-            <skill name="Athletik" bonus="+6"/>
-            <skill name="Geschichte" bonus="+2"/>
-            <skill name="Medizin" bonus="+3"/>
-            <skill name="Überzeugen" bonus="+5"/>
-        </skills>
-        <traits>
-            <trait name="Schutz-Aura">
-                <description>Solange Elara bei Bewusstsein ist, erhalten sie und alle befreundeten Kreaturen innerhalb von 3m einen Bonus auf Rettungswürfe in Höhe ihres Charismamodifikators (+5).</description>
-            </trait>
-            <trait name="Meisterschaft schwerer Waffen">
-                <description>Bei einem kritischen Treffer oder wenn sie eine Kreatur auf 0 TP reduziert, kann Elara als Bonusaktion einen Nahkampfangriff ausführen. Vor einem Angriff mit einer schweren Waffe kann sie wählen, einen Malus von -5 auf den Trefferwurf zu nehmen, um +10 auf den Schaden zu erhalten.</description>
-            </trait>
-            <trait name="Göttliches Gespür (3/Tag)">
-                <description>Als Aktion kann Elara die Position von Himmlischen, Teuflischen und Untoten sowie geweihten/entweihten Orten in einem Umkreis von 18m spüren.</description>
-            </trait>
-        </traits>
-        <actions>
-            <action name="Mehrfachangriff">
-                <description>Elara führt zwei Nahkampfangriffe aus.</description>
-            </action>
-            <action name="Handauflegen (30 TP)">
-                <description>Elara kann eine Kreatur berühren und Trefferpunkte aus einem Pool von 30 TP regenerieren oder eine Krankheit/ein Gift heilen (kostet 5 TP aus dem Pool).</description>
-            </action>
-            <action name="Göttliche Macht fokussieren: Heilige Waffe">
-                <description>Für 1 Minute addiert Elara +2 auf Angriffswürfe mit ihrer Waffe. Die Waffe leuchtet und zählt als magisch.</description>
-            </action>
-            <action name="Göttliche Macht fokussieren: Die Unheiligen vertreiben">
-                <description>Teuflische und Untote im Umkreis von 9m müssen einen Weisheitsrettungswurf (SG 13) bestehen oder werden für 1 Minute vertrieben.</description>
-            </action>
-        </actions>
-        <attacks>
-            <attack name="Zweihänder">
-                <type>Nahkampf</type>
-                <bonus>+5</bonus>
-                <range>1,50 m</range>
-                <target>ein Ziel</target>
-                <damage>10 (2W6 + 3) Hiebschaden</damage>
-            </attack>
-        </attacks>
-        <spellcasting>
-            <stat>Cha</stat>
-            <saveDC>13</saveDC>
-            <attackBonus>+5</attackBonus>
-            <spelllist>
-                <spell id="ID_D4T_SPELL_BLESS" level="1">Segnen</spell>
-                <spell id="ID_D4T_SPELL_DIVINE_FAVOR" level="1">Göttliche Gunst</spell>
-                <spell id="ID_D4T_SPELL_CURE_WOUNDS" level="1">Wunden heilen</spell>
-                <spell id="ID_D4T_SPELL_AID" level="2">Beistand</spell>
-                <spell id="ID_D4T_SPELL_MAGIC_WEAPON" level="2">Magische Waffe</spell>
-                <spell id="ID_D4T_SPELL_ZONE_OF_TRUTH" level="2">Zone der Wahrheit</spell>
-            </spelllist>
-            <slots>
-                <slot level="1" count="4"/>
-                <slot level="2" count="2"/>
-            </slots>
-        </spellcasting>
-    </statblock>
     <statblock name="Kultzauberer" id="cult-cleric">
         <meta>
             <size>Mittel</size>
@@ -330,82 +243,6 @@
             </attack>
         </attacks>
     </statblock>
-    <statblock name="Auferstandener Quillix" id="ID_D4T_NPC_RESURRECTED_QUILLIX">
-        <meta>
-            <size>Mittel</size>
-            <type>Untoter</type>
-            <alignment>Jede Gesinnung</alignment>
-            <ac>12 (15 mit Magierrüstung)</ac>
-            <hp>40 (9W8)</hp>
-            <speed>9 m</speed>
-            <initiative>+2</initiative>
-            <senses>Dunkelsicht 18m, Passive Wahrnehmung 11</senses>
-            <languages>Vier beliebige Sprachen</languages>
-            <challenge>6</challenge>
-            <immunities>Gift</immunities>
-            <conditionImmunities>Vergiftet, Erschöpfung</conditionImmunities>
-        </meta>
-        <abilities>
-            <ability name="Str" score="9" bonus="-1"/>
-            <ability name="Dex" score="14" bonus="+2"/>
-            <ability name="Con" score="11" bonus="+0"/>
-            <ability name="Int" score="17" bonus="+3"/>
-            <ability name="Wis" score="12" bonus="+1"/>
-            <ability name="Cha" score="11" bonus="+0"/>
-        </abilities>
-        <saves>
-            <save ability="Int" bonus="+6"/>
-            <save ability="Wis" bonus="+4"/>
-        </saves>
-        <skills>
-            <skill name="Arkane Kunde" bonus="+6"/>
-            <skill name="Geschichte" bonus="+6"/>
-        </skills>
-        <traits>
-            <trait name="Untote Natur">
-                <description>Quillix benötigt keine Luft, Nahrung, Trinken oder Schlaf.</description>
-            </trait>
-        </traits>
-        <spellcasting>
-            <stat>Int</stat>
-            <saveDC>14</saveDC>
-            <attackBonus>+6</attackBonus>
-            <spelllist>
-                <spell id="ID_D4T_SPELL_FIRE_BOLT" level="0">Feuerpfeil</spell>
-                <spell id="ID_D4T_SPELL_LIGHT" level="0">Licht</spell>
-                <spell id="ID_D4T_SPELL_MAGE_HAND" level="0">Magierhand</spell>
-                <spell id="ID_D4T_SPELL_PRESTIDIGITATION" level="0">Zaubertrick</spell>
-                <spell id="ID_D4T_SPELL_DETECT_MAGIC" level="1">Magie entdecken</spell>
-                <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung</spell>
-                <spell id="ID_D4T_SPELL_MAGIC_MISSILE" level="1">Magisches Geschoss</spell>
-                <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild</spell>
-                <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Nebelschritt</spell>
-                <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
-                <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber</spell>
-                <spell id="ID_D4T_SPELL_ANIMATE_DEAD" level="3">Tote beleben (Animate Dead)</spell>
-                <spell id="ID_D4T_SPELL_VAMPIRIC_TOUCH" level="3">Vampirgriff (Vampiric Touch)</spell>
-                <spell id="ID_D4T_SPELL_GREATER_INVISIBILITY" level="4">Mächtige Unsichtbarkeit</spell>
-                <spell id="ID_D4T_SPELL_BLIGHT" level="4">Dürre</spell>
-                <spell id="ID_D4T_SPELL_CONE_OF_COLD" level="5">Kältekegel</spell>
-            </spelllist>
-            <slots>
-                <slot level="1" count="4"/>
-                <slot level="2" count="3"/>
-                <slot level="3" count="3"/>
-                <slot level="4" count="3"/>
-                <slot level="5" count="1"/>
-            </slots>
-        </spellcasting>
-        <attacks>
-            <attack name="Dolch">
-                <type>Nahkampf- oder Fernkampf-Waffenangriff</type>
-                <bonus>+5</bonus>
-                <range>1,5 m (6 m/18 m)</range>
-                <target>Ein Ziel</target>
-                <damage>4 (1W4 + 2) Stichschaden</damage>
-            </attack>
-        </attacks>
-    </statblock>
     <statblock name="Zhaitan-Kultist (Minion)" id="ID_D4T_MONSTER_ZHAITAN_CULTIST">
   <meta>
     <size>Mittel</size>
@@ -460,4 +297,52 @@
     </spelllist>
   </spellcasting>-->
 </statblock>
+    <statblock name="Auferstandener Abteigelehrter" id="ID_D4T_MONSTER_ABTEIGELEHRTER">
+        <meta>
+            <size>Mittel</size>
+            <type>Untoter</type>
+            <alignment>Rechtschaffen Böse</alignment>
+            <ac>16 (Verrottete Abtei-Rüstung)</ac>
+            <hp>45 (7W8 + 14)</hp>
+            <speed>7,5 m</speed>
+            <initiative>+0</initiative>
+            <senses>Dunkelsicht 18 m, Passive Wahrnehmung 10</senses>
+            <languages>Tyrianisch, Alt-Lathanisch</languages>
+            <challenge>2</challenge>
+            <vulnerabilities/>
+            <resistances/>
+            <immunities>Gift</immunities>
+            <conditionImmunities>Vergiftet, Erschöpfung</conditionImmunities>
+        </meta>
+        <abilities>
+            <ability name="Str" score="16" bonus="+3"/>
+            <ability name="Dex" score="10" bonus="+0"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="12" bonus="+1"/>
+            <ability name="Wis" score="10" bonus="+0"/>
+            <ability name="Cha" score="8" bonus="-1"/>
+        </abilities>
+        <traits>
+            <trait name="Eisiger Griff">
+                <description>Wenn der Gelehrte einen Gegner mit einem Gelegenheitsangriff trifft, sinkt dessen Geschwindigkeit für den Rest des Zuges auf 0.</description>
+            </trait>
+            <trait name="Untote Standhaftigkeit">
+                <description>Falls Schaden die Trefferpunkte des Gelehrten auf 0 reduziert, muss er einen Rettungswurf auf Konstitution gegen einen SG von 5 + erlittener Schaden ablegen, außer der Schaden ist gleißend oder ein kritischer Treffer. Bei einem Erfolg sinken die Trefferpunkte stattdessen nur auf 1.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Grabeshauch (Wiederaufladung 5-6)">
+                <description>Der Gelehrte stößt eisigen Nebel in einem 4,5 m Kegel aus. Jede Kreatur in diesem Bereich muss einen DC 13 Konstitutionsrettungswurf ablegen. Bei einem Misserfolg erleidet das Ziel 10 (3d6) Kälteschaden und ist bis zum Ende seines nächsten Zuges festgesetzt (Restrained). Bei einem Erfolg erleidet es nur halben Schaden.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Verrostete Klinge">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>8 (1d10 + 3) Schlagschaden plus 3 (1d6) nekrotischer Schaden</damage>
+            </attack>
+        </attacks>
+    </statblock>
 </encounter>
