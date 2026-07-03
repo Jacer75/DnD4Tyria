@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.3.6">
+        <update version="1.3.7">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -542,7 +542,7 @@
         <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
         <description>
             <p>
-                <strong>Beschreibung:</strong> Ein schwerer, tiefblauer Samtstoff, in den mit feinstem Golddraht unzählige stilisierte Augenpaare eingewebt sind. Bei genauerem Hinsehen scheint der Brokatbesatz am Saum und an den Manschetten leicht zu flimmern, als würden die eingestickten Pupillen der Bewegung im Raum folgen. Ein Stück für den, der nichts verpassen darf, Gelehrter. Der Brokat ist mit den Essenzen von Greifenaugen gewebt.</p>
+                <strong>Beschreibung:</strong> Der schwere Stoff dieser Robe wird von einem unbarmherzig komplexen Brokat aus feinen Silberfäden durchzogen. Diese Fäden verlaufen wie ein arkan leitendes Nervensystem über das gesamte Gewebe und formen stilisierte Augenmotive, die das Umgebungslicht absorbieren und lenken. Die Magie des Brokats projiziert die visuelle Essenz der Umgebung direkt in den Geist des Trägers.</p>
             <p>
                 <strong>Funktion:</strong> Du hast Vorteil auf Wahrnehmungsprobem, die auf Sicht basieren. Du kannst nicht überrascht werden. Du hast Dunkelsicht mit einer Reichweite von 120 Fuß (36 m). Du kannst unsichtbare Kreaturen und Objekte sowie in die Ätherische Ebene sehen, ebenfalls bis zu 120 Fuß. Wenn der Zauber Light auf die Robe oder Daylight innerhalb von 5 Fuß gewirkt wird, bist du für 1 Minute blind (Konstitution SG 11 bzw. 15 am Ende deines Zugs, um den Effekt zu beenden). Die Augen der Robe können nicht geschlossen werden.</p>
         </description>
@@ -703,6 +703,56 @@
             <set name="cost" currency="gp">500</set>
             <set name="weight" lb="0">—</set>
             <set name="slot">ring</set>
+        </setters>
+    </element>
+    <element name="Robe der Anpassung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ROBE_DER_ANPASSUNG">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Der Brokat dieser matten, unauffälligen Robe besteht aus hauchdünnen Metallfäden in fließenden Grau-, Grün- und Brauntönen. Das Gewebe ist so strukturiert, dass die Fäden als feine arkane Leiter fungieren, die das Licht schlucken und die Konturen des Körpers mit der Umgebung verschmelzen lassen. Sobald Magie durch den Brokat fließt, passen sich die Farbpigmente der Fäden dynamisch dem Hintergrund an, ohne dass das Muster selbst bei schneller Bewegung instabil wird.</p>
+            <p>
+                <strong>Funktion:</strong> Diese Robe erfordert Einstimmung. Du kannst als Aktion die Magie des Gewandes nutzen, um die Effekte des Zaubers Selbstverkleidung (Disguise Self) auf dich zu wirken. Dieser Effekt hält so lange an, bis du ihn willentlich beendest, die Robe ablegst oder stirbst. Solange du die Robe trägst, hast du Vorteil auf Geschicklichkeitsprüfungen für Heimlichkeit, um dich zu verstecken. Wenn du versuchst, dich während der Bewegung zu verstecken, wird deine Bewegungsrate dabei nicht halbiert.</p>
+        </description>
+        <setters>
+            <set name="category">Wundergegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">1500</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+        </setters>
+    </element>
+    <element name="Robe der Verschiebung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ROBE_DER_VERSCHIEBUNG">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> In das Tuch dieser Robe ist ein asymmetrischer, wellenartiger Brokat aus Alchemistensilber eingewebt. Diese Silberfäden wirken als permanente, handwerklich präzise konstruierte Störsender für die visuelle Wahrnehmung des Betrachters, indem sie das magische Feld um den Träger herum krümmen. Das Auge kann den schimmernden Brokat niemals scharfstellen, wodurch das Abbild des Trägers stets ein Stück neben seiner realen Position flimmert. Physischer Schaden stört die feine Resonanz der Silberfäden jedoch temporär.</p>
+            <p>
+                <strong>Funktion:</strong> Diese Robe erfordert Einstimmung. Das Gewebe projiziert eine optische Täuschung deiner selbst direkt neben deiner tatsächlichen Position, wodurch alle Kreaturen Nachteil auf Angriffswürfe gegen dich haben. Wenn du Schaden erleidest, wird dieser Verschiebungseffekt deaktiviert und bleibt bis zum Beginn du deines nächsten Zuges inaktiv. Der Effekt funktioniert ebenfalls nicht, wenn du kampfunfähig bist, deine Bewegungsrate 0 beträgt oder du anderweitig an der Bewegung gehindert wirst, beispielsweise durch den Zustand festgesetzt.</p>
+        </description>
+        <setters>
+            <set name="category">Wundergegenstände</set>
+            <set name="rarity">Rare</set>
+            <set name="cost" currency="gp">4000</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+        </setters>
+    </element>
+    <element name="Ring der Botschaft (Ring of Message)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_RING_OF_MESSAGE">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser Ring aus mattem, unpoliertem Zinn besitzt keinerlei Gravuren, Edelsteine oder magische Runen an seiner Oberfläche. Er wurde bewusst so gefertigt, dass er jedem ungeschulten Auge wie ein wertloses, alltägliches Schmuckstück erscheint.</p>
+            <p>
+                <strong>Funktion:</strong> Dieser Ring erfordert keine Einstimmung. Solange du ihn trägst, kannst du mit ihm als Aktion den Zaubertrick Message (Botschaft) mit einer Reichweite von 120 Fuß wirken. Die somatische Komponente (das Deuten auf das Ziel) und die verbale Komponente (das leise Flüstern der Botschaft) müssen von dir weiterhin erbracht werden. Der Zauber dringt durch feste Objekte, wird jedoch von 1 Fuß Stein, 1 Zoll gewöhnlichem Metall, einer dünnen Schicht Blei oder 3 Fuß Holz oder Erde blockiert. Er erfordert keine freie Sichtlinie, solange du die ungefähre Richtung zum Ziel kennst.</p>
+        </description>
+        <setters>
+            <set name="keywords">ring, message, botschaft</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">none</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Ungewöhnlich</set>
         </setters>
     </element>
 </elements>
