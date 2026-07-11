@@ -358,8 +358,8 @@
             <trait name="Natürlicher Entdecker: Wald">
                 <description>In Wäldern ist Caelthorn besonders effizient beim Überleben und Reisen (z. B. Orientierung, Nahrungssuche, Spurenlesen). Entsprechende INT-/WEI-Würfe können situativ Vorteil haben.</description>
             </trait>
-            <trait name="Kampfstil: Kampf mit zwei Waffen (Two-Weapon Fighting)">
-                <description>Wenn Caelthorn im Zuge des Kampfes mit zwei Waffen einen Angriff mit der Bonusaktion ausführt, addiert er seinen Attributsmodifikator auf den Schaden.</description>
+            <trait name="Kampfstil: Bogenschütze">
+                <description>Du erhältst einen Bonus von +2 auf Angriffswürfe mit Fernkampfwaffen.</description>
             </trait>
             <trait name="Mehrfachangriff (Extra Attack)">
                 <description>Wenn Caelthorn die Angriffsaktion ausführt, kann er zwei Angriffe durchführen.</description>
@@ -397,17 +397,17 @@
         <attacks>
             <attack name="Kurzschwert (Shortsword)">
                 <type>Nahkampf</type>
-                <bonus>+5</bonus>
+                <bonus>+6</bonus>
                 <range>1,5 m</range>
                 <target>ein Ziel</target>
-                <damage>5 (1W6 + 2) Stichschaden</damage>
+                <damage>5 (1W6 + 3) Stichschaden</damage>
             </attack>
             <attack name="Langbogen (Longbow)">
                 <type>Fernkampf</type>
-                <bonus>+5</bonus>
+                <bonus>+8</bonus>
                 <range>45/180 m</range>
                 <target>ein Ziel</target>
-                <damage>6 (1W8 + 2) Stichschaden</damage>
+                <damage>6 (1W8 + 3) Stichschaden</damage>
             </attack>
         </attacks>
         <spellcasting>
