@@ -15,7 +15,7 @@
             <ac>16 (Kettenrüstung)</ac>
             <hp>44 (5W10 + 10)</hp>
             <speed>9 m</speed>
-            <initiative>+1</initiative>
+            <initiative>+3</initiative>
             <senses>Passive Wahrnehmung 14</senses>
             <languages>Tyrianisch</languages>
             <challenge>2</challenge>
@@ -56,6 +56,12 @@
             <trait name="Sturmerprobt">
                 <description>Hrothgar hat Vorteil auf Konstitutionswürfe gegen Erschöpfung durch raue Umweltbedingungen.</description>
             </trait>
+            <trait name="Gedankenschild (Maske)">
+                <description>Träger sind immun gegen magische Effekte, die ihre Gesinnung oder Gedanken lesen</description>
+            </trait>
+            <trait name="Dunkelsicht (Maske)">
+                <description>Sieht im Dunkeln bis zu 18m.</description>
+            </trait>
         </traits>
         <actions>
             <action name="Mehrfachangriff">
@@ -74,10 +80,10 @@
         <attacks>
             <attack name="Großaxt">
                 <type>Nahkampf</type>
-                <bonus>+6</bonus>
+                <bonus>+7</bonus>
                 <range>1,5 m</range>
                 <target>ein Ziel</target>
-                <damage>9 (1W12 + 3) Hiebschaden</damage>
+                <damage>9 (1W12 + 4) Hiebschaden</damage>
             </attack>
         </attacks>
         <reactions>
@@ -86,6 +92,9 @@
             </reaction>
             <reaction name="Magiertöter (Mage Slayer)">
                 <description>Wenn eine Kreatur im Umkreis von 1,5 m einen Zauber wirkt, kann Hrothgar als Reaktion einen Nahkampfangriff gegen diese Kreatur ausführen.</description>
+            </reaction>
+            <reaction name="Visage des Terrors (Maske)">
+                <description>Die Maske verzerrt sich im Moment eines Angriffs zu einer Albtraumgestalt, die den Angreifer zögern lässt. Wenn eine Kreatur, die der Krieger sehen kann, ihn mit einem Nahkampfangriff angreift, kann der Krieger seine Reaction nutzen, um der Kreatur bis zum Ende ihres aktuellen Zugs Disadvantage (Nachteil) auf alle Angriffe gegen ihn zu verleihen. Bedingung: Die Kreatur darf nicht immun gegen den Zustand Frightened (Verängstigt) sein.</description>
             </reaction>
         </reactions>
     </statblock>
@@ -144,6 +153,15 @@
             </trait>
             <trait name="Geheimnisse der Stadt (City Secrets)">
                 <description>Corren kennt die Muster und Abkürzungen des städtischen Lebens. Wenn er sich nicht im Kampf befindet, kann er (und eine Gruppe, die er führt) doppelt so schnell durch die Stadt reisen.</description>
+            </trait>
+            <trait name="Gedankenschild (Maske)">
+                <description>Träger sind immun gegen magische Effekte, die ihre Gesinnung oder Gedanken lesen</description>
+            </trait>
+            <trait name="Dunkelsicht (Maske)">
+                <description>Sieht im Dunkeln bis zu 18m.</description>
+            </trait>
+            <trait name="Maske des Schattens (Maske)">
+                <description>Verleiht Advantage auf Dexterity (Stealth) Checks. Erlaubt es, 1x pro Tag Invisibility (nur auf sich selbst) zu wirken (analog zu Ring of Invisibility / Planetar-Innate).</description>
             </trait>
         </traits>
         <attacks>
@@ -227,6 +245,15 @@
             <trait name="Arkane Abwehr (Arcane Ward)">
                 <description>Wenn Lyssa einen Bannzauber des 1. Grades oder höher wirkt, erschafft sie eine magische Schutzbarriere mit 12 Trefferpunkten (2 × Zauberstufe + INT-Modifikator = 2×5 + 2). Solange die Barriere besteht, nimmt sie Schaden an Lyssas Stelle. Wenn Lyssa erneut Bannzauber wirkt, regeneriert die Barriere Trefferpunkte in Höhe von 2 × Zaubergrad (bis zum Maximum).</description>
             </trait>
+            <trait name="Gedankenschild">
+                <description>Träger sind immun gegen magische Effekte, die ihre Gesinnung oder Gedanken lesen</description>
+            </trait>
+            <trait name="Dunkelsicht">
+                <description>Sieht im Dunkeln bis zu 18m.</description>
+            </trait>
+            <trait name="Wahre Sicht">
+                <description>Truesight bis 9m.</description>
+            </trait>
         </traits>
         <actions>
             <action name="Zauberwirken">
@@ -253,11 +280,11 @@
             <name>Zaubergelehrte (Schule der Bannmagie)</name>
             <level>5</level>
             <ability>INT</ability>
-            <saveDC>14</saveDC>
-            <attackBonus>+6</attackBonus>
+            <saveDC>15</saveDC>
+            <attackBonus>+7</attackBonus>
             <spelllist>
                 <!-- Zaubertricks -->
-                <spell id="ID_D4T_SPELL_BLADE_WARD" level="0">Klingenbann (Blade Ward)</spell>
+                <spell id="ID_D4T_SPELL_FIRE_BOLT" level="0">Feuerpfeil (Fire Bolt)</spell>
                 <spell id="ID_D4T_SPELL_MAGE_HAND" level="0">Magierhand (Mage Hand)</spell>
                 <spell id="ID_D4T_SPELL_SHOCKING_GRASP" level="0">Schockgriff (Shocking Grasp)</spell>
                 <spell id="ID_D4T_SPELL_PRESTIDIGITATION" level="0">Taschenspielerei (Prestidigitation)</spell>
@@ -266,18 +293,20 @@
                 <spell id="ID_D4T_SPELL_MAGIC_MISSILE" level="1">Magisches Geschoss (Magic Missile)</spell>
                 <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung (Mage Armor)</spell>
                 <spell id="ID_D4T_SPELL_FOG_CLOUD" level="1">Nebelwolke (Fog Cloud)</spell>
-                <spell id="ID_D4T_SPELL_CHARM_PERSON" level="1">(Person bezaubern (Charm Person))</spell>
+                <spell id="ID_D4T_SPELL_CHARM_PERSON" level="1">Person bezaubern (Charm Person)</spell>
                 <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild (Shield)</spell>
                 <spell id="ID_D4T_SPELL_DISGUISE_SELF" level="1">Selbstverkleidung (Disguise Self)</spell>
                 <spell id="ID_D4T_SPELL_FIND_FAMILIAR" level="1">(Vertrauten finden (Find Familiar))</spell>
                 <!-- 2. Grad -->
-                <spell id="ID_D4T_SPELL_ALTER_SELF" level="2">(Gestalt verändern (Alter Self))</spell>
+                <spell id="ID_D4T_SPELL_ALTER_SELF" level="2">Gestalt verändern (Alter Self)</spell>
                 <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Nebelschritt (Misty Step)</spell>
                 <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
                 <spell id="ID_D4T_SPELL_MIRROR_IMAGE" level="2">Spiegelbilder (Mirror Image)</spell>
+                <spell id="ID_D4T_SPELL_SHATTER" level="2">Zerbersten (Shatter)</spell>
                 <!-- 3. Grad -->
                 <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber (Counterspell)</spell>
                 <spell id="ID_D4T_SPELL_HASTE" level="3">Hast (Haste)</spell>
+                <spell id="ID_D4T_SPELL_FIREBALL" level="3">Feuerball (Fireball)</spell>
             </spelllist>
             <slots>
                 <slot level="1" count="4"/>
@@ -349,6 +378,15 @@
             </trait>
             <trait name="Biolumineszenz (Bioluminescence)">
                 <description>Caelthorn kann schwaches Licht erzeugen (als stimmiges, kontrollierbares Leuchten seines Körpers). Reichweite/Intensität nach eurer Sylvari-Umsetzung.</description>
+            </trait>
+            <trait name="Gedankenschild (Maske)">
+                <description>Träger sind immun gegen magische Effekte, die ihre Gesinnung oder Gedanken lesen</description>
+            </trait>
+            <trait name="Dunkelsicht (Maske)">
+                <description>Sieht im Dunkeln bis zu 18m.</description>
+            </trait>
+            <trait name="Raubtier-Blick (Maske)">
+                <description>Die Maske verleiht dem Ranger die Fähigkeit, durch Schleier, Dunkelheit und Deckung hindurch die Schwachstellen von Zielen zu erkennen. Mechanik: Die Fernkampfangriffe des Rangers ignorieren Half Cover (+2 RK) und Three-Quarter Cover (+5 RK). Zusätzlich kann er als Bonus Action für 1 Minute die Hitboxen von Kreaturen durch organische Materie sehen (erkennt die genaue Position von Kreaturen hinter Laub, Holzwänden oder im Nebel innerhalb von 60 Fuß). Bedingung: Erfordert freie Sichtlinie für den eigentlichen Schuss (kein Schießen durch dicke Steinwände), verhindert aber, dass Gegner durch Verstecken im Gebüsch oder hinter Barrikaden Boni erhalten.</description>
             </trait>
         </traits>
         <actions>
@@ -432,13 +470,13 @@
                 <description>Wenn Ilyr in seinem Zug angreift und ungerüstet ist sowie keine schweren/zweihändigen Waffen führt, kann er als Bonusaktion einen unbewaffneten Angriff ausführen. Sein Kampfkunstwürfel ist 1W6. Er kann für unbewaffnete Angriffe GE statt STÄ verwenden.</description>
             </trait>
             <trait name="Ki (5 Punkte)">
-                <description>Ilyr hat 5 Ki-Punkte. Er erhält alle verbrauchten Ki-Punkte zurück, wenn er eine kurze oder lange Rast beendet. Ki-Rettungswurf-SG: 12 (8 + Übungsbonus + WE-Modifikator).</description>
+                <description>Ilyr hat 5 Ki-Punkte. Er erhält alle verbrauchten Ki-Punkte zurück, wenn er eine kurze oder lange Rast beendet. Ki-Rettungswurf-SG: 13 (8 + Übungsbonus + WE-Modifikator + Maske).</description>
             </trait>
             <trait name="Ki: Hagel der Schläge (Flurry of Blows)">
                 <description>Direkt nachdem Ilyr die Angriffsaktion ausgeführt hat, kann er 1 Ki-Punkt ausgeben, um als Bonusaktion zwei unbewaffnete Angriffe auszuführen.</description>
             </trait>
             <trait name="Ki: Geduldige Verteidigung (Patient Defense)">
-                <description>Als Bonusaktion kann Ilyr 1 Ki-Punkt ausgeben, um bis zum Beginn seines nächsten Zuges die Aktion „Ausweichen“ zu nutzen.</description>
+                <description>Als Bonusaktion kann Ilyr 1 Ki-Punkt ausgeben, um bis zum Beginn seines nächsten Zuges die Aktion „Ausweichen“ zu nutzen. Von der Maske erhält er für die Runde zusätzlich +2 auf Rettungswürfe gegen Zauber.</description>
             </trait>
             <trait name="Ki: Schritt des Windes (Step of the Wind)">
                 <description>Als Bonusaktion kann Ilyr 1 Ki-Punkt ausgeben, um „Rennen“ oder „Rückzug“ zu nutzen. Seine Sprungweite wird für den Zug verdoppelt.</description>
@@ -460,6 +498,12 @@
             </trait>
             <trait name="Ungerüstete Bewegung (Unarmored Movement)">
                 <description>Solange Ilyr keine Rüstung trägt und keinen Schild führt, erhöht sich seine Bewegungsrate um 3 m.</description>
+            </trait>
+            <trait name="Gedankenschild">
+                <description>Träger sind immun gegen magische Effekte, die ihre Gesinnung oder Gedanken lesen</description>
+            </trait>
+            <trait name="Dunkelsicht">
+                <description>Sieht im Dunkeln bis zu 18m.</description>
             </trait>
         </traits>
         <actions>
@@ -511,6 +555,79 @@
                 <spell id="ID_D4T_SPELL_PASS_WITHOUT_TRACE" level="0">Spurloses Gehen (Pass without Trace)</spell>
                 <spell id="ID_D4T_SPELL_SILENCE" level="0">Stille (Silence)</spell>
             </spelllist>
+        </spellcasting>
+    </statblock>
+    <statblock name="Kultzauberer" id="cult-cleric">
+        <meta>
+            <size>Mittel</size>
+            <type>Mensch</type>
+            <alignment>neutral böse</alignment>
+            <ac>13</ac>
+            <hp>33 (6W8 + 6)</hp>
+            <speed>6 m</speed>
+            <initiative>+0</initiative>
+            <senses>assive Wahrnehmung 10</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>2</challenge>
+            <resistances/>
+            <immunities/>
+            <conditionImmunities/>
+        </meta>
+        <abilities>
+            <ability name="Str" score="11" bonus="+0"/>
+            <ability name="Dex" score="10" bonus="+0"/>
+            <ability name="Con" score="16" bonus="+3"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="13" bonus="+1"/>
+            <ability name="Cha" score="12" bonus="+1"/>
+        </abilities>
+        <saves>
+  </saves>
+        <skills>
+            <skill name="Religion" bonus="+2"/>
+        </skills>
+        <traits>
+            <trait name="Dunkle Hingabe">
+                <description>
+        Der Priester hat Vorteil auf Rettungswürfe gegen Bezaubern und Furcht.
+      </description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>
+        Der Priester führt zwei Angriffe mit seinem Dolch aus.
+      </description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Dolch">
+                <type>Nahkampf oder Fernkampf</type>
+                <bonus>+3</bonus>
+                <range>1,50 m oder 6/18 m</range>
+                <target>eine Kreatur</target>
+                <damage>4 (1W4 + 2) Stichschaden</damage>
+            </attack>
+        </attacks>
+        <spellcasting>
+            <stat>Wis</stat>
+            <saveDC>11</saveDC>
+            <attackBonus>+3</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_CHILL_TOUCH" level="0">Kalte Hand (Chill Touch)</spell>
+                <spell id="ID_D4T_SPELL_SACRED_FLAME" level="0">Heilige Flamme</spell>
+                <spell id="ID_D4T_SPELL_THAUMATURGY" level="0">Thaumaturgie</spell>
+                <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
+                <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden verursachen (Inflict Wounds)</spell>
+                <spell id="ID_D4T_SPELL_RAY_OF_SICKNESS" level="1">Strahl der Übelkeit (Ray of Sickness)</spell>
+                <!--<spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>-->
+                <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
+                <spell id="ID_D4T_SPELL_SILENCE" level="2">Stille (Silence)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1" count="4"/>
+                <slot level="2" count="3"/>
+            </slots>
         </spellcasting>
     </statblock>
 </encounter>
