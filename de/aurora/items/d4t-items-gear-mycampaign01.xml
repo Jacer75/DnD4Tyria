@@ -509,9 +509,9 @@
             <set name="rarity">Rare</set>
             <set name="attunement">true</set>
         </setters>
-        <rules>
-            <stat name="constitution" value="19" bonus="base" requirements="[constitution:score:18]"/>
-        </rules>
+		<rules>
+			<stat name="constitution:score:set" value="19" bonus="base" />
+		</rules>
     </element>
     <element name="Stab der Verdorrung (Staff of Withering)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_STAFF_OF_WITHERING">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
