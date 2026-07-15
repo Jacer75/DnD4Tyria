@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.4.0">
+        <update version="1.4.1">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -319,7 +319,7 @@
             <stat name="initiative" value="1"/>
         </rules>
     </element>
-    <element name="Nerains Geheimnis, verbunden" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L3">
+    <!--<element name="Nerains Geheimnis, verbunden" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L3">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
         <description>
             <p>
@@ -392,7 +392,7 @@
         <rules>
             <stat name="initiative" value="2"/>
         </rules>
-    </element>
+    </element>-->
     <element name="Talisman des Gefrorenen Herzens" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_AMULET_FROZEN_HEART">
         <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
         <description>
