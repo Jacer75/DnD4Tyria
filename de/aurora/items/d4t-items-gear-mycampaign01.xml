@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.4.1">
+        <update version="1.4.2">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -297,7 +297,7 @@
             <stat name="initiative" value="1"/>
         </rules>
     </element>
-    <element name="Nerains Geheimnis, erwacht" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L2">
+    <!--<element name="Nerains Geheimnis, erwacht" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L2">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
         <description>
             <p>
@@ -318,7 +318,7 @@
         <rules>
             <stat name="initiative" value="1"/>
         </rules>
-    </element>
+    </element>-->
     <!--<element name="Nerains Geheimnis, verbunden" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L3">
         <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
         <description>
