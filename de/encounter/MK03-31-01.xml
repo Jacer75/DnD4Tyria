@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-31 Im Hain</name>
+        <file>MK03-31-01.xml</file>
+        <abenteuer>MK03-31 Im Hain</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Seris Caelum" id="id-seris-caelum">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Mensch)</type>
+            <alignment>neutral gut</alignment>
+            <ac>10</ac>
+            <!-- Rüstungsklasse des NSC -->
+            <hp>20 (3W6 + 6)</hp>
+            <!-- Trefferpunkte inklusive Würfelangabe -->
+            <speed>9 m</speed>
+            <!-- Bewegungsrate in Metern -->
+            <initiative>+0</initiative>
+            <!-- Finaler Initiativbonus, der direkt gewürfelt wird -->
+            <senses>Passive Wahrnehmung 12</senses>
+            <!-- Passive Sinne wie Wahrnehmung, ggf. ergänzt um Dunkelsicht etc. -->
+            <languages>Tyrianisch, Elonisch, Canthanisch, Charrisch</languages>
+            <!-- Gesprochene Sprachen -->
+            <challenge>1</challenge>
+            <!-- Herausforderungsgrad -->
+            <proficiency>+2</proficiency>
+            <!-- Kompetenzbonus -->
+        </meta>
+        <abilities>
+            <str score="9" mod="-1"/>
+            <dex score="11" mod="+0"/>
+            <con score="14" mod="+2"/>
+            <int score="16" mod="+3"/>
+            <wis score="15" mod="+2"/>
+            <cha score="13" mod="+1"/>
+        </abilities>
+        <saves>
+            <save name="INT">+5</save>
+            <save name="WIS">+4</save>
+        </saves>
+        <skills>
+            <skill name="Arkane Kunde" bonus="+5"/>
+            <skill name="Geschichte" bonus="+5"/>
+            <skill name="Motiv erkennen" bonus="+4"/>
+            <skill name="Nachforschungen" bonus="+5"/>
+        </skills>
+        <traits>
+            <trait name="Arkane Erholung (1/Kurze Rast)">
+                <description>Nach einer kurzen Rast kann Seris Zauberplätze bis zu einer kombinierten Stufe von 1 oder niedriger zurückgewinnen.</description>
+            </trait>
+            <trait name="Omen (Portent)">
+                <description>Nach jeder langen Rast würfelt Seris 2W20 und notiert die Ergebnisse. Sie kann eines dieser Ergebnisse als Ersatz für einen Angriffswurf, Rettungswurf oder Attributswurf verwenden, den sie oder eine Kreatur, die sie sehen kann, macht (entschieden vor dem Wurf).</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Dolch">
+                <description>Nahkampf- oder Fernkampfangriff: +2 zum Treffen, Reichweite 1,5 m oder 6/18 m, ein Ziel. Treffer: 2 (1W4) Stichschaden.</description>
+            </action>
+        </actions>
+        <spellcasting>
+            <name>Zaubergelehrter (Schule der Erkenntnismagie)</name>
+            <level>3</level>
+            <ability>INT</ability>
+            <saveDC>13</saveDC>
+            <!-- Rettungswurf-SG für Zauber -->
+            <attackBonus>+5</attackBonus>
+            <!-- Angriffsbonus für Zauberangriffe -->
+            <spelllist>
+                <!-- Zaubertricks -->
+                <spell id="ID_D4T_SPELL_MENDING" level="0">Ausbessern (Mending)</spell>
+                <spell id="ID_D4T_SPELL_MINOR_ILLUSION" level="0">Einfache Illusion (Minor Illusion)</spell>
+                <spell id="ID_D4T_SPELL_ACID_SPLASH" level="0">Säurespritzer (Acid Splash)</spell>
+                <!-- 1. Grad -->
+                <spell id="ID_D4T_SPELL_IDENTIFY" level="1">Identifizieren (Identify)</spell>
+                <spell id="ID_D4T_SPELL_DETECT_MAGIC" level="1">Magie entdecken (Detect Magic)</spell>
+                <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung (Mage Armor)</spell>
+                <spell id="ID_D4T_SPELL_CHARM_PERSON" level="1">Person bezaubern (Charm Person)</spell>
+                <spell id="ID_D4T_SPELL_SLEEP" level="1">Schlaf (Sleep)</spell>
+                <spell id="ID_D4T_SPELL_COMPREHEND_LANGUAGES" level="1">Sprachen verstehen (Comprehend Languages)</spell>
+                <!-- 2. Grad -->
+                <spell id="ID_D4T_SPELL_DETECT_THOUGHTS" level="2">Gedanken wahrnehmen (Detect Thoughts)</spell>
+                <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Nebelschritt (Misty Step)</spell>
+                <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1">4</slot>
+                <slot level="2">2</slot>
+            </slots>
+        </spellcasting>
+    </statblock>
+    <statblock name="Kultzauberer" id="cult-cleric">
+        <meta>
+            <size>Mittel</size>
+            <type>Mensch</type>
+            <alignment>neutral böse</alignment>
+            <ac>13</ac>
+            <hp>33 (6W8 + 6)</hp>
+            <speed>6 m</speed>
+            <initiative>+0</initiative>
+            <senses>assive Wahrnehmung 10</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>2</challenge>
+            <resistances/>
+            <immunities/>
+            <conditionImmunities/>
+        </meta>
+        <abilities>
+            <ability name="Str" score="11" bonus="+0"/>
+            <ability name="Dex" score="10" bonus="+0"/>
+            <ability name="Con" score="16" bonus="+3"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="13" bonus="+1"/>
+            <ability name="Cha" score="12" bonus="+1"/>
+        </abilities>
+        <saves>
+  </saves>
+        <skills>
+            <skill name="Religion" bonus="+2"/>
+        </skills>
+        <traits>
+            <trait name="Dunkle Hingabe">
+                <description>
+        Der Priester hat Vorteil auf Rettungswürfe gegen Bezaubern und Furcht.
+      </description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>
+        Der Priester führt zwei Angriffe mit seinem Dolch aus.
+      </description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Dolch">
+                <type>Nahkampf oder Fernkampf</type>
+                <bonus>+3</bonus>
+                <range>1,50 m oder 6/18 m</range>
+                <target>eine Kreatur</target>
+                <damage>4 (1W4 + 2) Stichschaden</damage>
+            </attack>
+        </attacks>
+        <spellcasting>
+            <stat>Wis</stat>
+            <saveDC>11</saveDC>
+            <attackBonus>+3</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_CHILL_TOUCH" level="0">Kalte Hand (Chill Touch)</spell>
+                <spell id="ID_D4T_SPELL_SACRED_FLAME" level="0">Heilige Flamme</spell>
+                <spell id="ID_D4T_SPELL_THAUMATURGY" level="0">Thaumaturgie</spell>
+                <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (Command)</spell>
+                <spell id="ID_D4T_SPELL_INFLICT_WOUNDS" level="1">Wunden verursachen (Inflict Wounds)</spell>
+                <spell id="ID_D4T_SPELL_RAY_OF_SICKNESS" level="1">Strahl der Übelkeit (Ray of Sickness)</spell>
+                <!--<spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (Hold Person)</spell>-->
+                <spell id="ID_D4T_SPELL_RAY_OF_ENFEEBLEMENT" level="2">Schwächestrahl (Ray of Enfeeblement)</spell>
+                <spell id="ID_D4T_SPELL_SILENCE" level="2">Stille (Silence)</spell>
+            </spelllist>
+            <slots>
+                <slot level="1" count="4"/>
+                <slot level="2" count="3"/>
+            </slots>
+        </spellcasting>
+    </statblock>    
+</encounter>
