@@ -187,4 +187,55 @@
             </slots>
         </spellcasting>
     </statblock>
+    <statblock name="Soldat der Wachsamen" id="ID_D4T_NPC_WACHSAMENTRUPP_SOLDAT">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid</type>
+            <alignment>rechtschaffend gut</alignment>
+            <ac>16</ac>
+            <hp>32 (5W8 + 10)</hp>
+            <speed>9 m</speed>
+            <initiative>+0</initiative>
+            <senses>Passive Wahrnehmung 10</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>1/2</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="15" bonus="+2"/>
+            <ability name="Dex" score="11" bonus="+0"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="10" bonus="+0"/>
+            <ability name="Cha" score="11" bonus="+0"/>
+        </abilities>
+        <skills>
+            <skill name="Athletik" bonus="+4"/>
+        </skills>
+        <traits>
+            <trait name="Rudeltaktik">
+                <description>Der Soldat hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn sich mindestens einer der Verbündeten des Soldaten innerhalb von 1,5 Metern um die Kreatur befindet und dieser Verbündete nicht kampfunfähig ist.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Der Soldat führt zwei Nahkampfangriffe aus.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Langschwert">
+                <type>Nahkampf</type>
+                <bonus>+4</bonus>
+                <range>1,5 m</range>
+                <target>eine Kreatur</target>
+                <damage>6 (1W8 + 2) Hiebschaden</damage>
+            </attack>
+            <attack name="Schwere Armbrust">
+                <type>Fernkampf</type>
+                <bonus>+2</bonus>
+                <range>30/120 m</range>
+                <target>ein Ziel</target>
+                <damage>5 (1W10) Stichschaden</damage>
+            </attack>
+        </attacks>
+    </statblock>
 </encounter>
