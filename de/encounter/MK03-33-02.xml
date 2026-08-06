@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-33 Wachsame</name>
+        <file>MK03-33-02.xml</file>
+        <abenteuer>MK03-33 Kesselring</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Rokh Eisenspur" id="ID_D4T_NPC_ROKH_EISENSPUR">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Charr)</type>
+            <alignment>rechtschaffen gut</alignment>
+            <ac>19</ac>
+            <hp>58</hp>
+            <speed>9 m</speed>
+            <initiative>+2</initiative>
+            <senses>Passive Wahrnehmung 14</senses>
+            <languages>Tyrianisch, Charrisch</languages>
+            <challenge>3</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="16" bonus="+3"/>
+            <ability name="Dex" score="15" bonus="+2"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="11" bonus="+0"/>
+            <ability name="Wis" score="12" bonus="+1"/>
+            <ability name="Cha" score="8" bonus="-1"/>
+        </abilities>
+        <saves>
+            <save ability="Str" bonus="+6"/>
+            <save ability="Con" bonus="+5"/>
+        </saves>
+        <skills>
+            <skill name="Athletik" bonus="+6"/>
+            <skill name="Einschüchtern" bonus="+2"/>
+            <skill name="Wahrnehmung" bonus="+4"/>
+            <skill name="Überlebenskunst" bonus="+4"/>
+        </skills>
+        <traits>
+            <trait name="Erweiterte Sinne">
+                <description>Rokh hat Vorteil auf Weisheitswürfe (Wahrnehmung), die auf Hören basieren.</description>
+            </trait>
+            <trait name="Charr-Klauen">
+                <description>Unbewaffnete Angriffe von Rokh verursachen 1W4 Hiebschaden. Rokh gilt als bewaffnet, wenn er seine Klauen einsetzt.</description>
+            </trait>
+            <trait name="Kampfstil: Verteidigung">
+                <description>Solange Rokh eine Rüstung trägt, erhält er +1 auf seine Rüstungsklasse (bereits eingerechnet).</description>
+            </trait>
+            <trait name="Meister der schweren Rüstung (Heavy Armor Master)">
+                <description>Mit schwerer Rüstung: Reduziert Wucht-, Stich- und Hiebschaden durch nichtmagische Waffen um 3.</description>
+            </trait>
+            <trait name="Zusätzlicher Angriff (Extra Attack)">
+                <description>Rokh kann zweimal angreifen, wenn er in seinem Zug die Angriffsaktion ausführt.</description>
+            </trait>
+            <trait name="Kampfüberlegenheit (Kampfmeister)">
+                <description>Rokh hat 4 Überlegenheitswürfel (W8). Rettungswurf-SG 13. Ein Manöver kann pro Angriff nur einmal eingesetzt werden.</description>
+            </trait>
+            <trait name="Manöver: Manövrierender Angriff (Maneuvering Attack)">
+                <description>Wenn Rokh eine Kreatur mit einem Waffenangriff trifft, kann er 1 Überlegenheitswürfel ausgeben, um den Schaden um 1W8 zu erhöhen. Ein Verbündeter, den Rokh sehen kann, kann sich als Reaktion bis zur Hälfte seiner Bewegungsrate bewegen, ohne dabei Gelegenheitsangriffe durch das Ziel auszulösen.</description>
+            </trait>
+            <trait name="Manöver: Schlag des Befehlshabers (Commander's Strike)">
+                <description>Wenn Rokh die Angriffsaktion ausführt, kann er 1 Überlegenheitswürfel ausgeben, um auf einen Angriff zu verzichten und stattdessen einem Verbündeten einen Angriff zu befehlen. Dieser Verbündete kann als Reaktion sofort einen Waffenangriff ausführen und erhält den Überlegenheitswürfel als Bonus auf den Schaden.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Rokh führt zwei Angriffe mit dem Langschwert aus.</description>
+            </action>
+            <action name="Durchschnaufen (Second Wind) (1/Kurze Rast)">
+                <description>(Bonus) Rokh erhält 1W10 + 5 Trefferpunkte zurück.</description>
+            </action>
+            <action name="Sammeln (Rally)">
+                <description>(Bonus) Rokh gibt 1 Überlegenheitswürfel aus und wählt einen Verbündeten, den er sehen oder hören kann. Dieser erhält temporäre Trefferpunkte in Höhe des Überlegenheitswurfs + 1.</description>
+            </action>
+            <action name="Raubtierhafte Bewegung (1/Lange Rast)">
+                <description>(Bonus) Rokh erhöht für diesen Zug seine Bewegungsrate um 6 m und ignoriert schwieriges Gelände.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Langschwert (Longsword)">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>6 (1W8 + 3) Hiebschaden</damage>
+            </attack>
+            <attack name="Charr-Klauen">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>4 (1W4 + 2) Hiebschaden</damage>
+            </attack>
+        </attacks>
+        <reactions>
+            <reaction name="Wächter (Sentinel)">
+                <description>Gelegenheitsangriffe von Rokh reduzieren die Bewegung des Ziels bis zum Ende des aktuellen Zuges auf 0. Kreaturen provozieren Gelegenheitsangriffe von Rokh auch dann, wenn sie die Aktion Rückzug verwenden. Wenn eine Kreatur innerhalb von 1,5 m ein anderes Ziel als Rokh angreift, kann Rokh als Reaktion einen Nahkampfangriff gegen diese Kreatur ausführen.</description>
+            </reaction>
+        </reactions>
+    </statblock>
+    <statblock name="Elara Lichtbringer" id="ID_D4T_NPC_ELARA_LICHTBRINGER">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Mensch)</type>
+            <alignment>Rechtschaffen Gut</alignment>
+            <ac>18 (Plattenrüstung)</ac>
+            <hp>60 (6W10 + 12)</hp>
+            <speed>9 m</speed>
+            <initiative>+1</initiative>
+            <senses>Passive Wahrnehmung 10</senses>
+            <languages>Tyrianisch, Charrisch, Ascalonisch</languages>
+            <challenge>4</challenge>
+            <vulnerabilities/>
+            <resistances/>
+            <immunities/>
+            <conditionImmunities/>
+        </meta>
+        <abilities>
+            <ability name="Str" score="18" bonus="+3"/>
+            <ability name="Dex" score="13" bonus="+1"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="9" bonus="-1"/>
+            <ability name="Wis" score="11" bonus="+0"/>
+            <ability name="Cha" score="15" bonus="+2"/>
+        </abilities>
+        <saves>
+            <save ability="Wis" bonus="+3"/>
+            <save ability="Cha" bonus="+5"/>
+        </saves>
+        <skills>
+            <skill name="Athletik" bonus="+6"/>
+            <skill name="Geschichte" bonus="+2"/>
+            <skill name="Medizin" bonus="+3"/>
+            <skill name="Überzeugen" bonus="+5"/>
+        </skills>
+        <traits>
+            <trait name="Schutz-Aura">
+                <description>Solange Elara bei Bewusstsein ist, erhalten sie und alle befreundeten Kreaturen innerhalb von 3m einen Bonus auf Rettungswürfe in Höhe ihres Charismamodifikators (+5).</description>
+            </trait>
+            <trait name="Meisterschaft schwerer Waffen">
+                <description>Bei einem kritischen Treffer oder wenn sie eine Kreatur auf 0 TP reduziert, kann Elara als Bonusaktion einen Nahkampfangriff ausführen. Vor einem Angriff mit einer schweren Waffe kann sie wählen, einen Malus von -5 auf den Trefferwurf zu nehmen, um +10 auf den Schaden zu erhalten.</description>
+            </trait>
+            <trait name="Göttliches Gespür (3/Tag)">
+                <description>Als Aktion kann Elara die Position von Himmlischen, Teuflischen und Untoten sowie geweihten/entweihten Orten in einem Umkreis von 18m spüren.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Elara führt zwei Nahkampfangriffe aus.</description>
+            </action>
+            <action name="Handauflegen (30 TP)">
+                <description>Elara kann eine Kreatur berühren und Trefferpunkte aus einem Pool von 30 TP regenerieren oder eine Krankheit/ein Gift heilen (kostet 5 TP aus dem Pool).</description>
+            </action>
+            <action name="Göttliche Macht fokussieren: Heilige Waffe">
+                <description>Für 1 Minute addiert Elara +2 auf Angriffswürfe mit ihrer Waffe. Die Waffe leuchtet und zählt als magisch.</description>
+            </action>
+            <action name="Göttliche Macht fokussieren: Die Unheiligen vertreiben">
+                <description>Teuflische und Untote im Umkreis von 9m müssen einen Weisheitsrettungswurf (SG 13) bestehen oder werden für 1 Minute vertrieben.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Zweihänder">
+                <type>Nahkampf</type>
+                <bonus>+5</bonus>
+                <range>1,50 m</range>
+                <target>ein Ziel</target>
+                <damage>10 (2W6 + 3) Hiebschaden</damage>
+            </attack>
+        </attacks>
+        <spellcasting>
+            <stat>Cha</stat>
+            <saveDC>13</saveDC>
+            <attackBonus>+5</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_BLESS" level="1">Segnen</spell>
+                <spell id="ID_D4T_SPELL_DIVINE_FAVOR" level="1">Göttliche Gunst</spell>
+                <spell id="ID_D4T_SPELL_CURE_WOUNDS" level="1">Wunden heilen</spell>
+                <spell id="ID_D4T_SPELL_AID" level="2">Beistand</spell>
+                <spell id="ID_D4T_SPELL_MAGIC_WEAPON" level="2">Magische Waffe</spell>
+                <spell id="ID_D4T_SPELL_ZONE_OF_TRUTH" level="2">Zone der Wahrheit</spell>
+            </spelllist>
+            <slots>
+                <slot level="1" count="4"/>
+                <slot level="2" count="2"/>
+            </slots>
+        </spellcasting>
+    </statblock>
+</encounter>
