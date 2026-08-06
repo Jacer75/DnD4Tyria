@@ -58,4 +58,88 @@
             </attack>
         </attacks>
     </statblock>
+    <statblock name="Albrecht Kesselring" id="ID_D4T_NPC_ALBRECHT_KESSELRING">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid</type>
+            <alignment>neutral</alignment>
+            <ac>14</ac>
+            <hp>52 (8W8 + 16)</hp>
+            <speed>9 m</speed>
+            <initiative>+1</initiative>
+            <senses>Passive Wahrnehmung 15</senses>
+            <languages>Gefährten-Handelssprache, Krytanisch, Elonisch, Charr</languages>
+            <challenge>4</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="10" bonus="+0"/>
+            <ability name="Dex" score="12" bonus="+1"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="14" bonus="+2"/>
+            <ability name="Wis" score="14" bonus="+2"/>
+            <ability name="Cha" score="18" bonus="+4"/>
+        </abilities>
+        <saves>
+            <save ability="Wis" bonus="+5"/>
+            <save ability="Cha" bonus="+7"/>
+        </saves>
+        <skills>
+            <skill name="Täuschen" bonus="+10"/>
+            <skill name="Überzeugen" bonus="+10"/>
+            <skill name="Motiv erkennen" bonus="+8"/>
+            <skill name="Wahrnehmung" bonus="+5"/>
+        </skills>
+        <traits>
+            <trait name="Aura der Autorität">
+                <description>Verbündete im Umkreis von 9 m, die Kesselring hören und sehen können, erhalten Vorteil auf Rettungswürfe gegen Furcht und Bezauberung.</description>
+            </trait>
+            <trait name="Gerissener Verstand">
+                <description>Kesselring hat Vorteil auf Rettungswürfe gegen Bezauberung und Magie, die seine Gedanken lesen oder seine Gesinnung aufspüren würde.</description>
+            </trait>
+            <trait name="Magischer Gegenstand: Ring der Zuflucht (1/Tag)">
+                <description>Als Reaktion auf erlittenen Schaden teleportiert sich Kesselring sofort 9 m weit in eine unbesetzte Zone und erhält +5 RK bis zum Beginn seines nächsten Zuges.</description>
+            </trait>
+            <trait name="Magischer Gegenstand: Amulett der Zungen &amp; Beeinflussung">
+                <description>Ermöglicht Kesselring, die Zauber Person bezaubern (SG 15) und Befehl (SG 15) jeweils 2-mal pro Rast ohne Komponenten zu wirken.</description>
+            </trait>
+            <trait name="Magischer Gegenstand: Rauchbombe des Ordens (1/Tagesrast)">
+                <description>Als Bonusaktion wirft Kesselring ein kleines Metallkügelchen auf den Boden. Eine mächtige Wolke aus magischem Nebel entfaltet sich in einem Radius von 6 m (analog Fog Cloud). Kesselring nutzt den Nebel zur Flucht.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Kesselring führt zwei Angriffe aus (entweder mit seinem verzierten Dolch oder durch den Befehl an seine Wachen).</description>
+            </action>
+            <action name="Listiger Rückzug">
+                <description>Wenn Kesselring angegriffen wird oder sich eine feindliche Kreatur in 1,5 m Reichweite befindet, kann er sich als Bonusaktion (Disengage) lösen und seine volle Bewegungsrate hinter eine Deckung oder hinter eine Wache nutzen.</description>
+            </action>
+            <action name="Machtwort der Täuschung (1/Rast)">
+                <description>Kesselring richtet das Wort an eine Kreatur innerhalb von 9 m, die ihn hören kann. Das Ziel muss einen Weisheitsrettungswurf (SG 15) bestehen oder ist bis zum Ende ihres nächsten Zuges betäubt.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Verzierter Gift-Dolch">
+                <type>Nahkampf</type>
+                <bonus>+4</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>3 (1W4 + 1) Hiebschaden plus 7 (2W6) Giftschaden (Konstitutionsrettungswurf SG 13 halbiert den Giftschaden)</damage>
+            </attack>
+        </attacks>
+        <reactions>
+            <reaction name="Befehl zum Schutz">
+                <description>Kesselring rügt seine Beschützer. Eine verbündete Wache innerhalb von 9 m, die Kesselring hören kann, darf sofort ihre Reaktion nutzen, um einen Nahangriff auszuführen oder sich vor Kesselring zu werfen (Kesselring erhält halbe oder volle Deckung).</description>
+            </reaction>
+        </reactions>
+        <spellcasting>
+            <stat>Cha</stat>
+            <saveDC>15</saveDC>
+            <attackBonus>+6</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_CHARM_PERSON" level="1">Person bezaubern (2/Rast über Amulett)</spell>
+                <spell id="ID_D4T_SPELL_COMMAND" level="1">Befehl (2/Rast über Amulett)</spell>
+                <spell id="ID_D4T_SPELL_FOG_CLOUD" level="1">Nebelwolke (1/Rast über Rauchbombe)</spell>
+            </spelllist>
+        </spellcasting>
+    </statblock>
 </encounter>
