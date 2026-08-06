@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-33 Kesselring-Anwesen</name>
+        <file>MK03-33-01.xml</file>
+        <abenteuer>MK03-33 Kesselring</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Kesselrings Schläger" id="ID_D4T_NPC_KESSELRINGS_SCHLAEGER">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid</type>
+            <alignment>jede nicht-gute Gesinnung</alignment>
+            <ac>11</ac>
+            <hp>32 (5W8 + 10)</hp>
+            <speed>9 m</speed>
+            <initiative>+0</initiative>
+            <senses>Passive Wahrnehmung 10</senses>
+            <languages>Eine beliebige Sprache (meist Tyrianisch)</languages>
+            <challenge>1/2</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="15" bonus="+2"/>
+            <ability name="Dex" score="11" bonus="+0"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="10" bonus="+0"/>
+            <ability name="Wis" score="10" bonus="+0"/>
+            <ability name="Cha" score="11" bonus="+0"/>
+        </abilities>
+        <skills>
+            <skill name="Einschüchtern" bonus="+2"/>
+        </skills>
+        <traits>
+            <trait name="Rudeltaktik">
+                <description>Der Schläger hat Vorteil auf einen Angriffswurf gegen eine Kreatur, wenn sich mindestens einer der Verbündeten des Schlägers innerhalb von 1,5 Metern um die Kreatur befindet und dieser Verbündete nicht kampfunfähig ist.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Der Schläger führt zwei Nahkampfangriffe aus.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Keule">
+                <type>Nahkampf</type>
+                <bonus>+4</bonus>
+                <range>1,5 m</range>
+                <target>eine Kreatur</target>
+                <damage>5 (1W6 + 2) Wuchtschaden</damage>
+            </attack>
+            <attack name="Schwere Armbrust">
+                <type>Fernkampf</type>
+                <bonus>+2</bonus>
+                <range>30/120 m</range>
+                <target>ein Ziel</target>
+                <damage>5 (1W10) Stichschaden</damage>
+            </attack>
+        </attacks>
+    </statblock>
+</encounter>
