@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-35-02 Meister</name>
+        <file>MK03-35-02.xml</file>
+        <abenteuer>MK03-35 Meister</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+<statblock name="Der Meister der Gerüchte" id="ID_D4T_NPC">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid</type>
+    <alignment>Jede Ausrichtung</alignment>
+    <ac>12 (15 mit Magierüstung)</ac>
+    <hp>97</hp>
+    <speed>6 m</speed>
+    <initiative>+2</initiative>
+    <senses>Passive Wahrnehmung 17</senses>
+    <languages>Gemeinsprache, Tiefensprache, Telepathie 18 m</languages>
+    <challenge>11</challenge>
+    <vulnerabilities/>
+    <resistances/>
+    <immunities/>
+    <conditionImmunities/>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="8" bonus="-1"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="14" bonus="+2"/>
+    <ability name="Int" score="20" bonus="+5"/>
+    <ability name="Wis" score="16" bonus="+3"/>
+    <ability name="Cha" score="14" bonus="+2"/>
+  </abilities>
+
+  <saves>
+    <save ability="Int" bonus="+9"/>
+    <save ability="Wis" bonus="+7"/>
+  </saves>
+
+  <skills>
+    <skill name="Arcana" bonus="+9"/>
+    <skill name="Täuschung" bonus="+10"/>
+    <skill name="Einsicht" bonus="+7"/>
+    <skill name="Wahrnehmung" bonus="+7"/>
+    <skill name="Heimlichkeit" bonus="+6"/>
+  </skills>
+
+  <traits>
+    <trait name="Trugbild-Platzwechsel (Bonusaktion)">
+      <description>Der Meister tauscht teleportativ die Position mit einer seiner noch bestehenden Illusionen von Schatten-Täuschung.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Legendäre Resistenzen (3/Tag) – Legendär">
+      <description>Schlägt der Meister einen Rettungswurf fehl, kann er stattdessen wählen, ihn zu bestehen.</description>
+    </action>
+    <action name="Schatten-Täuschung – Legendär">
+      <description>Der Meister beschwört magisch 4 vollkommen identische, greifbare Illusionen von sich selbst in unbesetzten Feldern, die er innerhalb von 18 m sehen kann. Die Illusionen halten 1 Minute lang oder bis sie Schaden erleiden (AC 12, 1 HP). Als Teil dieser Aktion (und jedes Mal, wenn er in seinen folgenden Zügen eine Bonusaktion nutzt) kann der Meister sofort unsichtbar werden und seinen Platz teleportativ mit einer der Illusionen tauschen.
+Hinweis: Blickt ein Spieler auf den Meister oder greift ihn an, muss er mit einem Würfelwurf (z. B. d5) zufällig bestimmen, ob er das Original oder ein Trugbild angreift, solange die Illusionen bestehen.</description>
+    </action>
+    <action name="Ritual-Aktion: Deaktivierung der Sicherheit – Legendär">
+      <description>Deaktiviert die Schutzrunen. Siehe Eskalations-Countdown.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Dolch der Schatten">
+      <type>Nahkampf oder Fernkampf</type>
+      <bonus>+6</bonus>
+      <range>1,50m oder 6m/18m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W4 + 2) Hiebschaden plus 14 (4W6) Psychischer Schaden</damage>
+    </attack>
+  </attacks>
+
+  <spellcasting>
+    <stat>Int</stat>
+    <saveDC>17</saveDC>
+    <attackBonus>+9</attackBonus>
+    <spelllist>
+      <spell id="ID_D4T_SPELL_MAGE_HAND" level="0">Mage Hand (Zaubertrick)</spell>
+      <spell id="ID_D4T_SPELL_MINOR_ILLUSION" level="0">Minor Illusion (Zaubertrick)</spell>
+      <spell id="ID_D4T_SPELL_RAY_OF_FROST" level="0">Ray of Frost (Zaubertrick)</spell>
+      <spell id="ID_D4T_SPELL_PRESTIDIGITATION" level="0">Prestidigitation (Zaubertrick)</spell>
+      <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Mage Armor (1. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_SHIELD" level="1">Shield (1. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_MAGIC_MISSILE" level="1">Magic Missile (1. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_MIRROR_IMAGE" level="2">Mirror Image (2. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_MISTY_STEP" level="2">Misty Step (2. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_HOLD_PERSON" level="2">Person festhalten (2. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber (3. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_DISPEL_MAGIC" level="3">Magie bannen (3. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_MAJOR_IMAGE" level="3">Major Image (3. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_DIMENSION_DOOR" level="4">Dimensionstür (4. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_PHANTASMAL_KILLER" level="4">Phantasmal Killer (4. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_DOMINATE_PERSON" level="5">Person beherrschen (5. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_MISLEAD" level="5">Mislead (5. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_PROGRAMMED_ILLUSION" level="6">Programmed Illusion (6. Stufe)</spell>
+      <spell id="ID_D4T_SPELL_MIRAGE_ARCANE" level="7">Mirage Arcane (7. Stufe)</spell>
+    </spelllist>
+    <slots>
+      <slot level="1" count="4"/>
+      <slot level="2" count="3"/>
+      <slot level="3" count="3"/>
+      <slot level="4" count="3"/>
+      <slot level="5" count="2"/>
+      <slot level="6" count="1"/>
+      <slot level="7" count="1"/>
+    </slots>
+  </spellcasting>
+</statblock>
+<statblock name="Verderbnis" id="ID_D4T_MONSTER">
+  <meta>
+    <size>Groß</size>
+    <type>Schreckensgestalt</type>
+    <alignment>chaotisch böse</alignment>
+    <ac>14</ac>
+    <hp>114 (12W10 + 48)</hp>
+    <speed>9 m, Fliegen 18 m</speed>
+    <initiative>+0</initiative>
+    <senses>Dunkelsicht 18 m, Passive Wahrnehmung 18</senses>
+    <languages>versteht Drakisch, kann aber nicht sprechen</languages>
+    <challenge>6</challenge>
+    <vulnerabilities/>
+    <resistances/>
+    <immunities/>
+    <conditionImmunities/>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="19" bonus="+4"/>
+    <ability name="Dex" score="11" bonus="+0"/>
+    <ability name="Con" score="19" bonus="+4"/>
+    <ability name="Int" score="3" bonus="-4"/>
+    <ability name="Wis" score="14" bonus="+2"/>
+    <ability name="Cha" score="10" bonus="+0"/>
+  </abilities>
+
+  <skills>
+    <skill name="Wahrnehmung" bonus="+8"/>
+  </skills>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>Die Verderbnis führt drei Angriffe aus: einen mit ihrem Biss, einen mit ihren Hörnern und einen mit ihren Klauen. Wenn ihr Verderbnisatem verfügbar ist, kann sie diesen anstelle des Bisses oder der Hörner einsetzen.</description>
+    </action>
+    <action name="Verderbnis (Wiederaufladung 5–6)">
+      <description>Der Drachenkopf stößt Verderbnis in einem 4,5-Meter-Kegel aus. Jede Kreatur in diesem Bereich muss einen Geschicklichkeitsrettungswurf gegen SG 15 ablegen. Bei einem misslungenen Rettungswurf erleidet sie 31 (7W8) Feuerschaden, bei einem erfolgreichen die Hälfte.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Biss">
+      <type>Nahkampf</type>
+      <bonus>+7</bonus>
+      <range>1,50m</range>
+      <target>ein Ziel</target>
+      <damage>11 (2W6 + 4) Stichschaden</damage>
+    </attack>
+    <attack name="Hörner">
+      <type>Nahkampf</type>
+      <bonus>+7</bonus>
+      <range>1,50m</range>
+      <target>ein Ziel</target>
+      <damage>10 (1W12 + 4) Wuchtschaden</damage>
+    </attack>
+    <attack name="Klauen">
+      <type>Nahkampf</type>
+      <bonus>+7</bonus>
+      <range>1,50m</range>
+      <target>ein Ziel</target>
+      <damage>11 (2W6 + 4) Hiebschaden</damage>
+    </attack>
+  </attacks>
+</statblock>
+<statblock name="Schatten" id="ID_D4T_MONSTER">
+  <meta>
+    <size>Mittel</size>
+    <type>Untoter</type>
+    <alignment>chaotisch böse</alignment>
+    <ac>12</ac>
+    <hp>22 (5W8)</hp>
+    <speed>0 m, Fliegen 15 m (Schweben)</speed>
+    <initiative>+2</initiative>
+    <senses>Dunkelsicht 18 m, Passive Wahrnehmung 10</senses>
+    <languages>versteht alle Sprachen, die er zu Lebzeiten kannte, kann aber nicht sprechen</languages>
+    <challenge>1</challenge>
+    <vulnerabilities/>
+    <resistances>Säure, Kälte, Feuer, Blitz, Donner; Wucht, Stich und Hieb von nichtmagischen Waffen</resistances>
+    <immunities>Nekrotisch, Gift</immunities>
+    <conditionImmunities>Bezaubert, Erschöpfung, Gepackt, Gelähmt, Versteinert, Vergiftet, Liegend, Festgehalten, Bewusstlos</conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="1" bonus="-5"/>
+    <ability name="Dex" score="14" bonus="+2"/>
+    <ability name="Con" score="11" bonus="+0"/>
+    <ability name="Int" score="10" bonus="+0"/>
+    <ability name="Wis" score="10" bonus="+0"/>
+    <ability name="Cha" score="11" bonus="+0"/>
+  </abilities>
+
+  <traits>
+    <trait name="Körperlose Bewegung">
+      <description>Der Schatten kann sich durch andere Kreaturen und Objekte bewegen, als wären sie schwieriges Gelände. Er erleidet 5 (1W10) Kraftschaden, wenn er seinen Zug innerhalb eines Objekts beendet.</description>
+    </trait>
+    <trait name="Sonnenlichtempfindlichkeit">
+      <description>Solange er sich im Sonnenlicht befindet, hat der Schatten Nachteil bei Angriffswürfen sowie bei Weisheitswürfen (Wahrnehmung), die auf Sicht basieren.</description>
+    </trait>
+  </traits>
+
+  <attacks>
+    <attack name="Lebensentzug">
+      <type>Nahkampf-Zauberangriff</type>
+      <bonus>+4</bonus>
+      <range>1,50m</range>
+      <target>eine Kreatur</target>
+      <damage>10 (3W6) nekrotischer Schaden. Das Ziel muss einen Konstitutionsrettungswurf gegen SG 10 bestehen, andernfalls wird sein Trefferpunkte-Maximum um den erlittenen Schaden reduziert. Diese Reduzierung hält an, bis die Kreatur eine lange Rast beendet. Das Ziel stirbt, wenn dieser Effekt sein Trefferpunkte-Maximum auf 0 reduziert.</damage>
+    </attack>
+  </attacks>
+</statblock>
+<statblock name="Auferstandener Jotun" id="ID_D4T_MONSTER">
+  <meta>
+    <size>Groß</size>
+    <type>Untoter</type>
+    <alignment>neutral böse</alignment>
+    <ac>8</ac>
+    <hp>85 (9W10 + 36)</hp>
+    <speed>9 m</speed>
+    <initiative>-2</initiative>
+    <senses>Dunkelsicht 18 m, Passive Wahrnehmung 8</senses>
+    <languages>versteht Gemeinsprache und Riesisch, kann aber nicht sprechen</languages>
+    <challenge>2</challenge>
+    <vulnerabilities/>
+    <resistances/>
+    <immunities>Gift</immunities>
+    <conditionImmunities>Vergiftet</conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="19" bonus="+4"/>
+    <ability name="Dex" score="6" bonus="-2"/>
+    <ability name="Con" score="18" bonus="+4"/>
+    <ability name="Int" score="3" bonus="-4"/>
+    <ability name="Wis" score="6" bonus="-2"/>
+    <ability name="Cha" score="5" bonus="-3"/>
+  </abilities>
+
+  <saves>
+    <save ability="Wis" bonus="+0"/>
+  </saves>
+
+  <traits>
+    <trait name="Untote Zähigkeit">
+      <description>Reduziert Schaden den Zombie auf 0 Trefferpunkte, muss er einen Konstitutionsrettungswurf gegen SG 5 + erlittenen Schaden ablegen, es sei denn, der Schaden ist gleißend oder stammt aus einem kritischen Treffer. Bei einem Erfolg fällt der Zombie stattdessen auf 1 Trefferpunkt.</description>
+    </trait>
+  </traits>
+
+  <attacks>
+    <attack name="Morgenstern">
+      <type>Nahkampf-Waffenangriff</type>
+      <bonus>+6</bonus>
+      <range>1,50m</range>
+      <target>ein Ziel</target>
+      <damage>13 (2W8 + 4) Wuchtschaden</damage>
+    </attack>
+  </attacks>
+</statblock>
+<statblock name="Der Unbeugsame Meister (Phase 2)" id="ID_D4T_BOSS">
+  <meta>
+    <size>Groß</size>
+    <type>Untoter</type>
+    <alignment>Rechtschaffen Böse</alignment>
+    <ac>18 (Natürliche Rüstung / Magische Glyphen)</ac>
+    <hp>180 (19W10 + 76)</hp>
+    <speed>9 m</speed>
+    <initiative>+0</initiative>
+    <senses>Dunkelsicht 36 m, Passive Wahrnehmung 16</senses>
+    <languages>Gemeinsprache, Abyssam, Tyrianisch</languages>
+    <challenge>11</challenge>
+    <resistances>Nekrotisch, Kälte, Hieb-, Stich- und Wuchtschaden von nichtmagischen Angriffen</resistances>
+    <immunities>Gift</immunities>
+    <conditionImmunities>Bezaubert, Erschöpfung, Verängstigt, Vergiftet</conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="20" bonus="+5"/>
+    <ability name="Dex" score="10" bonus="+0"/>
+    <ability name="Con" score="18" bonus="+4"/>
+    <ability name="Int" score="16" bonus="+3"/>
+    <ability name="Wis" score="14" bonus="+2"/>
+    <ability name="Cha" score="16" bonus="+3"/>
+  </abilities>
+
+  <saves>
+    <save ability="Con" bonus="+8"/>
+    <save ability="Wis" bonus="+6"/>
+    <save ability="Cha" bonus="+7"/>
+  </saves>
+
+  <skills>
+    <skill name="Athletik" bonus="+9"/>
+    <skill name="Wahrnehmung" bonus="+6"/>
+  </skills>
+
+  <traits>
+    <trait name="Transformations-Erhebung (Mythic/Phase Phase Transition)">
+      <description>In dem Moment, in dem der Meister in Phase 2 aufsteigt, stößt er eine magische Schockwelle aus. Er wirkt sofort kostenlos den Zauber Donnerwoge (3. Grad, Rettungswurf SG 15 Con). Kreaturen, die ihren Rettungswurf verfehlen, erleiden 4d8 Donnerschaden und werden 3 m zurückgestoßen.</description>
+    </trait>
+    <trait name="Legendäre Resistenz (2/Tag)">
+      <description>Verfehlt der Meister einen Rettungswurf, kann er entscheiden, ihn stattdessen zu bestehen.</description>
+    </trait>
+    <trait name="Unaufhaltsamer Ansturm">
+      <description>Der Meister ignoriert schwieriges Terrain. Wenn er sich auf ein Ziel zubewegt, erhält er +2 auf seine Rüstungsklasse gegen Gelegenheitsangriffe.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>Der Meister führt zwei Angriffe aus: Einen mit seiner Seelenbrecher-Klinge und einen mit der Hand der Fäulnis, oder er wirkt einen Zauber.</description>
+    </action>
+    <action name="Todesstrahl (Wiederaufladung 5–6)">
+      <description>Der Meister feuert einen gebündelten Strahl dunkler Energie auf ein einzelnes Ziel innerhalb von 18 m. Das Ziel muss einen Geschicklichkeitsrettungswurf gegen SG 16 ablegen. Bei einem Fehlschlag erleidet es 45 (10W8) nekrotischen Schaden, bei einem Erfolg die Hälfte.</description>
+    </action>
+    <action name="Legendär: Schritt des Verfalls (Kostet 1 Aktion)">
+      <description>Der Meister bewegt sich bis zu seiner Bewegungsrate, ohne Gelegenheitsangriffe zu provozieren.</description>
+    </action>
+    <action name="Legendär: Fokus auf das Opfer (Kostet 1 Aktion)">
+      <description>Der Meister wählt ein Ziel in 9 m Reichweite. Das Ziel muss einen Weisheitsrettungswurf gegen SG 15 bestehen oder ist bis zum Ende seines nächsten Zuges verängstigt.</description>
+    </action>
+    <action name="Legendär: Vernichtungsschlag (Kostet 2 Aktionen)">
+      <description>Der Meister führt einen Angriff mit der Seelenbrecher-Klinge gegen ein festgehaltenes oder isoliertes Ziel aus.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Seelenbrecher-Klinge">
+      <type>Nahkampf-Waffenangriff</type>
+      <bonus>+9</bonus>
+      <range>3 m</range>
+      <target>ein Ziel</target>
+      <damage>18 (2W12 + 5) Hiebschaden plus 9 (2W8) nekrotischer Schaden</damage>
+      <description>Das Ziel kann bis zum Ende seines nächsten Zuges keine Trefferpunkte regenerieren.</description>
+    </attack>
+    <attack name="Hand der Fäulnis">
+      <type>Nahkampf-Zauberangriff</type>
+      <bonus>+8</bonus>
+      <range>1,50 m</range>
+      <target>ein Ziel</target>
+      <damage>22 (4W8 + 4) nekrotischer Schaden</damage>
+      <description>Das Ziel muss einen Stärkerettungswurf gegen SG 16 bestehen oder ist bis zum Ende des nächsten Zuges des Meisters gefesselt (restrained).</description>
+    </attack>
+  </attacks>
+
+  <spellcasting>
+    <stat>Cha</stat>
+    <saveDC>15</saveDC>
+    <attackBonus>+7</attackBonus>
+    <spelllist>
+      <spell id="ID_D4T_SPELL_THUNDERWAVE" level="1">Donnerwoge</spell>
+    </spelllist>
+  </spellcasting>
+</statblock>
+</encounter>

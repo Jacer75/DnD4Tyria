@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-33 Kesselring-Anwesen</name>
+        <file>MK03-33-01.xml</file>
+        <abenteuer>MK03-33 Kesselring</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+    <statblock name="Wächter der Halle" id="ID_D4T_MONSTER">
+        <meta>
+            <size>Groß</size>
+            <type>Elementar</type>
+            <alignment>Chaotisch Gut</alignment>
+            <ac>17</ac>
+            <hp>161 (14W10 + 84)</hp>
+            <speed>9 m, Fliegen 27 m</speed>
+            <initiative>+2</initiative>
+            <senses>Dunkelsicht 36 m, Passive Wahrnehmung 13</senses>
+            <languages>Auranisch</languages>
+            <challenge>11</challenge>
+            <vulnerabilities/>
+            <resistances/>
+            <immunities>Blitz, Donner</immunities>
+            <conditionImmunities/>
+        </meta>
+        <abilities>
+            <ability name="Str" score="21" bonus="+5"/>
+            <ability name="Dex" score="15" bonus="+2"/>
+            <ability name="Con" score="22" bonus="+6"/>
+            <ability name="Int" score="15" bonus="+2"/>
+            <ability name="Wis" score="16" bonus="+3"/>
+            <ability name="Cha" score="20" bonus="+5"/>
+        </abilities>
+        <saves>
+            <save ability="Dex" bonus="+6"/>
+            <save ability="Wis" bonus="+7"/>
+            <save ability="Cha" bonus="+9"/>
+        </saves>
+        <traits>
+            <trait name="Elementarer Ableben">
+                <description>Stirbt der Dschinn, zerfällt sein Körper zu einer warmen Brise und hinterlässt nur die Ausrüstung, die er trug oder bei sich führte.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Mehrfachangriff">
+                <description>Der Dschinn führt drei Angriffe mit seinem Krummsäbel aus.</description>
+            </action>
+            <action name="Wirbelwind erschaffen">
+                <description>Ein Zylinder aus wirbelnder Luft mit 1,5 m Radius und 9 m Höhe entsteht magisch an einem Punkt, den der Dschinn innerhalb von 36 m sehen kann. Der Wirbelwind hält an, solange der Dschinn Konzentration aufrechterhält (wie bei der Konzentration auf einen Zauber). Jede Kreatur außer dem Dschinn, die den Wirbelwind betritt, muss einen Rettungswurf auf Stärke gegen SG 18 bestehen oder wird darin festgehalten. Der Dschinn kann den Wirbelwind als Aktion um bis zu 18 m bewegen; darin festgehaltene Kreaturen bewegen sich mit ihm. Der Wirbelwind endet, wenn der Dschinn die Sicht zu ihm verliert. Eine Kreatur kann ihre Aktion nutzen, um eine festgehaltene Kreatur (einschließlich sich selbst) zu befreien, indem sie eine Stärkeprobe gegen SG 18 besteht.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Krummsäbel">
+                <type>Nahkampf</type>
+                <bonus>+9</bonus>
+                <range>1,50m</range>
+                <target>ein Ziel</target>
+                <damage>12 (2W6 + 5) Hiebschaden plus 3 (1W6) Blitz- oder Donnerschaden (Wahl des Dschinns)</damage>
+            </attack>
+        </attacks>
+        <spellcasting>
+            <stat>Cha</stat>
+            <saveDC>17</saveDC>
+            <attackBonus>+9</attackBonus>
+            <spelllist>
+                <spell id="ID_D4T_SPELL_DETECT_EVIL_AND_GOOD" level="1">Gutes und Böses entdecken (Beliebig oft)</spell>
+                <spell id="ID_D4T_SPELL_DETECT_MAGIC" level="1">Magie entdecken (Beliebig oft)</spell>
+                <spell id="ID_D4T_SPELL_THUNDERWAVE" level="1">Donnerwoge (Beliebig oft)</spell>
+                <spell id="ID_D4T_SPELL_CREATE_FOOD_AND_WATER" level="3">Nahrung und Wasser erschaffen (3/Tag, kann Wein statt Wasser erschaffen)</spell>
+                <spell id="ID_D4T_SPELL_TONGUES" level="3">Sprachen sprechen (3/Tag)</spell>
+                <spell id="ID_D4T_SPELL_WIND_WALK" level="6">Windwandeln (3/Tag)</spell>
+                <spell id="ID_D4T_SPELL_CONJURE_ELEMENTAL" level="5">Elementar beschwören (1/Tag, nur Luftelementar)</spell>
+                <spell id="ID_D4T_SPELL_CREATION" level="5">Erschaffung (1/Tag)</spell>
+                <spell id="ID_D4T_SPELL_GASEOUS_FORM" level="3">Gasförmige Gestalt (1/Tag)</spell>
+                <spell id="ID_D4T_SPELL_INVISIBILITY" level="2">Unsichtbarkeit (1/Tag)</spell>
+                <spell id="ID_D4T_SPELL_MAJOR_IMAGE" level="3">Mächtige Illusion (1/Tag)</spell>
+                <spell id="ID_D4T_SPELL_PLANE_SHIFT" level="7">Ebene wechseln (1/Tag)</spell>
+            </spelllist>
+        </spellcasting>
+    </statblock>
+</encounter>

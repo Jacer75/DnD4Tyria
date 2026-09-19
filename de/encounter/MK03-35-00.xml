@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>MK03-35 Alliierte</name>
+        <file>MK03-35-00.xml</file>
+        <abenteuer>MK03-35 MdG</abenteuer>
+        <kampagne>MK03 - Machtkampf im Orden der Gerüchte</kampagne>
+    </info>
+<statblock name="Riel Dunkelwasser" id="ID_D4T_NPC">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid</type>
+    <alignment>neutral</alignment>
+    <ac>16</ac>
+    <hp>68 (7W8 + 5W10)</hp>
+    <speed>9 m</speed>
+    <initiative>+7</initiative>
+    <senses>Passive Wahrnehmung 15, Passive Einsicht 19, Passive Nachforschung 12</senses>
+    <languages>Gemeinsprache, Diebessprache</languages>
+    <challenge>4</challenge>
+    <vulnerabilities/>
+    <resistances/>
+    <immunities/>
+    <conditionImmunities/>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="9" bonus="-1"/>
+    <ability name="Dex" score="16" bonus="+3"/>
+    <ability name="Con" score="11" bonus="+0"/>
+    <ability name="Int" score="15" bonus="+2"/>
+    <ability name="Wis" score="13" bonus="+1"/>
+    <ability name="Cha" score="14" bonus="+2"/>
+  </abilities>
+
+  <saves>
+    <save ability="Dex" bonus="+7"/>
+    <save ability="Int" bonus="+6"/>
+  </saves>
+
+  <skills>
+    <skill name="Akrobatik" bonus="+7"/>
+    <skill name="Mit Tieren umgehen" bonus="+1"/>
+    <skill name="Arcana" bonus="+2"/>
+    <skill name="Athletik" bonus="-1"/>
+    <skill name="Täuschung" bonus="+6"/>
+    <skill name="Geschichte" bonus="+2"/>
+    <skill name="Einsicht" bonus="+9"/>
+    <skill name="Einschüchterung" bonus="+2"/>
+    <skill name="Nachforschung" bonus="+2"/>
+    <skill name="Heilkunde" bonus="+1"/>
+    <skill name="Naturkunde" bonus="+2"/>
+    <skill name="Wahrnehmung" bonus="+5"/>
+    <skill name="Auftreten" bonus="+2"/>
+    <skill name="Überzeugen" bonus="+10"/>
+    <skill name="Religion" bonus="+2"/>
+    <skill name="Fingerfertigkeit" bonus="+11"/>
+    <skill name="Heimlichkeit" bonus="+11"/>
+    <skill name="Überleben" bonus="+1"/>
+  </skills>
+
+  <traits>
+    <trait name="Schurkenangriff">
+      <description>Einmal pro Zug kann Riel einem Ziel, das er mit einer Finesse- oder Fernkampfwaffe trifft, zusätzlich 14 (4W6) Schaden zufügen, wenn er Vorteil auf den Angriffswurf hat oder wenn sich ein nicht kampfunfähiger Feind des Ziels innerhalb von 1,5 m befindet und Riel keinen Nachteil hat.</description>
+    </trait>
+    <trait name="Verbesserter Kritischer Treffer">
+      <description>Riels Waffenangriffe erzielen bereits bei einem Wurf von 19 oder 20 einen kritischen Treffer.</description>
+    </trait>
+    <trait name="Entrinnen">
+      <description>Wenn Riel einem Effekt ausgesetzt ist, der einen Geschicklichkeitsrettungswurf für halben Schaden erlaubt, erleidet er bei einem Erfolg keinen Schaden und bei einem Fehlschlag nur halben Schaden.</description>
+    </trait>
+    <trait name="Arbeit im zweiten Stock">
+      <description>Klettern kostet Riel keine zusätzliche Bewegung. Bei einem Anlauf-Weitsprung erhöht sich seine Sprungweite um +0,9 m (3 Fuß).</description>
+    </trait>
+    <trait name="Wütender Angreifer">
+      <description>Einmal pro Zug, wenn Riel ein Ziel mit einer Waffe trifft, kann er den Schadenswürfel der Waffe erneut würfeln und das höhere Ergebnis verwenden.</description>
+    </trait>
+    <trait name="Wachsamkeit">
+      <description>Riel addiert seinen Übungsbonus auf Initiativwürfe. Unmittelbar nach dem Initiativwurf kann er seine Initiative mit einem willigen, nicht kampfunfähigen Verbündeten tauschen.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Mehrfachangriff">
+      <description>Riel führt zwei Angriffe aus.</description>
+    </action>
+    <action name="Aktionsschub (1/Kurze Rast)">
+      <description>Riel kann in seinem Zug eine zusätzliche Aktion ausführen.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Rapier">
+      <type>Nahkampf</type>
+      <bonus>+7</bonus>
+      <range>1,50m</range>
+      <target>ein Ziel</target>
+      <damage>7 (1W8 + 3) Stichschaden</damage>
+    </attack>
+    <attack name="Dolch">
+      <type>Nahkampf oder Fernkampf</type>
+      <bonus>+7</bonus>
+      <range>1,50m oder 6m/18m</range>
+      <target>ein Ziel</target>
+      <damage>5 (1W4 + 3) Stichschaden</damage>
+    </attack>
+    <attack name="Kurzbogen">
+      <type>Fernkampf</type>
+      <bonus>+7</bonus>
+      <range>24m/96m</range>
+      <target>ein Ziel</target>
+      <damage>6 (1W6 + 3) Stichschaden</damage>
+    </attack>
+    <attack name="Waffenloser Schlag">
+      <type>Nahkampf</type>
+      <bonus>+3</bonus>
+      <range>1,50m</range>
+      <target>ein Ziel</target>
+      <damage>0 Wuchtschaden</damage>
+    </attack>
+  </attacks>
+
+  <reactions>
+    <reaction name="Unheimliches Ausweichen">
+      <description>Wenn ein Angreifer, den Riel sehen kann, ihn mit einem Angriff trifft, kann Riel seine Reaktion nutzen, um den erlittenen Schaden zu halbieren.</description>
+    </reaction>
+  </reactions>
+</statblock>
+<statblock name="Valenze" id="ID_D4T_NPC">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid</type>
+    <alignment>Neutral Gut</alignment>
+    <ac>12</ac>
+    <hp>27 (5W6 + 10)</hp>
+    <speed>9 m</speed>
+    <initiative>+2</initiative>
+    <senses>Passive Wahrnehmung 12</senses>
+    <languages>Tyrianisch, Asurisch</languages>
+    <challenge>2</challenge>
+    <vulnerabilities/>
+    <resistances/>
+    <immunities/>
+    <conditionImmunities/>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="8" bonus="-1"/>
+    <ability name="Dex" score="15" bonus="+2"/>
+    <ability name="Con" score="14" bonus="+2"/>
+    <ability name="Int" score="12" bonus="+1"/>
+    <ability name="Wis" score="14" bonus="+2"/>
+    <ability name="Cha" score="15" bonus="+2"/>
+  </abilities>
+
+  <saves>
+    <save ability="Con" bonus="+3"/>
+    <save ability="Cha" bonus="+5"/>
+  </saves>
+
+  <skills>
+    <skill name="Akrobatik" bonus="+2"/>
+    <skill name="Mit Tieren umgehen" bonus="+2"/>
+    <skill name="Arcana" bonus="+1"/>
+    <skill name="Athletik" bonus="-1"/>
+    <skill name="Täuschung" bonus="+5"/>
+    <skill name="Geschichte" bonus="+1"/>
+    <skill name="Einsicht" bonus="+2"/>
+    <skill name="Einschüchterung" bonus="+2"/>
+    <skill name="Nachforschung" bonus="+1"/>
+    <skill name="Heilkunde" bonus="+2"/>
+    <skill name="Naturkunde" bonus="+1"/>
+    <skill name="Wahrnehmung" bonus="+2"/>
+    <skill name="Auftreten" bonus="+2"/>
+    <skill name="Überzeugen" bonus="+2"/>
+    <skill name="Religion" bonus="+1"/>
+    <skill name="Fingerfertigkeit" bonus="+5"/>
+    <skill name="Heimlichkeit" bonus="+2"/>
+    <skill name="Überleben" bonus="+2"/>
+  </skills>
+
+  <traits>
+    <trait name="Quelle der Magie">
+      <description>Valenze verfügt über 5 Zauberpunkte. Sie kann als Bonusaktion Zauberpunkte in Zauberplätze umwandeln (2 Pkt. = Grad 1, 3 Pkt. = Grad 2, 5 Pkt. = Grad 3) oder einen Zauberplatz aufwenden, um entsprechend viele Zauberpunkte zu erhalten.</description>
+    </trait>
+    <trait name="Metamagie">
+      <description>Beschleunigter Zauber: Verkürzt die Wirkzeit eines Zaubers von 1 Aktion auf 1 Bonusaktion (Kosten: 2 Zauberpunkte).
+Unmerklicher Zauber: Wirke einen Zauber ohne Gesten oder Worte (Kosten: 1 Zauberpunkt).</description>
+    </trait>
+    <trait name="Woge der Wilden Magie">
+      <description>Nach dem Wirken eines Zaubers des 1. Grades oder höher kann der SL Valenze einen W20 würfeln lassen. Bei einer 1 tritt ein Effekt der Wilden Magie auf.</description>
+    </trait>
+    <trait name="Gezeiten des Chaos (1/Lange Rast)">
+      <description>Gewährt Vorteil auf einen Angriffswurf, eine Attributsprobe oder einen Rettungswurf. Der SL kann danach auf der Wilden-Magie-Tabelle würfeln lassen, um die Fähigkeit sofort zurückzuerhalten.</description>
+    </trait>
+    <trait name="Photosynthese">
+      <description>Erhält 1W6 temporäre Trefferpunkte, wenn sie mindestens 30 Minuten in direktem Sonnenlicht rastet.</description>
+    </trait>
+    <trait name="Biolumineszenz (1/Lange Rast)">
+      <description>Kann als Bonusaktion 1 Minute lang leuchten (6 m helles Licht, 12 m dämmriges Licht). Gegner im Licht haben Nachteil auf Heimlichkeit gegen sie.</description>
+    </trait>
+  </traits>
+
+  <actions/>
+
+  <attacks>
+    <attack name="Dolch">
+      <type>Nahkampf oder Fernkampf</type>
+      <bonus>+5</bonus>
+      <range>1,50m oder 6m/18m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W4 + 2) Stichschaden</damage>
+    </attack>
+    <attack name="Wurfspieß">
+      <type>Fernkampf</type>
+      <bonus>+5</bonus>
+      <range>6m/18m</range>
+      <target>ein Ziel</target>
+      <damage>4 (1W4 + 2) Stichschaden</damage>
+    </attack>
+  </attacks>
+
+  <reactions>
+    <reaction name="Trauminstinkt (1/Lange Rast)">
+      <description>Kann als Reaktion einen fehlgeschlagenen Weisheits-, Intelligenz- oder entsprechenden Fertigkeitswurf wiederholen und muss das neue Ergebnis behalten.</description>
+    </reaction>
+  </reactions>
+
+  <spellcasting>
+    <stat>Cha</stat>
+    <saveDC>16</saveDC>
+    <attackBonus>+8</attackBonus>
+    <spelllist>
+      <spell id="ID_D4T_SPELL_POISON_SPRAY" level="0">Gift versprühen</spell>
+      <spell id="ID_D4T_SPELL_MENDING" level="0">Ausbessern</spell>
+      <spell id="ID_D4T_SPELL_MESSAGE" level="0">Botschaft</spell>
+      <spell id="ID_D4T_SPELL_DANCING_LIGHTS" level="0">Tanzende Lichter</spell>
+      <spell id="ID_D4T_SPELL_PRESTIDIGITATION" level="0">Taschenspielerei</spell>
+      <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild</spell>
+      <spell id="ID_D4T_SPELL_FEATHER_FALL" level="1">Federfall</spell>
+      <spell id="ID_D4T_SPELL_FOG_CLOUD" level="1">Nebelwolke</spell>
+      <spell id="ID_D4T_SPELL_DISGUISE_SELF" level="1">Selbstverkleidung</spell>
+      <spell id="ID_D4T_SPELL_INVISIBILITY" level="2">Unsichtbarkeit</spell>
+      <spell id="ID_D4T_SPELL_DAYLIGHT" level="3">Tageslicht</spell>
+    </spelllist>
+    <slots>
+      <slot level="1" count="4"/>
+      <slot level="2" count="3"/>
+      <slot level="3" count="2"/>
+    </slots>
+  </spellcasting>
+</statblock>
+<statblock name="Trahearne" id="ID_D4T_NPC_TRAHEARNE">
+  <meta>
+    <size>Mittel</size>
+    <type>Humanoid (Sylvari)</type>
+    <alignment>Neutral Gut</alignment>
+    <ac>11</ac>
+    <hp>53 (10W6 + 10)</hp>
+    <speed>9m</speed>
+    <initiative>+1</initiative>
+    <senses>Passive Wahrnehmung 11</senses>
+    <languages>Tyrianisch, Asurisch</languages>
+    <challenge>5</challenge>
+    <vulnerabilities></vulnerabilities>
+    <resistances>Nekrotisch</resistances>
+    <immunities></immunities>
+    <conditionImmunities></conditionImmunities>
+  </meta>
+
+  <abilities>
+    <ability name="Str" score="8" bonus="-1"/>
+    <ability name="Dex" score="13" bonus="+1"/>
+    <ability name="Con" score="13" bonus="+1"/>
+    <ability name="Int" score="17" bonus="+3"/>
+    <ability name="Wis" score="12" bonus="+1"/>
+    <ability name="Cha" score="14" bonus="+2"/>
+  </abilities>
+
+  <saves>
+    <save ability="Int" bonus="+7"/>
+    <save ability="Wis" bonus="+5"/>
+  </saves>
+
+  <skills>
+    <skill name="Arkana" bonus="+7"/>
+    <skill name="Geschichte" bonus="+7"/>
+    <skill name="Nachforschungen" bonus="+7"/>
+    <skill name="Naturkunde" bonus="+3"/>
+    <skill name="Religion" bonus="+7"/>
+  </skills>
+
+  <traits>
+    <trait name="Unempfindlichkeit gegen Untotes">
+      <description>Das Trefferpunkte-Maximum von Trahearne kann nicht reduziert werden.</description>
+    </trait>
+    <trait name="Gelehrter der Nekromantie">
+      <description>Die Goldkosten und der Zeitaufwand zum Kopieren eines Nekromantiezaubers in Trahearnes Zauberbuch halbieren sich.</description>
+    </trait>
+    <trait name="Grausame Ernte">
+      <description>Einmal pro Runde, wenn Trahearne mit einem Zauber des 1. Grades oder höher eine oder mehrere Kreaturen tötet, erhält er Trefferpunkte in Höhe des doppelten Zaubergrads zurück (das Dreifache bei Nekromantiezaubern). Gilt nicht für Konstrukte oder Untote.</description>
+    </trait>
+    <trait name="Untote Diener">
+      <description>Beim Wirken von Untote beleben kann Trahearne ein zusätzliches Ziel wählen. Erschaffene Untote erhalten +10 TP und +4 auf Waffenschaden.</description>
+    </trait>
+    <trait name="Arkane Erholung">
+      <description>Einmal pro Tag nach einer kurzen Rast kann Trahearne verbrauchte Zauberplätze mit einem Gesamtgrad von bis zu 5 zurückerlangen (maximal Grad 5).</description>
+    </trait>
+    <trait name="Scharfer Verstand">
+      <description>Trahearne weiß jederzeit, wo Norden liegt, wie lange es bis zum nächsten Sonnenauf- oder -untergang dauert, und kann sich an alles aus den letzten 30 Tagen exakt erinnern.</description>
+    </trait>
+    <trait name="Sprachenkundiger">
+      <description>Kann schriftliche Geheimcodes erstellen (SG 21 zum Entschlüsseln).</description>
+    </trait>
+    <trait name="Forscher">
+      <description>Weiß oft, wo Wissen und Informationen zu finden sind (z. B. Bibliotheken, Schriften).</description>
+    </trait>
+    <trait name="Photosynthese">
+      <description>Rastet Trahearne mindestens 30 Minuten in direktem Sonnenlicht, erhält er 1W6 temporäre Trefferpunkte.</description>
+    </trait>
+  </traits>
+
+  <actions>
+    <action name="Biolumineszenz (1/Lange Rast)">
+      <description>Als Bonusaktion verströmt Trahearne 1 Minute lang helles Licht in einem Radius von 6m und dämmriges Licht für weitere 6m. Kreaturen im Lichtbereich haben Nachteil auf Heimlichkeitswürfe gegen ihn.</description>
+    </action>
+  </actions>
+
+  <attacks>
+    <attack name="Kampfstab">
+      <type>Nahkampf</type>
+      <bonus>+3</bonus>
+      <range>1,50m</range>
+      <target>ein Ziel</target>
+      <damage>2 (1W6 - 1) Wucht-Schaden (oder 3 (1W8 - 1) beidhändig)</damage>
+    </attack>
+  </attacks>
+
+  <reactions>
+    <reaction name="Trauminstinkt (1/Lange Rast)">
+      <description>Auf einen misslungenen Weisheits-, Intelligenz- oder entsprechenden Fertigkeitswurf hin kann Trahearne den Wurf wiederholen und muss das neue Ergebnis verwenden.</description>
+    </reaction>
+  </reactions>
+
+  <spellcasting>
+    <stat>Int</stat>
+    <saveDC>15</saveDC>
+    <attackBonus>+7</attackBonus>
+    <spelllist>
+      <spell id="ID_D4T_SPELL_MAGE_HAND" level="0">Magierhand</spell>
+      <spell id="ID_D4T_SPELL_MENDING" level="0">Ausbessern</spell>
+      <spell id="ID_D4T_SPELL_DANCING_LIGHTS" level="0">Tanzende Lichter</spell>
+      <spell id="ID_D4T_SPELL_CHILL_TOUCH" level="0">Kalte Hand</spell>
+      <spell id="ID_D4T_SPELL_PRESTIDIGITATION" level="0">Taschenspielerei</spell>
+      <spell id="ID_D4T_SPELL_COMPREHEND_LANGUAGES" level="1">Sprachen verstehen</spell>
+      <spell id="ID_D4T_SPELL_MAGE_ARMOR" level="1">Magierrüstung</spell>
+      <spell id="ID_D4T_SPELL_SHIELD" level="1">Schild</spell>
+      <spell id="ID_D4T_SPELL_DARKVISION" level="2">Dunkelsicht</spell>
+      <spell id="ID_D4T_SPELL_MIRROR_IMAGE" level="2">Spiegelbilder</spell>
+      <spell id="ID_D4T_SPELL_ANIMATE_DEAD" level="3">Tote beleben</spell>
+      <spell id="ID_D4T_SPELL_DISPEL_MAGIC" level="3">Magie bannen</spell>
+      <spell id="ID_D4T_SPELL_FLY" level="3">Fliegen</spell>
+      <spell id="ID_D4T_SPELL_NONDETECTION" level="3">Unauffindbarkeit</spell>
+      <spell id="ID_D4T_SPELL_COUNTERSPELL" level="3">Gegenzauber</spell>
+      <spell id="ID_D4T_SPELL_SENDING" level="3">Verständigung</spell>
+      <spell id="ID_D4T_SPELL_BANISHMENT" level="4">Verbannung</spell>
+      <spell id="ID_D4T_SPELL_BLIGHT" level="4">Dürre</spell>
+      <spell id="ID_D4T_SPELL_CONJURE_MINOR_ELEMENTALS" level="4">Schwache Elementare beschwören</spell>
+      <spell id="ID_D4T_SPELL_LEGEND_LORE" level="5">Sagenkunde</spell>
+      <spell id="ID_D4T_SPELL_SCRYING" level="5">Ausspähung</spell>
+      <spell id="ID_D4T_SPELL_CONJURE_ELEMENTAL" level="5">Elementar beschwören</spell>
+    </spelllist>
+    <slots>
+      <slot level="1" count="4"/>
+      <slot level="2" count="3"/>
+      <slot level="3" count="3"/>
+      <slot level="4" count="3"/>
+      <slot level="5" count="2"/>
+    </slots>
+  </spellcasting>
+</statblock>
+</encounter>
