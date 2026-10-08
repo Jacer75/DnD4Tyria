@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.4.2">
+        <update version="1.4.3">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -872,6 +872,24 @@
             <set name="slot">none</set>
             <set name="type">Wondrous Item</set>
             <set name="rarity">Ungewöhnlich</set>
+        </setters>
+    </element>
+    <element name="Visage des Terrors" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_VISAGE_DES_TERRORS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine polierte Stahlmaske, in die eine furchterregende Fratze eingearbeitet ist.</p>
+            <p>
+                <strong>Funktion:</strong> Die Maske verzerrt sich im Moment eines Angriffs zu einer Albtraumgestalt, die den Angreifer zögern lässt. Wenn eine Kreatur, die du sehen kannst, dich mit einem Nahkampfangriff angreift, kannst du deine Reaktion nutzen, um der Kreatur bis zum Ende ihres aktuellen Zugs Nachteil (Disadvantage) auf alle Angriffe gegen dich zu verleihen. Dies funktioniert nur, wenn die Kreatur nicht immun gegen den Zustand Verängstigt (Frightened) ist. Gedankenschild (Maske).Träger sind immun gegen magische Effekte, die ihre Gesinnung oder Gedanken lesen. Dunkelsicht (Maske).Sieht im Dunkeln bis zu 18m.</p>
+        </description>
+        <setters>
+            <set name="keywords">maske, terror, visage, furcht, reaktion</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
         </setters>
     </element>
 </elements>
