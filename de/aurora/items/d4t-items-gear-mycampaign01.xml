@@ -892,6 +892,81 @@
             <set name="rarity">Uncommon</set>
         </setters>
     </element>
+    <element name="Maske des Schattens" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_MASKE_DES_SCHATTENS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine polierte Stahlmaske, in die eine furchterregende Fratze eingearbeitet ist.</p>
+            <p>
+                <strong>Funktion:</strong> Verleiht Vorteil (Advantage) auf Attributswürfe für Geschicklichkeit (Heimlichkeit). Erlaubt es dem Träger, einmal pro Tag den Zauber <em>Unsichtbarkeit (Invisibility)</em> auf sich selbst zu wirken. Der Träger ist immun gegen magische Effekte, die seine Gesinnung oder Gedanken lesen. Zudem gewährt die Maske Dunkelsicht auf eine Entfernung von bis zu 18 Metern.</p>
+        </description>
+        <setters>
+            <set name="keywords">maske, schatten, unsichtbarkeit, heimlichkeit, dunkelsicht, gedankenschild</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+        </rules>
+    </element>
+    <element name="Das Auge des Flüsternden Windes" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_DAS_AUGE_DES_FLUESTERNDEN_WINDES">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schwerer, mattschwarzer Obsidianstein, der sich unnatürlich eiskalt anfühlt. Feine, Ader-artige Schnitzereien im orrianischen Stil durchziehen die Oberfläche. Wenn man den Stein an das Ohr hält, hört man kein Meeresrauschen, sondern ein leises, heiseres Zischen wie von fahlem Wind über Verwesung. Das Aktivierungswort „Ne’Bazil“ ist in Alt-Orrianisch auf den Stein graviert.</p>
+            <p>
+                <strong>Funktion:</strong> Magische Schule &amp; Signatur: Nekromantie / Drachische Korruption (Orr). Der Zauber <em>Identifizieren</em> offenbart, dass der Stein als fester Ankerpunkt für eine zweiwege-intraplanare Kommunikation dient. Die magische Frequenz ist unverwechselbar an die Essenz von Tharal, dem flüsternden Wind gebunden. Das Artefakt speichert zudem Resonanzen vergangener Gespräche.</p>
+        </description>
+        <setters>
+            <set name="keywords">kommunikation, orr, nekromantie, stein, tharal</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">none</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Ring der Zuflucht" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_RING_DER_ZUFLUCHT">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schlichter Silberring, in den feine Runen des Schutzes und der Entrückung graviert sind, die bei erlittenem Schaden kurz hellblau aufglühen.</p>
+            <p>
+                <strong>Funktion:</strong> Einmal pro Tag kannst du als Reaktion auf erlittenen Schaden dich sofort bis zu 9 Meter weit in einen unbesetzten Bereich teleportieren und erhältst einen Bonus von +5 auf deine Rüstungsklasse (RK) bis zum Beginn deines nächsten Zuges.</p>
+        </description>
+        <setters>
+            <set name="keywords">ring, zuflucht, teleportation, reaktion, ruestungsklasse</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Amulett der Zungen" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_AMULETT_DER_ZUNGEN_UND_BEEINFLUSSUNG">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein edles Amulett aus geschwärzter Bronze, das eine gespaltene Zunge innerhalb eines geöffneten Auges darstellt. Es fühlt sich stets leicht warm an.</p>
+            <p>
+                <strong>Funktion:</strong> Ermöglicht dem Träger, die Zauber <em>Person bezaubern (Charm Person)</em> (SG 15) und <em>Befehl (Command)</em> (SG 15) jeweils zweimal pro Rast ohne Komponenten zu wirken.</p>
+        </description>
+        <setters>
+            <set name="keywords">amulett, zungen, beeinflussung, person bezaubern, befehl, zauber</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">neck</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
 </elements>
 
 
