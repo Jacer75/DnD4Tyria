@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../../xslt/statblock.xsl"?>
+<encounter>
+    <info>
+        <name>ZA30-01 Reaktorraum</name>
+        <file>ZA30-01.xml</file>
+        <abenteuer>ZA30 Inquestur</abenteuer>
+        <kampagne>KA Zhaitan</kampagne>
+    </info>
+    <statblock name="Sub-Direktorin Vexa" id="ID_D4T_NPC_SUB_DIREKTORIN_VEXA">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Asura)</type>
+            <alignment>Neutral Böse</alignment>
+            <ac>15 (Magietech-Brustpanzer)</ac>
+            <hp>110 (17d8 + 34)</hp>
+            <speed>9 m</speed>
+            <initiative>+4</initiative>
+            <senses>Passive Wahrnehmung 16</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>8</challenge>
+            <resistances>Blitz, Energie (Force); solange Tekks Schild aktiv ist, besitzt sie Resistenz gegen ALLEN Schaden</resistances>
+        </meta>
+        <abilities>
+            <ability name="Str" score="8" bonus="-1"/>
+            <ability name="Dex" score="18" bonus="+4"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="20" bonus="+5"/>
+            <ability name="Wis" score="14" bonus="+2"/>
+            <ability name="Cha" score="12" bonus="+1"/>
+        </abilities>
+        <saves>
+            <save ability="Dex" bonus="+8"/>
+            <save ability="Int" bonus="+9"/>
+        </saves>
+        <skills>
+            <skill name="Arcana" bonus="+9"/>
+            <skill name="Perception" bonus="+6"/>
+        </skills>
+        <actions>
+            <action name="Multiattack">
+                <description>Vexa macht zwei Angriffe mit ihrer Magietech-Pistole ODER einen Schuss mit dem Kudu-Prototyp-Gewehr.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Magietech-Pistole">
+                <type>Fernkampf</type>
+                <bonus>+8</bonus>
+                <range>12/36m</range>
+                <target>ein Ziel</target>
+                <damage>13 (2d8 + 4) Blitzschaden</damage>
+            </attack>
+            <attack name="Kudu-Prototyp-Gewehr (Scharfschützenschuss)">
+                <type>Fernkampf</type>
+                <bonus>+8</bonus>
+                <range>24/72m</range>
+                <target>ein Ziel</target>
+                <damage>42 (7d10 + 4) Energieschaden (falls das Ziel durch die Lair Action markiert ist, erleidet es zusätzlich 11 (2d10) Blitzschaden, insgesamt im Schnitt ~53 Schaden). Zusatzeffekt: Das Ziel muss einen ST 16 Stärke-Rettungswurf bestehen oder wird 4,5m zurückgestoßen und fällt flach auf den Boden (Prone).</damage>
+            </attack>
+        </attacks>
+        <traits>
+            <trait name="Legendäre Resistenz">
+                <description>Gelingt Vexa ein Rettungswurf nicht, kann sie stattdessen wählen, ihn zu bestehen. 2x</description>
+            </trait>
+            <trait name="Legendäre Aktionen">
+                <description>Vexa hat bis zu 2 Legendäre Aktionen..</description>
+            </trait>
+            <trait name="(Leg) Taktischer Rückzug">
+                <description>Vexa bewegt sich bis zu ihrer vollen Bewegungsrate, ohne Gelegenheitsangriffe zu provozieren.</description>
+            </trait>
+            <trait name="(Leg) Prioritätsbefehl">
+                <description>Vexa befiehlt einem Grenadier oder Golem, sofort eine Bewegung oder einen Standard-Angriff als Reaktion auszuführen.</description>
+            </trait>
+        </traits>
+    </statblock>
+    <statblock name="Tekk (Schild-Operator)" id="ID_D4T_NPC_TEKK">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Asura)</type>
+            <alignment>Neutral</alignment>
+            <ac>13 (Magietech-Kleidung)</ac>
+            <hp>38 (7d8 + 7)</hp>
+            <speed>7,5 m</speed>
+            <initiative>+2</initiative>
+            <senses>Passive Wahrnehmung 10</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>2</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="8" bonus="-1"/>
+            <ability name="Dex" score="14" bonus="+2"/>
+            <ability name="Con" score="12" bonus="+1"/>
+            <ability name="Int" score="17" bonus="+3"/>
+            <ability name="Wis" score="10" bonus="+0"/>
+            <ability name="Cha" score="11" bonus="+0"/>
+        </abilities>
+        <saves>
+            <save ability="Int" bonus="+5"/>
+        </saves>
+        <traits>
+            <trait name="Interaktions-Mechanik (Überreden / Intimidate im Kampf)">
+                <description>Ein Spieler kann als freie Aktion / Bonusaktion in seinem Zug einen ST 16 Charisma-Check (Persuasion oder Intimidation) gegen Tekk versuchen. Bei Erfolg zögert Tekk und schaltet den Schild für 1 Runde ab (oder dauerhaft, wenn das Rollenspiel besonders gut war).</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Konsole bedienen (Spezial-Aktion)">
+                <description>Solange Tekk an der Konsole steht und handlungsfähig ist, bleibt Vexas Absoluter Schild aktiv (gibt Vexa Resistenz gegen ALLEN Schaden).</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Schock-Stab">
+                <type>Nahkampf</type>
+                <bonus>+4</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>6 (1d8 + 2) Blitzschaden</damage>
+            </attack>
+        </attacks>
+    </statblock>
+    <statblock name="Inquestur-Verteidigungsgolem" id="ID_D4T_MONSTER_INQUESTUR_VERTEIDIGUNGSGOLEM">
+        <meta>
+            <size>Groß</size>
+            <type>Konstrukt</type>
+            <alignment>Unparteiisch</alignment>
+            <ac>17 (Legierung Panzerung)</ac>
+            <hp>85 (10d10 + 30)</hp>
+            <speed>9 m</speed>
+            <initiative>+0</initiative>
+            <senses>Passive Wahrnehmung 10</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>5</challenge>
+            <immunities>Gift, Psyche</immunities>
+            <conditionImmunities>Bezaubert, Erschöpft, Vergiftet</conditionImmunities>
+        </meta>
+        <abilities>
+            <ability name="Str" score="20" bonus="+5"/>
+            <ability name="Dex" score="10" bonus="+0"/>
+            <ability name="Con" score="16" bonus="+3"/>
+            <ability name="Int" score="3" bonus="-4"/>
+            <ability name="Wis" score="10" bonus="+0"/>
+            <ability name="Cha" score="1" bonus="-5"/>
+        </abilities>
+        <traits>
+            <trait name="Deaktivierung (Rätsel-Kopplung)">
+                <description>Sobald die Spieler das Rätsel am Reaktor-Terminal gelöst haben, verlieren alle Verteidigungsgolems sofort ihre Energie und werden kampfunfähig.</description>
+            </trait>
+        </traits>
+        <actions>
+            <action name="Multiattack">
+                <description>Der Golem führt zwei Pneumatik-Hiebe aus.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Pneumatik-Hieb">
+                <type>Nahkampf</type>
+                <bonus>+8</bonus>
+                <range>1,5 m</range>
+                <target>ein Ziel</target>
+                <damage>16 (2d10 + 5) Wucht- und Kinetikschaden</damage>
+            </attack>
+            <attack name="Magnet-Tether (Aufladezeit 5–6)">
+                <type>Fernkampf</type>
+                <bonus>+8</bonus>
+                <range>9 m</range>
+                <target>ein Ziel</target>
+                <damage>10 (2d4 + 5) Blitzschaden und das Ziel (sofern Größe Mittel oder kleiner) wird sofort bis zu 6 m direkt an den Golem herangezogen.</damage>
+            </attack>
+        </attacks>
+    </statblock>
+    <statblock name="Inquestur-Sturmgrenadier" id="ID_D4T_MONSTER_INQUESTUR_STURMGRENADIER">
+        <meta>
+            <size>Mittel</size>
+            <type>Humanoid (Asura oder Mensch)</type>
+            <alignment>Neutral Böse</alignment>
+            <ac>15 (Harnisch)</ac>
+            <hp>45 (7d8 + 14)</hp>
+            <speed>9 m</speed>
+            <initiative>+3</initiative>
+            <senses>Passive Wahrnehmung 10</senses>
+            <languages>Tyrianisch</languages>
+            <challenge>3</challenge>
+        </meta>
+        <abilities>
+            <ability name="Str" score="12" bonus="+1"/>
+            <ability name="Dex" score="16" bonus="+3"/>
+            <ability name="Con" score="14" bonus="+2"/>
+            <ability name="Int" score="14" bonus="+2"/>
+            <ability name="Wis" score="11" bonus="+0"/>
+            <ability name="Cha" score="10" bonus="+0"/>
+        </abilities>
+        <actions>
+            <action name="Granaten-Einsatz (2 Granaten pro Grenadier / Kampf)">
+                <description>Der Grenadier wirft eine Granate auf einen Punkt innerhalb von 12 m (Radius 3m-Sphäre). Er wählt einen der folgenden Typen:&#10;• Splittergranate (Frag): Alle Kreaturen im Bereich machen einen ST 14 DEX-Rettungswurf. Fehlschlag: 14 (4d6) Schrapnellschaden (halb bei Erfolg). Deckungselemente im Radius verlieren eine Stufe ihrer Schutzwirkung (z. B. aus schwerer wird leichte Deckung).&#10;• Stun-Granate: Alle Kreaturen im Bereich machen einen ST 14 CON-Rettungswurf. Fehlschlag: Die Kreatur verliert ihre Reaktion und erleidet Nachteil auf Angriffe/Rettungswürfe bis zum Ende ihres nächsten Zugs.&#10;• Med-Gas-Granate: Alle organischen Kreaturen (Verwundete Inquestur-Kräfte oder Spieler) im Radius erhalten sofort 13 (2d8 + 4) Trefferpunkte zurück.</description>
+            </action>
+        </actions>
+        <attacks>
+            <attack name="Magietech-Karabiner">
+                <type>Fernkampf</type>
+                <bonus>+5</bonus>
+                <range>18/54m</range>
+                <target>ein Ziel</target>
+                <damage>12 (2d8 + 3) Blitzschaden</damage>
+            </attack>
+        </attacks>
+    </statblock>
+</encounter>
