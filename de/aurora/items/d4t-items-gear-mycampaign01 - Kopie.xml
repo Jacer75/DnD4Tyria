@@ -1,0 +1,1047 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Magische Gegenstände für meine Kampagne</name>
+        <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
+        <author url="">Aurora4Tyria</author>
+        <update version="1.4.0">
+            <file name="d4t-items-gear-mycampaign01.xml" url=""/>
+        </update>
+    </info>
+    <element name="Kettenhemd mit Rune der Abwendung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_CHAIN_MAIL_DEFLECTION">
+        <supports>ID_INTERNAL_ARMOR_GROUP_HEAVY</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schweres Kettenhemd mit eingelegter Schutzrune.</p>
+            <p>
+                <strong>Funktion:</strong> Kritische Treffer gegen dich werden zu normalen Treffern.</p>
+        </description>
+        <setters>
+            <set name="category">Rüstung, schwer</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="55">55 Pfund</set>
+            <set name="slot">body</set>
+            <set name="armor">Schwer</set>
+            <set name="armorClass">16</set>
+            <set name="strength">13</set>
+            <set name="stealth">Nachteil</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_MAIL</set>
+        </setters>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_STEALTH_DISADVANTAGE"/>
+            <stat name="ac:armored:armor" value="16"/>
+            <stat name="speed" value="-10" bonus="armor" requirements="![str:13]"/>
+            <!--<grant type="Grants" id="ID_INTERNAL_GRANTS_CRIT_TO_NORMAL"/>-->
+        </rules>
+    </element>
+    <element name="Stahldolch mit Siegel der Wiederkehr" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_DAGGER_RETURNING">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser einfache Stahldolch hat einige verzierende Gravuren. Er ist mit einem Sigill der Wiederkehr versehen. </p>
+            <p>
+                <strong>Funktion:</strong> Wenn der Dolch als Waffe gezogen war, kehrt er am Ende der Runde in die Hand des Trägers wieder zurück.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Waffen</set>
+            <set name="keywords">dagger</set>
+            <set name="type" addition="dagger">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">300</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Stich">1W4</set>
+            <!--<set name="enhancement">1</set>-->
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+        </setters>
+        <!--<rules>
+            <stat name="weapon:attack" value="1"/>
+            <stat name="weapon:damage" value="1"/>
+        </rules>-->
+    </element>
+    <element name="Dolch aus Mithril" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_DAGGER_MITHRIL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_PROPERTY_THROWN</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein Dolch, gefertigt aus Mithril und glänzend poliert.</p>
+            <p>
+                <strong>Funktion:</strong> Der Dolch gibt auf Angriffs- und Schadenswürfe einen Bonus von +1.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Waffen</set>
+            <set name="keywords">dagger</set>
+            <set name="type" addition="dagger">Weapon</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">300</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="range">6/18 m</set>
+            <set name="damage" type="Stich">1W4</set>
+            <set name="enhancement">1</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+        </setters>
+        <!--<rules>
+            <stat name="weapon:attack" value="1"/>
+            <stat name="weapon:damage" value="1"/>
+        </rules>-->
+    </element>
+    <element name="Amulett der Jotun-Sternwächter" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_AMULET_JOTUN_STARWARDEN">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein silbrig-blaues Amulett aus unbekanntem Metall, das mit sternenartigen Mustern überzogen ist. Die Linien im Muster wirken leicht bewegt, als ob sie mit dem Licht spielen.</p>
+            <p>
+                <strong>Funktion:</strong> Solange du dieses Amulett trägst, erhältst du einen Bonus von +1 auf deine Zauberangriffswürfe und auf den SG deiner Zauber. Es ersetzt keinen Fokus.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">neck</set>
+            <set name="weight">0</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+        <rules>
+            <stat name="spellcasting:attack" value="1"/>
+            <stat name="spellcasting:dc" value="1"/>
+        </rules>
+    </element>
+    <element name="Nimmervoller Beutel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_BAG_OF_HOLDING">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein unscheinbarer Beutel mit erstaunlichem Innenleben: Sein Inneres ist deutlich größer als sein Äußeres vermuten lässt.</p>
+            <p>
+                <strong>Funktion:</strong> Er kann bis zu 225kg (500 Pfund) tragen, ohne dass sein Gewicht sich ändert. Der Zugriff auf Inhalte erfordert eine Aktion. Wird der Beutel überladen, beschädigt oder zerrissen, wird er zerstört und sein Inhalt in die Nebel geschleudert. Wird er umgestülpt, entleert sich sein Inhalt sicher, muss aber neu ausgerichtet werden, um weiter genutzt zu werden. Wird der Beutel in einen anderen extradimensionalen Raum gelegt (z.B. in ein tragbares Loch), zerstört dies beide Gegenstände und öffnet ein einmaliges Portal in die Nebel, das alle Kreaturen im Umkreis von 3m hineinzieht.</p>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="15">15 Pfund</set>
+            <set name="stash" lb="500" weightless="true">true</set>
+        </setters>
+    </element>
+    <element name="Schild mit Sigill des wachsamen Blicks" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_SHIELD_WACHSAMER_BLICK">
+        <supports>ID_INTERNAL_ARMOR_GROUP_SHIELD</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Der Schild ist rund, robust und aus poliertem Stahl gefertigt. In seiner Mitte prangt ein flaches Emblem – ein weit geöffnetes Auge, eingefasst in einen feinen Kreis aus Kupferdraht. Das Auge scheint dem Betrachter zu folgen, je nachdem, wie man ihn hält. </p>
+            <p>
+                <strong>Funktion:</strong> Gibt Vorteil auf Initiative.</p>
+        </description>
+        <setters>
+            <set name="category">Schild</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">onehand,secondary</set>
+            <set name="armorClass">+2</set>
+            <set name="proficiency">ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD</set>
+        </setters>
+        <rules>
+            <stat name="ac:shield" value="2" bonus="shield"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_INITIATIVE_ADVANTAGE"/>
+        </rules>
+    </element>
+    <element name="Nachtbrille" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_NACHTBRILLE">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine kleine Brille mit runden Gläsern, ohne Stärke, dunkel verglast. </p>
+            <p>
+                <strong>Funktion:</strong> Diese dunkle Brille gibt dir Dunkelsicht auf eine Entfernung von bis zu 18 Metern. Hast du bereits Dunkelsicht, so erhöht diese Brille deine Sichtweite um 18 Meter.</p>
+        </description>
+        <setters>
+            <set name="keywords">dunkelsicht, brille</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Ungewöhnlich</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+        </rules>
+    </element>
+    <element name="Münze des Kontakts" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_MUENZE_KONTAKT">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine Münze in der Größe eines Goldstücks mit dem Symbol der Akademie der Arkanen Künste. Sie besteht aus Mithril und hat damit einen Wert von ungefähr 10 Goldstücken. Die Münze wurde spezifisch für „Mackie“ Williams angefertigt.</p>
+            <p>
+                <strong>Funktion:</strong> Sie vibriert leicht, aber merklich, und leuchtet schwach, wenn Magistra Cox die Anwesenheit von Mackie wünscht. Sie hat dann üblicherweise Bedarf für die Dienste des Mannes.</p>
+        </description>
+        <setters>
+            <set name="keywords">kontakt, mithril, signal, cox</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">none</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Ungewöhnlich</set>
+        </setters>
+    </element>
+    <element name="Ring der tierischen Beeinflussung" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_RING_ANIMAL_INFLUENCE">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser kunstvoll gearbeitete Silberring ist mit filigranen Gravuren versehen, die stilisierte Wellen, Blätter und Tieraugen zeigen.</p>
+            <p>
+                <strong>Funktion:</strong> Er besitzt 3 Ladungen und erneuert täglich bei Sonnenaufgang 1W3 verbrauchte Ladungen. Solange du den Ring trägst, kannst du als Aktion 1 Ladung aufwenden, um einen der folgenden Zauber zu wirken (Rettungswurf-SG 13):
+            <ul class="unstyled">
+                    <li>Tierfreundschaft (Animal Friendship)</li>
+                    <li>Furcht (Fear), nur gegen Bestien mit Intelligenz 3 oder niedriger</li>
+                    <li>Mit Tieren sprechen (Speak with Animals)</li>
+                </ul>
+            </p>
+        </description>
+        <setters>
+            <set name="keywords">ring, animal, influence</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">none</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Ungewöhnlich</set>
+        </setters>
+    </element>
+    <element name="Asurischer Impulsstein" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_SENDING_STONE">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein faustgroßer Kristall mit kantigem Schliff, eingefasst in eine bronzefarbene Halterung aus sechseckig verschränkten Metallstreben. Wenn der Stein aktiviert wird, pulsiert er kurz in hellem Blau.</p>
+            <p>
+                <strong>Funktion:</strong> Der Impulsstein erlaubt es dem Träger, einmal pro Tag eine Nachricht von bis zu 25 Wörtern direkt an einen Empfänger zu senden – unabhängig von Entfernung oder Aufenthaltsort, solange sich der Benutzer auf der materiellen Ebene befindet. Die Nachricht wird gesprochen, während man den Stein mit einer Aktion aktiviert. Der Empfänger kann darauf unmittelbar mit bis zu 25 Wörtern antworten. Als Empfänger ist der Stein auf Tara Cox festgelegt.</p>
+        </description>
+        <setters>
+            <set name="keywords">kontakt, stone, sending, cox</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">none</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Ungewöhnlich</set>
+        </setters>
+    </element>
+    <element name="Großschwert der Grafen Vael" type="Weapon" source="DnD4Tyria" id="ID_D4T_ITEM_TWOHANDER_VAEL">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_SLASHING, ID_INTERNAL_WEAPON_PROPERTY_HEAVY, ID_INTERNAL_WEAPON_PROPERTY_TWOHANDED, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Das Großschwert der Familie des Grafen Vael, ursprünglich an einer Statue im Anwesen ausgestellt.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="6">6 Pfund</set>
+            <set name="slot">twohand</set>
+            <set name="damage" type="Hieb">2W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD</set>
+        </setters>
+        <!--<rules>
+            <stat name="weapon:attack" value="1"/>
+            <stat name="weapon:damage" value="1"/>
+        </rules>-->
+    </element>
+    <element name="Sylvari-Streitkolben" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_SIMPLE_MELEE_SYLVARI_MACE">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_GROUP_MACES</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein robuster Knüppel mit verstärktem Kopf, ideal zum Zerschmettern von Knochen und Rüstungen. Nach Art der Sylvari wirkt die Waffe wie gewachsen, als Teil einer PFlanze</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Wucht">1W6</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE</set>
+        </setters>
+    </element>
+    <!--<element name="Nerains Geheimnis" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine schlanke Klinge aus gehärtetem Pflanzenholz, durchzogen von feinen, weinroten Adern, die im Licht schwach pulsieren. Der Griff wirkt wie lebendig gewachsen und liegt überraschend warm in der Hand. Ein Stück der Traumknospe des Schattenherzgrunds ist in der Waffe verarbeitet.</p>
+            <p>
+                <strong>Funktion:</strong> +1 auf Angriffs- und Schadenswürfe, +1 auf Initiativewürfe. Erfordert Bindung an den Träger.</p>
+        </description>
+        <setters>
+            <set name="category">Waffen</set>
+            <set name="cost" currency="gp">25</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
+        </setters>
+    </element>-->
+    <element name="Nerains Geheimnis" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L1">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine schlanke Klinge aus gehärtetem Pflanzenholz, durchzogen von feinen, weinroten Adern, die im Licht schwach pulsieren. Der Griff wirkt wie lebendig gewachsen und liegt überraschend warm in der Hand. Ein Stück der Traumknospe des Schattenherzgrunds ist in der Waffe verarbeitet.</p>
+            <p>
+                <strong>Funktion:</strong> Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe mit dieser Waffe sowie einen Bonus von +1 auf Initiativewürfe.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Waffen</set>
+            <set name="rarity">Uncommon</set>
+            <set name="type" addition="any">Weapon</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="enhancement">1</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
+        </setters>
+        <rules>
+            <stat name="initiative" value="1"/>
+        </rules>
+    </element>
+    <element name="Nerains Geheimnis, erwacht" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L2">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine schlanke Klinge aus gehärtetem Pflanzenholz, durchzogen von feinen, weinroten Adern, die im Licht schwach pulsieren. Der Griff wirkt wie lebendig gewachsen und liegt überraschend warm in der Hand. Ein Stück der Traumknospe des Schattenherzgrunds ist in der Waffe verarbeitet.</p>
+            <p>
+                <strong>Funktion:</strong> Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe mit dieser Waffe sowie einen Bonus von +1 auf Initiativewürfe. Zudem erhältst du Vorteil auf Rettungswürfe gegen die Zustände Charmed (Bezaubert) und Frightened (Verängstigt). Erfordert Einstimmung (Bindung an den Träger).</p>
+        </description>
+        <setters>
+            <set name="category">Magische Waffen</set>
+            <set name="rarity">Rare</set>
+            <set name="cost" currency="gp">1500</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="enhancement">1</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
+        </setters>
+        <rules>
+            <stat name="initiative" value="1"/>
+        </rules>
+    </element>
+    <element name="Nerains Geheimnis, verbunden" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L3">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine schlanke Klinge aus gehärtetem Pflanzenholz, durchzogen von feinen, weinroten Adern, die im Licht schwach pulsieren. Der Griff wirkt wie lebendig gewachsen und liegt überraschend warm in der Hand. Ein Stück der Traumknospe des Schattenherzgrunds ist in der Waffe verarbeitet.</p>
+            <p>
+                <strong>Funktion:</strong> Du erhältst einen Bonus von +1 auf Angriffs- und Schadenswürfe mit dieser Waffe sowie einen Bonus von +1 auf Initiativewürfe. Zudem erhältst du Vorteil auf Rettungswürfe gegen die Zustände Charmed (Bezaubert) und Frightened (Verängstigt). Erfordert Einstimmung (Bindung an den Träger).</p>
+            <p>
+                <strong>Ranken-Fessel:</strong> Diese Waffe verfügt über 3 Ladungen. Sie erhält täglich im Morgengrauen 1d3 verbrauchte Ladungen zurück. Du kannst als Aktion eine Ladung aufwenden und eine Kreatur in einer Reichweite von 15 Fuß (4,5 m) wählen. Das Ziel muss einen Stärkerettungswurf (SG 14) bestehen. Bei einem Fehlschlag erleidet das Ziel 1d6 Stichschaden und erhält den Zustand Restrained (Festgehalten). Die Kreatur kann ihre Aktion nutzen, um den Rettungswurf am Ende ihres Zuges zu wiederholen, um den Effekt zu beenden.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Waffen</set>
+            <set name="rarity">Rare</set>
+            <set name="cost" currency="gp">4000</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="enhancement">1</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
+        </setters>
+        <rules>
+            <stat name="initiative" value="1"/>
+        </rules>
+    </element>
+    <element name="Nerains Geheimnis, vertraut" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L4">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine schlanke Klinge aus gehärtetem Pflanzenholz, durchzogen von feinen, weinroten Adern, die im Licht schwach pulsieren. Der Griff wirkt wie lebendig gewachsen und liegt überraschend warm in der Hand. Ein Stück der Traumknospe des Schattenherzgrunds ist in der Waffe verarbeitet.</p>
+            <p>
+                <strong>Funktion:</strong> Du erhältst einen Bonus von +2 auf Angriffs- und Schadenswürfe mit dieser Waffe sowie einen Bonus von +2 auf Initiativewürfe. Zudem erhältst du Vorteil auf Rettungswürfe gegen die Zustände Charmed (Bezaubert) und Frightened (Verängstigt). Erfordert Einstimmung (Bindung an den Träger).</p>
+            <p>
+                <strong>Ranken-Fessel:</strong> Diese Waffe verfügt über 3 Ladungen. Sie erhält täglich im Morgengrauen 1d3 verbrauchte Ladungen zurück. Du kannst als Aktion eine Ladung aufwenden und eine Kreatur in einer Reichweite von 15 Fuß (4,5 m) wählen. Das Ziel muss einen Stärkerettungswurf (SG 14) bestehen. Bei einem Fehlschlag erleidet das Ziel 1d6 Stichschaden und erhält den Zustand Restrained (Festgehalten). Die Kreatur kann ihre Aktion nutzen, um den Rettungswurf am Ende ihres Zuges zu wiederholen, um den Effekt zu beenden.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Waffen</set>
+            <set name="rarity">Very Rare</set>
+            <set name="cost" currency="gp">8000</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="enhancement">2</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
+        </setters>
+        <rules>
+            <stat name="initiative" value="2"/>
+        </rules>
+    </element>
+    <element name="Nerains Geheimnis, vereinigt" type="Weapon" source="DnD4Tyria" id="ID_D4T_WEAPON_MARTIAL_MELEE_NERAINS_SECRET_L5">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE, ID_INTERNAL_DAMAGE_TYPE_PIERCING, ID_INTERNAL_WEAPON_PROPERTY_FINESSE, ID_INTERNAL_WEAPON_GROUP_SWORDS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine schlanke Klinge aus gehärtetem Pflanzenholz, durchzogen von feinen, weinroten Adern, die im Licht schwach pulsieren. Der Griff wirkt wie lebendig gewachsen und liegt überraschend warm in der Hand. Ein Stück der Traumknospe des Schattenherzgrunds ist in der Waffe verarbeitet.</p>
+            <p>
+                <strong>Funktion:</strong> Du erhältst einen Bonus von +2 auf Angriffs- und Schadenswürfe mit dieser Waffe sowie einen Bonus von +2 auf Initiativewürfe. Zudem erhältst du Vorteil auf Rettungswürfe gegen die Zustände Charmed (Bezaubert) und Frightened (Verängstigt). Erfordert Einstimmung (Bindung an den Träger).</p>
+            <p>
+                <strong>Ranken-Fessel:</strong> Diese Waffe verfügt über 3 Ladungen. Sie erhält täglich im Morgengrauen 1d3 verbrauchte Ladungen zurück. Du kannst als Aktion eine Ladung aufwenden und eine Kreatur in einer Reichweite von 15 Fuß (4,5 m) wählen. Das Ziel muss einen Stärkerettungswurf (SG 14) bestehen. Bei einem Fehlschlag erleidet das Ziel 1d6 Stichschaden und erhält den Zustand Restrained (Festgehalten). Die Kreatur kann ihre Aktion nutzen, um den Rettungswurf am Ende ihres Zuges zu wiederholen, um den Effekt zu beenden.</p>
+            <p>
+                <strong>Einswerden mit der Natur (Commune with Nature):</strong> Du kannst über die Waffe 1x pro Tag den Zauber <em>Einswerden mit der Natur</em> wirken. Du wirst kurzzeitig eins mit der Natur und erhältst Wissen über das umliegende Gebiet. Im Freien vermittelt dir der Zauber Kenntnisse über die Umgebung im Umkreis von 5 Kilometern. In Höhlen oder anderen natürlichen unterirdischen Umgebungen ist der Radius auf 90 Meter begrenzt. Der Zauber funktioniert nicht an Orten, an denen die Natur durch Bauwerke ersetzt wurde, etwa in Städten oder Verliesen. Du erhältst augenblicklich Kenntnis über bis zu drei Fakten deiner Wahl in Bezug auf das Gebiet, bezogen auf eines der folgenden Themen: Gelände und Gewässer; verbreitete Pflanzen, Mineralien, Tiere oder Völker; mächtige Himmlische, Feenwesen, Teufel, Elementare oder Untote; Einflüsse anderer Daseinsebenen; Gebäude.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Waffen</set>
+            <set name="rarity">Legendary</set>
+            <set name="cost" currency="gp">25000</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="damage" type="Stich">1W8</set>
+            <set name="enhancement">2</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER</set>
+        </setters>
+        <rules>
+            <stat name="initiative" value="2"/>
+        </rules>
+    </element>
+    <element name="Talisman des Gefrorenen Herzens" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_AMULET_FROZEN_HEART">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein faustgroßes, unregelmäßiges Fragment aus makellos klarem Eis, das niemals schmilzt. In seinem Inneren verlaufen feine, milchige Schlieren. Betrachtet man den Splitter im richtigen Licht, scheint tief im Kern ein schwaches, kaltes Leuchten zu pulsieren.</p>
+            <p>
+                <strong>Funktion:</strong> (1× pro langer Rast): Wenn der Träger Schaden erleidet, kann er seine Reaktion verwenden, um den erlittenen Schaden zu halbieren.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">neck</set>
+            <set name="weight">0</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+        <!--<rules>
+            <stat name="spellcasting:attack" value="1"/>
+            <stat name="spellcasting:dc" value="1"/>
+        </rules>-->
+    </element>
+    <element name="Pater Kallwyns Wanderbeutel" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_BAG_OF_HOLDING_KALLWYN">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein unscheinbarer Beutel, der offensichtlich schon zahlreiche Reisen überstanden hat. Der Tunnelzug ist mit Ornamenten Dwaynas verziert.</p>
+            <p>
+                <strong>Funktion:</strong> Er kann bis zu 225kg (500 Pfund) tragen, ohne dass sein Gewicht sich ändert. Der Zugriff auf Inhalte erfordert eine Aktion. Wird der Beutel überladen, beschädigt oder zerrissen, wird er zerstört und sein Inhalt in die Nebel geschleudert. Wird er umgestülpt, entleert sich sein Inhalt sicher, muss aber neu ausgerichtet werden, um weiter genutzt zu werden. Wird der Beutel in einen anderen extradimensionalen Raum gelegt (z.B. in ein tragbares Loch), zerstört dies beide Gegenstände und öffnet ein einmaliges Portal in die Nebel, das alle Kreaturen im Umkreis von 3m hineinzieht.</p>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="15">15 Pfund</set>
+            <set name="stash" lb="500" weightless="true">true</set>
+        </setters>
+    </element>
+    <element name="Königliches Medaillon von Kryta" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MEDAILLON_KRYTA">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schweres Medaillon aus Gold und weißem Stein, mit einer Gravur des alten krytanischen Wappens.</p>
+            <p>
+                <strong>Funktion:</strong> Das Medaillon zeigt das Abbild des legitimen Herrsches von Kryta.</p>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Legendary</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="15">1 Pfund</set>
+            <!--<set name="stash" lb="500" weightless="true">true</set>-->
+        </setters>
+    </element>
+    <element name="Medaillon" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MEDAILLON_KRYTA">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schweres Medaillon aus Gold und weißem Stein, mit einer Gravur des alten krytanischen Wappens.</p>
+            <!--<p>
+                <strong>Funktion:</strong> Das Medaillon zeigt das Abbild des legitimen Herrsches von Kryta.</p>-->
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Legendary</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="15">1 Pfund</set>
+            <!--<set name="stash" lb="500" weightless="true">true</set>-->
+        </setters>
+    </element>
+    <element name="Symbol der Dwayna-Priesterschaft" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_DWAYNA_SYMBOL">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein filigran gearbeitetes, silbern schimmerndes Amulett in Form eines stilisierten Flügelpaares, das sich nach oben öffnet. Zwischen den Flügeln ruht ein kleiner, klarer Kristall, der im Licht fast unsichtbar wirkt.</p>
+            <p>
+                <strong>Funktion:</strong> Das Symbol kann bis zu 4 Zaubergrade speichern. Es kann enthalten:
+                <ul class="unstyled">
+                    <li>vier Zauber der 1. Stufe</li>
+                    <li>einen Zauber der 4. Stufe</li>
+                </ul>
+                oder eine beliebige Kombination, deren Gesamtstufe 4 nicht überschreitet. Nur Zauber, die Leben schützen, stärken oder bewahren, können im Symbol gespeichert werden (z. B. Heilzauber, Schutzzauber, unterstützende Magie nach Ermessen des Spielleiters). Ein gespeicherter Zauber kann als Aktion gewirkt werden. Das Symbol entlädt sich nicht von selbst. Gespeicherte Magie verbleibt im Kristall, bis sie gewirkt wird.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">neck</set>
+            <set name="weight">0</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+        <!--<rules>
+            <stat name="spellcasting:attack" value="1"/>
+            <stat name="spellcasting:dc" value="1"/>
+        </rules>-->
+    </element>
+    <element name="Trank des Frostzorns" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_FROSTMIGHT">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Die Flüssigkeit ist dickflüssig, hellblau und fühlt sich beim Trinken an wie eiskaltes Metall im Hals.</p>
+            <p>
+                <strong>Funktion:</strong> Für 1 Stunde Vorteil auf STR-Checks, +2 auf Nahkampfschaden, Resistenz gegen Kälteschaden. Nach Ablauf: 1 Stufe Erschöpfung.</p>
+        </description>
+        <setters>
+            <set name="keywords">might</set>
+            <set name="category">Potions</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="0.5">0,25 kg</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Trank der Winterstandhaftigkeit" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_FROSTRESISTANCE">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Die Flüssigkeit ist dickflüssig und silbrig.</p>
+            <p>
+                <strong>Funktion:</strong> Für 10 Minuten: Vorteil auf CON-Rettungswürfe, Temporäre Trefferpunkte in Höhe von 2d6 + CON-Mod</p>
+        </description>
+        <setters>
+            <set name="keywords">might</set>
+            <set name="category">Potions</set>
+            <set name="cost" currency="gp">50</set>
+            <set name="weight" lb="0.5">0,25 kg</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Common</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Elementarjuwel (Blauer Saphir)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ELEMENTAL_GEM_BLUE_SAPPHIRE">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser faustgroße Saphir schimmert in einem ungewöhnlich klaren, tiefen Blau. Im Inneren des Steins scheint ein schwacher Wirbel aus silbrigem Nebel zu kreisen.</p>
+            <p>
+                <strong>Funktion:</strong> In diesem Edelstein ist ein Funke elementarer Energie gebunden. Als Aktion kann der Träger den Saphir zerbrechen und dadurch ein Luftelementar beschwören, als hätte er den Zauber <em>Elementar beschwören (Conjure Elemental)</em> gewirkt. Sobald das Elementar beschworen wurde, ist die Magie des Edelsteins erschöpft und der Stein zerfällt zu wertlosen Splittern.</p>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0</set>
+        </setters>
+    </element>
+    <element name="Stab der Magieentdeckung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WAND_MAGIC_DETECTION">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser schlanke Stab aus dunklem Holz ist mit feinen Silberadern durchzogen, die sich spiralförmig um den Griff winden.</p>
+            <p>
+                <strong>Funktion:</strong> Der Stab besitzt 3 Ladungen. Während du ihn in der Hand hältst, kannst du als Aktion 1 Ladung verbrauchen, um den Zauber <em>Magie entdecken (Detect Magic)</em> aus dem Stab zu wirken. Der Stab erhält täglich im Morgengrauen 1W3 verbrauchte Ladungen zurück.</p>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0</set>
+        </setters>
+    </element>
+    <element name="Schlüsselstein der Ekklesiarchie" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCHLUESSELSTEIN_EKKLESIARCHIE">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein flacher, milchig-glasiger Stein, eingefasst in eine schlichte Messingfassung. Seine Oberfläche wirkt glatt, doch das Licht bricht sich darin auf unnatürliche Weise, als würde es etwas reflektieren, das sich nicht im Raum befindet. Trotz seines unscheinbaren Äußeren haftet ihm eine spürbare Schwere und Fremdartigkeit an.</p>
+            <p>
+                <strong>Funktion:</strong> Der Schlüsselstein ist von uralter göttlicher Magie durchzogen. Arkane Analyse zeigt, dass er Teil eines größeren Mechanismus ist und als Fokus oder Schlüssel dient – jedoch nicht für einen Ort in dieser Welt.</p>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Legendary</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <!--<set name="stash" lb="500" weightless="true">true</set>-->
+        </setters>
+    </element>
+    <element name="Fragmentiertes Stadtbuch von Lethan" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_STADTBUCH_LETHAN">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schwerer, in Leder gebundener Foliant, dessen Seiten durch Wasser aufgequollen und teilweise miteinander verklebt sind. Viele Einträge sind unleserlich geworden, die Tinte verlaufen oder vollständig verschwunden. Zwischen den beschädigten Seiten finden sich jedoch einzelne Fragmente, die noch entzifferbar sind. Der Einband trägt das verblasste Wappen der Stadt – kaum mehr als ein Schatten seiner ursprünglichen Form.</p>
+            <p>
+                <strong>Funktion:</strong> Trotz seines Zustands lassen sich aus dem Stadtbuch einige wichtige Informationen rekonstruieren:
+			<br/>– Die Stadt litt über Jahre hinweg unter zunehmenden Bedrohungen aus Richtung des Tempels der Toleranz.
+			<br/>– Berichte sprechen von Überfällen, Verschwinden und wachsender Unruhe unter den Bewohnern.
+			<br/>– Schließlich wurde ein Zauberer mit dem Schutz der Stadt betraut, der sich in einem Turm in der Stadt niederließ.
+			<br/>– Seine Magie wurde als dauerhaft und mächtig beschrieben, doch ihre genaue Natur bleibt unklar.
+			<br/>– Die letzten Einträge wirken hastig und brechen abrupt ab – ein Hinweis auf das plötzliche Ende der Stadt.
+		</p>
+            <p/>
+        </description>
+        <setters>
+            <set name="category">Bücher und Dokumente</set>
+            <set name="rarity">Common</set>
+            <set name="cost" currency="gp">5</set>
+            <set name="weight" lb="2">2 Pfund</set>
+        </setters>
+    </element>
+    <element name="Perle der Kraft (Pearl of Power)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_PEARL_OF_POWER">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine kleine, schimmernde Perle von mystischer Natur.</p>
+            <p>
+                <strong>Funktion:</strong> Du kannst als Aktion das Befehlswort dieser Perle sprechen, um einen verbrauchten Zauberplatz bis zum 3. Grad zurückzuerhalten. Sobald du die Perle benutzt hast, kann sie bis zum nächsten Morgengrauen nicht mehr verwendet werden. Erfordert Einstimmung durch einen Zauberwirker.</p>
+        </description>
+        <setters>
+            <set name="keywords">perle, kraft, pearl, power</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Amulett der Gesundheit (Amulet of Health)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_AMULET_OF_HEALTH">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieses Amulett ist oft mit Symbolen der Vitalität und Ausdauer verziert.</p>
+            <p>
+                <strong>Funktion:</strong> Dein Konstitutionswert beträgt 19, solange du dieses Amulett trägst. Es hat keine Auswirkungen auf dich, wenn dein Konstitutionswert bereits 19 oder höher ist.</p>
+        </description>
+        <setters>
+            <set name="keywords">amulett, gesundheit, constitution</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">4000</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">neck</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="constitution:score:set" value="19" bonus="base"/>
+        </rules>
+    </element>
+    <element name="Stab der Verdorrung (Staff of Withering)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_STAFF_OF_WITHERING">
+        <supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser Stab ist aus dunklem, knorrigem Holz gefertigt, das sich trocken und leblos anfühlt.</p>
+            <p>
+                <strong>Funktion:</strong> Der Stab kann als magischer Kampfstab geführt werden. Er hat 3 Ladungen und erhält täglich bei Dämmerung 1W3 verbrauchte Ladungen zurück.</p>
+            <p>Bei einem Treffer verursacht er Schaden wie ein normaler Kampfstab. Du kannst 1 Ladung ausgeben, um dem Ziel zusätzlich 2W10 Nekrotikschaden zuzufügen. Außerdem muss dem Ziel ein Konstitutionsrettungswurf (SG 15) gelingen, andernfalls ist es für 1 Stunde im Nachteil bei allen Attributs- oder Rettungswürfen, die Stärke oder Konstitution verwenden.</p>
+        </description>
+        <setters>
+            <set name="keywords">staff, withering, necro</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">8000</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">onehand</set>
+            <set name="type">Staff</set>
+            <set name="rarity">Rare</set>
+            <set name="attunement" addition="durch einen Kleriker, Druiden oder Hexenmeister">true</set>
+            <set name="charges">3</set>
+            <set name="recharge">1d3</set>
+            <set name="damage" type="Wucht">1W6</set>
+            <set name="versatile">1W8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+        </setters>
+    </element>
+    <element name="Gewand der Hundert Augen (Robe of Eyes)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_ROBE_OF_EYES">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Der schwere Stoff dieser Robe wird von einem unbarmherzig komplexen Brokat aus feinen Silberfäden durchzogen. Diese Fäden verlaufen wie ein arkan leitendes Nervensystem über das gesamte Gewebe und formen stilisierte Augenmotive, die das Umgebungslicht absorbieren und lenken. Die Magie des Brokats projiziert die visuelle Essenz der Umgebung direkt in den Geist des Trägers.</p>
+            <p>
+                <strong>Funktion:</strong> Du hast Vorteil auf Wahrnehmungsprobem, die auf Sicht basieren. Du kannst nicht überrascht werden. Du hast Dunkelsicht mit einer Reichweite von 120 Fuß (36 m). Du kannst unsichtbare Kreaturen und Objekte sowie in die Ätherische Ebene sehen, ebenfalls bis zu 120 Fuß. Wenn der Zauber Light auf die Robe oder Daylight innerhalb von 5 Fuß gewirkt wird, bist du für 1 Minute blind (Konstitution SG 11 bzw. 15 am Ende deines Zugs, um den Effekt zu beenden). Die Augen der Robe können nicht geschlossen werden.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Rare</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+            <grant type="Vision" id="ID_VISION_SEE_INVISIBILITY"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANTS_PERCEPTION_ADVANTAGE"/>
+        </rules>
+    </element>
+    <element name="Gewand der Ewigen Sterne (Robe of Stars)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_ROBE_OF_STARS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Diese Robe ist aus einem Stoff gefertigt, der so dunkel ist wie der Nachthimmel über den Zittergipfeln. Auf der Brust prangen sechs markante, siebenstrahlige Sterne aus echtem Weißgold-Brokat, die ein sanftes Eigenlicht abgeben. Diese Sterne sind gefangene Splitter reiner Magie.</p>
+            <p>
+                <strong>Funktion:</strong> Du erhältst einen Bonus von +1 auf alle Rettungswürfe. Du kannst eine Aktion nutzen, um in die Astralebene zu wechseln oder von dort zurückzukehren. Zudem kannst du als Aktion einen Brokat-Stern abziehen, um den Zauber Magic Missile auf dem 5. Grad zu wirken. Täglich in der Abenddämmerung erscheinen 1d6 verbrauchte Sterne wieder auf der Robe.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Very Rare</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+            <set name="attunement">true</set>
+        </setters>
+        <rules>
+            <stat name="save:all" value="1"/>
+        </rules>
+    </element>
+    <element name="Gewand der Gleißenden Farben (Robe of Scintillating Colors)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_ROBE_OF_SCINTILLATING_COLORS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Auf den ersten Blick wirkt die Robe wie schlichter, grauer Seidenstoff. Doch der eingewebte Brokat ist mit Prismen-Staub versetzt; bricht sich das Licht darin, entstehen Muster, die sich wie Öl auf Wasser bewegen. Ein Impuls Eures Willens genügt, und der Brokat entfesselt ein Farbspektakel.</p>
+            <p>
+                <strong>Funktion:</strong> Die Robe hat 3 Ladungen (Regeneration: 1d3 im Morgengrauen). Als Aktion kannst du 1 Ladung nutzen: Bis zum Ende deines nächsten Zuges strahlst du helles Licht (30 Fuß) und dämmriges Licht (weitere 30 Fuß) aus. Angreifer, die dich sehen können, haben Nachteil auf Angriffswürfe gegen dich. Kreaturen im hellen Licht müssen einen Weisheits-Rettungswurf (SG 15) bestehen oder sind betäubt (Stunned).</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Very Rare</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+            <set name="attunement">true</set>
+        </setters>
+    </element>
+    <element name="Trank der Vitalität (Potion of Vitality)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_POTION_OF_VITALITY">
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Die purpurrote Flüssigkeit dieses Tranks pulsiert regelmäßig mit dumpfem Licht und erinnert an einen Herzschlag.</p>
+            <p>
+                <strong>Funktion:</strong> Wenn du diesen Trank trinkst, entfernt er jede Erschöpfung, unter der du leidest, und heilt jede Krankheit oder Vergiftung, die dich betrifft. Für die nächsten 24 Stunden erhältst du bei jedem Trefferwürfel, den du ausgibst, die maximale Anzahl an Trefferpunkten zurück.</p>
+        </description>
+        <setters>
+            <set name="keywords">vitality, heartbeat</set>
+            <set name="category">Potions</set>
+            <set name="cost" currency="gp">1000</set>
+            <set name="weight" lb="0.5">0,25 kg</set>
+            <set name="type">Potion</set>
+            <set name="rarity">Very Rare</set>
+            <set name="stackable">true</set>
+        </setters>
+    </element>
+    <element name="Schutzschriftrolle (Untote)" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_SCROLL_OF_PROTECTION_UNDEAD">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Jede Schutzschriftrolle wirkt gegen einen bestimmten Kreaturentyp: in diesem Fall Untote.</p>
+            <p>
+                <strong>Funktion:</strong> Das Lesen der Schriftrolle als Aktion hüllt dich in eine unsichtbare Barriere ein, die sich von dir ausbreitet und einen Zylinder mit einem Radius von 1,5m und einer Höhe von 3m bildet. Für 5 Minuten verhindert diese Barriere, dass Kreaturen des angegebenen Typs den Zylinder betreten oder irgendetwas darin beeinflussen. Der Zylinder bewegt sich mit dir und bleibt auf dich zentriert. Wenn du dich jedoch so bewegst, dass sich eine Kreatur des angegebenen Typs innerhalb des Zylinders befinden würde, endet der Effekt. Eine Kreatur kann versuchen, die Barriere zu überwinden, indem sie eine Aktion nutzt, um einen Charisma-Wurf (SG 15) durchzuführen. Bei Erfolg wird die Kreatur nicht mehr von der Barriere beeinflusst.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="0">0 kg</set>
+            <set name="type">Scroll</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Amulett der Seelenwacht" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_MAGIC_AMULET_SOUL_WARD">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein fein gearbeitetes Amulett, das eine schützende Aura der Lebensenergie ausstrahlt. Es scheint in Momenten größter Gefahr schwach golden zu glimmen.</p>
+            <p>
+                <strong>Funktion:</strong> Dieses Amulett besitzt 1 Ladung. Wenn du Schaden erleidest, der deine Trefferpunkte auf 0 reduzieren würde, sinken sie stattdessen auf 1 und die Ladung wird verbraucht. Das Amulett ist dann nicht mehr magisch und hat noch einen Wert von 50gp.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Rare</set>
+            <set name="slot">neck</set>
+            <set name="weight" lb="1">0,45 kg</set>
+            <set name="cost" currency="gp">0</set>
+        </setters>
+    </element>
+    <element name="Umhang des Wolfs" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WONDEROUS_UMHANG_DES_WOLFS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser schwere Umhang besteht aus dem dichten, grauen Winterfell eines außergewöhnlich großen Wolfes. Anders als bei gewöhnlicher Kleidung ist das Fell nicht stumpf, sondern besitzt einen seidigen, fast silbrigen Glanz, der Schnee und Wasser mühelos abperlen lässt.</p>
+            <p>
+                <strong>Funktion:</strong> Du erhältst einen Bonus von +1 auf deine RK und deine Rettungswürfe, solange du diesen Umhang trägst. Erfordert Einstimmung.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="slot">back</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="3">3 Pfund</set>
+        </setters>
+        <rules>
+            <stat name="ac:misc" value="1"/>
+            <stat name="strength:save:misc" value="1"/>
+            <stat name="dexterity:save:misc" value="1"/>
+            <stat name="constitution:save:misc" value="1"/>
+            <stat name="intelligence:save:misc" value="1"/>
+            <stat name="wisdom:save:misc" value="1"/>
+            <stat name="charisma:save:misc" value="1"/>
+        </rules>
+    </element>
+    <element name="Laterne der Enthüllung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_WONDEROUS_LANTERN_OF_REVEALING">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine speziell gefertigte Kapuzenlaterne, die mit feinen Runen graviert ist.</p>
+            <p>
+                <strong>Funktion:</strong> Während sie brennt, verbraucht diese Kapuzenlaterne in 6 Stunden 0,5 l Öl. Sie wirft helles Licht in einem Radius von 9 m und dämmriges Licht in weiteren 9 m. Unsichtbare Kreaturen und Objekte werden sichtbar, solange sie sich im hellen Licht der Laterne befinden. Du kannst eine Aktion nutzen, um die Haube zu senken, wodurch sich das Licht auf dämmriges Licht in einem Radius von 1,5 m reduziert.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="keywords">licht, unsichtbarkeit, laterne</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 Pfund</set>
+        </setters>
+    </element>
+    <element name="Siegelring der Stalskjeggs" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_RING_STALSKJEGGS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser massiv gearbeitete Ring besteht aus mattem, kühlem Dunkelstahl, in den das Wappen der Stalskjeggs – ein stilisierter, knurrender Raubtierkopf – graviert ist. Die Gravur scheint bei Kälte leicht bläulich zu schimmern, ein Zeichen für die Verbundenheit der Norn mit den Geistern der Wildnis.</p>
+            <p>
+                <strong>Funktion:</strong> Der Ring besitzt 3 Ladungen und regeneriert täglich bei Sonnenaufgang 1W3 verbrauchte Ladungen. Während du den Ring trägst, kannst du eine Aktion verwenden und 1 Ladung ausgeben, um den Zauber Tierfreundschaft (Rettungswurf-SG 13) zu wirken. Das Ziel (ein Tier mit Intelligenz 3 oder niedriger) muss einen Weisheitsrettungswurf gegen SG 13 bestehen oder wird für 24 Stunden bezaubert (Charmed). Der Zauber endet vorzeitig, wenn du oder deine Gefährten dem Tier Schaden zufügen.</p>
+        </description>
+        <setters>
+            <set name="category">Magische Gegenstände</set>
+            <set name="rarity">Unique</set>
+            <set name="cost" currency="gp">500</set>
+            <set name="weight" lb="0">—</set>
+            <set name="slot">ring</set>
+        </setters>
+    </element>
+    <element name="Robe der Anpassung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ROBE_DER_ANPASSUNG">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Der Brokat dieser matten, unauffälligen Robe besteht aus hauchdünnen Metallfäden in fließenden Grau-, Grün- und Brauntönen. Das Gewebe ist so strukturiert, dass die Fäden als feine arkane Leiter fungieren, die das Licht schlucken und die Konturen des Körpers mit der Umgebung verschmelzen lassen. Sobald Magie durch den Brokat fließt, passen sich die Farbpigmente der Fäden dynamisch dem Hintergrund an, ohne dass das Muster selbst bei schneller Bewegung instabil wird.</p>
+            <p>
+                <strong>Funktion:</strong> Diese Robe erfordert Einstimmung. Du kannst als Aktion die Magie des Gewandes nutzen, um die Effekte des Zaubers Selbstverkleidung (Disguise Self) auf dich zu wirken. Dieser Effekt hält so lange an, bis du ihn willentlich beendest, die Robe ablegst oder stirbst. Solange du die Robe trägst, hast du Vorteil auf Geschicklichkeitsprüfungen für Heimlichkeit, um dich zu verstecken. Wenn du versuchst, dich während der Bewegung zu verstecken, wird deine Bewegungsrate dabei nicht halbiert.</p>
+        </description>
+        <setters>
+            <set name="category">Wundergegenstände</set>
+            <set name="rarity">Uncommon</set>
+            <set name="cost" currency="gp">1500</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+        </setters>
+    </element>
+    <element name="Robe der Verschiebung" type="Item" source="DnD4Tyria" id="ID_D4T_ITEM_ROBE_DER_VERSCHIEBUNG">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> In das Tuch dieser Robe ist ein asymmetrischer, wellenartiger Brokat aus Alchemistensilber eingewebt. Diese Silberfäden wirken als permanente, handwerklich präzise konstruierte Störsender für die visuelle Wahrnehmung des Betrachters, indem sie das magische Feld um den Träger herum krümmen. Das Auge kann den schimmernden Brokat niemals scharfstellen, wodurch das Abbild des Trägers stets ein Stück neben seiner realen Position flimmert. Physischer Schaden stört die feine Resonanz der Silberfäden jedoch temporär.</p>
+            <p>
+                <strong>Funktion:</strong> Diese Robe erfordert Einstimmung. Das Gewebe projiziert eine optische Täuschung deiner selbst direkt neben deiner tatsächlichen Position, wodurch alle Kreaturen Nachteil auf Angriffswürfe gegen dich haben. Wenn du Schaden erleidest, wird dieser Verschiebungseffekt deaktiviert und bleibt bis zum Beginn du deines nächsten Zuges inaktiv. Der Effekt funktioniert ebenfalls nicht, wenn du kampfunfähig bist, deine Bewegungsrate 0 beträgt oder du anderweitig an der Bewegung gehindert wirst, beispielsweise durch den Zustand festgesetzt.</p>
+        </description>
+        <setters>
+            <set name="category">Wundergegenstände</set>
+            <set name="rarity">Rare</set>
+            <set name="cost" currency="gp">4000</set>
+            <set name="weight" lb="4">4 Pfund</set>
+            <set name="slot">body</set>
+        </setters>
+    </element>
+    <element name="Ring der Botschaft (Ring of Message)" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_RING_OF_MESSAGE">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Dieser Ring aus mattem, unpoliertem Zinn besitzt keinerlei Gravuren, Edelsteine oder magische Runen an seiner Oberfläche. Er wurde bewusst so gefertigt, dass er jedem ungeschulten Auge wie ein wertloses, alltägliches Schmuckstück erscheint.</p>
+            <p>
+                <strong>Funktion:</strong> Dieser Ring erfordert keine Einstimmung. Solange du ihn trägst, kannst du mit ihm als Aktion den Zaubertrick Message (Botschaft) mit einer Reichweite von 120 Fuß wirken. Die somatische Komponente (das Deuten auf das Ziel) und die verbale Komponente (das leise Flüstern der Botschaft) müssen von dir weiterhin erbracht werden. Der Zauber dringt durch feste Objekte, wird jedoch von 1 Fuß Stein, 1 Zoll gewöhnlichem Metall, einer dünnen Schicht Blei oder 3 Fuß Holz oder Erde blockiert. Er erfordert keine freie Sichtlinie, solange du die ungefähre Richtung zum Ziel kennst.</p>
+        </description>
+        <setters>
+            <set name="keywords">ring, message, botschaft</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">10</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">none</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Ungewöhnlich</set>
+        </setters>
+    </element>
+    <element name="Das Auge des Flüsternden Windes" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_DAS_AUGE_DES_FLUESTERNDEN_WINDES">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schwerer, mattschwarzer Obsidianstein, der sich unnatürlich eiskalt anfühlt. Feine, Ader-artige Schnitzereien im orrianischen Stil durchziehen die Oberfläche. Wenn man den Stein an das Ohr hält, hört man kein Meeresrauschen, sondern ein leises, heiseres Zischen wie von fahlem Wind über Verwesung. Das Aktivierungswort „Ne’Bazil“ ist in Alt-Orrianisch auf den Stein graviert.</p>
+            <p>
+                <strong>Funktion:</strong> Magische Schule &amp; Signatur: Nekromantie / Drachische Korruption (Orr). Der Zauber <em>Identifizieren</em> offenbart, dass der Stein als fester Ankerpunkt für eine zweiwege-intraplanare Kommunikation dient. Die magische Frequenz ist unverwechselbar an die Essenz von Tharal, dem flüsternden Wind gebunden. Das Artefakt speichert zudem Resonanzen vergangener Gespräche.</p>
+        </description>
+        <setters>
+            <set name="keywords">kommunikation, orr, nekromantie, stein, tharal</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">none</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Visage des Terrors" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_VISAGE_DES_TERRORS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine polierte Stahlmaske, in die eine furchterregende Fratze eingearbeitet ist.</p>
+            <p>
+                <strong>Funktion:</strong> Die Maske verzerrt sich im Moment eines Angriffs zu einer Albtraumgestalt, die den Angreifer zögern lässt. Wenn eine Kreatur, die du sehen kannst, dich mit einem Nahkampfangriff angreift, kannst du deine Reaktion nutzen, um der Kreatur bis zum Ende ihres aktuellen Zugs Nachteil (Disadvantage) auf alle Angriffe gegen dich zu verleihen. Dies funktioniert nur, wenn die Kreatur nicht immun gegen den Zustand Verängstigt (Frightened) ist. Gedankenschild (Maske).Träger sind immun gegen magische Effekte, die ihre Gesinnung oder Gedanken lesen. Dunkelsicht (Maske).Sieht im Dunkeln bis zu 18m.</p>
+        </description>
+        <setters>
+            <set name="keywords">maske, terror, visage, furcht, reaktion</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Uncommon</set>
+        </setters>
+    </element>
+    <element name="Maske des Schattens" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_MASKE_DES_SCHATTENS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine polierte Stahlmaske, in die eine furchterregende Fratze eingearbeitet ist.</p>
+            <p>
+                <strong>Funktion:</strong> Verleiht Vorteil (Advantage) auf Attributswürfe für Geschicklichkeit (Heimlichkeit). Erlaubt es dem Träger, einmal pro Tag den Zauber <em>Unsichtbarkeit (Invisibility)</em> auf sich selbst zu wirken. Der Träger ist immun gegen magische Effekte, die seine Gesinnung oder Gedanken lesen. Zudem gewährt die Maske Dunkelsicht auf eine Entfernung von bis zu 18 Metern.</p>
+        </description>
+        <setters>
+            <set name="keywords">maske, schatten, unsichtbarkeit, heimlichkeit, dunkelsicht, gedankenschild</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+        </rules>
+    </element>
+    <element name="Maske des Weisen" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_MASKE_DES_WEISEN">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine polierte Stahlmaske, in die eine Fratze eingearbeitet ist.</p>
+            <p>
+                <strong>Funktion:</strong> Erhöht den SG für Zauberrettungswürfe und den Zauberangriffsmodifikator des Trägers um +1. Verleiht Wahrer Blick (Truesight) auf eine Entfernung von bis zu 30 Fuß (9 m). Der Träger ist zudem immun gegen magische Effekte, die seine Gesinnung oder Gedanken lesen.</p>
+        </description>
+        <setters>
+            <set name="keywords">maske, weiser, zauber, wahrer blick, gedankenschild</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <stat name="spellcasting:attack" value="1"/>
+            <stat name="spellcasting:dc" value="1"/>
+            <grant type="Vision" id="ID_VISION_TRUESIGHT"/>
+        </rules>
+    </element>
+    <element name="Raubtier-Blick" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_RAUBTIER_BLICK">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine polierte Stahlmaske, in die eine furchterregende Fratze eingearbeitet ist.</p>
+            <p>
+                <strong>Funktion:</strong> Die Fernkampfangriffe des Trägers ignorieren halbe Deckung (+2 RK) und Dreiviertel-Deckung (+5 RK). Zudem kann der Träger als Bonusaktion für 1 Minute die Position von Kreaturen durch organische Materie sehen (erkennt die genaue Position von Kreaturen hinter Laub, Holzwänden oder im Nebel innerhalb von 18 Metern / 60 Fuß). Dies erfordert weiterhin eine freie Sichtlinie für den eigentlichen Schuss, verhindert jedoch, dass Gegner Boni durch Verstecken im Gebüsch oder hinter Barrikaden erhalten. Der Träger ist immun gegen magische Effekte, die seine Gesinnung oder Gedanken lesen. Zudem gewährt die Maske Dunkelsicht auf eine Entfernung von bis zu 18 Metern.</p>
+        </description>
+        <setters>
+            <set name="keywords">maske, raubtier, blick, deckung, dunkelsicht, gedankenschild, ranger</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+        </rules>
+    </element>
+    <element name="Maske des inneren Fokus" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_MASKE_DES_INNEREN_FOKUS">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Eine polierte Stahlmaske, in die eine Fratze eingearbeitet ist.</p>
+            <p>
+                <strong>Funktion:</strong> Erhöht deinen SG für Ki-Rettungswürfe um +1. Wenn du die Mönchsfähigkeit Geduldiges Ausweichen (Patient Defense) nutzt, erhältst du für diese Runde zusätzlich +2 auf Rettungswürfe gegen Zauber. Der Träger ist immun gegen magische Effekte, die seine Gesinnung oder Gedanken lesen. Zudem gewährt die Maske Dunkelsicht auf eine Entfernung von bis zu 18 Metern.</p>
+        </description>
+        <setters>
+            <set name="keywords">maske, innerer fokus, moench, monk, ki, dunkelsicht, gedankenschild</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="2">2 Pfund</set>
+            <set name="slot">head</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+        </rules>
+    </element>
+    <element name="Ring der Zuflucht" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_RING_DER_ZUFLUCHT">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein schlichter Silberring, in den feine Runen des Schutzes und der Entrückung graviert sind, die bei erlittenem Schaden kurz hellblau aufglühen.</p>
+            <p>
+                <strong>Funktion:</strong> Einmal pro Tag kannst du als Reaktion auf erlittenen Schaden dich sofort bis zu 9 Meter weit in einen unbesetzten Bereich teleportieren und erhältst einen Bonus von +5 auf deine Rüstungsklasse (RK) bis zum Beginn deines nächsten Zuges.</p>
+        </description>
+        <setters>
+            <set name="keywords">ring, zuflucht, teleportation, reaktion, ruestungsklasse</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 Pfund</set>
+            <set name="slot">ring</set>
+            <set name="type">Ring</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+    <element name="Amulett der Zungen" type="Magic Item" source="DnD4Tyria" id="ID_D4T_MAGIC_ITEM_AMULETT_DER_ZUNGEN_UND_BEEINFLUSSUNG">
+        <supports>ID_INTERNAL_ITEM_TYPE_WONDEROUS</supports>
+        <description>
+            <p>
+                <strong>Beschreibung:</strong> Ein edles Amulett aus geschwärzter Bronze, das eine gespaltene Zunge innerhalb eines geöffneten Auges darstellt. Es fühlt sich stets leicht warm an.</p>
+            <p>
+                <strong>Funktion:</strong> Ermöglicht dem Träger, die Zauber <em>Person bezaubern (Charm Person)</em> (SG 15) und <em>Befehl (Command)</em> (SG 15) jeweils zweimal pro Rast ohne Komponenten zu wirken.</p>
+        </description>
+        <setters>
+            <set name="keywords">amulett, zungen, beeinflussung, person bezaubern, befehl, zauber</set>
+            <set name="category">Magische Gegenstände</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="1">1 Pfund</set>
+            <set name="slot">neck</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Rare</set>
+        </setters>
+    </element>
+</elements>
+
+
+
+
+
+
+
+
+
+
+
+
