@@ -4,7 +4,7 @@
         <name>Magische Gegenstände für meine Kampagne</name>
         <description>Diese Datei enthält magische Gegenstände, die in meiner Kampagne auf den Tisch kamen.</description>
         <author url="">Aurora4Tyria</author>
-        <update version="1.4.6">
+        <update version="1.4.7">
             <file name="d4t-items-gear-mycampaign01.xml" url=""/>
         </update>
     </info>
@@ -670,11 +670,11 @@
             <set name="rarity">Rare</set>
             <set name="cost" currency="gp">0</set>
             <set name="weight" lb="4">4 Pfund</set>
-            <set name="slot">body</set>
+			<set name="slot">shoulders</set>
             <set name="attunement">true</set>
         </setters>
         <rules>
-            <grant type="Vision" id="ID_VISION_DARKVISION"/>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
             <!--<grant type="Vision" id="ID_VISION_SEE_INVISIBILITY"/>-->
             <!--<grant type="Grants" id="ID_INTERNAL_GRANTS_PERCEPTION_ADVANTAGE"/>-->
         </rules>
